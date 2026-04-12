@@ -1,0 +1,75 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const slugMap: Record<string, {
+  title: string; phase: string; year: string; director: string; color: string; role: string;
+}> = {
+  'legend-of-the-ten-rings': {
+    title: 'Shang-Chi and the Legend of the Ten Rings',
+    phase: 'MCU Phase 4',
+    year: '2021',
+    director: 'Destin Daniel Cretton',
+    color: '#7c5a3a',
+    role: 'James Hwang as Zheng Zu · MCU debut role',
+  },
+  'legacy-of-the-ten-rings': {
+    title: 'Shang-Chi and the Legacy of the Ten Rings',
+    phase: 'MCU Phase 5',
+    year: '2025',
+    director: 'Destin Daniel Cretton',
+    color: '#7c5a3a',
+    role: 'Actor + Co-Screenwriter',
+  },
+  'legion-accursed': {
+    title: 'Shang-Chi and the Legion Accursed',
+    phase: 'MCU Phase 6',
+    year: '2026',
+    director: 'Isaiah Saxon',
+    color: '#7c5a3a',
+    role: 'Actor + Co-Screenwriter · Franchise conclusion',
+  },
+};
+
+export function getStaticPaths() {
+  return [
+    'legend-of-the-ten-rings',
+    'legacy-of-the-ten-rings',
+    'legion-accursed',
+  ].map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const meta = slugMap[slug];
+
+const modules = import.meta.glob('../../../content/wiki/filmography/shang-chi/*.md');
+const key = `../../../content/wiki/filmography/shang-chi/${slug}.md`;
+const mod = await modules[key]() as { Content: any };
+const { Content } = mod;
+---
+
+<WikiLayout title={meta.title} section="Filmography">
+  <a href={`${base}filmography/shang-chi`}
+    class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+    ← Back to Shang-Chi Trilogy
+  </a>
+
+  <div class="flex gap-5 items-start mb-8">
+    <div class="w-16 h-16 shrink-0 rounded-xl flex items-center justify-center text-2xl font-bold"
+      style={`background-color:${meta.color}22;color:${meta.color};border:1px solid ${meta.color}44`}>
+      {meta.year.slice(2)}
+    </div>
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#c9a84c">
+        {meta.phase} · Shang-Chi Trilogy
+      </div>
+      <h1 class="text-3xl font-bold text-white leading-tight mb-1">{meta.title}</h1>
+      <p class="text-gray-400 text-sm">Dir. {meta.director} · {meta.year}</p>
+      <p class="text-gray-600 text-xs mt-1 italic">{meta.role}</p>
+    </div>
+  </div>
+
+  <div class="prose prose-invert max-w-none">
+    <Content />
+  </div>
+</WikiLayout>

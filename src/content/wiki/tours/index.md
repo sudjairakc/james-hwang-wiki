@@ -1,0 +1,109 @@
+
+PULSE TOUR 2023 - 1st Concert (July 28, 2023 - October 29, 2023)
+PULSE TOUR 2024 - 1st Concert (January 13, 2024 - May 30, 2024)
+LIKE I DO, you feel the fire,
+SOFTEST TOUCH, my heart’s desire.
+Let your PULSE rise, come fly with me.
+ARE YOU STILL beneath the sky?
+
+23 songs, 1hr 9 min (2023)
+6 vcrs, 8 min
+5 ments, 25 min
+total 1hr 42 min
+
+33 songs, 1hr 41 min (2024)
+8 vcrs, 10 min
+7 ments, 35 min
+total 2hr 26 min
+
+VCR 1 — THE SIGNAL (Opening)
+→ เข้าสู่โลก PULSE / identity fragment
+🎵
+1. HOW DOES IT FEEL
+2. SAY
+3. ALL FOR YOU
+4. CHEEKY
+5. IF
+6. OUT HERE [2024]
+7. SOMEWHERE, SOMEHOW [2024]
+
+VCR 2 — CONTROL LOST
+→ pressure / losing control / shift energy
+🎵8. RIGHT ABOUT LOVE9. SAVE ME10. AWKWARD MAYBE11. TALK TO ME
+
+VCR 3 — WHO I WAS (LIKE I DO ERA)
+→ ย้อนกลับไปจุดเริ่มต้น / GONUNMA identity
+🎵12. LIKE I DO13. BESTFRIEND14. YOU KNOW15. CALL ME16. CAN YOU LOVE ME TONIGHT17. AT THE END OF THE NIGHT
+
+VCR 4 — SILENCE / INTIMACY
+→ ลดทุกอย่างลง / เข้าสู่ acoustic
+🎵18. EVERLASTING (SOLO VERSION)19. NO RESERVATION20. OVERSIZED JACKET21. I DON’T KNOW WHAT YOU DO
+
+VCR 5 — CROSSROADS
+→ ช่วงเปลี่ยนผ่าน / เริ่มมี confidence ในตัวเอง
+🎵22. YOU AIN’T GOTTA23. CRUSH24. IF I KNEW
+
+VCR 6 — REBIRTH (ARE U STILL) [2024]
+→ เข้าสู่ยุค soul/funk / live band energy
+🎵25. SLEEPWALKING [2024]26. TEARS ON A PRETTY FACE [2024]27. JUST A DREAM [2024]28. PURPOSE [2024]29. SELFISH [2024]30. BREATHE [2024]
+
+VCR 7 — AFTER THE NOISE [2024]
+→ หลัง peak / reflection / calm ก่อนจบ
+🎵31. ORDINARY FEELINGS [2024]32. ANOTHER MAN’S LIFE [2024]
+
+VCR 8 — HOME (ENCORE SETUP)
+→ fan connection / emotional payoff
+🎵33. SOFTEST TOUCH
+34. OUTRO: GIRLFRIEND
+
+
+DECADE TOUR - 2nd Concert (January  13, 2027 - February 28, 2027)
+LIKE I DO, I gave it all,A SOFTEST TOUCH, before the fall.Feel my PULSE, it’s running wild,ARE YOU STILL that same old child?
+SOUR turns sweet, then HONEY fades,A DECADE lives in songs we made.
+
+29 songs, 1hr 27 min
+6 vcrs, 8 min
+5 ments, 25 min
+total 2hr
+
+VCR 1 — OPEN (DECADE CORE)
+1. SAY
+2. TEARS ON A PRETTY FACE
+3. HOW DOES IT FEEL
+4. SAVE ME5. CAN’T LEAVE ALONE
+
+VCR 2 — SOLO IDENTITY
+6. LIKE I DO (SOLO VERSION)
+7. SOFTEST TOUCH
+8. CRUSH (SOLO VERSION)
+9. HONEY
+
+VCR 3 — PERFORMANCE FLOW
+10. ALL FOR YOU
+11. BREATHE
+12. SOMETHING REAL
+13. SOCIAL
+
+VCR 4 — NEW ERA (DECADE TRACKS)
+14. NEW [TITLE]
+15. NEW
+16. NEW
+17. NEW
+
+VCR 4 — MID / R&B FLOW
+18. TALK TO ME
+19. YOU AIN’T GOTTA
+20. NO RESERVATION21. HE’S NOT ME
+
+VCR 5 — LATE NIGHT CORE
+22. SOMEWHERE, SOMEHOW
+23. IF I KNEW
+24. CALL ME25. COME BACK TO ME
+26. LOVE THIS PAIN AWAY
+27. EVERLASTING (SOLO VERSION)
+
+VCR 6 — SOUR RESOLUTION (ENCORE)
+28. SOUR
+29. MYSTERY LADY
+30. TAKE YOU TONIGHT
+

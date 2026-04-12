@@ -1,0 +1,27 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+import { Content } from '../content/wiki/canon.md';
+---
+<WikiLayout title="Canon" section="Reference">
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Reference</div>
+    <h1 class="text-4xl font-bold text-white mb-2">Artist Canon</h1>
+    <p class="text-gray-400 text-sm">Vocal profile · Dance style · Production DNA · Friend network</p>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+    {[
+      { label: 'Voice Type', value: 'Tenor' },
+      { label: 'Vocal Range', value: 'C3–B4 / C5' },
+      { label: 'Dance Style', value: 'Animation + Popping' },
+      { label: 'Fandom', value: 'Gemzen (Gemz)' },
+    ].map(s => (
+      <div class="border rounded-lg p-4 text-center" style="border-color:#2a2a2a;background-color:#141414">
+        <div class="text-sm font-bold text-white mb-1">{s.value}</div>
+        <div class="text-xs text-gray-500">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <div class="prose prose-invert max-w-none"><Content /></div>
+</WikiLayout>

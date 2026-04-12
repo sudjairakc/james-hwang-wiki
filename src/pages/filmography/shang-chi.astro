@@ -1,0 +1,75 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const color = '#7c5a3a';
+
+const films = [
+  {
+    slug: 'legend-of-the-ten-rings',
+    num: '1',
+    title: 'Shang-Chi and the Legend of the Ten Rings',
+    year: '2021',
+    phase: 'MCU Phase 4',
+    director: 'Destin Daniel Cretton',
+    note: 'James Hwang as Shang-Chi · MCU debut role',
+  },
+  {
+    slug: 'legacy-of-the-ten-rings',
+    num: '2',
+    title: 'Shang-Chi and the Legacy of the Ten Rings',
+    year: '2025',
+    phase: 'MCU Phase 5',
+    director: 'Destin Daniel Cretton',
+    note: 'James Hwang co-wrote screenplay',
+  },
+  {
+    slug: 'legion-accursed',
+    num: '3',
+    title: 'Shang-Chi and the Legion Accursed',
+    year: '2026',
+    phase: 'MCU Phase 6',
+    director: 'Isaiah Saxon',
+    note: 'James Hwang co-wrote screenplay · franchise conclusion',
+  },
+];
+---
+
+<WikiLayout title="Shang-Chi Trilogy" section="Filmography">
+  <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+    ← Back to Filmography
+  </a>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">MCU Trilogy</div>
+    <h1 class="text-4xl font-bold text-white mb-1">Shang-Chi Trilogy</h1>
+    <p class="text-gray-400 text-sm">Marvel Cinematic Universe · 2021–2026 · 3 films</p>
+  </div>
+
+  <div class="space-y-2">
+    {films.map(f => (
+      <a href={`${base}filmography/shang-chi/${f.slug}`}
+        class="flex items-center gap-4 border rounded-xl px-5 py-4 hover:border-gray-500 transition-all group"
+        style="border-color:#2a2a2a;background-color:#141414">
+        <!-- Number badge -->
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg font-bold shrink-0"
+          style={`background-color:${color}22;color:${color};border:1px solid ${color}44`}>
+          {f.num}
+        </div>
+        <!-- Info -->
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-center gap-2 mb-0.5">
+            <span class="text-sm font-semibold text-white group-hover:text-yellow-400 transition-colors">{f.title}</span>
+            <span class="text-xs px-1.5 py-0.5 rounded font-semibold uppercase tracking-wider"
+              style={`background:${color}18;color:${color}`}>{f.phase}</span>
+          </div>
+          <div class="text-xs text-gray-500">Dir. {f.director} · {f.note}</div>
+        </div>
+        <!-- Year -->
+        <div class="text-sm font-bold text-gray-500 shrink-0">{f.year}</div>
+        <!-- Arrow -->
+        <div class="text-gray-700 group-hover:text-gray-400 transition-colors shrink-0">→</div>
+      </a>
+    ))}
+  </div>
+</WikiLayout>

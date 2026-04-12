@@ -1,0 +1,95 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const slugMap: Record<string, {
+  title: string; subtitle: string; year: string; label: string; color: string; tagline: string;
+}> = {
+  'series-captain-eo-resonance': {
+    title: 'Captain EO: RESONANCE',
+    subtitle: 'Disney+ Original Series',
+    year: '2026',
+    label: 'Series',
+    color: '#3a5a7c',
+    tagline: 'EP1: Dead Frequency · The Starwave crew begins their mission',
+  },
+  'i-missing-chord': {
+    title: 'RESONANCE: The Missing Chord',
+    subtitle: 'Film I of the RESONANCE Saga',
+    year: '2027',
+    label: 'Film I',
+    color: '#3a5a7c',
+    tagline: 'The beginning of a cosmic journey',
+  },
+  'ii-silent-orchestra': {
+    title: 'RESONANCE II: The Silent Orchestra',
+    subtitle: 'Film II of the RESONANCE Saga',
+    year: '2029',
+    label: 'Film II',
+    color: '#3a5a7c',
+    tagline: 'When the music dies, the universe follows',
+  },
+  'iii-resonance': {
+    title: 'RESONANCE III',
+    subtitle: 'Film III of the RESONANCE Saga',
+    year: '2030',
+    label: 'Film III',
+    color: '#3a5a7c',
+    tagline: 'The final movement',
+  },
+  'canon': {
+    title: 'World Canon & Characters',
+    subtitle: 'RESONANCE Universe Reference',
+    year: '',
+    label: 'Canon',
+    color: '#3a5a7c',
+    tagline: 'The Starwave Crew · Melodia Universe · Character bios',
+  },
+};
+
+export function getStaticPaths() {
+  return [
+    'series-captain-eo-resonance',
+    'i-missing-chord',
+    'ii-silent-orchestra',
+    'iii-resonance',
+    'canon',
+  ].map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const meta = slugMap[slug];
+
+const modules = import.meta.glob('../../../content/wiki/filmography/resonance/*.md');
+const key = `../../../content/wiki/filmography/resonance/${slug}.md`;
+const mod = await modules[key]() as { Content: any };
+const { Content } = mod;
+---
+
+<WikiLayout title={meta.title} section="Filmography">
+  <a href={`${base}filmography/resonance`}
+    class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+    ← Back to RESONANCE Franchise
+  </a>
+
+  <div class="flex gap-5 items-start mb-8">
+    <div class="w-16 h-16 shrink-0 rounded-xl flex items-center justify-center text-sm font-bold"
+      style={`background-color:${meta.color}22;color:${meta.color};border:1px solid ${meta.color}44`}>
+      {meta.label}
+    </div>
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#c9a84c">
+        Captain EO: RESONANCE
+      </div>
+      <h1 class="text-3xl font-bold text-white leading-tight mb-1">{meta.title}</h1>
+      <p class="text-gray-400 text-sm">
+        {meta.subtitle}{meta.year ? ` · ${meta.year}` : ''}
+      </p>
+      <p class="text-gray-600 text-xs mt-1 italic">{meta.tagline}</p>
+    </div>
+  </div>
+
+  <div class="prose prose-invert max-w-none">
+    <Content />
+  </div>
+</WikiLayout>

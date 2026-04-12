@@ -1,0 +1,153 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const albums = [
+  {
+    slug: 'like-i-do',
+    title: 'LIKE I DO',
+    subtitle: 'GONUNMA',
+    year: '2016',
+    type: 'Mini Album (SM experimental)',
+    tracks: 7,
+    streams: '210M+',
+    peak: 'Top 40 (resurgence)',
+    era: 'SM Era',
+    color: '#7c6f5a',
+    highlight: 'Creative blueprint phase · Rediscovered via TikTok 2023',
+  },
+  {
+    slug: 'softest-touch',
+    title: 'SOFTEST TOUCH',
+    subtitle: '1st Mini Album',
+    year: 'Jan 2022',
+    type: '1st Official Mini Album',
+    tracks: 9,
+    streams: '320M+',
+    peak: 'Melon #18 · Circle Top 5',
+    era: 'SM Solo',
+    color: '#5a6e7c',
+    highlight: 'Official songwriter-led solo identity confirmed',
+  },
+  {
+    slug: 'pulse-era',
+    title: 'PULSE',
+    subtitle: '1st Studio Album',
+    year: '2023',
+    type: '1st Studio Album (Independent)',
+    tracks: 13,
+    streams: '540M+',
+    peak: 'Melon #7 · Circle Top 15',
+    era: 'Independent',
+    color: '#5a7c6a',
+    highlight: 'Global breakout · Grammy eligible · SAY feat. keshi 210M+',
+  },
+  {
+    slug: 'are-u-still',
+    title: 'ARE U STILL',
+    subtitle: '2nd Studio Album',
+    year: '2024',
+    type: '2nd Studio Album',
+    tracks: 13,
+    streams: '820M+',
+    peak: 'Melon #2 · Circle Top 5',
+    era: 'Grammy Era',
+    color: '#7c5a6e',
+    highlight: 'Grammy wins: Best Prog. R&B + Best R&B Performance',
+  },
+  {
+    slug: 'sour-honey',
+    title: 'SOUR|HONEY',
+    subtitle: '3rd Studio Album',
+    year: '2025',
+    type: '3rd Studio Album',
+    tracks: 14,
+    streams: '640M+',
+    peak: 'Top 10 Korea',
+    era: 'Post-Grammy',
+    color: '#7c7a5a',
+    highlight: 'Duality concept · CAN\'T LEAVE ALONE feat. Pharrell 260M+',
+  },
+  {
+    slug: 'decade',
+    title: 'DECADE',
+    subtitle: 'Anthology',
+    year: '2026',
+    type: 'Anthology Album',
+    tracks: 10,
+    streams: '480M+',
+    peak: 'Catalog resurgence',
+    era: 'Legacy',
+    color: '#6e5a7c',
+    highlight: '10-year retrospective · Extended arrangements · Deluxe edition',
+  },
+];
+---
+
+<WikiLayout title="Discography" section="Music">
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Music</div>
+    <h1 class="text-4xl font-bold text-white mb-2">Discography</h1>
+    <p class="text-gray-400 text-sm">6 eras spanning 2016–2026 · 3.5B+ cumulative streams</p>
+  </div>
+
+  <!-- Timeline bar -->
+  <div class="flex items-center gap-0 mb-10 overflow-x-auto pb-2">
+    {albums.map((a, i) => (
+      <a href={`${base}discography/${a.slug}`} class="flex-1 min-w-24 group">
+        <div class="h-1.5 rounded-none transition-all group-hover:h-2.5" style={`background-color:${a.color}`}></div>
+        <div class="pt-2 px-1">
+          <div class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors truncate">{a.year}</div>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <!-- Album list -->
+  <div class="space-y-3">
+    {albums.map((a, i) => (
+      <a href={`${base}discography/${a.slug}`}
+        class="flex gap-5 border rounded-xl p-5 hover:border-gray-500 transition-all group"
+        style="border-color:#2a2a2a;background-color:#141414">
+        <!-- Cover placeholder -->
+        <div class="w-16 h-16 shrink-0 rounded-lg flex items-center justify-center text-2xl font-black"
+          style={`background-color:${a.color}25;color:${a.color}`}>
+          {i + 1}
+        </div>
+        <!-- Info -->
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-baseline gap-2 mb-1">
+            <span class="text-base font-bold text-white group-hover:text-yellow-400 transition-colors">{a.title}</span>
+            <span class="text-xs text-gray-500">{a.subtitle}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full" style={`background-color:${a.color}20;color:${a.color}`}>{a.era}</span>
+          </div>
+          <div class="text-xs text-gray-500 mb-2">{a.year} · {a.type} · {a.tracks} tracks</div>
+          <p class="text-xs text-gray-400 leading-relaxed">{a.highlight}</p>
+        </div>
+        <!-- Metrics -->
+        <div class="hidden md:flex flex-col items-end shrink-0 gap-1">
+          <span class="text-lg font-bold text-white">{a.streams}</span>
+          <span class="text-xs text-gray-500">streams</span>
+          <span class="text-xs text-gray-600">{a.peak}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <!-- Station singles note -->
+  <div class="mt-6 border rounded-xl p-5" style="border-color:#2a2a2a;background-color:#141414">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#c9a84c">SM Station Singles</div>
+    <div class="flex flex-wrap gap-4">
+      <div>
+        <div class="text-sm font-semibold text-white">YOU AIN'T GOTTA</div>
+        <div class="text-xs text-gray-500">2018 · Spotify 55M+</div>
+      </div>
+      <div class="w-px bg-gray-800"></div>
+      <div>
+        <div class="text-sm font-semibold text-white">CRUSH feat. Jungkook</div>
+        <div class="text-xs text-gray-500">2019 · Spotify 260M+ · First international crossover</div>
+      </div>
+    </div>
+  </div>
+</WikiLayout>

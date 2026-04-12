@@ -1,0 +1,135 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  section?: string;
+}
+
+const { title, description = 'The definitive wiki for James Hwang — artist, actor, auteur.', section } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const nav = [
+  { label: 'Overview', href: `${base}`, icon: '◈' },
+  { label: 'Timeline', href: `${base}timeline`, icon: '◷' },
+  { label: 'Discography', href: `${base}discography`, icon: '◉' },
+  { label: 'Filmography', href: `${base}filmography`, icon: '▶' },
+  { label: 'Tours', href: `${base}tours`, icon: '◎' },
+  { label: 'Company', href: `${base}company`, icon: '◆' },
+  { label: 'Awards', href: `${base}awards`, icon: '★' },
+  { label: 'Endorsements', href: `${base}ecosystem`, icon: '◇' },
+  { label: 'Cultural Impact', href: `${base}cultural-impact`, icon: '◐' },
+  { label: 'Public Image', href: `${base}public-image`, icon: '◑' },
+  { label: 'Legal', href: `${base}legal`, icon: '⚖' },
+  { label: 'Canon', href: `${base}canon`, icon: '◈' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} — JamesHwangVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen flex flex-col" style="background-color:#0d0d0d">
+
+    <!-- Top bar -->
+    <header class="border-b sticky top-0 z-50" style="background-color:#0d0d0d;border-color:#2a2a2a">
+      <div class="max-w-screen-2xl mx-auto px-4 h-14 flex items-center justify-between">
+        <a href={base} class="flex items-center gap-3 group">
+          <span class="text-xl font-bold tracking-tight" style="color:#c9a84c">JH</span>
+          <span class="text-sm font-semibold text-white/80 group-hover:text-white transition-colors">JamesHwangVerse</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-1">
+          {nav.slice(0, 6).map(item => (
+            <a
+              href={item.href}
+              class={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${currentPath === item.href || currentPath === item.href + '/' ? 'text-yellow-400' : 'text-gray-400 hover:text-white'}`}
+              style={currentPath === item.href || currentPath === item.href + '/' ? 'color:#c9a84c' : ''}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="md:hidden text-gray-400 hover:text-white p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="flex flex-1 max-w-screen-2xl mx-auto w-full">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="hidden md:flex flex-col w-56 shrink-0 border-r py-6 px-3 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto" style="border-color:#2a2a2a">
+        {section && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:#c9a84c">{section}</p>}
+        <nav class="flex flex-col gap-0.5">
+          {nav.map(item => {
+            const isActive = currentPath === item.href || currentPath === item.href + '/';
+            return (
+              <a
+                href={item.href}
+                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm transition-colors ${isActive ? 'font-medium' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                style={isActive ? 'color:#c9a84c;background-color:#1e1e1e' : ''}
+              >
+                <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
+                {item.label}
+              </a>
+            );
+          })}
+        </nav>
+
+        <div class="mt-auto pt-6 px-2">
+          <p class="text-xs text-gray-600">JamesHwangVerse Wiki</p>
+          <p class="text-xs text-gray-700">Fictional universe</p>
+        </div>
+      </aside>
+
+      <!-- Mobile sidebar overlay -->
+      <div id="mobile-sidebar" class="fixed inset-0 z-40 hidden md:hidden">
+        <div id="sidebar-backdrop" class="absolute inset-0 bg-black/70"></div>
+        <nav class="absolute left-0 top-14 bottom-0 w-64 border-r py-6 px-3 overflow-y-auto" style="background-color:#0d0d0d;border-color:#2a2a2a">
+          {nav.map(item => {
+            const isActive = currentPath === item.href || currentPath === item.href + '/';
+            return (
+              <a
+                href={item.href}
+                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm mb-0.5 transition-colors ${isActive ? 'font-medium' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                style={isActive ? 'color:#c9a84c;background-color:#1e1e1e' : ''}
+              >
+                <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
+                {item.label}
+              </a>
+            );
+          })}
+        </nav>
+      </div>
+
+      <!-- Main content -->
+      <main class="flex-1 min-w-0 px-6 md:px-10 py-8">
+        <slot />
+      </main>
+    </div>
+
+    <footer class="border-t mt-auto py-6 text-center text-xs text-gray-600" style="border-color:#2a2a2a">
+      JamesHwangVerse — Fictional universe. All events, persons, and works are fictional.
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const sidebar = document.getElementById('mobile-sidebar');
+      const backdrop = document.getElementById('sidebar-backdrop');
+      toggle?.addEventListener('click', () => sidebar?.classList.toggle('hidden'));
+      backdrop?.addEventListener('click', () => sidebar?.classList.add('hidden'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const slugMap: Record<string, { file: string; title: string; subtitle: string; year: string; color: string }> = {
+  'like-i-do': {
+    file: '01-like-i-do',
+    title: 'LIKE I DO',
+    subtitle: 'GONUNMA · Mini Album',
+    year: '2016',
+    color: '#c9a84c',
+  },
+  'softest-touch': {
+    file: '03-softest-touch',
+    title: 'SOFTEST TOUCH',
+    subtitle: '1st Mini Album',
+    year: 'Jan 2022',
+    color: '#9b7fc8',
+  },
+  'pulse-era': {
+    file: '04-pulse-era',
+    title: 'PULSE',
+    subtitle: '1st Studio Album',
+    year: '2023',
+    color: '#5a7c6a',
+  },
+  'are-u-still': {
+    file: '05-are-u-still',
+    title: 'ARE U STILL',
+    subtitle: '2nd Studio Album',
+    year: '2024',
+    color: '#5a7aaa',
+  },
+  'sour-honey': {
+    file: '06-sour-honey',
+    title: 'SOUR|HONEY',
+    subtitle: '3rd Studio Album',
+    year: '2025',
+    color: '#c06080',
+  },
+  'decade': {
+    file: '07-decade',
+    title: 'DECADE',
+    subtitle: 'Anthology Album',
+    year: '2026',
+    color: '#6e5a7c',
+  },
+};
+
+type TrackStat = { title: string; spotify?: string; youtube?: string };
+type AlbumMetrics = {
+  albumStreams: string;
+  spotifyPeak?: string;
+  chartPeak: string;
+  titleTrack: TrackStat;
+  crossover?: TrackStat;
+  keyTracks: { title: string; streams: string }[];
+  note?: string;
+};
+
+const metrics: Record<string, AlbumMetrics> = {
+  'like-i-do': {
+    albumStreams: '210M+',
+    chartPeak: 'Melon Top 40 (resurgence 2022)',
+    titleTrack: { title: 'LIKE I DO', spotify: '120M+', youtube: '85M+' },
+    keyTracks: [
+      { title: 'CALL ME', streams: '42M+' },
+      { title: 'EVERLASTING', streams: '35M+' },
+    ],
+    note: 'TikTok resurgence wave 2023–2024',
+  },
+  'softest-touch': {
+    albumStreams: '320M+',
+    chartPeak: 'Melon #18 · Circle Album Top 5',
+    titleTrack: { title: 'SOFTEST TOUCH', spotify: '95M+', youtube: '82M+' },
+    keyTracks: [
+      { title: 'NO RESERVATION', streams: '48M+' },
+      { title: 'CRUSH feat. Jungkook', streams: '260M+' },
+    ],
+  },
+  'pulse-era': {
+    albumStreams: '540M+',
+    chartPeak: 'Melon #7 · Circle Digital Top 15',
+    titleTrack: { title: 'HOW DOES IT FEEL', spotify: '155M+', youtube: '140M+' },
+    crossover: { title: 'SAY feat. keshi', spotify: '210M+', youtube: '120M+' },
+    keyTracks: [
+      { title: 'ALL FOR YOU', streams: '95M+' },
+      { title: 'SAVE ME', streams: '78M+' },
+      { title: 'TALK TO ME', streams: '61M+' },
+    ],
+  },
+  'are-u-still': {
+    albumStreams: '820M+',
+    chartPeak: 'Melon #2 · Circle Digital Top 5',
+    titleTrack: { title: 'TEARS ON A PRETTY FACE', spotify: '285M+', youtube: '240M+' },
+    crossover: { title: 'JUST A DREAM feat. Janet Jackson', spotify: '130M+', youtube: '95M+' },
+    keyTracks: [
+      { title: 'BREATHE', streams: '82M+' },
+      { title: 'SOMEWHERE, SOMEHOW', streams: '54M+' },
+      { title: 'IF I KNEW', streams: '47M+' },
+    ],
+  },
+  'sour-honey': {
+    albumStreams: '640M+',
+    chartPeak: 'Melon #8 · Circle Digital Top 20',
+    titleTrack: { title: 'SOUR', spotify: '145M+', youtube: '120M+' },
+    crossover: { title: "CAN'T LEAVE ALONE feat. Pharrell Williams", spotify: '260M+', youtube: '175M+' },
+    keyTracks: [
+      { title: 'MYSTERY LADY', streams: '92M+' },
+      { title: 'SOCIAL', streams: '58M+' },
+      { title: 'TAKE YOU TONIGHT', streams: '41M+' },
+    ],
+  },
+  'decade': {
+    albumStreams: '480M+',
+    spotifyPeak: '32M monthly listeners (peak 2026)',
+    chartPeak: 'Melon #9 · Circle Digital Top 25 · US R&B Albums Top 20',
+    titleTrack: { title: 'NEW (Lead Single)', spotify: '95M+', youtube: '78M+' },
+    keyTracks: [
+      { title: 'RIGHT ABOUT LOVE (Extended)', streams: '52M+' },
+      { title: 'NO RESERVATION (Extended)', streams: '47M+' },
+    ],
+    note: 'Catalog resurgence +22–41% YoY across all eras',
+  },
+};
+
+export function getStaticPaths() {
+  return Object.keys({
+    'like-i-do': true,
+    'softest-touch': true,
+    'pulse-era': true,
+    'are-u-still': true,
+    'sour-honey': true,
+    'decade': true,
+  }).map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const meta = slugMap[slug];
+const m = metrics[slug];
+
+// --- Tracklist parsing ---
+
+type Track = {
+  num: number;
+  title: string;
+  isTitle: boolean;
+  isBonus: boolean;
+  genre: string;
+  credits: { label: string; value: string }[];
+  refArtist: string;
+  refStreams: string;
+};
+
+function fmtStreams(refStr: string): { artist: string; streams: string } {
+  const match = refStr.match(/^(.+?)\s*\((?:[^,)]+,\s*)?([0-9,]+)\s*streams\)$/);
+  if (!match) return { artist: refStr.trim(), streams: '' };
+  const n = parseInt(match[2].replace(/,/g, ''));
+  const s =
+    n >= 1_000_000
+      ? `${(n / 1_000_000).toFixed(1)}M`
+      : n >= 1_000
+      ? `${(n / 1_000).toFixed(0)}K`
+      : n.toLocaleString();
+  return { artist: match[1].trim(), streams: s };
+}
+
+function parseTracklist(raw: string): Track[] {
+  const start = raw.indexOf('Tracklist & Credits');
+  if (start === -1) return [];
+  const end = raw.indexOf('\nPersonnel', start);
+  const section = raw.slice(start, end > -1 ? end : raw.length);
+
+  return section
+    .split('\n')
+    .filter(l => /^\d+\./.test(l.trim()))
+    .map(line => {
+      const match = line.match(/^(\d+)\.\s+(.+)$/);
+      if (!match) return null;
+      const rest = match[2];
+      const dashIdx = rest.indexOf(' — ');
+      const rawTitle = (dashIdx >= 0 ? rest.slice(0, dashIdx) : rest).trim();
+      const afterDash = dashIdx >= 0 ? rest.slice(dashIdx + 3) : '';
+      const isTitle = rawTitle.includes('[TITLE]');
+      const isBonus = /bonus track|alt\./i.test(rawTitle);
+      const title = rawTitle.replace(/\[TITLE\]/gi, '').trim();
+      const parts = afterDash.split(' | ');
+      const genre = parts[0]?.trim() || '';
+      const reference = parts.length > 1 ? parts[parts.length - 1].trim() : '';
+      const credits = parts.slice(1, -1)
+        .map(p => p.trim())
+        .filter(p => /^(Composed|Lyrics|Arranged)\s+by\s/i.test(p))
+        .map(p => {
+          const m2 = p.match(/^(.+?)\s+by\s+(.+)$/i);
+          return m2 ? { label: m2[1].trim(), value: m2[2].trim() } : null;
+        })
+        .filter((c): c is { label: string; value: string } => c !== null);
+      const { artist: refArtist, streams: refStreams } = fmtStreams(reference);
+      return { num: parseInt(match[1]), title, isTitle, isBonus, genre, credits, refArtist, refStreams };
+    })
+    .filter((t): t is Track => t !== null);
+}
+
+// DECADE disk structure
+type DecadeTrack = { title: string; isNew: boolean; isArchive: boolean; archiveNote?: string };
+type DecadeDisk = { label: string; tracks: DecadeTrack[] };
+
+function parseDecadeDisks(raw: string): DecadeDisk[] {
+  const start = raw.indexOf('Track listing');
+  if (start === -1) return [];
+  const end = raw.indexOf('\nPersonnel', start);
+  const section = raw.slice(start + 'Track listing\n'.length, end > -1 ? end : raw.length);
+
+  const disks: DecadeDisk[] = [];
+  let current: DecadeDisk | null = null;
+
+  for (const line of section.split('\n')) {
+    const t = line.trim();
+    if (!t || t === '</div>') continue;
+    if (t.startsWith('Disk ')) {
+      if (current) disks.push(current);
+      current = { label: t, tracks: [] };
+    } else if (current) {
+      if (t.startsWith('ARCHIVE')) {
+        const am = t.match(/^ARCHIVE [IVX]+: "(.+?)"\s*\(.+?\)\((.+)\)$/);
+        current.tracks.push({
+          title: am ? `ARCHIVE: "${am[1]}"` : t,
+          isArchive: true,
+          isNew: false,
+          archiveNote: am ? am[2] : undefined,
+        });
+      } else {
+        current.tracks.push({
+          title: t,
+          isArchive: false,
+          isNew: t === 'NEW (Title)' || t === 'NEW',
+        });
+      }
+    }
+  }
+  if (current) disks.push(current);
+  return disks;
+}
+
+// Load content
+const modules = import.meta.glob('../../content/wiki/discography/*.md');
+const rawModules = import.meta.glob('../../content/wiki/discography/*.md', { as: 'raw' });
+const key = `../../content/wiki/discography/${meta.file}.md`;
+const mod = await modules[key]() as { Content: any };
+const rawText = await rawModules[key]() as string;
+const { Content } = mod;
+
+const tracks = slug !== 'decade' ? parseTracklist(rawText) : [];
+const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
+---
+
+<WikiLayout title={meta.title} section="Discography">
+  <a href={`${base}discography`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+    ← Back to Discography
+  </a>
+
+  <!-- Album header -->
+  <div class="flex gap-6 items-start mb-8">
+    <div class="w-24 h-24 shrink-0 rounded-xl flex items-center justify-center text-4xl font-black"
+      style={`background-color:${meta.color}25;color:${meta.color}`}>
+      {meta.title.slice(0, 1)}
+    </div>
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#c9a84c">Album</div>
+      <h1 class="text-4xl font-bold text-white leading-none mb-1">{meta.title}</h1>
+      <p class="text-gray-400 text-sm">{meta.subtitle} · {meta.year}</p>
+    </div>
+  </div>
+
+  <!-- Commercial Metrics Panel -->
+  {m && (
+    <div class="border rounded-xl p-6 mb-8 space-y-5" style="border-color:#2a2a2a;background-color:#141414">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:#c9a84c">Commercial Metrics</div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+          <div class="text-2xl font-bold text-white">{m.albumStreams}</div>
+          <div class="text-xs text-gray-500 mt-0.5">Album streams (lifetime)</div>
+        </div>
+        <div>
+          <div class="text-sm font-semibold text-white leading-snug">{m.chartPeak}</div>
+          <div class="text-xs text-gray-500 mt-0.5">Chart peak</div>
+        </div>
+        {m.spotifyPeak && (
+          <div>
+            <div class="text-sm font-semibold text-white">{m.spotifyPeak}</div>
+            <div class="text-xs text-gray-500 mt-0.5">Spotify listeners</div>
+          </div>
+        )}
+      </div>
+      <div class="border-t" style="border-color:#2a2a2a"></div>
+      <div>
+        <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Title Track</div>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
+          <span class="text-sm font-semibold text-white">{m.titleTrack.title}</span>
+          {m.titleTrack.spotify && (
+            <span class="text-xs text-gray-400">Spotify <span class="text-white font-medium">{m.titleTrack.spotify}</span></span>
+          )}
+          {m.titleTrack.youtube && (
+            <span class="text-xs text-gray-400">YouTube <span class="text-white font-medium">{m.titleTrack.youtube}</span></span>
+          )}
+        </div>
+      </div>
+      {m.crossover && (
+        <div>
+          <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Crossover Single</div>
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
+            <span class="text-sm font-semibold text-white">{m.crossover.title}</span>
+            {m.crossover.spotify && (
+              <span class="text-xs text-gray-400">Spotify <span class="text-white font-medium">{m.crossover.spotify}</span></span>
+            )}
+            {m.crossover.youtube && (
+              <span class="text-xs text-gray-400">YouTube <span class="text-white font-medium">{m.crossover.youtube}</span></span>
+            )}
+          </div>
+        </div>
+      )}
+      {m.keyTracks.length > 0 && (
+        <div>
+          <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Key Tracks</div>
+          <div class="flex flex-wrap gap-2">
+            {m.keyTracks.map(t => (
+              <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs" style="background-color:#1e1e1e;border:1px solid #2a2a2a">
+                <span class="text-gray-300">{t.title}</span>
+                <span class="font-semibold" style={`color:${meta.color}`}>{t.streams}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {m.note && (
+        <div class="text-xs text-gray-500 italic border-l-2 pl-3" style={`border-color:${meta.color}`}>{m.note}</div>
+      )}
+    </div>
+  )}
+
+  <!-- Styled Tracklist — Standard albums -->
+  {tracks.length > 0 && (
+    <div class="mb-10">
+      <div class="flex items-center justify-between mb-3">
+        <div class="text-xs font-semibold uppercase tracking-widest" style="color:#c9a84c">Tracklist</div>
+        <div class="text-xs text-gray-600">ref · streams</div>
+      </div>
+      <div class="rounded-xl overflow-hidden" style="border:1px solid #2a2a2a">
+        {tracks.map((t, i) => (
+          <div class={`flex items-center gap-4 px-5 py-3 group transition-colors hover:bg-white/3 ${i !== tracks.length - 1 ? 'border-b' : ''}`}
+            style="border-color:#1f1f1f">
+            <!-- Number -->
+            <span class="text-gray-700 text-xs font-mono w-4 shrink-0 text-right">{t.num}</span>
+            <!-- Title + genre -->
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class={`text-sm font-medium leading-tight ${t.isTitle ? 'text-white' : 'text-gray-200'}`}>
+                  {t.title}
+                </span>
+                {t.isTitle && (
+                  <span class="text-xs px-1.5 py-0.5 rounded font-bold uppercase tracking-wider" style={`background:${meta.color}22;color:${meta.color};border:1px solid ${meta.color}44`}>
+                    Title
+                  </span>
+                )}
+                {t.isBonus && (
+                  <span class="text-xs px-1.5 py-0.5 rounded font-semibold uppercase tracking-wider" style="background:#ffffff08;color:#666;border:1px solid #333">
+                    Bonus
+                  </span>
+                )}
+              </div>
+              <div class="text-xs text-gray-600 mt-0.5">{t.genre}</div>
+              {t.credits.length > 0 && (
+                <div class="flex flex-wrap gap-x-4 gap-y-0.5 mt-1.5">
+                  {t.credits.map(c => (
+                    <span class="text-xs text-gray-600">
+                      <span class="text-gray-700 font-medium">{c.label}</span>
+                      {' '}{c.value}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+            <!-- Reference — right side comment -->
+            <div class="shrink-0 text-right hidden sm:block self-start mt-0.5">
+              <div class="text-xs text-gray-600 leading-tight">{t.refArtist}</div>
+              {t.refStreams && (
+                <div class="text-xs font-semibold mt-0.5" style={`color:${meta.color}bb`}>{t.refStreams}</div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Styled Tracklist — DECADE disk structure -->
+  {decadeDisks.length > 0 && (
+    <div class="mb-10">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:#c9a84c">Track Listing</div>
+      <div class="space-y-6">
+        {decadeDisks.map(disk => (
+          <div class="rounded-xl overflow-hidden" style="border:1px solid #2a2a2a">
+            <!-- Disk header -->
+            <div class="px-5 py-3 border-b" style={`background:${meta.color}18;border-color:#2a2a2a`}>
+              <span class="text-xs font-bold uppercase tracking-widest" style={`color:${meta.color}`}>{disk.label}</span>
+            </div>
+            <!-- Tracks -->
+            <div>
+              {(() => {
+                let trackNum = 0;
+                return disk.tracks.map((t, i) => {
+                  if (!t.isArchive) trackNum++;
+                  return t.isArchive ? (
+                    <div class={`flex gap-3 px-5 py-3 ${i !== disk.tracks.length - 1 ? 'border-b' : ''}`}
+                      style="background:#0f0f0f;border-color:#1f1f1f">
+                      <span class="text-xs mt-0.5 shrink-0" style={`color:${meta.color}88`}>◈</span>
+                      <div>
+                        <div class="text-xs font-medium text-gray-500 italic">{t.title}</div>
+                        {t.archiveNote && (
+                          <div class="text-xs text-gray-700 mt-0.5">{t.archiveNote}</div>
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    <div class={`flex items-center gap-4 px-5 py-3 hover:bg-white/3 transition-colors ${i !== disk.tracks.length - 1 ? 'border-b' : ''}`}
+                      style="border-color:#1f1f1f">
+                      <span class="text-gray-700 text-xs font-mono w-4 shrink-0 text-right">{trackNum}</span>
+                      <span class="text-sm text-gray-200 flex-1">{t.title}</span>
+                      {t.isNew && (
+                        <span class="text-xs px-1.5 py-0.5 rounded font-bold uppercase tracking-wider shrink-0" style={`background:${meta.color}22;color:${meta.color};border:1px solid ${meta.color}44`}>
+                          New
+                        </span>
+                      )}
+                    </div>
+                  );
+                });
+              })()}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Markdown content (raw-tracklist hidden via CSS) -->
+  <div class="prose prose-invert max-w-none">
+    <Content />
+  </div>
+</WikiLayout>
+
+<style>
+  :global(.raw-tracklist) {
+    display: none;
+  }
+</style>

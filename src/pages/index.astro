@@ -1,17 +1,117 @@
 ---
+import WikiLayout from '../layouts/WikiLayout.astro';
 
+const base = import.meta.env.BASE_URL;
+
+const stats = [
+  { label: 'Career Span', value: '2013–', sub: 'SM Rookies → Independent' },
+  { label: 'Total Streams', value: '3.5B+', sub: 'All platforms combined' },
+  { label: 'Grammy Awards', value: '2', sub: 'Best Prog. R&B + Best R&B Perf.' },
+  { label: 'Tour Gross', value: '$309M', sub: 'PULSE + DECADE tours' },
+  { label: 'Endorsements', value: '$22M/yr', sub: 'Saint Laurent, Cartier, Sony…' },
+  { label: 'Films + Series', value: '6+1', sub: 'MCU + RESONANCE franchise' },
+];
+
+const albums = [
+  { slug: 'like-i-do', title: 'LIKE I DO', year: '2016', type: 'Mini Album', streams: '210M+', color: '#7c6f5a' },
+  { slug: 'softest-touch', title: 'SOFTEST TOUCH', year: '2022', type: '1st Mini Album', streams: '320M+', color: '#5a6e7c' },
+  { slug: 'pulse-era', title: 'PULSE', year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
+  { slug: 'are-u-still', title: 'ARE U STILL', year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#7c5a6e' },
+  { slug: 'sour-honey', title: 'SOUR|HONEY', year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#7c7a5a' },
+  { slug: 'decade', title: 'DECADE', year: '2026', type: 'Anthology', streams: '480M+', color: '#6e5a7c' },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<WikiLayout title="Overview" section="Wiki">
+  <!-- Hero -->
+  <div class="mb-12">
+    <div class="flex flex-col md:flex-row md:items-end gap-6 mb-8">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">JamesHwangVerse</div>
+        <h1 class="text-5xl md:text-6xl font-bold text-white leading-none mb-3">James Hwang</h1>
+        <p class="text-gray-400 text-sm leading-relaxed max-w-xl">
+          黃志南 · 황지남 · ชัยชนะ อึ้งวณิชกุล<br/>
+          Singer-songwriter · Actor · CEO of JH Company<br/>
+          Born June 22, 1998 · Half-Thai, Half-Korean
+        </p>
+      </div>
+    </div>
+
+    <!-- Quick bio -->
+    <div class="border rounded-xl p-6 mb-8 max-w-3xl" style="border-color:#2a2a2a;background-color:#141414">
+      <p class="text-gray-300 text-sm leading-7">
+        James Hwang is an independent artist and actor who debuted under SM Entertainment as a member of NCT 127 (2016),
+        before departing via contract settlement in 2023 to found <strong class="text-white">JH Company</strong>.
+        Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a discography spanning
+        contemporary R&B, neo-soul, and funk — while simultaneously establishing himself in Hollywood through the
+        <strong class="text-white">Shang-Chi</strong> trilogy (MCU) and the <strong class="text-white">RESONANCE</strong> franchise (Disney).
+        Fandom name: <span style="color:#c9a84c">Gemzen (Gemz)</span>.
+      </p>
+    </div>
+
+    <!-- Stats grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+      {stats.map(s => (
+        <div class="border rounded-lg p-4 text-center" style="border-color:#2a2a2a;background-color:#141414">
+          <div class="text-xl font-bold text-white mb-0.5">{s.value}</div>
+          <div class="text-xs font-semibold text-gray-300 mb-1">{s.label}</div>
+          <div class="text-xs text-gray-600">{s.sub}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Discography quick view -->
+  <section class="mb-12">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-semibold text-white">Discography</h2>
+      <a href={`${base}discography`} class="text-xs hover:text-white transition-colors" style="color:#c9a84c">View all →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+      {albums.map(a => (
+        <a href={`${base}discography/${a.slug}`}
+          class="border rounded-lg p-4 hover:border-gray-500 transition-all hover:-translate-y-0.5"
+          style={`border-color:#2a2a2a;background-color:#141414`}>
+          <div class="w-full aspect-square rounded-md mb-3 flex items-center justify-center text-2xl font-bold"
+            style={`background-color:${a.color}30;color:${a.color}`}>
+            {a.title.slice(0, 1)}
+          </div>
+          <div class="text-xs font-semibold text-white truncate">{a.title}</div>
+          <div class="text-xs text-gray-500">{a.year} · {a.type}</div>
+          <div class="text-xs mt-1" style="color:#c9a84c">{a.streams}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Sections grid -->
+  <section class="mb-12">
+    <h2 class="text-lg font-semibold text-white mb-4">Wiki Sections</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      {[
+        { href: `${base}timeline`, icon: '◷', title: 'Career Timeline', desc: '1998–present · From SM Rookies to RESONANCE franchise' },
+        { href: `${base}filmography`, icon: '▶', title: 'Filmography', desc: 'Shang-Chi trilogy (MCU) + RESONANCE saga (Disney)' },
+        { href: `${base}tours`, icon: '◎', title: 'Tours', desc: 'PULSE World Tour + DECADE Tour — $309M gross' },
+        { href: `${base}company`, icon: '◆', title: 'JH Company', desc: 'Founded 2023 · $180M–320M valuation · Multi-artist label' },
+        { href: `${base}awards`, icon: '★', title: 'Awards', desc: 'Grammy, Melon, Asia Artist, Seoul Music Awards' },
+        { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact', desc: 'Idol-auteur hybrid · Neo-soul K-pop pioneer' },
+        { href: `${base}ecosystem`, icon: '◇', title: 'Endorsements', desc: 'Saint Laurent, Cartier, Sony, Nike, Dior Beauty' },
+        { href: `${base}public-image`, icon: '◑', title: 'Public Image', desc: 'Background, identity, public persona' },
+        { href: `${base}legal`, icon: '⚖', title: 'Legal', desc: 'SM contract dispute 2022–2023 · settlement & departure' },
+      ].map(item => (
+        <a href={item.href}
+          class="border rounded-lg p-5 hover:border-gray-500 transition-all group"
+          style="border-color:#2a2a2a;background-color:#141414">
+          <div class="flex items-start gap-3">
+            <span class="text-lg mt-0.5 opacity-50 group-hover:opacity-80 transition-opacity">{item.icon}</span>
+            <div>
+              <div class="text-sm font-semibold text-white mb-1 group-hover:text-yellow-400 transition-colors"
+                style="">{item.title}</div>
+              <div class="text-xs text-gray-500 leading-relaxed">{item.desc}</div>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
