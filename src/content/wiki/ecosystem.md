@@ -1,72 +1,81 @@
-JAMES HWANG: Endorsement Ecosystem
+---
+title: "JAMES HWANG: Endorsement Ecosystem"
+slug: "ecosystem"
+---
 
-Solo deals (ผ่าน JH Company)
-1) Global Luxury Fashion (anchor)
-ตัวเลือกเหมาะที่สุด
-* Saint Laurent (fit image: dark R&B / auteur / masculine minimalist)
-* alt: Prada
-RoleGlobal ambassador
-Value≈ $4M–7M / year
+## Solo deals (ผ่าน JH Company)
 
-2) Watch / Jewelry
-ตัวเลือกเหมาะที่สุด
-* Cartier
-RoleAsia → Global ambassador trajectory
-Value≈ $2M–4M / year
+| Sector | Brand | Role | Est. Annual Value | Notes |
+|-------|------|------|------------------|------|
+| Global luxury fashion | Saint Laurent | Global ambassador | $4M–7M | fit image: dark R&B / auteur / masculine minimalist |
+| Global luxury fashion (alt) | Prada | Alternative positioning | — | backup luxury alignment option |
+| Watch / jewelry | Cartier | Asia → Global ambassador trajectory | $2M–4M | prestige luxury ladder |
+| Tech / audio ecosystem | Sony | Creator audio positioning | $3M–5M | avoids Samsung ecosystem conflict |
+| Sneaker / streetwear capsule | Nike | Capsule collaborator + tour wardrobe integration | $1.5M–3M | performance-linked wardrobe identity |
+| Grooming / beauty (male segment) | Dior Beauty (Asia) | Regional ambassador | $1M–2M | male beauty positioning |
 
-3) Tech / Audio Ecosystem
-ตัวเลือกเหมาะที่สุด
-* Sony (headphones / creator audio positioning)
-เหตุผลไม่ชน Samsung (ซึ่งมักเป็น SM ecosystem partner)
-Value≈ $3M–5M / year
+---
 
-4) Sneaker / Streetwear Capsule
-ตัวเลือกเหมาะที่สุด
-* Nike
-Rolecapsule collaborator + tour wardrobe integration
-Value≈ $1.5M–3M / year
+## Group deals (ผ่าน SM / NCT 127)
 
-5) Grooming / Beauty (male segment)
-ตัวเลือกเหมาะที่สุด
-* Dior (Beauty Asia line)
-Value≈ $1M–2M / year
-
-Group deals (ผ่าน SM / NCT 127)
 James รับผ่าน group layer ไม่ใช่ solo contract
-6) Telecom (Asia)
-ตัวเลือกเหมาะที่สุด
-* SK Telecom
-Value (artist share est.)≈ $0.5M–1M / year
 
-7) Beverage Campaign
-ตัวเลือกเหมาะที่สุด
-* Coca-Cola
-Value (artist share est.)≈ $0.4M–0.9M / year
+| Sector | Brand | Contract Layer | Est. Artist Share |
+|-------|------|---------------|------------------|
+| Telecom (Asia) | SK Telecom | Group endorsement | $0.5M–1M |
+| Beverage campaign | Coca-Cola | Group endorsement | $0.4M–0.9M |
 
-Portfolio summary (final canon set)
-Sector | Brand
-luxury fashion | Saint Laurent
-watch/jewelry | Cartier
-tech/audio | Sony
-sneaker | Nike
-grooming | Dior Beauty
-telecom (group) | SK Telecom
-beverage (group) | Coca-Cola
-รวม = 7 active endorsements
+---
+
+## Portfolio summary (final canon set)
+
+| Sector | Brand | Contract Layer |
+|-------|------|---------------|
+| Luxury fashion | Saint Laurent | Solo |
+| Watch / jewelry | Cartier | Solo |
+| Tech / audio | Sony | Solo |
+| Sneaker | Nike | Solo |
+| Grooming | Dior Beauty | Solo |
+| Telecom | SK Telecom | Group |
+| Beverage | Coca-Cola | Group |
+
+รวม = 7 active endorsements  
 สมจริงที่สุดสำหรับ artist tier นี้
 
-Annual endorsement income (realistic total)
-layer | income
-solo deals | ~$14M–20M
-group deals | ~$1M–2M
-รวม:
-→ ≈ $16M–22M / year
+---
 
-Constraint จาก SM contract (สำคัญ)
+## Annual endorsement income (realistic total)
+
+| Income Layer | Estimated Annual Range | Notes |
+|-------------|----------------------|------|
+| Solo deals | $14M–20M | controlled via JH Company |
+| Group deals | $1M–2M | SM/NCT 127 contract participation |
+
+**Total estimated annual endorsement income**
+
+| Category | Estimated Range |
+|---------|----------------|
+| Combined endorsement income | $16M–22M |
+
+---
+
+## Constraint จาก SM contract (สำคัญ)
+
 เพราะยัง active กับ NCT 127:
-James ควรหลีกเลี่ยง
-* Samsung (ถ้า group ใช้อยู่)
-* telecom competitor ของ SKT
-* beverage competitor ของ Coke
-แต่:
-solo luxury / watch / sneaker / grooming→ ทำผ่าน JH Company ได้เต็มสิทธิ
+
+### Restricted categories
+
+| Constraint Type | Restricted Brand Class | Reason |
+|---------------|----------------------|-------|
+| Electronics ecosystem | Samsung | potential group-layer conflict |
+| Telecom competitors | SK Telecom competitors | exclusivity overlap |
+| Beverage competitors | Coca-Cola competitors | campaign exclusivity |
+
+### Allowed solo execution layer
+
+| Category | Execution Layer | Notes |
+|---------|---------------|------|
+| Luxury fashion | JH Company | fully independent |
+| Watch / jewelry | JH Company | fully independent |
+| Sneaker | JH Company | performance-linked |
+| Grooming / beauty | JH Company | regional flexibility |

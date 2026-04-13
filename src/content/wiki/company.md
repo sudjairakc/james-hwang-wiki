@@ -1,242 +1,409 @@
-JAMES HWANG: Company
+---
+title: "JAMES HWANG: Company"
+slug: "company"
+---
 
-JH Company — Final Corporate Snapshot
-Founded: 2023Founder: James HwangHQ: SeoulStructure: Artist-led global entertainment studio + label + touring company + IP franchise houseStatus (post-2026): Multi-artist creator company
+## JH Company — Final Corporate Snapshot
 
-Ownership Structure
-Shareholder | Ownership
-James Hwang | 82%
-Executive partners | 8%
-Strategic investors | 10%
+| Attribute | Value |
+|----------|------|
+| Founded | 2023 |
+| Founder | James Hwang |
+| HQ | Seoul |
+| Structure | Artist-led global entertainment studio + label + touring company + IP franchise house |
+| Status (post-2026) | Multi-artist creator company |
+
+---
+
+## Ownership Structure
+
+| Shareholder | Ownership | Role Layer |
+|------------|-----------|-----------|
+| James Hwang | 82% | Controlling shareholder |
+| Executive partners | 8% | Operational leadership layer |
+| Strategic investors | 10% | Growth capital support |
+
 James ยังเป็น controlling shareholder
 
-Artist Roster (ตั้งแต่ 2026)
-บริษัทดูแล:
-* James Hwang
-* Taemin
-* Ten
-* Yuta
-* Johnny
-ผล:
-บริษัท transition จาก artist vehicle→ multi-artist entertainment label
+---
 
-Strategic Partners (Global Network)
-Function | Partner
-Group activities | SM Entertainment
-Global music distribution | Warner Music Korea
-Japan operations | Avex Group
-US representation | Creative Artists Agency
-Film franchise platform | The Walt Disney Company
-structure:
-independent hub + global infrastructure ring
+## Artist Roster (ตั้งแต่ 2026)
 
-Revenue Scale Evolution
-Phase | Revenue
-Pre-expansion | $38M–62M
-Post-2026 expansion | $95M–160M
-growth drivers:
-* roster expansion
-* touring scaling
-* franchise IP revenue
-* endorsements portfolio
+| Artist | Since | Layer |
+|-------|------|------|
+| James Hwang | 2023 | Founder / flagship artist |
+| Mark | 2026 | Artist roster expansion |
+| Ten | 2026 | Artist roster expansion |
+| Yuta | 2026 | Artist roster expansion |
+| Johnny | 2026 | Artist roster expansion |
 
-Company Valuation
-Phase | Valuation
-Post-DECADE | $180M–320M
-Post-RESonance success | $420M–650M
-Aggressive upside | $800M+
-Revenue Structure (Post-Expansion)
-Segment | Share
-Touring | 38–45%
-Endorsements | 22–28%
-Film / franchise IP | 12–18%
-Recorded music | 8–12%
-Publishing | 5–8%
-Merchandising | 6–9%
-touring ยังเป็น engine หลักfilm/IP กลายเป็น pillar ใหม่
+| Structural Transition | Description |
+|----------------------|------------|
+| Company evolution | Artist vehicle → multi-artist entertainment label |
 
-Core Divisions
-1) Music Division
-ดูแล:
-* releases
-* catalog strategy
-* producers network
-distribution:
-Warner Music Korea
+---
 
-2) Touring Division
-regional partners:
-Region | Partner
-Korea | Dream Maker
-Japan | Kyodo
-SEA | Live Nation Asia
-US | Live Nation
-Europe | AEG Presents
-division นี้คือ primary revenue generator
+## Strategic Partners (Global Network)
 
-3) Artist Management Division (ใหม่)
-ดูแล:
-* Taemin
-* Ten
-* Yuta
-* Johnny
-ทำให้บริษัท transition เป็น roster-based company
+| Infrastructure Layer | Partner | Role |
+|---------------------|--------|------|
+| Group activities | SM Entertainment | legacy group-layer coordination |
+| Global music distribution | Warner Music Korea | global distribution infrastructure |
+| Japan operations | Avex Group | territory execution partner |
+| US representation | Creative Artists Agency | representation + packaging |
+| Film franchise platform | The Walt Disney Company | cinematic IP platform |
 
-4) Brand Partnerships Division
-annual throughput:
-≈ $16M–22M endorsement layer
-handles:
-* luxury contracts
-* tech partnerships
-* sponsorship packaging
+| Network Model | Structure |
+|-------------|----------|
+| Corporate architecture | independent hub + global infrastructure ring |
 
-5) Film & Franchise Division
-ดูแล:
-RESonance universe
-partner:
-The Walt Disney Company
-กลายเป็น valuation multiplier หลัก
+---
 
-Touring Economics (Company Impact)
-PULSE + DECADE retained capital:
-≈ $128M
-allocation:
-* infrastructure
-* IP pipeline
-* production scaling
-* liquidity reserve
-* strategic partnerships
-touring = corporate growth engine
+## Revenue Scale Evolution
 
-Staffing Scale
-Phase | Employees
-Pre-2026 | 55–85
-Post-2026 | 120–190
-structure:
-multi-division entertainment studio แล้ว
+| Phase | Revenue Range | Primary Drivers |
+|------|--------------|----------------|
+| Pre-expansion | $38M–62M | solo touring + endorsements + catalog |
+| Post-2026 expansion | $95M–160M | roster expansion + franchise IP + touring scale |
 
-Catalog Ownership
-Asset | Ownership
-Masters | ~72%
-Publishing participation | ~38%
-Visual IP | 100%
-Anthology rights | 100%
-catalog = long-term valuation anchor
+Growth drivers:
 
-RESonance Franchise Impact
-projects:
-* Disney+ series
-* trilogy films
-* soundtrack layer
-* licensing ecosystem
-effect:
-valuation jump:
-$180M–320M → $420M–650M
-film/IP = second growth engine หลัง touring
+| Driver | Function |
+|-------|---------|
+| Roster expansion | multi-artist revenue diversification |
+| Touring scaling | primary revenue engine expansion |
+| Franchise IP revenue | valuation multiplier layer |
+| Endorsements portfolio | recurring high-margin layer |
 
-Corporate Positioning (Final Tier)
-classification:
-Tier | Status
-Artist vehicle label | No
-Boutique studio | No
-Mid-tier creator company | No
-Upper-mid global entertainment company | Yes
-closest structure:
-creator-led hybrid entertainment platform
+---
 
-Executive Leadership Structure (Post-2026)
-Founder: James Hwang
-recommended leadership transition model:
-Phase | Role
-2023–2025 | CEO
-2026–2028 | Founder-CEO + Chief Creative Officer
-หลัง RESONANCE franchise success | Executive Chairman + Chief Creative Officer
-เหตุผล:
-เมื่อบริษัทขยายเป็น multi-artist entertainment company + film-franchise studio scale
-James ควรโฟกัส:
-* creative direction
-* IP strategy
-* global partnerships
-* franchise development
-* roster positioning
-แทน daily corporate operations
+## Company Valuation
 
-Professional CEO Layer (Post-Expansion Structure)
-structure ที่เหมาะที่สุด:
-Role | Responsibility
-Executive Chairman (James) | long-term strategy + IP vision
-CEO (professional executive) | operations + expansion
-COO | execution + internal coordination
-Head Touring | primary revenue engine
-Head IP / Film | RESONANCE franchise scaling
+| Phase | Valuation Range | Structural Trigger |
+|------|----------------|------------------|
+| Post-DECADE | $180M–320M | touring-scale validation |
+| Post-RESONANCE success | $420M–650M | franchise IP activation |
+| Aggressive upside | $800M+ | global studio-tier transition scenario |
 
-Creative Network Map
-Recurring Collaborators — Core Structure
-James ใช้ hybrid creative network modelผสม:
-* SM legacy producers
-* global pop/R&B producers
-* touring creatives
-* film franchise collaborators
-* internal JH Company creative team
+---
 
-A) Core Music Producers (signature sound)
-Collaborator | Role
-Kenzie | harmony + melodic structure
-Ryan S. Jhun | global pop architecture
-Youngjin Yoo | vocal layering framework
-Jin Young Jang | R&B vocal direction
-JUNNY | alt-R&B writing collaborator
-สร้าง sonic identity หลักของ catalog
+## Revenue Structure (Post-Expansion)
 
-B) Global Producer Layer (crossover sound)
-Collaborator | Role
-Pharrell Williams | funk / Neptunes groove
-Dem Jointz | performance-driven rhythm
-Lido | atmospheric electronic R&B
-BloodPop | alt-pop crossover palette
-ใช้ใน era:
-PULSE → ARE U STILL → SOUR | HONEY
+| Segment | Share Range | Strategic Role |
+|--------|-------------|---------------|
+| Touring | 38–45% | primary revenue engine |
+| Endorsements | 22–28% | high-margin celebrity leverage layer |
+| Film / franchise IP | 12–18% | valuation multiplier pillar |
+| Recorded music | 8–12% | catalog growth layer |
+| Publishing | 5–8% | long-tail royalty structure |
+| Merchandising | 6–9% | brand identity monetization |
 
-C) Choreography Network (performance identity)
-Collaborator | Role
-Rino Nakasone | performance clarity
-Kiel Tutin | touring choreography
-Baek Kooyoung | SM bridge performance
-Sienna Lalau | western staging scale
-D) Visual / MV Direction Layer
-Collaborator | Role
-Shin Heewon | conceptual performance visuals
-Dave Meyers | global pop MV scale
-Lumpens | SM-era visual continuity
-E) Touring Creative Layer
-managed by:
-JH Company touring division
-scope:
-* stage design
-* lighting identity
-* show structure
-* VCR storytelling
-เป็น live-performance backbone ของ James
+| Structural Insight | Description |
+|------------------|------------|
+| Touring | remains engine |
+| Film/IP | emerging second pillar |
 
-F) Fashion Creative Layer
-Collaborator | Role
-Saint Laurent | stage tailoring identity
-Nike | performancewear integration
-ช่วย define visual masculinity signature
+---
 
-G) Film / Franchise Creative Layer
-partner:
-The Walt Disney Company
-scope:
-* RESONANCE series
-* trilogy films
-* soundtrack integration
-* cinematic IP expansion
-เปลี่ยน James จาก artist
-→ franchise creator
+## Core Divisions
 
-Final Creative Network Model (one-line structure)
-James ใช้ ecosystem แบบ:
-SM producer core + global pop collaborators + touring creative studio + luxury fashion partners + Disney franchise platform + internal JH Company creative engine
-consistent กับ artist tier:
-global touring soloistmulti-artist label founderfilm-franchise crossover creator
+### 1. Music Division
+
+| Scope | Description |
+|------|-------------|
+| Releases | catalog rollout |
+| Catalog strategy | lifecycle optimization |
+| Producers network | sonic identity continuity |
+
+| Infrastructure Partner | Role |
+|----------------------|------|
+| Warner Music Korea | global distribution layer |
+
+---
+
+### 2. Touring Division
+
+| Region | Partner | Role |
+|-------|--------|------|
+| Korea | Dream Maker | domestic touring infrastructure |
+| Japan | Kyodo | Japan routing partner |
+| SEA | Live Nation Asia | regional touring execution |
+| US | Live Nation | North America execution |
+| Europe | AEG Presents | European routing infrastructure |
+
+| Division Role | Description |
+|--------------|------------|
+| Revenue status | primary revenue generator |
+
+---
+
+### 3. Artist Management Division (ใหม่)
+
+| Artist | Layer |
+|-------|------|
+| Mark | roster expansion |
+| Ten | roster expansion |
+| Yuta | roster expansion |
+| Johnny | roster expansion |
+
+| Structural Impact | Description |
+|------------------|------------|
+| Company transition | roster-based management company |
+
+---
+
+### 4. Brand Partnerships Division
+
+| Metric | Value |
+|-------|------|
+| Annual throughput | ≈ $16M–22M endorsement layer |
+
+| Scope | Description |
+|------|-------------|
+| Luxury contracts | fashion positioning |
+| Tech partnerships | ecosystem alignment |
+| Sponsorship packaging | tour integration layer |
+
+---
+
+### 5. Film & Franchise Division
+
+| Asset | Partner |
+|------|--------|
+| RESONANCE universe | The Walt Disney Company |
+
+| Strategic Role | Description |
+|---------------|------------|
+| Corporate impact | valuation multiplier |
+
+---
+
+## Touring Economics (Company Impact)
+
+| Source | Retained Capital |
+|-------|----------------|
+| PULSE + DECADE | ≈ $128M |
+
+Allocation structure:
+
+| Allocation Layer | Purpose |
+|----------------|--------|
+| Infrastructure | touring + studio scaling |
+| IP pipeline | franchise expansion |
+| Production scaling | internal capability growth |
+| Liquidity reserve | risk stabilization |
+| Strategic partnerships | global positioning |
+
+| Structural Insight | Description |
+|------------------|------------|
+| Corporate engine | touring = primary growth driver |
+
+---
+
+## Staffing Scale
+
+| Phase | Employees | Organization Stage |
+|------|-----------|-------------------|
+| Pre-2026 | 55–85 | boutique creator company |
+| Post-2026 | 120–190 | multi-division entertainment studio |
+
+---
+
+## Catalog Ownership
+
+| Asset Class | Ownership Share | Strategic Role |
+|------------|----------------|---------------|
+| Masters | ~72% | catalog leverage anchor |
+| Publishing participation | ~38% | royalty participation layer |
+| Visual IP | 100% | audiovisual control |
+| Anthology rights | 100% | long-form catalog control |
+
+| Structural Insight | Description |
+|------------------|------------|
+| Catalog strategy | long-term valuation anchor |
+
+---
+
+## RESONANCE Franchise Impact
+
+| Project Layer | Scope |
+|--------------|------|
+| Disney+ series | streaming entry platform |
+| Trilogy films | cinematic franchise backbone |
+| Soundtrack layer | cross-medium integration |
+| Licensing ecosystem | merchandise + sync expansion |
+
+Valuation transition:
+
+| Stage | Range |
+|------|------|
+| Pre-franchise scaling | $180M–320M |
+| Post-franchise scaling | $420M–650M |
+
+| Structural Insight | Description |
+|------------------|------------|
+| Growth engine | film/IP = second pillar after touring |
+
+---
+
+## Corporate Positioning (Final Tier)
+
+| Classification Layer | Status |
+|--------------------|-------|
+| Artist vehicle label | No |
+| Boutique studio | No |
+| Mid-tier creator company | No |
+| Upper-mid global entertainment company | Yes |
+
+| Structural Model | Description |
+|-----------------|------------|
+| Closest structure | creator-led hybrid entertainment platform |
+
+---
+
+## Executive Leadership Structure (Post-2026)
+
+| Phase | Leadership Structure |
+|------|--------------------|
+| 2023–2025 | CEO |
+| 2026–2028 | Founder-CEO + Chief Creative Officer |
+| Post-RESONANCE success | Executive Chairman + Chief Creative Officer |
+
+Strategic rationale:
+
+| Leadership Focus Layer | Priority |
+|----------------------|---------|
+| Creative direction | franchise architecture |
+| IP strategy | long-term asset building |
+| Global partnerships | infrastructure expansion |
+| Franchise development | cinematic scaling |
+| Roster positioning | multi-artist strategy |
+
+---
+
+## Professional CEO Layer (Post-Expansion Structure)
+
+| Role | Responsibility | Structural Function |
+|-----|---------------|-------------------|
+| Executive Chairman (James) | long-term strategy + IP vision | creative leadership |
+| CEO (professional executive) | operations + expansion | corporate scaling |
+| COO | execution + coordination | internal infrastructure |
+| Head Touring | primary revenue engine | touring strategy |
+| Head IP / Film | RESONANCE scaling | franchise expansion |
+
+---
+
+## Creative Network Map
+
+### Recurring Collaborators — Core Structure
+
+| Network Layer | Component |
+|--------------|-----------|
+| SM legacy producers | foundational sonic architecture |
+| Global pop/R&B producers | crossover sound expansion |
+| Touring creatives | performance infrastructure |
+| Film franchise collaborators | cinematic scaling |
+| Internal JH Company creatives | in-house continuity layer |
+
+---
+
+### A) Core Music Producers (signature sound)
+
+| Collaborator | Role |
+|-------------|------|
+| Kenzie | harmony + melodic structure |
+| Ryan S. Jhun | global pop architecture |
+| Youngjin Yoo | vocal layering framework |
+| Jin Young Jang | R&B vocal direction |
+| JUNNY | alt-R&B writing collaborator |
+
+| Structural Role | Description |
+|----------------|------------|
+| Catalog function | sonic identity backbone |
+
+---
+
+### B) Global Producer Layer (crossover sound)
+
+| Collaborator | Role |
+|-------------|------|
+| Pharrell Williams | funk / Neptunes groove |
+| Dem Jointz | performance-driven rhythm |
+| Lido | atmospheric electronic R&B |
+| BloodPop | alt-pop crossover palette |
+
+| Era Usage | Scope |
+|----------|------|
+| Production window | PULSE → ARE U STILL → SOUR | HONEY |
+
+---
+
+### C) Choreography Network (performance identity)
+
+| Collaborator | Role |
+|-------------|------|
+| Rino Nakasone | performance clarity |
+| Kiel Tutin | touring choreography |
+| Baek Kooyoung | SM bridge performance |
+| Sienna Lalau | western staging scale |
+
+---
+
+### D) Visual / MV Direction Layer
+
+| Collaborator | Role |
+|-------------|------|
+| Shin Heewon | conceptual performance visuals |
+| Dave Meyers | global pop MV scale |
+| Lumpens | SM-era visual continuity |
+
+---
+
+### E) Touring Creative Layer
+
+| Managed By | Scope |
+|-----------|------|
+| JH Company touring division | stage design / lighting identity / show structure / VCR storytelling |
+
+| Structural Role | Description |
+|----------------|------------|
+| Performance backbone | live-performance identity core |
+
+---
+
+### F) Fashion Creative Layer
+
+| Collaborator | Role |
+|-------------|------|
+| Saint Laurent | stage tailoring identity |
+| Nike | performancewear integration |
+
+| Structural Role | Description |
+|----------------|------------|
+| Visual masculinity signature | stage identity anchor |
+
+---
+
+### G) Film / Franchise Creative Layer
+
+| Partner | Scope |
+|--------|------|
+| The Walt Disney Company | RESONANCE series / trilogy films / soundtrack integration / cinematic IP expansion |
+
+| Structural Transition | Description |
+|---------------------|------------|
+| Creator evolution | artist → franchise creator |
+
+---
+
+## Final Creative Network Model (one-line structure)
+
+| Network Architecture | Structure |
+|---------------------|----------|
+| Ecosystem model | SM producer core + global pop collaborators + touring creative studio + luxury fashion partners + Disney franchise platform + internal JH Company creative engine |
+
+| Artist Tier Positioning | Classification |
+|----------------------|---------------|
+| Career tier | global touring soloist |
+| Corporate tier | multi-artist label founder |
+| Franchise tier | film-franchise crossover creator |
