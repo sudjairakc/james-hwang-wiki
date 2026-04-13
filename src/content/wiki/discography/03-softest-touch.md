@@ -1,51 +1,58 @@
-SOFTEST TOUCH - 1st Mini Album (11/01/2022)
-Recording and production
-SOFTEST TOUCH บันทึกเสียงระหว่างเดือนกุมภาพันธ์ 2016 ถึงธันวาคม 2019 ภายในระบบ production ของ SM Entertainment และ collaborator ต่างประเทศ โดยเป็นโซโล่มินิอัลบั้มอย่างเป็นทางการชุดแรกของ GONUNMA (James Hwang)
-อัลบั้มนี้ถูกพัฒนาในฐานะ exception case ของระบบลำดับการปล่อยโซโล่ของ SM Entertainment โดยโปรเจกต์ได้รับการ fast-track หลังจากแรงตอบรับของตลาด global ต่อผลงานสาย R&B ก่อนหน้า รวมถึงกิจกรรมผ่าน SM Station ในช่วงปี 2018–2019
-James มีบทบาทเป็น topliner, lyricist, co-producer และ concept lead ของทั้งอัลบั้ม ภายใต้การ supervision ของทีม senior producers ได้แก่ Ryan S. Jhun, Kenzie และ Yoo Young-jin เพื่อรักษา sonic consistency ตามมาตรฐานค่าย
+## SOFTEST TOUCH - 1st Mini Album (11/01/2022)
+
+### Recording and production
+
+SOFTEST TOUCH บันทึกเสียงระหว่างเดือนกุมภาพันธ์ 2016 ถึงธันวาคม 2019 ภายในระบบ production ของ SM Entertainment และ collaborator ต่างประเทศ โดยเป็นโซโล่มินิอัลบั้มอย่างเป็นทางการชุดแรกของ GONUNMA (James Hwang) <br />
+อัลบั้มนี้ถูกพัฒนาในฐานะ exception case ของระบบลำดับการปล่อยโซโล่ของ SM Entertainment โดยโปรเจกต์ได้รับการ fast-track หลังจากแรงตอบรับของตลาด global ต่อผลงานสาย R&B ก่อนหน้า รวมถึงกิจกรรมผ่าน SM Station ในช่วงปี 2018–2019 <br />
+James มีบทบาทเป็น topliner, lyricist, co-producer และ concept lead ของทั้งอัลบั้ม ภายใต้การ supervision ของทีม senior producers ได้แก่ Ryan S. Jhun, Kenzie และ Yoo Young-jin เพื่อรักษา sonic consistency ตามมาตรฐานค่าย <br />
 Executive production ดูแลโดย Lee Soo-man
 
-Music and lyrics
+### Music and lyrics
+
 ในเชิงดนตรี SOFTEST TOUCH ขยาย sonic palette จาก intimate R&B ใน LIKE I DO (2016) ไปสู่ hybrid R&B, synth funk, indie soul และ dance-pop ที่มี orientation แบบ global มากขึ้น
 เนื้อเพลงยังคงแกน thematic เดิม ได้แก่
-vulnerability ในความสัมพันธ์
-emotional intimacy
-late-night reflection
-identity negotiation ของศิลปินเดี่ยว
-อย่างไรก็ตาม งานชุดนี้แสดงพัฒนาการด้าน production scale และ rhythmic confidence มากขึ้น โดยเฉพาะในเพลงไตเติล “SOFTEST TOUCH” ซึ่งผสม groove แบบ synth funk เข้ากับ R&B phrasing สมัยใหม่
+* vulnerability ในความสัมพันธ์
+* emotional intimacy
+* late-night reflection
+* identity negotiation ของศิลปินเดี่ยว
+
+อย่างไรก็ตาม งานชุดนี้แสดงพัฒนาการด้าน production scale และ rhythmic confidence มากขึ้น โดยเฉพาะในเพลงไตเติล “SOFTEST TOUCH” ซึ่งผสม groove แบบ synth funk เข้ากับ R&B phrasing สมัยใหม่ <br />
 เพลง “YOU AIN’T GOTTA” และ “CRUSH” ถูกนำมารวมในอัลบั้มเพื่อเชื่อม narrative จากกิจกรรม SM Station ก่อนหน้า
 
-Marketing
-SOFTEST TOUCH เป็นโซโล่เดบิวต์แบบ physical + digital release อย่างเป็นทางการของ James Hwang ภายใต้ SM Entertainment
+### Marketing
+
+SOFTEST TOUCH เป็นโซโล่เดบิวต์แบบ physical + digital release อย่างเป็นทางการของ James Hwang ภายใต้ SM Entertainment <br />
 การโปรโมตประกอบด้วย
-music video สำหรับเพลงไตเติล
-live performance content
-digital campaign targeting global R&B listeners
-curated playlist placement ในตลาดเอเชียและอเมริกาเหนือ
+* music video สำหรับเพลงไตเติล
+* live performance content
+* digital campaign targeting global R&B listeners
+* curated playlist placement ในตลาดเอเชียและอเมริกาเหนือ
 อัลบั้มได้รับการนำเสนอในฐานะ
 transition project จาก idol songwriter สู่ artist-led solo identity
 และถูกวาง positioning ให้แตกต่างจาก activity ภายใน NCT 127 อย่างชัดเจน
 
-Critical reception
+### Critical reception
+
 หลังการเปิดตัว SOFTEST TOUCH ได้รับการตอบรับในเชิงบวกจากผู้ฟังสาย R&B และ K-pop global โดยเฉพาะในด้าน
-melodic authorship
-vocal restraint
-cohesive late-night atmosphere
-artistic continuity จากผลงานก่อนหน้า
+* melodic authorship
+* vocal restraint
+* cohesive late-night atmosphere
+* artistic continuity จากผลงานก่อนหน้า
 นักวิจารณ์และ community listener มองว่าอัลบั้มนี้เป็น
 formal confirmation ของ creative identity ที่เริ่มวางไว้ตั้งแต่ LIKE I DO (2016)
 และเป็นหนึ่งในโซโล่เดบิวต์ของศิลปิน SM ที่มีระดับ creative participation สูงกว่าค่าเฉลี่ยของระบบค่ายในช่วงเวลาเดียวกัน
 
-Accolades
+### Accolades
+
 แม้อัลบั้มไม่ได้ถูกวาง positioning เป็น awards-driven release แต่เพลงไตเติล “SOFTEST TOUCH” ได้รับการตอบรับดีใน streaming platform และ international playlist circulation หลังการเปิดตัว
 เพลง “LIKE I DO” (จากโปรเจกต์ก่อนหน้า) และ “CRUSH” ได้รับ renewed attention ควบคู่กับการเปิดตัวอัลบั้ม ส่งผลให้ catalog ก่อนหน้าเกิด streaming uplift อย่างต่อเนื่อง
 อัลบั้มยังถูกจัดอยู่ใน curated playlist สาย
-global R&B
-indie soul
-alternative K-R&B
-ในหลายตลาด
+* global R&B
+* indie soul
+* alternative K-R&B ในหลายตลาด
 
-Legacy
+### Legacy
+
 SOFTEST TOUCH ถือเป็นโซโล่เดบิวต์ที่ยืนยันสถานะของ James Hwang ในฐานะ songwriter-led solo artist ภายในระบบ SM Entertainment
 อัลบั้มนี้
 เชื่อม narrative จาก SM Station period (2018–2019)
@@ -53,7 +60,14 @@ SOFTEST TOUCH ถือเป็นโซโล่เดบิวต์ที่
 และสร้าง framework สำหรับงานเดี่ยวในระยะต่อมา
 ในเชิงอุตสาหกรรม อัลบั้มถูกมองว่าเป็นหนึ่งใน rare cases ของศิลปิน SM ที่มี creative control ในระดับสูงตั้งแต่ solo debut stage
 
-Executive Producer: Lee Soo-manLead Producers: Ryan S. Jhun, Kenzie, Yoo Young-jinAdditional Producers: DEEZ, dress, IMLAY, Royal Dive, MZMC, Jesse Barrera, Adrian McKinnon, Tay Jasper, Kevin ChungPrimary Artist / Creative Lead: GONUNMA (Composition, Lyrics, Co-Production, Concept Direction)Recorded: February 2016 – December 2019Label: SM EntertainmentFormat: Physical + Digital Mini AlbumGenre (Overall): R&B / Synth Funk / Dance-Pop / Indie Soul / Bedroom Pop
+**Executive Producer**: Lee Soo-man <br />
+**Lead Producers**: Ryan S. Jhun, Kenzie, Yoo Young-jin <br />
+**Additional Producers**: DEEZ, dress, IMLAY, Royal Dive, MZMC, Jesse Barrera, Adrian McKinnon, Tay Jasper, Kevin Chung <br />
+**Primary Artist / Creative Lead**: GONUNMA (Composition, Lyrics, Co-Production, Concept Direction) <br />
+**Recorded**: February 2016 – December 2019 <br />
+**Label**: SM Entertainment <br />
+**Format**: Physical + Digital Mini Album <br />
+**Genre (Overall)**: R&B / Synth Funk / Dance-Pop / Indie Soul / Bedroom Pop <br />
 
 <div class="raw-tracklist">
 Tracklist & Credits
@@ -66,33 +80,33 @@ Tracklist & Credits
 7. CRUSH (feat. Jungkook) — Alternative R&B / 90s-inspired Pop | Composed by GONUNMA, Ryan S. Jhun, DEEZ | Lyrics by GONUNMA | Arranged by Ryan S. Jhun | sunkis (19/07/2024, 3,485,878 streams)
 </div>
 
-Personnel
-Primary artist
-GONUNMA — vocals, composition, lyrics, co-production, concept direction
-Featured artist
-Jungkook — vocals (track 7)
-Executive production
-Lee Soo-man
-Lead producers
-Ryan S. Jhun
-Kenzie
-Yoo Young-jin
-Additional producers
-DEEZ
-dress
-IMLAY
-Royal Dive
-MZMC
-Jesse Barrera
-Adrian McKinnon
-Tay Jasper
-Kevin Chung
-A&R / Project supervision
-SM Entertainment Production Center
+**Personnel**  <br />
+Primary artist <br />
+GONUNMA — vocals, composition, lyrics, co-production, concept direction <br />
+Featured artist <br />
+Jungkook — vocals (track 7) <br />
+Executive production <br />
+Lee Soo-man <br />
+Lead producers <br />
+Ryan S. Jhun <br />
+Kenzie <br />
+Yoo Young-jin <br />
+Additional producers <br />
+DEEZ <br />
+dress <br />
+IMLAY <br />
+Royal Dive <br />
+MZMC <br />
+Jesse Barrera <br />
+Adrian McKinnon <br />
+Tay Jasper <br />
+Kevin Chung <br />
+A&R / Project supervision <br />
+SM Entertainment Production Center <br />
 
-Additional Notes
-- เป็นโซโล่เดบิวต์ที่ถูกมองว่า “ปล่อยศักยภาพที่ถูกจำกัดมานาน” ของ James Hwang
-- รวมเพลงจาก SM Station เพื่อเชื่อม narrative ตั้งแต่ปี 2018–2019
-- เป็นหนึ่งในเคส rare ของ SM Entertainment ที่ศิลปินมี creative control สูงตั้งแต่ debut
+#### Additional Notes
+* เป็นโซโล่เดบิวต์ที่ถูกมองว่า “ปล่อยศักยภาพที่ถูกจำกัดมานาน” ของ James Hwang
+* รวมเพลงจาก SM Station เพื่อเชื่อม narrative ตั้งแต่ปี 2018–2019
+* เป็นหนึ่งในเคส rare ของ SM Entertainment ที่ศิลปินมี creative control สูงตั้งแต่ debut
 
 
