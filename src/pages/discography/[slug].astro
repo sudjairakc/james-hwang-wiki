@@ -256,27 +256,28 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
 ---
 
 <WikiLayout title={meta.title} section="Discography">
-  <a href={`${base}discography`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+  <a href={`${base}discography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Discography
   </a>
 
   <!-- Album header -->
-  <div class="flex gap-6 items-start mb-8">
-    <div class="w-24 h-24 shrink-0 rounded-xl flex items-center justify-center text-4xl font-black"
-      style={`background-color:${meta.color}25;color:${meta.color}`}>
-      {meta.title.slice(0, 1)}
+  <div class="flex gap-5 items-start mb-8">
+    <div class="w-20 h-20 shrink-0 rounded-xl flex items-center justify-center text-3xl font-black relative overflow-hidden"
+      style={`background-color:${meta.color}20`}>
+      <div class="absolute inset-y-0 left-0 w-1.5" style={`background-color:${meta.color}`}></div>
+      <span style={`color:${meta.color}`}>{meta.title.slice(0, 1)}</span>
     </div>
-    <div>
-      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#c9a84c">Album</div>
-      <h1 class="text-4xl font-bold text-white leading-none mb-1">{meta.title}</h1>
-      <p class="text-gray-400 text-sm">{meta.subtitle} · {meta.year}</p>
+    <div class="flex-1">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>Discography</div>
+      <h1 class="text-4xl font-black text-white leading-none mb-1">{meta.title}</h1>
+      <p class="text-sm mb-3" style="color:var(--text-muted)">{meta.subtitle} · {meta.year}</p>
     </div>
   </div>
 
   <!-- Commercial Metrics Panel -->
   {m && (
-    <div class="border rounded-xl p-6 mb-8 space-y-5" style="border-color:#2a2a2a;background-color:#141414">
-      <div class="text-xs font-semibold uppercase tracking-widest" style="color:#c9a84c">Commercial Metrics</div>
+    <div class="border rounded-xl p-6 mb-8 space-y-5" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Commercial Metrics</div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>
           <div class="text-2xl font-bold text-white">{m.albumStreams}</div>
@@ -293,7 +294,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
           </div>
         )}
       </div>
-      <div class="border-t" style="border-color:#2a2a2a"></div>
+      <div class="border-t" style="border-color:var(--border)"></div>
       <div>
         <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Title Track</div>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
@@ -325,7 +326,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
           <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Key Tracks</div>
           <div class="flex flex-wrap gap-2">
             {m.keyTracks.map(t => (
-              <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs" style="background-color:#1e1e1e;border:1px solid #2a2a2a">
+              <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs" style="background-color:var(--bg-muted);border:1px solid var(--border)">
                 <span class="text-gray-300">{t.title}</span>
                 <span class="font-semibold" style={`color:${meta.color}`}>{t.streams}</span>
               </div>
@@ -343,13 +344,13 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
   {tracks.length > 0 && (
     <div class="mb-10">
       <div class="flex items-center justify-between mb-3">
-        <div class="text-xs font-semibold uppercase tracking-widest" style="color:#c9a84c">Tracklist</div>
+        <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Tracklist</div>
         <div class="text-xs text-gray-600">ref · streams</div>
       </div>
-      <div class="rounded-xl overflow-hidden" style="border:1px solid #2a2a2a">
+      <div class="rounded-xl overflow-hidden" style="border:1px solid var(--border)">
         {tracks.map((t, i) => (
           <div class={`flex items-center gap-4 px-5 py-3 group transition-colors hover:bg-white/3 ${i !== tracks.length - 1 ? 'border-b' : ''}`}
-            style="border-color:#1f1f1f">
+            style="border-color:var(--border)">
             <!-- Number -->
             <span class="text-gray-700 text-xs font-mono w-4 shrink-0 text-right">{t.num}</span>
             <!-- Title + genre -->
@@ -364,7 +365,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
                   </span>
                 )}
                 {t.isBonus && (
-                  <span class="text-xs px-1.5 py-0.5 rounded font-semibold uppercase tracking-wider" style="background:#ffffff08;color:#666;border:1px solid #333">
+                  <span class="text-xs px-1.5 py-0.5 rounded font-semibold uppercase tracking-wider" style="background:var(--bg-muted);color:var(--text-muted);border:1px solid var(--border)">
                     Bonus
                   </span>
                 )}
@@ -397,12 +398,12 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
   <!-- Styled Tracklist — DECADE disk structure -->
   {decadeDisks.length > 0 && (
     <div class="mb-10">
-      <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:#c9a84c">Track Listing</div>
+      <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Track Listing</div>
       <div class="space-y-6">
         {decadeDisks.map(disk => (
-          <div class="rounded-xl overflow-hidden" style="border:1px solid #2a2a2a">
+          <div class="rounded-xl overflow-hidden" style="border:1px solid var(--border)">
             <!-- Disk header -->
-            <div class="px-5 py-3 border-b" style={`background:${meta.color}18;border-color:#2a2a2a`}>
+            <div class="px-5 py-3 border-b" style={`background:${meta.color}18;border-color:var(--border)`}>
               <span class="text-xs font-bold uppercase tracking-widest" style={`color:${meta.color}`}>{disk.label}</span>
             </div>
             <!-- Tracks -->
@@ -413,7 +414,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
                   if (!t.isArchive) trackNum++;
                   return t.isArchive ? (
                     <div class={`flex gap-3 px-5 py-3 ${i !== disk.tracks.length - 1 ? 'border-b' : ''}`}
-                      style="background:#0f0f0f;border-color:#1f1f1f">
+                      style="background:var(--bg);border-color:var(--border)">
                       <span class="text-xs mt-0.5 shrink-0" style={`color:${meta.color}88`}>◈</span>
                       <div>
                         <div class="text-xs font-medium text-gray-500 italic">{t.title}</div>
@@ -424,7 +425,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
                     </div>
                   ) : (
                     <div class={`flex items-center gap-4 px-5 py-3 hover:bg-white/3 transition-colors ${i !== disk.tracks.length - 1 ? 'border-b' : ''}`}
-                      style="border-color:#1f1f1f">
+                      style="border-color:var(--border)">
                       <span class="text-gray-700 text-xs font-mono w-4 shrink-0 text-right">{trackNum}</span>
                       <span class="text-sm text-gray-200 flex-1">{t.title}</span>
                       {t.isNew && (
@@ -443,14 +444,54 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
     </div>
   )}
 
-  <!-- Markdown content (raw-tracklist hidden via CSS) -->
-  <div class="prose prose-invert max-w-none">
-    <Content />
+  <!-- Album background & context -->
+  <div class="border-t pt-8 mt-2" style="border-color:var(--border)">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-6" style="color:var(--gold)">Album Notes</div>
+    <div class="prose prose-invert max-w-none album-prose">
+      <Content />
+    </div>
   </div>
 </WikiLayout>
 
 <style>
-  :global(.raw-tracklist) {
-    display: none;
+  :global(.raw-tracklist) { display: none; }
+
+  /* Hide the redundant h2 album title at top of Content */
+  :global(.album-prose > h2:first-child) { display: none; }
+
+  /* Tighten up the prose for album context sections */
+  :global(.album-prose h3) {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  :global(.album-prose p) {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  :global(.album-prose ul) {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  :global(.album-prose strong) {
+    color: var(--text);
+  }
+  /* Personnel block — the plain-text credits block */
+  :global(.album-prose p:has(strong:first-child)) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    align-items: baseline;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem !important;
+  }
+  /* Code blocks (lyrics) */
+  :global(.album-prose pre) {
+    background-color: var(--bg-muted) !important;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--text-muted) !important;
   }
 </style>

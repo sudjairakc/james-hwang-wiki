@@ -3,24 +3,28 @@ import WikiLayout from '../../layouts/WikiLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 
-const films = [
+const franchises = [
   {
-    franchise: 'Shang-Chi Trilogy (MCU)',
+    href: `${base}filmography/shang-chi`,
+    franchise: 'Shang-Chi Trilogy',
+    universe: 'Marvel Cinematic Universe',
     color: '#7c5a3a',
     entries: [
-      { title: 'Shang-Chi and the Legend of the Ten Rings', year: '2021', status: 'Released' },
-      { title: 'Shang-Chi: Legacy of the Ten Rings', year: '2025', status: 'Released' },
-      { title: 'Shang-Chi: Legion Accursed', year: '2026', status: 'Upcoming' },
+      { title: 'Shang-Chi and the Legend of the Ten Rings', date: 'Sep 3, 2021', status: 'Released', note: 'MCU Phase 4 · James Hwang as Shang-Chi' },
+      { title: 'Shang-Chi: Legacy of the Ten Rings', date: 'May 2, 2025', status: 'Released', note: 'MCU Phase 5 · co-wrote screenplay' },
+      { title: 'Shang-Chi: Legion Accursed', date: 'May 1, 2026', status: 'Upcoming', note: 'MCU Phase 6 · franchise conclusion' },
     ],
   },
   {
-    franchise: 'Captain EO: RESONANCE Saga (Disney)',
+    href: `${base}filmography/resonance`,
+    franchise: 'Captain EO: RESONANCE Saga',
+    universe: 'Disney · Original Franchise',
     color: '#3a5a7c',
     entries: [
-      { title: 'Captain EO: RESONANCE', year: '2026', status: 'Upcoming' },
-      { title: 'RESONANCE: The Missing Chord', year: '2027', status: 'Upcoming' },
-      { title: 'RESONANCE II: Silent Orchestra', year: '2029', status: 'Upcoming' },
-      { title: 'RESONANCE III', year: '2030', status: 'Upcoming' },
+      { title: 'Captain EO: RESONANCE', date: 'Nov 12, 2026', status: 'Upcoming', note: 'Disney+ Original Series · EP1: Dead Frequency' },
+      { title: 'RESONANCE: The Missing Chord', date: 'Jul 4, 2027', status: 'Upcoming', note: 'Film I · The beginning of the saga' },
+      { title: 'RESONANCE II: Silent Orchestra', date: '2029 TBA', status: 'Upcoming', note: 'Film II · When the music dies, the universe follows' },
+      { title: 'RESONANCE III', date: '2030 TBA', status: 'Upcoming', note: 'Film III · The final movement' },
     ],
   },
 ];
@@ -28,53 +32,51 @@ const films = [
 
 <WikiLayout title="Filmography" section="Film & Screen">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Film & Screen</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Film & Screen</div>
     <h1 class="text-4xl font-bold text-white mb-2">Filmography</h1>
-    <p class="text-gray-400 text-sm">MCU + Disney franchise · 6 films, 1 series across 2 universes</p>
+    <p class="text-sm" style="color:var(--text-muted)">MCU + Disney franchise · 6 films · 1 series · 2 universes</p>
   </div>
 
-  <div class="space-y-8">
-    {films.map(f => (
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-1 h-6 rounded-full" style={`background-color:${f.color}`}></div>
-          <h2 class="text-base font-semibold text-white">{f.franchise}</h2>
+  <div class="flex flex-col gap-6">
+    {franchises.map(f => (
+      <a href={f.href}
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <!-- Franchise header -->
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${f.color}44;background-color:${f.color}10`}>
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${f.color}`}>{f.universe}</div>
+            <div class="text-base font-black text-white group-hover:underline" style={`text-decoration-color:${f.color}`}>{f.franchise}</div>
+          </div>
+          <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>
         </div>
-        <div class="space-y-2">
-          {f.entries.map((e, i) => (
-            <div class="flex items-center gap-4 border rounded-lg px-5 py-4" style="border-color:#2a2a2a;background-color:#141414">
-              <div class="w-8 h-8 rounded-md flex items-center justify-center text-sm font-bold shrink-0"
-                style={`background-color:${f.color}25;color:${f.color}`}>
-                {i + 1}
-              </div>
-              <div class="flex-1">
-                <div class="text-sm font-semibold text-white">{e.title}</div>
-                <div class="text-xs text-gray-500">{e.year}</div>
-              </div>
-              <span class={`text-xs px-2 py-0.5 rounded-full ${e.status === 'Released' ? 'bg-green-900/40 text-green-400' : 'bg-yellow-900/40 text-yellow-400'}`}>
+
+        <!-- Film rows -->
+        {f.entries.map((e, i, arr) => (
+          <div class="flex items-center gap-4 px-5 py-3"
+            style={`${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 60%, transparent)' : ''}`}>
+            <!-- Index number -->
+            <div class="w-6 h-6 rounded flex items-center justify-center text-xs font-bold shrink-0"
+              style={`background-color:${f.color}18;color:${f.color}`}>{i + 1}</div>
+            <!-- Title + note -->
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-semibold text-white truncate">{e.title}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{e.note}</div>
+            </div>
+            <!-- Date + status -->
+            <div class="flex items-center gap-2.5 shrink-0">
+              <span class="text-xs font-mono font-medium" style="color:var(--text-muted)">{e.date}</span>
+              <span class="text-xs px-2 py-0.5 rounded-full font-semibold"
+                style={e.status === 'Released'
+                  ? 'background-color:color-mix(in srgb,#22c55e 12%,transparent);color:#4ade80'
+                  : 'background-color:color-mix(in srgb,#facc15 10%,transparent);color:#facc15'}>
                 {e.status}
               </span>
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
+        ))}
+      </a>
     ))}
-  </div>
-
-  <div class="mt-10 grid md:grid-cols-2 gap-4">
-    <a href={`${base}filmography/shang-chi`}
-      class="border rounded-xl p-6 hover:border-gray-500 transition-all group"
-      style="border-color:#2a2a2a;background-color:#141414">
-      <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Deep Dive</div>
-      <h3 class="text-lg font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Shang-Chi Trilogy</h3>
-      <p class="text-xs text-gray-500">Full production notes, character arc, MCU crossover details</p>
-    </a>
-    <a href={`${base}filmography/resonance`}
-      class="border rounded-xl p-6 hover:border-gray-500 transition-all group"
-      style="border-color:#2a2a2a;background-color:#141414">
-      <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Deep Dive</div>
-      <h3 class="text-lg font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">RESONANCE Franchise</h3>
-      <p class="text-xs text-gray-500">Disney partnership · cinematic universe · 4-film saga</p>
-    </a>
   </div>
 </WikiLayout>

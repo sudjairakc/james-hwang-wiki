@@ -1,12 +1,199 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
-import { Content } from '../content/wiki/public-image.md';
+
+const bioFacts = [
+  { label: 'Born', val: 'June 22, 1998' },
+  { label: 'Heritage', val: 'Half-Thai / Half-Korean' },
+  { label: 'Father', val: 'Thai-Chinese · Bangkok businessman' },
+  { label: 'Mother', val: 'Korean · Feminist author' },
+  { label: 'Citizenship', val: 'Thai (single nationality)' },
+  { label: 'Languages', val: 'Thai · Korean · English' },
+  { label: 'Education', val: 'SOPA (School of Performing Arts Seoul)' },
+];
+
+const nctDynamics = [
+  {
+    topic: 'Vocal Line Distribution',
+    severity: 'medium',
+    text: 'ตั้งแต่ยุค Regular เป็นต้นมา บทบาทด้านเสียงร้องของ Kim Doyoung เพิ่มขึ้นต่อเนื่อง ขณะที่ส่วนแบ่งท่อนร้องของ Hwang ลดลง ก่อให้เกิดความตึงเครียดในระดับแฟนด้อมระหว่างทั้งสองฝ่าย',
+  },
+  {
+    topic: 'Dance Line Status',
+    severity: 'neutral',
+    text: 'จัดอยู่ในกลุ่มนักเต้นระดับแนวหน้าของวงร่วมกับ Lee Taeyong และ Mark Lee เป็นองค์ประกอบหลักของภาพลักษณ์ "performance-centered idol"',
+  },
+  {
+    topic: 'Age Hierarchy Ambiguity',
+    severity: 'low',
+    text: 'แม้จะมีอายุเท่ากับ Kim Jung-woo แต่ Mark Lee มักเรียก Hwang ว่า "พี่" ขณะที่ Jungwoo ใช้รูปแบบความสัมพันธ์แบบเพื่อนกับ Mark กลายเป็นประเด็นถกเถียงในหมู่แฟนคลับ',
+  },
+  {
+    topic: 'Contract Dispute Era Rumors',
+    severity: 'low',
+    text: 'มีข่าวลือว่าความขัดแย้งด้านสัญญาเกี่ยวข้องกับความสัมพันธ์ภายในวง ไม่มีหลักฐานยืนยัน ภายหลังถูกมองว่าเป็นส่วนหนึ่งของกระแสคาดการณ์ในช่วงที่สถานการณ์ยังไม่ชัดเจน',
+  },
+];
+
+const controversies = [
+  {
+    era: 'SM-era (2021)',
+    type: 'Dating Rumors',
+    severity: 'low',
+    names: ['Winter (aespa)', 'Karina (aespa)'],
+    note: 'ไม่มีการยืนยัน โดยทั่วไปถูกมองว่าเป็นผลจากการเป็นศิลปินร่วมสังกัดเดียวกัน',
+  },
+  {
+    era: '2022–2023',
+    type: 'Co-Star Rumor',
+    severity: 'low',
+    names: ['Ashley Liao'],
+    note: 'ร่วมงานในโปรเจกต์ภาพยนตร์ ไม่มีหลักฐานยืนยันความสัมพันธ์เชิงโรแมนติก',
+  },
+  {
+    era: '2023',
+    type: 'Media Rivalry Narrative',
+    severity: 'medium',
+    names: ['Jeon Jungkook (BTS)'],
+    note: 'สื่อนำเสนอ "parallel career trajectory" ของทั้งสองคนที่เคยเรียนที่ SOPA ร่วมกัน ก่อให้เกิดความตึงเครียดในแฟนด้อม ลดลงหลัง Jungkook เข้ารับราชการทหาร',
+  },
+  {
+    era: '2024',
+    type: 'U.S. Breakthrough-era Rumors',
+    severity: 'low',
+    names: ['Olivia Rodrigo', 'Sabrina Carpenter', 'Hunter Schafer'],
+    note: 'ระดับ tabloid speculation ทั้งหมด ไม่มีการยืนยันจากแหล่งข้อมูลทางการ',
+  },
+  {
+    era: '2024',
+    type: 'Cultural Appropriation Allegations',
+    severity: 'medium',
+    names: [],
+    note: 'ถูกวิจารณ์ว่าได้รับอิทธิพลจากวัฒนธรรมแอฟริกัน-อเมริกันมากเกินไปในช่วง ARE U STILL ไม่มีหลักฐานด้านการแต่งกายหรือสัญลักษณ์ทางวัฒนธรรม แฟนคลับชาวแอฟริกัน-อเมริกันบางส่วนกลับแสดงความเห็นบวก',
+  },
+  {
+    era: '2025',
+    type: 'Dating Rumor — HYBE sphere',
+    severity: 'low',
+    names: ['Hanni (NewJeans)'],
+    note: 'ช่วง SOUR | HONEY promotion ก่อให้เกิดข้อถกเถียงเรื่องช่วงอายุในแฟนด้อม ไม่มีหลักฐานยืนยัน',
+  },
+];
+
+const politicalItems = [
+  {
+    period: '2020–2021',
+    event: 'Political Donations',
+    text: 'ข้อมูลการบริจาคสาธารณะเปิดเผยว่า Hwang สนับสนุนทางการเงินต่อการเคลื่อนไหวทางการเมืองของเยาวชนไทยในช่วงชุมนุมเรียกร้องการปฏิรูป',
+  },
+  {
+    period: '2021',
+    event: 'Interview Position',
+    text: 'ให้สัมภาษณ์ระมัดระวังว่ามีความใกล้เคียงทางแนวคิดกับพรรคเพื่อไทย แต่หลีกเลี่ยงการแสดงจุดยืนอย่างชัดเจน อ้างว่าอาจส่งผลต่อกิจกรรมทางดนตรีระดับนานาชาติ',
+  },
+  {
+    period: '2025',
+    event: 'Absence from Thailand',
+    text: 'แทบไม่ปรากฏตัวในประเทศไทยและไม่มีกิจกรรมโปรโมตภายในประเทศ ท่ามกลางความเปลี่ยนแปลงทางการเมืองไทยต่อเนื่อง เกิดกระแสคาดการณ์เรื่องสถานะสัญชาติ ไม่มีการยืนยันอย่างเป็นทางการ',
+  },
+];
 ---
 <WikiLayout title="Public Image" section="Biography">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Biography</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Biography</div>
     <h1 class="text-4xl font-bold text-white mb-2">Public Image & Personal Background</h1>
-    <p class="text-gray-400 text-sm">Half-Thai, Half-Korean · Born June 22, 1998 · Thai citizenship</p>
+    <p class="text-sm" style="color:var(--text-muted)">Half-Thai, Half-Korean · Born June 22, 1998 · Thai citizenship</p>
   </div>
-  <div class="prose prose-invert max-w-none"><Content /></div>
+
+  <!-- Bio facts -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Personal Background</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {bioFacts.map((f, i, arr) => (
+        <div class="flex items-baseline gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-xs font-semibold uppercase tracking-widest w-28 shrink-0" style="color:var(--text-muted)">{f.label}</span>
+          <span class="text-sm text-white">{f.val}</span>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 rounded-lg border px-4 py-3 text-sm leading-relaxed" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--text-muted)">
+      บิดาและมารดาพบกันระหว่างศึกษาอยู่ในสหรัฐอเมริกา ก่อนจะแยกทางกันในช่วงที่เขายังเรียนระดับประถมศึกษา ทั้งสองฝ่ายยังคงมีบทบาทร่วมในการเลี้ยงดูบุตร พื้นฐานครอบครัวที่เป็นสากลส่งผลให้นักวิจารณ์มองว่าอิทธิพลสายวิชาการของมารดาและสายธุรกิจของบิดามีผลต่อแนวทาง artist-meets-executive ของ Hwang
+    </div>
+  </section>
+
+  <!-- NCT 127 dynamics -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Group Dynamics — NCT 127</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {nctDynamics.map(d => {
+        const borderCol = d.severity === 'medium' ? 'color-mix(in srgb, #facc15 25%, transparent)' : 'var(--border)';
+        const badgeCol = d.severity === 'medium' ? '#facc15' : d.severity === 'neutral' ? '#4ade80' : 'var(--text-muted)';
+        const badgeBg = d.severity === 'medium' ? 'color-mix(in srgb, #facc15 10%, transparent)' : d.severity === 'neutral' ? 'color-mix(in srgb, #4ade80 10%, transparent)' : 'var(--bg-muted)';
+        return (
+          <div class="rounded-lg border px-4 py-3" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{d.severity}</span>
+              <span class="text-sm font-bold text-white">{d.topic}</span>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.text}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Political engagement -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Thailand Political Engagement</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {politicalItems.map((p, i, arr) => (
+        <div class="flex gap-5 px-4 py-3" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-24">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{p.period}</span>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white mb-1">{p.event}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-2 text-xs px-1" style="color:var(--text-muted)">
+      แตกต่างจากแนวปฏิบัติของศิลปิน K-pop ส่วนใหญ่ที่มักหลีกเลี่ยงการแสดงความคิดเห็นทางการเมืองในประเทศบ้านเกิด
+    </div>
+  </section>
+
+  <!-- Controversies & rumors -->
+  <section>
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Controversies & Rumors</h2>
+    <div class="flex flex-col gap-2">
+      {controversies.map(c => {
+        const sev = c.severity;
+        const borderCol = sev === 'medium' ? 'color-mix(in srgb, #facc15 20%, transparent)' : 'var(--border)';
+        const badgeCol = sev === 'medium' ? '#facc15' : 'var(--text-muted)';
+        const badgeBg = sev === 'medium' ? 'color-mix(in srgb, #facc15 10%, transparent)' : 'var(--bg-muted)';
+        return (
+          <div class="rounded-lg border px-4 py-3 flex flex-col md:flex-row md:items-start gap-3"
+            style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="shrink-0 md:w-32">
+              <span class="text-xs font-mono px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{c.era}</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1 flex-wrap">
+                <span class="text-xs font-semibold px-2 py-0.5 rounded uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{c.severity}</span>
+                <span class="text-sm font-bold text-white">{c.type}</span>
+                {c.names.length > 0 && (
+                  <div class="flex gap-1 flex-wrap">
+                    {c.names.map(n => (
+                      <span class="text-xs px-2 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted)">{n}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{c.note}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
 </WikiLayout>

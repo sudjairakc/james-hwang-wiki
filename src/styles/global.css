@@ -10,27 +10,236 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Dark mode (default) */
+:root {
+  --bg: #0d0d0d;
+  --bg-header: #0d0d0d;
+  --bg-surface: #141414;
+  --bg-muted: #1e1e1e;
+  --border: #2a2a2a;
+  --text: #e5e5e5;
+  --text-muted: #9ca3af;
+  --text-faint: #4b5563;
+  --gold: #c9a84c;
+}
+
+/* Light mode */
+html.light {
+  --bg: #f5f5f0;
+  --bg-header: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-muted: #efefea;
+  --border: #d4d4cc;
+  --text: #1a1a1a;
+  --text-muted: #555550;
+  --text-faint: #999990;
+  --gold: #a07828;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-brand-dark);
-  color: #e5e5e5;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Prose overrides for dark theme */
+/* Prose overrides */
 .prose {
-  --tw-prose-body: #d1d5db;
-  --tw-prose-headings: #f9fafb;
-  --tw-prose-links: #c9a84c;
-  --tw-prose-bold: #f9fafb;
+  --tw-prose-body: var(--text);
+  --tw-prose-headings: var(--text);
+  --tw-prose-links: var(--gold);
+  --tw-prose-bold: var(--text);
   --tw-prose-code: #fbbf24;
-  --tw-prose-hr: #2a2a2a;
-  --tw-prose-bullets: #6b7280;
-  --tw-prose-counters: #6b7280;
-  --tw-prose-th-borders: #2a2a2a;
-  --tw-prose-td-borders: #1e1e1e;
-  --tw-prose-quotes: #9ca3af;
-  --tw-prose-quote-borders: #c9a84c;
+  --tw-prose-hr: var(--border);
+  --tw-prose-bullets: var(--text-muted);
+  --tw-prose-counters: var(--text-muted);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--bg-muted);
+  --tw-prose-quotes: var(--text-muted);
+  --tw-prose-quote-borders: var(--gold);
+}
+
+html.light .prose {
+  --tw-prose-code: #b45309;
+}
+
+/* Sidebar hover states */
+.sidebar-inactive:hover {
+  color: var(--text) !important;
+  background-color: color-mix(in srgb, var(--text) 6%, transparent);
+}
+
+/* Nav link hover */
+.nav-link:not([data-active="true"]):hover {
+  color: var(--text) !important;
+}
+
+/* Transition for theme switch */
+header, aside, footer, main {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* ─── Light mode: Tailwind gray/white overrides ─── */
+html.light .text-white { color: var(--text) !important; }
+html.light .text-gray-100 { color: var(--text) !important; }
+html.light .text-gray-200 { color: var(--text) !important; }
+html.light .text-gray-300 { color: color-mix(in srgb, var(--text) 80%, transparent) !important; }
+html.light .text-gray-400 { color: var(--text-muted) !important; }
+html.light .text-gray-500 { color: var(--text-muted) !important; }
+html.light .text-gray-600 { color: var(--text-faint) !important; }
+html.light .text-gray-700 { color: var(--text-faint) !important; }
+
+html.light .hover\:text-white:hover { color: var(--text) !important; }
+
+html.light .hover\:bg-white\/5:hover { background-color: rgba(0,0,0,0.05) !important; }
+html.light .hover\:bg-white\/3:hover { background-color: rgba(0,0,0,0.03) !important; }
+
+/* prose-invert should not invert in light mode */
+html.light .prose-invert {
+  --tw-prose-body: var(--text);
+  --tw-prose-headings: var(--text);
+  --tw-prose-links: var(--gold);
+  --tw-prose-bold: var(--text);
+  --tw-prose-code: #b45309;
+  --tw-prose-hr: var(--border);
+  --tw-prose-bullets: var(--text-muted);
+  --tw-prose-counters: var(--text-muted);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--bg-muted);
+  --tw-prose-quotes: var(--text-muted);
+  --tw-prose-quote-borders: var(--gold);
+  --tw-prose-captions: var(--text-muted);
+  --tw-prose-th-borders: var(--border);
+}
+
+/* Legal warning box */
+.legal-warning-box {
+  border-color: #c0504a;
+  background-color: color-mix(in srgb, #c0504a 10%, var(--bg-surface));
+}
+
+/* Year card hover */
+html.light .year-num {
+  color: var(--text) !important;
+}
+html.light .group:hover .year-num {
+  color: var(--gold) !important;
+}
+
+/* ─── Enhanced prose table styles ─── */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1.5rem 0;
+}
+.prose thead tr {
+  border-bottom: 1px solid var(--gold);
+}
+.prose thead th {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold) !important;
+  background-color: color-mix(in srgb, var(--gold) 8%, var(--bg-surface));
+}
+.prose tbody tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  transition: background-color 0.12s ease;
+}
+.prose tbody tr:hover {
+  background-color: color-mix(in srgb, var(--gold) 5%, transparent);
+}
+.prose tbody td {
+  padding: 0.55rem 0.9rem;
+  color: var(--text);
+  vertical-align: middle;
+}
+.prose tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Result badge helper classes — used inline in .astro files */
+.badge-win {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: color-mix(in srgb, #22c55e 15%, transparent);
+  color: #4ade80;
+  border: 1px solid color-mix(in srgb, #22c55e 30%, transparent);
+}
+html.light .badge-win {
+  background-color: color-mix(in srgb, #16a34a 12%, transparent);
+  color: #15803d;
+  border-color: color-mix(in srgb, #16a34a 25%, transparent);
+}
+.badge-nom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: color-mix(in srgb, var(--text-muted) 10%, transparent);
+  color: var(--text-muted);
+  border: 1px solid color-mix(in srgb, var(--text-muted) 20%, transparent);
+}
+
+/* ─── Section heading accent ─── */
+.prose h2 {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--gold);
+  margin-top: 2.5rem !important;
+}
+.prose h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted) !important;
+  font-weight: 600;
+  margin-top: 1.75rem !important;
+}
+
+/* ─── Stat card grid helper ─── */
+.stat-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--bg-surface);
+  transition: border-color 0.15s ease;
+}
+.stat-card:hover {
+  border-color: color-mix(in srgb, var(--gold) 40%, transparent);
+}
+.stat-card .stat-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.2;
+}
+.stat-card .stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
 }

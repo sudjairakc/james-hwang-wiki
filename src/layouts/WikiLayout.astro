@@ -39,48 +39,67 @@ const currentPath = Astro.url.pathname;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Prevent flash of wrong theme -->
+    <script is:inline>
+      (function() {
+        const t = localStorage.getItem('theme');
+        if (t === 'light') document.documentElement.classList.add('light');
+      })();
+    </script>
   </head>
-  <body class="min-h-screen flex flex-col" style="background-color:#0d0d0d">
+  <body class="min-h-screen flex flex-col" style="background-color:var(--bg)">
 
     <!-- Top bar -->
-    <header class="border-b sticky top-0 z-50" style="background-color:#0d0d0d;border-color:#2a2a2a">
+    <header class="border-b sticky top-0 z-50" style="background-color:var(--bg-header);border-color:var(--border)">
       <div class="max-w-screen-2xl mx-auto px-4 h-14 flex items-center justify-between">
         <a href={base} class="flex items-center gap-3 group">
-          <span class="text-xl font-bold tracking-tight" style="color:#c9a84c">JH</span>
-          <span class="text-sm font-semibold text-white/80 group-hover:text-white transition-colors">JamesHwangVerse</span>
+          <span class="text-xl font-bold tracking-tight" style="color:var(--gold)">JH</span>
+          <span class="text-sm font-semibold transition-colors" style="color:var(--text)">JamesHwangVerse</span>
         </a>
         <nav class="hidden md:flex items-center gap-1">
           {nav.slice(0, 6).map(item => (
             <a
               href={item.href}
-              class={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${currentPath === item.href || currentPath === item.href + '/' ? 'text-yellow-400' : 'text-gray-400 hover:text-white'}`}
-              style={currentPath === item.href || currentPath === item.href + '/' ? 'color:#c9a84c' : ''}
+              class="px-3 py-1.5 text-xs font-medium rounded-md transition-colors nav-link"
+              style={currentPath === item.href || currentPath === item.href + '/' ? 'color:var(--gold)' : 'color:var(--text-muted)'}
+              data-active={currentPath === item.href || currentPath === item.href + '/'}
             >
               {item.label}
             </a>
           ))}
         </nav>
-        <!-- Mobile menu button -->
-        <button id="menu-toggle" class="md:hidden text-gray-400 hover:text-white p-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
+        <div class="flex items-center gap-2">
+          <!-- Dark/Light toggle -->
+          <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-md transition-colors" style="color:var(--text-muted)">
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+            </svg>
+          </button>
+          <!-- Mobile menu button -->
+          <button id="menu-toggle" class="md:hidden p-2 transition-colors" style="color:var(--text-muted)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <div class="flex flex-1 max-w-screen-2xl mx-auto w-full">
       <!-- Sidebar -->
-      <aside id="sidebar" class="hidden md:flex flex-col w-56 shrink-0 border-r py-6 px-3 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto" style="border-color:#2a2a2a">
-        {section && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:#c9a84c">{section}</p>}
+      <aside id="sidebar" class="hidden md:flex flex-col w-56 shrink-0 border-r py-6 px-3 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto" style="border-color:var(--border)">
+        {section && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:var(--gold)">{section}</p>}
         <nav class="flex flex-col gap-0.5">
           {nav.map(item => {
             const isActive = currentPath === item.href || currentPath === item.href + '/';
             return (
               <a
                 href={item.href}
-                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm transition-colors ${isActive ? 'font-medium' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
-                style={isActive ? 'color:#c9a84c;background-color:#1e1e1e' : ''}
+                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm transition-colors sidebar-link ${isActive ? 'font-medium sidebar-active' : 'sidebar-inactive'}`}
+                style={isActive ? 'color:var(--gold);background-color:var(--bg-muted)' : 'color:var(--text-muted)'}
               >
                 <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
                 {item.label}
@@ -90,22 +109,22 @@ const currentPath = Astro.url.pathname;
         </nav>
 
         <div class="mt-auto pt-6 px-2">
-          <p class="text-xs text-gray-600">JamesHwangVerse Wiki</p>
-          <p class="text-xs text-gray-700">Fictional universe</p>
+          <p class="text-xs" style="color:var(--text-faint)">JamesHwangVerse Wiki</p>
+          <p class="text-xs" style="color:var(--text-faint)">Fictional universe</p>
         </div>
       </aside>
 
       <!-- Mobile sidebar overlay -->
       <div id="mobile-sidebar" class="fixed inset-0 z-40 hidden md:hidden">
         <div id="sidebar-backdrop" class="absolute inset-0 bg-black/70"></div>
-        <nav class="absolute left-0 top-14 bottom-0 w-64 border-r py-6 px-3 overflow-y-auto" style="background-color:#0d0d0d;border-color:#2a2a2a">
+        <nav class="absolute left-0 top-14 bottom-0 w-64 border-r py-6 px-3 overflow-y-auto" style="background-color:var(--bg);border-color:var(--border)">
           {nav.map(item => {
             const isActive = currentPath === item.href || currentPath === item.href + '/';
             return (
               <a
                 href={item.href}
-                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm mb-0.5 transition-colors ${isActive ? 'font-medium' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
-                style={isActive ? 'color:#c9a84c;background-color:#1e1e1e' : ''}
+                class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm mb-0.5 transition-colors sidebar-link ${isActive ? 'font-medium sidebar-active' : 'sidebar-inactive'}`}
+                style={isActive ? 'color:var(--gold);background-color:var(--bg-muted)' : 'color:var(--text-muted)'}
               >
                 <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
                 {item.label}
@@ -121,16 +140,44 @@ const currentPath = Astro.url.pathname;
       </main>
     </div>
 
-    <footer class="border-t mt-auto py-6 text-center text-xs text-gray-600" style="border-color:#2a2a2a">
+    <footer class="border-t mt-auto py-6 text-center text-xs" style="border-color:var(--border);color:var(--text-faint)">
       JamesHwangVerse — Fictional universe. All events, persons, and works are fictional.
     </footer>
 
     <script>
+      // Mobile menu
       const toggle = document.getElementById('menu-toggle');
       const sidebar = document.getElementById('mobile-sidebar');
       const backdrop = document.getElementById('sidebar-backdrop');
       toggle?.addEventListener('click', () => sidebar?.classList.toggle('hidden'));
       backdrop?.addEventListener('click', () => sidebar?.classList.add('hidden'));
+
+      // Theme toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      const iconMoon = document.getElementById('icon-moon');
+      const iconSun = document.getElementById('icon-sun');
+
+      function applyTheme(theme: string) {
+        if (theme === 'light') {
+          document.documentElement.classList.add('light');
+          iconMoon?.classList.add('hidden');
+          iconSun?.classList.remove('hidden');
+        } else {
+          document.documentElement.classList.remove('light');
+          iconMoon?.classList.remove('hidden');
+          iconSun?.classList.add('hidden');
+        }
+      }
+
+      const saved = localStorage.getItem('theme') ?? 'dark';
+      applyTheme(saved);
+
+      themeToggle?.addEventListener('click', () => {
+        const isLight = document.documentElement.classList.contains('light');
+        const next = isLight ? 'dark' : 'light';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
     </script>
   </body>
 </html>

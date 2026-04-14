@@ -1,20 +1,231 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import { Content } from '../../content/wiki/tours/decade.md';
 const base = import.meta.env.BASE_URL;
+const color = '#6e5a7c';
+
+const eraColors: Record<string, string> = {
+  'LIKE I DO': '#c9a84c',
+  'SOFTEST TOUCH': '#9b7fc8',
+  'PULSE': '#5a7c6a',
+  'ARE U STILL': '#5a7aaa',
+  'SOUR | HONEY': '#c06080',
+  'DECADE': '#888888',
+};
+
+const legs = [
+  {
+    name: 'Leg 1 — Asia',
+    period: 'January 15 – January 29, 2027',
+    shows: [
+      { date: 'Jan 15–17', city: 'Seoul', country: 'South Korea', venue: 'KSPO Dome', nights: 3 },
+      { date: 'Jan 20–21', city: 'Singapore', country: 'Singapore', venue: 'Singapore Indoor Stadium', nights: 2 },
+      { date: 'Jan 24–25', city: 'Tokyo', country: 'Japan', venue: 'Tokyo Dome', nights: 2 },
+      { date: 'Jan 27', city: 'Osaka', country: 'Japan', venue: 'Kyocera Dome', nights: 1 },
+      { date: 'Jan 28–29', city: 'Jakarta', country: 'Indonesia', venue: 'Indonesia Arena', nights: 2 },
+    ],
+  },
+  {
+    name: 'Leg 2 — Americas & Europe',
+    period: 'February 3 – February 18, 2027',
+    shows: [
+      { date: 'Feb 3–4', city: 'Los Angeles', country: 'USA', venue: 'Crypto.com Arena', nights: 2 },
+      { date: 'Feb 7–8', city: 'New York', country: 'USA', venue: 'Madison Square Garden', nights: 2 },
+      { date: 'Feb 12', city: 'Paris', country: 'France', venue: 'Accor Arena', nights: 1 },
+      { date: 'Feb 14', city: 'London', country: 'England', venue: 'The O2 Arena', nights: 1 },
+      { date: 'Feb 17–18', city: 'Berlin', country: 'Germany', venue: 'Mercedes-Benz Arena', nights: 2 },
+    ],
+  },
+];
+
+const setlist = [
+  {
+    vcr: 1, title: 'OPEN', subtitle: 'DECADE CORE',
+    songs: [
+      { n: 1, title: 'SAY', era: 'PULSE' },
+      { n: 2, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
+      { n: 3, title: 'HOW DOES IT FEEL', era: 'PULSE' },
+      { n: 4, title: 'SAVE ME', era: 'PULSE' },
+      { n: 5, title: "CAN'T LEAVE ALONE", era: 'SOUR | HONEY' },
+    ],
+  },
+  {
+    vcr: 2, title: 'SOLO IDENTITY', subtitle: 'Career retrospective',
+    songs: [
+      { n: 6, title: 'LIKE I DO (Solo Version)', era: 'LIKE I DO' },
+      { n: 7, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
+      { n: 8, title: 'CRUSH (Solo Version)', era: 'SOFTEST TOUCH' },
+      { n: 9, title: 'HONEY', era: 'SOUR | HONEY' },
+    ],
+  },
+  {
+    vcr: 3, title: 'PERFORMANCE FLOW', subtitle: 'Energy section',
+    songs: [
+      { n: 10, title: 'ALL FOR YOU', era: 'PULSE' },
+      { n: 11, title: 'BREATHE', era: 'ARE U STILL' },
+      { n: 12, title: 'SOCIAL', era: 'SOUR | HONEY' },
+    ],
+  },
+  {
+    vcr: 4, title: 'NEW ERA', subtitle: 'DECADE exclusive tracks',
+    songs: [
+      { n: 13, title: 'NEW [Title Track]', era: 'DECADE' },
+      { n: 14, title: 'NEW', era: 'DECADE' },
+      { n: 15, title: 'NEW', era: 'DECADE' },
+      { n: 16, title: 'NEW', era: 'DECADE' },
+      { n: 17, title: 'SOMETHING REAL', era: 'SOUR | HONEY' },
+    ],
+  },
+  {
+    vcr: 5, title: 'MID / R&B FLOW', subtitle: 'Groove section',
+    songs: [
+      { n: 18, title: 'TALK TO ME', era: 'PULSE' },
+      { n: 19, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+      { n: 20, title: 'NO RESERVATION', era: 'SOFTEST TOUCH' },
+      { n: 21, title: "HE'S NOT ME", era: 'SOUR | HONEY' },
+    ],
+  },
+  {
+    vcr: 6, title: 'LATE NIGHT CORE', subtitle: 'Intimacy section',
+    songs: [
+      { n: 22, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
+      { n: 23, title: 'IF I KNEW', era: 'ARE U STILL' },
+      { n: 24, title: 'CALL ME', era: 'LIKE I DO' },
+      { n: 25, title: 'COME BACK TO ME', era: 'SOUR | HONEY' },
+      { n: 26, title: 'LOVE THIS PAIN AWAY', era: 'SOUR | HONEY' },
+      { n: 27, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
+    ],
+  },
+  {
+    vcr: 7, title: 'SOUR RESOLUTION', subtitle: 'Encore',
+    songs: [
+      { n: 28, title: 'SOUR', era: 'SOUR | HONEY' },
+      { n: 29, title: 'MYSTERY LADY', era: 'SOUR | HONEY' },
+      { n: 30, title: 'TAKE YOU TONIGHT', era: 'SOUR | HONEY' },
+    ],
+  },
+];
 ---
+
 <WikiLayout title="DECADE Tour" section="Tours">
-  <a href={`${base}tours`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">← Back to Tours</a>
+  <a href={`${base}tours`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">← Back to Tours</a>
+
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#6e5a7c">Tour</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>2nd Tour · Anthology</div>
     <h1 class="text-4xl font-bold text-white mb-1">DECADE Tour</h1>
-    <p class="text-gray-400 text-sm">Jan 13 – Feb 28, 2027 · 29 songs · $74M gross</p>
-    <p class="text-gray-400 text-sm mt-4 italic">"LIKE I DO, I gave it all,<br />
-A SOFTEST TOUCH, before the fall.<br />
-Feel my PULSE, it’s running wild,<br />
-ARE YOU STILL that same old child?<br />
-SOUR turns sweet, then HONEY fades,<br />
-A DECADE lives in songs we made."</p>
+    <p class="text-sm italic mb-1" style="color:var(--text-muted)">"LIKE I DO, I gave it all, / A SOFTEST TOUCH, before the fall. / Feel my PULSE, it's running wild, / A DECADE lives in songs we made."</p>
+    <p class="text-sm" style="color:var(--text-muted)">January 13 – February 28, 2027 · 18 shows · $74M gross</p>
   </div>
-  <div class="prose prose-invert max-w-none"><Content /></div>
+
+  <!-- KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '18', label: 'Total Shows' },
+      { val: '$74M', label: 'Ticket Gross' },
+      { val: '$14M', label: 'Sponsor Revenue' },
+      { val: '~$40M', label: 'Profit Pool' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Show format -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Show Format</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2 border-b text-xs font-bold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}10;color:${color}`}>Anthology Format</div>
+      <div class="grid grid-cols-5 divide-x" style="divide-color:var(--border);background-color:var(--bg-surface)">
+        {[
+          { val: '29', label: 'Songs' },
+          { val: '1h 27m', label: 'Music' },
+          { val: '6', label: 'VCRs' },
+          { val: '5', label: 'Ments' },
+          { val: '2h 00m', label: 'Total' },
+        ].map(c => (
+          <div class="flex flex-col items-center py-3 px-2">
+            <div class="text-base font-bold text-white">{c.val}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue list -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Tour Dates</h2>
+    <div class="flex flex-col gap-4">
+      {legs.map(leg => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+            <span class="text-sm font-bold text-white">{leg.name}</span>
+            <span class="text-xs font-mono" style="color:var(--text-muted)">{leg.period}</span>
+          </div>
+          <table class="w-full" style="margin:0">
+            <tbody style="background-color:var(--bg-surface)">
+              {leg.shows.map((s, i, arr) => (
+                <tr style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+                  <td class="px-4 py-2 text-xs font-mono w-28 shrink-0" style="color:var(--text-muted)">{s.date}</td>
+                  <td class="px-4 py-2 text-sm font-semibold text-white">{s.city}
+                    {s.nights > 1 && <span class="ml-1.5 text-xs px-1.5 py-0.5 rounded font-bold" style={`background-color:${color}15;color:${color}`}>×{s.nights}</span>}
+                  </td>
+                  <td class="px-4 py-2 text-xs" style="color:var(--text-muted)">{s.country}</td>
+                  <td class="px-4 py-2 text-xs hidden md:table-cell" style="color:var(--text-muted)">{s.venue}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Era breakdown -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Era Breakdown (29 songs)</h2>
+    <div class="flex flex-wrap gap-2">
+      {Object.entries({
+        'LIKE I DO': 3, 'SOFTEST TOUCH': 4, 'PULSE': 4,
+        'ARE U STILL': 3, 'SOUR | HONEY': 7, 'DECADE': 4,
+      }).map(([era, count]) => {
+        const ec = eraColors[era] ?? color;
+        return (
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-md border" style={`border-color:${ec}30;background-color:${ec}0c`}>
+            <span class="text-xs font-bold" style={`color:${ec}`}>{era}</span>
+            <span class="text-xs font-bold px-1.5 py-0.5 rounded" style={`background-color:${ec}20;color:${ec}`}>{count}</span>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Setlist -->
+  <section>
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Setlist</h2>
+    <div class="flex flex-col gap-3">
+      {setlist.map(block => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
+            <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:${color}20;color:${color}`}>VCR {block.vcr}</span>
+            <span class="text-sm font-bold text-white">{block.title}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{block.subtitle}</span>
+          </div>
+          <div style="background-color:var(--bg-surface)">
+            {block.songs.map((s, i, arr) => {
+              const ec = eraColors[s.era] ?? color;
+              return (
+                <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
+                  <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
+                  <span class="text-sm text-white flex-1 font-medium">{s.title}</span>
+                  <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
 </WikiLayout>

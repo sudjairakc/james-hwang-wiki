@@ -1,27 +1,269 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
-import { Content } from '../content/wiki/canon.md';
+
+const identity = [
+  { label: 'Chinese Name', val: '黃志南 (Huáng Zhìnán)' },
+  { label: 'Korean Name', val: '황지남 (Hwang Ji-nam)' },
+  { label: 'Thai Name', val: 'ชัยชนะ อึ้งวณิชกุล' },
+  { label: 'Fandom', val: 'Gemzen (Gemz) · Chamois · ชามัวร์' },
+];
+
+const vocalStats = [
+  { label: 'Voice Type', val: 'Tenor' },
+  { label: 'Vocal Range', val: 'C3 – B4 / C5' },
+  { label: 'Falsetto', val: 'Up to E5' },
+];
+
+const vocalFeatures = [
+  { feat: 'Falsetto', desc: 'Smooth, light — gradually developing breathy airiness' },
+  { feat: 'Tone', desc: 'Soft and polished with added texture; not overly clean' },
+  { feat: 'Control', desc: 'Exceptional breath control + increased rhythmic timing play' },
+  { feat: 'Mid-range', desc: 'G3–E4 power core, enhanced with groove and accent' },
+  { feat: 'Versatility', desc: 'Soft → rhythmic → percussive vocal in a single performance' },
+];
+
+const vocalTechniques = [
+  { tech: 'Rhythmic Phrasing', desc: 'Groove-based lyric placement — not locked to melody grid' },
+  { tech: 'Vocal Accents', desc: 'Short percussive articulations: "uh", "ha", "tch"' },
+  { tech: 'Controlled Breathiness', desc: 'Intentional airflow texture — sexy/floating quality' },
+  { tech: 'Push-Pull Timing', desc: 'Micro timing delay/advance — like dancing with the beat' },
+  { tech: 'Emotional Sharpness', desc: 'Selective projection on specific words instead of uniform softness' },
+];
+
+const vocalRefs = [
+  { artist: 'Michael Jackson', area: 'Rhythmic phrasing · vocal accents · breath control' },
+  { artist: 'Baekhyun', area: 'Control + falsetto technique' },
+  { artist: 'Dean', area: 'R&B phrasing + groove' },
+  { artist: 'Crush', area: 'Tone warmth + musicality' },
+];
+
+const productionDNA = [
+  { elem: 'Core Genre', desc: 'Pop & R&B — accessible but high production quality' },
+  { elem: 'Rhythm Design', desc: 'Smooth rhythms with rich melodic layering' },
+  { elem: 'Arrangement', desc: 'Groove-centric — rhythm section (drums/bass) as the driver' },
+  { elem: 'Drum Philosophy', desc: 'MJ-inspired: bouncy, defined, isolated funk-pop drum patterns' },
+  { elem: 'Bass Role', desc: 'Bass-driven composition — bassline as secondary hook' },
+  { elem: 'Structure', desc: 'Call-and-response: main vocal ↔ ad-lib/chorus' },
+  { elem: 'Layering', desc: 'Minimal but impactful — chosen for sharpness and memorability' },
+  { elem: 'Percussive Vocal', desc: 'Breath / hit / ad-lib used as rhythmic instrument' },
+];
+
+const productionRefs = [
+  { producer: 'Michael Jackson', area: 'Groove · rhythm design · vocal-driven production' },
+  { producer: 'Quincy Jones', area: 'Arrangement balancing groove + musicality' },
+  { producer: 'Teddy Riley', area: 'Rhythm + swing + R&B fusion' },
+];
+
+const danceStyle = [
+  { cat: 'Primary Style', val: 'Animation / Robot / Popping / Waving' },
+  { cat: 'Secondary Style', val: 'Lite Breaking + Tricking (impact moments)' },
+  { cat: 'Freestyle Mode', val: 'Conceptual / Musical precision' },
+  { cat: 'Signature Control', val: 'Micro-isolation + glitch/stop-time + delayed hit' },
+  { cat: 'Footwork', val: 'Clean glide / slide / pivot techniques' },
+  { cat: 'Core Strength', val: 'Body control + illusion movement + sharp footwork' },
+  { cat: 'Limitation', val: 'Not power-move or heavy battle-dance oriented' },
+];
+
+const danceRefs = [
+  { artist: 'Michael Jackson', area: 'Footwork · groove · glide techniques' },
+  { artist: 'Jabbawockeez', area: 'Illusion + precision + synchronization' },
+  { artist: 'Les Twins', area: 'Groove + control + body illusion' },
+  { artist: "Poppin' John", area: 'Popping + animation control' },
+];
+
+const danceCompare = [
+  { aspect: 'Energy', taeyong: 'Explosive', mark: 'Groove', james: 'Controlled' },
+  { aspect: 'Style', taeyong: 'Expressive', mark: 'Natural', james: 'Technical Illusion' },
+  { aspect: 'Strength', taeyong: 'Facial + dynamics', mark: 'Rhythm', james: 'Precision + isolation' },
+  { aspect: 'Freestyle', taeyong: 'Artistic', mark: 'Musical', james: 'Conceptual / Experimental' },
+];
+
+const sopaFriends = [
+  { name: 'Jungkook', group: 'BTS' },
+  { name: 'Wooseok', group: 'PENTAGON' },
+  { name: 'Yeeun', group: 'CLC' },
+  { name: 'Eunseo', group: 'WJSN' },
+  { name: 'Sinb', group: 'GFRIEND' },
+  { name: 'Umji', group: 'GFRIEND' },
+];
+
+const liner98 = [
+  { name: 'Jungwoo', group: 'NCT 127' },
+  { name: 'Seungkwan', group: 'SEVENTEEN' },
+  { name: 'Hyunjin', group: 'Stray Kids' },
+  { name: 'Lee Know', group: 'Stray Kids' },
+  { name: 'Eunha', group: 'GFRIEND' },
+  { name: 'Arin', group: 'OH MY GIRL' },
+];
 ---
-<WikiLayout title="Canon" section="Reference">
+<WikiLayout title="Artist Canon" section="Reference">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Reference</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Reference</div>
     <h1 class="text-4xl font-bold text-white mb-2">Artist Canon</h1>
-    <p class="text-gray-400 text-sm">Vocal profile · Dance style · Production DNA · Friend network</p>
+    <p class="text-sm" style="color:var(--text-muted)">Vocal profile · Dance style · Production DNA · Friend network</p>
   </div>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-    {[
-      { label: 'Voice Type', value: 'Tenor' },
-      { label: 'Vocal Range', value: 'C3–B4 / C5' },
-      { label: 'Dance Style', value: 'Animation + Popping' },
-      { label: 'Fandom', value: 'Gemzen (Gemz)' },
-    ].map(s => (
-      <div class="border rounded-lg p-4 text-center" style="border-color:#2a2a2a;background-color:#141414">
-        <div class="text-sm font-bold text-white mb-1">{s.value}</div>
-        <div class="text-xs text-gray-500">{s.label}</div>
+  <!-- Quick identity -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {identity.map(f => (
+      <div class="stat-card">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{f.label}</div>
+        <div class="text-sm font-bold text-white leading-snug">{f.val}</div>
       </div>
     ))}
   </div>
 
-  <div class="prose prose-invert max-w-none"><Content /></div>
+  <!-- ── VOCAL ── -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-5" style="color:var(--gold)">Vocal Profile</h2>
+
+    <!-- Range stats -->
+    <div class="grid grid-cols-3 gap-3 mb-6">
+      {vocalStats.map(s => (
+        <div class="stat-card text-center">
+          <div class="stat-val text-xl">{s.val}</div>
+          <div class="stat-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Features -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Key Features</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {vocalFeatures.map((f, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{f.feat}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{f.desc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <!-- Techniques -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Vocal Style Adjustments</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {vocalTechniques.map((t, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{t.tech}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{t.desc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocal refs -->
+    <div class="mt-4">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Reference Artists</div>
+      <div class="flex flex-wrap gap-2">
+        {vocalRefs.map(r => (
+          <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <span class="text-sm font-bold text-white">{r.artist}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTION ── -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-5" style="color:var(--gold)">Production DNA</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      {productionDNA.map(p => (
+        <div class="flex gap-3 px-4 py-3 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-xs font-bold w-28 shrink-0 pt-0.5 leading-snug" style="color:var(--gold)">{p.elem}</span>
+          <span class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.desc}</span>
+        </div>
+      ))}
+    </div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Producer References</div>
+    <div class="flex flex-wrap gap-2">
+      {productionRefs.map(r => (
+        <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-bold text-white">{r.producer}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── DANCE ── -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-5" style="color:var(--gold)">Dance — Precision Street Hybrid</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <!-- Style grid -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Style Breakdown</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {danceStyle.map((d, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style={`color:${d.cat === 'Limitation' ? '#f87171' : 'var(--gold)'}`}>{d.cat}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{d.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <!-- Compare table -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">vs. NCT 127 Contemporaries</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="grid grid-cols-4 px-3 py-2" style="background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface));border-bottom:1px solid var(--gold)">
+            {['Aspect', 'Taeyong', 'Mark', 'James'].map(h => (
+              <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">{h}</div>
+            ))}
+          </div>
+          {danceCompare.map((row, i, arr) => (
+            <div class="grid grid-cols-4 px-3 py-2.5 text-sm" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <div class="text-xs font-semibold" style="color:var(--text-muted)">{row.aspect}</div>
+              <div style="color:var(--text-muted)">{row.taeyong}</div>
+              <div style="color:var(--text-muted)">{row.mark}</div>
+              <div class="font-semibold text-white">{row.james}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <!-- Dance refs -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Reference Artists</div>
+    <div class="flex flex-wrap gap-2">
+      {danceRefs.map(r => (
+        <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-bold text-white">{r.artist}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── FRIENDS ── -->
+  <section>
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-5" style="color:var(--gold)">Friends & Network</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">SOPA Classmates (Graduated 2017)</div>
+        <div class="flex flex-wrap gap-2">
+          {sopaFriends.map(f => (
+            <div class="px-3 py-2 rounded-lg border text-center min-w-20" style="border-color:var(--border);background-color:var(--bg-surface)">
+              <div class="text-sm font-bold text-white">{f.name}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{f.group}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">98-Liner Friends</div>
+        <div class="flex flex-wrap gap-2">
+          {liner98.map(f => (
+            <div class="px-3 py-2 rounded-lg border text-center min-w-20" style="border-color:var(--border);background-color:var(--bg-surface)">
+              <div class="text-sm font-bold text-white">{f.name}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{f.group}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
 </WikiLayout>

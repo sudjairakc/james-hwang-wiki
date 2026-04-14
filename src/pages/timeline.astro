@@ -3,10 +3,22 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 // @ts-ignore
 import rawContent from '../content/wiki/timeline.md?raw';
 
-// ── Parser ────────────────────────────────────────────────────────────────────
+// ── Types ─────────────────────────────────────────────────────────────────────
 interface Event { text: string; subs: string[] }
 interface Month { label: string; shortLabel: string; events: Event[] }
-interface YearEntry { year: string; era: string; eraSlug: string; age: string; months: Month[] }
+interface YearEntry {
+  year: string; era: string; eraSlug: string; age: string;
+  months: Month[]; totalEvents: number;
+}
+
+const ERA_COLORS: Record<string, string> = {
+  'pre-debut':  '#6b7280',
+  'rookies':    '#3b82f6',
+  'nct127':     '#ef4444',
+  'shangchi':   '#a855f7',
+  'solo':       '#c9a84c',
+  'other':      '#888888',
+};
 
 function eraSlugOf(era: string) {
   if (era.includes('PRE DEBUT'))   return 'pre-debut';
@@ -23,7 +35,6 @@ function monthName(shortLabel: string) {
     '05': 'พ.ค.', '06': 'มิ.ย.', '07': 'ก.ค.', '08': 'ส.ค.',
     '09': 'ก.ย.', '10': 'ต.ค.', '11': 'พ.ย.', '12': 'ธ.ค.',
   };
-  // Handle ranges like "08–09" → "ส.ค.–ก.ย."
   const rangeMatch = shortLabel.match(/^(\d{2})[–\-](\d{2})$/);
   if (rangeMatch) {
     return (map[rangeMatch[1]] || rangeMatch[1]) + '–' + (map[rangeMatch[2]] || rangeMatch[2]);
@@ -42,13 +53,11 @@ function parseTimeline(raw: string): YearEntry[] {
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // Era header — all-caps line containing "ERA"
     if (/ERA/.test(trimmed) && /^[A-Za-zА-Яа-я0-9\s\(\)\-–]+$/.test(trimmed)) {
       currentEra = trimmed;
       continue;
     }
 
-    // Year header: "2013 (อายุ 15 ปี)" or "2024 (26 Years old)"
     const yearMatch = trimmed.match(/^(\d{4})\s*\((.+?)\)\s*$/);
     if (yearMatch) {
       currentYear = {
@@ -57,42 +66,34 @@ function parseTimeline(raw: string): YearEntry[] {
         eraSlug: eraSlugOf(currentEra),
         age: yearMatch[2].trim(),
         months: [],
+        totalEvents: 0,
       };
       currentMonth = null;
       years.push(currentYear);
       continue;
     }
 
-    // Month header: "01/2023" or "08–09/2023" or "05–06/2023"
     const monthMatch = trimmed.match(/^(\d{1,2}(?:[–\-]\d{1,2})?)\/(\d{4})$/);
     if (monthMatch && currentYear) {
-      currentMonth = {
-        label: trimmed,
-        shortLabel: monthName(monthMatch[1]),
-        events: [],
-      };
+      currentMonth = { label: trimmed, shortLabel: monthName(monthMatch[1]), events: [] };
       currentYear.months.push(currentMonth);
       continue;
     }
 
-    // Sub-bullet (indented ≥ 4 spaces + *)
     if (/^\s{4,}\*/.test(line) && currentYear) {
       const text = trimmed.replace(/^\*\s*/, '');
-      const target = currentMonth ? currentMonth.events : null;
-      if (target && target.length > 0) {
-        target[target.length - 1].subs.push(text);
+      if (currentMonth && currentMonth.events.length > 0) {
+        currentMonth.events[currentMonth.events.length - 1].subs.push(text);
       }
       continue;
     }
 
-    // Top-level bullet
     if (trimmed.startsWith('*') && currentYear) {
       const text = trimmed.replace(/^\*\s*/, '');
       const event: Event = { text, subs: [] };
       if (currentMonth) {
         currentMonth.events.push(event);
       } else {
-        // No month header yet — create implicit "ทั้งปี" group lazily
         if (currentYear.months.length === 0 || currentYear.months[0].shortLabel !== 'ทั้งปี') {
           currentMonth = { label: currentYear.year, shortLabel: 'ทั้งปี', events: [] };
           currentYear.months.unshift(currentMonth);
@@ -101,8 +102,14 @@ function parseTimeline(raw: string): YearEntry[] {
         }
         currentMonth.events.push(event);
       }
+      currentYear.totalEvents++;
       continue;
     }
+  }
+
+  // Recount totalEvents properly (count all nested events too)
+  for (const y of years) {
+    y.totalEvents = y.months.reduce((s, m) => s + m.events.length, 0);
   }
 
   return years;
@@ -116,73 +123,136 @@ for (const y of years) {
   if (!erasOrdered.includes(y.era)) erasOrdered.push(y.era);
 }
 
-// Serialise to JSON for client-side JS
+// Era segments for timeline bar
+const eraSegments: { era: string; slug: string; years: string[]; color: string }[] = [];
+for (const y of years) {
+  const last = eraSegments[eraSegments.length - 1];
+  if (last && last.slug === y.eraSlug) {
+    last.years.push(y.year);
+  } else {
+    eraSegments.push({ era: y.era.replace(/\s*\(.*\)/, ''), slug: y.eraSlug, years: [y.year], color: ERA_COLORS[y.eraSlug] ?? '#888' });
+  }
+}
+
+const totalEvents = years.reduce((s, y) => s + y.totalEvents, 0);
+
 const yearsJSON = JSON.stringify(years);
+const eraColorsJSON = JSON.stringify(ERA_COLORS);
 ---
 
 <WikiLayout title="Career Timeline" section="Biography">
 
   <!-- Page header -->
-  <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Biography</div>
+  <div class="mb-6">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Biography</div>
     <h1 class="text-4xl font-bold text-white mb-2">Career Timeline</h1>
-    <p class="text-gray-400 text-sm">1998–present · SM Rookies → NCT 127 → Independent artist</p>
+    <p class="text-sm" style="color:var(--text-muted)">1998–present · SM Rookies → NCT 127 → Independent artist</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+    {[
+      { val: String(years.length), label: 'Years Covered' },
+      { val: String(totalEvents), label: 'Events' },
+      { val: String(erasOrdered.length), label: 'Career Eras' },
+      { val: `${years[0].year}–${years[years.length - 1].year}`, label: 'Span' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Era timeline bar -->
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--gold)">Career Eras</div>
+    <div class="flex rounded-lg overflow-hidden h-8 mb-2">
+      {eraSegments.map(seg => (
+        <div
+          class="flex items-center justify-center text-xs font-bold overflow-hidden transition-all"
+          style={`flex:${seg.years.length};background-color:${seg.color}22;border-right:1px solid var(--bg);min-width:0`}
+          title={`${seg.era} · ${seg.years[0]}–${seg.years[seg.years.length - 1]}`}>
+          <span class="truncate px-1 hidden sm:block" style={`color:${seg.color}`}>{seg.era}</span>
+        </div>
+      ))}
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {eraSegments.map(seg => (
+        <div class="flex items-center gap-1.5">
+          <div class="w-2 h-2 rounded-full shrink-0" style={`background-color:${seg.color}`}></div>
+          <span class="text-xs" style={`color:${seg.color}`}>{seg.era}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{seg.years[0]}–{seg.years[seg.years.length - 1]}</span>
+        </div>
+      ))}
+    </div>
   </div>
 
   <!-- Era filter pills -->
-  <div class="flex flex-wrap gap-2 mb-8" id="era-filters">
-    <button
-      data-era="all"
-      class="era-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all active-pill"
-      style="border-color:#c9a84c;color:#c9a84c;background:#1e1e1e"
-    >ทั้งหมด</button>
-    {erasOrdered.map(era => (
-      <button
-        data-era={eraSlugOf(era)}
-        class="era-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all"
-        style="border-color:#3a3a3a;color:#888"
-      >{era.replace(/\s*\(.*\)/, '')}</button>
-    ))}
+  <div class="flex flex-wrap gap-2 mb-6" id="era-filters">
+    <button data-era="all" class="era-pill active-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all">
+      ทั้งหมด
+    </button>
+    {erasOrdered.map(era => {
+      const slug = eraSlugOf(era);
+      const c = ERA_COLORS[slug] ?? '#888';
+      return (
+        <button
+          data-era={slug}
+          data-color={c}
+          class="era-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all"
+          style="border-color:var(--border);color:var(--text-muted)">
+          {era.replace(/\s*\(.*\)/, '')}
+        </button>
+      );
+    })}
   </div>
 
   <!-- Year grid -->
-  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 mb-10" id="year-grid">
-    {years.map(y => (
-      <button
-        data-year={y.year}
-        data-era={y.eraSlug}
-        class="year-card group relative flex flex-col items-center justify-center rounded-xl border p-3 transition-all cursor-pointer text-center"
-        style="border-color:#2a2a2a;background:#111"
-      >
-        <span class="year-num text-xl font-bold text-white group-hover:text-yellow-400 transition-colors" style="">{y.year}</span>
-        <span class="text-xs mt-0.5 truncate max-w-full" style="color:#666">{y.age}</span>
-        <span class={`era-dot mt-1.5 w-1.5 h-1.5 rounded-full era-dot-${y.eraSlug}`}></span>
-      </button>
-    ))}
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 mb-10" id="year-grid">
+    {years.map(y => {
+      const c = ERA_COLORS[y.eraSlug] ?? '#888';
+      return (
+        <button
+          data-year={y.year}
+          data-era={y.eraSlug}
+          data-color={c}
+          class="year-card group relative flex flex-col items-center justify-center rounded-xl border p-3 transition-all cursor-pointer text-center overflow-hidden"
+          style={`border-color:var(--border);background:var(--bg-surface);border-left:3px solid ${c}55`}>
+          <span class="year-num text-lg font-bold transition-colors" style="color:var(--text)">{y.year}</span>
+          <span class="text-xs truncate max-w-full" style="color:var(--text-muted)">{y.age}</span>
+          {y.totalEvents > 0 && (
+            <span class="event-count text-xs font-bold mt-1 px-1.5 py-0.5 rounded" style={`background-color:${c}18;color:${c}`}>
+              {y.totalEvents}
+            </span>
+          )}
+        </button>
+      );
+    })}
   </div>
 
-  <!-- Detail panel (hidden until year selected) -->
+  <!-- Detail panel -->
   <div id="detail-panel" class="hidden">
 
     <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 mb-5 text-sm text-gray-500">
-      <button id="back-btn" class="hover:text-white transition-colors flex items-center gap-1">
+    <div class="flex items-center gap-2 mb-5 text-sm" style="color:var(--text-muted)">
+      <button id="back-btn" class="flex items-center gap-1 transition-colors hover-text-main">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
         </svg>
         ย้อนกลับ
       </button>
       <span>/</span>
-      <span id="breadcrumb-year" class="font-semibold text-white"></span>
-      <span id="breadcrumb-era" class="text-xs px-2 py-0.5 rounded-full" style="background:#1e1e1e;color:#888"></span>
+      <span id="breadcrumb-year" class="font-semibold" style="color:var(--text)"></span>
+      <span id="breadcrumb-era" class="text-xs px-2 py-0.5 rounded-full" style="background:var(--bg-muted);color:var(--text-muted)"></span>
     </div>
 
     <!-- Month buttons -->
-    <div id="month-buttons" class="flex flex-wrap gap-2 mb-6"></div>
+    <div id="month-buttons" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 mb-6"></div>
 
     <!-- Events -->
-    <div id="events-container" class="border rounded-xl p-5 min-h-32" style="border-color:#2a2a2a;background:#111">
-      <p class="text-gray-500 text-sm">เลือกเดือนเพื่อดูเหตุการณ์</p>
+    <div id="events-container" class="rounded-xl border overflow-hidden min-h-32" style="border-color:var(--border);background:var(--bg-surface)">
+      <p class="text-sm p-5" style="color:var(--text-muted)">เลือกเดือนเพื่อดูเหตุการณ์</p>
     </div>
 
   </div>
@@ -191,55 +261,176 @@ const yearsJSON = JSON.stringify(years);
 
 <style>
   /* Era dot colours */
-  .era-dot-pre-debut  { background: #555; }
+  .era-dot-pre-debut  { background: #6b7280; }
   .era-dot-rookies    { background: #3b82f6; }
   .era-dot-nct127     { background: #ef4444; }
   .era-dot-shangchi   { background: #a855f7; }
   .era-dot-solo       { background: #c9a84c; }
   .era-dot-other      { background: #888; }
 
-  /* Year card active state */
+  /* Year card selected */
   .year-card.selected {
-    border-color: #c9a84c !important;
-    background: #1a1500 !important;
+    background-color: color-mix(in srgb, var(--gold) 8%, var(--bg-surface)) !important;
+    border-color: var(--gold) !important;
   }
   .year-card.selected .year-num {
-    color: #c9a84c !important;
+    color: var(--gold) !important;
   }
 
-  /* Month pill active */
+  /* Month card button */
+  .month-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    transition: all 0.15s ease;
+    cursor: pointer;
+    text-align: center;
+    min-height: 3.5rem;
+  }
+  .month-btn .month-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    line-height: 1;
+    transition: color 0.15s ease;
+  }
+  .month-btn .month-count {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-faint);
+    line-height: 1;
+    transition: color 0.15s ease;
+  }
+  .month-btn:hover {
+    border-color: color-mix(in srgb, var(--gold) 50%, transparent);
+    background: color-mix(in srgb, var(--gold) 5%, var(--bg));
+  }
+  .month-btn:hover .month-label,
+  .month-btn:hover .month-count {
+    color: var(--text);
+  }
   .month-btn.active {
-    background: #c9a84c !important;
+    background: var(--gold) !important;
+    border-color: var(--gold) !important;
+  }
+  .month-btn.active .month-label {
     color: #000 !important;
-    border-color: #c9a84c !important;
+    font-weight: 800;
+  }
+  .month-btn.active .month-count {
+    color: rgba(0,0,0,0.6) !important;
   }
 
-  /* Era pill active */
+  /* Era pill */
+  .era-pill {
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
   .era-pill.active-pill {
-    border-color: #c9a84c !important;
-    color: #c9a84c !important;
-    background: #1e1e1e !important;
+    border-color: var(--gold) !important;
+    color: var(--gold) !important;
+    background: color-mix(in srgb, var(--gold) 10%, var(--bg-surface)) !important;
   }
 
-  /* Fade hidden */
+  /* Hidden */
   .year-card.era-hidden { display: none; }
 
-  /* Event list */
-  .event-item { border-left: 2px solid #2a2a2a; }
-  .event-item:hover { border-left-color: #c9a84c; }
+  /* Event timeline items */
+  .event-row {
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+  .event-row:not(:last-child) .event-spine {
+    position: absolute;
+    left: 0.6rem;
+    top: 1.5rem;
+    bottom: -0.5rem;
+    width: 1px;
+    background: var(--border);
+  }
+  .event-dot {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--bg-surface);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    position: relative;
+    z-index: 1;
+  }
+  .event-row:hover .event-dot {
+    border-color: var(--gold);
+    background: color-mix(in srgb, var(--gold) 15%, var(--bg-surface));
+  }
+  .event-body {
+    flex: 1;
+    padding-left: 0.75rem;
+    padding-bottom: 1rem;
+  }
+  .event-date-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: 0.04em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.25rem;
+    background: color-mix(in srgb, var(--gold) 12%, transparent);
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .event-text {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--text);
+  }
+  .event-sub-list {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+    border-left: 1px solid var(--border);
+    padding-left: 0.75rem;
+    margin-left: 0.25rem;
+  }
+  .event-sub-list li {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    padding: 0.15rem 0;
+  }
+  .event-sub-list li::before {
+    content: '·';
+    margin-right: 0.4rem;
+    color: var(--text-faint);
+  }
+
+  /* Back button hover */
+  .hover-text-main:hover {
+    color: var(--text) !important;
+  }
 </style>
 
-<script is:inline define:vars={{ yearsJSON }}>
+<script is:inline define:vars={{ yearsJSON, eraColorsJSON }}>
   const years = JSON.parse(yearsJSON);
+  const ERA_COLORS = JSON.parse(eraColorsJSON);
 
-  const yearGrid     = document.getElementById('year-grid');
-  const detailPanel  = document.getElementById('detail-panel');
-  const backBtn      = document.getElementById('back-btn');
-  const monthButtons = document.getElementById('month-buttons');
+  const yearGrid        = document.getElementById('year-grid');
+  const detailPanel     = document.getElementById('detail-panel');
+  const backBtn         = document.getElementById('back-btn');
+  const monthButtons    = document.getElementById('month-buttons');
   const eventsContainer = document.getElementById('events-container');
   const breadcrumbYear  = document.getElementById('breadcrumb-year');
   const breadcrumbEra   = document.getElementById('breadcrumb-era');
-  const eraFilters   = document.getElementById('era-filters');
+  const eraFilters      = document.getElementById('era-filters');
 
   let activeYear = null;
 
@@ -249,19 +440,14 @@ const yearsJSON = JSON.stringify(years);
     if (!btn) return;
     const era = btn.dataset.era;
 
-    // Update pill styles
     document.querySelectorAll('.era-pill').forEach(p => {
       p.classList.remove('active-pill');
-      p.style.borderColor = '#3a3a3a';
-      p.style.color = '#888';
+      p.style.borderColor = '';
+      p.style.color = '';
       p.style.background = '';
     });
     btn.classList.add('active-pill');
-    btn.style.borderColor = '#c9a84c';
-    btn.style.color = '#c9a84c';
-    btn.style.background = '#1e1e1e';
 
-    // Filter year cards
     document.querySelectorAll('.year-card').forEach(card => {
       if (era === 'all' || card.dataset.era === era) {
         card.classList.remove('era-hidden');
@@ -270,7 +456,6 @@ const yearsJSON = JSON.stringify(years);
       }
     });
 
-    // Close detail if active year is filtered out
     if (activeYear && era !== 'all' && activeYear.eraSlug !== era) {
       closeDetail();
     }
@@ -284,48 +469,50 @@ const yearsJSON = JSON.stringify(years);
     const yearData = years.find(y => y.year === yearStr);
     if (!yearData) return;
 
-    // Deselect previous
-    document.querySelectorAll('.year-card.selected').forEach(c => c.classList.remove('selected'));
+    document.querySelectorAll('.year-card.selected').forEach(c => {
+      c.classList.remove('selected');
+      c.style.removeProperty('background-color');
+      c.style.removeProperty('border-color');
+    });
 
-    // If clicking same year, toggle close
     if (activeYear && activeYear.year === yearStr) {
       closeDetail();
       return;
     }
 
     card.classList.add('selected');
-    openYear(yearData);
-
-    // Scroll detail into view smoothly
+    openYear(yearData, card.dataset.color);
     detailPanel?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
 
-  function openYear(yearData) {
+  function openYear(yearData, color) {
     activeYear = yearData;
+    const eraColor = color || ERA_COLORS[yearData.eraSlug] || '#888';
 
-    // Breadcrumb
     breadcrumbYear.textContent = yearData.year + ' — ' + yearData.age;
     breadcrumbEra.textContent  = yearData.era.replace(/\s*\(.*\)/, '');
+    breadcrumbEra.style.color  = eraColor;
+    breadcrumbEra.style.backgroundColor = eraColor + '18';
 
-    // Month buttons
     monthButtons.innerHTML = '';
     yearData.months.forEach((m, idx) => {
       const btn = document.createElement('button');
-      btn.className = 'month-btn px-3 py-1.5 rounded-lg border text-sm font-medium transition-all';
-      btn.style.cssText = 'border-color:#3a3a3a;color:#aaa;background:#111';
-      btn.textContent = m.shortLabel;
+      btn.className = 'month-btn';
       btn.dataset.idx = idx;
+
+      const labelEl = document.createElement('span');
+      labelEl.className = 'month-label';
+      labelEl.textContent = m.shortLabel;
+
+      btn.appendChild(labelEl);
       btn.addEventListener('click', () => selectMonth(yearData, m, btn));
       monthButtons.appendChild(btn);
     });
 
-    // Reset events
-    eventsContainer.innerHTML = '<p class="text-gray-500 text-sm">เลือกเดือนเพื่อดูเหตุการณ์</p>';
-
-    // Show panel
+    eventsContainer.innerHTML = '<p class="text-sm p-5" style="color:var(--text-muted)">เลือกเดือนเพื่อดูเหตุการณ์</p>';
     detailPanel.classList.remove('hidden');
 
-    // Auto-select if only one month
+    // Auto-select single month
     if (yearData.months.length === 1) {
       const onlyBtn = monthButtons.querySelector('.month-btn');
       if (onlyBtn) selectMonth(yearData, yearData.months[0], onlyBtn);
@@ -333,45 +520,56 @@ const yearsJSON = JSON.stringify(years);
   }
 
   function selectMonth(_yearData, monthData, btn) {
-
-    // Update button styles
-    monthButtons.querySelectorAll('.month-btn').forEach(b => {
-      b.classList.remove('active');
-      b.style.borderColor = '#3a3a3a';
-      b.style.color = '#aaa';
-      b.style.background = '#111';
-    });
+    monthButtons.querySelectorAll('.month-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-
-    // Render events
     renderEvents(monthData.events);
+  }
+
+  function extractDatePrefix(text) {
+    // Match patterns like "16/12/2013:", "01/09/2020:", "24/08/2014:" at start
+    const m = text.match(/^(\d{1,2}\/\d{1,2}\/\d{4})[:\s]/);
+    if (m) return { date: m[1], rest: text.slice(m[0].length).trim() };
+    // Match "dd/mm/yyyy – dd/mm/yyyy"
+    const m2 = text.match(/^(\d{1,2}\/\d{1,2}\/\d{4}\s*[–\-]\s*\d{1,2}\/\d{1,2}\/\d{4})[:\s]/);
+    if (m2) return { date: m2[1], rest: text.slice(m2[0].length).trim() };
+    return null;
   }
 
   function renderEvents(events) {
     if (!events || events.length === 0) {
-      eventsContainer.innerHTML = '<p class="text-gray-500 text-sm">ไม่มีข้อมูลในช่วงนี้</p>';
+      eventsContainer.innerHTML = '<p class="text-sm p-5" style="color:var(--text-muted)">ไม่มีข้อมูลในช่วงนี้</p>';
       return;
     }
 
-    const html = events.map(ev => {
-      const subs = ev.subs.length
-        ? `<ul class="mt-2 space-y-1.5 pl-3 border-l" style="border-color:#333">
-            ${ev.subs.map(s => `<li class="text-sm" style="color:#999">${escHtml(s)}</li>`).join('')}
-           </ul>`
+    const rows = events.map((ev, i) => {
+      const parsed = extractDatePrefix(ev.text);
+      const dateTag = parsed
+        ? `<span class="event-date-tag">${escHtml(parsed.date)}</span><br>`
         : '';
+      const bodyText = parsed ? parsed.rest : ev.text;
+
+      const subs = ev.subs.length
+        ? `<ul class="event-sub-list">${ev.subs.map(s => `<li>${escHtml(s)}</li>`).join('')}</ul>`
+        : '';
+
+      const isLast = i === events.length - 1;
       return `
-        <div class="event-item pl-3 py-2 rounded-r transition-colors mb-2">
-          <p class="text-sm leading-relaxed" style="color:#d1d5db">${escHtml(ev.text)}</p>
-          ${subs}
+        <div class="event-row relative" style="${isLast ? '' : 'padding-bottom:0'}">
+          ${!isLast ? '<div class="event-spine"></div>' : ''}
+          <div class="event-dot"></div>
+          <div class="event-body">
+            ${dateTag}
+            <p class="event-text">${escHtml(bodyText)}</p>
+            ${subs}
+          </div>
         </div>`;
     }).join('');
 
-    eventsContainer.innerHTML = html;
+    eventsContainer.innerHTML = `<div class="p-5">${rows}</div>`;
   }
 
   function closeDetail() {
     activeYear = null;
-    activeMonth = null;
     detailPanel.classList.add('hidden');
     document.querySelectorAll('.year-card.selected').forEach(c => c.classList.remove('selected'));
   }

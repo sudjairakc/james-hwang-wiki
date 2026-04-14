@@ -9,153 +9,224 @@ const albums = [
     title: 'LIKE I DO',
     subtitle: 'GONUNMA',
     year: '2016',
-    type: 'Mini Album (SM experimental)',
+    date: 'Nov 11, 2016',
+    type: 'Mini Album',
+    label: 'SM Entertainment',
     tracks: 7,
-    streams: '210M+',
-    peak: 'Top 40 (resurgence)',
+    streams: 210,
+    streamLabel: '210M+',
+    peak: 'Top 40 (resurgence 2022)',
     era: 'SM Era',
-    color: '#7c6f5a',
-    highlight: 'Creative blueprint phase · Rediscovered via TikTok 2023',
+    color: '#c9a84c',
+    highlight: 'Creative blueprint · GONUNMA alter ego debut · TikTok resurgence 2023–24',
+    titleTrack: 'LIKE I DO (feat. Mark Lee)',
+    genres: ['Contemporary R&B', 'Alt R&B', 'Indie Pop', 'Soul Pop'],
   },
   {
     slug: 'softest-touch',
     title: 'SOFTEST TOUCH',
     subtitle: '1st Mini Album',
     year: '2022',
-    type: '1st Official Mini Album',
+    date: 'Sep 16, 2022',
+    type: '1st Mini Album',
+    label: 'SM Entertainment',
     tracks: 7,
-    streams: '320M+',
+    streams: 320,
+    streamLabel: '320M+',
     peak: 'Melon #18 · Circle Top 5',
     era: 'SM Solo',
-    color: '#5a6e7c',
-    highlight: 'Official songwriter-led solo identity confirmed',
+    color: '#9b7fc8',
+    highlight: 'Official songwriter-led solo identity · SM era debut',
+    titleTrack: 'SOFTEST TOUCH',
+    genres: ['R&B', 'Indie Pop', 'Soul'],
   },
   {
     slug: 'pulse-era',
     title: 'PULSE',
     subtitle: '1st Studio Album',
     year: '2023',
-    type: '1st Studio Album (Independent)',
+    date: 'Jul 21, 2023',
+    type: '1st Studio Album',
+    label: 'JH Company / Warner Music Korea',
     tracks: 10,
-    streams: '540M+',
+    streams: 540,
+    streamLabel: '540M+',
     peak: 'Melon #7 · Circle Top 15',
     era: 'Independent',
     color: '#5a7c6a',
-    highlight: 'Global breakout · Grammy eligible · SAY feat. keshi 210M+',
+    highlight: 'First independent release · Global R&B breakout · SAY feat. keshi 210M+',
+    titleTrack: 'HOW DOES IT FEEL',
+    genres: ['Contemporary R&B', 'Synth Funk', 'Dance-Pop'],
   },
   {
     slug: 'are-u-still',
     title: 'ARE U STILL',
     subtitle: '2nd Studio Album',
     year: '2024',
+    date: 'May 3, 2024',
     type: '2nd Studio Album',
+    label: 'JH Company / Warner Music Korea',
     tracks: 11,
-    streams: '820M+',
+    streams: 820,
+    streamLabel: '820M+',
     peak: 'Melon #2 · Circle Top 5',
     era: 'Grammy Era',
-    color: '#7c5a6e',
-    highlight: 'Grammy wins: Best Prog. R&B + Best R&B Performance',
+    color: '#5a7aaa',
+    highlight: 'Grammy wins: Best Progressive R&B + Best R&B Performance · Neo-soul pivot',
+    titleTrack: 'TEARS ON A PRETTY FACE',
+    genres: ['Neo-Soul', 'R&B', 'Funk'],
   },
   {
     slug: 'sour-honey',
-    title: 'SOUR|HONEY',
+    title: 'SOUR | HONEY',
     subtitle: '3rd Studio Album',
     year: '2025',
+    date: 'Feb 14, 2025',
     type: '3rd Studio Album',
+    label: 'JH Company / Warner Music Korea',
     tracks: 11,
-    streams: '640M+',
-    peak: 'Top 10 Korea',
+    streams: 640,
+    streamLabel: '640M+',
+    peak: 'Melon #8 · Circle Top 20',
     era: 'Post-Grammy',
-    color: '#7c7a5a',
-    highlight: 'Duality concept · CAN\'T LEAVE ALONE feat. Pharrell 260M+',
+    color: '#c06080',
+    highlight: "Duality concept · CAN'T LEAVE ALONE feat. Pharrell Williams 260M+",
+    titleTrack: 'SOUR',
+    genres: ['R&B', 'Soul', 'Funk'],
   },
   {
     slug: 'decade',
     title: 'DECADE',
     subtitle: 'Anthology',
     year: '2026',
+    date: 'Jan 13, 2026',
     type: 'Anthology Album',
+    label: 'JH Company / Warner Music Korea',
     tracks: 25,
-    streams: '480M+',
-    peak: 'Catalog resurgence',
+    streams: 480,
+    streamLabel: '480M+',
+    peak: 'Melon #9 · US R&B Top 20',
     era: 'Legacy',
     color: '#6e5a7c',
-    highlight: '10-year retrospective · Extended arrangements · Deluxe edition',
+    highlight: '10-year retrospective · Extended arrangements · 32M monthly Spotify listeners',
+    titleTrack: 'NEW',
+    genres: ['Multi-era', 'R&B', 'Soul'],
   },
 ];
+
+const maxStreams = Math.max(...albums.map(a => a.streams));
+const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
 ---
 
 <WikiLayout title="Discography" section="Music">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Music</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Music</div>
     <h1 class="text-4xl font-bold text-white mb-2">Discography</h1>
-    <p class="text-gray-400 text-sm">6 eras spanning 2016–2026 · 3.5B+ cumulative streams</p>
+    <p class="text-sm" style="color:var(--text-muted)">6 projects · 2016–2026 · {(totalStreams / 1000).toFixed(1)}B+ cumulative streams</p>
   </div>
 
-  <!-- Timeline bar -->
-  <div class="flex items-center gap-0 mb-10 overflow-x-auto pb-2">
-    {albums.map((a, i) => (
-      <a href={`${base}discography/${a.slug}`} class="flex-1 min-w-24 group">
-        <div class="h-1.5 rounded-none transition-all group-hover:h-2.5" style={`background-color:${a.color}`}></div>
-        <div class="pt-2 px-1">
-          <div class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors truncate">{a.year}</div>
+  <!-- Era timeline -->
+  <div class="mb-10">
+    <div class="flex items-stretch gap-0 rounded-lg overflow-hidden h-10">
+      {albums.map(a => (
+        <a href={`${base}discography/${a.slug}`}
+          class="flex-1 flex items-center justify-center group relative transition-all hover:flex-[1.5]"
+          style={`background-color:${a.color}30;border-right:1px solid var(--bg);`}
+          title={`${a.title} · ${a.year}`}>
+          <span class="text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity absolute whitespace-nowrap px-2" style={`color:${a.color}`}>{a.title}</span>
+          <div class="w-full h-1 absolute bottom-0" style={`background-color:${a.color}`}></div>
+        </a>
+      ))}
+    </div>
+    <div class="flex mt-1">
+      {albums.map(a => (
+        <div class="flex-1 text-center">
+          <div class="text-xs font-mono" style={`color:${a.color};font-size:0.6rem`}>{a.year}</div>
         </div>
-      </a>
-    ))}
+      ))}
+    </div>
   </div>
+
+  <!-- Stream comparison -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Streams by Era</div>
+    <div class="flex flex-col gap-2">
+      {albums.map(a => (
+        <a href={`${base}discography/${a.slug}`} class="flex items-center gap-3 group">
+          <div class="w-24 text-xs font-bold text-right shrink-0 group-hover:underline" style={`color:${a.color}`}>{a.title}</div>
+          <div class="flex-1 h-5 rounded overflow-hidden" style="background-color:var(--bg-muted)">
+            <div class="h-full rounded transition-all" style={`width:${(a.streams / maxStreams) * 100}%;background-color:${a.color};opacity:0.7`}></div>
+          </div>
+          <div class="text-sm font-bold w-14 shrink-0" style={`color:${a.color}`}>{a.streamLabel}</div>
+        </a>
+      ))}
+    </div>
+  </section>
 
   <!-- Album list -->
-  <div class="space-y-3">
+  <div class="flex flex-col gap-3 mb-8">
     {albums.map((a, i) => (
       <a href={`${base}discography/${a.slug}`}
-        class="flex gap-5 border rounded-xl p-5 hover:border-gray-500 transition-all group"
-        style="border-color:#2a2a2a;background-color:#141414">
-        <!-- Cover placeholder -->
-        <div class="w-16 h-16 shrink-0 rounded-lg flex items-center justify-center text-2xl font-black"
-          style={`background-color:${a.color}25;color:${a.color}`}>
-          {i + 1}
+        class="flex gap-4 border rounded-xl p-5 transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <!-- Color slab -->
+        <div class="w-16 h-16 shrink-0 rounded-xl flex items-center justify-center text-2xl font-black relative overflow-hidden"
+          style={`background-color:${a.color}20`}>
+          <div class="absolute inset-y-0 left-0 w-1" style={`background-color:${a.color}`}></div>
+          <span style={`color:${a.color}`}>{i + 1}</span>
         </div>
+
         <!-- Info -->
         <div class="flex-1 min-w-0">
-          <div class="flex flex-wrap items-baseline gap-2 mb-1">
-            <span class="text-base font-bold text-white group-hover:text-yellow-400 transition-colors">{a.title}</span>
-            <span class="text-xs text-gray-500">{a.subtitle}</span>
-            <span class="text-xs px-2 py-0.5 rounded-full" style={`background-color:${a.color}20;color:${a.color}`}>{a.era}</span>
+          <div class="flex flex-wrap items-baseline gap-2 mb-0.5">
+            <span class="text-base font-black text-white group-hover:underline" style={`text-decoration-color:${a.color}`}>{a.title}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{a.subtitle}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style={`background-color:${a.color}18;color:${a.color}`}>{a.era}</span>
           </div>
-          <div class="text-xs text-gray-500 mb-2">{a.year} · {a.type} · {a.tracks} tracks</div>
-          <p class="text-xs text-gray-400 leading-relaxed">{a.highlight}</p>
+          <div class="text-xs mb-1.5" style="color:var(--text-muted)">{a.date} · {a.type} · {a.tracks} tracks · {a.label}</div>
+          <div class="flex flex-wrap gap-1.5 mb-1.5">
+            {a.genres.map(g => (
+              <span class="text-xs px-1.5 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted)">{g}</span>
+            ))}
+          </div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{a.highlight}</p>
         </div>
+
         <!-- Metrics -->
-        <div class="hidden md:flex flex-col items-end shrink-0 gap-1">
-          <span class="text-lg font-bold text-white">{a.streams}</span>
-          <span class="text-xs text-gray-500">streams</span>
-          <span class="text-xs text-gray-600">{a.peak}</span>
+        <div class="hidden md:flex flex-col items-end shrink-0 gap-2 justify-between">
+          <div class="text-right">
+            <div class="text-xl font-black text-white">{a.streamLabel}</div>
+            <div class="text-xs" style="color:var(--text-muted)">streams</div>
+          </div>
+          <div class="text-right">
+            <div class="text-xs font-semibold text-white">{a.titleTrack}</div>
+            <div class="text-xs" style="color:var(--text-muted)">title track</div>
+          </div>
+          <div class="text-right">
+            <div class="text-xs" style={`color:${a.color}`}>{a.peak}</div>
+          </div>
         </div>
       </a>
     ))}
   </div>
 
-  <!-- Station singles note -->
-  <div class="mt-6 border rounded-xl p-5" style="border-color:#2a2a2a;background-color:#141414">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#c9a84c">Singles</div>
-    <div class="flex flex-wrap gap-4">
-      <div>
-        <div class="text-sm font-semibold text-white">YOU AIN'T GOTTA</div>
-        <div class="text-xs text-gray-500">[SM STATION 2]</div>
-        <div class="text-xs text-gray-500">2018 · Spotify 55M+</div>
-      </div>
-      <div class="w-px bg-gray-800"></div>
-      <div>
-        <div class="text-sm font-semibold text-white">CRUSH feat. Jungkook</div>
-        <div class="text-xs text-gray-500">[SM STATION 3]</div>
-        <div class="text-xs text-gray-500">2019 · Spotify 260M+ · First international crossover</div>
-      </div>
-      <div class="w-px bg-gray-800"></div>
-      <div>
-        <div class="text-sm font-semibold text-white">If I Knew</div>
-        <div class="text-xs text-gray-500">[PULSE]</div>
-        <div class="text-xs text-gray-500">2023 · Spotify 47M+ · Interlude to the release of second album</div>
-      </div>
+  <!-- Singles -->
+  <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+    <div class="px-5 py-3 border-b text-xs font-semibold uppercase tracking-widest" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--gold)">Singles & Station Releases</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x" style="divide-color:var(--border);background-color:var(--bg-surface)">
+      {[
+        { title: "YOU AIN'T GOTTA", sub: 'SM STATION 2', year: '2018', streams: 'Spotify 55M+', note: 'R&B positioning reinforcement' },
+        { title: 'CRUSH feat. Jungkook', sub: 'SM STATION 3', year: '2019', streams: 'Spotify 260M+', note: 'First major international crossover' },
+        { title: 'IF I KNEW', sub: 'PULSE era single', year: '2023', streams: 'Spotify 47M+', note: 'Pre-release bridge to 2nd album' },
+      ].map(s => (
+        <div class="px-5 py-4">
+          <div class="text-sm font-bold text-white mb-0.5">{s.title}</div>
+          <div class="text-xs mb-1" style="color:var(--text-muted)">{s.sub} · {s.year}</div>
+          <div class="text-xs font-semibold mb-1" style="color:var(--gold)">{s.streams}</div>
+          <div class="text-xs" style="color:var(--text-muted)">{s.note}</div>
+        </div>
+      ))}
     </div>
   </div>
 </WikiLayout>

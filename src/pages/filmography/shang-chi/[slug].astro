@@ -3,31 +3,61 @@ import WikiLayout from '../../../layouts/WikiLayout.astro';
 const base = import.meta.env.BASE_URL;
 
 const slugMap: Record<string, {
-  title: string; phase: string; year: string; director: string; color: string; role: string;
+  title: string; phase: string; year: string; date: string; director: string; color: string; role: string;
+  screenwriters: string; producers: string; starring: string; boxOffice: string | null; rtScore: string | null;
+  sections: { heading: string; icon: string }[];
 }> = {
   'legend-of-the-ten-rings': {
     title: 'Shang-Chi and the Legend of the Ten Rings',
     phase: 'MCU Phase 4',
     year: '2021',
+    date: 'September 3, 2021',
     director: 'Destin Daniel Cretton',
     color: '#7c5a3a',
-    role: 'James Hwang as Zheng Zu · MCU debut role',
+    role: 'James Hwang as Shang-Chi (Xu Shang-Chi)',
+    screenwriters: 'Dave Callaham · Destin Daniel Cretton · Andrew Lanham',
+    producers: 'Kevin Feige · Jonathan Schwartz',
+    starring: 'James Hwang, Ashley Liao, Fala Chen, Florian Munteanu, Benedict Wong, Michelle Yeoh, Ben Kingsley, Tony Leung',
+    boxOffice: '$432M',
+    rtScore: '91%',
+    sections: [
+      { heading: 'ต้นเรื่อง', icon: '◎' },
+      { heading: 'กลางเรื่อง', icon: '◉' },
+      { heading: 'ช่วงท้ายเรื่อง', icon: '●' },
+      { heading: 'บทสรุป', icon: '✦' },
+      { heading: 'ฉากกลางเครดิต', icon: '▷' },
+      { heading: 'ฉากท้ายเครดิต', icon: '▶' },
+    ],
   },
   'legacy-of-the-ten-rings': {
     title: 'Shang-Chi and the Legacy of the Ten Rings',
     phase: 'MCU Phase 5',
     year: '2025',
+    date: 'May 2, 2025',
     director: 'Destin Daniel Cretton',
     color: '#7c5a3a',
-    role: 'Actor + Co-Screenwriter',
+    role: 'James Hwang as Shang-Chi · Co-Screenwriter',
+    screenwriters: 'James Hwang · Destin Daniel Cretton',
+    producers: 'Kevin Feige · Jonathan Schwartz',
+    starring: 'James Hwang, Ashley Liao, Benedict Wong, Simu Liu',
+    boxOffice: '$610M',
+    rtScore: '88%',
+    sections: [],
   },
   'legion-accursed': {
     title: 'Shang-Chi and the Legion Accursed',
     phase: 'MCU Phase 6',
     year: '2026',
+    date: 'November 12, 2026',
     director: 'Isaiah Saxon',
     color: '#7c5a3a',
-    role: 'Actor + Co-Screenwriter · Franchise conclusion',
+    role: 'James Hwang as Shang-Chi · Co-Screenwriter',
+    screenwriters: 'James Hwang · Isaiah Saxon',
+    producers: 'Kevin Feige · Jonathan Schwartz',
+    starring: 'James Hwang, Tony Leung, Benedict Wong',
+    boxOffice: null,
+    rtScore: null,
+    sections: [],
   },
 };
 
@@ -50,26 +80,104 @@ const { Content } = mod;
 
 <WikiLayout title={meta.title} section="Filmography">
   <a href={`${base}filmography/shang-chi`}
-    class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+    class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Shang-Chi Trilogy
   </a>
 
-  <div class="flex gap-5 items-start mb-8">
-    <div class="w-16 h-16 shrink-0 rounded-xl flex items-center justify-center text-2xl font-bold"
-      style={`background-color:${meta.color}22;color:${meta.color};border:1px solid ${meta.color}44`}>
-      {meta.year.slice(2)}
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>
+      {meta.phase} · Shang-Chi Trilogy
     </div>
-    <div>
-      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#c9a84c">
-        {meta.phase} · Shang-Chi Trilogy
-      </div>
-      <h1 class="text-3xl font-bold text-white leading-tight mb-1">{meta.title}</h1>
-      <p class="text-gray-400 text-sm">Dir. {meta.director} · {meta.year}</p>
-      <p class="text-gray-600 text-xs mt-1 italic">{meta.role}</p>
+    <h1 class="text-3xl font-bold text-white leading-tight mb-2">{meta.title}</h1>
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${meta.color}18;color:${meta.color}`}>{meta.year}</span>
+      {meta.boxOffice
+        ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">Released</span>
+        : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">Upcoming</span>
+      }
     </div>
   </div>
 
-  <div class="prose prose-invert max-w-none">
+  <!-- KPIs -->
+  {meta.boxOffice && (
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+      {[
+        { val: meta.date, label: 'Release Date' },
+        { val: meta.director.split(' ').slice(-1)[0], label: 'Director' },
+        { val: meta.boxOffice, label: 'Box Office' },
+        { val: meta.rtScore ?? '—', label: 'Rotten Tomatoes' },
+      ].map(s => (
+        <div class="stat-card">
+          <div class="stat-val text-base">{s.val}</div>
+          <div class="stat-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <!-- Credits block -->
+  <div class="rounded-lg border overflow-hidden mb-8" style="border-color:var(--border)">
+    <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${meta.color}44;background-color:${meta.color}08;color:${meta.color}`}>Credits</div>
+    <div style="background-color:var(--bg-surface)">
+      {[
+        { label: 'Director', val: meta.director },
+        { label: 'Screenplay', val: meta.screenwriters },
+        { label: 'Producers', val: meta.producers },
+        { label: 'Starring', val: meta.starring },
+        { label: meta.date ? 'Release Date' : 'Planned Release', val: meta.date || meta.year },
+        { label: "James's Role", val: meta.role },
+      ].map((r, i, arr) => (
+        <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+          <div class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+          <div class="text-sm text-white leading-relaxed">{r.val}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Plot / content -->
+  <div class="film-prose prose prose-invert max-w-none">
     <Content />
   </div>
 </WikiLayout>
+
+<style>
+  .film-prose :global(h2) {
+    display: none;
+  }
+  .film-prose :global(h3) {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  }
+  .film-prose :global(ul) {
+    padding-left: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .film-prose :global(li) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+  .film-prose :global(p) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .film-prose :global(strong) {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .film-prose :global(hr) {
+    display: none;
+  }
+</style>

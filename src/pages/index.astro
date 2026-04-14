@@ -13,105 +13,177 @@ const stats = [
 ];
 
 const albums = [
-  { slug: 'like-i-do', title: 'LIKE I DO', year: '2016', type: 'Mini Album', streams: '210M+', color: '#7c6f5a' },
-  { slug: 'softest-touch', title: 'SOFTEST TOUCH', year: '2022', type: '1st Mini Album', streams: '320M+', color: '#5a6e7c' },
-  { slug: 'pulse-era', title: 'PULSE', year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
-  { slug: 'are-u-still', title: 'ARE U STILL', year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#7c5a6e' },
-  { slug: 'sour-honey', title: 'SOUR|HONEY', year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#7c7a5a' },
-  { slug: 'decade', title: 'DECADE', year: '2026', type: 'Anthology', streams: '480M+', color: '#6e5a7c' },
+  { slug: 'like-i-do',      title: 'LIKE I DO',      year: '2016', type: 'Mini Album',       streams: '210M+', color: '#c9a84c' },
+  { slug: 'softest-touch',  title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '320M+', color: '#9b7fc8' },
+  { slug: 'pulse-era',      title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
+  { slug: 'are-u-still',    title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#5a7aaa' },
+  { slug: 'sour-honey',     title: 'SOUR|HONEY',     year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
+  { slug: 'decade',         title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '480M+', color: '#6e5a7c' },
+];
+
+const milestones = [
+  { year: '2013', label: 'SM Rookies', note: 'Debuted as SM Rookies trainee · SOPA enrollment' },
+  { year: '2016', label: 'NCT 127', note: '"Fire Truck" · "LIKE I DO" GONUNMA mini album' },
+  { year: '2019', label: 'MCU', note: 'Shang-Chi casting announced at Comic-Con' },
+  { year: '2021', label: 'Hollywood', note: 'Shang-Chi and the Legend of the Ten Rings · $432M box office' },
+  { year: '2022', label: 'Solo', note: '"SOFTEST TOUCH" — official solo identity launch' },
+  { year: '2023', label: 'Independent', note: 'SM departure · JH Company founded · PULSE World Tour' },
+  { year: '2024', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
+  { year: '2026', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE anthology' },
+];
+
+const sections = [
+  { href: `${base}timeline`,        icon: '◷', title: 'Career Timeline',    desc: '1998–present · SM Rookies to RESONANCE', color: '#c9a84c' },
+  { href: `${base}discography`,     icon: '◉', title: 'Discography',         desc: '6 projects · 3.5B+ streams · 2016–2026', color: '#9b7fc8' },
+  { href: `${base}filmography`,     icon: '▶', title: 'Filmography',         desc: 'Shang-Chi trilogy (MCU) + RESONANCE (Disney)', color: '#7c5a3a' },
+  { href: `${base}tours`,           icon: '◎', title: 'Tours',               desc: 'PULSE + DECADE · $309M combined gross', color: '#5a7c6a' },
+  { href: `${base}company`,         icon: '◆', title: 'JH Company',          desc: 'Founded 2023 · $180M–320M valuation', color: '#5a7aaa' },
+  { href: `${base}awards`,          icon: '★', title: 'Awards',              desc: '2× Grammy · Melon · AAA · Seoul Music', color: '#c9a84c' },
+  { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact',     desc: 'Idol-auteur hybrid · Neo-soul K-pop pioneer', color: '#c06080' },
+  { href: `${base}ecosystem`,       icon: '◇', title: 'Endorsements',        desc: 'Saint Laurent · Cartier · Sony · Nike', color: '#6e5a7c' },
+  { href: `${base}public-image`,    icon: '◑', title: 'Public Image',        desc: 'Background · identity · public persona', color: '#5a7aaa' },
+  { href: `${base}legal`,           icon: '⚖', title: 'Legal',               desc: 'SM dispute 2022–2023 · settlement', color: '#c0504a' },
+  { href: `${base}canon`,           icon: '◈', title: 'Canon',               desc: 'Vocal · dance · production DNA', color: '#9b7fc8' },
 ];
 ---
 
 <WikiLayout title="Overview" section="Wiki">
+
   <!-- Hero -->
-  <div class="mb-12">
-    <div class="flex flex-col md:flex-row md:items-end gap-6 mb-8">
-      <div>
-        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">JamesHwangVerse</div>
-        <h1 class="text-5xl md:text-6xl font-bold text-white leading-none mb-3">James Hwang</h1>
-        <p class="text-gray-400 text-sm leading-relaxed max-w-xl">
-          黃志南 · 황지남 · ชัยชนะ อึ้งวณิชกุล<br/>
-          Singer-songwriter · Actor · CEO of JH Company<br/>
-          Born June 22, 1998 · Half-Thai, Half-Korean
-        </p>
-      </div>
-    </div>
+  <div class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--gold)">JamesHwangVerse · The Definitive Wiki</div>
+    <h1 class="text-5xl md:text-6xl font-black leading-none mb-4" style="color:var(--text)">James Hwang</h1>
 
-    <!-- Quick bio -->
-    <div class="border rounded-xl p-6 mb-8 max-w-3xl" style="border-color:#2a2a2a;background-color:#141414">
-      <p class="text-gray-300 text-sm leading-7">
-        James Hwang is an independent artist and actor who debuted under SM Entertainment as a member of NCT 127 (2016),
-        before departing via contract settlement in 2023 to found <strong class="text-white">JH Company</strong>.
-        Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a discography spanning
-        contemporary R&B, neo-soul, and funk — while simultaneously establishing himself in Hollywood through the
-        <strong class="text-white">Shang-Chi</strong> trilogy (MCU) and the <strong class="text-white">RESONANCE</strong> franchise (Disney).
-        Fandom name: <span style="color:#c9a84c">Gemzen (Gemz)</span>.
-      </p>
-    </div>
-
-    <!-- Stats grid -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
-      {stats.map(s => (
-        <div class="border rounded-lg p-4 text-center" style="border-color:#2a2a2a;background-color:#141414">
-          <div class="text-xl font-bold text-white mb-0.5">{s.value}</div>
-          <div class="text-xs font-semibold text-gray-300 mb-1">{s.label}</div>
-          <div class="text-xs text-gray-600">{s.sub}</div>
-        </div>
+    <!-- Identity chips -->
+    <div class="flex flex-wrap gap-2 mb-5">
+      {[
+        { text: '黃志南 · 황지남', sub: null },
+        { text: 'ชัยชนะ อึ้งวณิชกุล', sub: null },
+        { text: 'b. June 22, 1998', sub: null },
+        { text: 'Half-Thai · Half-Korean', sub: null },
+        { text: 'Fandom: Gemzen (Gemz)', sub: null },
+      ].map(c => (
+        <span class="text-xs px-2.5 py-1 rounded-full border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{c.text}</span>
       ))}
     </div>
+
+    <!-- Role badges -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      {[
+        { label: 'Singer-Songwriter', color: '#c9a84c' },
+        { label: 'Actor', color: '#7c5a3a' },
+        { label: 'CEO · JH Company', color: '#5a7aaa' },
+        { label: '2× Grammy Winner', color: '#22c55e' },
+        { label: 'MCU Actor', color: '#ef4444' },
+        { label: 'Independent Artist', color: '#9b7fc8' },
+      ].map(b => (
+        <span class="text-xs px-3 py-1 rounded-full font-semibold" style={`background-color:${b.color}18;color:${b.color};border:1px solid ${b.color}33`}>{b.label}</span>
+      ))}
+    </div>
+
+    <!-- Bio paragraph -->
+    <div class="rounded-xl border p-6 mb-8 max-w-3xl" style="border-color:var(--border);background-color:var(--bg-surface);border-left:3px solid var(--gold)">
+      <p class="text-sm leading-7" style="color:var(--text-muted)">
+        James Hwang debuted under SM Entertainment as a member of <strong style="color:var(--text)">NCT 127</strong> (2016),
+        before departing via contract settlement in 2023 to found <strong style="color:var(--text)">JH Company</strong>.
+        Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a discography spanning
+        contemporary R&B, neo-soul, and funk — earning <strong style="color:var(--gold)">2 Grammy Awards</strong> in 2025.
+        Simultaneously, he established himself in Hollywood through the <strong style="color:var(--text)">Shang-Chi</strong>
+        trilogy (MCU) and the original <strong style="color:var(--text)">RESONANCE</strong> franchise (Disney),
+        for which he serves as creator, co-director, composer, and lead actor.
+      </p>
+    </div>
   </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
+    {stats.map(s => (
+      <div class="stat-card text-center">
+        <div class="stat-val">{s.value}</div>
+        <div class="text-xs font-semibold mt-1 mb-0.5" style="color:var(--text)">{s.label}</div>
+        <div class="stat-label normal-case tracking-normal">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Career milestones strip -->
+  <section class="mb-12 pt-4">
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Key Milestones</div>
+      <a href={`${base}timeline`} class="text-xs transition-colors hover:opacity-80" style="color:var(--gold)">Full timeline →</a>
+    </div>
+    <div class="relative">
+      <!-- Spine -->
+      <div class="absolute left-3 top-3 bottom-3 w-px" style="background-color:var(--border)"></div>
+      <div class="flex flex-col gap-0">
+        {milestones.map((m, i) => (
+          <div class="flex items-start gap-4 group">
+            <!-- Dot -->
+            <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 relative z-10 transition-all"
+              style="border-color:var(--border);background:var(--bg-surface)">
+              <div class="w-2 h-2 rounded-full" style="background-color:var(--gold);opacity:0.5"></div>
+            </div>
+            <!-- Content -->
+            <div class="flex-1 pb-4 border-b" style={`border-color:${i < milestones.length - 1 ? 'color-mix(in srgb, var(--border) 50%, transparent)' : 'transparent'}`}>
+              <div class="flex items-baseline gap-2 flex-wrap">
+                <span class="text-xs font-black font-mono" style="color:var(--gold)">{m.year}</span>
+                <span class="text-sm font-semibold" style="color:var(--text)">{m.label}</span>
+              </div>
+              <p class="text-xs mt-0.5" style="color:var(--text-muted)">{m.note}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <!-- Discography quick view -->
   <section class="mb-12">
     <div class="flex items-center justify-between mb-4">
-      <h2 class="text-lg font-semibold text-white">Discography</h2>
-      <a href={`${base}discography`} class="text-xs hover:text-white transition-colors" style="color:#c9a84c">View all →</a>
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Discography</div>
+      <a href={`${base}discography`} class="text-xs transition-colors hover:opacity-80" style="color:var(--gold)">View all →</a>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-2">
       {albums.map(a => (
         <a href={`${base}discography/${a.slug}`}
-          class="border rounded-lg p-4 hover:border-gray-500 transition-all hover:-translate-y-0.5"
-          style={`border-color:#2a2a2a;background-color:#141414`}>
-          <div class="w-full aspect-square rounded-md mb-3 flex items-center justify-center text-2xl font-bold"
-            style={`background-color:${a.color}30;color:${a.color}`}>
-            {a.title.slice(0, 1)}
+          class="border rounded-xl p-3 transition-all group flex flex-col"
+          style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+          <!-- Album art placeholder -->
+          <div class="w-full aspect-square rounded-lg mb-2.5 flex items-center justify-center relative overflow-hidden"
+            style={`background-color:${a.color}15`}>
+            <div class="absolute inset-x-0 bottom-0 h-0.5" style={`background-color:${a.color}`}></div>
+            <span class="text-xl font-black" style={`color:${a.color}`}>{a.title.slice(0, 1)}</span>
           </div>
-          <div class="text-xs font-semibold text-white truncate">{a.title}</div>
-          <div class="text-xs text-gray-500">{a.year} · {a.type}</div>
-          <div class="text-xs mt-1" style="color:#c9a84c">{a.streams}</div>
+          <div class="text-xs font-bold truncate" style="color:var(--text)">{a.title}</div>
+          <div class="text-xs mt-0.5" style="color:var(--text-muted)">{a.year}</div>
+          <div class="text-xs font-semibold mt-1" style={`color:${a.color}`}>{a.streams}</div>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- Sections grid -->
-  <section class="mb-12">
-    <h2 class="text-lg font-semibold text-white mb-4">Wiki Sections</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {[
-        { href: `${base}timeline`, icon: '◷', title: 'Career Timeline', desc: '1998–present · From SM Rookies to RESONANCE franchise' },
-        { href: `${base}filmography`, icon: '▶', title: 'Filmography', desc: 'Shang-Chi trilogy (MCU) + RESONANCE saga (Disney)' },
-        { href: `${base}tours`, icon: '◎', title: 'Tours', desc: 'PULSE World Tour + DECADE Tour — $309M gross' },
-        { href: `${base}company`, icon: '◆', title: 'JH Company', desc: 'Founded 2023 · $180M–320M valuation · Multi-artist label' },
-        { href: `${base}awards`, icon: '★', title: 'Awards', desc: 'Grammy, Melon, Asia Artist, Seoul Music Awards' },
-        { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact', desc: 'Idol-auteur hybrid · Neo-soul K-pop pioneer' },
-        { href: `${base}ecosystem`, icon: '◇', title: 'Endorsements', desc: 'Saint Laurent, Cartier, Sony, Nike, Dior Beauty' },
-        { href: `${base}public-image`, icon: '◑', title: 'Public Image', desc: 'Background, identity, public persona' },
-        { href: `${base}legal`, icon: '⚖', title: 'Legal', desc: 'SM contract dispute 2022–2023 · settlement & departure' },
-      ].map(item => (
+  <!-- Wiki sections -->
+  <section>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Wiki Sections</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      {sections.map(item => (
         <a href={item.href}
-          class="border rounded-lg p-5 hover:border-gray-500 transition-all group"
-          style="border-color:#2a2a2a;background-color:#141414">
-          <div class="flex items-start gap-3">
-            <span class="text-lg mt-0.5 opacity-50 group-hover:opacity-80 transition-opacity">{item.icon}</span>
-            <div>
-              <div class="text-sm font-semibold text-white mb-1 group-hover:text-yellow-400 transition-colors"
-                style="">{item.title}</div>
-              <div class="text-xs text-gray-500 leading-relaxed">{item.desc}</div>
-            </div>
+          class="border rounded-xl p-4 transition-all group flex items-start gap-3"
+          style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-sm transition-all group-hover:scale-110"
+            style={`background-color:${item.color}18;color:${item.color}`}>
+            {item.icon}
           </div>
+          <div class="min-w-0">
+            <div class="text-sm font-semibold mb-0.5 transition-colors" style="color:var(--text)">
+              {item.title}
+            </div>
+            <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</div>
+          </div>
+          <div class="text-xs ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style="color:var(--text-muted)">→</div>
         </a>
       ))}
     </div>
   </section>
+
 </WikiLayout>

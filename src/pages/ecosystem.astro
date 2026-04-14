@@ -1,37 +1,189 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
-import { Content } from '../content/wiki/ecosystem.md';
-import { Content as TouringContent } from '../content/wiki/ecosystem/touring_ecosystem.md';
 
-const deals = [
-  { brand: 'Saint Laurent', value: '$4–7M/yr', category: 'Fashion' },
-  { brand: 'Cartier', value: '$2–4M/yr', category: 'Luxury' },
-  { brand: 'Sony', value: '$3–5M/yr', category: 'Electronics' },
-  { brand: 'Nike', value: '$1.5–3M/yr', category: 'Sports' },
-  { brand: 'Dior Beauty', value: '$1–2M/yr', category: 'Beauty' },
+const solodeals = [
+  { brand: 'Saint Laurent', sector: 'Global Fashion', value: '$4–7M/yr', note: 'Dark R&B / masculine minimalist identity', color: '#c9a84c' },
+  { brand: 'Cartier', sector: 'Watch / Jewelry', value: '$2–4M/yr', note: 'Prestige luxury ladder — Asia → Global', color: '#c9a84c' },
+  { brand: 'Sony', sector: 'Tech / Audio', value: '$3–5M/yr', note: 'Creator audio positioning — avoids Samsung conflict', color: '#c9a84c' },
+  { brand: 'Nike', sector: 'Sneaker / Streetwear', value: '$1.5–3M/yr', note: 'Capsule collaborator + tour wardrobe', color: '#c9a84c' },
+  { brand: 'Dior Beauty', sector: 'Grooming (Asia)', value: '$1–2M/yr', note: 'Male beauty regional ambassador', color: '#c9a84c' },
+];
+
+const groupdeals = [
+  { brand: 'SK Telecom', sector: 'Telecom Asia', value: '$0.5–1M/yr', note: 'Group endorsement via SM/NCT 127' },
+  { brand: 'Coca-Cola', sector: 'Beverage', value: '$0.4–0.9M/yr', note: 'Group endorsement via SM/NCT 127' },
+];
+
+const tours = [
+  {
+    name: 'PULSE TOUR',
+    years: '2023–24',
+    shows: 64,
+    ticketGross: '$235M',
+    sponsorRev: '$26M',
+    combinedGross: '$261M',
+    productionCost: '$156M',
+    profitPool: '$105M',
+    personalIncome: '$40–48M',
+    scale: 'Global major solo touring act',
+  },
+  {
+    name: 'DECADE TOUR',
+    years: '2027',
+    shows: 18,
+    ticketGross: '$74M',
+    sponsorRev: '$14M',
+    combinedGross: '$88M',
+    productionCost: '$48M',
+    profitPool: '$40M',
+    personalIncome: '$15–19M',
+    scale: 'Anthology prestige-format tour',
+  },
 ];
 ---
-<WikiLayout title="Endorsements" section="Business">
+<WikiLayout title="Endorsements & Touring" section="Business">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Business</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Endorsements & Brand Deals</h1>
-    <p class="text-gray-400 text-sm">$16M–22M/yr total · Solo + group contracts</p>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Business</div>
+    <h1 class="text-4xl font-bold text-white mb-2">Endorsements & Touring</h1>
+    <p class="text-sm" style="color:var(--text-muted)">$16M–22M/yr endorsements · $309M+ combined touring gross</p>
   </div>
 
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-10">
-    {deals.map(d => (
-      <div class="border rounded-lg p-4 text-center" style="border-color:#2a2a2a;background-color:#141414">
-        <div class="text-xs text-gray-600 mb-1">{d.category}</div>
-        <div class="text-sm font-semibold text-white mb-1">{d.brand}</div>
-        <div class="text-xs" style="color:#c9a84c">{d.value}</div>
+  <!-- Income summary -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '$14–20M', label: 'Solo Endorsements/yr', sub: 'Controlled via JH Company' },
+      { val: '$1–2M', label: 'Group Endorsements/yr', sub: 'SM / NCT 127 contract layer' },
+      { val: '$309M', label: 'Touring Gross (2 tours)', sub: 'Ticket sales combined' },
+      { val: '$95–120M', label: 'James Net Worth (post-DECADE)', sub: 'Global crossover creator tier' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+        <div class="text-xs mt-1" style="color:color-mix(in srgb, var(--text-muted) 60%, transparent)">{s.sub}</div>
       </div>
     ))}
   </div>
 
-  <div class="prose prose-invert max-w-none"><Content /></div>
+  <!-- Solo deals -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Solo Brand Deals</h2>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mb-4">
+      {solodeals.map(d => (
+        <div class="stat-card flex flex-col gap-2">
+          <div class="text-xs uppercase tracking-widest font-semibold" style="color:var(--text-muted)">{d.sector}</div>
+          <div class="text-base font-black text-white">{d.brand}</div>
+          <div class="text-sm font-bold" style="color:var(--gold)">{d.value}</div>
+          <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{d.note}</div>
+        </div>
+      ))}
+    </div>
+  </section>
 
-  <div class="border-t mt-10 pt-10" style="border-color:#2a2a2a">
-    <h2 class="text-2xl font-bold text-white mb-6">Touring Economy</h2>
-    <div class="prose prose-invert max-w-none"><TouringContent /></div>
-  </div>
+  <!-- Group deals -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Group Deals (via SM / NCT 127)</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {groupdeals.map(d => (
+        <div class="flex items-center gap-4 px-4 py-3 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex-1">
+            <div class="font-bold text-white">{d.brand}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{d.note}</div>
+          </div>
+          <div class="text-right shrink-0">
+            <div class="text-sm font-bold" style="color:var(--gold)">{d.value}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{d.sector}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SM contract constraints -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">SM Contract Constraints</h2>
+    <div class="rounded-lg border px-4 py-3 text-sm" style="border-color:color-mix(in srgb, #ef4444 30%, transparent);background-color:color-mix(in srgb, #ef4444 5%, var(--bg-surface))">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#f87171">Restricted while active in NCT 127</div>
+      <div class="flex flex-wrap gap-2">
+        {['Samsung (electronics conflict)', 'SK Telecom competitors', 'Coca-Cola competitors'].map(c => (
+          <span class="text-xs px-2 py-1 rounded border" style="border-color:color-mix(in srgb, #ef4444 25%, transparent);color:#f87171;background-color:color-mix(in srgb, #ef4444 8%, transparent)">{c}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour breakdown -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Tour Economics</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {tours.map(t => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="px-4 py-3 border-b flex items-baseline justify-between" style="border-color:var(--gold);background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface))">
+            <div>
+              <span class="font-black text-white text-base">{t.name}</span>
+              <span class="text-xs ml-2" style="color:var(--text-muted)">{t.years}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{t.shows} shows</span>
+          </div>
+          <div class="px-4 py-3 space-y-2" style="background-color:var(--bg-surface)">
+            {[
+              { label: 'Ticket Gross', val: t.ticketGross, highlight: false },
+              { label: 'Sponsor Revenue', val: t.sponsorRev, highlight: false },
+              { label: 'Combined Gross', val: t.combinedGross, highlight: false },
+              { label: 'Production Cost (~60%)', val: `−${t.productionCost}`, highlight: false },
+              { label: 'Profit Pool', val: t.profitPool, highlight: true },
+              { label: "James' Personal Income", val: t.personalIncome, highlight: true },
+            ].map(row => (
+              <div class="flex items-center justify-between text-sm py-0.5 border-b" style={`border-color:color-mix(in srgb, var(--border) 40%, transparent);${row.highlight ? 'border-bottom:none' : ''}`}>
+                <span style={`color:${row.highlight ? 'var(--text)' : 'var(--text-muted)'}`}>{row.label}</span>
+                <span class="font-bold" style={`color:${row.highlight ? 'var(--gold)' : 'var(--text)'}`}>{row.val}</span>
+              </div>
+            ))}
+          </div>
+          <div class="px-4 py-2 text-xs" style="color:var(--text-muted);background-color:var(--bg-muted)">{t.scale}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- JH Company touring capital -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">JH Company — Retained Capital from Touring</h2>
+    <div class="rounded-lg border px-5 py-4 flex flex-col md:flex-row md:items-center gap-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div>
+        <div class="text-3xl font-black" style="color:var(--gold)">~$128M</div>
+        <div class="text-sm font-semibold text-white">Retained Capital (PULSE + DECADE)</div>
+        <div class="text-xs mt-0.5" style="color:var(--text-muted)">Transition: boutique artist label → mid-tier entertainment company</div>
+      </div>
+      <div class="md:ml-auto flex flex-wrap gap-2">
+        {['Touring + Studio Infrastructure', 'IP Pipeline', 'Production Scaling', 'Liquidity Reserve', 'Strategic Partnerships'].map(a => (
+          <span class="text-xs px-2.5 py-1 rounded border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-muted)">{a}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Warner role -->
+  <section>
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Warner Music Korea — Distribution Role</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {[
+        { title: 'Global Distribution', items: ['Spotify placement', 'Apple Music rollout', 'Territory licensing', 'Radio servicing'] },
+        { title: 'Touring Infrastructure', items: ['Ticketing coordination', 'Promoter network', 'Routing negotiation'] },
+        { title: 'Marketing Amplification', items: ['Playlisting', 'Sync placement', 'Press strategy', 'Retail bundling'] },
+      ].map(col => (
+        <div class="stat-card">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--gold)">{col.title}</div>
+          <ul class="flex flex-col gap-1.5">
+            {col.items.map(i => (
+              <li class="flex items-center gap-2 text-sm" style="color:var(--text-muted)">
+                <span class="w-1 h-1 rounded-full shrink-0" style="background-color:var(--gold)"></span>
+                {i}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-3 text-xs" style="color:var(--text-muted)">Revenue share: <span style="color:var(--gold)">12–18%</span></div>
+        </div>
+      ))}
+    </div>
+  </section>
 </WikiLayout>

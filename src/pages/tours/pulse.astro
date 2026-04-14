@@ -1,18 +1,280 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import { Content } from '../../content/wiki/tours/pulse.md';
 const base = import.meta.env.BASE_URL;
+const color = '#5a7c6a';
+
+const eraColors: Record<string, string> = {
+  'LIKE I DO': '#c9a84c',
+  'SOFTEST TOUCH': '#9b7fc8',
+  'PULSE': '#5a7c6a',
+  'ARE U STILL': '#5a7aaa',
+  'SOUR | HONEY': '#c06080',
+};
+
+const formats = [
+  { version: '2023 Version', songs: 23, runtime: '1h 09m', vcrs: 6, ments: 5, total: '1h 42m' },
+  { version: '2024 Version', songs: 33, runtime: '1h 41m', vcrs: 8, ments: 7, total: '2h 26m' },
+];
+
+const legs = [
+  {
+    name: 'Leg 1 — East Asia',
+    period: 'July 28 – October 29, 2023',
+    shows: [
+      { date: 'Jul 28–30', city: 'Seoul', country: 'South Korea', venue: 'Gocheok Sky Dome', nights: 3 },
+      { date: 'Aug 5', city: 'Fukuoka', country: 'Japan', venue: 'Marine Messe Fukuoka', nights: 1 },
+      { date: 'Aug 12–13', city: 'Osaka', country: 'Japan', venue: 'Osaka Dome', nights: 2 },
+      { date: 'Aug 19', city: 'Nagoya', country: 'Japan', venue: 'Vantelin Dome Nagoya', nights: 1 },
+      { date: 'Aug 26', city: 'Shizuoka', country: 'Japan', venue: 'Ecopa Arena', nights: 1 },
+      { date: 'Sep 2', city: 'Saitama', country: 'Japan', venue: 'Saitama Super Arena', nights: 1 },
+      { date: 'Sep 9', city: 'Yokohama', country: 'Japan', venue: 'Yokohama Arena', nights: 1 },
+      { date: 'Sep 16–17', city: 'Tokyo', country: 'Japan', venue: 'Tokyo Dome', nights: 2 },
+      { date: 'Sep 23', city: 'Miyagi', country: 'Japan', venue: 'Sekisui Heim Super Arena', nights: 1 },
+      { date: 'Oct 1', city: 'Beijing', country: 'China', venue: 'Cadillac Arena', nights: 1 },
+      { date: 'Oct 7–8', city: 'Hong Kong', country: 'Hong Kong', venue: 'AsiaWorld-Arena', nights: 2 },
+      { date: 'Oct 14–15', city: 'Shanghai', country: 'China', venue: 'Mercedes-Benz Arena', nights: 2 },
+      { date: 'Oct 21', city: 'Macau', country: 'Macau', venue: 'Cotai Arena', nights: 1 },
+      { date: 'Oct 27', city: 'Taoyuan', country: 'Taiwan', venue: 'Taoyuan International Baseball Stadium', nights: 1 },
+      { date: 'Oct 29', city: 'Taipei', country: 'Taiwan', venue: 'Taipei Arena', nights: 1 },
+    ],
+  },
+  {
+    name: 'Leg 2 — Southeast Asia, Oceania & Middle East',
+    period: 'January 13 – March 16, 2024',
+    shows: [
+      { date: 'Jan 13', city: 'Kuala Lumpur', country: 'Malaysia', venue: 'Bukit Jalil National Stadium', nights: 1 },
+      { date: 'Jan 18–21', city: 'Bangkok', country: 'Thailand', venue: 'Impact Arena', nights: 4 },
+      { date: 'Jan 27–28', city: 'Jakarta', country: 'Indonesia', venue: 'Gelora Bung Karno Stadium', nights: 2 },
+      { date: 'Feb 3–4', city: 'Pasay', country: 'Philippines', venue: 'SM Mall of Asia Arena', nights: 2 },
+      { date: 'Feb 17–18', city: 'Auckland', country: 'New Zealand', venue: 'Spark Arena', nights: 2 },
+      { date: 'Feb 24–25', city: 'Sydney', country: 'Australia', venue: 'Qudos Bank Arena', nights: 2 },
+      { date: 'Mar 2', city: 'Hanoi', country: 'Vietnam', venue: 'Mỹ Đình National Stadium', nights: 1 },
+      { date: 'Mar 9', city: 'Riyadh', country: 'Saudi Arabia', venue: 'King Fahd International Stadium', nights: 1 },
+      { date: 'Mar 16', city: 'Abu Dhabi', country: 'UAE', venue: 'Etihad Park', nights: 1 },
+    ],
+  },
+  {
+    name: 'Leg 3 — Americas',
+    period: 'March 18 – May 14, 2024',
+    shows: [
+      { date: 'Mar 18', city: 'Oakland', country: 'USA', venue: 'Oracle Arena', nights: 1 },
+      { date: 'Mar 21–22', city: 'Los Angeles', country: 'USA', venue: 'Intuit Dome', nights: 2 },
+      { date: 'Mar 25–26', city: 'Las Vegas', country: 'USA', venue: 'Staples Center', nights: 2 },
+      { date: 'Mar 29', city: 'Denver', country: 'USA', venue: 'Pepsi Center', nights: 1 },
+      { date: 'Apr 1', city: 'Dallas', country: 'USA', venue: 'American Airlines Center', nights: 1 },
+      { date: 'Apr 3', city: 'Houston', country: 'USA', venue: 'Toyota Center', nights: 1 },
+      { date: 'Apr 6–7', city: 'Chicago', country: 'USA', venue: 'United Center', nights: 2 },
+      { date: 'Apr 10', city: 'Atlanta', country: 'USA', venue: 'State Farm Arena', nights: 1 },
+      { date: 'Apr 18', city: 'Miami', country: 'USA', venue: 'American Airlines Arena', nights: 1 },
+      { date: 'Apr 21', city: 'Washington D.C.', country: 'USA', venue: 'Capital One Arena', nights: 1 },
+      { date: 'Apr 24', city: 'Boston', country: 'USA', venue: 'TD Garden', nights: 1 },
+      { date: 'Apr 27–28', city: 'New York City', country: 'USA', venue: 'Madison Square Garden', nights: 2 },
+      { date: 'May 1–2', city: 'Toronto', country: 'Canada', venue: 'Air Canada Centre', nights: 2 },
+      { date: 'May 5', city: 'Vancouver', country: 'Canada', venue: 'Rogers Arena', nights: 1 },
+      { date: 'May 8', city: 'São Paulo', country: 'Brazil', venue: 'Estádio do Morumbi', nights: 1 },
+      { date: 'May 11', city: 'Santiago', country: 'Chile', venue: 'Estadio Nacional de Chile', nights: 1 },
+      { date: 'May 14', city: 'Mexico City', country: 'Mexico', venue: 'Foro Sol', nights: 1 },
+    ],
+  },
+  {
+    name: 'Leg 4 — Europe',
+    period: 'May 18 – May 30, 2024',
+    shows: [
+      { date: 'May 18', city: 'Barcelona', country: 'Spain', venue: 'Palau Sant Jordi', nights: 1 },
+      { date: 'May 21', city: 'London', country: 'England', venue: 'The O2 Arena', nights: 1 },
+      { date: 'May 24', city: 'Berlin', country: 'Germany', venue: 'Mercedes-Benz Arena', nights: 1 },
+      { date: 'May 27', city: 'Paris', country: 'France', venue: 'AccorHotels Arena', nights: 1 },
+      { date: 'May 30', city: 'Bologna', country: 'Italy', venue: 'Unipol Arena', nights: 1 },
+    ],
+  },
+];
+
+const setlist = [
+  {
+    vcr: 1, title: 'THE SIGNAL', subtitle: 'Opening',
+    songs: [
+      { n: 1, title: 'HOW DOES IT FEEL', era: 'PULSE' },
+      { n: 2, title: 'SAY', era: 'PULSE' },
+      { n: 3, title: 'ALL FOR YOU', era: 'PULSE' },
+      { n: 4, title: 'CHEEKY', era: 'PULSE' },
+      { n: 5, title: 'IF', era: 'PULSE' },
+      { n: 6, title: 'OUT HERE', era: 'ARE U STILL', note: '2024' },
+      { n: 7, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL', note: '2024' },
+    ],
+  },
+  {
+    vcr: 2, title: 'CONTROL LOST', subtitle: 'Pressure / shift energy',
+    songs: [
+      { n: 8, title: 'RIGHT ABOUT LOVE', era: 'SOFTEST TOUCH' },
+      { n: 9, title: 'SAVE ME', era: 'PULSE' },
+      { n: 10, title: 'AWKWARD MAYBE', era: 'PULSE' },
+      { n: 11, title: 'TALK TO ME', era: 'PULSE' },
+    ],
+  },
+  {
+    vcr: 3, title: 'WHO I WAS', subtitle: 'LIKE I DO ERA — back to the beginning',
+    songs: [
+      { n: 12, title: 'LIKE I DO', era: 'LIKE I DO' },
+      { n: 13, title: 'BESTFRIEND', era: 'LIKE I DO' },
+      { n: 14, title: 'YOU KNOW', era: 'LIKE I DO' },
+      { n: 15, title: 'CALL ME', era: 'LIKE I DO' },
+      { n: 16, title: 'CAN YOU LOVE ME TONIGHT', era: 'LIKE I DO' },
+      { n: 17, title: 'AT THE END OF THE NIGHT', era: 'LIKE I DO' },
+    ],
+  },
+  {
+    vcr: 4, title: 'SILENCE / INTIMACY', subtitle: 'Stripped down · Acoustic section',
+    songs: [
+      { n: 18, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
+      { n: 19, title: 'NO RESERVATION', era: 'SOFTEST TOUCH' },
+      { n: 20, title: 'OVERSIZED JACKET', era: 'SOFTEST TOUCH' },
+      { n: 21, title: "I DON'T KNOW WHAT YOU DO", era: 'SOFTEST TOUCH' },
+    ],
+  },
+  {
+    vcr: 5, title: 'CROSSROADS', subtitle: 'Transition · Rising confidence',
+    songs: [
+      { n: 22, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+      { n: 23, title: 'CRUSH', era: 'SOFTEST TOUCH' },
+      { n: 24, title: 'IF I KNEW', era: 'ARE U STILL' },
+    ],
+  },
+  {
+    vcr: 6, title: 'REBIRTH (ARE U STILL)', subtitle: 'Soul / funk era · Live band energy (2024)',
+    songs: [
+      { n: 25, title: 'SLEEPWALKING', era: 'ARE U STILL', note: '2024' },
+      { n: 26, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL', note: '2024' },
+      { n: 27, title: 'JUST A DREAM', era: 'ARE U STILL', note: '2024' },
+      { n: 28, title: 'PURPOSE', era: 'ARE U STILL', note: '2024' },
+      { n: 29, title: 'SELFISH', era: 'ARE U STILL', note: '2024' },
+      { n: 30, title: 'BREATHE', era: 'ARE U STILL', note: '2024' },
+    ],
+  },
+  {
+    vcr: 7, title: 'AFTER THE NOISE', subtitle: 'Post-peak reflection (2024)',
+    songs: [
+      { n: 31, title: 'ORDINARY FEELINGS', era: 'ARE U STILL', note: '2024' },
+      { n: 32, title: "ANOTHER MAN'S LIFE", era: 'ARE U STILL', note: '2024' },
+    ],
+  },
+  {
+    vcr: 8, title: 'HOME', subtitle: 'Encore — Fan connection',
+    songs: [
+      { n: 33, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
+      { n: 34, title: 'OUTRO: GIRLFRIEND', era: 'PULSE' },
+    ],
+  },
+];
 ---
+
 <WikiLayout title="PULSE World Tour" section="Tours">
-  <a href={`${base}tours`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">← Back to Tours</a>
+  <a href={`${base}tours`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">← Back to Tours</a>
+
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#5a7c6a">World Tour</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>1st World Tour</div>
     <h1 class="text-4xl font-bold text-white mb-1">PULSE World Tour</h1>
-    <p class="text-gray-400 text-sm">July 2023 – May 2024 · 64 shows · $235M gross</p>
-    <p class="text-gray-400 text-sm mt-4 italic">"LIKE I DO, you feel the fire,<br />
-SOFTEST TOUCH, my heart’s desire.<br />
-Let your PULSE rise, come fly with me.<br />
-ARE YOU STILL beneath the sky?"</p>
+    <p class="text-sm italic mb-1" style="color:var(--text-muted)">"LIKE I DO, you feel the fire, / SOFTEST TOUCH, my heart's desire. / Let your PULSE rise, come fly with me."</p>
+    <p class="text-sm" style="color:var(--text-muted)">July 2023 – May 2024 · 64 shows · $235M gross</p>
   </div>
-  <div class="prose prose-invert max-w-none"><Content /></div>
+
+  <!-- KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '64', label: 'Total Shows' },
+      { val: '$235M', label: 'Ticket Gross' },
+      { val: '$26M', label: 'Sponsor Revenue' },
+      { val: '~$105M', label: 'Profit Pool' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Show format -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Show Format</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {formats.map(f => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="px-4 py-2 border-b text-xs font-bold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}10;color:${color}`}>{f.version}</div>
+          <div class="grid grid-cols-5 divide-x" style="divide-color:var(--border);background-color:var(--bg-surface)">
+            {[
+              { val: f.songs, label: 'Songs' },
+              { val: f.runtime, label: 'Music' },
+              { val: f.vcrs, label: 'VCRs' },
+              { val: f.ments, label: 'Ments' },
+              { val: f.total, label: 'Total' },
+            ].map(c => (
+              <div class="flex flex-col items-center py-3 px-2">
+                <div class="text-base font-bold text-white">{c.val}</div>
+                <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Venue list -->
+  <section class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Tour Dates</h2>
+    <div class="flex flex-col gap-4">
+      {legs.map(leg => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+            <span class="text-sm font-bold text-white">{leg.name}</span>
+            <span class="text-xs font-mono" style="color:var(--text-muted)">{leg.period}</span>
+          </div>
+          <table class="w-full" style="margin:0">
+            <tbody style="background-color:var(--bg-surface)">
+              {leg.shows.map((s, i, arr) => (
+                <tr style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+                  <td class="px-4 py-2 text-xs font-mono w-28 shrink-0" style="color:var(--text-muted)">{s.date}</td>
+                  <td class="px-4 py-2 text-sm font-semibold text-white">{s.city}
+                    {s.nights > 1 && <span class="ml-1.5 text-xs px-1.5 py-0.5 rounded font-bold" style={`background-color:${color}15;color:${color}`}>×{s.nights}</span>}
+                  </td>
+                  <td class="px-4 py-2 text-xs" style="color:var(--text-muted)">{s.country}</td>
+                  <td class="px-4 py-2 text-xs hidden md:table-cell" style="color:var(--text-muted)">{s.venue}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Setlist -->
+  <section>
+    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Setlist</h2>
+    <div class="flex flex-col gap-3">
+      {setlist.map(block => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <!-- VCR header -->
+          <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
+            <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:${color}20;color:${color}`}>VCR {block.vcr}</span>
+            <span class="text-sm font-bold text-white">{block.title}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{block.subtitle}</span>
+          </div>
+          <!-- Songs -->
+          <div style="background-color:var(--bg-surface)">
+            {block.songs.map((s, i, arr) => {
+              const ec = eraColors[s.era] ?? color;
+              return (
+                <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
+                  <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
+                  <span class="text-sm text-white flex-1 font-medium">{s.title}</span>
+                  {s.note && <span class="text-xs px-1.5 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.note}</span>}
+                  <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
 </WikiLayout>

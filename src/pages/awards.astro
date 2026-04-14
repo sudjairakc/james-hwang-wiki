@@ -1,12 +1,200 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
-import { Content } from '../content/wiki/awards.md';
+
+const years = [
+  {
+    year: '2022',
+    album: 'SOFTEST TOUCH',
+    albumSub: '1st Mini Album',
+    wins: [
+      { show: 'Global R&B Editorial Playlists', category: 'Circulation (Multi-market)', result: 'WIN' },
+      { show: 'Melon', category: 'Catalog Streaming Uplift — LIKE I DO / CRUSH', result: 'WIN' },
+    ],
+    musicWins: [],
+    charts: [
+      'Global curated R&B playlists (Asia + North America)',
+      'Catalog resurgence streaming uplift หลัง official solo debut release',
+    ],
+  },
+  {
+    year: '2023',
+    album: 'PULSE',
+    albumSub: '1st Studio Album',
+    wins: [
+      { show: 'Melon Music Awards', category: 'Top 10 Artist (Bonsang)', result: 'WIN' },
+      { show: 'Asia Artist Awards', category: 'Best Musician (Male Solo)', result: 'WIN' },
+      { show: 'MAMA Awards', category: 'Best Male Solo Artist', result: 'NOM' },
+      { show: 'Melon Collaboration Project', category: 'Golden Producer recognition', result: 'WIN' },
+    ],
+    musicWins: [
+      { title: 'HOW DOES IT FEEL', show: 'Music Bank', count: 1 },
+      { title: 'HOW DOES IT FEEL', show: 'Inkigayo', count: 1 },
+    ],
+    charts: [
+      'Spotify Global editorial playlists ("SAY")',
+      'iTunes Album Top 10 — 15+ ประเทศ',
+      'Spotify Viral Charts — Southeast Asia / North America',
+    ],
+  },
+  {
+    year: '2024',
+    album: 'ARE U STILL',
+    albumSub: '2nd Studio Album',
+    wins: [
+      { show: 'Seoul Music Awards', category: 'Best R&B / Ballad Award', result: 'WIN' },
+      { show: 'Golden Disc Awards', category: 'Digital Bonsang', result: 'WIN' },
+      { show: 'Circle Chart Music Awards', category: 'Artist of the Year (Digital)', result: 'WIN' },
+      { show: 'Korean Music Awards', category: 'Best R&B Album', result: 'WIN' },
+      { show: 'The Fact Music Awards', category: 'Artist of the Year (Bonsang)', result: 'WIN' },
+      { show: 'Asia Artist Awards', category: 'Best Artist (Male Solo)', result: 'WIN' },
+      { show: 'Asia Artist Awards', category: 'Best Producer', result: 'WIN' },
+      { show: 'Asia Artist Awards', category: 'AAA Asia Celebrity Award', result: 'WIN' },
+      { show: 'MAMA Awards', category: 'Best Male Solo Artist', result: 'NOM' },
+      { show: 'Grammy Awards 2025', category: 'Best Progressive R&B Album', result: 'WIN' },
+      { show: 'Grammy Awards 2025', category: 'Best R&B Performance', result: 'WIN' },
+      { show: 'Grammy Awards 2025', category: 'Best Traditional R&B Performance', result: 'NOM' },
+      { show: 'Billboard Music Awards', category: 'Top Global (Excl. U.S.) Artist', result: 'NOM' },
+      { show: 'Billboard Music Awards', category: 'Best R&B Performance — "Tears On A Pretty Face"', result: 'NOM' },
+    ],
+    musicWins: [
+      { title: 'Tears On A Pretty Face', show: 'Music Bank', count: 2 },
+      { title: 'Tears On A Pretty Face', show: 'Inkigayo', count: 2 },
+      { title: 'Tears On A Pretty Face', show: 'Show Champion', count: 1 },
+    ],
+    charts: [
+      'Circle Chart — Artist of the Year (Digital) indicator tier',
+      'Apple Music Global R&B — Top 10 rotation presence',
+      'Grammy Awards 2025 cycle breakthrough',
+    ],
+  },
+  {
+    year: '2025',
+    album: 'SOUR | HONEY',
+    albumSub: '3rd Studio Album',
+    wins: [
+      { show: 'Golden Disc Awards', category: 'Digital Bonsang', result: 'WIN' },
+      { show: 'Circle Chart Music Awards', category: 'Global Digital Artist', result: 'WIN' },
+      { show: 'Seoul Music Awards', category: 'R&B / Soul Album', result: 'WIN' },
+      { show: 'Melon Music Awards', category: 'Top 10 Artist (Bonsang)', result: 'WIN' },
+      { show: 'Asia Artist Awards', category: 'Best Artist (Male Solo)', result: 'WIN' },
+      { show: 'Soul Train Music Awards', category: 'Best R&B / Soul Album', result: 'NOM' },
+      { show: 'BET Awards', category: 'Best New International Act', result: 'NOM' },
+      { show: 'American Music Awards', category: 'Favorite Male R&B Artist', result: 'NOM' },
+      { show: 'Billboard Music Awards', category: 'Top Global (Excl. U.S.) Artist', result: 'NOM' },
+    ],
+    musicWins: [
+      { title: 'SOUR', show: 'Inkigayo', count: 1 },
+    ],
+    charts: [
+      'Spotify global R&B editorial playlists ("CAN\'T LEAVE ALONE")',
+      'iTunes Album Top 10 — multiple Southeast Asian markets',
+      'North America producer-community playlist circulation',
+      'Post-Grammy global R&B stability phase',
+    ],
+  },
+];
+
+const totalWins = years.flatMap(y => y.wins).filter(w => w.result === 'WIN').length;
+const totalNoms = years.flatMap(y => y.wins).filter(w => w.result === 'NOM').length;
+const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + w.count, 0);
 ---
 <WikiLayout title="Awards" section="Recognition">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Recognition</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Recognition</div>
     <h1 class="text-4xl font-bold text-white mb-2">Awards</h1>
-    <p class="text-gray-400 text-sm">Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2025</p>
+    <p class="text-sm" style="color:var(--text-muted)">Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2025</p>
   </div>
-  <div class="prose prose-invert max-w-none"><Content /></div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-3 gap-3 mb-10">
+    {[
+      { val: totalWins, label: 'Award Wins' },
+      { val: totalNoms, label: 'Nominations' },
+      { val: totalMusicWins, label: 'Music Show Wins' },
+    ].map(s => (
+      <div class="stat-card text-center">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Year sections -->
+  <div class="flex flex-col gap-10">
+    {years.map(y => {
+      const wins = y.wins.filter(w => w.result === 'WIN');
+      const noms = y.wins.filter(w => w.result === 'NOM');
+      return (
+        <section>
+          <!-- Year header -->
+          <div class="flex items-baseline gap-4 mb-5 pb-3 border-b" style="border-color:var(--border)">
+            <span class="text-3xl font-black" style="color:var(--gold)">{y.year}</span>
+            <span class="text-lg font-bold text-white tracking-wide">{y.album}</span>
+            <span class="text-xs ml-auto px-2 py-0.5 rounded border" style="color:var(--text-muted);border-color:var(--border)">{y.albumSub}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded" style="background-color:color-mix(in srgb, var(--gold) 12%, transparent);color:var(--gold)">
+              {wins.length}W / {noms.length}N
+            </span>
+          </div>
+
+          <!-- Award table -->
+          <div class="rounded-lg overflow-hidden border mb-5" style="border-color:var(--border)">
+            <table class="w-full text-sm" style="margin:0">
+              <thead>
+                <tr style="background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface));border-bottom:1px solid var(--gold)">
+                  <th class="text-left px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);width:35%">Award Show</th>
+                  <th class="text-left px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Category</th>
+                  <th class="text-right px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);width:90px">Result</th>
+                </tr>
+              </thead>
+              <tbody style="background-color:var(--bg-surface)">
+                {y.wins.map((w, i) => (
+                  <tr style={`border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent);${i === y.wins.length - 1 ? 'border-bottom:none' : ''}`}>
+                    <td class="px-4 py-2.5 text-xs font-medium" style="color:var(--text-muted)">{w.show}</td>
+                    <td class="px-4 py-2.5 text-sm" style="color:var(--text)">{w.category}</td>
+                    <td class="px-4 py-2.5 text-right">
+                      {w.result === 'WIN'
+                        ? <span class="badge-win">★ WIN</span>
+                        : <span class="badge-nom">NOM</span>
+                      }
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Music show wins -->
+          {y.musicWins.length > 0 && (
+            <div class="mb-4">
+              <div class="text-xs font-semibold uppercase tracking-widest mb-2.5" style="color:var(--text-muted)">Music Show Wins</div>
+              <div class="flex flex-wrap gap-2">
+                {y.musicWins.map(mw => (
+                  <div class="flex items-center gap-2 px-3 py-1.5 rounded-md border text-sm" style="border-color:var(--border);background-color:var(--bg-surface)">
+                    <span class="font-medium text-white text-xs">{mw.show}</span>
+                    <span class="text-xs px-1.5 py-0.5 rounded font-bold" style="background-color:color-mix(in srgb, var(--gold) 15%, transparent);color:var(--gold)">×{mw.count}</span>
+                  </div>
+                ))}
+                <div class="text-xs self-center ml-1" style="color:var(--text-muted)">— {y.musicWins[0]?.title}</div>
+              </div>
+            </div>
+          )}
+
+          <!-- Charts -->
+          {y.charts.length > 0 && (
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">Chart Milestones</div>
+              <ul class="flex flex-col gap-1">
+                {y.charts.map(c => (
+                  <li class="flex items-start gap-2 text-sm" style="color:var(--text-muted)">
+                    <span class="mt-1.5 w-1 h-1 rounded-full shrink-0 inline-block" style="background-color:var(--gold)"></span>
+                    {c}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+      );
+    })}
+  </div>
 </WikiLayout>

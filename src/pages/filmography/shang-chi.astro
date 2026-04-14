@@ -7,69 +7,175 @@ const color = '#7c5a3a';
 const films = [
   {
     slug: 'legend-of-the-ten-rings',
-    num: '1',
+    num: 1,
     title: 'Shang-Chi and the Legend of the Ten Rings',
+    titleTh: 'ชาง-ชี กับตำนานลับเท็นริงส์',
     year: '2021',
-    phase: 'MCU Phase 4',
+    date: 'Sep 3, 2021',
+    phase: 'Phase 4',
     director: 'Destin Daniel Cretton',
-    note: 'James Hwang as Shang-Chi · MCU debut role',
+    role: 'James Hwang as Shang-Chi (Xu Shang-Chi)',
+    contribution: 'Actor',
+    status: 'released',
+    boxOffice: '$432M',
+    rtScore: '91%',
+    highlight: 'MCU debut · Korean-American superhero lead · First MCU film with Asian lead cast',
   },
   {
     slug: 'legacy-of-the-ten-rings',
-    num: '2',
+    num: 2,
     title: 'Shang-Chi and the Legacy of the Ten Rings',
+    titleTh: null,
     year: '2025',
-    phase: 'MCU Phase 5',
+    date: 'May 2, 2025',
+    phase: 'Phase 5',
     director: 'Destin Daniel Cretton',
-    note: 'James Hwang co-wrote screenplay',
+    role: 'James Hwang as Shang-Chi + Co-Screenwriter',
+    contribution: 'Actor + Writer',
+    status: 'released',
+    boxOffice: '$610M',
+    rtScore: '88%',
+    highlight: 'Co-wrote screenplay · Expanded solo identity within MCU',
   },
   {
     slug: 'legion-accursed',
-    num: '3',
+    num: 3,
     title: 'Shang-Chi and the Legion Accursed',
+    titleTh: null,
     year: '2026',
-    phase: 'MCU Phase 6',
+    date: 'Nov 12, 2026',
+    phase: 'Phase 6',
     director: 'Isaiah Saxon',
-    note: 'James Hwang co-wrote screenplay · franchise conclusion',
+    role: 'James Hwang as Shang-Chi + Co-Screenwriter',
+    contribution: 'Actor + Writer',
+    status: 'upcoming',
+    boxOffice: null,
+    rtScore: null,
+    highlight: 'Trilogy conclusion · Co-wrote screenplay · Phase 6 capstone role',
   },
 ];
+
+const totalBO = '$1.04B+';
 ---
 
 <WikiLayout title="Shang-Chi Trilogy" section="Filmography">
-  <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-300 mb-6 transition-colors">
+  <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Filmography
   </a>
 
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">MCU Trilogy</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>MCU Trilogy · Marvel Studios</div>
     <h1 class="text-4xl font-bold text-white mb-1">Shang-Chi Trilogy</h1>
-    <p class="text-gray-400 text-sm">Marvel Cinematic Universe · 2021–2026 · 3 films</p>
+    <p class="text-sm" style="color:var(--text-muted)">Marvel Cinematic Universe · 2021–2026 · 3 films · {totalBO} combined box office</p>
   </div>
 
-  <div class="space-y-2">
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '3', label: 'Films' },
+      { val: totalBO, label: 'Box Office (Combined)' },
+      { val: '2021–2026', label: 'Timeline' },
+      { val: 'Phase 4–6', label: 'MCU Era' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Film cards -->
+  <div class="flex flex-col gap-4 mb-10">
     {films.map(f => (
       <a href={`${base}filmography/shang-chi/${f.slug}`}
-        class="flex items-center gap-4 border rounded-xl px-5 py-4 hover:border-gray-500 transition-all group"
-        style="border-color:#2a2a2a;background-color:#141414">
-        <!-- Number badge -->
-        <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg font-bold shrink-0"
-          style={`background-color:${color}22;color:${color};border:1px solid ${color}44`}>
-          {f.num}
-        </div>
-        <!-- Info -->
-        <div class="flex-1 min-w-0">
-          <div class="flex flex-wrap items-center gap-2 mb-0.5">
-            <span class="text-sm font-semibold text-white group-hover:text-yellow-400 transition-colors">{f.title}</span>
-            <span class="text-xs px-1.5 py-0.5 rounded font-semibold uppercase tracking-wider"
-              style={`background:${color}18;color:${color}`}>{f.phase}</span>
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <!-- Header bar -->
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-base font-black shrink-0"
+              style={`background-color:${color}25;color:${color};border:1px solid ${color}44`}>
+              {f.num}
+            </div>
+            <div>
+              <div class="text-base font-black text-white group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{f.title}</div>
+              {f.titleTh && <div class="text-xs mt-0.5" style="color:var(--text-muted)">{f.titleTh}</div>}
+            </div>
           </div>
-          <div class="text-xs text-gray-500">Dir. {f.director} · {f.note}</div>
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${color}18;color:${color}`}>{f.phase}</span>
+            {f.status === 'released'
+              ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">Released</span>
+              : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">Upcoming</span>
+            }
+            <div class="text-gray-600 group-hover:text-gray-400 transition-colors">→</div>
+          </div>
         </div>
-        <!-- Year -->
-        <div class="text-sm font-bold text-gray-500 shrink-0">{f.year}</div>
-        <!-- Arrow -->
-        <div class="text-gray-700 group-hover:text-gray-400 transition-colors shrink-0">→</div>
+
+        <!-- Stats row -->
+        <div class="grid grid-cols-3 md:grid-cols-5 divide-x" style="divide-color:var(--border);border-bottom:1px solid var(--border)">
+          {[
+            { val: f.date, label: 'Release Date' },
+            { val: f.director.split(' ').slice(-1)[0], label: 'Director' },
+            { val: f.contribution, label: "James's Role" },
+            { val: f.boxOffice ?? 'TBA', label: 'Box Office' },
+            { val: f.rtScore ?? '—', label: 'Rotten Tomatoes' },
+          ].map(c => (
+            <div class="flex flex-col items-center py-2.5 px-2 text-center">
+              <div class="text-xs font-bold text-white">{c.val}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Detail row -->
+        <div class="px-5 py-3 flex flex-col gap-1">
+          <div class="text-xs font-semibold" style={`color:${color}`}>{f.role}</div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{f.highlight}</p>
+        </div>
       </a>
     ))}
+  </div>
+
+  <!-- Franchise context -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>James's Contribution Arc</div>
+      <div style="background-color:var(--bg-surface)">
+        {[
+          { film: 'Film I', role: 'Actor only', detail: 'First MCU performance — established Shang-Chi as Korean-American lead' },
+          { film: 'Film II', role: 'Actor + Co-Writer', detail: 'Joined screenplay team — shaped character arc and dialogue' },
+          { film: 'Film III', role: 'Actor + Co-Writer', detail: 'Full creative partner on trilogy conclusion' },
+        ].map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-3" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-bold w-14 shrink-0 mt-0.5" style={`color:${color}`}>{r.film}</div>
+            <div>
+              <div class="text-sm font-semibold text-white mb-0.5">{r.role}</div>
+              <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{r.detail}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>Key Cast (Film I)</div>
+      <div style="background-color:var(--bg-surface)">
+        {[
+          { actor: 'James Hwang', role: 'Shang-Chi (Xu Shang-Chi)' },
+          { actor: 'Tony Leung', role: 'Mandarin (Xu Wenwu)' },
+          { actor: 'Ashley Liao', role: 'Katy (Ruiwen)' },
+          { actor: 'Michelle Yeoh', role: 'Ying Nan' },
+          { actor: 'Fala Chen', role: 'Ying Li' },
+          { actor: 'Ben Kingsley', role: 'Trevor Slattery' },
+        ].map((c, i, arr) => (
+          <div class="flex items-center gap-4 px-4 py-2" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <span class="text-sm font-semibold text-white w-36 shrink-0">{c.actor}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{c.role}</span>
+          </div>
+        ))}
+      </div>
+    </div>
   </div>
 </WikiLayout>

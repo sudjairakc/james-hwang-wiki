@@ -6,98 +6,152 @@ const tours = [
   {
     slug: 'pulse',
     name: 'PULSE World Tour',
-    tagline: 'Let your PULSE rise, come fly with me',
-    period: 'July 2023 – May 2024',
-    legs: 5,
+    order: '1st World Tour',
+    tagline: 'Let your PULSE rise, come fly with me.',
+    period: 'July 28, 2023 – May 30, 2024',
+    legs: 4,
     shows: 64,
+    cities: 34,
     songsPerNight: '23–33',
-    gross: '$235M',
+    runtime: '1h 42m – 2h 26m',
+    ticketGross: '$235M',
+    sponsorRev: '$26M',
+    profitPool: '$105M',
     color: '#5a7c6a',
-    regions: ['East Asia', 'Southeast Asia', 'Americas', 'Europe', 'Rest of World'],
+    regions: ['East Asia', 'Southeast Asia', 'Oceania', 'Middle East', 'Americas', 'Europe'],
   },
   {
     slug: 'decade',
     name: 'DECADE Tour',
-    tagline: 'DECADE lives in songs we made',
-    period: 'Jan 13 – Feb 28, 2027',
-    legs: null,
-    shows: null,
+    order: '2nd Tour · Anthology',
+    tagline: 'A DECADE lives in songs we made.',
+    period: 'January 15 – February 18, 2027',
+    legs: 2,
+    shows: 18,
+    cities: 10,
     songsPerNight: '29',
-    gross: '$74M',
+    runtime: '2h 00m',
+    ticketGross: '$74M',
+    sponsorRev: '$14M',
+    profitPool: '$40M',
     color: '#6e5a7c',
-    regions: [],
+    regions: ['Asia', 'Americas', 'Europe'],
   },
+];
+
+const partners = [
+  { region: 'Korea', name: 'Dream Maker' },
+  { region: 'Japan', name: 'Kyodo' },
+  { region: 'Southeast Asia', name: 'Live Nation Asia' },
+  { region: 'North America', name: 'Live Nation' },
+  { region: 'Europe', name: 'AEG Presents' },
+];
+
+const productionCosts = [
+  { item: 'Staging / LED / automation', pct: '18–22%' },
+  { item: 'Venue cost', pct: '12–18%' },
+  { item: 'Freight & logistics', pct: '10–14%' },
+  { item: 'Crew payroll', pct: '8–12%' },
+  { item: 'Travel & accommodation', pct: '6–8%' },
+  { item: 'Insurance', pct: '2–4%' },
+  { item: 'Rehearsals', pct: '2–3%' },
 ];
 ---
 
 <WikiLayout title="Tours" section="Live">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#c9a84c">Live</div>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Live</div>
     <h1 class="text-4xl font-bold text-white mb-2">Tours</h1>
-    <p class="text-gray-400 text-sm">$309M combined gross · 2 world tours</p>
+    <p class="text-sm" style="color:var(--text-muted)">$309M combined gross · 82 shows · 44 cities · 2 world tours</p>
   </div>
 
-  <div class="space-y-4 mb-10">
+  <!-- Combined stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '$309M', label: 'Combined Ticket Gross' },
+      { val: '$40M', label: 'Combined Sponsor Revenue' },
+      { val: '~$145M', label: 'Combined Profit Pool' },
+      { val: '~$61M', label: "James' Personal Income" },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Tour cards -->
+  <div class="flex flex-col gap-5 mb-10">
     {tours.map(t => (
       <a href={`${base}tours/${t.slug}`}
-        class="block border rounded-xl p-6 hover:border-gray-500 transition-all group"
-        style="border-color:#2a2a2a;background-color:#141414">
-        <div class="flex flex-col md:flex-row md:items-start gap-4">
-          <div class="flex-1">
-            <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${t.color}`}>World Tour</div>
-            <h2 class="text-2xl font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors">{t.name}</h2>
-            <p class="text-gray-400 text-sm italic mb-3">"{t.tagline}"</p>
-            <p class="text-xs text-gray-500">{t.period}</p>
-            {t.regions.length > 0 && (
-              <div class="flex flex-wrap gap-1.5 mt-3">
-                {t.regions.map(r => (
-                  <span class="text-xs px-2 py-0.5 rounded-full bg-white/5 text-gray-400">{r}</span>
-                ))}
-              </div>
-            )}
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${t.color}44;background-color:${t.color}10`}>
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${t.color}`}>{t.order}</div>
+            <div class="text-xl font-black text-white group-hover:underline" style={`text-decoration-color:${t.color}`}>{t.name}</div>
+            <div class="text-xs italic mt-0.5" style="color:var(--text-muted)">"{t.tagline}"</div>
           </div>
-          <div class="flex md:flex-col gap-6 md:gap-3 md:items-end text-right shrink-0">
-            <div>
-              <div class="text-2xl font-bold text-white">{t.gross}</div>
-              <div class="text-xs text-gray-500">Gross revenue</div>
+          <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>
+        </div>
+
+        <!-- Stats grid -->
+        <div class="grid grid-cols-3 md:grid-cols-6 divide-x" style="divide-color:var(--border);border-bottom:1px solid var(--border)">
+          {[
+            { val: t.shows ?? '—', label: 'Shows' },
+            { val: t.cities, label: 'Cities' },
+            { val: t.legs, label: 'Legs' },
+            { val: t.ticketGross, label: 'Ticket Gross' },
+            { val: t.sponsorRev, label: 'Sponsors' },
+            { val: t.profitPool, label: 'Profit Pool' },
+          ].map(s => (
+            <div class="flex flex-col items-center py-3 px-2">
+              <div class="text-sm font-bold text-white">{s.val}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{s.label}</div>
             </div>
-            {t.shows && (
-              <div>
-                <div class="text-xl font-bold text-white">{t.shows}</div>
-                <div class="text-xs text-gray-500">Shows</div>
-              </div>
-            )}
-            <div>
-              <div class="text-xl font-bold text-white">{t.songsPerNight}</div>
-              <div class="text-xs text-gray-500">Songs/night</div>
-            </div>
+          ))}
+        </div>
+
+        <!-- Period + regions -->
+        <div class="flex flex-wrap items-center gap-3 px-5 py-2.5">
+          <span class="text-xs font-mono" style="color:var(--text-muted)">{t.period}</span>
+          <span class="text-xs" style="color:color-mix(in srgb, var(--border) 80%, transparent)">·</span>
+          <div class="flex flex-wrap gap-1.5">
+            {t.regions.map(r => (
+              <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{r}</span>
+            ))}
           </div>
         </div>
       </a>
     ))}
   </div>
 
-  <div class="border rounded-xl p-6" style="border-color:#2a2a2a;background-color:#141414">
-    <h3 class="text-sm font-semibold text-white mb-4">Tour Operations</h3>
-    <div class="grid md:grid-cols-2 gap-4 text-sm">
-      <div>
-        <div class="text-xs text-gray-500 mb-1">Regional Partners</div>
-        <ul class="space-y-1 text-xs text-gray-400">
-          <li>Dream Maker — Korea</li>
-          <li>Kyodo — Japan</li>
-          <li>Live Nation — Asia/US</li>
-          <li>AEG — Europe</li>
-        </ul>
+  <!-- Operations -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Partners -->
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--gold)">Regional Partners</div>
+      {partners.map((p, i, arr) => (
+        <div class="flex items-center gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-xs font-semibold w-28 shrink-0" style="color:var(--text-muted)">{p.region}</span>
+          <span class="text-sm font-medium text-white">{p.name}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- Production cost breakdown -->
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--gold)">
+        Production Cost Breakdown <span class="font-normal normal-case" style="color:var(--text-muted)">~55–65% of gross</span>
       </div>
-      <div>
-        <div class="text-xs text-gray-500 mb-1">Production Cost Breakdown</div>
-        <ul class="space-y-1 text-xs text-gray-400">
-          <li>Staging: 18–22% of gross</li>
-          <li>Freight: 10–14%</li>
-          <li>Venue: 12–18%</li>
-          <li>Crew: 8–12%</li>
-        </ul>
-      </div>
+      {productionCosts.map((c, i, arr) => (
+        <div class="flex items-center gap-4 px-4 py-2" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-sm flex-1" style="color:var(--text-muted)">{c.item}</span>
+          <span class="text-xs font-semibold" style="color:var(--gold)">{c.pct}</span>
+        </div>
+      ))}
     </div>
   </div>
 </WikiLayout>
