@@ -53,7 +53,7 @@ const franchises = [
         <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${f.color}44;background-color:${f.color}10`}>
           <div>
             <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${f.color}`}>{f.universe}</div>
-            <div class="text-base font-black text-white group-hover:underline" style={`text-decoration-color:${f.color}`}>{f.franchise}</div>
+            <h2 id={f.franchise.toLowerCase().replace(/\s+/g, '-')} class="text-base font-black m-0 group-hover:underline" style={`color:var(--text);text-decoration-color:${f.color}`}>{f.franchise}</h2>
           </div>
           <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>
         </div>

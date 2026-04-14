@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const timeline = [
   {
@@ -62,11 +63,23 @@ const outcome = [
   { label: 'Future Activity', val: 'SM confirmed no interference' },
 ];
 ---
-<WikiLayout title="Legal" section="History">
+<WikiLayout title="Legal" section="History" relatedPages={[
+  { label: 'JH Company', href: `${base}company` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Discography', href: `${base}discography` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">History</div>
     <h1 class="wiki-title mb-2">Contract Dispute & Departure</h1>
-    <p class="text-sm" style="color:var(--text-muted)">SM Entertainment · 2022–2023 · Settled April 27, 2023</p>
+    <p class="text-sm mb-3" style="color:var(--text-muted)">SM Entertainment · 2022–2023 · Settled April 27, 2023</p>
+    <p class="text-sm leading-7 max-w-3xl" style="color:var(--text-muted)">
+      In late 2022, James Hwang initiated legal proceedings against SM Entertainment over creative rights and financial transparency,
+      culminating in a settlement that granted full IP ownership and enabled the founding of
+      <a href={`${base}company`} style="color:var(--gold)">JH Company</a>.
+      The case became a landmark reference point for artist rights in K-pop.
+      See the <a href={`${base}timeline`} style="color:var(--gold)">career timeline</a> for the full chronology of events.
+    </p>
   </div>
 
   <!-- Outcome summary banner -->

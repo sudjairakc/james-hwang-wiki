@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const academicItems = [
   {
@@ -124,7 +125,13 @@ const legacyItems = [
   { label: 'Unique Position', val: 'First Southeast Asian-origin global idol-auteur franchise architect inside Korean system trajectory' },
 ];
 ---
-<WikiLayout title="Cultural Impact" section="Analysis">
+<WikiLayout title="Cultural Impact" section="Analysis" relatedPages={[
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Artist Canon', href: `${base}canon` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Filmography', href: `${base}filmography` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">Analysis</div>
     <h1 class="wiki-title mb-2">Cultural Impact</h1>

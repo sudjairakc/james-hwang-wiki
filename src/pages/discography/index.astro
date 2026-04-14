@@ -186,7 +186,7 @@ const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
         <!-- Info -->
         <div class="flex-1 min-w-0">
           <div class="flex flex-wrap items-baseline gap-2 mb-0.5">
-            <span class="text-base font-black text-white group-hover:underline" style={`text-decoration-color:${a.color}`}>{a.title}</span>
+            <h2 id={a.slug} class="text-base font-black m-0 group-hover:underline" style={`color:var(--text);text-decoration-color:${a.color}`}>{a.title}</h2>
             <span class="text-xs" style="color:var(--text-muted)">{a.subtitle}</span>
             <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style={`background-color:${a.color}18;color:${a.color}`}>{a.era}</span>
           </div>

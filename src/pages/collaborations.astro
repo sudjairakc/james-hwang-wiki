@@ -1,0 +1,263 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+type Collab = {
+  title: string;
+  artist: string;
+  artistRole: string;
+  album: string;
+  albumSlug: string;
+  year: string;
+  genre: string;
+  spotify: string;
+  youtube?: string;
+  eraColor: string;
+  note: string;
+};
+
+type GuestCredit = {
+  title: string;
+  mainArtist: string;
+  role: string;
+  year: string;
+  platform: string;
+  note: string;
+};
+
+// Featured tracks — James as lead artist, with guest
+const featuredTracks: Collab[] = [
+  {
+    title: 'CRUSH (feat. Jungkook)',
+    artist: 'Jungkook (BTS)',
+    artistRole: 'Featured vocalist',
+    album: 'SOFTEST TOUCH',
+    albumSlug: 'softest-touch',
+    year: '2022',
+    genre: 'Contemporary R&B / Pop',
+    spotify: '260M+',
+    eraColor: '#9b7fc8',
+    note: 'Breakout crossover track — biggest single from SOFTEST TOUCH era. Dual vocal dynamic between K-R&B and BTS pop phrasing became a reference point for cross-fandom collaboration.',
+  },
+  {
+    title: 'SAY (feat. keshi)',
+    artist: 'keshi',
+    artistRole: 'Featured vocalist & co-writer',
+    album: 'PULSE',
+    albumSlug: 'pulse-era',
+    year: '2023',
+    genre: 'Contemporary R&B / Alternative R&B',
+    spotify: '210M+',
+    youtube: '120M+',
+    eraColor: '#5a7c6a',
+    note: 'Named "Best K-pop Crossover Collaboration of 2023" by Billboard Korea. keshi co-wrote the track, making this a full creative partnership rather than a guest appearance.',
+  },
+  {
+    title: 'JUST A DREAM (feat. Janet Jackson)',
+    artist: 'Janet Jackson',
+    artistRole: 'Featured vocalist',
+    album: 'ARE U STILL',
+    albumSlug: 'are-u-still',
+    year: '2024',
+    genre: 'Soul / R&B / Funk-Disco',
+    spotify: '130M+',
+    youtube: '95M+',
+    eraColor: '#5a7aaa',
+    note: 'Described by Rolling Stone as "a conversation between two eras." Jackson\'s involvement was initiated through CAA introduction. Track received Grammy committee consideration in Best R&B Song category.',
+  },
+  {
+    title: "CAN'T LEAVE ALONE (feat. Pharrell Williams)",
+    artist: 'Pharrell Williams',
+    artistRole: 'Featured vocalist & co-producer',
+    album: 'SOUR|HONEY',
+    albumSlug: 'sour-honey',
+    year: '2025',
+    genre: 'Contemporary R&B / Neo-Soul',
+    spotify: '260M+',
+    youtube: '175M+',
+    eraColor: '#c06080',
+    note: "First entry into Spotify Global Top 50. Pharrell served as both featured artist and co-producer — the first time James shared production credit with an external name. Consequence of Sound: \"Pharrell knew to step back and let GONUNMA lead.\"",
+  },
+];
+
+// SM Station singles
+type StationSingle = {
+  title: string;
+  partner: string;
+  partnerGroup: string;
+  year: string;
+  platform: string;
+  eraColor: string;
+  note: string;
+};
+
+const stationSingles: StationSingle[] = [
+  {
+    title: 'RIGHT ABOUT LOVE (feat. Taeyong)',
+    partner: 'Taeyong',
+    partnerGroup: 'NCT 127',
+    year: '2018',
+    platform: 'SM STATION 2',
+    eraColor: '#c9a84c',
+    note: 'Released during SM Station 2. NCT unit collaboration showcasing James\'s vocal chemistry with Taeyong as production-driven counterpart. Later re-recorded as solo version on DECADE anthology.',
+  },
+  {
+    title: 'EVERLASTING (with Ten)',
+    partner: 'Ten',
+    partnerGroup: 'WayV / NCT',
+    year: '2019',
+    platform: 'SM STATION 3',
+    eraColor: '#c9a84c',
+    note: 'SM Station 3 collaboration. Two multilingual members with overlapping Thai heritage. Track became retrospectively significant after both left SM in 2022–2023. Solo version appeared on DECADE.',
+  },
+];
+
+// Stats
+const totalFeaturedStreams = '860M+';
+const uniqueCollabArtists = 6;
+const countrySpread = ['USA', 'Korea', 'Thailand'];
+---
+
+<WikiLayout title="Collaborations" section="Music" relatedPages={[
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Artist Canon', href: `${base}canon` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+]}>
+
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Music · Collaborations</div>
+    <h1 class="wiki-title mb-3">Collaborations & Featured Tracks</h1>
+    <p class="text-sm leading-relaxed" style="color:var(--text-muted)">
+      A comprehensive record of James Hwang's collaborative works — featured tracks across solo albums,
+      pre-debut SM Station singles, and guest appearances. Each collaboration reflects a deliberate
+      artistic and strategic choice rather than a commercial pairing.
+    </p>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '6', label: 'Unique collaborators' },
+      { val: totalFeaturedStreams, label: 'Featured track streams' },
+      { val: '4', label: 'Solo album features' },
+      { val: '2', label: 'SM Station co-releases' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Featured Tracks section -->
+  <div class="mb-12">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Featured Tracks</div>
+      <div class="flex-1 h-px" style="background-color:var(--border)"></div>
+      <div class="text-xs" style="color:var(--text-faint)">As lead artist</div>
+    </div>
+
+    <div class="space-y-4">
+      {featuredTracks.map(t => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <!-- Title bar -->
+          <div class="flex items-center justify-between px-5 py-3.5 border-b" style={`background-color:${t.eraColor}10;border-color:${t.eraColor}30`}>
+            <div>
+              <div class="font-semibold text-sm" style="color:var(--text)">{t.title}</div>
+              <div class="text-xs mt-0.5" style="color:var(--text-muted)">{t.genre}</div>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${t.eraColor}18;color:${t.eraColor}`}>{t.year}</span>
+            </div>
+          </div>
+
+          <!-- Details grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0" style="background-color:var(--bg-surface)">
+            <!-- Left: metadata -->
+            <div class="px-5 py-4 space-y-2.5 border-b md:border-b-0 md:border-r" style="border-color:var(--border)">
+              {[
+                { label: 'Featured Artist', val: t.artist },
+                { label: 'Role', val: t.artistRole },
+                { label: 'Album', val: t.album },
+              ].map(r => (
+                <div class="flex gap-3">
+                  <span class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</span>
+                  <span class="text-sm">{r.val}</span>
+                </div>
+              ))}
+              <div class="flex gap-3 pt-1">
+                <span class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">Streams</span>
+                <div class="flex gap-3 flex-wrap">
+                  <span class="text-sm font-semibold" style={`color:${t.eraColor}`}>Spotify {t.spotify}</span>
+                  {t.youtube && <span class="text-sm" style="color:var(--text-muted)">YT {t.youtube}</span>}
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">Album</span>
+                <a href={`${base}discography/${t.albumSlug}`} class="text-sm hover:underline" style={`color:${t.eraColor}`}>
+                  → {t.album}
+                </a>
+              </div>
+            </div>
+            <!-- Right: context note -->
+            <div class="px-5 py-4 flex items-start">
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{t.note}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- SM Station collaborations -->
+  <div class="mb-12">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">SM Station Co-Releases</div>
+      <div class="flex-1 h-px" style="background-color:var(--border)"></div>
+      <div class="text-xs" style="color:var(--text-faint)">Pre-solo debut · 2018–2019</div>
+    </div>
+
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {stationSingles.map((t, i) => (
+        <div class={`flex flex-col md:flex-row gap-0 ${i !== stationSingles.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="w-1.5 shrink-0" style={`background-color:${t.eraColor}`}></div>
+          <div class="flex-1 px-5 py-4" style="background-color:var(--bg-surface)">
+            <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+              <div>
+                <div class="font-semibold text-sm" style="color:var(--text)">{t.title}</div>
+                <div class="text-xs mt-0.5" style="color:var(--text-muted)">{t.platform} · {t.year} · with {t.partner} ({t.partnerGroup})</div>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{t.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-3 text-xs rounded-lg px-4 py-3 border-l-2" style="border-color:var(--gold);background-color:color-mix(in srgb, var(--gold) 6%, transparent);color:var(--text-muted)">
+      Both SM Station tracks were later revisited on DECADE (2026) as solo reinterpretation versions — signaling James's intent to reclaim and recontextualize his pre-independence catalog.
+    </div>
+  </div>
+
+  <!-- Collaboration philosophy -->
+  <div class="rounded-xl border p-6 mb-8" style="border-color:var(--border);background-color:var(--bg-surface)">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Collaboration Philosophy</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm" style="color:var(--text-muted)">
+      <div>
+        <div class="font-semibold mb-1.5" style="color:var(--text)">Artist Selection</div>
+        <p class="leading-relaxed">Every collaboration involves an artist James has publicly cited as an influence or peer. No purely commercial pairings — each feature has a traceable artistic rationale.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-1.5" style="color:var(--text)">Creative Terms</div>
+        <p class="leading-relaxed">From PULSE onward, James retains final say on arrangement and production direction. Features are invited into a frame he defines — not co-equal productions.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-1.5" style="color:var(--text)">Pacing</div>
+        <p class="leading-relaxed">One major feature per album, escalating in scale: Jungkook (K-pop peer) → keshi (alt-R&B) → Janet Jackson (legacy R&B) → Pharrell Williams (legacy production). Each step was deliberate positioning.</p>
+      </div>
+    </div>
+  </div>
+
+</WikiLayout>

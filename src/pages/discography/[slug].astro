@@ -261,7 +261,12 @@ const tracks = slug !== 'decade' ? parseTracklist(rawText) : [];
 const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
 ---
 
-<WikiLayout title={meta.title} section="Discography">
+<WikiLayout title={meta.title} section="Discography" relatedPages={[
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Tours', href: `${base}tours` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+]}>
   <a href={`${base}discography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Discography
   </a>
@@ -467,12 +472,19 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
 
   /* Tighten up the prose for album context sections */
   :global(.album-prose h3) {
+    font-size: 0.75rem;
     margin-top: 1.5rem !important;
     margin-bottom: 0.5rem !important;
   }
   :global(.album-prose p) {
+    font-size: 0.875rem;
+    line-height: 1.75;
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
+  }
+  :global(.album-prose li) {
+    font-size: 0.875rem;
+    line-height: 1.7;
   }
   :global(.album-prose ul) {
     margin-top: 0.4rem !important;
@@ -490,6 +502,11 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
     border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
     padding-bottom: 0.25rem;
     margin-bottom: 0.25rem !important;
+  }
+  /* <br /> inside flex = force line break */
+  :global(.album-prose p:has(strong:first-child) br) {
+    flex-basis: 100%;
+    height: 0;
   }
   /* Code blocks (lyrics) */
   :global(.album-prose pre) {

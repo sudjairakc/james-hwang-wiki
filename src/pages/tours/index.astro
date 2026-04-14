@@ -58,7 +58,13 @@ const productionCosts = [
 ];
 ---
 
-<WikiLayout title="Tours" section="Live">
+<WikiLayout title="Tours" section="Live" relatedPages={[
+  { label: 'PULSE World Tour', href: `${base}tours/pulse` },
+  { label: 'DECADE Tour', href: `${base}tours/decade` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">Live</div>
     <h1 class="wiki-title mb-2">Tours</h1>
@@ -91,7 +97,7 @@ const productionCosts = [
         <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${t.color}44;background-color:${t.color}10`}>
           <div>
             <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${t.color}`}>{t.order}</div>
-            <div class="text-xl font-black group-hover:underline" style={`text-decoration-color:${t.color}`}>{t.name}</div>
+            <h2 id={t.slug} class="text-xl font-black m-0 group-hover:underline" style={`color:var(--text);text-decoration-color:${t.color}`}>{t.name}</h2>
             <div class="text-xs italic mt-0.5" style="color:var(--text-muted)">"{t.tagline}"</div>
           </div>
           <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>

@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const kpis = [
   { val: '82%', label: 'James Ownership', sub: 'Controlling shareholder' },
@@ -47,11 +48,25 @@ const valPhases = [
   { phase: 'Aggressive upside', range: '$800M+', trigger: 'Global studio-tier transition' },
 ];
 ---
-<WikiLayout title="JH Company" section="Business">
+<WikiLayout title="JH Company" section="Business" relatedPages={[
+  { label: 'Legal', href: `${base}legal` },
+  { label: 'Endorsements', href: `${base}ecosystem` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Tours', href: `${base}tours` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">Business</div>
     <h1 class="wiki-title mb-2">JH Company</h1>
-    <p class="text-sm" style="color:var(--text-muted)">Founded 2023 · Seoul HQ · Artist-led global entertainment studio</p>
+    <p class="text-sm mb-3" style="color:var(--text-muted)">Founded 2023 · Seoul HQ · Artist-led global entertainment studio</p>
+    <p class="text-sm leading-7 max-w-3xl" style="color:var(--text-muted)">
+      JH Company was established by <strong style="color:var(--text)">James Hwang</strong> in May 2023, immediately following the
+      <a href={`${base}legal`} style="color:var(--gold)">settlement of his contract dispute with SM Entertainment</a>.
+      The company manages his <a href={`${base}discography`} style="color:var(--gold)">music catalog</a>,
+      <a href={`${base}tours`} style="color:var(--gold)">touring operations</a>,
+      <a href={`${base}ecosystem`} style="color:var(--gold)">brand partnerships</a>,
+      and serves as the production entity behind the <a href={`${base}filmography/resonance`} style="color:var(--gold)">RESONANCE franchise</a>.
+    </p>
   </div>
 
   <!-- KPI Cards -->

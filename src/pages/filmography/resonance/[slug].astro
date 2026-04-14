@@ -110,7 +110,13 @@ const mod = await modules[key]() as { Content: any };
 const { Content } = mod;
 ---
 
-<WikiLayout title={meta.title} section="Filmography">
+<WikiLayout title={meta.title} section="Filmography" relatedPages={[
+  { label: 'RESONANCE Franchise', href: `${base}filmography/resonance` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Shang-Chi Trilogy', href: `${base}filmography/shang-chi` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+]}>
   <a href={`${base}filmography/resonance`}
     class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to RESONANCE Franchise

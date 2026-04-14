@@ -106,7 +106,13 @@ const setlist = [
 ];
 ---
 
-<WikiLayout title="DECADE Tour" section="Tours">
+<WikiLayout title="DECADE Tour" section="Tours" relatedPages={[
+  { label: 'Tours Overview', href: `${base}tours` },
+  { label: 'PULSE World Tour', href: `${base}tours/pulse` },
+  { label: 'DECADE Album', href: `${base}discography/decade` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Awards', href: `${base}awards` },
+]}>
   <a href={`${base}tours`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">← Back to Tours</a>
 
   <div class="mb-8">

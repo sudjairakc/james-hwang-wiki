@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const bioFacts = [
   { label: 'Born', val: 'June 22, 1998' },
@@ -97,7 +98,13 @@ const politicalItems = [
   },
 ];
 ---
-<WikiLayout title="Public Image" section="Biography">
+<WikiLayout title="Public Image" section="Biography" relatedPages={[
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Artist Canon', href: `${base}canon` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Legal', href: `${base}legal` },
+  { label: 'Endorsements', href: `${base}ecosystem` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">Biography</div>
     <h1 class="wiki-title mb-2">Public Image & Personal Background</h1>

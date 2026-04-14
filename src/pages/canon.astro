@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const identity = [
   { label: 'Chinese Name', val: '黃志南 (Huáng Zhìnán)' },
@@ -96,7 +97,13 @@ const liner98 = [
   { name: 'Arin', group: 'OH MY GIRL' },
 ];
 ---
-<WikiLayout title="Artist Canon" section="Reference">
+<WikiLayout title="Artist Canon" section="Reference" relatedPages={[
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+]}>
   <div class="mb-8">
     <div class="wiki-label mb-2">Reference</div>
     <h1 class="wiki-title mb-2">Artist Canon</h1>
