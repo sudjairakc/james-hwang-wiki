@@ -1,4 +1,23 @@
-🎼 RESONANCE: THE MISSING CHORD (2027)
+# RESONANCE: THE MISSING CHORD (2028)
+
+| | |
+|---|---|
+| **Release** | November 2, 2028 (Theatrical · Global · Film I of III) |
+| **Director** | James Hwang (Co-Director) |
+| **Composer** | Ludwig Göransson |
+| **Distributor** | Walt Disney Pictures |
+| **Production** | JH Company · Lucasfilm Ltd. |
+
+| Phase | Period |
+|---|---|
+| Development | February – May 2027 |
+| Pre-production | October – December 2027 |
+| Principal photography | January – June 2028 |
+| Post-production | July – October 2028 |
+
+---
+
+🎼 RESONANCE: THE MISSING CHORD (2028)
 
 🎼 ACT 0: THE BROKEN HARMONY (รอยร้าวแห่งท่วงทำนอง)
 1. มหาวิหาร Melodia – 15 ปีก่อน (The Intro)

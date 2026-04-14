@@ -1,42 +1,41 @@
 # CAPTAIN EO: RESONANCE (2026)
 
-Season: 1<br />
-Episodes: 6<br />
-Development: Oct 2025 – Dec 2025<br />
-Writers’ room: Nov 2025 – Feb 2026<br />
-Pre-production: Jan 2026 – Mar 2026<br />
-Principal photography: Mar 2026 – Jun 2026<br />
-Post-production: Apr 2026 – Nov 2026<br />
-Marketing rollout: Oct 2026 – Dec 2026<br />
+| | |
+|---|---|
+| **Format** | Disney+ Limited Series |
+| **Season** | 1 · 6 Episodes |
+| **Release** | December 4, 2026 (EP1–2) · weekly rollout EP3–EP6 |
+| **Created by** | James Hwang |
+| **Showrunner** | Tony Gilroy |
+| **Directors** | Dan Trachtenberg (EP1–2) · Kogonada (EP3–4) · Jennifer Phang (EP5–6) |
+| **Composer** | Ludwig Göransson |
+| **Director of Photography** | Greig Fraser |
+| **Production Designer** | Luke Hull |
+| **Production companies** | Lucasfilm Ltd. · JH Company |
+| **VFX** | ILM · Framestore · DNEG · Wētā FX |
+| **Distributor** | Disney+ |
 
-Release window: Dec 2026<br />
-Premiere format: Week 1 = EP1–EP2<br />
-Remaining episodes: weekly rollout (EP3–EP6)<br />
+**Production Timeline:**
 
-**Created by**: James Hwang<br />
-**Showrunner**: Tony Gilroy<br />
+| Phase | Period |
+|---|---|
+| Development | Oct 2025 – Dec 2025 |
+| Writers’ room | Nov 2025 – Feb 2026 |
+| Pre-production | Jan 2026 – Mar 2026 |
+| Principal photography | Mar 2026 – Jun 2026 |
+| Post-production | Apr 2026 – Nov 2026 |
+| Marketing rollout | Oct 2026 – Dec 2026 |
 
-**Directors**:<br />
-Dan Trachtenberg _(EP1–2)_<br />
-Kogonada _(EP3–4)_<br />
-Jennifer Phang _(EP5–6)_<br />
+**Awards:**
 
-**Director of Photography**: Greig Fraser<br />
-**Production Designer**: Luke Hull<br />
-**Composer**: Ludwig Göransson<br />
-
-**Production companies**:<br />
-Lucasfilm Ltd.<br />
-JH Company<br />
-
-**VFX**:<br />
-Industrial Light & Magic<br />
-Framestore<br />
-DNEG<br />
-Wētā FX<br />
-
-**Distributor**:<br />
-Disney+<br />
+| Award | Category | Result |
+|---|---|---|
+| MTV Movie & TV Awards 2027 | Best Hero | WIN |
+| Saturn Awards 2027 | Best Actor in a Streaming Television Series | WIN |
+| Primetime Emmy Awards 2027 | Outstanding Lead Actor in a Drama Series | NOM |
+| Golden Globe Awards 2028 | Best Actor in a Television Series – Drama | WIN |
+| SAG Awards 2028 | Male Actor in a Drama Series | NOM |
+| Astra TV Awards 2028 | Best Actor in a Streaming Drama Series | WIN |
 
 ---
 

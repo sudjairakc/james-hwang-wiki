@@ -99,19 +99,19 @@ const politicalItems = [
 ---
 <WikiLayout title="Public Image" section="Biography">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Biography</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Public Image & Personal Background</h1>
+    <div class="wiki-label mb-2">Biography</div>
+    <h1 class="wiki-title mb-2">Public Image & Personal Background</h1>
     <p class="text-sm" style="color:var(--text-muted)">Half-Thai, Half-Korean · Born June 22, 1998 · Thai citizenship</p>
   </div>
 
   <!-- Bio facts -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Personal Background</h2>
+    <h2 class="wiki-section mb-4">Personal Background</h2>
     <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
       {bioFacts.map((f, i, arr) => (
         <div class="flex items-baseline gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
           <span class="text-xs font-semibold uppercase tracking-widest w-28 shrink-0" style="color:var(--text-muted)">{f.label}</span>
-          <span class="text-sm text-white">{f.val}</span>
+          <span class="text-sm">{f.val}</span>
         </div>
       ))}
     </div>
@@ -122,7 +122,7 @@ const politicalItems = [
 
   <!-- NCT 127 dynamics -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Group Dynamics — NCT 127</h2>
+    <h2 class="wiki-section mb-4">Group Dynamics — NCT 127</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       {nctDynamics.map(d => {
         const borderCol = d.severity === 'medium' ? 'color-mix(in srgb, #facc15 25%, transparent)' : 'var(--border)';
@@ -132,7 +132,7 @@ const politicalItems = [
           <div class="rounded-lg border px-4 py-3" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{d.severity}</span>
-              <span class="text-sm font-bold text-white">{d.topic}</span>
+              <span class="text-sm font-bold">{d.topic}</span>
             </div>
             <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.text}</p>
           </div>
@@ -143,7 +143,7 @@ const politicalItems = [
 
   <!-- Political engagement -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Thailand Political Engagement</h2>
+    <h2 class="wiki-section mb-4">Thailand Political Engagement</h2>
     <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
       {politicalItems.map((p, i, arr) => (
         <div class="flex gap-5 px-4 py-3" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
@@ -151,7 +151,7 @@ const politicalItems = [
             <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{p.period}</span>
           </div>
           <div>
-            <div class="text-sm font-bold text-white mb-1">{p.event}</div>
+            <div class="text-sm font-bold mb-1">{p.event}</div>
             <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.text}</p>
           </div>
         </div>
@@ -164,7 +164,7 @@ const politicalItems = [
 
   <!-- Controversies & rumors -->
   <section>
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Controversies & Rumors</h2>
+    <h2 class="wiki-section mb-4">Controversies & Rumors</h2>
     <div class="flex flex-col gap-2">
       {controversies.map(c => {
         const sev = c.severity;
@@ -180,7 +180,7 @@ const politicalItems = [
             <div class="flex-1">
               <div class="flex items-center gap-2 mb-1 flex-wrap">
                 <span class="text-xs font-semibold px-2 py-0.5 rounded uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{c.severity}</span>
-                <span class="text-sm font-bold text-white">{c.type}</span>
+                <span class="text-sm font-bold">{c.type}</span>
                 {c.names.length > 0 && (
                   <div class="flex gap-1 flex-wrap">
                     {c.names.map(n => (

@@ -60,8 +60,8 @@ const productionCosts = [
 
 <WikiLayout title="Tours" section="Live">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Live</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Tours</h1>
+    <div class="wiki-label mb-2">Live</div>
+    <h1 class="wiki-title mb-2">Tours</h1>
     <p class="text-sm" style="color:var(--text-muted)">$309M combined gross · 82 shows · 44 cities · 2 world tours</p>
   </div>
 
@@ -91,7 +91,7 @@ const productionCosts = [
         <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${t.color}44;background-color:${t.color}10`}>
           <div>
             <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${t.color}`}>{t.order}</div>
-            <div class="text-xl font-black text-white group-hover:underline" style={`text-decoration-color:${t.color}`}>{t.name}</div>
+            <div class="text-xl font-black group-hover:underline" style={`text-decoration-color:${t.color}`}>{t.name}</div>
             <div class="text-xs italic mt-0.5" style="color:var(--text-muted)">"{t.tagline}"</div>
           </div>
           <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>
@@ -108,7 +108,7 @@ const productionCosts = [
             { val: t.profitPool, label: 'Profit Pool' },
           ].map(s => (
             <div class="flex flex-col items-center py-3 px-2">
-              <div class="text-sm font-bold text-white">{s.val}</div>
+              <div class="text-sm font-bold">{s.val}</div>
               <div class="text-xs" style="color:var(--text-muted)">{s.label}</div>
             </div>
           ))}
@@ -136,7 +136,7 @@ const productionCosts = [
       {partners.map((p, i, arr) => (
         <div class="flex items-center gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
           <span class="text-xs font-semibold w-28 shrink-0" style="color:var(--text-muted)">{p.region}</span>
-          <span class="text-sm font-medium text-white">{p.name}</span>
+          <span class="text-sm font-medium">{p.name}</span>
         </div>
       ))}
     </div>

@@ -64,8 +64,8 @@ const outcome = [
 ---
 <WikiLayout title="Legal" section="History">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">History</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Contract Dispute & Departure</h1>
+    <div class="wiki-label mb-2">History</div>
+    <h1 class="wiki-title mb-2">Contract Dispute & Departure</h1>
     <p class="text-sm" style="color:var(--text-muted)">SM Entertainment · 2022–2023 · Settled April 27, 2023</p>
   </div>
 
@@ -76,12 +76,12 @@ const outcome = [
       <div class="text-2xl">⚖</div>
     </div>
     <div class="flex-1">
-      <div class="text-sm font-bold text-white mb-2">Resolved via mutual settlement</div>
+      <div class="text-sm font-bold mb-2">Resolved via mutual settlement</div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-1.5">
         {outcome.map(o => (
           <div>
             <div class="text-xs" style="color:var(--text-muted)">{o.label}</div>
-            <div class="text-xs font-semibold text-white">{o.val}</div>
+            <div class="text-xs font-semibold">{o.val}</div>
           </div>
         ))}
       </div>
@@ -90,7 +90,7 @@ const outcome = [
 
   <!-- Core issues -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Core Issues</h2>
+    <h2 class="wiki-section mb-4">Core Issues</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       {issues.map(issue => (
         <div class="rounded-lg border px-4 py-3" style={`border-color:${issue.severity === 'high' ? 'color-mix(in srgb, #ef4444 25%, transparent)' : 'var(--border)'};background-color:var(--bg-surface)`}>
@@ -99,7 +99,7 @@ const outcome = [
               style={`background-color:${issue.severity === 'high' ? 'color-mix(in srgb, #ef4444 12%, transparent)' : 'var(--bg-muted)'};color:${issue.severity === 'high' ? '#f87171' : 'var(--text-muted)'}`}>
               {issue.severity}
             </span>
-            <span class="text-sm font-bold text-white">{issue.title}</span>
+            <span class="text-sm font-bold">{issue.title}</span>
           </div>
           <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{issue.desc}</p>
         </div>
@@ -109,7 +109,7 @@ const outcome = [
 
   <!-- Timeline -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-6" style="color:var(--gold)">Timeline</h2>
+    <h2 class="wiki-section mb-6">Timeline</h2>
     <div class="relative">
       <!-- vertical line -->
       <div class="absolute left-[7px] top-2 bottom-2 w-px" style="background-color:var(--border)"></div>
@@ -124,7 +124,7 @@ const outcome = [
               <div class="flex-1">
                 <div class="flex items-baseline gap-3 mb-1 flex-wrap">
                   <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{ev.period}</span>
-                  <span class="text-sm font-bold text-white">{ev.label}</span>
+                  <span class="text-sm font-bold">{ev.label}</span>
                 </div>
                 <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{ev.text}</p>
               </div>
@@ -137,7 +137,7 @@ const outcome = [
 
   <!-- Aftermath -->
   <section>
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Aftermath</h2>
+    <h2 class="wiki-section mb-4">Aftermath</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
         <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">Lee Taeyong Response</div>

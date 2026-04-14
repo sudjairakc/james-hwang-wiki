@@ -3,12 +3,13 @@ import WikiLayout from '../../layouts/WikiLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 
-const slugMap: Record<string, { file: string; title: string; subtitle: string; year: string; color: string }> = {
+const slugMap: Record<string, { file: string; title: string; subtitle: string; year: string; date: string; color: string }> = {
   'like-i-do': {
     file: '01-like-i-do',
     title: 'LIKE I DO',
     subtitle: 'GONUNMA · Mini Album',
     year: '2016',
+    date: 'Nov 11, 2016',
     color: '#c9a84c',
   },
   'softest-touch': {
@@ -16,6 +17,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
     title: 'SOFTEST TOUCH',
     subtitle: '1st Mini Album',
     year: '2022',
+    date: 'Jan 11, 2022',
     color: '#9b7fc8',
   },
   'pulse-era': {
@@ -23,6 +25,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
     title: 'PULSE',
     subtitle: '1st Studio Album',
     year: '2023',
+    date: 'Jul 21, 2023',
     color: '#5a7c6a',
   },
   'are-u-still': {
@@ -30,6 +33,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
     title: 'ARE U STILL',
     subtitle: '2nd Studio Album',
     year: '2024',
+    date: 'Jan 8, 2024',
     color: '#5a7aaa',
   },
   'sour-honey': {
@@ -37,6 +41,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
     title: 'SOUR|HONEY',
     subtitle: '3rd Studio Album',
     year: '2025',
+    date: 'Feb 10, 2025',
     color: '#c06080',
   },
   'decade': {
@@ -44,6 +49,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
     title: 'DECADE',
     subtitle: 'Anthology Album',
     year: '2026',
+    date: 'Sep 9, 2026',
     color: '#6e5a7c',
   },
 };
@@ -269,8 +275,8 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
     </div>
     <div class="flex-1">
       <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>Discography</div>
-      <h1 class="text-4xl font-black text-white leading-none mb-1">{meta.title}</h1>
-      <p class="text-sm mb-3" style="color:var(--text-muted)">{meta.subtitle} · {meta.year}</p>
+      <h1 class="wiki-title mb-1">{meta.title}</h1>
+      <p class="text-sm mb-3" style="color:var(--text-muted)">{meta.subtitle} · {meta.date}</p>
     </div>
   </div>
 
@@ -280,16 +286,16 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
       <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">Commercial Metrics</div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>
-          <div class="text-2xl font-bold text-white">{m.albumStreams}</div>
+          <div class="text-2xl font-bold" style="color:var(--text)">{m.albumStreams}</div>
           <div class="text-xs text-gray-500 mt-0.5">Album streams (lifetime)</div>
         </div>
         <div>
-          <div class="text-sm font-semibold text-white leading-snug">{m.chartPeak}</div>
+          <div class="text-sm font-semibold leading-snug">{m.chartPeak}</div>
           <div class="text-xs text-gray-500 mt-0.5">Chart peak</div>
         </div>
         {m.spotifyPeak && (
           <div>
-            <div class="text-sm font-semibold text-white">{m.spotifyPeak}</div>
+            <div class="text-sm font-semibold">{m.spotifyPeak}</div>
             <div class="text-xs text-gray-500 mt-0.5">Spotify listeners</div>
           </div>
         )}
@@ -298,7 +304,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
       <div>
         <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Title Track</div>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
-          <span class="text-sm font-semibold text-white">{m.titleTrack.title}</span>
+          <span class="text-sm font-semibold">{m.titleTrack.title}</span>
           {m.titleTrack.spotify && (
             <span class="text-xs text-gray-400">Spotify <span class="text-white font-medium">{m.titleTrack.spotify}</span></span>
           )}
@@ -311,7 +317,7 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
         <div>
           <div class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Crossover Single</div>
           <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
-            <span class="text-sm font-semibold text-white">{m.crossover.title}</span>
+            <span class="text-sm font-semibold">{m.crossover.title}</span>
             {m.crossover.spotify && (
               <span class="text-xs text-gray-400">Spotify <span class="text-white font-medium">{m.crossover.spotify}</span></span>
             )}

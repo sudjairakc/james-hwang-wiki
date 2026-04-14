@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description?: string;
   section?: string;
+  relatedPages?: Array<{ label: string; href: string }>;
 }
 
-const { title, description = 'The definitive wiki for James Hwang — artist, actor, auteur.', section } = Astro.props;
+const { title, description = 'The definitive wiki for James Hwang — artist, actor, auteur.', section, relatedPages } = Astro.props;
 const base = import.meta.env.BASE_URL;
 
 const nav = [
@@ -107,11 +108,6 @@ const currentPath = Astro.url.pathname;
             );
           })}
         </nav>
-
-        <div class="mt-auto pt-6 px-2">
-          <p class="text-xs" style="color:var(--text-faint)">JamesHwangVerse Wiki</p>
-          <p class="text-xs" style="color:var(--text-faint)">Fictional universe</p>
-        </div>
       </aside>
 
       <!-- Mobile sidebar overlay -->
@@ -135,14 +131,153 @@ const currentPath = Astro.url.pathname;
       </div>
 
       <!-- Main content -->
-      <main class="flex-1 min-w-0 px-6 md:px-10 py-8">
+      <main id="wiki-main" class="flex-1 min-w-0 px-6 md:px-8 py-8">
+
+        <!-- Mobile TOC toggle (injected by JS when headings exist, hidden on xl where sidebar shows) -->
+        <div id="mobile-toc-container" class="hidden xl:hidden mb-6">
+          <button id="mobile-toc-toggle" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-3 py-2 rounded-md border w-full" style="color:var(--text-muted);border-color:var(--border);background:var(--bg-surface)">
+            <span style="color:var(--gold)">≡</span>
+            <span>Contents</span>
+            <span id="mobile-toc-count" class="text-xs px-1.5 py-0.5 rounded font-bold ml-1" style="background:color-mix(in srgb,var(--gold) 12%,transparent);color:var(--gold)"></span>
+            <span id="mobile-toc-arrow" class="ml-auto transition-transform duration-200">▾</span>
+          </button>
+          <nav id="mobile-toc-list" class="hidden mt-1 rounded-md border overflow-y-auto" style="border-color:var(--border);background:var(--bg-surface);max-height:60vh">
+          </nav>
+        </div>
+
         <slot />
       </main>
+
+      <!-- Right TOC sidebar (xl+) -->
+      <aside id="toc-sidebar" class="hidden xl:flex flex-col w-48 shrink-0 border-l sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto py-6 px-3" style="border-color:var(--border)">
+        <p id="toc-heading" class="hidden text-xs font-semibold uppercase tracking-widest mb-3 px-1" style="color:var(--gold)">Contents</p>
+        <nav id="toc-list" class="flex flex-col gap-0.5 text-xs"></nav>
+
+        {relatedPages && relatedPages.length > 0 && (
+          <div id="toc-related" class="mt-6 pt-5 border-t" style="border-color:var(--border)">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2 px-1" style="color:var(--gold)">See Also</p>
+            <nav class="flex flex-col gap-0.5">
+              {relatedPages.map(p => (
+                <a href={p.href} class="toc-related-link px-1 py-1 rounded text-xs transition-colors" style="color:var(--text-muted)">
+                  {p.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        )}
+      </aside>
     </div>
 
     <footer class="border-t mt-auto py-6 text-center text-xs" style="border-color:var(--border);color:var(--text-faint)">
       JamesHwangVerse — Fictional universe. All events, persons, and works are fictional.
     </footer>
+
+
+    <script>
+      // TOC generation
+      (function() {
+        const main = document.getElementById('wiki-main');
+        if (!main) return;
+
+        const headings = Array.from(main.querySelectorAll('h2, h3')) as HTMLElement[];
+        if (headings.length < 3) return;
+
+        // Assign IDs to headings that lack them
+        const seen: Record<string, number> = {};
+        headings.forEach(h => {
+          if (!h.id) {
+            const raw = h.textContent?.trim().toLowerCase()
+              .replace(/[^\w\s\u0E00-\u0E7F-]/g, '')
+              .replace(/\s+/g, '-') ?? 'section';
+            const key = raw.slice(0, 40) || 'section';
+            seen[key] = (seen[key] ?? 0) + 1;
+            h.id = seen[key] > 1 ? `${key}-${seen[key]}` : key;
+          }
+        });
+
+        // Build desktop TOC
+        const tocList = document.getElementById('toc-list');
+        const tocHeading = document.getElementById('toc-heading');
+        if (tocList && tocHeading) {
+          tocHeading.classList.remove('hidden');
+          headings.forEach(h => {
+            const a = document.createElement('a');
+            a.href = `#${h.id}`;
+            a.textContent = h.textContent?.trim() ?? '';
+            a.className = 'toc-item' + (h.tagName === 'H3' ? ' toc-h3' : '');
+            a.dataset.id = h.id;
+            tocList.appendChild(a);
+          });
+        }
+
+        // Build mobile TOC
+        const mobileContainer = document.getElementById('mobile-toc-container');
+        const mobileList = document.getElementById('mobile-toc-list');
+        const mobileToggle = document.getElementById('mobile-toc-toggle');
+        const mobileArrow = document.getElementById('mobile-toc-arrow');
+        const mobileCount = document.getElementById('mobile-toc-count');
+        if (mobileContainer && mobileList) {
+          // Only show on non-xl viewports (xl has the sidebar)
+          if (window.innerWidth < 1280) mobileContainer.classList.remove('hidden');
+          window.addEventListener('resize', () => {
+            mobileContainer.classList.toggle('hidden', window.innerWidth >= 1280);
+          });
+
+          const h2Items = headings.filter(h => h.tagName === 'H2');
+          if (mobileCount) mobileCount.textContent = String(h2Items.length || headings.length);
+
+          let h2idx = 0;
+          headings.forEach(h => {
+            const isH2 = h.tagName === 'H2';
+            if (isH2) h2idx++;
+
+            const a = document.createElement('a');
+            a.href = `#${h.id}`;
+            a.className = 'mobile-toc-item' + (isH2 ? '' : ' toc-h3');
+
+            if (isH2) {
+              const num = document.createElement('span');
+              num.className = 'toc-item-num';
+              num.textContent = String(h2idx);
+              a.appendChild(num);
+            }
+
+            const txt = document.createElement('span');
+            txt.className = 'toc-item-text';
+            txt.textContent = h.textContent?.trim() ?? '';
+            a.appendChild(txt);
+
+            a.addEventListener('click', () => {
+              mobileList.classList.add('hidden');
+              if (mobileArrow) mobileArrow.style.transform = '';
+            });
+            mobileList.appendChild(a);
+          });
+
+          mobileToggle?.addEventListener('click', () => {
+            const hidden = mobileList.classList.toggle('hidden');
+            if (mobileArrow) mobileArrow.style.transform = hidden ? '' : 'rotate(180deg)';
+          });
+        }
+
+        // IntersectionObserver — highlight active section in desktop TOC
+        if (!tocList) return;
+        const tocLinks = tocList.querySelectorAll<HTMLAnchorElement>('.toc-item');
+        let activeId = '';
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              activeId = entry.target.id;
+            }
+          });
+          tocLinks.forEach(a => {
+            a.classList.toggle('toc-active', a.dataset.id === activeId);
+          });
+        }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+        headings.forEach(h => observer.observe(h));
+      })();
+    </script>
 
     <script>
       // Mobile menu

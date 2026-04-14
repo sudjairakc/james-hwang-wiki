@@ -1,19 +1,21 @@
 ## Shang-Chi 3: Shang-Chi and the Legion Accursed (2026)
 (ชาง-ชี กับกองทัพผู้ถูกสาป)
 
-**Director**: Isaiah Saxon <br />
-**Screenwriter(s)**: Isaiah Saxon & Jonathan Wang & James Hwang <br />
-**Producer(s)**: Kevin Feige and Jonathan Schwartz <br />
-**Starring(s)**: James Hwang, Ashley Liao, Benedict Wong, Randall Park, Chiwetel Ejiofor (Mordo), Álvaro Morte (Diabol), Eva Green (Umar), Mark Ruffalo <br />
-**Refs:** 
+| | |
+|---|---|
+| **Director** | Isaiah Saxon |
+| **Screenwriter(s)** | Isaiah Saxon & Jonathan Wang & James Hwang |
+| **Producer(s)** | Kevin Feige and Jonathan Schwartz |
+| **Starring(s)** | James Hwang, Ashley Liao, Benedict Wong, Randall Park, Chiwetel Ejiofor (Mordo), Álvaro Morte (Diabol), Eva Green (Umar), Mark Ruffalo |
+| **Released** | September 18, 2026 |
+| **Pre-production** | August 2025 – January 2026 |
+| **Production** | January 2026 – March 2026 |
+| **Post-production** | April 2026 – September 2026 |
+
+**Comic References:**
 * กลุ่ม Legion Accursed _(Secret Wars II Vol. 1 #7 (1985))_
 * การสูญเสียคนรัก และตามล่าหาความจริงเกี่ยวกับพิธีกรรม _(Deadly Hands of Kung Fu Vol. 2 (2014))_
 * การต่อสู้กับ Mindless Ones _(Shang-Chi vs. the Marvel Universe #4 (2021))_
-
-**Pre-production**: August 2025 - January 2026 <br />
-**Production (Filming)**: January 2026 - March 2026 <br />
-**Post-Production**: April 2026 - September 2026 <br />
-**Released**: September 2026 <br />
 
 ---
 

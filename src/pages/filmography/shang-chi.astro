@@ -17,9 +17,10 @@ const films = [
     role: 'James Hwang as Shang-Chi (Xu Shang-Chi)',
     contribution: 'Actor',
     status: 'released',
-    boxOffice: '$432M',
+    boxOffice: '$611M',
+    boxOfficeFull: '610,800,855 USD',
     rtScore: '91%',
-    highlight: 'MCU debut · Korean-American superhero lead · First MCU film with Asian lead cast',
+    highlight: 'MCU debut · Asian superhero lead · First MCU film with Asian lead cast',
   },
   {
     slug: 'legacy-of-the-ten-rings',
@@ -27,13 +28,14 @@ const films = [
     title: 'Shang-Chi and the Legacy of the Ten Rings',
     titleTh: null,
     year: '2025',
-    date: 'May 2, 2025',
+    date: 'July 25, 2025',
     phase: 'Phase 5',
     director: 'Destin Daniel Cretton',
     role: 'James Hwang as Shang-Chi + Co-Screenwriter',
     contribution: 'Actor + Writer',
     status: 'released',
-    boxOffice: '$610M',
+    boxOffice: '$815M',
+    boxOfficeFull: '814,748,672 USD',
     rtScore: '88%',
     highlight: 'Co-wrote screenplay · Expanded solo identity within MCU',
   },
@@ -43,7 +45,7 @@ const films = [
     title: 'Shang-Chi and the Legion Accursed',
     titleTh: null,
     year: '2026',
-    date: 'Nov 12, 2026',
+    date: 'Sep 18, 2026',
     phase: 'Phase 6',
     director: 'Isaiah Saxon',
     role: 'James Hwang as Shang-Chi + Co-Screenwriter',
@@ -55,17 +57,23 @@ const films = [
   },
 ];
 
-const totalBO = '$1.04B+';
+const totalBO = '$1.42B+';
 ---
 
-<WikiLayout title="Shang-Chi Trilogy" section="Filmography">
+<WikiLayout title="Shang-Chi Trilogy" section="Filmography" relatedPages={[
+  { label: 'RESONANCE Franchise', href: `${base}filmography/resonance` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'JH Company', href: `${base}company` },
+]}>
   <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Filmography
   </a>
 
   <div class="mb-8">
     <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>MCU Trilogy · Marvel Studios</div>
-    <h1 class="text-4xl font-bold text-white mb-1">Shang-Chi Trilogy</h1>
+    <h1 class="wiki-title mb-1">Shang-Chi Trilogy</h1>
     <p class="text-sm" style="color:var(--text-muted)">Marvel Cinematic Universe · 2021–2026 · 3 films · {totalBO} combined box office</p>
   </div>
 
@@ -99,7 +107,7 @@ const totalBO = '$1.04B+';
               {f.num}
             </div>
             <div>
-              <div class="text-base font-black text-white group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{f.title}</div>
+              <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{f.title}</div>
               {f.titleTh && <div class="text-xs mt-0.5" style="color:var(--text-muted)">{f.titleTh}</div>}
             </div>
           </div>
@@ -123,7 +131,7 @@ const totalBO = '$1.04B+';
             { val: f.rtScore ?? '—', label: 'Rotten Tomatoes' },
           ].map(c => (
             <div class="flex flex-col items-center py-2.5 px-2 text-center">
-              <div class="text-xs font-bold text-white">{c.val}</div>
+              <div class="text-xs font-bold">{c.val}</div>
               <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
             </div>
           ))}
@@ -151,7 +159,7 @@ const totalBO = '$1.04B+';
           <div class="flex gap-4 px-4 py-3" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
             <div class="text-xs font-bold w-14 shrink-0 mt-0.5" style={`color:${color}`}>{r.film}</div>
             <div>
-              <div class="text-sm font-semibold text-white mb-0.5">{r.role}</div>
+              <div class="text-sm font-semibold mb-0.5">{r.role}</div>
               <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{r.detail}</div>
             </div>
           </div>
@@ -171,7 +179,7 @@ const totalBO = '$1.04B+';
           { actor: 'Ben Kingsley', role: 'Trevor Slattery' },
         ].map((c, i, arr) => (
           <div class="flex items-center gap-4 px-4 py-2" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
-            <span class="text-sm font-semibold text-white w-36 shrink-0">{c.actor}</span>
+            <span class="text-sm font-semibold w-36 shrink-0">{c.actor}</span>
             <span class="text-xs" style="color:var(--text-muted)">{c.role}</span>
           </div>
         ))}

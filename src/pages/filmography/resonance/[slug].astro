@@ -10,7 +10,7 @@ const slugMap: Record<string, {
     title: 'Captain EO: RESONANCE',
     subtitle: 'Disney+ Original Series · Season 1',
     year: '2026',
-    date: 'Dec 2026',
+    date: 'Dec 4, 2026',
     label: 'Series',
     color: '#3a5a7c',
     tagline: 'The Starwave crew begins their mission',
@@ -29,8 +29,8 @@ const slugMap: Record<string, {
   'i-missing-chord': {
     title: 'RESONANCE: The Missing Chord',
     subtitle: 'Film I of the RESONANCE Saga',
-    year: '2027',
-    date: 'Jul 4, 2027',
+    year: '2028',
+    date: 'Nov 2, 2028',
     label: 'Film I',
     color: '#3a5a7c',
     tagline: 'The beginning of a cosmic journey',
@@ -45,8 +45,8 @@ const slugMap: Record<string, {
   'ii-silent-orchestra': {
     title: 'RESONANCE II: The Silent Orchestra',
     subtitle: 'Film II of the RESONANCE Saga',
-    year: '2029',
-    date: '2029 TBA',
+    year: '2030',
+    date: 'December 2030 TBA',
     label: 'Film II',
     color: '#3a5a7c',
     tagline: 'When the music dies, the universe follows',
@@ -61,8 +61,8 @@ const slugMap: Record<string, {
   'iii-resonance': {
     title: 'RESONANCE III',
     subtitle: 'Film III of the RESONANCE Saga · Final Movement',
-    year: '2030',
-    date: '2030 TBA',
+    year: '2031',
+    date: 'December 2031 TBA',
     label: 'Film III',
     color: '#3a5a7c',
     tagline: 'The final movement',
@@ -121,7 +121,7 @@ const { Content } = mod;
     <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>
       Captain EO: RESONANCE · {meta.label}
     </div>
-    <h1 class="text-3xl font-bold text-white leading-tight mb-2">{meta.title}</h1>
+    <h1 class="wiki-title mb-2">{meta.title}</h1>
     <p class="text-sm mb-2" style="color:var(--text-muted)">{meta.subtitle}</p>
     <div class="flex flex-wrap items-center gap-2">
       {meta.date && (
@@ -143,7 +143,7 @@ const { Content } = mod;
       {meta.credits.map((r, i, arr) => (
         <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
           <div class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
-          <div class="text-sm text-white leading-relaxed">{r.val}</div>
+          <div class="text-sm leading-relaxed">{r.val}</div>
         </div>
       ))}
     </div>

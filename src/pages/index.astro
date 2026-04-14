@@ -47,12 +47,18 @@ const sections = [
 ];
 ---
 
-<WikiLayout title="Overview" section="Wiki">
+<WikiLayout title="Overview" section="Wiki" relatedPages={[
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'JH Company', href: `${base}company` },
+]}>
 
   <!-- Hero -->
   <div class="mb-10">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--gold)">JamesHwangVerse · The Definitive Wiki</div>
-    <h1 class="text-5xl md:text-6xl font-black leading-none mb-4" style="color:var(--text)">James Hwang</h1>
+    <div class="wiki-label mb-3">JamesHwangVerse · The Definitive Wiki</div>
+    <h1 class="wiki-title-hero mb-4">James Hwang</h1>
 
     <!-- Identity chips -->
     <div class="flex flex-wrap gap-2 mb-5">

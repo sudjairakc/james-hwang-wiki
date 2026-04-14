@@ -126,8 +126,8 @@ const legacyItems = [
 ---
 <WikiLayout title="Cultural Impact" section="Analysis">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Analysis</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Cultural Impact</h1>
+    <div class="wiki-label mb-2">Analysis</div>
+    <h1 class="wiki-title mb-2">Cultural Impact</h1>
     <p class="text-sm" style="color:var(--text-muted)">Post-agency authorship · Idol-auteur hybrid · Neo-soul K-pop pioneer · 2016–2026</p>
   </div>
 
@@ -146,7 +146,7 @@ const legacyItems = [
 
   <!-- ── Academic Reception ── -->
   <section class="mb-12">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-6 pb-2 border-b" style="color:var(--gold);border-color:var(--border)">
+    <h2 class="wiki-section mb-6 pb-2 border-b" style="border-color:var(--border)">
       1 · Cultural Impact / Academic Reception
     </h2>
     <div class="flex flex-col gap-4">
@@ -156,7 +156,7 @@ const legacyItems = [
           <div class="flex items-start gap-3 px-4 py-3 border-b" style="border-color:var(--border);background-color:var(--bg-surface)">
             <span class="text-xs font-mono font-bold px-2 py-0.5 rounded shrink-0 mt-0.5" style="background-color:var(--bg-muted);color:var(--gold)">{item.id}</span>
             <div class="flex-1">
-              <div class="text-sm font-bold text-white">{item.title}</div>
+              <div class="text-sm font-bold">{item.title}</div>
               <div class="text-xs mt-0.5 italic" style="color:var(--text-muted)">"{item.tag}"</div>
             </div>
           </div>
@@ -187,7 +187,7 @@ const legacyItems = [
 
   <!-- ── Fandom Sociology ── -->
   <section class="mb-12">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-6 pb-2 border-b" style="color:var(--gold);border-color:var(--border)">
+    <h2 class="wiki-section mb-6 pb-2 border-b" style="border-color:var(--border)">
       2 · Fandom Sociology
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -195,7 +195,7 @@ const legacyItems = [
         <div class="rounded-lg border overflow-hidden" style="border-color:var(--border);background-color:var(--bg-surface)">
           <div class="flex items-center gap-2.5 px-4 py-2.5 border-b" style="border-color:var(--border);background-color:var(--bg-muted)">
             <span class="text-xs font-mono font-bold px-1.5 py-0.5 rounded" style="background-color:var(--bg-surface);color:var(--gold)">{item.id}</span>
-            <span class="text-sm font-bold text-white">{item.title}</span>
+            <span class="text-sm font-bold">{item.title}</span>
           </div>
           <div class="px-4 py-3">
             {item.text && <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{item.text}</p>}
@@ -217,14 +217,14 @@ const legacyItems = [
 
   <!-- ── Legacy Projection ── -->
   <section>
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4 pb-2 border-b" style="color:var(--gold);border-color:var(--border)">
+    <h2 class="wiki-section mb-4 pb-2 border-b" style="border-color:var(--border)">
       Legacy Projection (Academic Forecast)
     </h2>
     <div class="rounded-lg border overflow-hidden" style="border-color:color-mix(in srgb, var(--gold) 30%, transparent)">
       {legacyItems.map((l, i, arr) => (
         <div class="flex gap-4 px-5 py-3" style={`background-color:color-mix(in srgb, var(--gold) 5%, var(--bg-surface));${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--gold) 15%, transparent)' : ''}`}>
           <span class="text-xs font-semibold uppercase tracking-widest w-44 shrink-0 pt-0.5" style="color:var(--text-muted)">{l.label}</span>
-          <span class="text-sm font-bold text-white">{l.val}</span>
+          <span class="text-sm font-bold">{l.val}</span>
         </div>
       ))}
     </div>

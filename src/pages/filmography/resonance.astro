@@ -12,7 +12,7 @@ const entries = [
     title: 'Captain EO: RESONANCE',
     subtitle: 'Disney+ Original Series',
     year: '2026',
-    date: 'May 1, 2026',
+    date: 'Dec 4, 2026',
     status: 'upcoming',
     episodes: 6,
     platform: 'Disney+',
@@ -25,8 +25,8 @@ const entries = [
     badgeText: 'I',
     title: 'RESONANCE: The Missing Chord',
     subtitle: 'Film I of the RESONANCE Saga',
-    year: '2027',
-    date: 'Jul 4, 2027',
+    year: '2028',
+    date: 'Nov 2, 2028',
     status: 'upcoming',
     episodes: null,
     platform: 'Theatrical',
@@ -39,8 +39,8 @@ const entries = [
     badgeText: 'II',
     title: 'RESONANCE II: The Silent Orchestra',
     subtitle: 'Film II of the RESONANCE Saga',
-    year: '2029',
-    date: '2029 TBA',
+    year: '2030',
+    date: 'December 2030 TBA',
     status: 'upcoming',
     episodes: null,
     platform: 'Theatrical',
@@ -53,8 +53,8 @@ const entries = [
     badgeText: 'III',
     title: 'RESONANCE III',
     subtitle: 'Film III of the RESONANCE Saga',
-    year: '2030',
-    date: '2030 TBA',
+    year: '2031',
+    date: 'December 2031 TBA',
     status: 'upcoming',
     episodes: null,
     platform: 'Theatrical',
@@ -78,14 +78,20 @@ const entries = [
 ];
 ---
 
-<WikiLayout title="RESONANCE Franchise" section="Filmography">
+<WikiLayout title="RESONANCE Franchise" section="Filmography" relatedPages={[
+  { label: 'Shang-Chi Trilogy', href: `${base}filmography/shang-chi` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'JH Company', href: `${base}company` },
+]}>
   <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
     ← Back to Filmography
   </a>
 
   <div class="mb-8">
     <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>Disney Partnership · Original Universe</div>
-    <h1 class="text-4xl font-bold text-white mb-1">Captain EO: RESONANCE</h1>
+    <h1 class="wiki-title mb-1">Captain EO: RESONANCE</h1>
     <p class="text-sm" style="color:var(--text-muted)">4-film saga + Disney+ series · 2026–2030 · Created by James Hwang</p>
   </div>
 
@@ -119,7 +125,7 @@ const entries = [
               {e.badgeText}
             </div>
             <div>
-              <div class="text-base font-black text-white group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{e.title}</div>
+              <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{e.title}</div>
               <div class="text-xs mt-0.5" style="color:var(--text-muted)">{e.subtitle}</div>
             </div>
           </div>
@@ -143,7 +149,7 @@ const entries = [
               { val: e.year || '—', label: 'Year' },
             ].map(c => (
               <div class="flex flex-col items-center py-2.5 px-2 text-center">
-                <div class="text-xs font-bold text-white">{c.val}</div>
+                <div class="text-xs font-bold">{c.val}</div>
                 <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
               </div>
             ))}
@@ -191,7 +197,7 @@ const entries = [
         ].map((r, i, arr) => (
           <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
             <div class="text-xs font-semibold w-32 shrink-0" style="color:var(--text-muted)">{r.item}</div>
-            <div class="text-sm text-white">{r.val}</div>
+            <div class="text-sm">{r.val}</div>
           </div>
         ))}
       </div>

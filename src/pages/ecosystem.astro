@@ -43,8 +43,8 @@ const tours = [
 ---
 <WikiLayout title="Endorsements & Touring" section="Business">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Business</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Endorsements & Touring</h1>
+    <div class="wiki-label mb-2">Business</div>
+    <h1 class="wiki-title mb-2">Endorsements & Touring</h1>
     <p class="text-sm" style="color:var(--text-muted)">$16M–22M/yr endorsements · $309M+ combined touring gross</p>
   </div>
 
@@ -66,12 +66,12 @@ const tours = [
 
   <!-- Solo deals -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Solo Brand Deals</h2>
+    <h2 class="wiki-section mb-4">Solo Brand Deals</h2>
     <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mb-4">
       {solodeals.map(d => (
         <div class="stat-card flex flex-col gap-2">
           <div class="text-xs uppercase tracking-widest font-semibold" style="color:var(--text-muted)">{d.sector}</div>
-          <div class="text-base font-black text-white">{d.brand}</div>
+          <div class="text-base font-black">{d.brand}</div>
           <div class="text-sm font-bold" style="color:var(--gold)">{d.value}</div>
           <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{d.note}</div>
         </div>
@@ -81,12 +81,12 @@ const tours = [
 
   <!-- Group deals -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Group Deals (via SM / NCT 127)</h2>
+    <h2 class="wiki-section mb-4">Group Deals (via SM / NCT 127)</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       {groupdeals.map(d => (
         <div class="flex items-center gap-4 px-4 py-3 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
           <div class="flex-1">
-            <div class="font-bold text-white">{d.brand}</div>
+            <div class="font-bold">{d.brand}</div>
             <div class="text-xs" style="color:var(--text-muted)">{d.note}</div>
           </div>
           <div class="text-right shrink-0">
@@ -100,7 +100,7 @@ const tours = [
 
   <!-- SM contract constraints -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">SM Contract Constraints</h2>
+    <h2 class="wiki-section mb-4">SM Contract Constraints</h2>
     <div class="rounded-lg border px-4 py-3 text-sm" style="border-color:color-mix(in srgb, #ef4444 30%, transparent);background-color:color-mix(in srgb, #ef4444 5%, var(--bg-surface))">
       <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#f87171">Restricted while active in NCT 127</div>
       <div class="flex flex-wrap gap-2">
@@ -113,13 +113,13 @@ const tours = [
 
   <!-- Tour breakdown -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Tour Economics</h2>
+    <h2 class="wiki-section mb-4">Tour Economics</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {tours.map(t => (
         <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
           <div class="px-4 py-3 border-b flex items-baseline justify-between" style="border-color:var(--gold);background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface))">
             <div>
-              <span class="font-black text-white text-base">{t.name}</span>
+              <span class="font-black text-base">{t.name}</span>
               <span class="text-xs ml-2" style="color:var(--text-muted)">{t.years}</span>
             </div>
             <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{t.shows} shows</span>
@@ -147,11 +147,11 @@ const tours = [
 
   <!-- JH Company touring capital -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">JH Company — Retained Capital from Touring</h2>
+    <h2 class="wiki-section mb-4">JH Company — Retained Capital from Touring</h2>
     <div class="rounded-lg border px-5 py-4 flex flex-col md:flex-row md:items-center gap-4" style="border-color:var(--border);background-color:var(--bg-surface)">
       <div>
         <div class="text-3xl font-black" style="color:var(--gold)">~$128M</div>
-        <div class="text-sm font-semibold text-white">Retained Capital (PULSE + DECADE)</div>
+        <div class="text-sm font-semibold">Retained Capital (PULSE + DECADE)</div>
         <div class="text-xs mt-0.5" style="color:var(--text-muted)">Transition: boutique artist label → mid-tier entertainment company</div>
       </div>
       <div class="md:ml-auto flex flex-wrap gap-2">
@@ -164,7 +164,7 @@ const tours = [
 
   <!-- Warner role -->
   <section>
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Warner Music Korea — Distribution Role</h2>
+    <h2 class="wiki-section mb-4">Warner Music Korea — Distribution Role</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
       {[
         { title: 'Global Distribution', items: ['Spotify placement', 'Apple Music rollout', 'Territory licensing', 'Radio servicing'] },
@@ -172,7 +172,7 @@ const tours = [
         { title: 'Marketing Amplification', items: ['Playlisting', 'Sync placement', 'Press strategy', 'Retail bundling'] },
       ].map(col => (
         <div class="stat-card">
-          <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--gold)">{col.title}</div>
+          <div class="wiki-label mb-3">{col.title}</div>
           <ul class="flex flex-col gap-1.5">
             {col.items.map(i => (
               <li class="flex items-center gap-2 text-sm" style="color:var(--text-muted)">

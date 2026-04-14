@@ -1,20 +1,24 @@
 ## Shang-Chi 2: Shang-Chi and the Legacy of the Ten Rings (2025)
 (ชาง-ชี กับมรดกแห่งเท็นริงส์)
 
-**Director**: Destin Daniel Cretton <br />
-**Screenwriter(s)**: Dave Callaham & Destin Daniel Cretton & Andrew Lanham & James Hwang <br />
-**Producer(s)**: Kevin Feige and Jonathan Schwartz <br />
-**Starring(s)**: James Hwang, Ashley Liao, Michelle Yeoh, Anthony Mackie, Paul Rudd, Mark Ruffalo, Brie Larson, Yuen Wah, Chow Yun-fat <br />
+| | |
+|---|---|
+| **Director** | Destin Daniel Cretton |
+| **Screenwriter(s)** | Dave Callaham & Destin Daniel Cretton & Andrew Lanham & James Hwang |
+| **Producer(s)** | Kevin Feige and Jonathan Schwartz |
+| **Starring(s)** | James Hwang, Ashley Liao, Michelle Yeoh, Anthony Mackie, Paul Rudd, Mark Ruffalo, Brie Larson, Yuen Wah, Chow Yun-fat |
+| **Released** | July 25, 2025 |
 
-**Refs:**
+| Phase | Period |
+|---|---|
+| Pre-production | October 2023 – June 2024 |
+| Production | June 2024 – November 2024 |
+| Post-production | December 2024 – March 2025 |
+
+**Comic References:**
 * Trauma จากครอบครัวและความกลัวว่าจะซ้ำรอยพ่อ _(Shang-Chi 70s)_
 * การเดินทางค้นหาจิตวิญญาณ / Inner Journey _(Shang-Chi: Master of Kung Fu, Shang-Chi (2020))_
 * การเชื่อมจักรวาลกับ Fin Fang Foom, Makluan และ Lore ของ Ten Rings _(Iron Man vol.4 และ War of Kings)_
-
-**Pre-production**: October 2023 - June 2024 <br />
-**Production (Filming)**: June 2024 - November 2024 <br />
-**Post-Production**: December 2024 - March 2025 <br />
-**Released**: July 25, 2025 <br />
 
 ---
 

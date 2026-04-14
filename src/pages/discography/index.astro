@@ -20,14 +20,14 @@ const albums = [
     color: '#c9a84c',
     highlight: 'Creative blueprint · GONUNMA alter ego debut · TikTok resurgence 2023–24',
     titleTrack: 'LIKE I DO (feat. Mark Lee)',
-    genres: ['Contemporary R&B', 'Alt R&B', 'Indie Pop', 'Soul Pop'],
+    genres: ['R&B', 'Pop'],
   },
   {
     slug: 'softest-touch',
     title: 'SOFTEST TOUCH',
     subtitle: '1st Mini Album',
     year: '2022',
-    date: 'Sep 16, 2022',
+    date: 'Jan 11, 2022',
     type: '1st Mini Album',
     label: 'SM Entertainment',
     tracks: 7,
@@ -38,7 +38,7 @@ const albums = [
     color: '#9b7fc8',
     highlight: 'Official songwriter-led solo identity · SM era debut',
     titleTrack: 'SOFTEST TOUCH',
-    genres: ['R&B', 'Indie Pop', 'Soul'],
+    genres: ['R&B', 'Pop', 'Indie'],
   },
   {
     slug: 'pulse-era',
@@ -56,14 +56,14 @@ const albums = [
     color: '#5a7c6a',
     highlight: 'First independent release · Global R&B breakout · SAY feat. keshi 210M+',
     titleTrack: 'HOW DOES IT FEEL',
-    genres: ['Contemporary R&B', 'Synth Funk', 'Dance-Pop'],
+    genres: ['R&B', 'Pop', 'Synth Funk', 'Nu-Disco'],
   },
   {
     slug: 'are-u-still',
     title: 'ARE U STILL',
     subtitle: '2nd Studio Album',
     year: '2024',
-    date: 'May 3, 2024',
+    date: 'Jan 8, 2024',
     type: '2nd Studio Album',
     label: 'JH Company / Warner Music Korea',
     tracks: 11,
@@ -74,14 +74,14 @@ const albums = [
     color: '#5a7aaa',
     highlight: 'Grammy wins: Best Progressive R&B + Best R&B Performance · Neo-soul pivot',
     titleTrack: 'TEARS ON A PRETTY FACE',
-    genres: ['Neo-Soul', 'R&B', 'Funk'],
+    genres: ['Neo-Soul', 'R&B', 'Alternative R&B', 'Funk', 'Soul'],
   },
   {
     slug: 'sour-honey',
     title: 'SOUR | HONEY',
     subtitle: '3rd Studio Album',
     year: '2025',
-    date: 'Feb 14, 2025',
+    date: 'Feb 10, 2025',
     type: '3rd Studio Album',
     label: 'JH Company / Warner Music Korea',
     tracks: 11,
@@ -92,14 +92,14 @@ const albums = [
     color: '#c06080',
     highlight: "Duality concept · CAN'T LEAVE ALONE feat. Pharrell Williams 260M+",
     titleTrack: 'SOUR',
-    genres: ['R&B', 'Soul', 'Funk'],
+    genres: ['R&B', 'Contemporary R&B', 'Soul'],
   },
   {
     slug: 'decade',
     title: 'DECADE',
     subtitle: 'Anthology',
     year: '2026',
-    date: 'Jan 13, 2026',
+    date: 'Sep 9, 2026',
     type: 'Anthology Album',
     label: 'JH Company / Warner Music Korea',
     tracks: 25,
@@ -118,10 +118,16 @@ const maxStreams = Math.max(...albums.map(a => a.streams));
 const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
 ---
 
-<WikiLayout title="Discography" section="Music">
+<WikiLayout title="Discography" section="Music" relatedPages={[
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Tours', href: `${base}tours` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'JH Company', href: `${base}company` },
+]}>
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Music</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Discography</h1>
+    <div class="wiki-label mb-2">Music</div>
+    <h1 class="wiki-title mb-2">Discography</h1>
     <p class="text-sm" style="color:var(--text-muted)">6 projects · 2016–2026 · {(totalStreams / 1000).toFixed(1)}B+ cumulative streams</p>
   </div>
 
@@ -196,11 +202,11 @@ const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
         <!-- Metrics -->
         <div class="hidden md:flex flex-col items-end shrink-0 gap-2 justify-between">
           <div class="text-right">
-            <div class="text-xl font-black text-white">{a.streamLabel}</div>
+            <div class="text-xl font-black">{a.streamLabel}</div>
             <div class="text-xs" style="color:var(--text-muted)">streams</div>
           </div>
           <div class="text-right">
-            <div class="text-xs font-semibold text-white">{a.titleTrack}</div>
+            <div class="text-xs font-semibold">{a.titleTrack}</div>
             <div class="text-xs" style="color:var(--text-muted)">title track</div>
           </div>
           <div class="text-right">
@@ -221,7 +227,7 @@ const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
         { title: 'IF I KNEW', sub: 'PULSE era single', year: '2023', streams: 'Spotify 47M+', note: 'Pre-release bridge to 2nd album' },
       ].map(s => (
         <div class="px-5 py-4">
-          <div class="text-sm font-bold text-white mb-0.5">{s.title}</div>
+          <div class="text-sm font-bold mb-0.5">{s.title}</div>
           <div class="text-xs mb-1" style="color:var(--text-muted)">{s.sub} · {s.year}</div>
           <div class="text-xs font-semibold mb-1" style="color:var(--gold)">{s.streams}</div>
           <div class="text-xs" style="color:var(--text-muted)">{s.note}</div>

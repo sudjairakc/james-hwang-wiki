@@ -49,8 +49,8 @@ const valPhases = [
 ---
 <WikiLayout title="JH Company" section="Business">
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Business</div>
-    <h1 class="text-4xl font-bold text-white mb-2">JH Company</h1>
+    <div class="wiki-label mb-2">Business</div>
+    <h1 class="wiki-title mb-2">JH Company</h1>
     <p class="text-sm" style="color:var(--text-muted)">Founded 2023 · Seoul HQ · Artist-led global entertainment studio</p>
   </div>
 
@@ -67,7 +67,7 @@ const valPhases = [
 
   <!-- Ownership -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Ownership Structure</h2>
+    <h2 class="wiki-section mb-4">Ownership Structure</h2>
     <div class="rounded-lg overflow-hidden border" style="border-color:var(--border)">
       <table class="w-full text-sm" style="margin:0">
         <thead>
@@ -103,12 +103,12 @@ const valPhases = [
 
   <!-- Divisions -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Core Divisions</h2>
+    <h2 class="wiki-section mb-4">Core Divisions</h2>
     <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
       {divisions.map(d => (
         <div class="stat-card flex flex-col gap-2">
           <div class="text-xl" style="color:var(--gold)">{d.icon}</div>
-          <div class="text-sm font-bold text-white">{d.name}</div>
+          <div class="text-sm font-bold">{d.name}</div>
           <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{d.desc}</div>
         </div>
       ))}
@@ -117,12 +117,12 @@ const valPhases = [
 
   <!-- Revenue mix -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Revenue Structure</h2>
+    <h2 class="wiki-section mb-4">Revenue Structure</h2>
     <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
       {revenue.map((r, i) => (
         <div class="flex items-center gap-4 px-4 py-3" style={`background-color:var(--bg-surface);${i > 0 ? 'border-top:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
           <div class="w-36 shrink-0">
-            <div class="text-xs font-semibold text-white">{r.segment}</div>
+            <div class="text-xs font-semibold">{r.segment}</div>
             <div class="text-xs" style="color:var(--gold)">{r.share}</div>
           </div>
           <div class="flex-1 h-1.5 rounded-full overflow-hidden" style="background-color:var(--bg-muted)">
@@ -136,7 +136,7 @@ const valPhases = [
 
   <!-- Valuation phases -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Valuation Roadmap</h2>
+    <h2 class="wiki-section mb-4">Valuation Roadmap</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
       {valPhases.map((v, i) => (
         <div class="stat-card border" style={`border-color:${i === 2 ? 'color-mix(in srgb, var(--gold) 40%, transparent)' : 'var(--border)'}`}>
@@ -150,12 +150,12 @@ const valPhases = [
 
   <!-- Roster -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Artist Roster</h2>
+    <h2 class="wiki-section mb-4">Artist Roster</h2>
     <div class="flex flex-wrap gap-2">
       {roster.map(a => (
         <div class="flex items-center gap-3 px-4 py-2.5 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
           <div>
-            <div class="text-sm font-bold text-white">{a.name}</div>
+            <div class="text-sm font-bold">{a.name}</div>
             <div class="text-xs" style="color:var(--text-muted)">{a.role} · {a.since}</div>
           </div>
         </div>
@@ -165,7 +165,7 @@ const valPhases = [
 
   <!-- Strategic partners -->
   <section class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Strategic Partners</h2>
+    <h2 class="wiki-section mb-4">Strategic Partners</h2>
     <div class="rounded-lg overflow-hidden border" style="border-color:var(--border)">
       <table class="w-full text-sm" style="margin:0">
         <thead>
@@ -178,7 +178,7 @@ const valPhases = [
         <tbody style="background-color:var(--bg-surface)">
           {partners.map((p, i, arr) => (
             <tr style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
-              <td class="px-4 py-3 font-semibold text-white">{p.name}</td>
+              <td class="px-4 py-3 font-semibold">{p.name}</td>
               <td class="px-4 py-3">
                 <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{p.layer}</span>
               </td>

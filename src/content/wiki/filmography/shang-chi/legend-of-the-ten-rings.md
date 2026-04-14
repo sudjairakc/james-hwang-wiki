@@ -1,11 +1,13 @@
 ## Shang-Chi and the Legend of the Ten Rings (2021)
 (ชาง-ชี กับตำนานลับเท็นริงส์)
 
-**Director**: Destin Daniel Cretton <br />
-**Screenwriter(s)**: Dave Callaham & Destin Daniel Cretton & Andrew Lanham <br />
-**Producer(s)**: Kevin Feige and Jonathan Schwartz <br />
-**Starring(s)**: James Hwang, Ashley Liao, Fala Chen, Florian Munteanu, Benedict Wong, Yuen Wah, Michelle Yeoh, Ben Kingsley, Tony Leung <br />
-**Released Date**: September 3, 2021
+| | |
+|---|---|
+| **Director** | Destin Daniel Cretton |
+| **Screenwriter(s)** | Dave Callaham & Destin Daniel Cretton & Andrew Lanham |
+| **Producer(s)** | Kevin Feige and Jonathan Schwartz |
+| **Starring(s)** | James Hwang, Ashley Liao, Fala Chen, Florian Munteanu, Benedict Wong, Yuen Wah, Michelle Yeoh, Ben Kingsley, Tony Leung |
+| **Released** | September 3, 2021 |
 
 ---
 

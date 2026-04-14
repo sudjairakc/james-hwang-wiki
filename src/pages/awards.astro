@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
 
 const years = [
   {
@@ -92,16 +93,66 @@ const years = [
       'Post-Grammy global R&B stability phase',
     ],
   },
+  {
+    year: '2026',
+    album: 'DECADE',
+    albumSub: 'Anthology + Shang-Chi 3',
+    wins: [
+      { show: 'Korean Music Awards', category: 'Best R&B/Soul Song — "SOUR"', result: 'NOM' },
+    ],
+    musicWins: [],
+    charts: [
+      'DECADE anthology — catalog streaming surge across all eras',
+      'Shang-Chi 3 OST contribution charted in multiple markets',
+    ],
+  },
+  {
+    year: '2027',
+    album: 'Captain EO: RESONANCE',
+    albumSub: 'Disney+ Series · Acting',
+    wins: [
+      { show: 'MTV Movie & TV Awards', category: 'Best Hero', result: 'WIN' },
+      { show: 'Saturn Awards', category: 'Best Actor in a Streaming Television Series', result: 'WIN' },
+      { show: 'Primetime Emmy Awards', category: 'Outstanding Lead Actor in a Drama Series', result: 'NOM' },
+    ],
+    musicWins: [],
+    charts: [
+      'Disney+ global launch — top streaming title week 1',
+      'Captain EO: RESONANCE OST editorial playlist rotation',
+    ],
+  },
+  {
+    year: '2028',
+    album: 'RESONANCE: THE MISSING CHORD',
+    albumSub: 'Film I · RESONANCE Saga · Acting',
+    wins: [
+      { show: 'Golden Globe Awards', category: 'Best Actor in a Television Series – Drama', result: 'WIN' },
+      { show: "Critics' Choice Movie Awards", category: 'Best Actor', result: 'NOM' },
+      { show: 'SAG Awards', category: 'Male Actor in a Drama Series', result: 'NOM' },
+      { show: 'Astra TV Awards', category: 'Best Actor in a Streaming Drama Series', result: 'WIN' },
+    ],
+    musicWins: [],
+    charts: [
+      'RESONANCE: THE MISSING CHORD OST — global streaming on release week',
+      'Ludwig Göransson score charted in multiple markets',
+    ],
+  },
 ];
 
 const totalWins = years.flatMap(y => y.wins).filter(w => w.result === 'WIN').length;
 const totalNoms = years.flatMap(y => y.wins).filter(w => w.result === 'NOM').length;
 const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + w.count, 0);
 ---
-<WikiLayout title="Awards" section="Recognition">
+<WikiLayout title="Awards" section="Recognition" relatedPages={[
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Filmography', href: `${base}filmography` },
+  { label: 'Shang-Chi Trilogy', href: `${base}filmography/shang-chi` },
+  { label: 'RESONANCE Franchise', href: `${base}filmography/resonance` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+]}>
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Recognition</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Awards</h1>
+    <div class="wiki-label mb-2">Recognition</div>
+    <h1 class="wiki-title mb-2">Awards</h1>
     <p class="text-sm" style="color:var(--text-muted)">Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2025</p>
   </div>
 
@@ -128,8 +179,8 @@ const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + 
         <section>
           <!-- Year header -->
           <div class="flex items-baseline gap-4 mb-5 pb-3 border-b" style="border-color:var(--border)">
-            <span class="text-3xl font-black" style="color:var(--gold)">{y.year}</span>
-            <span class="text-lg font-bold text-white tracking-wide">{y.album}</span>
+            <span class="wiki-year-heading">{y.year}</span>
+            <span class="text-sm font-semibold" style="color:var(--text)">{y.album}</span>
             <span class="text-xs ml-auto px-2 py-0.5 rounded border" style="color:var(--text-muted);border-color:var(--border)">{y.albumSub}</span>
             <span class="text-xs font-semibold px-2 py-0.5 rounded" style="background-color:color-mix(in srgb, var(--gold) 12%, transparent);color:var(--gold)">
               {wins.length}W / {noms.length}N
@@ -170,7 +221,7 @@ const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + 
               <div class="flex flex-wrap gap-2">
                 {y.musicWins.map(mw => (
                   <div class="flex items-center gap-2 px-3 py-1.5 rounded-md border text-sm" style="border-color:var(--border);background-color:var(--bg-surface)">
-                    <span class="font-medium text-white text-xs">{mw.show}</span>
+                    <span class="font-medium text-xs">{mw.show}</span>
                     <span class="text-xs px-1.5 py-0.5 rounded font-bold" style="background-color:color-mix(in srgb, var(--gold) 15%, transparent);color:var(--gold)">×{mw.count}</span>
                   </div>
                 ))}

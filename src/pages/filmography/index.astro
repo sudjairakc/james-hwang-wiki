@@ -11,8 +11,8 @@ const franchises = [
     color: '#7c5a3a',
     entries: [
       { title: 'Shang-Chi and the Legend of the Ten Rings', date: 'Sep 3, 2021', status: 'Released', note: 'MCU Phase 4 · James Hwang as Shang-Chi' },
-      { title: 'Shang-Chi: Legacy of the Ten Rings', date: 'May 2, 2025', status: 'Released', note: 'MCU Phase 5 · co-wrote screenplay' },
-      { title: 'Shang-Chi: Legion Accursed', date: 'May 1, 2026', status: 'Upcoming', note: 'MCU Phase 6 · franchise conclusion' },
+      { title: 'Shang-Chi: Legacy of the Ten Rings', date: 'Jul 25, 2025', status: 'Released', note: 'MCU Phase 5 · co-wrote screenplay' },
+      { title: 'Shang-Chi: Legion Accursed', date: 'Sep 18, 2026', status: 'Upcoming', note: 'MCU Phase 6 · franchise conclusion' },
     ],
   },
   {
@@ -21,19 +21,25 @@ const franchises = [
     universe: 'Disney · Original Franchise',
     color: '#3a5a7c',
     entries: [
-      { title: 'Captain EO: RESONANCE', date: 'Nov 12, 2026', status: 'Upcoming', note: 'Disney+ Original Series · EP1: Dead Frequency' },
-      { title: 'RESONANCE: The Missing Chord', date: 'Jul 4, 2027', status: 'Upcoming', note: 'Film I · The beginning of the saga' },
-      { title: 'RESONANCE II: Silent Orchestra', date: '2029 TBA', status: 'Upcoming', note: 'Film II · When the music dies, the universe follows' },
-      { title: 'RESONANCE III', date: '2030 TBA', status: 'Upcoming', note: 'Film III · The final movement' },
+      { title: 'Captain EO: RESONANCE', date: 'December 4, 2026', status: 'Upcoming', note: 'Disney+ Original Series · EP1: Dead Frequency' },
+      { title: 'RESONANCE: The Missing Chord', date: 'November 2, 2028', status: 'Upcoming', note: 'Film I · The beginning of the saga' },
+      { title: 'RESONANCE II: Silent Orchestra', date: 'December 2030 TBA', status: 'Upcoming', note: 'Film II · When the music dies, the universe follows' },
+      { title: 'RESONANCE III', date: 'December 2031 TBA', status: 'Upcoming', note: 'Film III · The final movement' },
     ],
   },
 ];
 ---
 
-<WikiLayout title="Filmography" section="Film & Screen">
+<WikiLayout title="Filmography" section="Film & Screen" relatedPages={[
+  { label: 'Shang-Chi Trilogy', href: `${base}filmography/shang-chi` },
+  { label: 'RESONANCE Franchise', href: `${base}filmography/resonance` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Public Image', href: `${base}public-image` },
+]}>
   <div class="mb-8">
-    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">Film & Screen</div>
-    <h1 class="text-4xl font-bold text-white mb-2">Filmography</h1>
+    <div class="wiki-label mb-2">Film & Screen</div>
+    <h1 class="wiki-title mb-2">Filmography</h1>
     <p class="text-sm" style="color:var(--text-muted)">MCU + Disney franchise · 6 films · 1 series · 2 universes</p>
   </div>
 
@@ -61,7 +67,7 @@ const franchises = [
               style={`background-color:${f.color}18;color:${f.color}`}>{i + 1}</div>
             <!-- Title + note -->
             <div class="flex-1 min-w-0">
-              <div class="text-sm font-semibold text-white truncate">{e.title}</div>
+              <div class="text-sm font-semibold truncate">{e.title}</div>
               <div class="text-xs" style="color:var(--text-muted)">{e.note}</div>
             </div>
             <!-- Date + status -->
