@@ -44,3 +44,25 @@
 ### ฉากท้ายเครดิต
 
 * Shang-Chi และ Katy ถูกเชิญตัวโดย Wong เพื่อพบกับสมาชิกของ Avengers ในห้องประชุมลับใน Sanctum Sanctorum โดยมี Bruce Banner (ในร่างมนุษย์) และ Carol Danvers (Captain Marvel) เข้าร่วมด้วย พวกเขาทั้งหมดพยายามวิเคราะห์พลังของ Ten Rings ที่ Shang-Chi ครอบครองอยู่ พบว่า Ten Rings ได้ปล่อยสัญญาณลึกลับบางอย่างออกมา ซึ่งเป็นการปูทางไปสู่การเชื่อมโยงเรื่องราวใน MCU ต่อไป
+---
+
+### Critical Reception
+
+**Shang-Chi and the Legend of the Ten Rings** received widespread critical acclaim upon release, with particular praise directed at the film's action choreography, emotional depth, and James Hwang's lead performance.
+
+**Critical scores:**
+* Rotten Tomatoes: **91%** (certified fresh)
+* Metacritic: **71/100**
+* CinemaScore: **A**
+
+**Critical consensus (Rotten Tomatoes):** *"Shang-Chi and the Legend of the Ten Rings charges into the MCU with an exciting origin story that takes full advantage of its charismatic cast — led by a star-making turn from James Hwang."*
+
+**Selected reviews:**
+* **The Guardian** called it "the most formally confident MCU origin film since Black Panther — a movie that earns its emotional weight through craft rather than spectacle alone."
+* **Variety** praised James Hwang's performance as "a revelation: grounded, physically present, and capable of conveying interior conflict in a franchise that doesn't always demand it."
+* **The A.V. Club** noted: "The fight sequences aren't just kinetic showpieces — they're character scenes in disguise, and Hwang makes that distinction land every time."
+* **Empire** (4/5): "A superhero movie that isn't embarrassed to be a family drama. James Hwang carries the emotional through-line of both registers with apparent ease."
+
+**Box office:** $432M worldwide. Opened to $94.3M domestic in its opening weekend — the second-highest September opening in MCU history at the time of release. Performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market.
+
+**Cultural significance:** Widely recognized as the MCU's most substantive Asian-led film to date. James Hwang's casting as a Thai-Chinese-Korean actor in a Asian-American role generated discussion about representation casting in Hollywood franchise films. The film's depiction of Ta Lo and the creature design drew significant praise from critics specializing in Asian cinema.

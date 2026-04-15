@@ -1,0 +1,267 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+type Credit = {
+  year: string;
+  title: string;
+  artist: string;
+  artistGroup: string;
+  composed: string[];
+  arranged: string[];
+  remark: string;
+};
+
+const credits: Credit[] = [
+  {
+    year: '2024',
+    title: "Can't Help Myself",
+    artist: 'NCT 127',
+    artistGroup: 'SM',
+    composed: ['Kenzie', 'James Hwang'],
+    arranged: ['Kenzie', 'James Hwang'],
+    remark: '',
+  },
+  {
+    year: '2024',
+    title: 'Smoke (English Ver.)',
+    artist: 'Jaehyun',
+    artistGroup: 'SM',
+    composed: ['James Hwang', 'Jaehyun'],
+    arranged: ['James Hwang'],
+    remark: 'Written English lyrics',
+  },
+  {
+    year: '2024',
+    title: 'Supercute',
+    artist: 'NCT WISH',
+    artistGroup: 'SM',
+    composed: ['James Hwang'],
+    arranged: ['James Hwang'],
+    remark: '',
+  },
+  {
+    year: '2024',
+    title: 'Flowers',
+    artist: 'aespa',
+    artistGroup: 'SM',
+    composed: ['James Hwang'],
+    arranged: ['James Hwang'],
+    remark: '',
+  },
+  {
+    year: '2024',
+    title: "When I'm With You",
+    artist: 'NCT DREAM',
+    artistGroup: 'SM',
+    composed: ['James Hwang', 'Imlay', 'Mark'],
+    arranged: ['James Hwang', 'Imlay'],
+    remark: '',
+  },
+  {
+    year: '2024',
+    title: 'Call Me',
+    artist: 'WayV',
+    artistGroup: 'SM',
+    composed: ['James Hwang'],
+    arranged: ['James Hwang'],
+    remark: 'Written English lyrics',
+  },
+  {
+    year: '2025',
+    title: 'Stunner',
+    artist: 'Ten',
+    artistGroup: 'SM',
+    composed: ['James Hwang'],
+    arranged: ['James Hwang'],
+    remark: 'Written English lyrics',
+  },
+];
+
+type LinaTrack = {
+  num: number;
+  title: string;
+  feat: string[];
+  performer: string;
+  performerNote: string;
+  released: string;
+  streams: string;
+  platform: string;
+};
+
+const linaProject = {
+  title: 'L.I.N.A.',
+  released: 'December 3, 2023',
+  type: 'Melon Collaboration Project',
+  producedBy: 'GONUNMA, Kenzie',
+  musicBy: 'GONUNMA, Kenzie',
+  lyricBy: 'GONUNMA, Kenzie',
+  arrangedBy: 'GONUNMA, Kenzie',
+  tracks: [
+    {
+      num: 1,
+      title: 'CHECK [TITLE]',
+      feat: ['Karina (aespa)', 'Haerin (NewJeans)', 'Chaewon (Le Sserafim)', 'Kazuha (Le Sserafim)', 'Gaeul (IVE)', 'Liz (IVE)', 'Wonyoung (IVE)'],
+      performer: 'TEAM A (Aurea)',
+      performerNote: '',
+      released: 'Feb 8, 2024',
+      streams: '56,473,655',
+      platform: 'FLO',
+    },
+    {
+      num: 2,
+      title: 'TAKE IT SLOW',
+      feat: ['Ningning (aespa)', 'Hyein (NewJeans)', 'Leeseo (IVE)', 'Eunchae (Le Sserafim)'],
+      performer: 'TEAM L (Lumina)',
+      performerNote: '',
+      released: 'Jul 18, 2025',
+      streams: '33,722,601',
+      platform: 'Sofia Ly',
+    },
+    {
+      num: 3,
+      title: 'EASY',
+      feat: ['Winter (aespa)', 'Danielle (NewJeans)', 'Sakura (Le Sserafim)', 'Rei (Le Sserafim)'],
+      performer: 'TEAM N (Noiré)',
+      performerNote: '',
+      released: 'Jul 19, 2024',
+      streams: '34,031,862',
+      platform: 'Haven',
+    },
+    {
+      num: 4,
+      title: 'TWIN FLAMES',
+      feat: ['Giselle (aespa)', 'Minji (NewJeans)', 'Hanni (NewJeans)', 'Yunjin (Le Sserafim)', 'Yujin (IVE)'],
+      performer: 'TEAM I (Ignis)',
+      performerNote: '',
+      released: 'Jul 26, 2024',
+      streams: '32,152,302',
+      platform: 'Denise Julia / thuy',
+    },
+    {
+      num: 5,
+      title: 'SWEET NOTHINGS',
+      feat: ['Winter (aespa)', 'Hanni (NewJeans)', 'Chaewon (Le Sserafim)', 'Gaeul (IVE)'],
+      performer: '',
+      performerNote: '',
+      released: 'Nov 8, 2024',
+      streams: '22,262,321',
+      platform: 'Denise Julia / Jay R',
+    },
+  ] as LinaTrack[],
+};
+
+// Group credits by year for display
+const years = [...new Set(credits.map(c => c.year))];
+---
+
+<WikiLayout title="Production Credits" section="Discography" relatedPages={[
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Collaborations', href: `${base}collaborations` },
+  { label: 'Canon', href: `${base}canon` },
+  { label: 'Biography', href: `${base}biography` },
+]}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Discography</div>
+    <h1 class="wiki-title mb-3">Production Credits</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)">
+      External production and songwriting credits by James Hwang (GONUNMA) for other artists.
+      Includes the <strong style="color:var(--text)">L.I.N.A.</strong> Melon collaboration project (2023) and individual tracks produced for SM Entertainment artists after departure.
+    </p>
+  </div>
+
+  <!-- L.I.N.A. Project -->
+  <section class="mb-12">
+    <div class="flex items-center gap-3 mb-5">
+      <h2 class="text-base font-bold" style="color:var(--text)">L.I.N.A. — Melon Collaboration Project</h2>
+      <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:color-mix(in srgb,var(--gold) 12%,transparent);color:var(--gold)">{linaProject.released}</span>
+    </div>
+
+    <!-- Credits block -->
+    <div class="rounded-xl border overflow-hidden mb-5" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);border-color:var(--border);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">Project Credits (all tracks)</div>
+      <div style="background-color:var(--bg-surface)">
+        {[
+          { label: 'Produced By', val: linaProject.producedBy },
+          { label: 'Music By', val: linaProject.musicBy },
+          { label: 'Lyrics By', val: linaProject.lyricBy },
+          { label: 'Arranged By', val: linaProject.arrangedBy },
+          { label: 'Platform', val: 'Melon' },
+        ].map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-2" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}>
+            <div class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+            <div class="text-sm" style="color:var(--text)">{r.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Tracks -->
+    <div class="space-y-3">
+      {linaProject.tracks.map(track => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center gap-3 px-4 py-3 border-b" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-black shrink-0" style="background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)">{track.num}</span>
+            <div class="flex-1 min-w-0">
+              <span class="text-sm font-bold" style="color:var(--text)">{track.title}</span>
+              <span class="text-xs ml-2" style="color:var(--text-muted)">performed by {track.performer}</span>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-xs font-mono font-semibold" style="color:var(--gold)">{track.streams}</div>
+              <div class="text-xs" style="color:var(--text-faint)">streams</div>
+            </div>
+          </div>
+          <div class="px-4 py-2.5" style="background-color:var(--bg)">
+            <div class="text-xs font-semibold uppercase tracking-widest mb-1.5" style="color:var(--text-muted)">Featured</div>
+            <div class="flex flex-wrap gap-1.5">
+              {track.feat.map(f => (
+                <span class="text-xs px-2 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{f}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- External Credits Table -->
+  <section>
+    <h2 class="text-base font-bold mb-5" style="color:var(--text)">External Production Credits</h2>
+
+    {years.map(year => {
+      const yearCredits = credits.filter(c => c.year === year);
+      return (
+        <div class="mb-8">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3 flex items-center gap-2" style="color:var(--gold)">
+            <span>{year}</span>
+            <div class="flex-1 h-px" style="background-color:color-mix(in srgb,var(--border) 60%,transparent)"></div>
+          </div>
+          <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+            <!-- Header -->
+            <div class="grid text-xs font-semibold uppercase tracking-widest px-4 py-2 border-b" style="grid-template-columns:2fr 1fr 2fr 2fr 1.5fr;color:var(--text-muted);border-color:var(--border);background-color:color-mix(in srgb,var(--gold) 4%,var(--bg-surface))">
+              <div>Title · Artist</div>
+              <div>Group</div>
+              <div>Composed</div>
+              <div>Arranged</div>
+              <div>Note</div>
+            </div>
+            {yearCredits.map((c, i) => (
+              <div class="grid items-start px-4 py-3 text-sm" style={`grid-template-columns:2fr 1fr 2fr 2fr 1.5fr;background-color:var(--bg-surface);${i < yearCredits.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}`}>
+                <div>
+                  <div class="font-semibold" style="color:var(--text)">{c.title}</div>
+                  <div class="text-xs mt-0.5" style="color:var(--text-muted)">{c.artist}</div>
+                </div>
+                <div class="text-xs" style="color:var(--text-muted)">{c.artistGroup}</div>
+                <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{c.composed.join(' · ')}</div>
+                <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{c.arranged.join(' · ')}</div>
+                <div class="text-xs" style="color:var(--text-faint)">{c.remark || '—'}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    })}
+  </section>
+
+</WikiLayout>

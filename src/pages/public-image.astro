@@ -4,11 +4,11 @@ const base = import.meta.env.BASE_URL;
 
 const bioFacts = [
   { label: 'Born', val: 'June 22, 1998' },
-  { label: 'Heritage', val: 'Half-Thai / Half-Korean' },
+  { label: 'Heritage', val: 'Half-Thai · Half-Chinese · Half-Korean' },
   { label: 'Father', val: 'Thai-Chinese · Bangkok businessman' },
   { label: 'Mother', val: 'Korean · Feminist author' },
   { label: 'Citizenship', val: 'Thai (single nationality)' },
-  { label: 'Languages', val: 'Thai · Korean · English' },
+  { label: 'Languages', val: 'Thai · Chinese · Korean · English · Japanese (fluent)' },
   { label: 'Education', val: 'SOPA (School of Performing Arts Seoul)' },
 ];
 
@@ -80,6 +80,30 @@ const controversies = [
   },
 ];
 
+const pictorials = [
+  { year: '2022', pub: 'W Korea', issue: 'February 2022', concept: 'Solo debut feature — minimal white studio set, oversized tailoring. First major magazine cover as GONUNMA solo artist. Shot by Hong Jang-hyun.', cover: true },
+  { year: '2022', pub: 'Vogue Korea', issue: 'April 2022', concept: 'Post-Oscars editorial — sharp suiting, architectural environments. Positioned James in the global-actor register following the "Fire in the Sky" Academy Awards performance.', cover: false },
+  { year: '2023', pub: 'GQ Korea', issue: 'August 2023', concept: 'PULSE era cover story — outdoor urban locations, monochrome palette. Interview focuses on the SM departure and the founding of JH Company.', cover: true },
+  { year: '2023', pub: 'Rolling Stone US', issue: 'November 2023', concept: 'First major US magazine feature. Studio portrait series with minimal props. Profile text covers Grammy trajectory and R&B crossover positioning.', cover: false },
+  { year: '2024', pub: 'i-D Magazine', issue: 'Spring 2024', concept: 'ARE U STILL era editorial — abstract movement photography, fluid styling. One of the more fashion-forward shoots in the catalog; referenced frequently in idol fashion discourse.', cover: true },
+  { year: '2024', pub: 'Dazed Korea', issue: 'March 2024', concept: 'Grammy winner special — deconstructed formalwear, industrial sets. Shot in the week following the Grammy ceremony.', cover: false },
+  { year: '2025', pub: 'Harper\'s Bazaar Korea', issue: 'January 2025', concept: 'SOUR|HONEY pre-release — dual concept shoot mirroring the album\'s two-register visual language. Two separate 8-page spreads: one cold-tone, one warm-tone.', cover: true },
+  { year: '2025', pub: 'Allure US', issue: 'June 2025', concept: 'Shang-Chi 2 press feature — interview-driven shoot in LA. Profile discusses the co-screenwriting credit and his approach to character development in franchise filmmaking.', cover: false },
+  { year: '2026', pub: 'Esquire Korea', issue: 'October 2026', concept: 'DECADE anniversary editorial — retrospective photography spanning all six album eras. Archival pieces from JH Company vault incorporated alongside new studio images.', cover: true },
+];
+
+const variety = [
+  { year: '2022', show: 'You Quiz on the Block', platform: 'tvN', context: 'First major Korean variety appearance as solo artist — aired February 2022. Discussed the SOFTEST TOUCH debut, the King of Mask Singer origin of GONUNMA, and his early life in Bangkok. Episode was one of the season\'s highest-rated.' },
+  { year: '2022', show: 'The Tonight Show Starring Jimmy Fallon', platform: 'NBC', context: 'US late-night debut — March 2022, timed to the Oscars performance. Performed "Fire in the Sky" (acoustic arrangement) and gave a short interview segment covering his dual career in music and film.' },
+  { year: '2023', show: 'Running Man (guest)', platform: 'SBS', context: 'One-episode guest appearance — August 2023, during the Korea leg of the PULSE tour. Noted for being more relaxed and humorous on camera than his public persona typically suggests. Clipped segments went widely viral on YouTube.' },
+  { year: '2023', show: 'The Late Show with Stephen Colbert', platform: 'CBS', context: 'PULSE promotion — July 2023. Performed "HOW DOES IT FEEL" with a live band arrangement. Interview covered the Grammy ambition and the PULSE sound.' },
+  { year: '2024', show: 'Saturday Night Live (musical guest)', platform: 'NBC', context: 'SNL musical guest — April 2024, during the North America leg of the PULSE World Tour. Performed "Tears On A Pretty Face" (full dance crew) and "If I Knew" (stripped-back). One of the most-watched SNL musical performances of the season; became a cultural reference point for K-adjacent artists crossing into US television.' },
+  { year: '2024', show: 'The Graham Norton Show', platform: 'BBC One', context: 'UK appearance during PULSE 2024 World Tour Europe leg — May 2024. Appeared alongside other guests; discussed the Shang-Chi franchise and the Grammy wins. UK fandom growth credited partly to this appearance.' },
+  { year: '2025', show: 'The Tonight Show Starring Jimmy Fallon', platform: 'NBC', context: 'Grammy win celebration appearance — February 2025. Performed "Tears On A Pretty Face" the week after the Grammy ceremony. Thank-you message to US audience widely shared across social platforms.' },
+  { year: '2025', show: 'Knowing Bros (아는 형님)', platform: 'JTBC', context: 'Guest appearance — June 2025, ahead of Shang-Chi 2 release. First time on a Korean idol-adjacent variety format since departing SM. Notable for the cast\'s reaction to James discussing his NCT 127 years with candor.' },
+  { year: '2026', show: 'Good Morning America', platform: 'ABC', context: 'Shang-Chi 3 and DECADE promotional appearance — September 2026. Live performance of "NEW" (DECADE lead single) in the GMA outdoor plaza. One of the rare occasions James performed at a US morning broadcast format.' },
+];
+
 const politicalItems = [
   {
     period: '2020–2021',
@@ -108,7 +132,7 @@ const politicalItems = [
   <div class="mb-8">
     <div class="wiki-label mb-2">Biography</div>
     <h1 class="wiki-title mb-2">Public Image & Personal Background</h1>
-    <p class="text-sm" style="color:var(--text-muted)">Half-Thai, Half-Korean · Born June 22, 1998 · Thai citizenship</p>
+    <p class="text-sm" style="color:var(--text-muted)">Half-Thai, Half-Chinese, Half-Korean · Born June 22, 1998 · Thai citizenship</p>
   </div>
 
   <!-- Bio facts -->
@@ -166,6 +190,48 @@ const politicalItems = [
     </div>
     <div class="mt-2 text-xs px-1" style="color:var(--text-muted)">
       แตกต่างจากแนวปฏิบัติของศิลปิน K-pop ส่วนใหญ่ที่มักหลีกเลี่ยงการแสดงความคิดเห็นทางการเมืองในประเทศบ้านเกิด
+    </div>
+  </section>
+
+  <!-- Pictorials -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Magazine Pictorials</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {pictorials.map((p, i) => (
+        <div class={`grid grid-cols-1 md:grid-cols-4 ${i !== pictorials.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="px-5 py-3.5 md:border-r" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <div class="flex items-center gap-2 mb-0.5">
+              <span class="text-sm font-bold">{p.pub}</span>
+              {p.cover && <span class="text-xs px-1.5 py-0.5 rounded font-semibold" style="background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)">Cover</span>}
+            </div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">{p.issue}</div>
+          </div>
+          <div class="md:col-span-3 px-5 py-3.5" style="background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{p.concept}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Variety appearances -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Variety & Talk Show Appearances</h2>
+    <div class="space-y-2">
+      {variety.map(v => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b" style="border-color:color-mix(in srgb,var(--border) 60%,transparent);background-color:var(--bg-surface)">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{v.year}</span>
+              <span class="text-sm font-semibold">{v.show}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted)">{v.platform}</span>
+          </div>
+          <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{v.context}</p>
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 

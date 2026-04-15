@@ -33,17 +33,22 @@ const milestones = [
 ];
 
 const sections = [
-  { href: `${base}timeline`,        icon: '◷', title: 'Career Timeline',    desc: '1998–present · SM Rookies to RESONANCE', color: '#c9a84c' },
+  { href: `${base}biography`,       icon: '◎', title: 'Biography',           desc: 'Bangkok → SM Rookies → NCT 127 → independence', color: '#c9a84c' },
+  { href: `${base}timeline`,        icon: '◷', title: 'Career Timeline',    desc: '1998–present · every major event in sequence', color: '#c9a84c' },
   { href: `${base}discography`,     icon: '◉', title: 'Discography',         desc: '6 projects · 3.5B+ streams · 2016–2026', color: '#9b7fc8' },
-  { href: `${base}filmography`,     icon: '▶', title: 'Filmography',         desc: 'Shang-Chi trilogy (MCU) + RESONANCE (Disney)', color: '#7c5a3a' },
-  { href: `${base}tours`,           icon: '◎', title: 'Tours',               desc: 'PULSE + DECADE · $309M combined gross', color: '#5a7c6a' },
-  { href: `${base}company`,         icon: '◆', title: 'JH Company',          desc: 'Founded 2023 · $180M–320M valuation', color: '#5a7aaa' },
-  { href: `${base}awards`,          icon: '★', title: 'Awards',              desc: '2× Grammy · Melon · AAA · Seoul Music', color: '#c9a84c' },
-  { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact',     desc: 'Idol-auteur hybrid · Neo-soul K-pop pioneer', color: '#c06080' },
-  { href: `${base}ecosystem`,       icon: '◇', title: 'Endorsements',        desc: 'Saint Laurent · Cartier · Sony · Nike', color: '#6e5a7c' },
-  { href: `${base}public-image`,    icon: '◑', title: 'Public Image',        desc: 'Background · identity · public persona', color: '#5a7aaa' },
-  { href: `${base}legal`,           icon: '⚖', title: 'Legal',               desc: 'SM dispute 2022–2023 · settlement', color: '#c0504a' },
-  { href: `${base}canon`,           icon: '◈', title: 'Canon',               desc: 'Vocal · dance · production DNA', color: '#9b7fc8' },
+  { href: `${base}music-videos`,    icon: '▶', title: 'Music Videos',        desc: '10 MVs · LIKE I DO through DECADE', color: '#9b7fc8' },
+  { href: `${base}filmography`,     icon: '▷', title: 'Filmography',         desc: 'Shang-Chi trilogy (MCU) + RESONANCE franchise (Disney+)', color: '#7c5a3a' },
+  { href: `${base}tours`,           icon: '◆', title: 'Tours',               desc: 'PULSE (2023–24) + DECADE (2027) · $309M+ gross', color: '#5a7c6a' },
+  { href: `${base}collaborations`,       icon: '♫', title: 'Collaborations',       desc: 'Anderson .Paak · Jaehyun · Aespa · SZA · more', color: '#5a7c6a' },
+  { href: `${base}production-credits`,  icon: '◎', title: 'Production Credits',   desc: 'L.I.N.A. · NCT 127 · aespa · WayV · Ten · Jaehyun', color: '#5a7c6a' },
+  { href: `${base}company`,         icon: '◇', title: 'JH Company',          desc: 'Founded Apr 2023 · distribution via Warner Music Korea', color: '#5a7aaa' },
+  { href: `${base}awards`,          icon: '★', title: 'Awards',              desc: '2× Grammy · Melon · AAA · Seoul Music Awards', color: '#c9a84c' },
+  { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact',     desc: 'Post-agency authorship · neo-soul K-pop pioneer', color: '#c06080' },
+  { href: `${base}ecosystem`,       icon: '◐', title: 'Endorsements',        desc: 'Saint Laurent · Cartier · Sony · Nike · Gentle Monster', color: '#6e5a7c' },
+  { href: `${base}public-image`,    icon: '◑', title: 'Public Image',        desc: 'Pictorials · variety · controversies · persona', color: '#5a7aaa' },
+  { href: `${base}legal`,           icon: '⚖', title: 'Legal',               desc: 'SM dispute 2022–2023 · settlement · IP ownership', color: '#c0504a' },
+  { href: `${base}canon`,           icon: '◈', title: 'Canon',               desc: 'Vocal · dance · production DNA · artistic identity', color: '#9b7fc8' },
+  { href: `${base}fandom`,          icon: '♡', title: 'Gemzen Fandom',       desc: 'Official fandom · merch · demographics · fan projects', color: '#c9a84c' },
 ];
 ---
 
@@ -66,7 +71,7 @@ const sections = [
         { text: '黃志南 · 황지남', sub: null },
         { text: 'ชัยชนะ อึ้งวณิชกุล', sub: null },
         { text: 'b. June 22, 1998', sub: null },
-        { text: 'Half-Thai · Half-Korean', sub: null },
+        { text: 'Half-Thai · Half-Chinese · Half-Korean', sub: null },
         { text: 'Fandom: Gemzen (Gemz)', sub: null },
       ].map(c => (
         <span class="text-xs px-2.5 py-1 rounded-full border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{c.text}</span>

@@ -110,3 +110,25 @@
 #### The Fantastic Four: First Steps (2025)
 
 Released Date: November 7, 2025
+
+---
+
+### Critical Reception
+
+**Shang-Chi and the Legacy of the Ten Rings** was received as a worthy and emotionally ambitious sequel, with critics noting James Hwang's expanded creative involvement — including a co-screenwriting credit — as a visible factor in the film's character depth.
+
+**Critical scores:**
+* Rotten Tomatoes: **88%** (certified fresh)
+* Metacritic: **74/100**
+* CinemaScore: **A**
+
+**Selected reviews:**
+* **Pitchfork** (in a rare film entry): *"The movie doesn't just give Hwang a bigger role — it gives him a soul to excavate. The Chi Force sequence in Act 4 is the closest the MCU has come to inner cinema."*
+* **Rolling Stone** (3.5/5): *"Legacy is the rare MCU sequel that expands its protagonist's world without shrinking his interiority. James Hwang co-wrote himself a genuinely difficult part, and he delivers on it."*
+* **The Hollywood Reporter** praised the casting of Chow Yun-fat as bringing "a gravitational legacy weight that the film earns rather than borrows."
+* **NME** (4/5): *"Destin Daniel Cretton pushes deeper into the psychological terrain that made the first film memorable, and James Hwang meets him there — this is a performance that belongs on any year-end acting list, franchise film or not."*
+* **IndieWire** noted the screenwriting co-credit as significant: *"Hwang's hand in the script is legible. The dialogue in the Act 5 reveal carries a tonal specificity that suggests someone who knew exactly what they wanted the character to feel."*
+
+**Box office:** $610M worldwide — the highest-grossing film in the Shang-Chi trilogy and one of the top-performing MCU Phase 6 releases. Strong openings across the US, Korea, Thailand, and the UK. The Janet Jackson–adjacent cultural moment created unexpected crossover press coverage during the press tour.
+
+**Awards consideration:** James Hwang received multiple Critics Circle and precursor nominations for Best Actor — the first time an MCU performance generated sustained awards-season conversation since the franchise's Phase 1 era.

@@ -13,18 +13,22 @@ const base = import.meta.env.BASE_URL;
 
 const nav = [
   { label: 'Overview', href: `${base}`, icon: '◈' },
+  { label: 'Biography', href: `${base}biography`, icon: '◎' },
   { label: 'Timeline', href: `${base}timeline`, icon: '◷' },
   { label: 'Discography', href: `${base}discography`, icon: '◉' },
-  { label: 'Filmography', href: `${base}filmography`, icon: '▶' },
-  { label: 'Tours', href: `${base}tours`, icon: '◎' },
-  { label: 'Company', href: `${base}company`, icon: '◆' },
+  { label: 'Music Videos', href: `${base}music-videos`, icon: '▶' },
+  { label: 'Filmography', href: `${base}filmography`, icon: '▷' },
+  { label: 'Tours', href: `${base}tours`, icon: '◆' },
+  { label: 'Collaborations', href: `${base}collaborations`, icon: '♫' },
+  { label: 'Production Credits', href: `${base}production-credits`, icon: '◎' },
+  { label: 'Company', href: `${base}company`, icon: '◇' },
   { label: 'Awards', href: `${base}awards`, icon: '★' },
-  { label: 'Endorsements', href: `${base}ecosystem`, icon: '◇' },
-  { label: 'Cultural Impact', href: `${base}cultural-impact`, icon: '◐' },
+  { label: 'Endorsements', href: `${base}ecosystem`, icon: '◐' },
+  { label: 'Cultural Impact', href: `${base}cultural-impact`, icon: '◑' },
   { label: 'Public Image', href: `${base}public-image`, icon: '◑' },
   { label: 'Legal', href: `${base}legal`, icon: '⚖' },
   { label: 'Canon', href: `${base}canon`, icon: '◈' },
-  { label: 'Collaborations', href: `${base}collaborations`, icon: '♫' },
+  { label: 'Fandom', href: `${base}fandom`, icon: '♡' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -58,18 +62,6 @@ const currentPath = Astro.url.pathname;
           <span class="text-xl font-bold tracking-tight" style="color:var(--gold)">JH</span>
           <span class="text-sm font-semibold transition-colors" style="color:var(--text)">JamesHwangVerse</span>
         </a>
-        <nav class="hidden md:flex items-center gap-0.5 flex-wrap">
-          {nav.map(item => (
-            <a
-              href={item.href}
-              class="px-3 py-1.5 text-xs font-medium rounded-md transition-colors nav-link"
-              style={currentPath === item.href || currentPath === item.href + '/' ? 'color:var(--gold)' : 'color:var(--text-muted)'}
-              data-active={currentPath === item.href || currentPath === item.href + '/'}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
         <div class="flex items-center gap-2">
           <!-- Dark/Light toggle -->
           <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-md transition-colors" style="color:var(--text-muted)">

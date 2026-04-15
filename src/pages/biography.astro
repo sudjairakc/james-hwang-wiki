@@ -1,0 +1,181 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const quickFacts = [
+  { label: 'Full Name', val: 'Hwang Ji-nam (황지남) · Huáng Zhìnán (黃志南) · James Hwang' },
+  { label: 'Born', val: 'June 22, 1998 · Bangkok, Thailand' },
+  { label: 'Heritage', val: 'Half-Thai (paternal) · Half-Chinese (maternal) · Half-Korean (maternal)' },
+  { label: 'Citizenship', val: 'Thai (single nationality)' },
+  { label: 'Languages', val: 'Thai · Chinese · Korean · English · Japanese (fluent)' },
+  { label: 'Education', val: 'School of Performing Arts Seoul (SOPA) · enrolled 2014 · graduated Feb 7, 2017' },
+  { label: 'Stage Name', val: 'GONUNMA (고눈마) — producer / solo artist credit' },
+  { label: 'Height', val: '183 cm' },
+  { label: 'Occupation', val: 'Singer · Songwriter · Record producer · Actor · Creative director · CEO' },
+];
+
+type Chapter = {
+  id: string;
+  period: string;
+  title: string;
+  body: string[];
+};
+
+const chapters: Chapter[] = [
+  {
+    id: '01',
+    period: '1998–2012',
+    title: 'Early Life — Bangkok',
+    body: [
+      "James Hwang was born on June 22, 1998, in Thailand. His father is a Thai-Chinese businessman; his mother is a Korean author and poet. The household moved regularly between Bangkok and Seoul depending on his mother's publishing schedule, and James grew up bilingual from birth — Thai at home, Korean through extended family and school stays in Seoul.",
+      "From childhood he was drawn to American soul and R&B, Korean pop, and 80s pop from his parents' record collections. He taught himself piano by ear and was writing melody sketches by age 10. At nine he began formal vocal training in Bangkok after a school music teacher noticed his pitch accuracy. His parents supported the training on the condition that his academics stayed strong.",
+      "He also developed a parallel interest in martial arts and acrobatic movement — tricking, flips, and hip-hop freestyle dance — which would become a defining element of his trainee audition and later his MCU casting.",
+    ],
+  },
+  {
+    id: '02',
+    period: '2013–2015',
+    title: 'SM Rookies — Bangkok Audition to Seoul Stage',
+    body: [
+      "In February 2013, after finishing middle school, James auditioned for SM Entertainment at an open call in Thailand. His set included \"I'll Never Break Your Heart\" by Backstreet Boys and \"Sherlock\" by SHINee, paired with a hip-hop freestyle incorporating tricking flips. His fluent Korean in a Thai audition room was the detail that stood out most to the Korean evaluators present.",
+      "Following the audition, his name circulated in online fan communities as one of \"two Thai kids who passed SM\" — described as \"the tall one who does flips.\" On December 16, 2013, he was officially introduced as an SM Rookies member: a pre-debut trainee in the performance and vocal track, immediately regarded as one of the lineup's standout prospects.",
+      "In 2014, enrolled at the School of Performing Arts Seoul (SOPA), James developed rapidly in a real performance environment. His Korean, English, and Japanese expanded through daily immersion, and he built connections with the trainee generation that would eventually form NCT. On August 24, 2014, he performed \"Super Moon\" alongside Lee Tae-yong in one of SM's internal chemistry-testing showcases.",
+      "In 2015, his positioning within the Rookies lineup crystallized. A March performance of \"Bassbot\" established his physical performance identity — high-physicality movement rooted in his martial arts background. On July 30, 2015, he participated in the SM Rookies Show in Seoul, one of the final major stages before the lineup was finalized for what would become NCT 127.",
+    ],
+  },
+  {
+    id: '03',
+    period: '2016–2019',
+    title: 'NCT 127 — Debut and the System',
+    body: [
+      "James debuted with NCT 127 on July 7, 2016, with \"Fire Truck.\" He was positioned as main vocalist alongside Moon Tae-il in the group's early vocal structure, and as part of the performance core with Taeyong and Mark Lee. Three weeks later, he competed on King of Mask Singer under the mask \"Cat's Eyes (고눈마)\" — winning the program between July 24 and August 10, and becoming known to the Korean general public in a way his group debut alone had not achieved. The nickname became the origin of his GONUNMA stage name.",
+      "On November 11, 2016, SM released GONUNMA: LIKE I DO — a mini album project issued with no broadcast promotion and no music show appearances, deliberately low-profile to preserve group balance. Fan response split immediately between those who recognized a distinct solo identity and those concerned about the spotlight dynamics within the team.",
+      "Through 2017, the internal vocal architecture of NCT 127 shifted from a Taeil–James axis toward a Taeil–Doyoung–Jaehyun structure. James was repositioned as a lead vocal support layer. He graduated from SOPA on February 7, 2017. In June 2017, he released the live track \"Everlasting,\" which fans began to cite as the space where James was most audibly himself — more than the title tracks.",
+      "By late 2018, following Jungwoo's full integration into the group, visible overlap in mid-range vocal and soft-center positioning caused James's line distribution to be redistributed in a pattern that continued through the following years. In July 2019, he auditioned for the role of Shang-Chi; his martial arts background and multilingual range made him a direct match for what Marvel was casting. On July 20, 2019, his casting was confirmed at Comic-Con — the first turning point of a different kind.",
+    ],
+  },
+  {
+    id: '04',
+    period: '2020–2022',
+    title: 'Shang-Chi Era — Hollywood and the Parallel Track',
+    body: [
+      "Principal photography on Shang-Chi and the Legend of the Ten Rings began in February 2020, then halted in March due to COVID-19. James returned to Korea and rejoined NCT 127 promotions for \"Kick It\" during the pause — his vocal distribution rose in that window. Filming resumed in Australia in June 2020 under quarantine protocols, wrapped October 24, 2020, and the film premiered at Hollywood on August 16, 2021, opening to $432M worldwide.",
+      "On January 11, 2022, James released SOFTEST TOUCH — his first fully framed solo single. Fan reception framed it as the release of potential that had been contained for six years. It reached number one on M Countdown, Music Bank, Show! Music Core, and Inkigayo in the same week, while the 2016 LIKE I DO title track was simultaneously re-promoted, establishing GONUNMA as a coherent solo identity. On March 27, 2022, he performed \"Fire in the Sky\" with Anderson .Paak at the 94th Academy Awards.",
+      "By mid-2022, internal SM discussions about foreign member contract renewals were underway. James moved out of the group's shared residence. In September 2022 he rejoined the \"2 Baddies\" comeback in an upper-mid distribution slot, then participated selectively in the Neo City: The Link tour through year-end — the last extended group activity before the legal dispute became formal.",
+    ],
+  },
+  {
+    id: '05',
+    period: '2023',
+    title: 'Departure — Legal Resolution and Independence',
+    body: [
+      "James participated in the Neo City: The Link tour's North and Latin America dates in January 2023 — the final major group activity before the dispute escalated. The January 30 repackage \"Ay-Yo\" showed a marked reduction in his line distribution compared to the Sticker and Favorite eras, generating visible fan discussion about internal tension. It was the last SM Entertainment release to include his participation.",
+      "In early February 2023, James began consulting a legal team over contract structure, creative control, and discriminatory treatment. By late February he had filed an injunction suspending contractual obligations and opening formal negotiations. In mid-March, the dispute became public via Dispatch. He attended the 95th Academy Awards on March 12 — Everything Everywhere All at Once swept the major categories — appearing with the cast at the after-parties and using the platform to reinforce his global-artist positioning during the dispute.",
+      "Negotiations concluded in April 2023. James terminated his SM contract by mutual agreement, both parties withdrew legal filings, and an informal non-blacklisting arrangement was reached. On April 30, 2023, he founded J.H Company and signed a distribution partnership with Warner Music Korea. All original compositions developed during the contract period were confirmed as his intellectual property — the foundation of his subsequent solo catalog.",
+    ],
+  },
+  {
+    id: '06',
+    period: '2023–2025',
+    title: 'PULSE and ARE U STILL — Solo Establishment',
+    body: [
+      "On June 22, 2023, James announced his debut full-length album PULSE and a concert tour. The album released July 21 with two title tracks; selective Korean broadcast promotion was possible due to the non-blacklisting arrangement. The PULSE 2023 tour (Leg 1) opened July 28, running through Korea, Japan, China, and Taiwan. In October, \"If I Knew\" released the same week as an NCT 127 comeback with no interaction between the two campaigns — observed as \"separate but not adversarial.\"",
+      "In November 2023, James announced the ARE U STILL album (January 8, 2024) and the global PULSE tour expansion. At the December 2023 Melon Music Awards he won Top 10 Artist, Millions Top 10 Artist, and Best Male Solo — and received producer credit on a special collaboration stage, earning the platform's designation of \"Golden Producer.\" ARE U STILL released January 8, 2024. The PULSE 2024 World Tour (Leg 2) ran through May, covering Southeast Asia, Oceania, North America (Madison Square Garden, SAP Center), and Europe, closing May 30. Total PULSE tour gross: $235M across 64 shows.",
+      "On August 26, 2024, Jaehyun's album \"J\" released with the title track \"SMOKE\" produced by James — the first official creative collaboration with an SM artist since the departure. Aespa's October release \"Flowers\" was also produced by James. The Grammy nominations for ARE U STILL arrived late in the year. On February 2, 2025, James won Best Progressive R&B Album and Best R&B Performance (\"Tears On A Pretty Face\") at the Grammy Awards.",
+    ],
+  },
+  {
+    id: '07',
+    period: '2025–2026',
+    title: 'POPSTAR Era — SOUR|HONEY, Shang-Chi II, and the Return',
+    body: [
+      "SOUR|HONEY released February 10, 2025, with no Korean broadcast promotion — a deliberate business and personal positioning choice focused entirely on US and global platforms. In June 2025, James announced a pause on NCT 127 group activity through July 2026 to focus on solo work and the Shang-Chi trilogy's conclusion. Shang-Chi and the Legacy of the Ten Rings premiered July 25, 2025; James carried a co-screenwriting credit — his first formal writing credit on a studio production.",
+      "In July–August 2025, political events in Thailand created a brief moment of public division around James. He issued a measured, peace-oriented response, reduced his use of Thai in public appearances, and paused Thailand-based activities through the remainder of the year.",
+      "In September 2026, two major releases converged: DECADE — his first anthology album, marking ten years from his NCT 127 debut, with four new tracks — and Shang-Chi and the Legion Accursed, directed by Isaiah Saxon and co-written by James, closing the trilogy. In the same month, his relationship with co-star Ashley Liao was publicly confirmed through a joint statement. In June–July 2026, James had returned to NCT 127 for the group's 10th anniversary activities, participating in full across all dates outside Thailand.",
+      "CAPTAIN EO: RESONANCE, the Disney+ franchise he developed as creator, co-director, composer, and lead actor, premiered as a holiday flagship series in December 2026. The DECADE tour opened January 2027. A decade had elapsed from SM Rookies trainee to Grammy-winning, MCU-lead, IP-owning independent artist.",
+    ],
+  },
+];
+---
+
+<WikiLayout title="Biography" section="Overview" relatedPages={[
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Legal', href: `${base}legal` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Filmography', href: `${base}filmography` },
+]}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Overview</div>
+    <h1 class="wiki-title mb-3">Biography</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)">
+      James Hwang (GONUNMA) is a Thai-Korean singer, songwriter, record producer, actor, and creative director.
+      Born in Bangkok in 1998, he debuted with NCT 127 in 2016 following two and a half years as an SM Rookies trainee,
+      before establishing full artistic independence in 2023. His career spans K-pop, Grammy-winning R&B,
+      Hollywood franchise acting, and original IP development.
+    </p>
+  </div>
+
+  <!-- Quick facts -->
+  <div class="rounded-xl border overflow-hidden mb-10" style="border-color:var(--border)">
+    <div class="px-5 py-3 border-b text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);border-color:var(--border);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">Quick Facts</div>
+    <div style="background-color:var(--bg-surface)">
+      {quickFacts.map((r, i) => (
+        <div class="flex gap-4 px-5 py-2.5" style={i < quickFacts.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 50%,transparent)' : ''}>
+          <div class="text-xs font-semibold w-32 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+          <div class="text-sm leading-relaxed">{r.val}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Chapter jump nav -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {chapters.map(c => (
+      <a href={`#ch-${c.id}`} class="text-xs px-3 py-1.5 rounded-full border transition-colors hover:border-[var(--gold)]" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">
+        {c.period}
+      </a>
+    ))}
+  </div>
+
+  <!-- Chapters -->
+  <div class="space-y-12">
+    {chapters.map((ch) => (
+      <section id={`ch-${ch.id}`}>
+        <div class="flex items-start gap-4 mb-5">
+          <div class="shrink-0 mt-1">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black" style="background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)">{ch.id}</div>
+          </div>
+          <div class="border-b pb-3 flex-1" style="border-color:var(--border)">
+            <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:var(--text-muted)">{ch.period}</div>
+            <h2 class="text-lg font-bold" style="color:var(--text)">{ch.title}</h2>
+          </div>
+        </div>
+
+        <div class="pl-12 space-y-4">
+          {ch.body.map(para => (
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{para}</p>
+          ))}
+        </div>
+
+        {ch.id === '05' && (
+          <div class="pl-12 mt-4">
+            <a href={`${base}legal`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 5%,transparent)">
+              → Full Legal Documentation
+            </a>
+          </div>
+        )}
+        {ch.id === '07' && (
+          <div class="pl-12 mt-4 flex flex-wrap gap-2">
+            <a href={`${base}discography`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">→ Discography</a>
+            <a href={`${base}filmography`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">→ Filmography</a>
+            <a href={`${base}awards`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">→ Awards</a>
+            <a href={`${base}timeline`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">→ Full Timeline</a>
+          </div>
+        )}
+      </section>
+    ))}
+  </div>
+
+</WikiLayout>

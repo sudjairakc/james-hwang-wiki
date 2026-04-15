@@ -1,0 +1,293 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const basics = [
+  { label: 'Fandom Name', val: 'Gemzen' },
+  { label: 'Fan Name (Singular / Plural)', val: 'Gemzen · Gemz (informal)' },
+  { label: 'Official Color', val: 'Gold Ash + Onyx' },
+  { label: 'Color Codes', val: '#C9A84C · #1A1A1A' },
+  { label: 'Official Light Stick', val: 'The Hooked Horns (gen.1 — released June 2023)' },
+  { label: 'Fan Cafe', val: 'Gemzen Official (Daum · launched April 2023)' },
+  { label: 'Established', val: 'April 30, 2023 — formally established upon JH Company founding' },
+  { label: 'Fan Union', val: 'Global Gemzen Union (GGU) — unofficial international council, formed June 2023' },
+];
+
+const platforms = [
+  { name: 'Daum Fan Cafe', region: 'Korea', focus: 'Official hub, early content drops, fan-certified exclusives', size: '420K+ members' },
+  { name: 'Twitter / X @Gemzenuniverse', region: 'Global', focus: 'Real-time updates, voting coordination, trend campaigns', size: '1.2M+ followers' },
+  { name: 'Instagram @gonunma_gemzen', region: 'Global', focus: 'Photo archives, fan art highlights, event coverage', size: '890K+ followers' },
+  { name: 'Weibo GONUNMA超话', region: 'China', focus: 'Streaming support, chart voting, mainland China community', size: '560K+ followers' },
+  { name: 'LINE Gemzen TH Official', region: 'Thailand', focus: "James's largest overseas fanbase — 380K+ members, runs independent charity projects", size: '380K+ members' },
+  { name: 'Reddit r/GONUNMAofficial', region: 'International', focus: 'Deep-dive analysis, translation teams, wiki contribution', size: '95K+ members' },
+];
+
+const chant = [
+  { cue: '"Cause if you came here to party"', who: 'James', text: 'Cause if you came here to party' },
+  { cue: '(after line)', who: 'Fans', text: 'JAMES HWANG!' },,
+  { cue: 'Chorus end', who: 'Fans', text: 'GEMZEN! (echo)' },
+];
+
+const projects = [
+  {
+    name: 'PULSE Launch Streaming Campaign',
+    year: '2023',
+    desc: "Gemzen's first coordinated streaming campaign as an official fandom — organized by the newly formed Global Gemzen Union across 18 time zones for the July 21, 2023 PULSE album release. Achieved 18M streams in the first 24 hours, pushing PULSE to Circle Album Chart #1 in week one.",
+    result: 'Circle Album Chart #1 · week 1',
+  },
+  {
+    name: 'Gemzen Thailand Flood Relief',
+    year: '2023',
+    desc: "Thai Gemzens raised ฿4.2M (approx. $120K USD) for 2023 flooding victims in Chiang Rai, in James's name. James personally acknowledged the project in a Weverse post — his first public recognition of a fan charity effort under the Gemzen name.",
+    result: 'James personal acknowledgment via Weverse',
+  },
+  {
+    name: 'ARE U STILL Grammy Campaign',
+    year: '2024',
+    desc: 'Coordinated streaming, playlist submission, and press outreach campaign targeting Grammy committee exposure for ARE U STILL. 160-member volunteer team across 24 countries. Ran for 8 months.',
+    result: 'Grammy nomination (Best Progressive R&B Album)',
+  },
+  {
+    name: 'DECADE 10th Anniversary Fan Book',
+    year: '2026',
+    desc: '420-page fan-compiled anthology covering 10 years of James Hwang career — 1,200 fan contributors, 34 countries, 8 languages. Physical edition produced in limited run of 5,000 copies, sold through fan pre-order.',
+    result: '5,000 copies sold out in 6 hours',
+  },
+];
+
+const merch = [
+  {
+    era: 'SOFTEST TOUCH · PULSE (Launch)',
+    year: '2023',
+    color: '#9b7fc8',
+    items: [
+      { name: 'GONUNMA Debut Fan Kit', type: 'Launch Package', desc: 'First official merchandise issued under JH Company — released April 2023 alongside the Weverse store launch. Photobook (80p) · mini poster set · photo card set · sticker pack · lyric card.' },
+      { name: 'Hooked Horns Light Stick Gen.1', type: 'Official Light Stick', desc: 'Official Gemzen concert light stick — hooked horns silhouette in gold and black. Released June 2023 ahead of the PULSE tour. Official fandom tool across all PULSE 2023 and 2024 tour venues.' },
+    ],
+  },
+  {
+    era: 'PULSE',
+    year: '2023',
+    color: '#5a7c6a',
+    items: [
+      { name: 'PULSE Album Merch Set', type: 'Album Package', desc: 'Deluxe photobook (120p) · poster · photo card set (12 cards) · lyric booklet · behind-the-scenes mini film booklet.' },
+      { name: 'PULSE Tour Merch', type: 'Concert Goods', desc: 'Tour hoodie · tote bag · tour poster (foil edition) · photo set (concert exclusive) · wristband. Available at all PULSE 2023 and PULSE 2024 World Tour venues.' },
+      { name: 'GONUNMA Studio Series Vol.1', type: 'Fan Shop Drop', desc: 'Exclusive JH Company fan shop drop — studio photography set, notebook, keychain. Limited to 3,000 units. Sold out in 90 minutes.' },
+    ],
+  },
+  {
+    era: 'ARE U STILL',
+    year: '2024',
+    color: '#5a7aaa',
+    items: [
+      { name: 'ARE U STILL Album Package', type: 'Album Package', desc: 'Photobook (140p, two cover versions) · poster · photo card set · concept film booklet · lyric insert. Grammy nominee edition re-pressed after Grammy wins with gold "Grammy Winner" stamp.' },
+      { name: 'TEARS Concept Merch', type: 'Special Drop', desc: 'Capsule merch tied to the TEARS ON A PRETTY FACE MV aesthetic — oversized tee, enamel pin set (dance crew motif), postcard set. Sold via JH Company online store.' },
+    ],
+  },
+  {
+    era: 'SOUR|HONEY',
+    year: '2025',
+    color: '#c06080',
+    items: [
+      { name: 'SOUR|HONEY Dual Package', type: 'Album Package', desc: 'Two separate physical editions (SOUR ver. / HONEY ver.) each with distinct photography, color palette, and packaging material. Designed to be displayed together — the spines form a single continuous image.' },
+      { name: 'SOUR|HONEY Season\'s Greetings 2025', type: 'Annual Goods', desc: 'Calendar (desk + wall) · planner · photo card advent set (24 cards) · year-end letter from James. JH Company\'s first Season\'s Greetings release.' },
+    ],
+  },
+  {
+    era: 'DECADE',
+    year: '2026',
+    color: '#6e5a7c',
+    items: [
+      { name: 'DECADE Anthology Box', type: 'Collector\'s Edition', desc: '10th anniversary luxury box — 200p photobook spanning 2016–2026, vinyl record (4 new tracks), archival poster prints (10 era prints), hand-numbered certificate. Limited to 10,000 units.' },
+      { name: 'DECADE Tour Goods', type: 'Concert Goods', desc: 'Anniversary tour hoodie · cap · photo booklet (tour-exclusive photography) · Hooked Horns Gen.2 light stick (upgraded LED, wireless sync).' },
+    ],
+  },
+];
+
+const demographics = [
+  { region: 'North America', share: '24%', note: 'Largest regional base — Grammy-era R&B crossover and RESONANCE franchise drove mass adoption; strong in US, Canada' },
+  { region: 'Korea', share: '18%', note: 'Core domestic base — heaviest chart voting activity and fan cafe participation' },
+  { region: 'Thailand', share: '17%', note: "Largest single-country fandom — driven by James's Thai heritage and LINE community activity" },
+  { region: 'Southeast Asia (ex-TH)', share: '13%', note: 'Philippines, Indonesia, Vietnam, Malaysia — K-pop crossover audience' },
+  { region: 'Europe', share: '11%', note: 'UK-led; grew through PULSE and SOUR|HONEY arena tours and Harry Styles-adjacent press coverage' },
+  { region: 'China & Taiwan', share: '9%', note: 'Weibo-based, strong streaming support culture' },
+  { region: 'Japan', share: '4%', note: 'Older demographic, physical-focused' },
+  { region: 'Rest of World', share: '4%', note: 'Latin America, Middle East, Oceania' },
+];
+---
+
+<WikiLayout title="Gemzen Fandom" section="Community" relatedPages={[
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Tours', href: `${base}tours` },
+  { label: 'Awards', href: `${base}awards` },
+]}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Community</div>
+    <h1 class="wiki-title mb-3">Gemzen — Official Fandom</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)">
+      <strong style="color:var(--text)">Gemzen</strong> (젬즌) is the official fandom name of James Hwang (GONUNMA),
+      formally established April 30, 2023 — the day JH Company was founded — marking the beginning of James's career as a fully independent artist.
+      Informal short form: <strong style="color:var(--text)">Gemz</strong>. Fanbase also uses
+      <strong style="color:var(--text)">Chamois (ชามัวร์)</strong> as a regional nickname.
+      Prior to independence, fans who followed James's solo work as GONUNMA operated informally without an official fandom structure.
+    </p>
+  </div>
+
+  <!-- Color swatches + basics -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <!-- Color display -->
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      <div class="h-20 flex">
+        <div class="flex-1" style="background-color:#C9A84C"></div>
+        <div class="flex-1" style="background-color:#1A1A1A"></div>
+      </div>
+      <div class="px-4 py-3" style="background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">Official Colors</div>
+        <div class="flex gap-4">
+          <div>
+            <div class="text-sm font-semibold">Gold Ash</div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">#C9A84C</div>
+          </div>
+          <div>
+            <div class="text-sm font-semibold">Onyx</div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">#1A1A1A</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Basics table -->
+    <div class="md:col-span-2 rounded-xl border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 text-xs font-semibold uppercase tracking-widest border-b" style="color:var(--gold);border-color:var(--border);background-color:var(--bg-surface)">Fandom Profile</div>
+      <div style="background-color:var(--bg-surface)">
+        {basics.map((r, i) => (
+          <div class="flex gap-3 px-4 py-2" style={i < basics.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-semibold w-36 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+            <div class="text-sm">{r.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Fan chant -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Fan Chant — HOW DOES IT FEEL</h2>
+    <p class="text-xs mb-4" style="color:var(--text-muted)">Standard chant pattern used during live performances. Each cue marks the moment fans respond.</p>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {chant.map((row, i) => (
+        <div class={`flex items-start gap-4 px-5 py-3 ${i !== chant.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="text-xs w-40 shrink-0 mt-0.5 italic" style="color:var(--text-faint)">{row.cue}</div>
+          <div class="w-14 shrink-0">
+            <span class={`text-xs px-1.5 py-0.5 rounded font-semibold`}
+              style={row.who === 'Fans'
+                ? 'background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)'
+                : 'background-color:var(--bg-muted);color:var(--text-muted)'}>
+              {row.who}
+            </span>
+          </div>
+          <div class={`text-sm font-medium flex-1`} style={row.who === 'Fans' ? 'color:var(--text)' : 'color:var(--text-muted)'}>{row.text}</div>
+        </div>
+      ))}
+    </div>
+    <p class="text-xs mt-2 italic" style="color:var(--text-faint)">
+      Note: Fan chant pattern varies by song and concert segment. Silent-listening sections (no chant) are observed during ballad and deep-cut performances — a documented Gemzen cultural marker. See <a href={`${base}cultural-impact`} style="color:var(--gold)">Cultural Impact §2.6</a>.
+    </p>
+  </section>
+
+  <!-- Community platforms -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Community Platforms</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {platforms.map((p, i) => (
+        <div class={`grid grid-cols-1 md:grid-cols-4 gap-0 ${i !== platforms.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="px-5 py-3.5 border-b md:border-b-0 md:border-r" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <div class="text-sm font-semibold">{p.name}</div>
+            <div class="text-xs mt-0.5" style="color:var(--text-muted)">{p.region}</div>
+          </div>
+          <div class="md:col-span-2 px-5 py-3.5 border-b md:border-b-0 md:border-r flex items-center" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{p.focus}</p>
+          </div>
+          <div class="px-5 py-3.5 flex items-center justify-end md:justify-center" style="background-color:var(--bg-surface)">
+            <span class="text-xs font-semibold" style="color:var(--gold)">{p.size}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Major fan projects -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Major Fan Projects</h2>
+    <div class="space-y-3">
+      {projects.map(p => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b" style="border-color:color-mix(in srgb,var(--gold) 25%,transparent);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+            <div>
+              <span class="text-sm font-semibold" style="color:var(--text)">{p.name}</span>
+              <span class="text-xs ml-2" style="color:var(--text-muted)">{p.year}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded border" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 8%,transparent)">{p.result}</span>
+          </div>
+          <div class="px-5 py-3.5" style="background-color:var(--bg-surface)">
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Official Merchandise -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Official Merchandise</h2>
+    <div class="space-y-4">
+      {merch.map(era => (
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full shrink-0" style={`background-color:${era.color}`}></div>
+            <span class="text-xs font-bold uppercase tracking-widest" style={`color:${era.color}`}>{era.era}</span>
+            <span class="text-xs" style="color:var(--text-faint)">{era.year}</span>
+          </div>
+          <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+            {era.items.map((item, i) => (
+              <div class={`grid grid-cols-1 md:grid-cols-4 ${i !== era.items.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+                <div class="px-5 py-3.5 md:border-r" style={`border-color:var(--border);background-color:${era.color}08`}>
+                  <div class="text-sm font-semibold">{item.name}</div>
+                  <div class="text-xs mt-0.5 font-semibold" style={`color:${era.color}`}>{item.type}</div>
+                </div>
+                <div class="md:col-span-3 px-5 py-3.5" style="background-color:var(--bg-surface)">
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Demographics -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Geographic Distribution</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {demographics.map((d, i) => (
+        <div class={`flex items-center gap-4 px-5 py-3 ${i !== demographics.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="w-40 shrink-0">
+            <div class="text-sm font-semibold">{d.region}</div>
+          </div>
+          <div class="w-12 shrink-0 text-right">
+            <span class="text-sm font-bold" style="color:var(--gold)">{d.share}</span>
+          </div>
+          <!-- bar -->
+          <div class="flex-1 h-1.5 rounded-full overflow-hidden" style="background-color:var(--bg-muted)">
+            <div class="h-full rounded-full" style={`width:${d.share};background-color:var(--gold);opacity:0.7`}></div>
+          </div>
+          <div class="text-xs hidden md:block" style="color:var(--text-muted);max-width:280px">{d.note}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</WikiLayout>

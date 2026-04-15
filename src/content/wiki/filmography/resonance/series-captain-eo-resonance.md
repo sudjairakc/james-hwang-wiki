@@ -305,3 +305,24 @@ _**[FADE TO BLACK]**_<br />
 EO: "ตำนานไม่ได้เขียนขึ้นด้วยความเงียบ... แต่มันเขียนขึ้นด้วยเสียงที่เราเลือกจะส่งออกไปในวันที่โลกอยากให้เราเงียบที่สุด"<br />
 Vale: "ผมไม่สนหรอกว่าเพลงของคุณจะเพราะไหมกัปตัน... ขอแค่คุณอย่าหยุดดีดนิ้วตราบใดที่ผมยังมีกระสุนเหลืออยู่ก็พอ"<br />
 Koro: "จักรวาลน่ะไม่ได้พังหรอก... มันแค่กำลังรอให้ใครสักคนช่วย 'Remix' ใหม่ให้เข้าที่เท่านั้นแหละ!"<br />
+---
+
+### Pre-Release Reception
+
+**RESONANCE: Captain EO** (Disney+, December 4, 2026) is currently in post-production as of April 2026. The following reflects pre-release context.
+
+**Critical and industry positioning:**
+The series is positioned as Disney+'s flagship prestige animation release for Q4 2026. James Hwang's involvement as creator, executive producer, and composer of the original score has generated significant trade coverage, particularly given that it represents his first long-form original IP outside the MCU.
+
+**Creative team buzz:**
+* The involvement of Kogonada as director on episodes 3–4 has elevated the critical conversation around the series well beyond standard animation releases.
+* Ludwig Göransson's score for the series is anticipated as a major component of the Disney+ marketing push.
+* The character design and world-building, developed in collaboration with James Hwang's JH Company visual team over a two-year development period, has been described in production profiles as "visually unlike anything in the Disney+ catalog."
+
+**Awards consideration:**
+The series has been flagged by animation trade press as a strong Emmy contender in the following categories: Outstanding Animated Series, Outstanding Original Music and Lyrics, and Outstanding Main Title Design. Precursor conversations have mentioned James Hwang's name in both creative and performance categories given his vocal role.
+
+**Fan anticipation:**
+Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi: Legion Accursed.
+
+**Context note:** This is a pre-release entry. Viewership data and critical scores will be updated upon premiere.
