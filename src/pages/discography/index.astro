@@ -116,6 +116,54 @@ const albums = [
 
 const maxStreams = Math.max(...albums.map(a => a.streams));
 const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
+
+// Genre map — X = year, Y = discrete genre rows
+const genreMap = (() => {
+  const rows = [
+    { label: 'K-pop / Dance Pop',    color: '#60a5fa', group: 'Pop' },
+    { label: 'Pop',                  color: '#93c5fd', group: 'Pop' },
+    { label: 'Indie / Alt Pop',      color: '#7ca4a0', group: 'Pop' },
+    { label: 'Pop R&B',              color: '#c9a84c', group: 'R&B' },
+    { label: 'R&B',                  color: '#d4a847', group: 'R&B' },
+    { label: 'Contemporary R&B',     color: '#c06080', group: 'R&B' },
+    { label: 'Alternative R&B',      color: '#a05070', group: 'R&B' },
+    { label: 'Funk',                 color: '#8a6a3a', group: 'Funk' },
+    { label: 'Synth Funk',           color: '#5a7c6a', group: 'Funk' },
+    { label: 'Nu-Disco',             color: '#4a6a5a', group: 'Funk' },
+    { label: 'Soul',                 color: '#9b8fc8', group: 'Soul' },
+    { label: 'Neo-Soul',             color: '#7b6fa8', group: 'Soul' },
+  ];
+
+  // album genre membership — list genre labels that apply
+  const albums = [
+    { title: 'LIKE I DO',     year: 2016, color: '#c9a84c',
+      genres: ['Pop', 'Pop R&B', 'R&B'] },
+    { title: 'SOFTEST TOUCH', year: 2022, color: '#9b7fc8',
+      genres: ['Indie / Alt Pop', 'Pop R&B', 'R&B'] },
+    { title: 'PULSE',         year: 2023, color: '#5a7c6a',
+      genres: ['Pop R&B', 'R&B', 'Synth Funk', 'Nu-Disco'] },
+    { title: 'ARE U STILL',   year: 2024, color: '#5a7aaa',
+      genres: ['R&B', 'Alternative R&B', 'Funk', 'Soul', 'Neo-Soul'] },
+    { title: 'SOUR | HONEY',  year: 2025, color: '#c06080',
+      genres: ['R&B', 'Contemporary R&B', 'Soul'] },
+    { title: 'DECADE',        year: 2026, color: '#6e5a7c',
+      genres: ['Pop R&B', 'R&B', 'Soul', 'Neo-Soul'] },
+  ];
+
+  // market genre center per year — index into rows[]
+  const kpop = [
+    { year: 2016, gi: 0.3 }, { year: 2018, gi: 0.5 }, { year: 2020, gi: 0.7 },
+    { year: 2022, gi: 1.0 }, { year: 2023, gi: 1.2 }, { year: 2024, gi: 1.6 },
+    { year: 2025, gi: 2.0 }, { year: 2026, gi: 2.4 },
+  ];
+  const global = [
+    { year: 2016, gi: 3.5 }, { year: 2018, gi: 4.0 }, { year: 2020, gi: 4.5 },
+    { year: 2022, gi: 5.2 }, { year: 2023, gi: 8.5 }, { year: 2024, gi: 9.5 },
+    { year: 2025, gi: 8.8 }, { year: 2026, gi: 7.8 },
+  ];
+
+  return { rows, albums, kpop, global, yearMin: 2016, yearMax: 2026 };
+})();
 ---
 
 <WikiLayout title="Discography" section="Music" relatedPages={[
@@ -152,6 +200,35 @@ const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
       ))}
     </div>
   </div>
+
+  <!-- Genre Map -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Genre Map</div>
+    <p class="text-xs mb-4" style="color:var(--text-faint)">
+      ตำแหน่ง genre ของแต่ละอัลบั้มในพื้นที่ดนตรี · เทียบกับทิศทางตลาด K-pop และ worldwide ในปีนั้นๆ
+    </p>
+    <div class="rounded-xl border overflow-hidden" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="genreMapCanvas" height="420" style="width:100%;display:block"></canvas>
+      <!-- legend -->
+      <div class="px-4 pb-4 flex flex-wrap gap-x-6 gap-y-2 pt-3 border-t" style="border-color:var(--border)">
+        <div class="text-xs font-semibold uppercase tracking-widest self-center" style="color:var(--text-faint)">Legend</div>
+        {genreMap.rows.map(z => (
+          <div class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full opacity-60" style={`background-color:${z.color}`}></span>
+            <span class="text-xs" style="color:var(--text-muted)">{z.label}</span>
+          </div>
+        ))}
+        <div class="flex items-center gap-1.5 ml-2">
+          <span class="inline-block w-3 h-0.5 rounded border-t-2 border-dashed" style="border-color:#60a5fa"></span>
+          <span class="text-xs" style="color:#60a5fa">K-pop market</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="inline-block w-3 h-0.5 rounded border-t-2 border-dashed" style="border-color:#9ca3af"></span>
+          <span class="text-xs" style="color:#9ca3af">Worldwide market</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Stream comparison -->
   <section class="mb-10">
@@ -236,3 +313,154 @@ const totalStreams = albums.reduce((s, a) => s + a.streams, 0);
     </div>
   </div>
 </WikiLayout>
+
+<script is:inline define:vars={{ genreMap }}>
+(function () {
+  const canvas = document.getElementById('genreMapCanvas');
+  if (!canvas) return;
+
+  const { rows, albums, kpop, global: globalPts, yearMin, yearMax } = genreMap;
+  const N = rows.length;
+
+  const cssW = canvas.parentElement.clientWidth;
+  const ROW_H = 36;
+  const cssH = ROW_H * N + 64; // rows + top/bottom padding
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = cssW * dpr;
+  canvas.height = cssH * dpr;
+  canvas.style.width = cssW + 'px';
+  canvas.style.height = cssH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const W = cssW, H = cssH;
+
+  const PAD = { l: 148, r: 24, t: 28, b: 36 };
+  const cw = W - PAD.l - PAD.r;
+
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint  = cs.getPropertyValue('--text-faint').trim()  || 'rgba(255,255,255,0.25)';
+  const borderCol  = cs.getPropertyValue('--border').trim()      || 'rgba(255,255,255,0.1)';
+  const bgSurface  = cs.getPropertyValue('--bg-surface').trim()  || '#1a1a1a';
+
+  // coordinate helpers
+  const px  = year => PAD.l + ((year - yearMin) / (yearMax - yearMin)) * cw;
+  const pyi = gi   => PAD.t + gi * ROW_H + ROW_H / 2; // center of row gi
+
+  // background
+  ctx.fillStyle = bgSurface;
+  ctx.fillRect(0, 0, W, H);
+
+  // ── row bands ──
+  // group separators: shade alternating groups
+  let lastGroup = null;
+  rows.forEach((r, i) => {
+    const y = PAD.t + i * ROW_H;
+    if (r.group !== lastGroup) {
+      lastGroup = r.group;
+    }
+    ctx.fillStyle = r.color + '12';
+    ctx.fillRect(0, y, W, ROW_H);
+    // row divider
+    ctx.strokeStyle = borderCol;
+    ctx.lineWidth = 1;
+    ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(0, y + ROW_H); ctx.lineTo(W, y + ROW_H); ctx.stroke();
+    // label
+    ctx.font = '600 10px system-ui,sans-serif';
+    ctx.fillStyle = r.color + 'dd';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(r.label, PAD.l - 8, y + ROW_H / 2);
+  });
+
+  // ── year grid + labels ──
+  ctx.font = '500 10px system-ui,sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  [2016, 2018, 2020, 2022, 2023, 2024, 2025, 2026].forEach(yr => {
+    const x = px(yr);
+    ctx.strokeStyle = borderCol;
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 4]);
+    ctx.beginPath(); ctx.moveTo(x, PAD.t); ctx.lineTo(x, PAD.t + N * ROW_H); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = textFaint;
+    ctx.fillText(yr, x, PAD.t + N * ROW_H + 6);
+  });
+
+  // ── market lines (smooth curve through gi row positions) ──
+  function drawMarket(pts, color) {
+    ctx.save();
+    ctx.strokeStyle = color + 'aa';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 4]);
+    ctx.beginPath();
+    pts.forEach((p, i) => {
+      const x = px(p.year), y = pyi(p.gi);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+    ctx.setLineDash([]);
+    // fill under line (subtle)
+    ctx.globalAlpha = 0.07;
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    pts.forEach((p, i) => {
+      const x = px(p.year), y = pyi(p.gi);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    const lastX = px(pts[pts.length - 1].year);
+    const firstX = px(pts[0].year);
+    ctx.lineTo(lastX, PAD.t); ctx.lineTo(firstX, PAD.t); ctx.closePath(); ctx.fill();
+    ctx.restore();
+  }
+
+  drawMarket(kpop,      '#60a5fa');
+  drawMarket(globalPts, '#9ca3af');
+
+  // ── album clusters ──
+  const genreIndex = label => rows.findIndex(r => r.label === label);
+
+  albums.forEach(a => {
+    const ax = px(a.year);
+    const gis = a.genres.map(g => genreIndex(g)).filter(i => i >= 0);
+    if (!gis.length) return;
+
+    gis.sort((x, y) => x - y);
+    const topY = pyi(gis[0]);
+    const botY = pyi(gis[gis.length - 1]);
+
+    // vertical connector line
+    if (gis.length > 1) {
+      ctx.strokeStyle = a.color + '55';
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(ax, topY); ctx.lineTo(ax, botY); ctx.stroke();
+    }
+
+    // dot per genre + glow
+    gis.forEach(gi => {
+      const dy = pyi(gi);
+      ctx.save();
+      ctx.filter = 'blur(7px)';
+      ctx.globalAlpha = 0.4;
+      ctx.fillStyle = a.color;
+      ctx.beginPath(); ctx.arc(ax, dy, 9, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+
+      ctx.beginPath(); ctx.arc(ax, dy, 5, 0, Math.PI * 2);
+      ctx.fillStyle = a.color;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    });
+
+    // album title above top dot
+    ctx.font = '700 10px system-ui,sans-serif';
+    ctx.fillStyle = a.color;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(a.title, ax, topY - 8);
+  });
+})();
+</script>

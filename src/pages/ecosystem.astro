@@ -160,6 +160,22 @@ const tours = [
     ))}
   </div>
 
+  <!-- Ecosystem charts -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Revenue Overview</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Endorsement deal values · tour economics</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Brand Deal Values ($/yr)</div>
+        <canvas id="brandsChart" height="160" style="width:100%;display:block"></canvas>
+      </div>
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Tour Economics ($M)</div>
+        <canvas id="tourEconChart" height="160" style="width:100%;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
   <!-- Solo deals -->
   <section class="mb-10">
     <h2 class="wiki-section mb-6">Solo Brand Deals</h2>
@@ -328,3 +344,124 @@ const tours = [
     </div>
   </section>
 </WikiLayout>
+
+<script is:inline define:vars={{ solodeals, groupdeals, tours }}>
+(function () {
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+  const COLORS = ['#c9a84c','#9b7fc8','#5a7c6a','#60a5fa','#c06080'];
+
+  function initCanvas(id, h) {
+    const c = document.getElementById(id);
+    if (!c) return null;
+    const W = c.parentElement.clientWidth - 32;
+    const dpr = window.devicePixelRatio || 1;
+    c.width = W * dpr; c.height = h * dpr;
+    c.style.width = W + 'px'; c.style.height = h + 'px';
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx, W, H: h };
+  }
+
+  // ── Brand deal values ──
+  const brands = solodeals.map((d, i) => {
+    const m = d.value.match(/\$([\d.]+)[–-]([\d.]+)/);
+    return { label: d.brand, lo: m ? +m[1] : 1, hi: m ? +m[2] : 2, color: COLORS[i] };
+  });
+  const b = initCanvas('brandsChart', 160);
+  if (b) {
+    const { ctx, W, H } = b;
+    const PAD = { l: 88, r: 40, t: 8, b: 8 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const maxVal = Math.max(...brands.map(d => d.hi)) * 1.1;
+    const rowH = ch / brands.length;
+    const barH = rowH * 0.4;
+
+    brands.forEach((br, i) => {
+      const y = PAD.t + i * rowH + (rowH - barH) / 2;
+      // range bar
+      const x1 = PAD.l + (br.lo / maxVal) * cw;
+      const x2 = PAD.l + (br.hi / maxVal) * cw;
+      ctx.fillStyle = br.color + '33';
+      ctx.beginPath(); ctx.roundRect(PAD.l, y, x2 - PAD.l, barH, 3); ctx.fill();
+      ctx.fillStyle = br.color + 'cc';
+      ctx.beginPath(); ctx.roundRect(x1, y, x2 - x1, barH, 3); ctx.fill();
+      // label
+      ctx.font = '600 10px system-ui,sans-serif';
+      ctx.fillStyle = br.color; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText(br.label, PAD.l - 6, y + barH / 2);
+      // value
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = br.color; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText('$' + br.lo + '–' + br.hi + 'M', x2 + 4, y + barH / 2);
+    });
+    // axis label
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText('$ Million / yr', PAD.l + cw / 2, H);
+  }
+
+  // ── Tour economics waterfall ──
+  const tourColors = ['#5a7c6a', '#6e5a7c'];
+  const te = initCanvas('tourEconChart', 160);
+  if (te) {
+    const { ctx, W, H } = te;
+    const PAD = { l: 12, r: 12, t: 16, b: 28 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const metrics = [
+      { label: 'Ticket\nGross', key: 'ticketGross' },
+      { label: 'Sponsor\nRev', key: 'sponsorRev' },
+      { label: 'Production\nCost', key: 'productionCost' },
+      { label: 'Profit\nPool', key: 'profitPool' },
+    ];
+    const vals = tours.map(t => metrics.map(m => parseInt(t[m.key].replace(/[^0-9]/g, ''))));
+    const maxVal = Math.max(...vals.flat()) * 1.1;
+    const slotW = cw / metrics.length;
+    const barW = slotW * 0.3;
+
+    // grid
+    [0.5, 1].forEach(f => {
+      const y = PAD.t + ch * (1 - f);
+      ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+      ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + cw, y); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText('$' + Math.round(maxVal / 1.1 * f) + 'M', PAD.l - 2, y);
+    });
+
+    metrics.forEach((m, mi) => {
+      const cx = PAD.l + mi * slotW + slotW / 2;
+      tours.forEach((t, ti) => {
+        const val = parseInt(t[m.key].replace(/[^0-9]/g, ''));
+        const bh = (val / maxVal) * ch;
+        const bx = cx + (ti - 0.5) * (barW + 2);
+        const by = PAD.t + ch - bh;
+        ctx.fillStyle = tourColors[ti] + 'cc';
+        ctx.beginPath(); ctx.roundRect(bx, by, barW, bh, [3, 3, 0, 0]); ctx.fill();
+        ctx.font = '700 8px system-ui,sans-serif';
+        ctx.fillStyle = tourColors[ti]; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+        ctx.fillText('$' + val + 'M', bx + barW / 2, by - 1);
+      });
+      // label
+      const lines = m.label.split('\n');
+      ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+      lines.forEach((l, li) => ctx.fillText(l, cx, PAD.t + ch + 4 + li * 11));
+    });
+
+    // legend
+    tours.forEach((t, ti) => {
+      const lx = PAD.l + cw * 0.55 + ti * 80;
+      ctx.fillStyle = tourColors[ti];
+      ctx.fillRect(lx, PAD.t, 10, 8);
+      ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText(t.name, lx + 13, PAD.t + 4);
+    });
+  }
+})();
+</script>

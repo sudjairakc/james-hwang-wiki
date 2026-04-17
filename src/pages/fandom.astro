@@ -268,6 +268,22 @@ const demographics = [
     </div>
   </section>
 
+  <!-- Demographics chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Fandom Overview</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Geographic distribution · Platform sizes</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Geographic Split</div>
+        <canvas id="fandomGeoChart" height="200" style="width:100%;display:block"></canvas>
+      </div>
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Platform Sizes</div>
+        <canvas id="fandomPlatChart" height="200" style="width:100%;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
   <!-- Demographics -->
   <section class="mb-10">
     <h2 class="wiki-section mb-4">Geographic Distribution</h2>
@@ -291,3 +307,93 @@ const demographics = [
   </section>
 
 </WikiLayout>
+
+<script is:inline define:vars={{ demographics, platforms }}>
+(function () {
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const gold = cs.getPropertyValue('--gold').trim()            || '#c9a84c';
+  const COLORS = ['#c9a84c','#9b7fc8','#5a7c6a','#5a7aaa','#60a5fa','#c06080','#7ca4a0','#6b7280'];
+
+  function initCanvas(id, h) {
+    const c = document.getElementById(id);
+    if (!c) return null;
+    const W = c.parentElement.clientWidth - 32;
+    const dpr = window.devicePixelRatio || 1;
+    c.width = W * dpr; c.height = h * dpr;
+    c.style.width = W + 'px'; c.style.height = h + 'px';
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx, W, H: h };
+  }
+
+  // ── Donut: geographic split ──
+  const geo = initCanvas('fandomGeoChart', 200);
+  if (geo) {
+    const { ctx, W, H } = geo;
+    const shares = demographics.map(d => parseFloat(d.share));
+    const total = shares.reduce((a, b) => a + b, 0);
+    const cx = W * 0.38, cy = H / 2, R = Math.min(cx, cy) - 16, ri = R * 0.52;
+    let angle = -Math.PI / 2;
+    shares.forEach((s, i) => {
+      const sweep = (s / total) * 2 * Math.PI;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, R, angle, angle + sweep);
+      ctx.closePath();
+      ctx.fillStyle = COLORS[i];
+      ctx.fill();
+      angle += sweep;
+    });
+    // donut hole
+    ctx.beginPath(); ctx.arc(cx, cy, ri, 0, Math.PI * 2);
+    ctx.fillStyle = cs.getPropertyValue('--bg-surface').trim() || '#1a1a1a';
+    ctx.fill();
+    // center label
+    ctx.font = '700 14px system-ui,sans-serif'; ctx.fillStyle = gold;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('Global', cx, cy - 7);
+    ctx.font = '500 10px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.fillText('Gemzen', cx, cy + 9);
+
+    // legend
+    const lx = W * 0.72, lTop = 12;
+    demographics.forEach((d, i) => {
+      const ly = lTop + i * 22;
+      ctx.fillStyle = COLORS[i]; ctx.fillRect(lx, ly, 9, 9);
+      ctx.font = '600 9.5px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+      ctx.fillText(d.region, lx + 13, ly);
+      ctx.font = '700 9.5px system-ui,sans-serif'; ctx.fillStyle = COLORS[i];
+      ctx.textAlign = 'right';
+      ctx.fillText(d.share, W - 4, ly);
+    });
+  }
+
+  // ── Bar: platform sizes ──
+  const plat = initCanvas('fandomPlatChart', 200);
+  if (plat) {
+    const { ctx, W, H } = plat;
+    const sizes = platforms.map(p => parseInt(p.size.replace(/[^0-9]/g, '')));
+    const maxSize = Math.max(...sizes);
+    const PAD = { l: 12, r: 52, t: 8, b: 8 };
+    const cw = W - PAD.l - PAD.r, ch = H - PAD.t - PAD.b;
+    const rowH = ch / platforms.length, barH = rowH * 0.45;
+
+    platforms.forEach((p, i) => {
+      const bw = (sizes[i] / maxSize) * cw;
+      const y = PAD.t + i * rowH + (rowH - barH) / 2;
+      ctx.fillStyle = COLORS[i] + 'bb';
+      ctx.beginPath(); ctx.roundRect(PAD.l, y, bw, barH, [0, 3, 3, 0]); ctx.fill();
+      // platform name above bar
+      ctx.font = '600 9px system-ui,sans-serif';
+      ctx.fillStyle = COLORS[i]; ctx.textAlign = 'left'; ctx.textBaseline = 'bottom';
+      ctx.fillText(p.name.split(' ')[0], PAD.l, y);
+      // size label right
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = COLORS[i]; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText(p.size, PAD.l + bw + 4, y + barH / 2);
+    });
+  }
+})();
+</script>

@@ -15,6 +15,40 @@ const vocalStats = [
   { label: 'Falsetto', val: 'Up to E5' },
 ];
 
+// MIDI note numbers for range chart (C2=36 … G5=79)
+// C2=36 C3=48 C4=60 C5=72 G5=79
+const rangeChart = {
+  scaleMin: 36,  // C2
+  scaleMax: 91,  // G6 (gives breathing room)
+  groups: [
+    {
+      label: 'James Hwang',
+      color: '#c9a84c',
+      rows: [
+        { type: 'Chest', lo: 48, hi: 72 },        // C3–C5
+        { type: 'Falsetto', lo: 72, hi: 76 },      // C5–E5
+        { type: 'Power Core', lo: 55, hi: 64 },    // G3–E4 (highlight)
+      ],
+    },
+    {
+      label: 'K-Male Idol (avg)',
+      color: '#60a5fa',
+      rows: [
+        { type: 'Chest', lo: 52, hi: 69 },         // E3–A4
+        { type: 'Falsetto', lo: 69, hi: 77 },      // A4–F5
+      ],
+    },
+    {
+      label: 'Global Male Singer (avg)',
+      color: '#6b7280',
+      rows: [
+        { type: 'Chest', lo: 48, hi: 65 },         // C3–F4
+        { type: 'Falsetto', lo: 65, hi: 72 },      // F4–C5
+      ],
+    },
+  ],
+};
+
 const vocalFeatures = [
   { feat: 'Falsetto', desc: 'Smooth, light — gradually developing breathy airiness' },
   { feat: 'Tone', desc: 'Soft and polished with added texture; not overly clean' },
@@ -79,6 +113,25 @@ const danceCompare = [
   { aspect: 'Freestyle', taeyong: 'Artistic', mark: 'Musical', james: 'Conceptual / Experimental' },
 ];
 
+// Dance radar: 6 axes, 3 dancers
+const danceRadar = {
+  axes: ['Energy', 'Expressiveness', 'Technique / Precision', 'Groove / Rhythm', 'Freestyle', 'Sync / Control'],
+  dancers: [
+    { name: 'Taeyong', color: '#f87171', scores: [9.5, 9.5, 8.5, 8.0, 9.0, 8.5] },
+    { name: 'Mark',    color: '#60a5fa', scores: [8.0, 8.5, 8.0, 9.0, 8.5, 8.0] },
+    { name: 'James',   color: '#c9a84c', scores: [7.5, 7.5, 9.5, 9.0, 8.0, 9.5] },
+  ],
+};
+
+// Production DNA radar: James vs K-pop standard
+const prodRadar = {
+  axes: ['Rhythm / Groove', 'Arrangement', 'Bass Design', 'Melody', 'Texture', 'Vocal Integration', 'Clarity'],
+  datasets: [
+    { name: 'K-pop Standard', color: '#60a5fa', scores: [6.5, 7.0, 6.0, 8.5, 8.0, 7.0, 8.5] },
+    { name: 'James Hwang',    color: '#c9a84c', scores: [9.5, 9.0, 9.0, 7.5, 8.0, 9.0, 8.5] },
+  ],
+};
+
 const sopaFriends = [
   { name: 'Jungkook', group: 'BTS' },
   { name: 'Wooseok', group: 'PENTAGON' },
@@ -95,6 +148,59 @@ const liner98 = [
   { name: 'Lee Know', group: 'Stray Kids' },
   { name: 'Eunha', group: 'GFRIEND' },
   { name: 'Arin', group: 'OH MY GIRL' },
+];
+
+const subRadars = [
+  {
+    id: 'radarVocal',
+    label: 'Vocal',
+    color: '#c9a84c',
+    skills: [
+      { name: 'Control',     james: 9.5, idol: 7.5, global: 4.0 },
+      { name: 'Falsetto',    james: 8.5, idol: 7.0, global: 3.5 },
+      { name: 'Tone',        james: 9.0, idol: 7.5, global: 4.5 },
+      { name: 'Timing',      james: 9.5, idol: 7.0, global: 4.0 },
+      { name: 'Dynamics',    james: 8.5, idol: 7.0, global: 3.5 },
+      { name: 'Versatility', james: 8.0, idol: 6.5, global: 3.0 },
+    ],
+  },
+  {
+    id: 'radarDance',
+    label: 'Dance',
+    color: '#9b7fc8',
+    skills: [
+      { name: 'Isolation',   james: 9.5, idol: 7.5, global: 2.5 },
+      { name: 'Footwork',    james: 9.0, idol: 7.0, global: 3.0 },
+      { name: 'Groove',      james: 9.0, idol: 7.5, global: 3.5 },
+      { name: 'Glitch/Stop', james: 9.0, idol: 6.0, global: 1.5 },
+      { name: 'Waving',      james: 8.5, idol: 5.5, global: 1.5 },
+      { name: 'Power Move',  james: 5.5, idol: 5.0, global: 2.0 },
+    ],
+  },
+  {
+    id: 'radarProd',
+    label: 'Production',
+    color: '#5a7aaa',
+    skills: [
+      { name: 'Rhythm',      james: 9.5, idol: 6.5, global: 3.0 },
+      { name: 'Arrangement', james: 9.0, idol: 6.0, global: 2.5 },
+      { name: 'Bass Hook',   james: 9.0, idol: 5.5, global: 2.0 },
+      { name: 'Melody',      james: 8.5, idol: 6.5, global: 3.5 },
+      { name: 'Texture',     james: 8.5, idol: 6.0, global: 2.5 },
+      { name: 'Layering',    james: 8.0, idol: 6.0, global: 3.0 },
+    ],
+  },
+];
+
+const radarSkills = [
+  { name: 'Vocal Control',   james: 9.5, idol: 7.5, global: 4.0, note: 'Breath, dynamics, precision' },
+  { name: 'Falsetto',        james: 8.5, idol: 7.0, global: 3.5, note: 'Smooth airy tone up to E5' },
+  { name: 'Rhythm / Groove', james: 9.5, idol: 7.0, global: 3.5, note: 'MJ-level phrasing & timing' },
+  { name: 'Dance Precision', james: 9.0, idol: 7.5, global: 2.5, note: 'Isolation, glitch, stop-time' },
+  { name: 'Versatility',     james: 8.0, idol: 6.5, global: 3.0, note: 'Soft → percussive in one take' },
+  { name: 'Musicality',      james: 9.0, idol: 6.0, global: 2.5, note: 'Production instinct + arrangement' },
+  { name: 'Stage Presence',  james: 8.5, idol: 7.5, global: 4.0, note: 'Conceptual + emotional sharpness' },
+  { name: 'Technique Depth', james: 9.0, idol: 7.0, global: 2.5, note: 'Multi-style foundation' },
 ];
 ---
 <WikiLayout title="Artist Canon" section="Reference" relatedPages={[
@@ -161,8 +267,24 @@ const liner98 = [
       </div>
     </div>
 
+    <!-- Vocal range chart -->
+    <div class="mt-6">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">Vocal Range Comparison</div>
+      <p class="text-xs mb-3" style="color:var(--text-faint)">เทียบ chest voice · falsetto · power core กับ K-male idol และนักร้องชายทั่วโลก</p>
+      <div class="rounded-lg border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <canvas id="rangeChart" height="160" style="width:100%;display:block"></canvas>
+        <!-- legend -->
+        <div class="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#c9a84c55;border:1.5px solid #c9a84c"></span><span class="text-xs font-semibold" style="color:#c9a84c">James Hwang</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#60a5fa44;border:1.5px solid #60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Male Idol (avg)</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#6b728044;border:1.5px solid #6b7280"></span><span class="text-xs font-semibold" style="color:#9ca3af">Global Male Singer (avg)</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-1 rounded" style="background-color:#c9a84c;opacity:0.4"></span><span class="text-xs" style="color:var(--text-faint)">Power Core (G3–E4)</span></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Vocal refs -->
-    <div class="mt-4">
+    <div class="mt-6">
       <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Reference Artists</div>
       <div class="flex flex-wrap gap-2">
         {vocalRefs.map(r => (
@@ -186,6 +308,38 @@ const liner98 = [
         </div>
       ))}
     </div>
+    <!-- Production radar -->
+    <div class="flex flex-col md:flex-row gap-6 items-center mb-6">
+      <div class="shrink-0 mx-auto">
+        <canvas id="prodRadarChart" width="260" height="260"></canvas>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-5 mb-4 flex-wrap">
+          {prodRadar.datasets.map(d => (
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-6 h-0.5 rounded" style={`background-color:${d.color}`}></span>
+              <span class="text-xs font-semibold" style={`color:${d.color}`}>{d.name}</span>
+            </div>
+          ))}
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+          {prodRadar.axes.map((axis, i) => (
+            <div class="flex items-center gap-3">
+              <span class="text-xs w-36 shrink-0" style="color:var(--text-muted)">{axis}</span>
+              <div class="flex-1 flex items-center gap-2">
+                {prodRadar.datasets.map(d => (
+                  <div class="flex items-center gap-1">
+                    <div class="h-1.5 rounded-full" style={`width:${d.scores[i] * 8}px;background-color:${d.color}99`}></div>
+                    <span class="text-xs font-bold" style={`color:${d.color}`}>{d.scores[i]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
     <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Producer References</div>
     <div class="flex flex-wrap gap-2">
       {productionRefs.map(r => (
@@ -233,6 +387,38 @@ const liner98 = [
         </div>
       </div>
     </div>
+    <!-- Dance compare radar -->
+    <div class="flex flex-col md:flex-row gap-6 items-center mb-6">
+      <div class="shrink-0 mx-auto">
+        <canvas id="danceRadarChart" width="260" height="260"></canvas>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-5 mb-4 flex-wrap">
+          {danceRadar.dancers.map(d => (
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-6 h-0.5 rounded" style={`background-color:${d.color}`}></span>
+              <span class="text-xs font-semibold" style={`color:${d.color}`}>{d.name}</span>
+            </div>
+          ))}
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+          {danceRadar.axes.map((axis, i) => (
+            <div class="flex items-center gap-3">
+              <span class="text-xs w-36 shrink-0" style="color:var(--text-muted)">{axis}</span>
+              <div class="flex-1 flex items-center gap-3">
+                {danceRadar.dancers.map(d => (
+                  <div class="flex items-center gap-1">
+                    <div class="h-1.5 rounded-full" style={`width:${d.scores[i] * 8}px;background-color:${d.color}99`}></div>
+                    <span class="text-xs font-bold" style={`color:${d.color}`}>{d.scores[i]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
     <!-- Dance refs -->
     <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Reference Artists</div>
     <div class="flex flex-wrap gap-2">
@@ -240,6 +426,72 @@ const liner98 = [
         <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
           <span class="text-sm font-bold">{r.artist}</span>
           <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── SKILL RADAR ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">Skill Radar</h2>
+    <p class="text-sm mb-4" style="color:var(--text-muted)">ภาพรวม skill ของ James Hwang — scores จาก vocal profile, dance style, และ production DNA</p>
+    <div class="flex items-center gap-5 mb-6 flex-wrap">
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Standard</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#6b7280"></span><span class="text-xs font-semibold" style="color:#6b7280">Global Average</span></div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-6 items-center">
+      <div class="shrink-0">
+        <canvas id="radarChart" width="320" height="320"></canvas>
+      </div>
+      <div class="flex-1 grid grid-cols-1 gap-2">
+        {radarSkills.map((s, i) => (
+          <div class="flex items-center gap-3">
+            <div class="w-2.5 h-2.5 rounded-full shrink-0" style={`background-color:var(--gold);opacity:${0.5 + i * 0.07}`}></div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between gap-2 mb-0.5">
+                <span class="text-sm font-bold truncate">{s.name}</span>
+                <span class="text-xs font-bold shrink-0" style="color:var(--gold)">{s.james}</span>
+              </div>
+              <div class="h-1.5 rounded-full overflow-hidden" style="background-color:var(--bg-muted)">
+                <div class="h-full rounded-full" style={`width:${s.james / 10 * 100}%;background-color:var(--gold)`}></div>
+              </div>
+              <div class="text-xs mt-0.5" style="color:var(--text-faint)">{s.note}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SUB RADARS ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">Skill Breakdown</h2>
+    <p class="text-sm mb-4" style="color:var(--text-muted)">แต่ละ skill หลักแตกออกเป็น sub-skill ย่อย</p>
+    <div class="flex items-center gap-5 mb-6 flex-wrap">
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Standard</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#6b7280"></span><span class="text-xs font-semibold" style="color:#6b7280">Global Average</span></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {subRadars.map(sr => (
+        <div class="rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3 text-center" style={`color:${sr.color}`}>{sr.label}</div>
+          <canvas id={sr.id} width="220" height="220" class="mx-auto block"></canvas>
+          <div class="mt-3 grid grid-cols-2 gap-x-3 gap-y-1.5">
+            {sr.skills.map(s => (
+              <div class="flex items-center justify-between gap-1">
+                <span class="text-xs truncate" style="color:var(--text-muted)">{s.name}</span>
+                <span class="flex gap-1 shrink-0 items-center">
+                  <span class="text-xs font-bold" style="color:#6b7280">{s.global}</span>
+                  <span class="text-xs" style="color:var(--text-faint)">·</span>
+                  <span class="text-xs font-bold" style="color:#60a5fa">{s.idol}</span>
+                  <span class="text-xs" style="color:var(--text-faint)">·</span>
+                  <span class="text-xs font-bold" style={`color:${sr.color}`}>{s.james}</span>
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>
@@ -274,3 +526,233 @@ const liner98 = [
     </div>
   </section>
 </WikiLayout>
+
+<script is:inline define:vars={{ rangeChart }}>
+(function () {
+  const canvas = document.getElementById('rangeChart');
+  if (!canvas) return;
+
+  // Size canvas to its CSS width
+  const cssW = canvas.parentElement.clientWidth - 32; // subtract padding
+  const cssH = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = cssW * dpr;
+  canvas.height = cssH * dpr;
+  canvas.style.width = cssW + 'px';
+  canvas.style.height = cssH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const W = cssW, H = cssH;
+  const PAD_L = 130, PAD_R = 16, PAD_T = 28, PAD_B = 28;
+  const chartW = W - PAD_L - PAD_R;
+  const { scaleMin, scaleMax, groups } = rangeChart;
+  const span = scaleMax - scaleMin;
+  const noteX = midi => PAD_L + (midi - scaleMin) / span * chartW;
+
+  const cssStyle = getComputedStyle(document.documentElement);
+  const textMuted = cssStyle.getPropertyValue('--text-muted').trim() || 'rgba(255,255,255,0.5)';
+  const textFaint = cssStyle.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.3)';
+  const borderCol = cssStyle.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+
+  // note name helper
+  const NOTE_NAMES = ['C','C#','D','Eb','E','F','F#','G','Ab','A','Bb','B'];
+  const noteName = midi => NOTE_NAMES[midi % 12] + Math.floor(midi / 12 - 1);
+
+  // vertical grid lines at every C (octave boundary)
+  ctx.font = '10px system-ui,sans-serif';
+  ctx.textAlign = 'center';
+  for (let midi = scaleMin; midi <= scaleMax; midi++) {
+    if (midi % 12 === 0) { // C notes
+      const x = noteX(midi);
+      ctx.beginPath(); ctx.moveTo(x, PAD_T - 12); ctx.lineTo(x, H - PAD_B);
+      ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 3]); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = textFaint;
+      ctx.fillText(noteName(midi), x, PAD_T - 16);
+    }
+  }
+
+  // row layout: 3 groups, each occupying a vertical band
+  const groupH = (H - PAD_T - PAD_B) / groups.length;
+  const BAR_H = 10;
+  const FALSETTO_H = 8;
+  const CORE_H = 4;
+
+  groups.forEach((grp, gi) => {
+    const rowMid = PAD_T + gi * groupH + groupH / 2;
+
+    // group label
+    ctx.font = '600 11px system-ui,sans-serif';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = grp.color;
+    ctx.fillText(grp.label, PAD_L - 8, rowMid);
+
+    grp.rows.forEach(row => {
+      const x1 = noteX(row.lo), x2 = noteX(row.hi);
+      const w = Math.max(x2 - x1, 2);
+
+      if (row.type === 'Chest') {
+        const y = rowMid - BAR_H / 2;
+        ctx.fillStyle = grp.color + '40';
+        ctx.strokeStyle = grp.color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.roundRect(x1, y, w, BAR_H, 3); ctx.fill(); ctx.stroke();
+        // note labels at edges
+        ctx.font = '9px system-ui,sans-serif';
+        ctx.textAlign = 'center'; ctx.fillStyle = grp.color;
+        ctx.fillText(noteName(row.lo), x1, rowMid + BAR_H / 2 + 9);
+        ctx.fillText(noteName(row.hi), x2, rowMid + BAR_H / 2 + 9);
+      } else if (row.type === 'Falsetto') {
+        const y = rowMid - BAR_H / 2 - FALSETTO_H - 2;
+        ctx.fillStyle = grp.color + '25';
+        ctx.strokeStyle = grp.color + 'aa';
+        ctx.lineWidth = 1; ctx.setLineDash([3, 2]);
+        ctx.beginPath(); ctx.roundRect(x1, y, w, FALSETTO_H, 2); ctx.fill(); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.font = '9px system-ui,sans-serif';
+        ctx.textAlign = 'center'; ctx.fillStyle = grp.color + 'cc';
+        ctx.fillText(noteName(row.hi), x2, y - 3);
+      } else if (row.type === 'Power Core') {
+        const y = rowMid + BAR_H / 2 + 3;
+        ctx.fillStyle = grp.color + '55';
+        ctx.beginPath(); ctx.roundRect(x1, y, w, CORE_H, 2); ctx.fill();
+      }
+    });
+  });
+})();
+</script>
+
+<script is:inline define:vars={{ radarSkills, subRadars, danceRadar, prodRadar }}>
+(function () {
+  const cssStyle = getComputedStyle(document.documentElement);
+  const cssVar = v => cssStyle.getPropertyValue(v).trim();
+  const border = cssVar('--border') || 'rgba(255,255,255,0.12)';
+  const textMuted = cssVar('--text-muted') || 'rgba(255,255,255,0.5)';
+
+  // datasets: array of { scores: number[], color, fill, lineWidth, dash }
+  function drawRadar(canvasEl, labels, datasets, size, R) {
+    const ctx = canvasEl.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    canvasEl.width = size * dpr;
+    canvasEl.height = size * dpr;
+    canvasEl.style.width = size + 'px';
+    canvasEl.style.height = size + 'px';
+    ctx.scale(dpr, dpr);
+
+    const cx = size / 2, cy = size / 2;
+    const N = labels.length;
+    const angle = i => (2 * Math.PI / N) * i - Math.PI / 2;
+    const pt = (i, r) => [cx + r * Math.cos(angle(i)), cy + r * Math.sin(angle(i))];
+
+    // grid rings
+    [0.25, 0.5, 0.75, 1].forEach(frac => {
+      ctx.beginPath();
+      for (let i = 0; i < N; i++) {
+        const [x, y] = pt(i, R * frac);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = frac === 1 ? 'rgba(255,255,255,0.15)' : border;
+      ctx.lineWidth = 1; ctx.setLineDash([]);
+      ctx.stroke();
+    });
+
+    // spokes
+    for (let i = 0; i < N; i++) {
+      const [x, y] = pt(i, R);
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y);
+      ctx.strokeStyle = border; ctx.lineWidth = 1; ctx.setLineDash([]); ctx.stroke();
+    }
+
+    // draw each dataset back-to-front (global → idol → james)
+    datasets.forEach(ds => {
+      ctx.setLineDash(ds.dash || []);
+      ctx.beginPath();
+      ds.scores.forEach((score, i) => {
+        const [x, y] = pt(i, R * (score / 10));
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      });
+      ctx.closePath();
+      if (ds.fill) { ctx.fillStyle = ds.fill; ctx.fill(); }
+      ctx.strokeStyle = ds.color; ctx.lineWidth = ds.lineWidth || 1.5; ctx.stroke();
+      ctx.setLineDash([]);
+
+      // dots only for james (last dataset)
+      if (ds.dots) {
+        ds.scores.forEach((score, i) => {
+          const [x, y] = pt(i, R * (score / 10));
+          ctx.beginPath(); ctx.arc(x, y, 3, 0, 2 * Math.PI);
+          ctx.fillStyle = ds.color; ctx.fill();
+        });
+      }
+    });
+
+    // labels
+    ctx.font = (size >= 300 ? '600 11px' : '600 10px') + ' system-ui,sans-serif';
+    ctx.fillStyle = textMuted; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const labelR = R + (size >= 300 ? 22 : 18);
+    labels.forEach((name, i) => {
+      const [x, y] = pt(i, labelR);
+      const lines = name.split('/');
+      lines.forEach((line, li) => {
+        ctx.fillText(line.trim(), x, y + (li - (lines.length - 1) / 2) * 12);
+      });
+    });
+  }
+
+  const gold = cssVar('--gold') || '#c9a84c';
+  const IDOL_COLOR = '#60a5fa';
+  const GLOBAL_COLOR = '#6b7280';
+
+  // main overview chart
+  const main = document.getElementById('radarChart');
+  if (main) {
+    const labels = radarSkills.map(s => s.name);
+    drawRadar(main, labels, [
+      { scores: radarSkills.map(s => s.global), color: GLOBAL_COLOR, lineWidth: 1, dash: [3, 3] },
+      { scores: radarSkills.map(s => s.idol),   color: IDOL_COLOR,   lineWidth: 1.5, dash: [5, 3] },
+      { scores: radarSkills.map(s => s.james),  color: gold, fill: gold + '28', lineWidth: 2, dots: true },
+    ], 320, 128);
+  }
+
+  // dance compare radar (3 dancers)
+  const danceEl = document.getElementById('danceRadarChart');
+  if (danceEl) {
+    drawRadar(danceEl, danceRadar.axes, danceRadar.dancers.map((d, idx) => ({
+      scores: d.scores,
+      color: d.color,
+      fill: idx === danceRadar.dancers.length - 1 ? d.color + '20' : null,
+      lineWidth: idx === danceRadar.dancers.length - 1 ? 2 : 1.5,
+      dash: idx === 0 ? [4, 3] : idx === 1 ? [6, 3] : [],
+      dots: idx === danceRadar.dancers.length - 1,
+    })), 260, 96);
+  }
+
+  // production DNA radar (2 datasets)
+  const prodEl = document.getElementById('prodRadarChart');
+  if (prodEl) {
+    drawRadar(prodEl, prodRadar.axes, prodRadar.datasets.map((d, idx) => ({
+      scores: d.scores,
+      color: d.color,
+      fill: idx === prodRadar.datasets.length - 1 ? d.color + '20' : null,
+      lineWidth: idx === prodRadar.datasets.length - 1 ? 2 : 1.5,
+      dash: idx === 0 ? [5, 3] : [],
+      dots: idx === prodRadar.datasets.length - 1,
+    })), 260, 96);
+  }
+
+  // sub-skill charts
+  subRadars.forEach(sr => {
+    const el = document.getElementById(sr.id);
+    if (!el) return;
+    const labels = sr.skills.map(s => s.name);
+    drawRadar(el, labels, [
+      { scores: sr.skills.map(s => s.global), color: GLOBAL_COLOR, lineWidth: 1, dash: [3, 3] },
+      { scores: sr.skills.map(s => s.idol),   color: IDOL_COLOR,   lineWidth: 1.5, dash: [5, 3] },
+      { scores: sr.skills.map(s => s.james),  color: sr.color, fill: sr.color + '28', lineWidth: 2, dots: true },
+    ], 220, 82);
+  });
+})();
+</script>

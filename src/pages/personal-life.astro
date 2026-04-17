@@ -1,0 +1,372 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+const quickFacts = [
+  { label: 'Born', val: 'June 22, 1998 · Bangkok, Thailand' },
+  { label: 'Heritage', val: 'Thai-Chinese (paternal) · Korean (maternal)' },
+  { label: 'Parents', val: 'Hwang Chia-ming (father) · Park Soo-yeon (mother)' },
+  { label: 'Status', val: 'Divorced (parents, c. 2008–2009)' },
+  { label: 'Citizenship', val: 'Thai (single nationality)' },
+  { label: 'Residences', val: 'Los Angeles, USA (primary, from late 2026) · Seoul, South Korea (base until 2026)' },
+  { label: 'Workspaces', val: 'JH Company HQ + recording studio, Seoul · no property in Thailand' },
+  { label: 'Partner', val: 'Ashley Liao (confirmed September 2026)' },
+];
+
+type EducationEntry = {
+  period: string;
+  institution: string;
+  location: string;
+  note: string;
+};
+
+const education: EducationEntry[] = [
+  {
+    period: '2004–2011',
+    institution: 'Primary School (Bangkok)',
+    location: 'Bangkok, Thailand',
+    note: 'เรียนที่กรุงเทพฯ ช่วง ป.1–ป.6 ภาษาหลักที่บ้านคือไทยและจีน เดินทางไปโซลช่วงซัมเมอร์และวันหยุดยาวตามตารางงานของมารดา ซึ่งเป็นนักเขียน',
+  },
+  {
+    period: '2011–2013',
+    institution: 'Secondary School — Lower (Bangkok)',
+    location: 'Bangkok, Thailand',
+    note: 'จบ ม.3 ในไทย มีนาคม 2013 — เดือนเดียวกับที่ผ่านการ audition ของ SM Entertainment (กุมภาพันธ์ 2013) เขาจบมัธยมต้นครบก่อนย้ายโซล ไม่มีการสอบเทียบ',
+  },
+  {
+    period: '2013',
+    institution: 'Transition Period',
+    location: 'Bangkok → Seoul',
+    note: 'ช่วงปลายปี 2013 ย้ายเข้ากรุงโซลอย่างเป็นทางการในฐานะ SM Rookies trainee ฝากตัวอยู่กับญาติฝ่ายมารดา ช่วงนี้เรียนภาษาเกาหลีแบบเข้มข้นและเตรียมตัวก่อนเริ่มเรียน SOPA',
+  },
+  {
+    period: '2014–2017',
+    institution: 'School of Performing Arts Seoul (SOPA)',
+    location: 'Seoul, South Korea',
+    note: 'เรียน ม.4–ม.6 ที่ SOPA ร่วมชั้นกับ Jeon Jungkook (BTS), เพื่อนร่วมทางที่สนิทหลายคนจาก SM และ JYP trainees รุ่นเดียวกัน สำเร็จการศึกษาวันที่ 7 กุมภาพันธ์ 2017 ก่อน debut NCT 127 ห้าเดือน',
+  },
+];
+
+type RelEntry = {
+  period: string;
+  type: 'confirmed' | 'rumor' | 'private';
+  name: string;
+  detail: string;
+};
+
+const relationships: RelEntry[] = [
+  {
+    period: '2021',
+    type: 'rumor',
+    name: 'Winter (aespa)',
+    detail: 'ข่าวลือระดับ fansite — ไม่มีหลักฐาน ถูกมองว่าเกิดจากการเป็นศิลปินร่วมสังกัดและบุคลิกที่โดดเด่นทั้งสองฝ่าย',
+  },
+  {
+    period: '2023',
+    type: 'private',
+    name: 'Karina (aespa)',
+    detail: 'แหล่งข่าวใกล้ชิดระบุว่ามีความสัมพันธ์จริงในช่วงสั้น — ทั้งสองฝ่ายและทีมงาน SM เลือกปิดข่าวอย่างเป็นระบบ ไม่มีการยืนยันอย่างเป็นทางการ ข่าวลือในสาธารณะถูก dismiss ด้วย "ร่วมสังกัด" เช่นเดียวกับ Winter (2021)',
+  },
+  {
+    period: '2022–2023',
+    type: 'rumor',
+    name: 'Ashley Liao',
+    detail: 'ข่าวลือเรื่องความสัมพันธ์จากกองถ่าย Shang-Chi ไม่มีการยืนยัน ณ เวลานั้น ต่อมาเปิดเผยว่าเป็นการเริ่มต้นของความสัมพันธ์จริง',
+  },
+  {
+    period: '2024–2025',
+    type: 'private',
+    name: 'Hanni (NewJeans)',
+    detail: 'แหล่งข่าวใกล้ชิดระบุว่ามีความสัมพันธ์ระยะสั้นในช่วงนี้ — ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวที่ปรากฏบนโซเชียลช่วง SOUR|HONEY (2025) ถูกอ้างถึงว่ามาจาก social media interaction แต่แหล่งในวงการมองว่าเป็น cover story',
+  },
+  {
+    period: '2024',
+    type: 'rumor',
+    name: 'Olivia Rodrigo · Sabrina Carpenter · Hunter Schafer',
+    detail: 'ข่าวลือระดับ tabloid ช่วง US breakthrough — ไม่มีหลักฐานยืนยันจากแหล่งทางการ เกิดขึ้นช่วงที่ James ปรากฏตัวบ่อยในวงการบันเทิงอเมริกัน',
+  },
+  {
+    period: 'Sep 2026',
+    type: 'confirmed',
+    name: 'Ashley Liao',
+    detail: 'ประกาศผ่าน joint statement พร้อมกันทั้งสองฝ่าย หลังจาก Shang-Chi and the Legion Accursed เข้าฉายในเดือนเดียวกัน แฟนคลับส่วนใหญ่ตอบรับเชิงบวก เนื่องจากเป็นความสัมพันธ์ที่มีสัญญาณมายาวนาน',
+  },
+];
+
+const friends = [
+  {
+    group: 'SOPA (School of Performing Arts Seoul)',
+    note: 'กลุ่มเพื่อนสนิทที่สุดในชีวิต — เกิดจากช่วงเรียน ม.4–ม.6 ร่วมกัน หลายคนอยู่ในวงการบันเทิงเกาหลีในตำแหน่งที่แตกต่างกัน ความสัมพันธ์เหล่านี้ผ่านช่วงที่ยากที่สุดในชีวิต trainee และเป็นฐานของ personal circle ที่ยังคงอยู่ถึงปัจจุบัน',
+    names: [],
+  },
+  {
+    group: 'NCT 127 — Inner Circle',
+    note: 'ในวง NCT 127 สนิทที่สุดกับ Mark Lee, Jung Woo (Jungwoo), และ Lee Donghyuck (Haechan) — สามคนที่มีอายุใกล้เคียงกัน ความสัมพันธ์กับ Jungwoo ลึกที่สุดเพราะเกิดปีเดียวกัน (1998) และแบกรับบทบาทคล้ายกันในวง',
+    names: ['Mark Lee (1999)', 'Jung Woo / Jungwoo (1998)', 'Lee Donghyuck / Haechan (2000)'],
+  },
+  {
+    group: 'Thailand — เพื่อนเก่า',
+    note: 'ความสัมพันธ์กับเพื่อนในไทยไม่สนิทมากในปัจจุบัน — การย้ายโซลตั้งแต่อายุ 15 และการไม่กลับไทยอย่างต่อเนื่องตั้งแต่ปี 2025 ทำให้ระยะห่างทางกายภาพและทางอารมณ์เพิ่มขึ้นเรื่อยๆ',
+    names: [],
+  },
+];
+
+const hobbies = [
+  {
+    category: 'Exercise & Movement',
+    detail: 'ออกกำลังกายเป็นประจำทุกวัน — รวม strength training, functional fitness, และ tricking ที่ฝึกมาตั้งแต่วัยเด็ก รูปร่างที่เปลี่ยนแปลงชัดเจนระหว่างยุค LIKE I DO กับ PULSE ถูกตีความว่าเป็นผลของ training regiment ที่เข้มข้นขึ้น',
+  },
+  {
+    category: 'Cooking',
+    detail: 'ทำอาหารเองที่บ้านสม่ำเสมอ — กล่าวถึงในหลาย interview ว่าเป็น "decompression routine" หลังทัวร์หรือกองถ่าย เมนูที่พูดถึงบ่อยได้แก่อาหารไทย อาหารเกาหลีบ้านๆ และ pasta',
+  },
+  {
+    category: 'Housework & Domestic Routines',
+    detail: 'พูดถึงการทำงานบ้านในเชิงบวกหลายครั้ง รวมถึง You Quiz on the Block (2022) ที่กล่าวว่าการทำความสะอาดช่วยให้ head clear ไม่มีทีมงานส่วนตัวจัดการงานบ้าน อาศัยอยู่คนเดียว',
+  },
+  {
+    category: 'Writing',
+    detail: 'เขียน lyrics และ treatment สำหรับโปรเจกต์ของตัวเองมาตั้งแต่ยุค PULSE — credit เขียนบทเพิ่มขึ้นเรื่อยๆ ตั้งแต่ SOUR|HONEY จนถึง Shang-Chi และ DECADE ปัจจุบันมี co-screenwriting credit ใน MCU trilogy',
+  },
+];
+
+type ValueItem = {
+  topic: string;
+  stance: 'vocal' | 'silent' | 'cautious';
+  detail: string;
+};
+
+const values: ValueItem[] = [
+  {
+    topic: 'Anti-War / Peace Advocacy',
+    stance: 'vocal',
+    detail: 'ยืนหยัดเรื่องสันติภาพและการไม่สนับสนุนความรุนแรงทางทหารในทุกบริบท — จุดยืนนี้เป็นแกนกลางของ identity ทางการเมืองและเป็นต้นเหตุหลักของความขัดแย้งกับกระแสชาตินิยมไทยในปี 2025',
+  },
+  {
+    topic: 'Black Lives Matter',
+    stance: 'vocal',
+    detail: 'แสดงจุดยืนสนับสนุน BLM อย่างเปิดเผยตั้งแต่ปี 2020 — หนึ่งในศิลปิน K-pop กลุ่มแรกที่ออกแถลงการณ์โดยตรง (ไม่ใช่แค่ repost) ต่อมาเชื่อมโยงกับฐานแฟนคลับชาวแอฟริกัน-อเมริกัน',
+  },
+  {
+    topic: 'Asian Lives Matter',
+    stance: 'vocal',
+    detail: 'ตอบสนองต่อกระแส anti-Asian hate (2021) โดยตรง ผ่าน statement และ donation แสดงจุดยืนในฐานะคนเอเชียที่อาศัยอยู่ในสหรัฐฯ ช่วง US promotion',
+  },
+  {
+    topic: 'Thai Democracy',
+    stance: 'vocal',
+    detail: 'สนับสนุนการเคลื่อนไหวประชาธิปไตยในไทย มีบันทึกการบริจาคสาธารณะให้กลุ่มเยาวชนไทยช่วง 2020–2021 กล่าวว่า "มีความใกล้ชิดแนวคิดกับพรรคเพื่อไทย" แต่ไม่แสดงจุดยืนพรรคการเมืองโดยตรง',
+  },
+  {
+    topic: 'One China Policy',
+    stance: 'silent',
+    detail: 'ไม่เคยแสดงความคิดเห็นเรื่อง Taiwan/Tibet/Hong Kong อย่างเปิดเผย — เป็น conscious silence ที่นักวิจารณ์ระบุว่าเชื่อมโยงกับสัญญา MCU และตลาดจีน แฟนคลับส่วนหนึ่งมองว่าเป็นการเลือก pragmatism เหนือ consistency',
+  },
+];
+
+
+const incidents = [
+  {
+    period: '2025',
+    title: 'Thai–Cambodia Conflict Fallout',
+    severity: 'high' as const,
+    body: 'เมื่อความตึงเครียดชายแดนไทย-กัมพูชาปะทุขึ้นในปี 2025 James ออกแถลงการณ์เรียกร้องสันติภาพและการแก้ปัญหาด้วยการเจรจา — จุดยืนที่ขัดกับกระแสชาตินิยมไทยในช่วงนั้นโดยตรง ผลคือ backlash รุนแรงจากชาวไทยบนโซเชียล มีการตัด lightstick และเผา merchandise เชิงสัญลักษณ์ หลังจากเหตุการณ์นี้ James หยุดกิจกรรมทุกประเภทในไทย — ไม่มีทัวร์, ไม่มีโปรโมท, ไม่กล่าวถึงประเทศไทยในสื่อ ฐานแฟนคลับไทยลดลงอย่างมีนัยสำคัญ แต่ยังคงใหญ่พอสำหรับ pop star ระดับนานาชาติ',
+  },
+  {
+    period: '2024–ปัจจุบัน',
+    title: 'NCT 127 Fan Divide',
+    severity: 'medium' as const,
+    body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 (ครบรอบ 8 ปีวง) และอย่างเต็มรูปแบบในปี 2026 (ครบรอบ 10 ปี) สร้างแรงสั่นสะเทือนในแฟนด้อม กลยุทธ์ SM Entertainment ในการ manage สองฝั่ง — ทั้ง push James กลับเข้าวง และ build กระแส tension — ส่งผลให้แฟนคลับแตกออกเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ยินดีกับ James และฝ่ายที่ต่อต้าน ผลพลอยได้คือทุก content ที่มี James ทั้งใน NCT และนอก NCT ล้วนมี engagement สูงผิดปกติ — ทั้งแง่บวกและแง่ลบ ทำให้ James กลายเป็น "controversy magnet" ที่ SM ยังไม่ได้แก้อย่างเป็นระบบ',
+  },
+];
+---
+<WikiLayout title="Personal Life" section="Biography" relatedPages={[
+  { label: 'Biography', href: `${base}biography` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Career Timeline', href: `${base}timeline` },
+  { label: 'Fandom', href: `${base}fandom` },
+]}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">Biography</div>
+    <h1 class="wiki-title mb-2">Personal Life</h1>
+    <p class="text-sm" style="color:var(--text-muted)">Family · Education · Relationships · Values · Social Media · Incidents</p>
+  </div>
+
+  <!-- Quick Facts -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Quick Facts</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {quickFacts.map((f, i, arr) => (
+        <div class="flex items-baseline gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-xs font-semibold uppercase tracking-widest w-28 shrink-0" style="color:var(--text-muted)">{f.label}</span>
+          <span class="text-sm">{f.val}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Properties -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Properties & Residences</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="color:var(--gold);background-color:color-mix(in srgb,var(--gold) 12%,transparent)">Primary (2026–)</span>
+          <span class="text-sm font-bold">Los Angeles, USA</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">ย้ายมาอยู่อเมริกาเป็นหลักในช่วงปลายปี 2026 — ตรงกับช่วงที่ประกาศความสัมพันธ์กับ Ashley Liao และขยายงาน MCU trilogy conclusion ที่ต้องใช้เวลาในฝั่งตะวันตกมากขึ้น</p>
+      </div>
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:var(--bg-muted);color:var(--text-muted)">Base (–2026)</span>
+          <span class="text-sm font-bold">Seoul, South Korea</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">บ้านหรูใจกลางเมือง ย่าน Gangnam — ที่พักหลักตั้งแต่ก่อตั้ง JH Company (2023) จนถึงปลายปี 2026 ยังคงเป็นที่อยู่บางส่วน เนื่องจาก JH Company HQ อยู่ที่โซล</p>
+      </div>
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:var(--bg-muted);color:var(--text-muted)">Workspace</span>
+          <span class="text-sm font-bold">JH Company HQ + Studio</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">สำนักงานใหญ่และสตูดิโอบันทึกเสียง — ตั้งอยู่ในโซล ใช้ทั้งงานบริหารและงานผลิตเพลงส่วนตัว</p>
+      </div>
+    </div>
+    <p class="mt-2 text-xs px-1" style="color:var(--text-muted)">ไม่มีอสังหาริมทรัพย์ในประเทศไทย — สอดคล้องกับการไม่กลับไทยอย่างต่อเนื่องตั้งแต่ปี 2025</p>
+  </section>
+
+  <!-- Family Background -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Family Background</h2>
+    <div class="rounded-lg border px-5 py-4 text-sm leading-relaxed space-y-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <p>บิดา <strong>Hwang Chia-ming</strong> เป็นนักธุรกิจไทย-จีนที่มีฐานธุรกิจในกรุงเทพฯ มารดา <strong>Park Soo-yeon</strong> เป็นนักเขียนและกวีชาวเกาหลีที่มีตารางงานระหว่างโซลและกรุงเทพฯ ทั้งสองพบกันในช่วงศึกษาต่อที่สหรัฐอเมริกา</p>
+      <p style="color:var(--text-muted)">ทั้งสองแยกทางกันในช่วงที่ James อยู่ชั้นประถมปลาย (ประมาณปี 2008–2009) — ในช่วงอายุ 10–11 ขวบ หลังการหย่าร้าง James อาศัยอยู่กับบิดาในกรุงเทพฯ เป็นหลัก แต่เดินทางไปพักกับมารดาที่โซลในช่วงปิดเทอม ทำให้เขาเติบโตในสองวัฒนธรรมและสองภาษาพร้อมกัน</p>
+      <p style="color:var(--text-muted)">James ไม่ค่อยพูดถึงการหย่าร้างของบิดามารดาในที่สาธารณะ แต่อ้างถึง "ชีวิตระหว่างสองเมือง" บ่อยครั้งในฐานะที่มาของความสามารถด้านภาษาและการปรับตัว</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Education</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {education.map((e, i, arr) => (
+        <div class="flex gap-5 px-5 py-4" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-24 pt-0.5">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{e.period}</span>
+          </div>
+          <div class="flex-1">
+            <div class="font-bold text-sm mb-0.5">{e.institution}</div>
+            <div class="text-xs mb-2" style="color:var(--gold)">{e.location}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{e.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Relationships -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Relationships</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {relationships.map((r, i, arr) => {
+        const typeColor = r.type === 'confirmed' ? '#4ade80' : r.type === 'private' ? 'var(--gold)' : 'var(--text-muted)';
+        const typeBg = r.type === 'confirmed' ? 'color-mix(in srgb,#4ade80 12%,transparent)' : r.type === 'private' ? 'color-mix(in srgb,var(--gold) 12%,transparent)' : 'var(--bg-muted)';
+        const typeLabel = r.type === 'confirmed' ? 'Confirmed' : r.type === 'private' ? 'Private / Unconfirmed' : 'Rumor';
+        return (
+          <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+            <div class="shrink-0 w-20 pt-0.5">
+              <span class="text-xs font-mono font-semibold" style="color:var(--text-muted)">{r.period}</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`color:${typeColor};background-color:${typeBg}`}>{typeLabel}</span>
+                <span class="text-sm font-bold">{r.name}</span>
+              </div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.detail}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+    <p class="mt-2 text-xs px-1" style="color:var(--text-muted)">* รายการ "Private / Unconfirmed" อ้างอิงจากแหล่งข่าวใกล้ชิดที่ไม่เปิดเผยชื่อ ไม่มีการยืนยันอย่างเป็นทางการจากทีมงาน JH Company</p>
+  </section>
+
+  <!-- Friendships -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Friendships & Inner Circle</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {friends.map(f => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-2" style="color:var(--gold)">{f.group}</div>
+          {f.names.length > 0 && (
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              {f.names.map(n => (
+                <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{n}</span>
+              ))}
+            </div>
+          )}
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{f.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Hobbies & Interests</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {hobbies.map(h => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-1.5">{h.category}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{h.detail}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Values & Activism -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Values & Public Positions</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {values.map((v, i, arr) => {
+        const stanceColor = v.stance === 'vocal' ? '#4ade80' : v.stance === 'silent' ? '#f87171' : '#facc15';
+        const stanceBg = v.stance === 'vocal' ? 'color-mix(in srgb,#4ade80 10%,transparent)' : v.stance === 'silent' ? 'color-mix(in srgb,#f87171 10%,transparent)' : 'color-mix(in srgb,#facc15 10%,transparent)';
+        const stanceLabel = v.stance === 'vocal' ? 'Vocal' : v.stance === 'silent' ? 'Silent' : 'Cautious';
+        return (
+          <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+            <div class="shrink-0 w-8 pt-0.5 flex flex-col items-center">
+              <span class="text-xs px-1.5 py-0.5 rounded font-semibold" style={`color:${stanceColor};background-color:${stanceBg}`}>{stanceLabel}</span>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm font-bold mb-1">{v.topic}</div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{v.detail}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Key Incidents -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Key Incidents</h2>
+    <div class="space-y-4">
+      {incidents.map(inc => {
+        const borderCol = inc.severity === 'high' ? 'color-mix(in srgb,#f87171 35%,transparent)' : 'color-mix(in srgb,#facc15 25%,transparent)';
+        const badgeCol = inc.severity === 'high' ? '#f87171' : '#facc15';
+        const badgeBg = inc.severity === 'high' ? 'color-mix(in srgb,#f87171 12%,transparent)' : 'color-mix(in srgb,#facc15 12%,transparent)';
+        return (
+          <div class="rounded-lg border px-5 py-4" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{inc.severity}</span>
+              <span class="font-bold text-sm">{inc.title}</span>
+              <span class="text-xs font-mono ml-auto" style="color:var(--text-muted)">{inc.period}</span>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{inc.body}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+</WikiLayout>

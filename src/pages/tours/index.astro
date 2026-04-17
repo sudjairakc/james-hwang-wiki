@@ -39,6 +39,23 @@ const tours = [
   },
 ];
 
+const toursChart = {
+  metrics: [
+    { label: 'Ticket Gross ($M)', values: [235, 74] },
+    { label: 'Profit Pool ($M)',  values: [105, 40] },
+    { label: 'Shows',            values: [64,  18] },
+  ],
+  costs: [
+    { item: 'Staging / LED',     mid: 20 },
+    { item: 'Venue',             mid: 15 },
+    { item: 'Freight',           mid: 12 },
+    { item: 'Crew payroll',      mid: 10 },
+    { item: 'Travel',            mid:  7 },
+    { item: 'Insurance',         mid:  3 },
+    { item: 'Rehearsals',        mid:  2.5 },
+  ],
+};
+
 const partners = [
   { region: 'Korea', name: 'Dream Maker' },
   { region: 'Japan', name: 'Kyodo' },
@@ -134,6 +151,30 @@ const productionCosts = [
     ))}
   </div>
 
+  <!-- Tours chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Tour Comparison</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">PULSE vs DECADE — metrics & production cost breakdown</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Key Metrics</div>
+        <canvas id="tourMetricsChart" height="160" style="width:100%;display:block"></canvas>
+        <div class="flex gap-4 mt-3">
+          {tours.map(t => (
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-3 h-3 rounded-sm" style={`background-color:${t.color}`}></span>
+              <span class="text-xs font-semibold" style={`color:${t.color}`}>{t.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Production Cost Breakdown <span class="font-normal normal-case" style="color:var(--text-faint)">% of gross</span></div>
+        <canvas id="tourCostChart" height="160" style="width:100%;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
   <!-- Operations -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <!-- Partners -->
@@ -161,3 +202,106 @@ const productionCosts = [
     </div>
   </div>
 </WikiLayout>
+
+<script is:inline define:vars={{ toursChart, tours }}>
+(function () {
+  const cs = getComputedStyle(document.documentElement);
+  const gold      = cs.getPropertyValue('--gold').trim()       || '#c9a84c';
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+  function initCanvas(id, h) {
+    const c = document.getElementById(id);
+    if (!c) return null;
+    const W = c.parentElement.clientWidth - 32;
+    const dpr = window.devicePixelRatio || 1;
+    c.width = W * dpr; c.height = h * dpr;
+    c.style.width = W + 'px'; c.style.height = h + 'px';
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx, W, H: h };
+  }
+
+  // ── Grouped bar: key metrics ──
+  const m = initCanvas('tourMetricsChart', 160);
+  if (m) {
+    const { ctx, W, H } = m;
+    const PAD = { l: 90, r: 12, t: 12, b: 24 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const { metrics } = toursChart;
+    const colors = tours.map(t => t.color);
+
+    const N = metrics.length;
+    const slotH = ch / N;
+    const barH = slotH * 0.28;
+    const gap = barH * 0.4;
+
+    metrics.forEach((metric, mi) => {
+      const maxVal = Math.max(...metric.values) * 1.15;
+      const slotTop = PAD.t + mi * slotH;
+      const midY = slotTop + slotH / 2;
+
+      // label
+      ctx.font = '600 10px system-ui,sans-serif';
+      ctx.fillStyle = textFaint;
+      ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText(metric.label, PAD.l - 8, midY);
+
+      metric.values.forEach((val, vi) => {
+        const barY = midY + (vi - 0.5) * (barH + gap);
+        const bw = (val / maxVal) * cw;
+        ctx.fillStyle = colors[vi] + 'cc';
+        ctx.beginPath();
+        ctx.roundRect(PAD.l, barY, bw, barH, [0, 3, 3, 0]);
+        ctx.fill();
+        // value
+        ctx.font = '700 9px system-ui,sans-serif';
+        ctx.fillStyle = colors[vi];
+        ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+        ctx.fillText(val, PAD.l + bw + 4, barY + barH / 2);
+      });
+
+      // row divider
+      if (mi < N - 1) {
+        ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 3]);
+        ctx.beginPath(); ctx.moveTo(PAD.l, slotTop + slotH); ctx.lineTo(W - PAD.r, slotTop + slotH); ctx.stroke();
+        ctx.setLineDash([]);
+      }
+    });
+  }
+
+  // ── Horizontal bars: production cost ──
+  const c2 = initCanvas('tourCostChart', 160);
+  if (c2) {
+    const { ctx, W, H } = c2;
+    const PAD = { l: 94, r: 40, t: 8, b: 8 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const { costs } = toursChart;
+    const maxMid = Math.max(...costs.map(c => c.mid));
+    const rowH = ch / costs.length;
+
+    costs.forEach((cost, i) => {
+      const y = PAD.t + i * rowH;
+      const barY = y + rowH * 0.2;
+      const barH = rowH * 0.55;
+      const bw = (cost.mid / maxMid) * cw;
+
+      // fill bar with gradient intensity by value
+      const alpha = Math.round(80 + (cost.mid / maxMid) * 100).toString(16).padStart(2, '0');
+      ctx.fillStyle = gold + alpha;
+      ctx.beginPath(); ctx.roundRect(PAD.l, barY, bw, barH, [0, 3, 3, 0]); ctx.fill();
+
+      // label
+      ctx.font = '600 9px system-ui,sans-serif';
+      ctx.fillStyle = textFaint; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText(cost.item, PAD.l - 6, y + rowH / 2);
+
+      // pct
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = gold; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText('~' + cost.mid + '%', PAD.l + bw + 4, y + rowH / 2);
+    });
+  }
+})();
+</script>

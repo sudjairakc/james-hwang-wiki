@@ -207,6 +207,15 @@ const setlist = [
     </div>
   </section>
 
+  <!-- Setlist era chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>Setlist Era Breakdown</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Era composition per VCR section</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="decadeSetlistChart" height="160" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
   <!-- Setlist -->
   <section>
     <h2 class="wiki-section mb-4">Setlist</h2>
@@ -235,3 +244,70 @@ const setlist = [
     </div>
   </section>
 </WikiLayout>
+
+<script is:inline define:vars={{ setlist, eraColors }}>
+(function () {
+  const canvas = document.getElementById('decadeSetlistChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32, H = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+
+  const PAD = { l: 16, r: 16, t: 16, b: 36 };
+  const cw = W - PAD.l - PAD.r, ch = H - PAD.t - PAD.b;
+  const N = setlist.length;
+  const slotW = cw / N;
+  const maxSongs = Math.max(...setlist.map(v => v.songs.length));
+
+  setlist.forEach((vcr, vi) => {
+    const cx = PAD.l + vi * slotW + slotW / 2;
+    const barW = slotW * 0.72;
+    const bx = cx - barW / 2;
+    let stackY = PAD.t + ch;
+
+    // count per era
+    const counts = {};
+    vcr.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
+    const eras = Object.keys(eraColors).filter(e => counts[e]);
+
+    eras.forEach(era => {
+      const segH = (counts[era] / maxSongs) * ch;
+      stackY -= segH;
+      ctx.fillStyle = eraColors[era] + 'cc';
+      ctx.beginPath(); ctx.roundRect(bx, stackY, barW, segH, 2); ctx.fill();
+    });
+
+    // song count label
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText(vcr.songs.length, cx, stackY - 3);
+
+    // VCR label
+    ctx.font = '600 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    const line1 = 'VCR' + vcr.vcr;
+    const line2 = vcr.title.length > 10 ? vcr.title.slice(0, 9) + '…' : vcr.title;
+    ctx.fillText(line1, cx, PAD.t + ch + 5);
+    ctx.fillText(line2, cx, PAD.t + ch + 16);
+  });
+
+  // era legend
+  const usedEras = [...new Set(setlist.flatMap(v => v.songs.map(s => s.era)))];
+  let lx = PAD.l;
+  usedEras.forEach(era => {
+    ctx.fillStyle = eraColors[era];
+    ctx.fillRect(lx, 3, 8, 8);
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(era, lx + 11, 7);
+    lx += ctx.measureText(era).width + 22;
+  });
+})();
+</script>

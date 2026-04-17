@@ -253,6 +253,15 @@ const setlist = [
     </div>
   </section>
 
+  <!-- Setlist era chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>Setlist Era Breakdown</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Era composition per VCR section · 2024 version (33 songs)</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="pulseSetlistChart" height="160" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
   <!-- Setlist -->
   <section>
     <h2 class="wiki-section mb-4">Setlist</h2>
@@ -284,3 +293,95 @@ const setlist = [
     </div>
   </section>
 </WikiLayout>
+
+<script is:inline define:vars={{ setlist, eraColors, legs }}>
+(function () {
+  const canvas = document.getElementById('pulseSetlistChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32, H = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+
+  // left half: shows per leg; right half: setlist era stacked
+  const halfW = (W - 48) / 2;
+  const PAD = { t: 16, b: 36 };
+  const ch = H - PAD.t - PAD.b;
+
+  // ── Shows per leg ──
+  const showCounts = legs.map(l => ({ name: l.name.split(' — ')[1] || l.name, shows: l.shows.reduce((s, sh) => s + sh.nights, 0) }));
+  const maxShows = Math.max(...showCounts.map(l => l.shows));
+  const slotW1 = halfW / showCounts.length;
+  const barColors = ['#c9a84c','#9b7fc8','#5a7c6a','#5a7aaa'];
+
+  showCounts.forEach((leg, i) => {
+    const bw = slotW1 * 0.65;
+    const bx = 16 + i * slotW1 + (slotW1 - bw) / 2;
+    const bh = (leg.shows / maxShows) * ch;
+    const by = PAD.t + ch - bh;
+    ctx.fillStyle = barColors[i] + 'cc';
+    ctx.beginPath(); ctx.roundRect(bx, by, bw, bh, [3, 3, 0, 0]); ctx.fill();
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = barColors[i]; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText(leg.shows, bx + bw / 2, by - 2);
+    ctx.font = '600 8px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textBaseline = 'top';
+    ctx.fillText(leg.name.slice(0, 8), bx + bw / 2, PAD.t + ch + 5);
+    ctx.fillText('shows', bx + bw / 2, PAD.t + ch + 15);
+  });
+
+  // divider
+  const divX = halfW + 24;
+  ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([3, 4]);
+  ctx.beginPath(); ctx.moveTo(divX, PAD.t); ctx.lineTo(divX, PAD.t + ch); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // section labels
+  ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+  ctx.fillText('Shows per Leg', 16 + halfW / 2, PAD.t - 2);
+  ctx.fillText('Setlist Era Mix', divX + halfW / 2, PAD.t - 2);
+
+  // ── Setlist era stacked bars ──
+  const N = setlist.length;
+  const slotW2 = halfW / N;
+  const maxSongs = Math.max(...setlist.map(v => v.songs.length));
+  const ox = divX + 8;
+
+  setlist.forEach((vcr, vi) => {
+    const cx = ox + vi * slotW2 + slotW2 / 2;
+    const bw = slotW2 * 0.72;
+    const bx = cx - bw / 2;
+    let stackY = PAD.t + ch;
+    const counts = {};
+    vcr.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
+    Object.keys(eraColors).filter(e => counts[e]).forEach(era => {
+      const segH = (counts[era] / maxSongs) * ch;
+      stackY -= segH;
+      ctx.fillStyle = eraColors[era] + 'cc';
+      ctx.beginPath(); ctx.roundRect(bx, stackY, bw, segH, 2); ctx.fill();
+    });
+    ctx.font = '600 8px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText('V' + vcr.vcr, cx, PAD.t + ch + 5);
+  });
+
+  // era legend bottom-right
+  const usedEras = [...new Set(setlist.flatMap(v => v.songs.map(s => s.era)))];
+  let lx = ox;
+  usedEras.forEach(era => {
+    ctx.fillStyle = eraColors[era];
+    ctx.fillRect(lx, H - 10, 7, 7);
+    ctx.font = '8px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(era, lx + 9, H - 6);
+    lx += ctx.measureText(era).width + 20;
+  });
+})();
+</script>

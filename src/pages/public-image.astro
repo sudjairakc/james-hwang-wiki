@@ -104,6 +104,60 @@ const variety = [
   { year: '2026', show: 'Good Morning America', platform: 'ABC', context: 'Shang-Chi 3 and DECADE promotional appearance — September 2026. Live performance of "NEW" (DECADE lead single) in the GMA outdoor plaza. One of the rare occasions James performed at a US morning broadcast format.' },
 ];
 
+const socialEvolution = [
+  {
+    period: '2016–2022',
+    label: 'SM-Controlled Era',
+    color: '#6e5a7c',
+    detail: 'Content ถูกกำหนดโดย SM Entertainment — posting schedule ตามแผน PR, ภาพที่ผ่าน approval, ไม่มี personal voice ชัดเจน Twitter ใช้สำหรับ fan interaction แบบ scripted มากกว่า authentic',
+  },
+  {
+    period: '2023–2024',
+    label: 'Independence Burst',
+    color: '#5a7c6a',
+    detail: 'หลังออกจาก SM และก่อตั้ง JH Company — post เยอะที่สุดในอาชีพ ทั้ง Instagram, Twitter, และ TikTok เพื่อตอบแทนแฟนคลับที่รอและสร้าง momentum ให้ label ใหม่ บางช่วงมี behind-the-scenes และ personal moments ที่ไม่เคยมีมาก่อน',
+  },
+  {
+    period: '2024 (post-Grammy)',
+    label: 'Transition',
+    color: '#facc15',
+    detail: 'หลังได้ Grammy ในเดือนกุมภาพันธ์ 2024 — ความถี่ในการ post เริ่มลดลงเรื่อยๆ caption สั้นลง, Stories หายไปแทบหมด, engagement กับ fan comments ลดเหลือศูนย์ ทีม JH Company อธิบายว่าเป็น "repositioning" ไม่ใช่ "withdrawal"',
+  },
+  {
+    period: '2025–ปัจจุบัน',
+    label: 'Mystique Era',
+    color: '#c9a84c',
+    detail: 'Posting เกิดขึ้นเฉพาะกับ era rollout, film press, และ statement สำคัญ — ไม่มีวัน-ต่อ-วัน ไม่มี vlog ไม่มี Stories ประจำ แต่ละ post ถูก anticipate และทำ engagement สูงผิดปกติจากความหายากของมัน เป็นรูปแบบที่ตรงข้ามกับ parasocial-first K-pop model โดยตรง',
+  },
+];
+
+const socialPlatforms = [
+  {
+    platform: 'Instagram',
+    handle: '@gonunma',
+    followers: '28.4M',
+    notable: 'DECADE announcement (Sep 2026) — 4.2M likes ใน 24h · Ashley Liao relationship post รวม 6.1M likes combined',
+  },
+  {
+    platform: 'X (Twitter)',
+    handle: '@gonunma',
+    followers: '19.7M',
+    notable: 'Thai–Cambodia peace statement (2025) — most ratio\'d และ most shared tweet ในอาชีพพร้อมกัน ขับเคลื่อนโดยสองฝ่ายตรงข้าม',
+  },
+  {
+    platform: 'YouTube',
+    handle: 'GONUNMA Official',
+    followers: '12.1M subs',
+    notable: '"Tears On A Pretty Face" MV — 500M views (Feb 2026) · ไม่มี vlog หรือ daily content channel',
+  },
+  {
+    platform: 'TikTok',
+    handle: '@gonunma',
+    followers: '15.2M',
+    notable: 'ARE U STILL dance challenge (2024) — 2.1B views user-created · presence ส่วนใหญ่ขับเคลื่อนโดย fan edits ไม่ใช่ official content',
+  },
+];
+
 const politicalItems = [
   {
     period: '2020–2021',
@@ -230,6 +284,40 @@ const politicalItems = [
           <div class="px-5 py-3" style="background-color:var(--bg-surface)">
             <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{v.context}</p>
           </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Social Media & Online Presence</h2>
+
+    <!-- Evolution timeline -->
+    <div class="rounded-lg border overflow-hidden mb-4" style="border-color:var(--border)">
+      {socialEvolution.map((e, i, arr) => (
+        <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-32 pt-0.5">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{e.period}</span>
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold mb-1" style={`color:${e.color}`}>{e.label}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{e.detail}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Platform stats -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {socialPlatforms.map(s => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-sm font-bold">{s.platform}</span>
+            <span class="text-xs font-mono px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.handle}</span>
+            <span class="text-xs font-semibold ml-auto" style="color:var(--gold)">{s.followers}</span>
+          </div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{s.notable}</p>
         </div>
       ))}
     </div>

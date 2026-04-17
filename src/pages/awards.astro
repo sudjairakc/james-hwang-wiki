@@ -142,6 +142,13 @@ const years = [
 const totalWins = years.flatMap(y => y.wins).filter(w => w.result === 'WIN').length;
 const totalNoms = years.flatMap(y => y.wins).filter(w => w.result === 'NOM').length;
 const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + w.count, 0);
+
+const awardsChart = years.map(y => ({
+  year: y.year,
+  wins: y.wins.filter(w => w.result === 'WIN').length,
+  noms: y.wins.filter(w => w.result === 'NOM').length,
+  musicWins: y.musicWins.reduce((s, w) => s + w.count, 0),
+}));
 ---
 <WikiLayout title="Awards" section="Recognition" relatedPages={[
   { label: 'Discography', href: `${base}discography` },
@@ -169,6 +176,20 @@ const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + 
       </div>
     ))}
   </div>
+
+  <!-- Awards chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">Award Trajectory</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Wins · Nominations · Music Show Wins per year</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="awardsChart" height="200" style="width:100%;display:block"></canvas>
+      <div class="flex gap-5 mt-3 flex-wrap">
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-sm" style="background-color:var(--gold)"></span><span class="text-xs" style="color:var(--text-muted)">Wins</span></div>
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-sm" style="background-color:#6b7280"></span><span class="text-xs" style="color:var(--text-muted)">Nominations</span></div>
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-full" style="background-color:#60a5fa"></span><span class="text-xs" style="color:var(--text-muted)">Music Show Wins</span></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Year sections -->
   <div class="flex flex-col gap-10">
@@ -249,3 +270,80 @@ const totalMusicWins = years.flatMap(y => y.musicWins).reduce((acc, w) => acc + 
     })}
   </div>
 </WikiLayout>
+
+<script is:inline define:vars={{ awardsChart }}>
+(function () {
+  const canvas = document.getElementById('awardsChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32;
+  const H = 200;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const gold      = cs.getPropertyValue('--gold').trim() || '#c9a84c';
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+
+  const PAD = { l: 28, r: 12, t: 16, b: 28 };
+  const cw = W - PAD.l - PAD.r;
+  const ch = H - PAD.t - PAD.b;
+  const N = awardsChart.length;
+  const maxVal = Math.max(...awardsChart.map(d => d.wins + d.noms)) + 1;
+
+  const slotW = cw / N;
+  const barW  = Math.min(slotW * 0.28, 18);
+  const py = v => PAD.t + ch - (v / maxVal) * ch;
+
+  // grid
+  [0.25, 0.5, 0.75, 1].forEach(f => {
+    const y = PAD.t + ch * (1 - f);
+    ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+    ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + cw, y); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillText(Math.round(maxVal * f), PAD.l - 4, y);
+  });
+
+  awardsChart.forEach((d, i) => {
+    const cx = PAD.l + slotW * i + slotW / 2;
+
+    // nominations bar (behind)
+    if (d.noms > 0) {
+      ctx.fillStyle = '#6b728088';
+      ctx.beginPath();
+      ctx.roundRect(cx - barW * 0.6, py(d.noms), barW * 1.2, (d.noms / maxVal) * ch, [3, 3, 0, 0]);
+      ctx.fill();
+    }
+    // wins bar (front, offset slightly)
+    if (d.wins > 0) {
+      ctx.fillStyle = gold + 'cc';
+      ctx.beginPath();
+      ctx.roundRect(cx - barW / 2, py(d.wins), barW, (d.wins / maxVal) * ch, [3, 3, 0, 0]);
+      ctx.fill();
+      // value label
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = gold; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+      ctx.fillText(d.wins, cx, py(d.wins) - 2);
+    }
+    // music show wins dot
+    if (d.musicWins > 0) {
+      const dotY = py(d.wins) - 14;
+      ctx.beginPath(); ctx.arc(cx, dotY, 5, 0, Math.PI * 2);
+      ctx.fillStyle = '#60a5fa';
+      ctx.fill();
+      ctx.font = '700 8px system-ui,sans-serif';
+      ctx.fillStyle = '#60a5fa'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(d.musicWins, cx, dotY);
+    }
+    // year label
+    ctx.font = '600 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText(d.year, cx, PAD.t + ch + 5);
+  });
+})();
+</script>

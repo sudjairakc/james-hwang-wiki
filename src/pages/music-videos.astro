@@ -203,6 +203,17 @@ const byEra = [
   { era: 'DECADE', color: '#6e5a7c', mvs: mvList.filter(m => m.era === 'DECADE') },
 ];
 
+const mvChart = mvList
+  .filter(m => m.views)
+  .map(m => ({
+    title: m.title.length > 24 ? m.title.slice(0, 22) + '…' : m.title,
+    views: parseInt(m.views!.replace(/[^0-9]/g, '')),
+    era: m.era,
+    color: m.eraColor,
+    type: m.type,
+  }))
+  .sort((a, b) => b.views - a.views);
+
 const typeBadge: Record<string, string> = {
   MV: 'var(--gold)',
   Dance: '#5a7c6a',
@@ -229,6 +240,15 @@ const typeBadge: Record<string, string> = {
       and color palette notes.
     </p>
   </div>
+
+  <!-- Views chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">View Count by Video</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">YouTube views · sorted high → low · colored by era</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="mvViewsChart" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
 
   <!-- Summary stats -->
   <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
@@ -318,3 +338,55 @@ const typeBadge: Record<string, string> = {
   </div>
 
 </WikiLayout>
+
+<script is:inline define:vars={{ mvChart }}>
+(function () {
+  const canvas = document.getElementById('mvViewsChart');
+  if (!canvas) return;
+  const ROW_H = 28, PAD = { l: 170, r: 52, t: 8, b: 8 };
+  const W = canvas.parentElement.clientWidth - 32;
+  const H = ROW_H * mvChart.length + PAD.t + PAD.b;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const cw = W - PAD.l - PAD.r;
+  const cs = getComputedStyle(document.documentElement);
+  const borderCol = cs.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+  const maxV = mvChart[0].views;
+
+  // grid
+  [0.25, 0.5, 0.75, 1].forEach(f => {
+    const x = PAD.l + f * cw;
+    ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+    ctx.beginPath(); ctx.moveTo(x, PAD.t); ctx.lineTo(x, H - PAD.b); ctx.stroke();
+    ctx.setLineDash([]);
+  });
+
+  mvChart.forEach((m, i) => {
+    const y = PAD.t + i * ROW_H;
+    const barH = ROW_H * 0.45;
+    const barY = y + (ROW_H - barH) / 2;
+    const bw = (m.views / maxV) * cw;
+
+    // bar
+    ctx.fillStyle = m.color + 'bb';
+    ctx.beginPath(); ctx.roundRect(PAD.l, barY, bw, barH, [0, 3, 3, 0]); ctx.fill();
+    // glow end
+    ctx.save(); ctx.filter = 'blur(6px)'; ctx.globalAlpha = 0.35;
+    ctx.fillStyle = m.color;
+    ctx.beginPath(); ctx.arc(PAD.l + bw, barY + barH / 2, barH * 0.6, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+
+    // title
+    ctx.font = '600 10px system-ui,sans-serif';
+    ctx.fillStyle = m.color; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillText(m.title, PAD.l - 6, y + ROW_H / 2);
+    // value
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = m.color; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(m.views + 'M+', PAD.l + bw + 6, y + ROW_H / 2);
+  });
+})();
+</script>
