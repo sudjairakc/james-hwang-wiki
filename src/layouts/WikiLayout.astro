@@ -12,28 +12,34 @@ const { title, description = 'The definitive wiki for James Hwang — artist, ac
 const base = import.meta.env.BASE_URL;
 
 const nav = [
-  { label: 'Overview', href: `${base}`, icon: '◈' },
-  { label: 'Biography', href: `${base}biography`, icon: '◎' },
-  { label: 'Personal Life', href: `${base}personal-life`, icon: '◎' },
-  { label: 'Timeline', href: `${base}timeline`, icon: '◷' },
-  { label: 'Discography', href: `${base}discography`, icon: '◉' },
-  { label: 'Music Videos', href: `${base}music-videos`, icon: '▶' },
-  { label: 'Filmography', href: `${base}filmography`, icon: '▷' },
-  { label: 'Tours', href: `${base}tours`, icon: '◆' },
-  { label: 'Collaborations', href: `${base}collaborations`, icon: '♫' },
+  { group: 'Artist' },
+  { label: 'Overview',           href: `${base}`,                   icon: '◈' },
+  { label: 'Biography',          href: `${base}biography`,          icon: '◎' },
+  { label: 'Personal Life',      href: `${base}personal-life`,      icon: '◎' },
+  { label: 'Timeline',           href: `${base}timeline`,           icon: '◷' },
+  { group: 'Music' },
+  { label: 'Discography',        href: `${base}discography`,        icon: '◉' },
+  { label: 'Music Videos',       href: `${base}music-videos`,       icon: '▶' },
+  { label: 'Tours',              href: `${base}tours`,              icon: '◆' },
+  { label: 'Collaborations',     href: `${base}collaborations`,     icon: '♫' },
   { label: 'Production Credits', href: `${base}production-credits`, icon: '◎' },
-  { label: 'Company', href: `${base}company`, icon: '◇' },
-  { label: 'Awards', href: `${base}awards`, icon: '★' },
-  { label: 'Endorsements', href: `${base}ecosystem`, icon: '◐' },
-  { label: 'Cultural Impact', href: `${base}cultural-impact`, icon: '◑' },
-  { label: 'Public Image', href: `${base}public-image`, icon: '◑' },
-  { label: 'Fashion & Style', href: `${base}fashion`, icon: '◇' },
-  { label: 'Interviews & Quotes', href: `${base}interviews`, icon: '◎' },
-  { label: 'Controversies', href: `${base}controversies`, icon: '◈' },
-  { label: 'Rivalries & Tensions', href: `${base}rivalries`, icon: '⚔' },
-  { label: 'Legal', href: `${base}legal`, icon: '⚖' },
-  { label: 'Canon', href: `${base}canon`, icon: '◈' },
-  { label: 'Fandom', href: `${base}fandom`, icon: '♡' },
+  { group: 'Film' },
+  { label: 'Filmography',        href: `${base}filmography`,        icon: '▷' },
+  { group: 'Business' },
+  { label: 'Company',            href: `${base}company`,            icon: '◇' },
+  { label: 'Endorsements',       href: `${base}ecosystem`,          icon: '◐' },
+  { label: 'Legal',              href: `${base}legal`,              icon: '⚖' },
+  { group: 'Image' },
+  { label: 'Public Image',       href: `${base}public-image`,       icon: '◑' },
+  { label: 'Fashion & Style',    href: `${base}fashion`,            icon: '◇' },
+  { label: 'Awards',             href: `${base}awards`,             icon: '★' },
+  { label: 'Interviews & Quotes',href: `${base}interviews`,         icon: '◎' },
+  { label: 'Cultural Impact',    href: `${base}cultural-impact`,    icon: '◑' },
+  { group: 'Community' },
+  { label: 'Canon',              href: `${base}canon`,              icon: '◈' },
+  { label: 'Fandom',             href: `${base}fandom`,             icon: '♡' },
+  { label: 'Controversies',      href: `${base}controversies`,      icon: '◈' },
+  { label: 'Rivalries & Tensions', href: `${base}rivalries`,        icon: '⚔' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -93,6 +99,11 @@ const currentPath = Astro.url.pathname;
         {section && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:var(--gold)">{section}</p>}
         <nav class="flex flex-col gap-0.5">
           {nav.map(item => {
+            if ('group' in item) {
+              return (
+                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group}</p>
+              );
+            }
             const isActive = currentPath === item.href || currentPath === item.href + '/';
             return (
               <a
@@ -113,6 +124,11 @@ const currentPath = Astro.url.pathname;
         <div id="sidebar-backdrop" class="absolute inset-0 bg-black/70"></div>
         <nav class="absolute left-0 top-14 bottom-0 w-64 border-r py-6 px-3 overflow-y-auto" style="background-color:var(--bg);border-color:var(--border)">
           {nav.map(item => {
+            if ('group' in item) {
+              return (
+                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group}</p>
+              );
+            }
             const isActive = currentPath === item.href || currentPath === item.href + '/';
             return (
               <a

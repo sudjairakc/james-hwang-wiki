@@ -102,6 +102,24 @@ const merchandise = [
   },
 ];
 
+const companyCulture = [
+  {
+    label: 'Benefits & Welfare',
+    color: '#5a7c6a',
+    text: 'สวัสดิการของ JH Company อยู่ในระดับสูงที่สุดในวงการบันเทิงเกาหลี — ประกันสุขภาพเต็มรูปแบบ, ค่าตอบแทนแข่งขันได้กับ agency ใหญ่, นโยบาย work-life balance ที่เป็นทางการ, และวัฒนธรรมองค์กรที่ไม่มีระบบลำดับชั้นแบบ idol-agency แบบดั้งเดิม ชื่อเสียงด้านนี้แพร่กระจายในวงการและทำให้มีใบสมัครงานเข้ามาต่อเนื่อง แม้ไม่ได้ประกาศรับสมัครเสมอไป',
+  },
+  {
+    label: 'Workload Reality',
+    color: '#facc15',
+    text: 'สวัสดิการดีไม่ได้แปลว่างานเบา — ด้วย roster ศิลปินที่ขยายตัว (Mark, Ten, Yuta, Johnny), James เองที่ทำงานในทุก project อย่างเข้มข้น, และ RESONANCE franchise ที่ต้องการ production pipeline ตลอดเวลา งานหนักมากสำหรับทีมที่ยังเล็ก headcount หลักร้อยต้องรับผิดชอบ output ระดับ major label ทั้งฝั่งดนตรีและภาพยนตร์ turnover ต่ำเพราะค่าตอบแทนดี แต่ burnout เป็นประเด็นที่รับรู้ภายในองค์กร',
+  },
+  {
+    label: 'Revenue Ceiling Effect',
+    color: '#c06080',
+    text: 'James มีชื่อเสียงในแวดวงอุตสาหกรรมว่า "ใจบุญเกินไปในเชิงธุรกิจ" — แบ่ง royalty ให้ collaborators ในสัดส่วนสูง, ให้ deal ที่ดีกับศิลปินในสังกัด, ไม่ฟ้องร้องเพื่อรักษารายได้ในกรณีที่ตามปกติ label อื่นจะฟ้อง ผลคือรายได้ของบริษัทไม่ได้ maximize อย่างที่ขนาด output และ fame ของ James ควรจะเป็น นักวิเคราะห์อุตสาหกรรมมองว่า JH Company สามารถทำรายได้ได้สูงกว่านี้อย่างน้อย 30–40% ด้วย deal structure ที่เป็น standard มากกว่า',
+  },
+];
+
 const valPhases = [
   { phase: 'Post-DECADE', range: '$180M–320M', trigger: 'Touring-scale validation' },
   { phase: 'Post-RESONANCE', range: '$420M–650M', trigger: 'Franchise IP activation' },
@@ -240,6 +258,19 @@ const valPhases = [
           </div>
           <div class="text-xs font-mono mb-2" style="color:var(--text-muted)">{m.scale}</div>
           <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{m.detail}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Company Culture -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Company Culture & Work Environment</h2>
+    <div class="space-y-3">
+      {companyCulture.map(c => (
+        <div class="rounded-lg border-l-2 pl-4 py-3 pr-4" style={`border-color:${c.color};background-color:color-mix(in srgb,${c.color} 4%,var(--bg-surface))`}>
+          <div class="text-xs font-semibold uppercase tracking-widest mb-1.5" style={`color:${c.color}`}>{c.label}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{c.text}</p>
         </div>
       ))}
     </div>

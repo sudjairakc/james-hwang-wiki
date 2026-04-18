@@ -113,6 +113,10 @@ const friends = [
 
 const hobbies = [
   {
+    category: 'Public Transportation',
+    detail: 'ใช้ขนส่งสาธารณะเป็นประจำแม้ในสถานะ A-list — รถไฟ, รถเมล์, MRT ทั้งในโซลและกรุงเทพฯ ในช่วงที่ยังไปไทย เป็นที่รู้กันในทีมงานว่าเขาหลีกเลี่ยงเครื่องบินเช่าเหมาลำโดยสิ้นเชิง ไม่ว่าจะเป็นทัวร์หรือ press run เขากล่าวถึงเรื่องนี้ในช่วงปี 2022–2023 ว่าเชื่อมโยงกับประเด็น carbon footprint และ climate — ใช้ commercial flights เสมอ แม้แต่ในทัวร์ที่ต้องบินมากถึง 30+ เที่ยว',
+  },
+  {
     category: 'Exercise & Movement',
     detail: 'ออกกำลังกายเป็นประจำทุกวัน — รวม strength training, functional fitness, และ tricking ที่ฝึกมาตั้งแต่วัยเด็ก รูปร่างที่เปลี่ยนแปลงชัดเจนระหว่างยุค LIKE I DO กับ PULSE ถูกตีความว่าเป็นผลของ training regiment ที่เข้มข้นขึ้น',
   },
@@ -123,6 +127,10 @@ const hobbies = [
   {
     category: 'Housework & Domestic Routines',
     detail: 'พูดถึงการทำงานบ้านในเชิงบวกหลายครั้ง รวมถึง You Quiz on the Block (2022) ที่กล่าวว่าการทำความสะอาดช่วยให้ head clear ไม่มีทีมงานส่วนตัวจัดการงานบ้าน อาศัยอยู่คนเดียว',
+  },
+  {
+    category: 'Therapy & Mental Health',
+    detail: 'James มีภาวะ workaholic ที่ได้รับการยอมรับในวงใกล้ชิด — ตั้งแต่ปี 2023 เป็นต้นมาเขาทำงานกับนักบำบัดเป็นประจำ ส่วนหนึ่งเชื่อมโยงกับการออกจาก SM, ความเครียดจากการก่อตั้งบริษัท, และแนวโน้มที่จะ overcommit กับทุก project พร้อมกัน กล่าวถึงเรื่องนี้อ้อมๆ ใน Esquire Korea (2026) ว่า "มีคนช่วยให้ผมรู้ว่าเมื่อไหรถึงจะเรียกว่าพอ — ผมไม่เคยรู้เรื่องนั้นมาก่อน" ไม่เคยประกาศอย่างเป็นทางการ แต่ไม่ได้ปฏิเสธเมื่อถูกถาม',
   },
   {
     category: 'Writing',
@@ -182,6 +190,12 @@ const values: ValueItem[] = [
 
 const incidents = [
   {
+    period: 'Feb 2024',
+    title: 'Post-PULSE Exhaustion Statement',
+    severity: 'low' as const,
+    body: 'ทันทีหลังจาก PULSE World Tour จบ (มกราคม 2024) ซึ่งยาวนานเกือบหนึ่งปี (มีนาคม 2023 – มกราคม 2024) James โพสต์ statement ผ่าน Weverse ว่าเขา "เหนื่อยล้าอย่างที่สุดจากการเดินทางและการแสดงที่ไม่หยุด" และจะ "ใช้เวลาพักให้ตัวเองก่อน" ไม่มี comeback timeline หรือการยืนยัน project ใดๆ ในเวลานั้น แถลงการณ์นี้ถูกรับด้วยความเป็นห่วงจากแฟนคลับ แต่ก็สร้างความโล่งใจว่าเขาพูดตรงๆ เรื่อง mental และ physical state ซึ่งหาได้ยากในวงการ ไม่นานหลังจากนั้น Grammy campaign ก็เริ่มต้นขึ้นสำหรับ ARE U STILL',
+  },
+  {
     period: '2025',
     title: 'Thai–Cambodia Conflict Fallout',
     severity: 'high' as const,
@@ -230,14 +244,14 @@ const incidents = [
           <span class="text-xs px-2 py-0.5 rounded font-semibold" style="color:var(--gold);background-color:color-mix(in srgb,var(--gold) 12%,transparent)">Primary (2026–)</span>
           <span class="text-sm font-bold">Los Angeles, USA</span>
         </div>
-        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">ย้ายมาอยู่อเมริกาเป็นหลักในช่วงปลายปี 2026 — ตรงกับช่วงที่ประกาศความสัมพันธ์กับ Ashley Liao และขยายงาน MCU trilogy conclusion ที่ต้องใช้เวลาในฝั่งตะวันตกมากขึ้น</p>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">ย้ายมาอยู่อเมริกาเป็นหลักในช่วงปลายปี 2026 — ตรงกับช่วงที่ประกาศความสัมพันธ์กับ Ashley Liao และขยายงาน MCU trilogy conclusion <strong style="color:var(--text)">1 house · 1 personal car</strong> — รถบริษัท (vans, staff) แยกต่างหาก</p>
       </div>
       <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
         <div class="flex items-center gap-2 mb-2">
           <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:var(--bg-muted);color:var(--text-muted)">Base (–2026)</span>
           <span class="text-sm font-bold">Seoul, South Korea</span>
         </div>
-        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">บ้านหรูใจกลางเมือง ย่าน Gangnam — ที่พักหลักตั้งแต่ก่อตั้ง JH Company (2023) จนถึงปลายปี 2026 ยังคงเป็นที่อยู่บางส่วน เนื่องจาก JH Company HQ อยู่ที่โซล</p>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">บ้านหรูใจกลางเมือง ย่าน Gangnam — <strong style="color:var(--text)">1 house · 1 personal car</strong> ภาษีทรัพย์สินและภาษีความมั่งคั่งของเกาหลีที่สูงมากทำให้การถือครองสินทรัพย์ส่วนตัวหลายชิ้นไม่คุ้มค่าในทางภาษี รถบริษัท (vans, staff vehicles) บริหารแยกภายใต้ JH Company</p>
       </div>
       <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
         <div class="flex items-center gap-2 mb-2">

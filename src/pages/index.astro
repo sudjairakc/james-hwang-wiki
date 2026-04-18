@@ -32,23 +32,64 @@ const milestones = [
   { year: '2026', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE anthology' },
 ];
 
-const sections = [
-  { href: `${base}biography`,       icon: '◎', title: 'Biography',           desc: 'Bangkok → SM Rookies → NCT 127 → independence', color: '#c9a84c' },
-  { href: `${base}timeline`,        icon: '◷', title: 'Career Timeline',    desc: '1998–present · every major event in sequence', color: '#c9a84c' },
-  { href: `${base}discography`,     icon: '◉', title: 'Discography',         desc: '6 projects · 3.5B+ streams · 2016–2026', color: '#9b7fc8' },
-  { href: `${base}music-videos`,    icon: '▶', title: 'Music Videos',        desc: '10 MVs · LIKE I DO through DECADE', color: '#9b7fc8' },
-  { href: `${base}filmography`,     icon: '▷', title: 'Filmography',         desc: 'Shang-Chi trilogy (MCU) + RESONANCE franchise (Disney+)', color: '#7c5a3a' },
-  { href: `${base}tours`,           icon: '◆', title: 'Tours',               desc: 'PULSE (2023–24) + DECADE (2027) · $309M+ gross', color: '#5a7c6a' },
-  { href: `${base}collaborations`,       icon: '♫', title: 'Collaborations',       desc: 'Anderson .Paak · Janet Jackson · Pharrell Williams · more', color: '#5a7c6a' },
-  { href: `${base}production-credits`,  icon: '◎', title: 'Production Credits',   desc: 'L.I.N.A. · NCT 127 · aespa · WayV · Ten · Jaehyun', color: '#5a7c6a' },
-  { href: `${base}company`,         icon: '◇', title: 'JH Company',          desc: 'Founded Apr 2023 · distribution via Warner Music Korea', color: '#5a7aaa' },
-  { href: `${base}awards`,          icon: '★', title: 'Awards',              desc: '2× Grammy · Melon · AAA · Seoul Music Awards', color: '#c9a84c' },
-  { href: `${base}cultural-impact`, icon: '◐', title: 'Cultural Impact',     desc: 'Post-agency authorship · neo-soul K-pop pioneer', color: '#c06080' },
-  { href: `${base}ecosystem`,       icon: '◐', title: 'Endorsements',        desc: 'Saint Laurent · Cartier · Sony · Nike · Gentle Monster', color: '#6e5a7c' },
-  { href: `${base}public-image`,    icon: '◑', title: 'Public Image',        desc: 'Pictorials · variety · controversies · persona', color: '#5a7aaa' },
-  { href: `${base}legal`,           icon: '⚖', title: 'Legal',               desc: 'SM dispute 2022–2023 · settlement · IP ownership', color: '#c0504a' },
-  { href: `${base}canon`,           icon: '◈', title: 'Canon',               desc: 'Vocal · dance · production DNA · artistic identity', color: '#9b7fc8' },
-  { href: `${base}fandom`,          icon: '♡', title: 'Gemzen Fandom',       desc: 'Official fandom · merch · demographics · fan projects', color: '#c9a84c' },
+const sectionGroups = [
+  {
+    group: 'Artist',
+    color: '#c9a84c',
+    items: [
+      { href: `${base}biography`,      icon: '◎', title: 'Biography',      desc: 'Bangkok → SM Rookies → NCT 127 → independence' },
+      { href: `${base}personal-life`,  icon: '◎', title: 'Personal Life',  desc: 'Family · education · relationships · values' },
+      { href: `${base}timeline`,       icon: '◷', title: 'Timeline',       desc: '1998–present · every major event in sequence' },
+    ],
+  },
+  {
+    group: 'Music',
+    color: '#5a7c6a',
+    items: [
+      { href: `${base}discography`,        icon: '◉', title: 'Discography',        desc: '6 projects · 3.5B+ streams · 2016–2026' },
+      { href: `${base}music-videos`,       icon: '▶', title: 'Music Videos',       desc: '10 MVs · LIKE I DO through DECADE' },
+      { href: `${base}tours`,              icon: '◆', title: 'Tours',              desc: 'PULSE (2023–24) + DECADE (2027) · $309M+ gross' },
+      { href: `${base}collaborations`,     icon: '♫', title: 'Collaborations',     desc: 'Anderson .Paak · Janet Jackson · Pharrell Williams · more' },
+      { href: `${base}production-credits`, icon: '◎', title: 'Production Credits', desc: 'L.I.N.A. · NCT 127 · aespa · WayV · Ten · Jaehyun' },
+    ],
+  },
+  {
+    group: 'Film',
+    color: '#7c5a3a',
+    items: [
+      { href: `${base}filmography`, icon: '▷', title: 'Filmography', desc: 'Shang-Chi trilogy (MCU) + RESONANCE franchise (Disney+)' },
+    ],
+  },
+  {
+    group: 'Business',
+    color: '#5a7aaa',
+    items: [
+      { href: `${base}company`,   icon: '◇', title: 'JH Company',   desc: 'Founded Apr 2023 · distribution via Warner Music Korea' },
+      { href: `${base}ecosystem`, icon: '◐', title: 'Endorsements', desc: 'Saint Laurent · Cartier · Sony · Nike · Gentle Monster' },
+      { href: `${base}legal`,     icon: '⚖', title: 'Legal',        desc: 'SM dispute 2022–2023 · settlement · IP ownership' },
+    ],
+  },
+  {
+    group: 'Image',
+    color: '#9b7fc8',
+    items: [
+      { href: `${base}public-image`,    icon: '◑', title: 'Public Image',       desc: 'Reputation · Weverse · pictorials · variety · persona' },
+      { href: `${base}fashion`,         icon: '◇', title: 'Fashion & Style',    desc: 'Era-by-era wardrobe · Saint Laurent · Nike · tour staging' },
+      { href: `${base}awards`,          icon: '★', title: 'Awards',             desc: '2× Grammy · Melon · AAA · Seoul Music Awards' },
+      { href: `${base}interviews`,      icon: '◎', title: 'Interviews & Quotes',desc: 'Signature quotes · GQ · Rolling Stone · Pitchfork · more' },
+      { href: `${base}cultural-impact`, icon: '◑', title: 'Cultural Impact',    desc: 'Post-agency authorship · neo-soul K-pop pioneer' },
+    ],
+  },
+  {
+    group: 'Community',
+    color: '#c06080',
+    items: [
+      { href: `${base}canon`,         icon: '◈', title: 'Canon',               desc: 'Vocal · dance · production DNA · artistic identity' },
+      { href: `${base}fandom`,        icon: '♡', title: 'Gemzen Fandom',       desc: 'Official fandom · merch · demographics · fan projects' },
+      { href: `${base}controversies`, icon: '◈', title: 'Controversies',       desc: 'Chronological incident log · 2016–present' },
+      { href: `${base}rivalries`,     icon: '⚔', title: 'Rivalries & Tensions',desc: 'Industry tensions · fan wars · SM institutional conflict' },
+    ],
+  },
 ];
 ---
 
@@ -175,24 +216,32 @@ const sections = [
 
   <!-- Wiki sections -->
   <section>
-    <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--gold)">Wiki Sections</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-      {sections.map(item => (
-        <a href={item.href}
-          class="border rounded-xl p-4 transition-all group flex items-start gap-3"
-          style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
-          <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-sm transition-all group-hover:scale-110"
-            style={`background-color:${item.color}18;color:${item.color}`}>
-            {item.icon}
+    <div class="text-xs font-semibold uppercase tracking-widest mb-6" style="color:var(--gold)">Wiki Sections</div>
+    <div class="space-y-8">
+      {sectionGroups.map(g => (
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-1.5 h-1.5 rounded-full" style={`background-color:${g.color}`}></div>
+            <span class="text-xs font-semibold uppercase tracking-widest" style={`color:${g.color}`}>{g.group}</span>
           </div>
-          <div class="min-w-0">
-            <div class="text-sm font-semibold mb-0.5 transition-colors" style="color:var(--text)">
-              {item.title}
-            </div>
-            <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {g.items.map(item => (
+              <a href={item.href}
+                class="border rounded-xl p-4 transition-all group flex items-start gap-3"
+                style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-sm transition-all group-hover:scale-110"
+                  style={`background-color:${g.color}18;color:${g.color}`}>
+                  {item.icon}
+                </div>
+                <div class="min-w-0">
+                  <div class="text-sm font-semibold mb-0.5" style="color:var(--text)">{item.title}</div>
+                  <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</div>
+                </div>
+                <div class="text-xs ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style="color:var(--text-muted)">→</div>
+              </a>
+            ))}
           </div>
-          <div class="text-xs ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style="color:var(--text-muted)">→</div>
-        </a>
+        </div>
       ))}
     </div>
   </section>
