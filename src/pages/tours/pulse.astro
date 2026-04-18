@@ -262,6 +262,32 @@ const setlist = [
     </div>
   </section>
 
+  <!-- Critical Reception -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Critical Reception</h2>
+    <div class="space-y-3 mb-4">
+      {[
+        { outlet: 'Pitchfork', score: null, quote: '"The PULSE Tour is a masterclass in restraint — James Hwang strips the live R&B show down to its structural bones and lets the performance fill every inch of the space. The black-and-white staging isn\'t minimalism for its own sake; it\'s a frame that makes the body unmissable. Best live show of 2023."', context: 'Live review, Seoul night 1 · July 2023' },
+        { outlet: 'Rolling Stone', score: null, quote: '"Few artists at this stage of a career — second year of independence, first world tour — arrive with this level of visual and musical coherence. The PULSE Tour feels like the work of someone who\'s been planning this show for a decade, because they have."', context: 'Concert review, Madison Square Garden · April 2024' },
+        { outlet: 'The Guardian', score: '★★★★★', quote: '"James Hwang\'s O2 show is the most fully realized live R&B experience to come out of the K-adjacent world. The dance crew is used architecturally rather than decoratively; the sound design is immaculate; and Hwang himself commands the stage with a physicality that\'s closer to contemporary dance than pop performance."', context: 'London O2 Arena review · May 2024' },
+        { outlet: 'Billboard', score: null, quote: '"PULSE 2024\'s SNL moment was the cultural crossover event of the year. The April MSG nights cemented Hwang as a stadium artist in the American market — not K-adjacent, just arena-scale. The tour gross of $235M across 64 shows is the story, but the critical consensus is just as unanimous."', context: 'Year-end live music wrap · December 2024' },
+        { outlet: 'Consequence of Sound', score: 'A', quote: '"The second version of the setlist — 33 songs, 2h 26m — should not work. It does. Every act has purpose; the VCR transitions earn their runtime; and the encore feels like genuine emotional resolution rather than obligation. PULSE is the benchmark for what a K-adjacent world tour can be."', context: 'PULSE 2024 World Tour review · April 2024' },
+      ].map(r => (
+        <div class="rounded-lg border px-5 py-4" style={`border-color:var(--border);background-color:var(--bg-surface)`}>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-sm font-bold" style={`color:${color}`}>{r.outlet}</span>
+            {r.score && <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:color-mix(in srgb,${color} 15%,transparent);color:${color}`}>{r.score}</span>}
+            <span class="text-xs ml-auto" style="color:var(--text-muted)">{r.context}</span>
+          </div>
+          <p class="text-sm leading-relaxed italic" style="color:var(--text-muted)">{r.quote}</p>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed" style="background-color:var(--bg-muted);color:var(--text-muted)">
+      <strong style="color:var(--text)">Consensus —</strong> PULSE Tour ได้รับการยกย่องเป็นเอกฉันท์ว่าเป็น best live K-adjacent show ของปี 2023–2024 จุดที่นักวิจารณ์พูดถึงมากที่สุด: stage visual identity, physical performance quality, และ setlist coherence ทั้งสอง version
+    </div>
+  </section>
+
   <!-- Setlist -->
   <section>
     <h2 class="wiki-section mb-4">Setlist</h2>

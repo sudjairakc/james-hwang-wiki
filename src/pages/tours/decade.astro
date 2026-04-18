@@ -207,6 +207,31 @@ const setlist = [
     </div>
   </section>
 
+  <!-- Critical Reception -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Critical Reception</h2>
+    <div class="space-y-3 mb-4">
+      {[
+        { outlet: 'Pitchfork', score: null, quote: '"The DECADE Tour answers a question no one knew they were asking: what does a career look like when you\'re generous enough to show all of it? Each era section is staged with its own palette and vocabulary, yet the show reads as a single unbroken arc. The gold-to-mauve journey isn\'t nostalgia — it\'s argument."', context: 'Live review, Seoul opening night · January 2027' },
+        { outlet: 'Rolling Stone', score: null, quote: '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 25 songs is the most ambitious visual storytelling a solo tour has attempted this decade."', context: 'Concert review, Los Angeles · February 2027' },
+        { outlet: 'NME', score: '★★★★★', quote: '"DECADE is the rare retrospective tour that earns every second of its runtime. The staging doesn\'t just recall the past — it recontextualises it. Songs from the SM era hit differently when they\'re framed by everything James Hwang built after leaving. Best arena show of 2027."', context: 'London review · 2027' },
+        { outlet: 'The New York Times', score: null, quote: '"James Hwang\'s DECADE Tour is the most sophisticated argument for the concert as autobiography. The production is enormous — the largest of his career — but the scale never overwhelms the material. Each section feels curated rather than assembled. This is what a decade of earned creative control looks like."', context: 'Arts & Leisure concert review · 2027' },
+      ].map(r => (
+        <div class="rounded-lg border px-5 py-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-sm font-bold" style={`color:${color}`}>{r.outlet}</span>
+            {r.score && <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:color-mix(in srgb,${color} 15%,transparent);color:${color}`}>{r.score}</span>}
+            <span class="text-xs ml-auto" style="color:var(--text-muted)">{r.context}</span>
+          </div>
+          <p class="text-sm leading-relaxed italic" style="color:var(--text-muted)">{r.quote}</p>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed" style="background-color:var(--bg-muted);color:var(--text-muted)">
+      <strong style="color:var(--text)">Consensus —</strong> DECADE Tour ถูกมองว่าเป็น career peak ในฐานะ live performer — สูงกว่า PULSE ในแง่ production scale และ narrative ambition multi-era wardrobe design และ การใช้ staging เป็น autobiography เป็นจุดที่นักวิจารณ์พูดถึงมากที่สุด
+    </div>
+  </section>
+
   <!-- Setlist era chart -->
   <section class="mb-10">
     <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>Setlist Era Breakdown</div>

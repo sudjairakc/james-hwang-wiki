@@ -42,6 +42,66 @@ const revenue = [
   { segment: 'Merchandising', share: '6–9%', role: 'Brand identity monetization', pct: 7.5 },
 ];
 
+const ipPortfolio = [
+  {
+    asset: 'RESONANCE Universe',
+    type: 'Franchise IP',
+    ownership: 'Co-owned — The Walt Disney Company · Lucasfilm · MJ Estate · JH Company',
+    detail: 'Captain EO: RESONANCE ต้องอิงสิทธิ์จาก original Captain EO (1986) ซึ่งมีหลายฝ่ายถือ — Disney เป็น majority rights holder และ distributor, Lucasfilm ในฐานะ producer ของต้นฉบับ, MJ Estate ถือสิทธิ์เพลงและ likeness ของ Michael Jackson, JH Company ถือ creative ownership ในฐานะผู้สร้าง new universe JH Company มีสัดส่วนน้อยกว่า Disney แต่ retain สิทธิ์ creative control และ co-direction ถือเป็น franchise asset ที่มีมูลค่าสูงที่สุดในพอร์ตโฟลิโอ',
+  },
+  {
+    asset: 'Music Catalog (2022–present)',
+    type: 'Recorded Music IP',
+    ownership: '100% (JH Company) · Distributed via Warner Music Korea',
+    detail: 'SOFTEST TOUCH, PULSE, ARE U STILL, SOUR|HONEY, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog',
+  },
+  {
+    asset: 'SM-Era Catalog (2016–2023)',
+    type: 'Recorded Music IP',
+    ownership: 'SM Entertainment (master) · James Hwang (publishing share)',
+    detail: 'GONUNMA: LIKE I DO และ NCT 127 recordings — master อยู่กับ SM แต่ publishing royalty share ของ James ได้รับการตรวจสอบและปรับในข้อตกลง settlement 2023',
+  },
+  {
+    asset: 'Publishing Catalog',
+    type: 'Music Publishing',
+    ownership: 'JH Company Publishing · Co-administered',
+    detail: 'รวม songwriting credits บน releases ของตัวเอง, tracks ที่เขียนให้ศิลปินอื่น (Jaehyun "SMOKE", aespa "Flowers"), และ sync licensing deals — long-tail revenue stream ที่เติบโตต่อเนื่อง',
+  },
+  {
+    asset: 'GONUNMA Name & Trademark',
+    type: 'Trademark / Brand IP',
+    ownership: '100% James Hwang — confirmed in SM settlement 2023',
+    detail: 'สิทธิ์ในชื่อและเครื่องหมายการค้า GONUNMA ได้รับการยืนยันในข้อตกลงกับ SM ปัจจุบัน retain ไว้เป็น producer alias บน credits ไม่ได้ใช้เป็น public artist name อีกต่อไป',
+  },
+];
+
+const merchandise = [
+  {
+    line: 'JH Company Official Store',
+    category: 'Fan Merchandise',
+    scale: 'Ongoing',
+    detail: 'Photobooks, tour goods, album packages — จัดจำหน่ายผ่าน Weverse Store และ JH Company online store ตรงถึงผู้บริโภค ไม่ผ่าน third-party retailer รายได้อยู่ใน Merchandising segment (6–9% ของ revenue รวม)',
+  },
+  {
+    line: 'GONUNMA × Nike Capsule Series',
+    category: 'Fashion Collaboration',
+    scale: 'Vol.1 (2023) · Vol.2 (2025)',
+    detail: 'Co-designed capsule collections จำหน่ายผ่าน SNKRS app และ Nike flagship ทั่วโลก Vol.1 sold out ภายใน 3 ชั่วโมง — จัดเป็น commercial fashion revenue ไม่ใช่แค่ endorsement fee เพราะ James มี royalty share จากยอดขาย',
+  },
+  {
+    line: 'GONUNMA × Saint Laurent Capsule',
+    category: 'Luxury Fashion Collaboration',
+    scale: '2024 · 3 pieces',
+    detail: 'Limited-edition capsule จำหน่ายเฉพาะ SL Paris flagship และ Seoul pop-up — sold out ภายใน 4 ชั่วโมง ระดับ luxury collaboration ที่หายากสำหรับ K-adjacent artist; ตำแหน่งนี้เปิดทางสู่ category fashion ระดับ Pharrell × LV',
+  },
+  {
+    line: 'PULSE Tour Merchandise',
+    category: 'Concert Goods',
+    scale: '2023–2024 · 64 shows',
+    detail: 'Concert-exclusive merchandise วางขายในทุก venue ของ PULSE tour — รายได้ประมาณการว่าอยู่ที่ $18–28M ตลอด run ไม่รวมใน touring gross $235M ที่รายงานแยก',
+  },
+];
+
 const valPhases = [
   { phase: 'Post-DECADE', range: '$180M–320M', trigger: 'Touring-scale validation' },
   { phase: 'Post-RESONANCE', range: '$420M–650M', trigger: 'Franchise IP activation' },
@@ -144,6 +204,42 @@ const valPhases = [
             <div class="h-full rounded-full transition-all" style={`width:${r.pct}%;background-color:var(--gold);opacity:${0.4 + r.pct / 100}`}></div>
           </div>
           <div class="text-xs w-48 text-right shrink-0" style="color:var(--text-muted)">{r.role}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- IP Portfolio -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">IP Portfolio</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {ipPortfolio.map((ip, i, arr) => (
+        <div class="flex gap-5 px-5 py-4" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-40 pt-0.5">
+            <div class="text-sm font-bold mb-1">{ip.asset}</div>
+            <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{ip.type}</span>
+          </div>
+          <div class="flex-1">
+            <div class="text-xs font-semibold mb-1.5" style="color:var(--gold)">{ip.ownership}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{ip.detail}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Merchandise & Product Lines -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Merchandise & Product Lines</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {merchandise.map(m => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-start justify-between gap-2 mb-1.5">
+            <div class="text-sm font-bold">{m.line}</div>
+            <span class="text-xs px-2 py-0.5 rounded shrink-0" style="background-color:color-mix(in srgb,var(--gold) 10%,transparent);color:var(--gold)">{m.category}</span>
+          </div>
+          <div class="text-xs font-mono mb-2" style="color:var(--text-muted)">{m.scale}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{m.detail}</p>
         </div>
       ))}
     </div>

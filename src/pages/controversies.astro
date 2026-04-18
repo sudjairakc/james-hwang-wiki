@@ -1,0 +1,240 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+type Category = 'political' | 'industry' | 'personal' | 'fandom';
+type Severity = 'high' | 'medium' | 'low';
+type Status = 'resolved' | 'ongoing' | 'faded';
+
+type Incident = {
+  period: string;
+  title: string;
+  category: Category;
+  severity: Severity;
+  status: Status;
+  body: string;
+  outcome: string;
+};
+
+const incidents: Incident[] = [
+  {
+    period: '2016',
+    title: 'LIKE I DO Solo Spotlight Backlash',
+    category: 'fandom',
+    severity: 'low',
+    status: 'faded',
+    body: 'การที่ SM ปล่อย GONUNMA: LIKE I DO เพียงสามสัปดาห์หลัง NCT 127 debut สร้างความไม่พอใจในกลุ่มแฟนคลับวงบางส่วน — มองว่าเป็นการให้ spotlight กับสมาชิกคนหนึ่งเร็วเกินไปและอาจกระทบ group balance ขณะที่แฟนคลับอีกฝั่งมองว่าเป็น recognition ที่สมควรได้รับ',
+    outcome: 'ลดลงตามธรรมชาติหลังวงออกผลงานต่อเนื่อง กลายเป็น footnote ในประวัติ NCT 127 มากกว่าจะเป็น lasting controversy',
+  },
+  {
+    period: '2021',
+    title: 'Dating Rumors — Winter & Karina (aespa)',
+    category: 'personal',
+    severity: 'low',
+    status: 'faded',
+    body: 'ข่าวลือระดับ fansite เกี่ยวกับความสัมพันธ์กับ Winter และ Karina จาก aespa — เกิดจากการปรากฏตัวร่วมกันในงาน SM internal events และ social media interaction ในช่วงนั้น Winter ถูกมองว่าเป็นแค่ข่าวลือ ขณะที่ Karina ต่อมาเปิดเผยว่ามีความสัมพันธ์จริงแต่ถูกจัดการ PR อย่างเป็นระบบ ณ เวลานั้น ทุกฝ่ายใช้ "ร่วมสังกัด" เป็น cover',
+    outcome: 'ไม่มีการยืนยันอย่างเป็นทางการทั้งสองกรณีในช่วงนั้น Karina relationship ถูกยืนยันโดยอ้อมผ่านแหล่งข่าวใกล้ชิดในเวลาต่อมา',
+  },
+  {
+    period: 'ต้น 2022',
+    title: 'Ukraine–Russia Statement ขณะอยู่ใน SM',
+    category: 'political',
+    severity: 'low',
+    status: 'faded',
+    body: 'James ออก statement เรียกร้องหยุดยิงไม่กี่วันหลังรัสเซียบุกยูเครน — ขณะที่ศิลปิน K-pop ส่วนใหญ่เลือกเงียบ SM ไม่ได้ห้ามอย่างเป็นทางการแต่ถ้อยคำระมัดระวังมาก ไม่ระบุฝ่ายผู้รุกราน เน้นแค่ "ขอให้ทุกคนปลอดภัย" แฟนคลับบางส่วนวิจารณ์ว่าเบาเกินไป บางส่วนยกย่องว่ากล้าพูดในฐานะ K-pop idol',
+    outcome: 'ผ่านไปเร็ว ไม่มีผลกระทบต่อ career ในช่วงนั้น หลังออก SM (2023) James แสดงจุดยืนตรงกว่าและประณามการโจมตีพลเรือนอย่างชัดเจน',
+  },
+  {
+    period: '2022–2023',
+    title: 'SM Contract Dispute & Dispatch Leak',
+    category: 'industry',
+    severity: 'high',
+    status: 'resolved',
+    body: 'James ยื่นคำร้องต่อศาลเพื่อระงับสัญญา SM อ้างการ delay โปรเจกต์ตั้งใจเพื่อยืดสัญญา, การ claim เพลงที่เขาเขียนเป็น "ทรัพย์สินบริษัท", และถ้อยคำในการประชุมภายในที่กดทับศิลปินต่างชาติ Dispatch เผยแพร่บางส่วนของบันทึกเสียงการประชุม — รวมถึงประโยค "foreign members should be mindful of their position" SM ฟ้องกลับอ้างความเสียหายต่อชื่อเสียง การไกล่เกลี่ยรอบแรกล้มเหลว',
+    outcome: 'Settlement 27 เมษายน 2023 — ยุติสัญญา, ถอนฟ้องทั้งสองฝ่าย, SM ออกแถลงการณ์ขอโทษและสัญญาปรับนโยบาย James ได้สิทธิ์ catalog เต็มรูปแบบสำหรับงานหลัง SM และ retain สิทธิ์ชื่อ GONUNMA กลายเป็น landmark case เรื่องสิทธิ์ศิลปินใน K-pop',
+  },
+  {
+    period: '2023',
+    title: 'Media Rivalry Narrative — Jungkook (BTS)',
+    category: 'fandom',
+    severity: 'medium',
+    status: 'faded',
+    body: 'สื่อบันเทิงเกาหลีและ US หลายสำนักนำเสนอ "parallel career trajectory" ของ James และ Jungkook ในช่วงที่ทั้งคู่ออก solo เต็มรูปแบบพร้อมกัน — ทั้งสองเคยเรียนที่ SOPA ร่วมกัน, อยู่ในวง K-pop flagship ของ SM และ HYBE ตามลำดับ, และมี US crossover ambition ชัดเจน กระแสนี้สร้างความตึงเครียดในแฟนด้อมทั้งสองฝั่ง มีการ pit กันเรื่อง chart, streaming, และ award ต่อเนื่อง',
+    outcome: 'ลดลงมากหลัง Jungkook เข้ารับราชการทหาร ธันวาคม 2023 rivalry narrative หายจากสื่อกระแสหลักเกือบหมด',
+  },
+  {
+    period: '2023',
+    title: 'Karina (aespa) — Relationship Managed Under Wraps',
+    category: 'personal',
+    severity: 'low',
+    status: 'faded',
+    body: 'ความสัมพันธ์ระยะสั้นระหว่าง James และ Karina ถูกยืนยันโดยแหล่งข่าวใกล้ชิด — จัดการ PR อย่างเป็นระบบโดยทั้ง JH Company และ SM ไม่มีการยืนยันสาธารณะ กระแสข่าวลือในช่วงนั้นถูก dismiss ด้วยคำอธิบาย "เคยร่วมสังกัด" ซึ่งเป็น narrative เดิมจากปี 2021',
+    outcome: 'ไม่มีการยืนยันอย่างเป็นทางการ ไม่มีผลต่อ career ทั้งสองฝ่าย สิ้นสุดลงก่อนที่ James จะประกาศความสัมพันธ์กับ Ashley Liao ในปี 2026',
+  },
+  {
+    period: '2023–ปัจจุบัน',
+    title: 'Israel–Gaza Statement vs. Disney/Marvel Contract',
+    category: 'political',
+    severity: 'high',
+    status: 'ongoing',
+    body: 'James ออก statement เรียกร้องหยุดยิงและ humanitarian access ในความขัดแย้ง Israel–Gaza ตั้งแต่ปลายปี 2023 รวมถึงวิพากษ์วิจารณ์การสนับสนุนทางทหารของสหรัฐฯ — จุดยืนที่ขัดกับนโยบายหลีกเลี่ยงการเมืองของ Disney/Marvel โดยตรง มีรายงานว่า JH Company ต้องเจรจากับ Marvel legal team ไม่น้อยกว่าหนึ่งครั้ง เป็น tension ที่ทั้งสองฝ่ายไม่ยืนยันสาธารณะ',
+    outcome: 'ยังคง ongoing — James ไม่ถอน statement แต่ปรับถ้อยคำระมัดระวังขึ้นในช่วง Shang-Chi 3 press tour MCU contract ยังคงอยู่ แสดงว่า Disney เลือก contain มากกว่า confront',
+  },
+  {
+    period: '2024',
+    title: 'Cultural Appropriation Allegations — ARE U STILL Era',
+    category: 'social' as Category,
+    severity: 'medium',
+    status: 'faded',
+    body: 'กระแสวิจารณ์ว่า ARE U STILL ได้รับอิทธิพลจากวัฒนธรรมแอฟริกัน-อเมริกันมากเกินไป — เกิดใน Twitter/X ช่วง Grammy campaign เน้นที่ neo-soul influences, vocal style, และ music video aesthetic ไม่มีหลักฐานการ appropriate สัญลักษณ์ทางวัฒนธรรมโดยตรง ขณะที่แฟนคลับชาวแอฟริกัน-อเมริกันหลายคนออกมาแสดงความเห็นสนับสนุนและปฏิเสธการ label ดังกล่าว',
+    outcome: 'ลดลงเองหลัง Grammy wins — ชัยชนะทำให้ narrative เปลี่ยนจาก "appropriation" เป็น "contribution" ในสื่อส่วนใหญ่',
+  },
+  {
+    period: '2024',
+    title: 'US Breakthrough Dating Rumors',
+    category: 'personal',
+    severity: 'low',
+    status: 'faded',
+    body: 'ช่วง US breakthrough — ชื่อ James ถูกเชื่อมกับ Olivia Rodrigo, Sabrina Carpenter, และ Hunter Schafer ในระดับ tabloid speculation ทั้งหมดเกิดจากการปรากฏตัวในงานเดียวกัน หรือ social media activity ทั่วไป ไม่มีหลักฐานยืนยันใดๆ',
+    outcome: 'ไม่มีผลกระทบ ผ่านไปตามวัฏจักร celebrity gossip ปกติ',
+  },
+  {
+    period: '2024–ปัจจุบัน',
+    title: 'NCT 127 Fan Divide — Pro vs. Anti',
+    category: 'fandom',
+    severity: 'medium',
+    status: 'ongoing',
+    body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 และเต็มรูปแบบในปี 2026 สร้าง structural divide ในแฟนด้อม — SM ใช้กลยุทธ์ที่ทำให้ทั้ง "James กลับมา" และ "James ไม่อยู่" ต่างก็สร้าง engagement สูงพอกัน แฟนคลับแบ่งเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ต้อนรับ James และฝ่ายที่มองว่า James ดึง spotlight ออกจากวง',
+    outcome: 'ยังคง ongoing และเป็น chronic tension ทุก NCT 127 release ที่มีหรือไม่มี James จะมีกระแสสูงผิดปกติเสมอ SM ยังไม่มีท่าทีแก้ปัญหาอย่างเป็นระบบ',
+  },
+  {
+    period: '2024–2025',
+    title: 'Hanni (NewJeans) — Open Secret',
+    category: 'personal',
+    severity: 'low',
+    status: 'faded',
+    body: 'ความสัมพันธ์ระยะสั้นระหว่าง James และ Hanni ถูกยืนยันโดยแหล่งข่าวใกล้ชิด ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวลือที่ปรากฏบนโซเชียลช่วง SOUR|HONEY (2025) อ้างถึง social media interaction เป็น surface reason แต่วงในมองว่าเป็น cover story กระแสถกเถียงเรื่องช่วงอายุเกิดขึ้นในแฟนด้อมสั้นๆ',
+    outcome: 'สิ้นสุดก่อน James ประกาศความสัมพันธ์กับ Ashley Liao ไม่มีการยืนยันอย่างเป็นทางการจากทุกฝ่าย',
+  },
+  {
+    period: '2025',
+    title: 'Thai–Cambodia Conflict & Nationalist Backlash',
+    category: 'political',
+    severity: 'high',
+    status: 'ongoing',
+    body: 'เมื่อความตึงเครียดชายแดนไทย-กัมพูชาปะทุขึ้น James ออกแถลงการณ์เรียกร้องสันติภาพและการเจรจา — ขัดกับกระแสชาตินิยมไทยในช่วงนั้นโดยตรง ผลลัพธ์รุนแรงที่สุดในอาชีพ: backlash หนักบนโซเชียล มีการตัด lightstick และเผา merchandise เชิงสัญลักษณ์ แฟนคลับไทยลดลงอย่างมีนัยสำคัญ James หยุดกิจกรรมทุกประเภทในไทย — ไม่มีทัวร์, ไม่มีโปรโมท, ไม่กล่าวถึงประเทศไทยในสื่อ',
+    outcome: 'Ongoing — James ไม่กลับไทยนับตั้งแต่นั้น ไม่มีสัญญาณ reconciliation ฐานแฟนคลับไทยลดลงถาวร แต่ยังใหญ่พอสำหรับ pop star ระดับ international',
+  },
+  {
+    period: '2025–ปัจจุบัน',
+    title: 'US–Iran Statement & American Audience Backlash',
+    category: 'political',
+    severity: 'medium',
+    status: 'ongoing',
+    body: 'James ออก statement เรียกร้อง de-escalation ความขัดแย้ง US–Iran ในช่วงที่เขาอาศัยอยู่ในสหรัฐฯ แล้ว ถูกวิจารณ์จากบางส่วนของผู้ชมอเมริกันว่า "ไม่รู้จักบุญคุณประเทศที่ให้โอกาส" และ "ศิลปินต่างชาติไม่ควรแสดงความคิดเห็นนโยบายต่างประเทศสหรัฐฯ" บางสำนักข่าวอนุรักษนิยมหยิบยกเป็นกรณีตัวอย่าง',
+    outcome: 'Ongoing — James ไม่ถอน statement ฐานแฟนคลับสายโปรเกรสซีฟในสหรัฐฯ ตอบรับบวก ขณะที่ส่วนหนึ่งของกระแสหลักยังคงวิจารณ์',
+  },
+];
+
+const catMeta: Record<Category | 'social', { label: string; color: string }> = {
+  political: { label: 'Political', color: '#5a7aaa' },
+  industry:  { label: 'Industry', color: '#c9a84c' },
+  personal:  { label: 'Personal', color: '#c06080' },
+  fandom:    { label: 'Fandom',   color: '#9b7fc8' },
+  social:    { label: 'Social',   color: '#5a9c7c' },
+};
+
+const sevMeta: Record<Severity, { label: string; color: string }> = {
+  high:   { label: 'High',   color: '#f87171' },
+  medium: { label: 'Medium', color: '#facc15' },
+  low:    { label: 'Low',    color: 'var(--text-muted)' },
+};
+
+const statusMeta: Record<Status, { label: string; color: string; bg: string }> = {
+  resolved: { label: 'Resolved', color: '#4ade80', bg: 'color-mix(in srgb,#4ade80 12%,transparent)' },
+  ongoing:  { label: 'Ongoing',  color: '#fb923c', bg: 'color-mix(in srgb,#fb923c 12%,transparent)' },
+  faded:    { label: 'Faded',    color: 'var(--text-muted)', bg: 'var(--bg-muted)' },
+};
+
+const highCount  = incidents.filter(i => i.severity === 'high').length;
+const ongoingCount = incidents.filter(i => i.status === 'ongoing').length;
+const resolvedCount = incidents.filter(i => i.status === 'resolved').length;
+---
+<WikiLayout title="Controversies & Incidents" section="Biography" relatedPages={[
+  { label: 'Personal Life', href: `${base}personal-life` },
+  { label: 'Public Image', href: `${base}public-image` },
+  { label: 'Legal', href: `${base}legal` },
+  { label: 'Fandom', href: `${base}fandom` },
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Rivalries & Tensions', href: `${base}rivalries` },
+]}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">Biography</div>
+    <h1 class="wiki-title mb-2">Controversies & Incidents</h1>
+    <p class="text-sm" style="color:var(--text-muted)">Political · Industry · Personal · Fandom · 2016–present</p>
+  </div>
+
+  <!-- Summary KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: String(incidents.length), label: 'Total Incidents', sub: 'across all categories' },
+      { val: String(highCount), label: 'High Severity', sub: 'significant career impact' },
+      { val: String(ongoingCount), label: 'Ongoing', sub: 'unresolved as of 2026' },
+      { val: String(resolvedCount), label: 'Resolved', sub: 'concluded with outcome' },
+    ].map(k => (
+      <div class="stat-card">
+        <div class="stat-val">{k.val}</div>
+        <div class="stat-label">{k.label}</div>
+        <div class="text-xs mt-1" style="color:color-mix(in srgb,var(--text-muted) 60%,transparent)">{k.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Category legend -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {(Object.entries(catMeta) as [string, {label:string;color:string}][]).map(([, m]) => (
+      <span class="text-xs px-2.5 py-1 rounded-full font-semibold" style={`color:${m.color};background-color:color-mix(in srgb,${m.color} 12%,transparent)`}>{m.label}</span>
+    ))}
+    {(Object.entries(sevMeta) as [string, {label:string;color:string}][]).map(([k, m]) => (
+      <span class="text-xs px-2.5 py-1 rounded font-semibold border" style={`color:${m.color};border-color:color-mix(in srgb,${m.color} 30%,transparent)`}>{m.label} severity</span>
+    ))}
+  </div>
+
+  <!-- Incidents timeline -->
+  <section class="space-y-4">
+    {incidents.map(inc => {
+      const cat = catMeta[inc.category as keyof typeof catMeta] ?? catMeta.social;
+      const sev = sevMeta[inc.severity];
+      const sta = statusMeta[inc.status];
+      const borderCol = inc.severity === 'high'
+        ? 'color-mix(in srgb,#f87171 30%,transparent)'
+        : inc.severity === 'medium'
+        ? 'color-mix(in srgb,#facc15 20%,transparent)'
+        : 'var(--border)';
+      return (
+        <div class="rounded-lg border px-5 py-4" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+          <!-- Header row -->
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="text-xs font-mono px-2 py-0.5 rounded shrink-0" style="background-color:var(--bg-muted);color:var(--text-muted)">{inc.period}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full" style={`color:${cat.color};background-color:color-mix(in srgb,${cat.color} 12%,transparent)`}>{cat.label}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded border" style={`color:${sev.color};border-color:color-mix(in srgb,${sev.color} 30%,transparent)`}>{sev.label}</span>
+            <span class="font-bold text-sm flex-1">{inc.title}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded shrink-0" style={`color:${sta.color};background-color:${sta.bg}`}>{sta.label}</span>
+          </div>
+          <!-- Body -->
+          <p class="text-sm leading-relaxed mb-3" style="color:var(--text-muted)">{inc.body}</p>
+          <!-- Outcome -->
+          <div class="text-xs leading-relaxed px-3 py-2 rounded border-l-2" style={`background-color:var(--bg-muted);border-color:${sta.color}`}>
+            <span class="font-semibold uppercase tracking-wide text-xs" style="color:var(--text)">Outcome — </span>
+            <span style="color:var(--text-muted)">{inc.outcome}</span>
+          </div>
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- Closing note -->
+  <div class="mt-8 rounded-lg border px-5 py-4 text-sm leading-relaxed" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--text-muted)">
+    <strong style="color:var(--text)">Pattern note —</strong> Controversies ของ James Hwang แบ่งได้เป็นสองกลุ่มหลัก: กลุ่มที่เกิดจาก <em>identity และ industry structure</em> (SM dispute, NCT fan divide) และกลุ่มที่เกิดจาก <em>จุดยืนทางการเมือง</em> (Thai democracy, anti-war statements) สองกลุ่มนี้เชื่อมกันผ่าน pattern เดียว คือ James เลือก authenticity เหนือ career safety อย่างสม่ำเสมอ — ไม่ว่าจะกับ SM, Disney, หรือกระแสชาตินิยมไทย
+  </div>
+</WikiLayout>

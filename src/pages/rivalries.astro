@@ -1,0 +1,244 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+type RivalryType = 'industry' | 'political' | 'celebrity' | 'institutional' | 'fandom';
+type Status = 'ongoing' | 'cold' | 'resolved' | 'periodic';
+
+const rivalries = [
+  {
+    type: 'industry' as RivalryType,
+    name: 'DeShawn Rivers',
+    role: 'Veteran R&B Artist · Grammy Winner (multiple)',
+    status: 'cold' as Status,
+    origin: '2024 — Grammy Season',
+    body: 'Rivers ออก podcast comment ที่ไม่เอ่ยชื่อ James โดยตรง: "When a K-pop act wins Best R&B Album, I think we need to have an honest conversation about what that category is for." ก่อนประกาศผล Grammy ปี 2024 ทุกคนในวงการรู้ว่าหมายถึงใคร James ไม่ตอบสักคำ — ความเงียบกลายเป็น story ของตัวเอง หลัง James ชนะ Rivers ไม่ acknowledge สักครั้ง ซึ่งแฟนด้อมมองว่าแย่กว่าการ attack โดยตรง',
+    dynamic: 'Asymmetric — Rivers เป็นฝ่าย initiate, James ไม่ engage เลย ทำให้ Rivers ดู petty ฝ่ายเดียว ยิ่งเวลาผ่านยิ่งเสียเปรียบ Rivers เอง',
+    impact: 'Grammy backlash wave จาก Rivers stans ต่อ Gemzen รุนแรงช่วงสั้น แต่ชัยชนะของ James ทำให้ narrative พลิกเร็ว นักวิจารณ์หลายสำนักใช้ Rivers comment เป็นตัวอย่างของ gatekeeping ใน R&B industry',
+  },
+  {
+    type: 'industry' as RivalryType,
+    name: 'Kamau Wright',
+    role: 'R&B Artist (Gen-Z) · Grammy Nominee',
+    status: 'cold' as Status,
+    origin: '2024 — Best Progressive R&B Album nomination',
+    body: 'Wright ถูก nominate Grammy สาขาเดียวกับ James และแพ้ หลังจากนั้นมีประวัติ subtly dismissive ใน interviews — ไม่เคย mention James by name แต่ใช้ถ้อยคำที่ "the receipts exist" ในแฟนด้อม เช่น "authentic R&B artists who came up the hard way" และ "I don\'t think viral moments should replace real careers" ในช่วงที่ James กำลัง dominate streaming',
+    dynamic: 'Industry rivalry ที่ดำเนินผ่านถ้อยคำ indirect — ไม่มีการ confront โดยตรง แต่ทั้งสองฝ่ายรู้ดีและ fan bases รู้ดียิ่งกว่า',
+    impact: 'สร้าง recurring sub-narrative ในสื่อ US เรื่อง "K-adjacent artists taking space from emerging Black artists" — เป็น conversation ที่ James ไม่เคยเข้าร่วมโดยตรงแต่ถูกพาดพิงซ้ำ',
+  },
+  {
+    type: 'political' as RivalryType,
+    name: 'Tyler Briggs',
+    role: 'Country/Rock Artist · US Nationalist Voice',
+    status: 'periodic' as Status,
+    origin: '2025–2026 — US–Iran Escalation',
+    body: 'Briggs ออก flag-waving content ระหว่าง US–Iran escalation ชุด "Support our troops 🇺🇸" ที่ viral ในฐาน conservative ของเขา James post anti-war statement วันถัดมาโดยไม่ tag หรือ mention ใคร แต่ทุกคนอ่านออก Briggs fans mass-report account ของ James และสร้าง hashtag โจมตีว่า "ungrateful foreign artist" ใน trending US — Briggs เองไม่เคย respond James โดยตรงแม้แต่ครั้งเดียว',
+    dynamic: 'James อยู่ในสหรัฐฯ แล้ว มี MCU contract กับ Disney — position ยากมาก แต่เขายังคงจุดยืน ทำให้ Briggs fans escalate เอง โดยไม่มีตัว James เป็นเชื้อเพลิง',
+    impact: 'เพิ่ม profile ของ James ในฐานะ "foreign artist who doesn\'t stay quiet" ในสื่อ progressive US ในขณะที่ทำให้ lost fans บางส่วนในกลุ่ม mainstream conservative',
+  },
+  {
+    type: 'celebrity' as RivalryType,
+    name: 'นัทธพล "เบส" ศิริวัฒน์',
+    role: 'นักแสดง/นักร้องไทย · เสียงชาตินิยม 2025',
+    status: 'cold' as Status,
+    origin: '2025 — ไทย-กัมพูชา',
+    body: 'ในช่วงที่กระแสชาตินิยมไทยสูงสุด เบสโพสต์ว่า "ศิลปินที่ไม่ยืนเคียงประเทศในยามวิกฤตก็ไม่ต้องเรียกตัวเองว่าคนไทย" — ไม่ tag James แต่ทุกคนรู้ทันที โพสต์ถูก share ในกลุ่ม nationalist หลักแสนครั้ง เบสเป็น face ของกระแสนี้ใน entertainment sphere กลายเป็นบุคคลที่ถูก cite บ่อยที่สุดเมื่อพูดถึง Thai celebrity ที่ขัดกับ James โดยตรง',
+    dynamic: 'ในระยะยาว James ยังคงมีฐานระดับ international ที่ใหญ่กว่ามาก เบสมี local credibility สูงแต่ global footprint เล็กกว่า — tension นี้ไม่ได้ hurt James ใน career หลัก แต่ปิดประตูไทยอย่างถาวร',
+    impact: 'James ไม่เคย respond ต่อเบส ทำให้เบสดูเป็นฝ่าย "ตีคนที่ไม่มองมา" ในสายตาสื่อต่างประเทศ ส่วนในไทย เบสกลายเป็น hero ของฝ่ายชาตินิยม แฟนคลับไทยของ James แตกแยกถาวรจาก event นี้',
+  },
+  {
+    type: 'institutional' as RivalryType,
+    name: 'SM Entertainment',
+    role: 'Former Label · ยังคงมีแรงเสียดทานเชิงสถาบัน',
+    status: 'ongoing' as Status,
+    origin: '2023–ปัจจุบัน (post-settlement)',
+    body: 'Settlement 2023 ยุติคดีความ แต่ไม่ได้ยุติ institutional friction — SM แสดงรูปแบบซ้ำที่สังเกตได้:\n\n① Release Clash — ทุก major James release มี NCT 127 comeback ภายใน 2 สัปดาห์ (เกิดเกิน 3 ครั้ง ถูกนับในแฟนด้อม)\n\n② Broadcast Gatekeeping — PULSE ได้ limited Korean broadcast แต่บาง music shows ถูก block โดยไม่มีคำอธิบาย\n\n③ Fandom Asymmetry — SM ไม่ยับยั้ง Anti-James content ใน NCT official channels แต่ลบ Anti-NCT content จาก Gemzen ทันที\n\n④ Roster Approach — มีรายงานว่า SM ติดต่อ Mark, Ten โดยตรงก่อน JH Company offer ขณะสัญญาใกล้หมด — ล้มเหลว ทั้งสองย้ายมา JH Company ปี 2026',
+    dynamic: 'SM ไม่มีแรงจูงใจให้ James ล้มเหลว (ยังได้ publishing share จาก SM-era catalog) แต่ก็ไม่มีแรงจูงใจให้สำเร็จมากเกินไปจน overshadow NCT — equilibrium ที่ไม่เสถียร',
+    impact: 'เป็น background noise ที่ James และ JH Company ต้องคำนึงถึงในทุก Korea-facing decision ยังไม่มีการ escalate กลับเป็นคดีความ',
+  },
+];
+
+type Fanwar = {
+  name: string;
+  sides: string;
+  trigger: string;
+  period: string;
+  severity: 'high' | 'medium' | 'low';
+  status: Status;
+  body: string;
+};
+
+const fanwars: Fanwar[] = [
+  {
+    name: 'Gemzen vs. ARMY',
+    sides: 'James fans ↔ BTS fans',
+    trigger: 'Media rivalry narrative กับ Jungkook',
+    period: '2023',
+    severity: 'high',
+    status: 'cold',
+    body: 'สื่อบันเทิงเกาหลีและ US ปั้น "parallel career trajectory" ของ James และ Jungkook ที่ out solo พร้อมกัน ทั้งคู่เคยเรียน SOPA ด้วยกัน, อยู่ flagship label คนละค่าย, มี US crossover ambition — สื่อทำให้เป็น rivalry โดย fan bases ไม่ได้ขอ Gemzen vs ARMY trend หลายรอบ chart war, streaming war, award war ลดลงชัดเจนหลัง Jungkook เข้ารับราชการทหาร ธันวาคม 2023',
+  },
+  {
+    name: 'Gemzen Internal: NCT Return Split',
+    sides: 'Pro-James NCTzen ↔ Anti-James NCTzen',
+    trigger: 'James กลับร่วม NCT 127 ปี 2024',
+    period: '2024–ปัจจุบัน',
+    severity: 'high',
+    status: 'ongoing',
+    body: 'การกลับมาของ James ใน NCT 127 ไม่ใช่แค่ข่าวดี — มันแบ่ง fandom ออกเป็นสองกลุ่มพอๆ กัน ฝ่ายต้อนรับมองว่าเป็น redemption arc, ฝ่ายต่อต้านมองว่า James "ดึง spotlight ออกจากสมาชิกที่อยู่มาตลอด" SM ใช้ tension นี้สร้าง engagement ทุก content ที่มีหรือไม่มี James จะมีกระแสสูงพอกัน เป็น chronic war ที่ไม่มีแนวโน้มจบ',
+  },
+  {
+    name: 'Grammy Backlash Coalition',
+    sides: 'Gemzen ↔ US R&B Twitter + DeShawn Rivers stans',
+    trigger: 'James ชนะ Best Progressive R&B Album',
+    period: '2024',
+    severity: 'medium',
+    status: 'cold',
+    body: 'หลังประกาศผล Grammy wave แรกมาจาก "he took a Grammy from a Black artist" narrative ซึ่ง Gemzen counter ด้วย fact-checking และ quote จากศิลปิน Black ที่ยกย่อง James DeShawn Rivers stans เป็นกลุ่มหลัก wave ร้อนแรงประมาณ 72 ชั่วโมง แล้ว fade เมื่อ James ขึ้นรับรางวัลด้วย speech ที่ acknowledge R&B roots อย่างตรงไปตรงมา',
+  },
+  {
+    name: 'Thai Fandom Civil War',
+    sides: 'Gemzen ไทย pro-James ↔ Gemzen ไทย nationalist',
+    trigger: 'ไทย-กัมพูชา 2025 + James peace statement',
+    period: '2025–ปัจจุบัน',
+    severity: 'high',
+    status: 'ongoing',
+    body: 'ก่อนปี 2025 ฐานแฟนคลับไทยของ James ใหญ่มาก — หลัง peace statement ส่วนหนึ่งออกมา defend James และแยกตัวจาก nationalist wave อีกส่วนหนึ่ง unstan พร้อมประกาศต่อสาธารณะ สองกลุ่มนี้ยังปะทะกันใน Thai Twitter เป็นระยะ ฝ่าย pro มักถูกโจมตีว่า "ขายชาติ" ฝ่าย anti มักถูกตอบโต้ว่า "ตามกระแสเกลียด" — เป็น war ที่เกินเรื่อง James ไปแล้ว กลายเป็นเรื่องการเมืองไทยโดยตรง',
+  },
+  {
+    name: 'Gemzen Internal: Delulu vs. Rational',
+    sides: '"Solo stans" / Wife stans ↔ Supportive Gemzen',
+    trigger: 'ข่าวและ relationship ของ James กับผู้หญิงหลายคน',
+    period: '2023–ปัจจุบัน',
+    severity: 'medium',
+    status: 'periodic',
+    body: 'James มีข่าวกับผู้หญิงบ่อยกว่า pop star ส่วนใหญ่ในระดับเดียวกัน ทั้งที่เป็นข่าวลือและที่เป็นเรื่องจริงแต่ถูกปิด กลุ่ม Delulu faction มี parasocial attachment สูง รู้สึก "ทรยศ" ทุกครั้งที่มีข่าว บางคนไปถึงขั้น doxx หรือ harass บุคคลที่ถูกลือ กลุ่ม Rational faction ที่เชียร์ทั้งดนตรีและชีวิตส่วนตัวต้องออกมา counter ซ้ำๆ\n\nTimeline ที่รุนแรง:\n• 2023 (Karina rumors) — Delulu faction โจมตี Karina fansite, เกิด in-fight ครั้งแรก\n• 2024 (Hanni connection) — รุนแรงขึ้น บางคนรู้ว่ามีมากกว่าข่าวลือ ทำให้สองฝั่งตีกันเรื่อง "เชื่อได้แค่ไหน"\n• 2026 (Ashley Liao confirm) — trigger ใหญ่สุด Delulu บางส่วน unstan พร้อมดราม่า\n• Pattern ปัจจุบัน — ทุกรูปที่ James ถ่ายกับผู้หญิงคนไหน แม้เป็น press หรือ red carpet จะมี Delulu สร้าง narrative ใหม่ และ Rational ต้อง counter เป็น cycle ไม่จบ',
+  },
+];
+
+const typeColors: Record<RivalryType, string> = {
+  industry:     '#c9a84c',
+  political:    '#5a7aaa',
+  celebrity:    '#c06080',
+  institutional:'#9b7fc8',
+  fandom:       '#5a7c6a',
+};
+
+const typeLabels: Record<RivalryType, string> = {
+  industry:     'Industry',
+  political:    'Political',
+  celebrity:    'Celebrity',
+  institutional:'Institutional',
+  fandom:       'Fandom',
+};
+
+const statusColors: Record<Status, string> = {
+  ongoing:  '#fb923c',
+  cold:     'var(--text-muted)',
+  resolved: '#4ade80',
+  periodic: '#facc15',
+};
+
+const statusLabels: Record<Status, string> = {
+  ongoing:  'Ongoing',
+  cold:     'Cold',
+  resolved: 'Resolved',
+  periodic: 'Periodic',
+};
+---
+<WikiLayout title="Rivalries & Tensions" section="Biography" relatedPages={[
+  { label: 'Controversies', href: `${base}controversies` },
+  { label: 'Fandom', href: `${base}fandom` },
+  { label: 'Personal Life', href: `${base}personal-life` },
+  { label: 'Legal', href: `${base}legal` },
+  { label: 'Public Image', href: `${base}public-image` },
+]}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">Biography</div>
+    <h1 class="wiki-title mb-2">Rivalries & Tensions</h1>
+    <p class="text-sm" style="color:var(--text-muted)">Industry · Political · Celebrity · Institutional · Fanwars · 2023–present</p>
+  </div>
+
+  <!-- Legend -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {(Object.entries(typeColors) as [RivalryType, string][]).map(([k, c]) => (
+      <span class="text-xs px-2.5 py-1 rounded-full font-semibold" style={`color:${c};background-color:color-mix(in srgb,${c} 12%,transparent)`}>{typeLabels[k]}</span>
+    ))}
+    {(['ongoing','cold','periodic','resolved'] as Status[]).map(s => (
+      <span class="text-xs px-2.5 py-1 rounded border font-semibold" style={`color:${statusColors[s]};border-color:color-mix(in srgb,${statusColors[s]} 30%,transparent)`}>{statusLabels[s]}</span>
+    ))}
+  </div>
+
+  <!-- Rivalries -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-5">Individual & Institutional Tensions</h2>
+    <div class="space-y-4">
+      {rivalries.map(r => {
+        const tc = typeColors[r.type];
+        const sc = statusColors[r.status];
+        const borderCol = r.status === 'ongoing'
+          ? 'color-mix(in srgb,#fb923c 25%,transparent)'
+          : `color-mix(in srgb,${tc} 20%,var(--border))`;
+        return (
+          <div class="rounded-xl border overflow-hidden" style={`border-color:${borderCol}`}>
+            <div class="px-5 py-3 flex flex-wrap items-center gap-2" style={`background-color:color-mix(in srgb,${tc} 7%,var(--bg-surface))`}>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full" style={`color:${tc};background-color:color-mix(in srgb,${tc} 12%,transparent)`}>{typeLabels[r.type]}</span>
+              <span class="font-bold text-sm flex-1">{r.name}</span>
+              <span class="text-xs" style="color:var(--text-muted)">{r.role}</span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded" style={`color:${sc};background-color:color-mix(in srgb,${sc} 12%,transparent)`}>{statusLabels[r.status]}</span>
+            </div>
+            <div class="px-5 py-1.5 border-t text-xs font-mono" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              Origin: {r.origin}
+            </div>
+            <div class="px-5 py-3 border-t text-sm leading-relaxed whitespace-pre-line" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              {r.body}
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 border-t divide-y md:divide-y-0 md:divide-x" style="border-color:color-mix(in srgb,var(--border) 50%,transparent)">
+              <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+                <div class="text-xs font-semibold uppercase tracking-wide mb-1" style={`color:${tc}`}>Dynamic</div>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.dynamic}</p>
+              </div>
+              <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+                <div class="text-xs font-semibold uppercase tracking-wide mb-1" style={`color:${tc}`}>Career Impact</div>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.impact}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Fan Wars -->
+  <section>
+    <h2 class="wiki-section mb-5">Fan Wars</h2>
+    <div class="space-y-4">
+      {fanwars.map(fw => {
+        const sc = statusColors[fw.status];
+        const sevCol = fw.severity === 'high' ? '#f87171' : fw.severity === 'medium' ? '#facc15' : 'var(--text-muted)';
+        const borderCol = fw.severity === 'high'
+          ? 'color-mix(in srgb,#f87171 25%,transparent)'
+          : fw.severity === 'medium'
+          ? 'color-mix(in srgb,#facc15 20%,transparent)'
+          : 'var(--border)';
+        return (
+          <div class="rounded-xl border overflow-hidden" style={`border-color:${borderCol}`}>
+            <div class="px-5 py-3 flex flex-wrap items-center gap-2" style="background-color:var(--bg-surface)">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded border" style={`color:${sevCol};border-color:color-mix(in srgb,${sevCol} 30%,transparent)`}>{fw.severity}</span>
+              <span class="font-bold text-sm flex-1">{fw.name}</span>
+              <span class="text-xs font-mono" style="color:var(--text-muted)">{fw.period}</span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded" style={`color:${sc};background-color:color-mix(in srgb,${sc} 12%,transparent)`}>{statusLabels[fw.status]}</span>
+            </div>
+            <div class="px-5 py-2 border-t flex flex-wrap gap-4 text-xs" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:color-mix(in srgb,var(--bg-muted) 50%,var(--bg-surface))`}>
+              <span><strong style="color:var(--text)">Sides:</strong> <span style="color:var(--text-muted)">{fw.sides}</span></span>
+              <span><strong style="color:var(--text)">Trigger:</strong> <span style="color:var(--text-muted)">{fw.trigger}</span></span>
+            </div>
+            <div class="px-5 py-3 border-t text-sm leading-relaxed whitespace-pre-line" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              {fw.body}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</WikiLayout>
