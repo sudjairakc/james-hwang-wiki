@@ -401,9 +401,10 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 
 ### 06–11/2024
-11/06/2024: เริ่มถ่ายทำ Shang-Chi 2 ที่ Disney Studios Australia (working title: "Sleeping Valley")
+06/2024: เจมส์โพสต์ statement ผ่าน Weverse ว่าขอพักจากทุกอย่างเป็นเวลา 1 เดือนหลังทัวร์อย่างยาวนาน
+11/07/2024: เริ่มถ่ายทำ Shang-Chi 2 ที่ Disney Studios Australia (working title: "Sleeping Valley")
 
-06/2024 – 11/2024: ถ่ายทำต่อเนื่อง (block shooting) พร้อม manage งานเพลงแบบ remote
+07/2024 – 11/2024: ถ่ายทำต่อเนื่อง (block shooting) พร้อม manage งานเพลงแบบ remote
 
 
 ### 08/2024
