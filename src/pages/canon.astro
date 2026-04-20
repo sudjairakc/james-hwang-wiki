@@ -150,6 +150,113 @@ const liner98 = [
   { name: 'Arin', group: 'OH MY GIRL' },
 ];
 
+const vibratoProfile = [
+  { attr: 'Usage', val: 'Selective — only on long notes requiring emotional weight' },
+  { attr: 'Type', val: 'Narrow & controlled — not wide classical, not fast pop' },
+  { attr: 'Speed', val: 'Moderate — approx. 5–5.5 Hz' },
+  { attr: 'Depth', val: 'Shallow — pitch deviation ≤ ±30 cents' },
+  { attr: 'Onset', val: 'Delayed — starts straight, rolls into vibrato at note end' },
+  { attr: 'Character', val: '"Still but alive" — not technique-forward' },
+];
+
+const resonanceRegister = [
+  { attr: 'Primary Resonance', val: 'Mixed voice dominant — not full chest, not pure head' },
+  { attr: 'Chest Voice', val: 'Warm + slightly bright — not dark/operatic, not nasal' },
+  { attr: 'Head Voice / Falsetto', val: 'Light, airy — intentionally distinct from chest; not always blended' },
+  { attr: 'Passaggio Zone', val: 'Approx. E4–G4 — smooth with acceptable slight thinning' },
+  { attr: 'Register Break', val: 'Not always concealed — intentional flip to falsetto for texture' },
+  { attr: 'Nasal Quality', val: 'Low — forward placement, minimal nasal cavity engagement' },
+];
+
+const onsetArticulation = [
+  { attr: 'Default Onset', val: 'Soft / semi-glottal — smooth start, not hard-cut' },
+  { attr: 'Accented Onset', val: 'Hard glottal on select words for emphasis or rhythmic punch' },
+  { attr: 'Vowel Tendency', val: 'Forward — /a/ and /e/ open clearly, not swallowed' },
+  { attr: 'Consonant Style', val: 'Clear but soft — not overpronounced like musical theatre' },
+  { attr: 'Language Coloring', val: 'Thai accent adds subtle vowel widening in English — /ɛ/ tends wider than standard' },
+];
+
+const dynamicSustain = [
+  { attr: 'Dynamic Range', val: 'Moderate — comfortable at mp to mf; not a power-heavy singer' },
+  { attr: 'Soft Passage', val: 'Breathy + intimate — reduced support, floating quality' },
+  { attr: 'Loud Passage', val: 'Adds edge and brightness — projection without shouting' },
+  { attr: 'Sustain Quality', val: 'Hold straight → subtle swell → vibrato or fade at phrase end' },
+  { attr: 'Phrase Ending', val: 'Diminuendo preferred — gradual taper, not hard cut' },
+];
+
+const danceTimingWeight = [
+  { attr: 'Hit Timing', val: 'Slightly behind the beat (pocket) — heavy, settled feel' },
+  { attr: 'Beat Response', val: 'Heavy on downbeat; upbeat uses micro-movement or hold' },
+  { attr: 'Body Weight', val: 'Medium-light — not B-boy heavy, not waacking floaty' },
+  { attr: 'Center of Gravity', val: 'Mid-low — slightly lower stance than average for stability' },
+  { attr: 'Grounded vs Float', val: 'Grounded base; upper body can float independently' },
+];
+
+const danceSpatial = [
+  { attr: 'Space Usage', val: 'Minimal-to-moderate — in-place control over traveling' },
+  { attr: 'Level Changes', val: 'Used as punctuation — infrequent but high impact when used' },
+  { attr: 'Vertical Range', val: 'Mostly mid-level — low as accent, high rarely' },
+  { attr: 'Transition Style', val: 'Sharp cut over flow — reset between phrases' },
+  { attr: 'Recovery Style', val: 'Returns to neutral body — does not hold poses long' },
+];
+
+const danceMusicality = [
+  { elem: 'Kick / Snare', resp: 'Body pop or stop-motion hit' },
+  { elem: 'Bass Line', resp: 'Groove step or waving following bass melodic contour' },
+  { elem: 'Silence / Break', resp: 'Full stop or slow isolation — silence used as dramatic tool' },
+  { elem: 'Melody', resp: 'Not tracked directly — used as backdrop for freestyle phrasing' },
+  { elem: 'Build-up', resp: 'Slow isolation builds tension → explodes at drop' },
+];
+
+const dancePerformanceCtx = [
+  { ctx: 'Solo', val: 'Conceptual + experimental — minimal space, maximum body detail' },
+  { ctx: 'Group Sync', val: 'Adapts to group timing — blends first, stands out in solo section' },
+  { ctx: 'Tempo Sweet Spot', val: '85–110 BPM — slow enough for isolation to read, fast enough for groove' },
+  { ctx: 'Performance Face', val: 'Neutral-to-focused — matches dynamic of move; not overacted' },
+  { ctx: 'Freestyle vs Choreo', val: 'Freestyle shows more personality — choreography can read as safe' },
+];
+
+const physicalBaseline = [
+  { attr: 'Height', val: '181 cm' },
+  { attr: 'Build', val: 'Athletic — lean + functional muscle; visible development from LIKE I DO → PULSE era' },
+  { attr: 'Face Reading', val: 'Strong jaw + relaxed eyes — resting face reads as "still and thinking," not cold' },
+  { attr: 'Default Expression', val: 'Neutral-to-focused — not an easy smile, but disarming when it appears' },
+  { attr: 'On-camera vs Off', val: 'More composed on-camera; playful energy visible in behind-the-scenes content' },
+];
+
+const personalityBaseline = [
+  { trait: 'Core Pattern', val: 'Workaholic — overcommits to multiple projects; recognized since 2023, addressed in therapy' },
+  { trait: 'Introvert / Extrovert', val: 'Ambivert — recharges alone (cooking, cleaning), performs like an extrovert' },
+  { trait: 'Under Pressure', val: 'Withdraws then works harder — does not express emotion publicly' },
+  { trait: 'Communication Style', val: 'Measured — careful in interviews, direct when pressed; doesn\'t dodge with vagueness' },
+  { trait: 'Humor Type', val: 'Dry + understated — rarely performs comedy but lands when he does' },
+  { trait: 'Consistency', val: 'Public values match private behavior — transport, lifestyle, activism align' },
+  { trait: 'Domestic Groundedness', val: 'Lives alone, cooks and cleans himself, no personal staff for daily life' },
+];
+
+const stagePersona = [
+  { ctx: 'Live Performance', val: 'Controlled + precise — high energy without chaos; reads as professional over spontaneous' },
+  { ctx: 'Fan Interaction', val: 'Warm but not over-familiar — genuine smile, real responses, no forced fan service' },
+  { ctx: 'Variety / MC', val: 'Quieter than peers — often lightly bullied for slow reactions; comebacks hit hard' },
+  { ctx: 'Interview Mode', val: 'Comfortable with serious questions — handles depth better than fluff' },
+  { ctx: 'Social Media', val: 'Weverse-based continuous contact — personal over promotional' },
+  { ctx: 'Fan Event Policy', val: 'Ended album-purchase fan signs post-SM; shifted to Weverse — stated he didn\'t know the cost burden on fans' },
+];
+
+const industryPositioning = [
+  { attr: 'Role in Group', val: 'Vocal line (main) + Dance line (top tier) + de facto center at solo showcase moments' },
+  { attr: 'Solo Positioning', val: 'Artist-tier — not pure entertainer idol; clear and growing creative credit' },
+  { attr: 'Market Target', val: 'Crossover — K-pop base + R&B/soul listeners + MCU general audience' },
+  { attr: 'Peer Reputation', val: 'Respected for work ethic and precision — not the life of the party, but sought as collaborator' },
+  { attr: 'Label Relationship', val: 'Independent (JH Company, 2023) — returned to NCT 127 as external artist 2024 + 2026' },
+];
+
+const personalityRadar = {
+  axes: ['Work Ethic', 'Consistency', 'Ambition', 'Domesticity', 'Expressiveness', 'Dry Humor'],
+  scores: [9.5, 9.5, 9.0, 8.5, 5.0, 6.0],
+  idolAvg: [7.0, 6.5, 7.5, 4.0, 8.0, 7.0],
+};
+
 const subRadars = [
   {
     id: 'radarVocal',
@@ -295,6 +402,70 @@ const radarSkills = [
         ))}
       </div>
     </div>
+
+    <!-- Vibrato + Resonance -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Vibrato Profile</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {vibratoProfile.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-24 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Resonance & Register</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {resonanceRegister.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Vibrato waveform chart -->
+    <div class="mt-4 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Vibrato — Delayed Onset Pattern</div>
+      <canvas id="vibratoWave" height="70" style="width:100%;display:block"></canvas>
+    </div>
+
+    <!-- Onset + Dynamic -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Onset & Articulation</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {onsetArticulation.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Dynamic & Sustain</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {dynamicSustain.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic range chart -->
+    <div class="mt-4 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Dynamic Range — Comfort Zone</div>
+      <canvas id="dynamicRange" height="56" style="width:100%;display:block"></canvas>
+    </div>
   </section>
 
   <!-- ── PRODUCTION ── -->
@@ -421,13 +592,71 @@ const radarSkills = [
 
     <!-- Dance refs -->
     <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Reference Artists</div>
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-wrap gap-2 mb-6">
       {danceRefs.map(r => (
         <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
           <span class="text-sm font-bold">{r.artist}</span>
           <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
         </div>
       ))}
+    </div>
+
+    <!-- Timing + Spatial -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Timing & Weight</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {danceTimingWeight.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Spatial & Transition</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {danceSpatial.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-24 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Timing diagram -->
+    <div class="mt-4 mb-6 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Hit Timing — Pocket Position</div>
+      <canvas id="timingDiagram" height="88" style="width:100%;display:block"></canvas>
+    </div>
+
+    <!-- Musicality + Performance Context -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Musicality Mapping</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {danceMusicality.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.elem}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.resp}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Performance Context</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {dancePerformanceCtx.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.ctx}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 
@@ -494,6 +723,79 @@ const radarSkills = [
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- ── ARTIST PROFILE ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-5">Artist Profile</h2>
+
+    <!-- Physical + Industry -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Physical Baseline</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {physicalBaseline.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Industry Positioning</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {industryPositioning.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Personality radar -->
+    <div class="mt-6 mb-6 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--text-muted)">Personality Radar — vs K-Idol Average</div>
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <canvas id="personalityRadarChart" width="240" height="240" class="shrink-0 mx-auto"></canvas>
+        <div class="flex-1 space-y-2">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <div class="flex items-center gap-2"><span class="inline-block w-5 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+            <div class="flex items-center gap-2"><span class="inline-block w-5 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Average</span></div>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Work Ethic และ Consistency สูงผิดปกติแม้แต่ในกลุ่ม idol — สะท้อนทั้งใน career trajectory และ lifestyle ส่วนตัว</p>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Expressiveness ต่ำกว่า idol average อย่างเด่นชัด — สอดคล้องกับ variety persona ที่เงียบและ measured communication style</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personality + Stage Persona -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Personality Baseline</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {personalityBaseline.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.trait}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">Stage & Public Persona</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {stagePersona.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.ctx}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 
@@ -624,7 +926,7 @@ const radarSkills = [
 })();
 </script>
 
-<script is:inline define:vars={{ radarSkills, subRadars, danceRadar, prodRadar }}>
+<script is:inline define:vars={{ radarSkills, subRadars, danceRadar, prodRadar, personalityRadar }}>
 (function () {
   const cssStyle = getComputedStyle(document.documentElement);
   const cssVar = v => cssStyle.getPropertyValue(v).trim();
@@ -754,5 +1056,151 @@ const radarSkills = [
       { scores: sr.skills.map(s => s.james),  color: sr.color, fill: sr.color + '28', lineWidth: 2, dots: true },
     ], 220, 82);
   });
+
+  // personality radar
+  const persEl = document.getElementById('personalityRadarChart');
+  if (persEl) {
+    drawRadar(persEl, personalityRadar.axes, [
+      { scores: personalityRadar.idolAvg, color: IDOL_COLOR, lineWidth: 1.5, dash: [5, 3] },
+      { scores: personalityRadar.scores,  color: gold, fill: gold + '28', lineWidth: 2, dots: true },
+    ], 240, 88);
+  }
+
+  // ── vibrato waveform ──
+  const vibratoEl = document.getElementById('vibratoWave');
+  if (vibratoEl) {
+    const cssW = vibratoEl.parentElement.clientWidth - 32;
+    const cssH = 70;
+    const dpr = window.devicePixelRatio || 1;
+    vibratoEl.width = cssW * dpr; vibratoEl.height = cssH * dpr;
+    vibratoEl.style.width = cssW + 'px'; vibratoEl.style.height = cssH + 'px';
+    const vc = vibratoEl.getContext('2d');
+    vc.scale(dpr, dpr);
+    const VW = cssW, VH = cssH, vmid = VH / 2;
+    const breakX = VW * 0.55;
+    const vborder = border;
+
+    // center guide
+    vc.beginPath(); vc.moveTo(0, vmid); vc.lineTo(VW, vmid);
+    vc.strokeStyle = vborder; vc.lineWidth = 1; vc.setLineDash([2, 4]); vc.stroke(); vc.setLineDash([]);
+
+    // waveform
+    vc.beginPath(); vc.strokeStyle = gold; vc.lineWidth = 2;
+    vc.moveTo(0, vmid);
+    vc.lineTo(breakX, vmid);
+    const vibratoSpan = VW - breakX;
+    for (let x = 0; x <= vibratoSpan; x++) {
+      const t = x / vibratoSpan;
+      const amp = Math.min(t / 0.25, 1) * 9;
+      vc.lineTo(breakX + x, vmid + amp * Math.sin(t * 3.5 * 2 * Math.PI));
+    }
+    vc.stroke();
+
+    // break line
+    vc.beginPath(); vc.moveTo(breakX, 10); vc.lineTo(breakX, VH - 10);
+    vc.strokeStyle = gold + '55'; vc.lineWidth = 1; vc.setLineDash([3, 3]); vc.stroke(); vc.setLineDash([]);
+
+    // labels
+    vc.font = '10px system-ui,sans-serif'; vc.fillStyle = cssVar('--text-muted') || '#888';
+    vc.textAlign = 'center';
+    vc.fillText('straight tone', breakX * 0.5, vmid - 13);
+    vc.fillText('delayed vibrato', breakX + vibratoSpan * 0.5, vmid - 15);
+    vc.font = '9px system-ui,sans-serif';
+    vc.textAlign = 'left';  vc.fillText('note start', 4, VH - 4);
+    vc.textAlign = 'right'; vc.fillText('note end', VW - 4, VH - 4);
+  }
+
+  // ── dynamic range bar ──
+  const dynEl = document.getElementById('dynamicRange');
+  if (dynEl) {
+    const cssW = dynEl.parentElement.clientWidth - 32;
+    const cssH = 56;
+    const dpr = window.devicePixelRatio || 1;
+    dynEl.width = cssW * dpr; dynEl.height = cssH * dpr;
+    dynEl.style.width = cssW + 'px'; dynEl.style.height = cssH + 'px';
+    const dc = dynEl.getContext('2d');
+    dc.scale(dpr, dpr);
+    const DW = cssW;
+    const PAD = 20, barY = 18, barH = 18, barW = DW - PAD * 2;
+
+    const grad = dc.createLinearGradient(PAD, 0, PAD + barW, 0);
+    grad.addColorStop(0,   '#2a3a5a'); grad.addColorStop(0.4, '#3a5a4a');
+    grad.addColorStop(0.7, '#6a4a2a'); grad.addColorStop(1,   '#8a2a2a');
+    dc.fillStyle = grad;
+    dc.beginPath(); dc.roundRect(PAD, barY, barW, barH, 4); dc.fill();
+
+    // comfort zone mp→mf (40%–70%)
+    const cx = PAD + barW * 0.40, cw = barW * 0.30;
+    dc.fillStyle = gold + '55'; dc.strokeStyle = gold; dc.lineWidth = 1.5;
+    dc.beginPath(); dc.roundRect(cx, barY, cw, barH, 3); dc.fill(); dc.stroke();
+
+    const zones = [
+      { label: 'pp', p: 0.10 }, { label: 'p', p: 0.30 }, { label: 'mp', p: 0.475 },
+      { label: 'mf', p: 0.625 }, { label: 'f', p: 0.775 }, { label: 'ff', p: 0.925 },
+    ];
+    zones.forEach(z => {
+      const comfort = z.label === 'mp' || z.label === 'mf';
+      dc.font = comfort ? 'bold 10px system-ui,sans-serif' : '10px system-ui,sans-serif';
+      dc.fillStyle = comfort ? gold : (cssVar('--text-muted') || '#888');
+      dc.textAlign = 'center'; dc.textBaseline = 'middle';
+      dc.fillText(z.label, PAD + barW * z.p, barY + barH / 2);
+    });
+
+    dc.font = '9px system-ui,sans-serif'; dc.fillStyle = gold;
+    dc.textAlign = 'center'; dc.textBaseline = 'top';
+    dc.fillText('comfort zone', cx + cw / 2, barY + barH + 4);
+    dc.fillStyle = cssVar('--text-faint') || '#555';
+    dc.textAlign = 'left';  dc.fillText('softest', PAD, barY + barH + 4);
+    dc.textAlign = 'right'; dc.fillText('loudest', DW - PAD, barY + barH + 4);
+  }
+
+  // ── timing pocket diagram ──
+  const timingEl = document.getElementById('timingDiagram');
+  if (timingEl) {
+    const cssW = timingEl.parentElement.clientWidth - 32;
+    const cssH = 88;
+    const dpr = window.devicePixelRatio || 1;
+    timingEl.width = cssW * dpr; timingEl.height = cssH * dpr;
+    timingEl.style.width = cssW + 'px'; timingEl.style.height = cssH + 'px';
+    const tc = timingEl.getContext('2d');
+    tc.scale(dpr, dpr);
+    const TW = cssW, TH = cssH;
+    const PAD_L = 68, PAD_R = 16;
+    const bW = (TW - PAD_L - PAD_R) / 4;
+    const rows = [
+      { label: 'Ahead',   y: 24, color: '#60a5fa' },
+      { label: 'On Beat', y: 44, color: cssVar('--text-muted') || '#888' },
+      { label: 'Pocket',  y: 64, color: gold },
+    ];
+
+    tc.font = '10px system-ui,sans-serif'; tc.textAlign = 'right'; tc.textBaseline = 'middle';
+    rows.forEach(r => {
+      tc.beginPath(); tc.moveTo(PAD_L, r.y); tc.lineTo(TW - PAD_R, r.y);
+      tc.strokeStyle = border; tc.lineWidth = 1; tc.setLineDash([2, 4]); tc.stroke(); tc.setLineDash([]);
+      tc.fillStyle = r.color; tc.fillText(r.label, PAD_L - 6, r.y);
+    });
+
+    for (let b = 0; b < 4; b++) {
+      const beatX = PAD_L + b * bW + bW * 0.5;
+      tc.beginPath(); tc.moveTo(beatX, 10); tc.lineTo(beatX, TH - 10);
+      tc.strokeStyle = border; tc.lineWidth = 1; tc.stroke();
+      tc.font = '9px system-ui,sans-serif'; tc.fillStyle = cssVar('--text-faint') || '#555';
+      tc.textAlign = 'center'; tc.textBaseline = 'top'; tc.fillText(`beat ${b + 1}`, beatX, 2);
+
+      // ghost on-beat dot
+      tc.beginPath(); tc.arc(beatX, rows[1].y, 4, 0, 2 * Math.PI);
+      tc.fillStyle = border; tc.fill();
+      // James pocket dot (slightly behind)
+      tc.beginPath(); tc.arc(beatX + bW * 0.08, rows[2].y, 5, 0, 2 * Math.PI);
+      tc.fillStyle = gold; tc.fill();
+    }
+
+    // legend
+    tc.font = '9px system-ui,sans-serif'; tc.textBaseline = 'bottom';
+    tc.fillStyle = gold; tc.textAlign = 'right';
+    tc.fillText('● James (pocket)', TW - PAD_R, TH);
+    tc.fillStyle = border;
+    tc.fillText('○ exact beat  ', TW - PAD_R - 110, TH);
+  }
 })();
 </script>
