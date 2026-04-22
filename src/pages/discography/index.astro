@@ -6,6 +6,7 @@ const base = import.meta.env.BASE_URL;
 const albums = [
   {
     slug: 'like-i-do',
+    cover: 'like_i_do.png',
     title: 'LIKE I DO',
     subtitle: 'GONUNMA',
     year: '2016',
@@ -24,6 +25,7 @@ const albums = [
   },
   {
     slug: 'softest-touch',
+    cover: 'softest_touch.png',
     title: 'SOFTEST TOUCH',
     subtitle: '1st Mini Album',
     year: '2022',
@@ -42,6 +44,7 @@ const albums = [
   },
   {
     slug: 'pulse-era',
+    cover: 'pulse.png',
     title: 'PULSE',
     subtitle: '1st Studio Album',
     year: '2023',
@@ -60,6 +63,7 @@ const albums = [
   },
   {
     slug: 'are-u-still',
+    cover: 'are_you_still.png',
     title: 'ARE U STILL',
     subtitle: '2nd Studio Album',
     year: '2024',
@@ -78,6 +82,7 @@ const albums = [
   },
   {
     slug: 'sour-honey',
+    cover: 'sour_honey.png',
     title: 'SOUR | HONEY',
     subtitle: '3rd Studio Album',
     year: '2025',
@@ -96,6 +101,7 @@ const albums = [
   },
   {
     slug: 'decade',
+    cover: 'decade.png',
     title: 'DECADE',
     subtitle: 'Anthology',
     year: '2026',
@@ -248,16 +254,15 @@ const genreMap = (() => {
 
   <!-- Album list -->
   <div class="flex flex-col gap-3 mb-8">
-    {albums.map((a, i) => (
+    {albums.map((a) => (
       <a href={`${base}discography/${a.slug}`}
         class="flex gap-4 border rounded-xl p-5 transition-all group"
         style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
 
-        <!-- Color slab -->
-        <div class="w-16 h-16 shrink-0 rounded-xl flex items-center justify-center text-2xl font-black relative overflow-hidden"
-          style={`background-color:${a.color}20`}>
+        <!-- Cover art -->
+        <div class="w-16 h-16 shrink-0 rounded-xl overflow-hidden relative">
+          <img src={`${base}cover/${a.cover}`} alt={a.title} class="w-full h-full object-cover" />
           <div class="absolute inset-y-0 left-0 w-1" style={`background-color:${a.color}`}></div>
-          <span style={`color:${a.color}`}>{i + 1}</span>
         </div>
 
         <!-- Info -->

@@ -173,9 +173,12 @@ const years = [...new Set(credits.map(c => c.year))];
 
   <!-- L.I.N.A. Project -->
   <section class="mb-12">
-    <div class="flex items-center gap-3 mb-5">
-      <h2 class="text-base font-bold" style="color:var(--text)">L.I.N.A. — Melon Collaboration Project</h2>
-      <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:color-mix(in srgb,var(--gold) 12%,transparent);color:var(--gold)">{linaProject.released}</span>
+    <div class="flex items-center gap-4 mb-5">
+      <img src={`${base}cover/lina.png`} alt="L.I.N.A." class="w-14 h-14 rounded-lg object-cover shrink-0" />
+      <div class="flex items-center gap-3 flex-wrap">
+        <h2 class="text-base font-bold" style="color:var(--text)">L.I.N.A. — Melon Collaboration Project</h2>
+        <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:color-mix(in srgb,var(--gold) 12%,transparent);color:var(--gold)">{linaProject.released}</span>
+      </div>
     </div>
 
     <!-- Credits block -->

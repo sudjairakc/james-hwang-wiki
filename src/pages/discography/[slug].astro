@@ -3,9 +3,10 @@ import WikiLayout from '../../layouts/WikiLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 
-const slugMap: Record<string, { file: string; title: string; subtitle: string; year: string; date: string; color: string }> = {
+const slugMap: Record<string, { file: string; cover: string; title: string; subtitle: string; year: string; date: string; color: string }> = {
   'like-i-do': {
     file: '01-like-i-do',
+    cover: 'like_i_do.png',
     title: 'LIKE I DO',
     subtitle: 'GONUNMA · Mini Album',
     year: '2016',
@@ -14,6 +15,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
   },
   'softest-touch': {
     file: '03-softest-touch',
+    cover: 'softest_touch.png',
     title: 'SOFTEST TOUCH',
     subtitle: '1st Mini Album',
     year: '2022',
@@ -22,6 +24,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
   },
   'pulse-era': {
     file: '04-pulse-era',
+    cover: 'pulse.png',
     title: 'PULSE',
     subtitle: '1st Studio Album',
     year: '2023',
@@ -30,6 +33,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
   },
   'are-u-still': {
     file: '05-are-u-still',
+    cover: 'are_you_still.png',
     title: 'ARE U STILL',
     subtitle: '2nd Studio Album',
     year: '2024',
@@ -38,6 +42,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
   },
   'sour-honey': {
     file: '06-sour-honey',
+    cover: 'sour_honey.png',
     title: 'SOUR|HONEY',
     subtitle: '3rd Studio Album',
     year: '2025',
@@ -46,6 +51,7 @@ const slugMap: Record<string, { file: string; title: string; subtitle: string; y
   },
   'decade': {
     file: '07-decade',
+    cover: 'decade.png',
     title: 'DECADE',
     subtitle: 'Anthology Album',
     year: '2026',
@@ -273,10 +279,9 @@ const decadeDisks = slug === 'decade' ? parseDecadeDisks(rawText) : [];
 
   <!-- Album header -->
   <div class="flex gap-5 items-start mb-8">
-    <div class="w-20 h-20 shrink-0 rounded-xl flex items-center justify-center text-3xl font-black relative overflow-hidden"
-      style={`background-color:${meta.color}20`}>
+    <div class="w-20 h-20 shrink-0 rounded-xl overflow-hidden relative">
+      <img src={`${base}cover/${meta.cover}`} alt={meta.title} class="w-full h-full object-cover" />
       <div class="absolute inset-y-0 left-0 w-1.5" style={`background-color:${meta.color}`}></div>
-      <span style={`color:${meta.color}`}>{meta.title.slice(0, 1)}</span>
     </div>
     <div class="flex-1">
       <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>Discography</div>

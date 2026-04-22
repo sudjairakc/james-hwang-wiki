@@ -13,12 +13,12 @@ const stats = [
 ];
 
 const albums = [
-  { slug: 'like-i-do',      title: 'LIKE I DO',      year: '2016', type: 'Mini Album',       streams: '210M+', color: '#c9a84c' },
-  { slug: 'softest-touch',  title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '320M+', color: '#9b7fc8' },
-  { slug: 'pulse-era',      title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
-  { slug: 'are-u-still',    title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#5a7aaa' },
-  { slug: 'sour-honey',     title: 'SOUR|HONEY',     year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
-  { slug: 'decade',         title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '480M+', color: '#6e5a7c' },
+  { slug: 'like-i-do',      cover: 'like_i_do.png',     title: 'LIKE I DO',      year: '2016', type: 'Mini Album',       streams: '210M+', color: '#c9a84c' },
+  { slug: 'softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '320M+', color: '#9b7fc8' },
+  { slug: 'pulse-era',      cover: 'pulse.png',         title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
+  { slug: 'are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#5a7aaa' },
+  { slug: 'sour-honey',     cover: 'sour_honey.png',    title: 'SOUR|HONEY',     year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
+  { slug: 'decade',         cover: 'decade.png',        title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '480M+', color: '#6e5a7c' },
 ];
 
 const milestones = [
@@ -200,11 +200,10 @@ const sectionGroups = [
         <a href={`${base}discography/${a.slug}`}
           class="border rounded-xl p-3 transition-all group flex flex-col"
           style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
-          <!-- Album art placeholder -->
-          <div class="w-full aspect-square rounded-lg mb-2.5 flex items-center justify-center relative overflow-hidden"
-            style={`background-color:${a.color}15`}>
+          <!-- Cover art -->
+          <div class="w-full aspect-square rounded-lg mb-2.5 overflow-hidden relative">
+            <img src={`${base}cover/${a.cover}`} alt={a.title} class="w-full h-full object-cover" />
             <div class="absolute inset-x-0 bottom-0 h-0.5" style={`background-color:${a.color}`}></div>
-            <span class="text-xl font-black" style={`color:${a.color}`}>{a.title.slice(0, 1)}</span>
           </div>
           <div class="text-xs font-bold truncate" style="color:var(--text)">{a.title}</div>
           <div class="text-xs mt-0.5" style="color:var(--text-muted)">{a.year}</div>
