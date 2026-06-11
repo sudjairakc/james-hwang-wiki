@@ -5,7 +5,10 @@
       "Bash(sed -i '' 's/13\\\\. SOCIAL/13. SHOOK/' src/content/wiki/tours/index.md)",
       "Bash(sed -i '' 's/SOCIAL — ≈ 58M+/SHOOK — ≈ 58M+/' src/content/wiki/ecosystem/commercial_metrics.md)",
       "Bash(sed -i '' \"s/title: 'SOCIAL', era: 'SOUR | HONEY'/title: 'SHOOK', era: 'SOUR | HONEY'/\" src/pages/tours/decade.astro)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(node -e ' *)",
+      "Bash(grep -nE \"^#{1,3} \" src/content/wiki/ecosystem/commercial_metrics.md)",
+      "Bash(grep -nE \"^#{1,3} \" src/content/wiki/ecosystem/touring_ecosystem.md)"
     ]
   }
 }

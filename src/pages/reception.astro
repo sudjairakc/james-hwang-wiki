@@ -1,0 +1,320 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+const base = import.meta.env.BASE_URL;
+
+// ── A · Aggregate critic scores per album ──
+// อ้างอิงจาก critic assessment ใน analysis.md (star → aggregator /100)
+const albumScores = [
+  { album: 'LIKE I DO',        year: 2016, color: '#c9a84c', score: 71, stars: '★★★½',  tag: '"Seed planted in the wrong season"', note: 'Pre-debut mini ถูก rediscover ภายหลังในฐานะ early blueprint — ตอนปล่อยถูก critic มองข้ามเพราะอยู่ใน idol-project frame' },
+  { album: 'SOFTEST TOUCH',    year: 2022, color: '#9b7fc8', score: 80, stars: '★★★★',  tag: '"The permission slip he wrote himself"', note: 'Solo debut ที่ critic ใช้ยืนยันว่า James เป็น songwriter ที่มี distinct voice ไม่ใช่ idol ที่ทำ R&B' },
+  { album: 'PULSE',            year: 2023, color: '#5a7c6a', score: 85, stars: '★★★★½', tag: '"The statement album"', note: 'อัลบั้มที่ critic ยกว่า coherent ที่สุด — self-produced ทุกเพลงครั้งแรก, performance-single design ล้ำยุค' },
+  { album: 'ARE U STILL',      year: 2024, color: '#5a7aaa', score: 88, stars: '★★★★★', tag: '"The apex"', note: 'Career peak · aggregator 88/100 · Grammy Best Progressive R&B Album — ตัว consensus ที่ critic เห็นพ้องว่าเป็น masterwork', highlight: true },
+  { album: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', score: 79, stars: '★★★★',  tag: '"The graceful recalibration"', note: 'Deliberate cooldown หลัง ARE U STILL — Pharrell collab เป็น highlight แต่ HONEY side เสีย momentum ช่วงปลาย' },
+  { album: 'DECADE',           year: 2026, color: '#6e5a7c', score: 76, stars: '★★★★',  tag: '"The early anthology"', note: 'Anthology ที่ critic ชมตัวงานแต่ตั้งคำถามเรื่อง timing — ออกเร็วเกินกว่าที่ career จะมี distance พอจะ look back' },
+];
+
+// ── A · Publication scorecard matrix ──
+const publications = ['Pitchfork', 'Rolling Stone', 'NME', 'AllMusic', 'Consequence', 'IZM (KR)'];
+const scoreMatrix = [
+  { album: 'LIKE I DO',         color: '#c9a84c', scores: ['—',   '3.0/5', '6/10', '3.5/5', '—',     '3.0/5'] },
+  { album: 'SOFTEST TOUCH',     color: '#9b7fc8', scores: ['7.6', '3.5/5', '7/10', '4/5',   'B',     '4.0/5'] },
+  { album: 'PULSE',             color: '#5a7c6a', scores: ['8.0', '4/5',   '8/10', '4/5',   'A−',    '4.0/5'] },
+  { album: 'ARE U STILL',       color: '#5a7aaa', scores: ['8.4', '4.5/5', '9/10', '4.5/5', 'A',     '4.5/5'], highlight: true },
+  { album: "CAN'T LEAVE ALONE", color: '#c06080', scores: ['7.5', '3.5/5', '7/10', '4/5',   'B+',    '3.5/5'] },
+  { album: 'DECADE',            color: '#6e5a7c', scores: ['7.2', '3.5/5', '7/10', '3.5/5', 'B',     '3.5/5'] },
+];
+
+// ── A · Year-end / best-of placements ──
+const yearEnd = [
+  { pub: 'Pitchfork', list: 'Best Albums of 2024', rank: '#19', work: 'ARE U STILL', color: '#5a7aaa' },
+  { pub: 'Rolling Stone', list: '50 Best Albums of 2024', rank: '#23', work: 'ARE U STILL', color: '#5a7aaa' },
+  { pub: 'NME', list: 'Albums of the Year 2024', rank: '#8', work: 'ARE U STILL', color: '#5a7aaa' },
+  { pub: 'Consequence', list: 'Top R&B Albums 2024', rank: '#4', work: 'ARE U STILL', color: '#5a7aaa' },
+  { pub: 'Billboard', list: 'Best K-Adjacent Crossovers', rank: 'Featured', work: 'PULSE', color: '#5a7c6a' },
+  { pub: 'The Needle Drop', list: 'Year-End Honorable Mentions', rank: 'Strong 7', work: 'ARE U STILL', color: '#5a7aaa' },
+];
+
+// ── A · Critical consensus evolution ──
+const consensusArc = [
+  { phase: 'Underrated', period: '2016 — 2022', desc: 'ช่วง idol-era + solo debut — critic ฝั่ง Western แทบไม่จับ ส่วน critic เกาหลีมองเป็น "idol ที่ทำ R&B ได้ดีเกินคาด" คำชมมักมาพร้อม idol qualifier' },
+  { phase: 'Acknowledged', period: '2023 — 2024', desc: 'PULSE → ARE U STILL เปลี่ยน narrative — Pitchfork 8.4, Grammy win ทำให้ถูกพูดถึงในฐานะ R&B auteur จริง แต่ยังติด "for a K-pop artist" frame' },
+  { phase: '"Just R&B"', period: '2024 — present', desc: 'NME ประกาศว่าเป็น "the moment K-R&B stopped being a genre qualifier and became just R&B" — critical ceiling ถูกยกออกจากหมวด national/ethnic', highlight: true },
+];
+
+// ── B · YouTube video essays & deep dives ──
+const videoEssays = [
+  { channel: 'The Sonic Lens', views: '2.4M', runtime: '28:14', title: 'How James Hwang Made Restraint Sound Powerful', thesis: 'วิเคราะห์ liminal-space songwriting — ทำไมเพลงเขาอยู่ "ก่อน/หลัง" moment เสมอ ไม่เคยอยู่ตรง moment เอง', tag: 'Songwriting analysis' },
+  { channel: 'Pitch & Pocket', views: '1.1M', runtime: '19:42', title: 'The PULSE Effect: When an Idol Self-Produced an Entire Album', thesis: 'Break down production ของ PULSE ทีละ track — groove-first design + falsetto hook ในฐานะ live-performance blueprint', tag: 'Production breakdown' },
+  { channel: 'RANThology', views: '880K', runtime: '24:08', title: 'ARE U STILL Is the K-R&B Album That Refused the Label', thesis: 'อธิบายว่าทำไม neo-soul/nu-disco pivot ถึงทำให้ critic เลิกใช้คำว่า K-R&B — และทำไม Grammy committee ถึงตามทัน', tag: 'Genre / culture' },
+  { channel: 'voiceprint', views: '1.6M', runtime: '15:30', title: "The Falsetto That Built a Fandom — GONUNMA's Vocal Identity", thesis: 'Spectrogram analysis ของ vocal signature — breath texture + tone-recognition latency ที่ต่ำผิดปกติ', tag: 'Vocal technique' },
+  { channel: 'Half-Step', views: '640K', runtime: '32:55', title: 'The Pace Problem: Is James Hwang Releasing Too Fast?', thesis: 'มุม artist-first ที่ตั้งคำถามกับ output 4 projects/4 ปี — catalog residence time ที่หดลง และ DECADE ที่มาเร็วเกิน', tag: 'Critique / discourse' },
+  { channel: 'Crate Diggers TH', views: '420K', runtime: '21:17', title: 'เจมส์ ฮวาง: ทำไมคนไทยถึงเคลมเป็นศิลปินบ้านเรา', thesis: 'สำรวจ Thai-heritage angle + LINE fandom ที่ใหญ่สุดนอกเกาหลี — เส้นแบ่งระหว่าง national pride กับ artistic merit', tag: 'Regional / fandom' },
+];
+
+// ── B · Reaction & discourse moments ──
+const discourse = [
+  { platform: 'Reddit · r/popheads', title: 'SELFISH sequencing discourse', desc: 'Thread วิเคราะห์ว่า SELFISH ถูกวางท้ายอัลบั้ม (track 9) เพื่อ gut-punch — กลายเป็น top post ของ subreddit ในสัปดาห์นั้น 14K upvotes', metric: '14K upvotes' },
+  { platform: 'X / Twitter', title: '"just R&B not K-R&B" quote tweet', desc: 'NME pull-quote ถูก quote-tweet กว่า 38K ครั้ง — จุดถกเถียงเรื่อง genre labeling ตาม passport vs craft', metric: '38K QRTs' },
+  { platform: 'YouTube reactions', title: 'TEARS ON A PRETTY FACE first-listen wave', desc: 'Reaction channels จับ moment เปลี่ยน key ใน bridge เป็น "the gasp moment" — compilation videos รวมยอดเกิน 9M views', metric: '9M+ combined' },
+  { platform: 'TikTok', title: 'OVERSIZED JACKET lyric trend', desc: '"dirty Adidas, grocery lines" กลายเป็น sound ที่คนใช้เล่า mundane-romance ของตัวเอง — 210K video creations', metric: '210K creations' },
+];
+
+// ── C · Industry voices ──
+const industryQuotes = [
+  { quote: 'เขาเขียนเพลงเหมือนคนที่รู้ว่า silence ก็เป็น instrument หนึ่ง — นั่นคือสิ่งที่ producer ส่วนใหญ่ใช้เวลาทั้งชีวิตกว่าจะเข้าใจ', who: 'A&R executive, major US label', context: 'พูดในพอดแคสต์อุตสาหกรรม หลัง ARE U STILL' },
+  { quote: 'I came in as a feature, but that song was already his. People assume I produced it — I didn\'t. He did.', who: 'Pharrell Williams', context: 'ว่าด้วย CAN\'T LEAVE ALONE (feat. Pharrell) — แก้ misconception ว่าใครเป็น primary composer' },
+  { quote: 'The K-R&B tag was always a marketing convenience. ARE U STILL made it indefensible.', who: 'NME senior critic', context: 'บทวิจารณ์ที่กลายเป็น consensus-defining piece' },
+  { quote: 'ในฐานะ producer เกาหลี ผมเคยคิดว่า falsetto-led R&B ขายยากในตลาดหลัก เขาพิสูจน์ว่าผมคิดผิด', who: 'Veteran SM-era producer', context: 'สัมภาษณ์ใน Korean music outlet' },
+];
+
+// ── C · Peer positioning tier ──
+const peerTier = {
+  cols: ['Dimension', 'Tier-1 K-soloist', 'Western R&B auteur', 'James Hwang'],
+  rows: [
+    ['Critical ceiling', 'National press', 'Global press', 'Global press (post-2024)'],
+    ['Genre framing', '"K-R&B"', '"R&B"', 'Transitioned K-R&B → R&B'],
+    ['Production authorship', 'Collaborative', 'Self / co-produced', 'Self-produced (PULSE+)'],
+    ['Awards reach', 'Domestic', 'Grammy field', 'Grammy winner'],
+    ['Cultural ownership', 'Owned', 'Owned', 'Still contested in West'],
+  ],
+};
+
+// ── E · Influence on next generation ──
+const influence = [
+  { artist: '4th-gen K-R&B soloists', desc: 'อ้าง James เป็น proof-of-concept ว่า idol สามารถ pivot เป็น self-produced auteur ได้โดยไม่ต้องออกจากกลุ่ม' },
+  { artist: 'SEA-origin idols', desc: '"James Hwang pathway" ถูกใช้เป็นคำเรียก trajectory ของ foreign-born idol ที่ build solo credibility ผ่าน craft ไม่ใช่ visual' },
+  { artist: 'Independent producer-artists', desc: 'JH Company single-artist model ถูกยกเป็น case study ของ creator-owned label ที่ไม่ขยายเป็น roster' },
+  { artist: 'Vocal-technique creators', desc: 'Falsetto-led restraint ถูก reverse-engineer ใน vocal coaching content — "the GONUNMA approach" กลายเป็นคำในวงการ' },
+];
+---
+
+<WikiLayout title="Critical Reception" section="Image" relatedPages={[
+  { label: 'Artistry & Analysis', href: `${base}artistry` },
+  { label: 'Cultural Impact', href: `${base}cultural-impact` },
+  { label: 'Awards', href: `${base}awards` },
+  { label: 'Discography', href: `${base}discography` },
+  { label: 'Gemzen Fandom', href: `${base}fandom` },
+]}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">Image</div>
+    <h1 class="wiki-title mb-2">Critical Reception & Media</h1>
+    <p class="text-sm" style="color:var(--text-muted)">การตอบรับเชิงวิจารณ์ · video essay culture · industry voices · 2016–2026</p>
+  </div>
+
+  <!-- Summary stat cards -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '88', label: 'Peak Metascore', sub: 'ARE U STILL (2024)' },
+      { val: '8.4', label: 'Highest Pitchfork', sub: 'ARE U STILL' },
+      { val: '1', label: 'Grammy Win', sub: 'Best Progressive R&B' },
+      { val: '6', label: 'Year-End Lists', sub: '2024 cycle' },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+        <div class="text-xs mt-0.5" style="color:var(--text-faint)">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- ── A1 · Aggregate scores ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Aggregate Critic Scores</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">Metascore-style aggregate ต่ออัลบั้ม (จาก critic assessment) · /100</p>
+    <div class="flex flex-col gap-3">
+      {albumScores.map(a => (
+        <div class="rounded-lg border overflow-hidden" style={`border-color:${a.highlight ? `color-mix(in srgb,${a.color} 45%,var(--border))` : 'var(--border)'};background-color:var(--bg-surface)`}>
+          <div class="flex items-center gap-4 px-4 py-3">
+            <!-- score badge -->
+            <div class="flex flex-col items-center justify-center rounded-lg shrink-0" style={`width:54px;height:54px;background-color:color-mix(in srgb,${a.color} 16%,var(--bg-muted))`}>
+              <span class="text-lg font-black leading-none" style={`color:${a.color}`}>{a.score}</span>
+              <span class="text-xs leading-none mt-0.5" style="color:var(--text-faint)">/100</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm font-bold" style="color:var(--text)">{a.album}</span>
+                <span class="text-xs font-mono" style="color:var(--text-faint)">{a.year}</span>
+                <span class="text-xs" style={`color:${a.color}`}>{a.stars}</span>
+              </div>
+              <div class="text-xs italic mt-0.5" style="color:var(--text-muted)">{a.tag}</div>
+            </div>
+          </div>
+          <!-- score bar -->
+          <div class="h-1.5 w-full" style="background-color:var(--bg-muted)">
+            <div class="h-full" style={`width:${a.score}%;background-color:${a.color}`}></div>
+          </div>
+          <div class="px-4 py-2.5">
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{a.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── A2 · Publication scorecard matrix ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Publication Scorecard</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">คะแนนรายสำนัก · "—" = ไม่ได้รีวิว (ส่วนใหญ่ pre-debut)</p>
+    <div class="rounded-lg border overflow-x-auto" style="border-color:var(--border)">
+      <div class="min-w-[640px]">
+        <!-- header -->
+        <div class="grid items-center px-3 py-2.5" style={`grid-template-columns:160px repeat(${publications.length}, 1fr);background-color:color-mix(in srgb,var(--gold) 6%,var(--bg-muted));border-bottom:1px solid color-mix(in srgb,var(--gold) 25%,transparent)`}>
+          <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--text-muted)">Album</div>
+          {publications.map(p => (
+            <div class="text-xs font-semibold text-center" style="color:var(--text-muted)">{p}</div>
+          ))}
+        </div>
+        {scoreMatrix.map((row, ri) => (
+          <div class="grid items-center px-3 py-2.5" style={`grid-template-columns:160px repeat(${publications.length}, 1fr);background-color:${row.highlight ? `color-mix(in srgb,${row.color} 7%,var(--bg-surface))` : 'var(--bg-surface)'};${ri < scoreMatrix.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}`}>
+            <div class="text-xs font-semibold flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full shrink-0" style={`background-color:${row.color}`}></span>
+              {row.album}
+            </div>
+            {row.scores.map(s => (
+              <div class="text-xs text-center font-mono" style={`color:${s === '—' ? 'var(--text-faint)' : 'var(--text)'}`}>{s}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── A3 · Year-end placements ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Year-End & Best-Of Placements</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">ส่วนใหญ่กระจุกที่ ARE U STILL — 2024 cycle</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {yearEnd.map(y => (
+        <div class="rounded-lg border flex items-center gap-3 px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-black px-2.5 py-1 rounded shrink-0" style={`background-color:color-mix(in srgb,${y.color} 16%,var(--bg-muted));color:${y.color}`}>{y.rank}</span>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-semibold">{y.pub}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{y.list}</div>
+          </div>
+          <span class="text-xs px-2 py-0.5 rounded shrink-0" style={`background-color:color-mix(in srgb,${y.color} 10%,transparent);color:${y.color}`}>{y.work}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── A4 · Critical consensus evolution ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Critical Consensus Evolution</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">เส้นทางจาก underrated → acknowledged → "just R&B"</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {consensusArc.map((c, i) => (
+        <div class="rounded-lg border overflow-hidden" style={`border-color:${c.highlight ? 'color-mix(in srgb,var(--gold) 45%,var(--border))' : 'var(--border)'};background-color:var(--bg-surface)`}>
+          <div class="px-4 py-2.5 border-b flex items-center gap-2" style={`border-color:var(--border);background-color:${c.highlight ? 'color-mix(in srgb,var(--gold) 8%,var(--bg-muted))' : 'var(--bg-muted)'}`}>
+            <span class="text-xs font-mono font-bold" style="color:var(--gold)">{i + 1}</span>
+            <span class="text-sm font-bold" style={c.highlight ? 'color:var(--gold)' : 'color:var(--text)'}>{c.phase}</span>
+          </div>
+          <div class="px-4 py-3">
+            <div class="text-xs font-mono mb-2" style="color:var(--text-faint)">{c.period}</div>
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{c.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── B1 · Video essays ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Video Essays & Deep Dives</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">YouTube long-form analysis culture — ส่วนสำคัญของ K-R&B fandom discourse</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {videoEssays.map(v => (
+        <div class="rounded-lg border overflow-hidden flex flex-col" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color:var(--border);background-color:var(--bg-muted)">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="text-xs" style="color:var(--gold)">▶</span>
+              <span class="text-xs font-semibold truncate" style="color:var(--text)">{v.channel}</span>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="text-xs font-mono" style="color:var(--text-faint)">{v.runtime}</span>
+              <span class="text-xs font-bold" style="color:var(--gold)">{v.views}</span>
+            </div>
+          </div>
+          <div class="px-4 py-3 flex-1">
+            <div class="text-sm font-semibold leading-snug mb-1.5">{v.title}</div>
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{v.thesis}</p>
+          </div>
+          <div class="px-4 pb-3">
+            <span class="text-xs px-2 py-0.5 rounded" style="background-color:color-mix(in srgb,var(--gold) 10%,transparent);color:var(--gold)">{v.tag}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── B2 · Reaction & discourse ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Reaction & Discourse Culture</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">Viral moments บน social platforms ที่ define การรับรู้ของแต่ละ era</p>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {discourse.map((d, i) => (
+        <div class="flex items-start gap-4 px-4 py-3.5" style={`background-color:var(--bg-surface);${i < discourse.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 50%,transparent)' : ''}`}>
+          <span class="text-xs font-semibold px-2 py-0.5 rounded shrink-0 mt-0.5" style="background-color:var(--bg-muted);color:var(--text-muted)">{d.platform}</span>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-semibold">{d.title}</div>
+            <p class="text-xs leading-relaxed mt-0.5 m-0" style="color:var(--text-muted)">{d.desc}</p>
+          </div>
+          <span class="text-xs font-bold shrink-0 mt-0.5" style="color:var(--gold)">{d.metric}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── C1 · Industry voices ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Industry Voices</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">คำพูดจาก exec · producer · critic ในวงการ</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {industryQuotes.map(q => (
+        <div class="rounded-lg border px-5 py-4 flex flex-col" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-2xl leading-none mb-2" style="color:color-mix(in srgb,var(--gold) 50%,transparent)">"</div>
+          <p class="text-sm leading-relaxed flex-1 m-0" style="color:var(--text)">{q.quote}</p>
+          <div class="mt-3 pt-3 border-t" style="border-color:color-mix(in srgb,var(--border) 50%,transparent)">
+            <div class="text-xs font-semibold" style="color:var(--gold)">{q.who}</div>
+            <div class="text-xs mt-0.5" style="color:var(--text-faint)">{q.context}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── C2 · Peer positioning ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">Peer Positioning</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">เทียบตำแหน่งกับ tier-1 K-soloist และ Western R&B auteur</p>
+    <div class="rounded-lg border overflow-x-auto" style="border-color:var(--border)">
+      <div class="min-w-[560px]">
+        <div class="grid px-3 py-2.5" style={`grid-template-columns:repeat(${peerTier.cols.length}, 1fr);background-color:color-mix(in srgb,var(--gold) 6%,var(--bg-muted));border-bottom:1px solid color-mix(in srgb,var(--gold) 25%,transparent)`}>
+          {peerTier.cols.map((c, ci) => (
+            <div class="text-xs font-semibold uppercase tracking-widest" style={`color:${ci === peerTier.cols.length - 1 ? 'var(--gold)' : 'var(--text-muted)'}`}>{c}</div>
+          ))}
+        </div>
+        {peerTier.rows.map((row, ri) => (
+          <div class="grid px-3 py-2.5 text-xs" style={`grid-template-columns:repeat(${peerTier.cols.length}, 1fr);background-color:var(--bg-surface);${ri < peerTier.rows.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}`}>
+            {row.map((cell, ci) => (
+              <div class={ci === 0 ? 'font-semibold' : ''} style={`color:${ci === row.length - 1 ? 'var(--text)' : 'var(--text-muted)'}`}>{cell}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── E · Influence on next generation ── -->
+  <section>
+    <h2 class="wiki-section mb-2">Influence on the Next Generation</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">มรดกเชิง trajectory — "James Hwang pathway"</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {influence.map(f => (
+        <div class="rounded-lg border-l-2 px-4 py-3" style="border-color:var(--gold);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+          <div class="text-sm font-semibold mb-1" style="color:var(--text)">{f.artist}</div>
+          <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{f.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>

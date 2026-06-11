@@ -55,6 +55,15 @@ const projects = [
   },
 ];
 
+const milestones = [
+  { date: 'Jun 2023', title: 'First global trend #1', desc: 'PULSE release ดัน #JamesHwang ขึ้น worldwide trending #1 บน X ครั้งแรก — 1.4M tweets ใน 24 ชม.', metric: '#1 WW · 1.4M tweets' },
+  { date: 'Aug 2023', title: 'HOW DOES IT FEEL — 100M club', desc: 'MV แตะ 100M views เป็นเพลงแรกในฐานะ independent artist หลังตั้ง JH Company', metric: '100M views' },
+  { date: 'Mar 2024', title: 'TEARS ON A PRETTY FACE billboard takeover', desc: 'Gemzen ระดมทุนซื้อ billboard 14 เมือง 6 ประเทศ ฉลอง MV release — รวมถึง Times Square และ Siam ใจกลางกรุงเทพ', metric: '14 cities · 6 countries' },
+  { date: 'Feb 2025', title: 'Grammy night stream surge', desc: 'คืนประกาศ Grammy ARE U STILL พุ่งขึ้น Spotify Global Daily Top 10 — catalog streams +340% ภายในวันเดียว', metric: '+340% catalog' },
+  { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: 'CAN\'T LEAVE ALONE (feat. Pharrell) เป็น MV ตัวที่สามที่แตะ 100M — confirm ฐาน global MV audience', metric: '3× 100M MV' },
+  { date: 'Jan 2026', title: 'DECADE anniversary fan project record', desc: 'Fan book 5,000 เล่ม sold out ใน 6 ชม. + global streaming relay 34 ประเทศ ฉลอง 10 ปี', metric: '34 countries' },
+];
+
 const merch = [
   {
     era: 'SOFTEST TOUCH · PULSE (Launch)',
@@ -237,6 +246,34 @@ const demographics = [
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- Community milestones -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">Community Milestones</h2>
+    <p class="text-xs mb-4" style="color:var(--text-muted)">บันทึกความเคลื่อนไหวระดับ fandom — trending, MV clubs, billboard takeovers, streaming records.</p>
+    <div class="relative pl-6">
+      <div class="absolute left-1.5 top-1 bottom-1 w-px" style="background-color:var(--border)"></div>
+      <div class="space-y-3">
+        {milestones.map(m => (
+          <div class="relative">
+            <div class="absolute -left-[18px] top-1.5 w-2.5 h-2.5 rounded-full border-2" style="background-color:var(--bg);border-color:var(--gold)"></div>
+            <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+              <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 border-b" style="border-color:color-mix(in srgb,var(--gold) 20%,transparent);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+                <div class="flex items-center gap-3">
+                  <span class="text-xs font-mono font-semibold" style="color:var(--gold)">{m.date}</span>
+                  <span class="text-sm font-semibold">{m.title}</span>
+                </div>
+                <span class="text-xs px-2 py-0.5 rounded border" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 8%,transparent)">{m.metric}</span>
+              </div>
+              <div class="px-4 py-3" style="background-color:var(--bg-surface)">
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{m.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 

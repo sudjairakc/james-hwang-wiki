@@ -224,6 +224,16 @@ const metrics: Record<string, AlbumMetrics> = {
   },
 };
 
+// Critic aggregate score per album (mirrors reception.astro)
+const critic: Record<string, { score: number; stars: string; tag: string }> = {
+  'like-i-do':    { score: 71, stars: '★★★½',  tag: 'Seed planted in the wrong season' },
+  'softest-touch':{ score: 80, stars: '★★★★',  tag: 'The permission slip he wrote himself' },
+  'pulse-era':    { score: 85, stars: '★★★★½', tag: 'The statement album' },
+  'are-u-still':  { score: 88, stars: '★★★★★', tag: 'The apex · Grammy winner' },
+  'sour-honey':   { score: 79, stars: '★★★★',  tag: 'The graceful recalibration' },
+  'decade':       { score: 76, stars: '★★★★',  tag: 'The early anthology' },
+};
+
 export function getStaticPaths() {
   return Object.keys({
     'like-i-do': true,
@@ -238,6 +248,7 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const meta = slugMap[slug];
 const m = metrics[slug];
+const cr = critic[slug];
 
 // --- Tracklist parsing ---
 
@@ -375,6 +386,14 @@ const albumArc = parseArc(summaryRaw, meta.title);
       <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>Discography</div>
       <h1 class="wiki-title mb-1">{meta.title}</h1>
       <p class="text-sm mb-3" style="color:var(--text-muted)">{meta.subtitle} · {meta.date}</p>
+      {cr && (
+        <a href={`${base}reception`} class="inline-flex items-center gap-2.5 rounded-lg border px-3 py-1.5 transition-colors critic-badge" style={`border-color:color-mix(in srgb,${meta.color} 35%,var(--border));background-color:color-mix(in srgb,${meta.color} 7%,var(--bg-surface));text-decoration:none`}>
+          <span class="text-base font-black leading-none" style={`color:${meta.color}`}>{cr.score}<span class="text-xs font-semibold" style="color:var(--text-faint)">/100</span></span>
+          <span class="text-xs" style={`color:${meta.color}`}>{cr.stars}</span>
+          <span class="text-xs italic" style="color:var(--text-muted)">"{cr.tag}"</span>
+          <span class="text-xs" style="color:var(--text-faint)">Critic score →</span>
+        </a>
+      )}
     </div>
   </div>
 
