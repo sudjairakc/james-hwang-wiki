@@ -125,7 +125,7 @@ Apple Music AsiaTop 10 หลายประเทศ <br />
 iTunes Album ChartTop 10 หลายประเทศใน Southeast Asia <br />
 Title track — SOURSpotify ≈ 145M+YouTube ≈ 120M+Melon peak: #8Circle Digital: Top 20 <br />
 Global flagship single — CAN’T LEAVE ALONE (feat. Pharrell Williams)Spotify ≈ 260M+YouTube ≈ 175M+ <br />
-Key tracksMYSTERY LADY — ≈ 92M+SOCIAL — ≈ 58M+TAKE YOU TONIGHT — ≈ 41M+ <br />
+Key tracksMYSTERY LADY — ≈ 92M+SHOOK — ≈ 58M+TAKE YOU TONIGHT — ≈ 41M+ <br />
 
 ### Impact marker
 

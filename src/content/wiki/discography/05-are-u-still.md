@@ -41,8 +41,9 @@ ARE U STILL เป็นสตูดิโออัลบั้มชุดท�
 If I Knew เคยเผยแพร่ล่วงหน้าในช่วง PULSE Tour (2023) และทำหน้าที่เป็น bridge track เชื่อม sonic language ระหว่างสอง era <br />
 Just A Dream (feat. Janet Jackson) เป็น duet neo-soul ที่ได้รับการกล่าวถึงในฐานะ legacy-lineage collaboration ระหว่างศิลปินร่วมยุค contemporary R&B กับ Janet Jackson และทำหน้าที่เป็น pivot track เข้าสู่ mid-album soul section <br />
 Purpose และ Selfish แสดงอิทธิพล R&B-soul แบบ 1990s และทำหน้าที่เป็น tonal stabilizers ของ album structure <br />
-Breathe เป็น groove-driven disco-soul performance track ที่ถูกเปรียบเทียบกับ aesthetic grammar ของ “Off the wall”-era funk-pop <br />
+Breathe (track 6) เป็น groove-driven disco-soul performance track ที่ถูกเปรียบเทียบกับ aesthetic grammar ของ “Off the wall”-era funk-pop และทำหน้าที่เป็นจุดตัดครึ่งอัลบั้มแบบ cathartic release <br />
 Ordinary Feelings และ Another Man’s Life เน้น lyric-driven neo-soul storytelling และ vocal phrasing เป็นแกนหลักของ track identity <br />
+Selfish ถูกวางไว้ที่ track 9 อย่างจงใจ — masterstroke ของ sequencing ที่ sound โยกแบบ 90s groove แต่เนื้อหาคือการสูญเสียที่หนักที่สุดในอัลบั้ม การวางตำแหน่งนี้ reframe ให้สองเพลงปิดท้ายทำงานเป็น “หลังสูญเสียแล้ว ยังเดินต่อได้” <br />
 สองเพลงปิดท้าย Somewhere, Somehow และ Out Here ใช้ abstract lyric structure และ floating harmonic progression เพื่อสร้าง reflective closing arc ของอัลบั้ม
 
 
@@ -129,10 +130,10 @@ Tracklist & Credits
 3. If I Knew — Alternative R&B / Soul | bridge track จาก era ก่อน — regret narrative | MV: 06/10/2023 | Kyle Dion (60,268 streams)
 4. Just A Dream (feat. Janet Jackson) — Neo Soul / Contemporary R&B | dreamlike duet — legacy connection กับสาย soul/pop icon | Isaiah Falls, Alex Isley (2,679,777 streams)
 5. Purpose — Alternative R&B / Soul | identity-driven songwriting | Paco (76,839 streams)
-6. Selfish — R&B / Soul | conflict between desire and morality | BOY SODA (378,017 streams)
-7. Breathe — Funk / Disco-Soul / R&B | groove-heavy performance track | MV: 04/02/2024 | Leven Kali (501,947 streams)
-8. Ordinary Feelings — Soulful Pop / R&B with '80s Soul | nostalgia-driven melody / analog influence | Mack Keane (942,644 streams)
-9. Another Man's Life — Alternative R&B / Soul | self-reflection / alternate reality theme | Mack Keane (208,482 streams)
+6. Breathe — Funk / Disco-Soul / R&B | groove-heavy performance track — จุดตัดครึ่งอัลบั้ม (cathartic release) | MV: 04/02/2024 | Leven Kali (501,947 streams)
+7. Ordinary Feelings — Soulful Pop / R&B with '80s Soul | nostalgia-driven melody / analog influence | Mack Keane (942,644 streams)
+8. Another Man's Life — Alternative R&B / Soul | self-reflection / alternate reality theme | Mack Keane (208,482 streams)
+9. Selfish — R&B / Soul | gut punch ของ sequencing — sound โยกแต่เนื้อหนักที่สุดในอัลบั้ม | BOY SODA (378,017 streams)
 10. Somewhere, Somehow — R&B / Soul / Disco / Hip-Hop | hybrid rhythmic structure | Gareth Donkin (119,430 streams)
 11. Out Here — Soul / R&B / Funk-Disco-Pop | closing statement — grounded identity | Gareth Donkin (90,016 streams)
 </div>

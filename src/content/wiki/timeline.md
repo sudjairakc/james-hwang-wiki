@@ -638,6 +638,8 @@ James กลับมาร่วมกิจกรรมวงแบบ full pa
 
 เข้าร่วม anniversary tour เกือบทั้งหมด ยกเว้นประเทศไทย ตามบริบทก่อนหน้า เป็น "official full-circle comeback" ในฐานะ idol หลังห่างหายกิจกรรมวง
 
+07/2026: หลังจบโปรเจกต์ครบรอบ 10 ปี Mark Lee ประกาศออกจาก NCT 127 เพื่อโฟกัสงานเดี่ยวและ international project — เป็นการออกจากวงของสมาชิก core คนแรกในเชิง active departure (ไม่ใช่ระบบ rotation) ตรงข้ามกับ James ที่แม้เคยมีข้อพิพาทกับ SM จนต้องตั้งค่ายเอง กลับเลือกอยู่กับ NCT 127 ต่อในฐานะ external artist — contrast ที่สื่อและแฟนหยิบมาพูดถึงอย่างกว้างขวาง (ดู [Artistry & Analysis](artistry) — Why He Stays)
+
 06/2026: ระหว่าง anniversary tour period มีรายงานว่า Ashley Liao ปรากฏตัวใน audience section ของหนึ่งใน U.S. concert stops แบบไม่เป็นทางการ ซึ่งเพิ่ม speculation ในหมู่แฟนคลับเกี่ยวกับความสัมพันธ์ของทั้งสอง
 
 

@@ -6,15 +6,12 @@ const kpis = [
   { val: '82%', label: 'James Ownership', sub: 'Controlling shareholder' },
   { val: '$95–160M', label: 'Annual Revenue', sub: 'Post-2026 projection' },
   { val: '$420–650M', label: 'Peak Valuation', sub: 'Post-RESONANCE scenario' },
-  { val: '120–190', label: 'Employees', sub: 'Post-2026 headcount' },
+  { val: '1', label: 'Artists Signed', sub: 'Single-artist by design' },
 ];
 
+// JH Company signs no other artists — single-artist studio by founder mandate
 const roster = [
-  { name: 'James Hwang', since: '2023', role: 'Founder / Flagship Artist' },
-  { name: 'Mark', since: '2026', role: 'Artist Roster Expansion' },
-  { name: 'Ten', since: '2026', role: 'Artist Roster Expansion' },
-  { name: 'Yuta', since: '2026', role: 'Artist Roster Expansion' },
-  { name: 'Johnny', since: '2026', role: 'Artist Roster Expansion' },
+  { name: 'James Hwang', since: '2023', role: 'Founder · Sole Artist' },
 ];
 
 const partners = [
@@ -28,7 +25,7 @@ const partners = [
 const divisions = [
   { name: 'Music', icon: '♪', desc: 'Catalog rollout · Producers network · Sonic identity' },
   { name: 'Touring', icon: '◎', desc: 'Primary revenue engine · Dream Maker / Live Nation / AEG' },
-  { name: 'Artist Management', icon: '◇', desc: 'Mark, Ten, Yuta, Johnny roster management' },
+  { name: 'Publishing & Songwriting', icon: '◇', desc: 'Self-catalog publishing + tracks written for other artists' },
   { name: 'Brand Partnerships', icon: '◆', desc: '≈ $16M–22M annual endorsement throughput' },
   { name: 'Film & Franchise', icon: '▶', desc: 'RESONANCE universe · Disney+ / Trilogy films' },
 ];
@@ -53,7 +50,7 @@ const ipPortfolio = [
     asset: 'Music Catalog (2022–present)',
     type: 'Recorded Music IP',
     ownership: '100% (JH Company) · Distributed via Warner Music Korea',
-    detail: 'SOFTEST TOUCH, PULSE, ARE U STILL, SOUR|HONEY, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog',
+    detail: "SOFTEST TOUCH, PULSE, ARE U STILL, CAN'T LEAVE ALONE, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog",
   },
   {
     asset: 'SM-Era Catalog (2016–2023)',
@@ -109,14 +106,19 @@ const companyCulture = [
     text: 'สวัสดิการของ JH Company อยู่ในระดับสูงที่สุดในวงการบันเทิงเกาหลี — ประกันสุขภาพเต็มรูปแบบ, ค่าตอบแทนแข่งขันได้กับ agency ใหญ่, นโยบาย work-life balance ที่เป็นทางการ, และวัฒนธรรมองค์กรที่ไม่มีระบบลำดับชั้นแบบ idol-agency แบบดั้งเดิม ชื่อเสียงด้านนี้แพร่กระจายในวงการและทำให้มีใบสมัครงานเข้ามาต่อเนื่อง แม้ไม่ได้ประกาศรับสมัครเสมอไป',
   },
   {
+    label: 'Single-Artist Mandate',
+    color: '#5a7aaa',
+    text: 'JH Company ไม่เซ็นศิลปินคนอื่นเลย — เป็น single-artist studio โดยเจตนาของ James ตั้งแต่ก่อตั้ง แม้จะมีศิลปินและ trainee จำนวนมากติดต่อเข้ามา (รวมถึงเพื่อนร่วมวงเก่า) James ปฏิเสธทุกครั้ง โดยให้เหตุผลว่าไม่ต้องการสร้างความสัมพันธ์แบบ agency–artist ที่เขาเคยเป็นฝ่ายเสียเปรียบ และไม่ต้องการให้ใครต้องแบกภาระ creative control ของเขา บริษัทจึงทำหน้าที่เป็น personal creative vehicle + IP house ไม่ใช่ label ที่ขยาย roster',
+  },
+  {
     label: 'Workload Reality',
     color: '#facc15',
-    text: 'สวัสดิการดีไม่ได้แปลว่างานเบา — ด้วย roster ศิลปินที่ขยายตัว (Mark, Ten, Yuta, Johnny), James เองที่ทำงานในทุก project อย่างเข้มข้น, และ RESONANCE franchise ที่ต้องการ production pipeline ตลอดเวลา งานหนักมากสำหรับทีมที่ยังเล็ก headcount หลักร้อยต้องรับผิดชอบ output ระดับ major label ทั้งฝั่งดนตรีและภาพยนตร์ turnover ต่ำเพราะค่าตอบแทนดี แต่ burnout เป็นประเด็นที่รับรู้ภายในองค์กร',
+    text: 'สวัสดิการดีไม่ได้แปลว่างานเบา — James ทำงานในทุก project อย่างเข้มข้น (composition, lyrics, arrangement, production, ภาพยนตร์) และ RESONANCE franchise ต้องการ production pipeline ตลอดเวลา งานหนักมากสำหรับทีมที่ตั้งใจให้เล็ก เพราะไม่มี roster อื่นมาช่วยกระจาย output แต่ทุกอย่างยังหมุนรอบศิลปินคนเดียว turnover ต่ำเพราะค่าตอบแทนดี แต่ burnout เป็นประเด็นที่รับรู้ภายในองค์กร',
   },
   {
     label: 'Revenue Ceiling Effect',
     color: '#c06080',
-    text: 'James มีชื่อเสียงในแวดวงอุตสาหกรรมว่า "ใจบุญเกินไปในเชิงธุรกิจ" — แบ่ง royalty ให้ collaborators ในสัดส่วนสูง, ให้ deal ที่ดีกับศิลปินในสังกัด, ไม่ฟ้องร้องเพื่อรักษารายได้ในกรณีที่ตามปกติ label อื่นจะฟ้อง ผลคือรายได้ของบริษัทไม่ได้ maximize อย่างที่ขนาด output และ fame ของ James ควรจะเป็น นักวิเคราะห์อุตสาหกรรมมองว่า JH Company สามารถทำรายได้ได้สูงกว่านี้อย่างน้อย 30–40% ด้วย deal structure ที่เป็น standard มากกว่า',
+    text: 'การเป็น single-artist company เพดานรายได้ผูกกับ output ของ James คนเดียว — ไม่มี roster diversification มาช่วยกระจายความเสี่ยงหรือเพิ่ม revenue stream แบบ label ทั่วไป นักวิเคราะห์อุตสาหกรรมมองว่า JH Company "ทิ้งเงินบนโต๊ะ" ด้วยการไม่ขยาย roster ทั้งที่มี infrastructure และ reputation พร้อม แต่ James ยืนยันว่า scale ไม่ใช่เป้าหมาย และยอมรับ ceiling นี้เป็น trade-off ของการคุมทุกอย่างได้เต็มที่',
   },
 ];
 
@@ -136,7 +138,7 @@ const valPhases = [
   <div class="mb-8">
     <div class="wiki-label mb-2">Business</div>
     <h1 class="wiki-title mb-2">JH Company</h1>
-    <p class="text-sm mb-3" style="color:var(--text-muted)">Founded 2023 · Seoul HQ · Artist-led global entertainment studio</p>
+    <p class="text-sm mb-3" style="color:var(--text-muted)">Founded 2023 · Seoul HQ · Single-artist creative studio & IP house</p>
     <p class="text-sm leading-7 max-w-3xl" style="color:var(--text-muted)">
       JH Company was established by <strong style="color:var(--text)">James Hwang</strong> in May 2023, immediately following the
       <a href={`${base}legal`} style="color:var(--gold)">settlement of his contract dispute with SM Entertainment</a>.
@@ -144,6 +146,7 @@ const valPhases = [
       <a href={`${base}tours`} style="color:var(--gold)">touring operations</a>,
       <a href={`${base}ecosystem`} style="color:var(--gold)">brand partnerships</a>,
       and serves as the production entity behind the <a href={`${base}filmography/resonance`} style="color:var(--gold)">RESONANCE franchise</a>.
+      By founder mandate the company signs <strong style="color:var(--text)">no other artists</strong> — it exists solely as James Hwang's creative vehicle and IP house, not a roster label.
     </p>
   </div>
 
@@ -293,7 +296,7 @@ const valPhases = [
   <!-- Roster -->
   <section class="mb-10">
     <h2 class="wiki-section mb-4">Artist Roster</h2>
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-wrap gap-2 mb-3">
       {roster.map(a => (
         <div class="flex items-center gap-3 px-4 py-2.5 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
           <div>
@@ -303,6 +306,9 @@ const valPhases = [
         </div>
       ))}
     </div>
+    <p class="text-xs leading-relaxed" style="color:var(--text-faint)">
+      JH Company เป็น single-artist studio โดยเจตนา — ไม่เคยเซ็นและไม่รับศิลปินคนอื่นเข้าสังกัด ข้อเสนอ roster expansion ทั้งหมด (รวมถึงเพื่อนร่วมวงเก่า) ถูกปฏิเสธโดย founder
+    </p>
   </section>
 
   <!-- Strategic partners -->

@@ -5,7 +5,7 @@
 ### Recording and production
 
 DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 9 กันยายน 2026 ภายใต้ J.H Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea เพื่อฉลองครบรอบ 10 ปีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 ในปี 2016 <br />
-อัลบั้มทำหน้าที่เป็นทั้ง retrospective collection และ curated artistic timeline โดยรวบรวมผลงานจากทุกช่วงสำคัญของ discography ตั้งแต่ LIKE I DO (2016) จนถึง SOUR | HONEY (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็น transition bridge ไปยัง creative phase ถัดไป <br />
+อัลบั้มทำหน้าที่เป็นทั้ง retrospective collection และ curated artistic timeline โดยรวบรวมผลงานจากทุกช่วงสำคัญของ discography ตั้งแต่ LIKE I DO (2016) จนถึง CAN'T LEAVE ALONE (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็น transition bridge ไปยัง creative phase ถัดไป <br />
 นอกจากเพลงใหม่ อัลบั้มยังรวม
 * solo reinterpretation versions
 * live rearranged versions จาก PULSE Tour
@@ -28,7 +28,7 @@ DECADE เป็นอัลบั้ม anthology ชุดแรกของ G
 * **Disk 1 - Identity & Impact**: รวบรวมเพลงที่ทำหน้าที่เป็น turning points ในแต่ละ era และ performance-defining singles
 * **Disk 2 - Process & Emotion**: รวบรวม deep cuts, songwriting-driven material และ reinterpretations ที่สะท้อน emotional authorship ของศิลปิน
 
-เพลงใหม่ 4 เพลงในอัลบั้มยังคง sonic direction ในแกน Contemporary R&B และ melodic minimalism แบบ mature-era ของ GONUNMA และได้รับการกล่าวถึงว่าเป็น continuation ที่มีคุณภาพต่อเนื่องจากช่วง SOUR | HONEY  <br />
+เพลงใหม่ 4 เพลงในอัลบั้มยังคง sonic direction ในแกน Contemporary R&B และ melodic minimalism แบบ mature-era ของ GONUNMA และได้รับการกล่าวถึงว่าเป็น continuation ที่มีคุณภาพต่อเนื่องจากช่วง CAN'T LEAVE ALONE  <br />
 นอกจากนี้ anthology ยังรวม live rearranged versions ของ
 * “RIGHT ABOUT LOVE (Extended Live Version)”
 * “NO RESERVATION (Extended Live Version)”
@@ -156,5 +156,5 @@ If I Knew
 Call Me
 EVERLASTING (Solo Version)
 RIGHT ABOUT LOVE (Extended Live Version)
-ARCHIVE V: “Sweet / Sour, Still Me” (SOUR | HONEY Sessions, 2024–2025)(closing essay fragment เกี่ยวกับ duality ของ identity และความสัมพันธ์)
+ARCHIVE V: “Sweet / Sour, Still Me” (CAN'T LEAVE ALONE Sessions, 2024–2025)(closing essay fragment เกี่ยวกับ duality ของ identity และความสัมพันธ์)
 </div>

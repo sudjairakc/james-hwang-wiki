@@ -59,7 +59,7 @@
 
 10. ALL FOR YOU <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
 11. BREATHE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-12. SOCIAL <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c06080;color:#c06080;margin-left:5px;vertical-align:middle">SOUR | HONEY</span>
+12. SHOOK <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c06080;color:#c06080;margin-left:5px;vertical-align:middle">SOUR | HONEY</span>
 
 ### VCR 4 — NEW ERA (DECADE TRACKS)
 

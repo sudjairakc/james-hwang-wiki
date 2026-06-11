@@ -10,8 +10,8 @@ slug: "company"
 | Founded | 2023 |
 | Founder | James Hwang |
 | HQ | Seoul |
-| Structure | Artist-led global entertainment studio + label + touring company + IP franchise house |
-| Status (post-2026) | Multi-artist creator company |
+| Structure | Single-artist creative studio + touring company + IP franchise house |
+| Status (post-2026) | Single-artist creator company (no other signings by design) |
 
 ---
 
@@ -27,19 +27,17 @@ James ยังเป็น controlling shareholder
 
 ---
 
-## Artist Roster (ตั้งแต่ 2026)
+## Artist Roster
 
 | Artist | Since | Layer |
 |-------|------|------|
-| James Hwang | 2023 | Founder / flagship artist |
-| Mark | 2026 | Artist roster expansion |
-| Ten | 2026 | Artist roster expansion |
-| Yuta | 2026 | Artist roster expansion |
-| Johnny | 2026 | Artist roster expansion |
+| James Hwang | 2023 | Founder · sole artist |
 
-| Structural Transition | Description |
+JH Company ไม่เซ็นศิลปินคนอื่นเลย — single-artist studio โดยเจตนาของ founder ข้อเสนอและการติดต่อขอเข้าสังกัด (รวมถึงเพื่อนร่วมวงเก่า) ถูกปฏิเสธทุกครั้ง
+
+| Structural Position | Description |
 |----------------------|------------|
-| Company evolution | Artist vehicle → multi-artist entertainment label |
+| Company identity | Personal creative vehicle + IP house — ไม่ขยายเป็น multi-artist label |
 
 ---
 
@@ -63,17 +61,17 @@ James ยังเป็น controlling shareholder
 
 | Phase | Revenue Range | Primary Drivers |
 |------|--------------|----------------|
-| Pre-expansion | $38M–62M | solo touring + endorsements + catalog |
-| Post-2026 expansion | $95M–160M | roster expansion + franchise IP + touring scale |
+| Pre-2026 | $38M–62M | solo touring + endorsements + catalog |
+| Post-2026 | $95M–160M | franchise IP + touring scale (single-artist, no roster) |
 
 Growth drivers:
 
 | Driver | Function |
 |-------|---------|
-| Roster expansion | multi-artist revenue diversification |
 | Touring scaling | primary revenue engine expansion |
 | Franchise IP revenue | valuation multiplier layer |
 | Endorsements portfolio | recurring high-margin layer |
+| Publishing / songwriting | long-tail royalty (tracks เขียนให้ศิลปินอื่น) |
 
 ---
 
@@ -137,18 +135,17 @@ Growth drivers:
 
 ---
 
-### 3. Artist Management Division (ใหม่)
+### 3. Publishing & Songwriting Division
 
-| Artist | Layer |
-|-------|------|
-| Mark | roster expansion |
-| Ten | roster expansion |
-| Yuta | roster expansion |
-| Johnny | roster expansion |
+| Scope | Description |
+|------|-------------|
+| Self-catalog publishing | songwriting credits บน releases ของ James เอง |
+| External songwriting | tracks ที่เขียนให้ศิลปินอื่น (Jaehyun "SMOKE", aespa "Flowers") |
+| Sync licensing | film / advertising placement |
 
 | Structural Impact | Description |
 |------------------|------------|
-| Company transition | roster-based management company |
+| Company identity | single-artist studio — ไม่มี roster management layer |
 
 ---
 
@@ -205,7 +202,7 @@ Allocation structure:
 | Phase | Employees | Organization Stage |
 |------|-----------|-------------------|
 | Pre-2026 | 55–85 | boutique creator company |
-| Post-2026 | 120–190 | multi-division entertainment studio |
+| Post-2026 | 90–130 | multi-division studio (single-artist + franchise IP) |
 
 ---
 
@@ -250,14 +247,14 @@ Valuation transition:
 
 | Classification Layer | Status |
 |--------------------|-------|
-| Artist vehicle label | No |
-| Boutique studio | No |
+| Multi-artist roster label | No (by design) |
+| Boutique studio | Partly |
 | Mid-tier creator company | No |
-| Upper-mid global entertainment company | Yes |
+| Single-artist creator + franchise IP house | Yes |
 
 | Structural Model | Description |
 |-----------------|------------|
-| Closest structure | creator-led hybrid entertainment platform |
+| Closest structure | founder-led single-artist creative studio + IP franchise house |
 
 ---
 
@@ -277,7 +274,7 @@ Strategic rationale:
 | IP strategy | long-term asset building |
 | Global partnerships | infrastructure expansion |
 | Franchise development | cinematic scaling |
-| Roster positioning | multi-artist strategy |
+| Catalog positioning | single-artist long-term value |
 
 ---
 
@@ -405,5 +402,5 @@ Strategic rationale:
 | Artist Tier Positioning | Classification |
 |----------------------|---------------|
 | Career tier | global touring soloist |
-| Corporate tier | multi-artist label founder |
+| Corporate tier | single-artist studio founder |
 | Franchise tier | film-franchise crossover creator |

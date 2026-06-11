@@ -64,9 +64,9 @@ LIKE I DO เผยแพร่ในรูปแบบ digital mini album โ�
 Tracklist & Credits
 1. BESTFRIEND — Contemporary R&B / R&Bounce | Composed by GONUNMA, DEEZ, Adrian McKinnon | Lyrics by GONUNMA, Yoo Young-jin | Arranged by DEEZ | Chikoruss (12/03/2025, 220,890 streams)
 2. LIKE I DO (feat. Mark Lee) — R&B / Pop / Romantic Soul | Composed by GONUNMA, Ryan S. Jhun, Tay Jasper | Lyrics by GONUNMA, Yoo Young-jin | Rap by Mark | Arranged by Ryan S. Jhun | MV Release: 22/01/2022 | J.tajor (04/03/2022, 109,733,868 streams)
-3. YOU KNOW (feat. Jaehyun) — Contemporary R&B / Indie Pop | Composed by GONUNMA, MZMC, DEEZ | Lyrics by GONUNMA, MZMC | Arranged by DEEZ | bixby (07/03/2025, 1,187,929 streams)
-4. EVERLASTING (feat. Ten) — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie | Lyrics by GONUNMA, Kenzie | Arranged by Kenzie | Albert Posis (07/02/2019, 23,881,526 streams)
-5. CALL ME — Bedroom Pop / Indie Pop / Chillout | Composed by GONUNMA, dress | Lyrics by GONUNMA | Arranged by dress | Rangga Jones (11/03/2022, 31,955,863 streams)
+3. EVERLASTING (feat. Ten) — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie | Lyrics by GONUNMA, Kenzie | Arranged by Kenzie | Albert Posis (07/02/2019, 23,881,526 streams)
+4. CALL ME — Bedroom Pop / Indie Pop / Chillout | Composed by GONUNMA, dress | Lyrics by GONUNMA | Arranged by dress | Rangga Jones (11/03/2022, 31,955,863 streams)
+5. YOU KNOW (feat. Jaehyun) — Contemporary R&B / Indie Pop | Composed by GONUNMA, MZMC, DEEZ | Lyrics by GONUNMA, MZMC | Arranged by DEEZ | bixby (07/03/2025, 1,187,929 streams)
 6. CAN YOU LOVE ME TONIGHT (feat. Taeyong) — Alt R&B / Emotional Pop | Composed by GONUNMA, IMLAY, Royal Dive | Lyrics by GONUNMA, Taeyong | Arranged by IMLAY | KAIRO (25/05/2022, 5,885,596 streams)
 7. AT THE END OF THE NIGHT (feat. Doyoung) — Smooth R&B / Slow Jam | Composed by GONUNMA, Yoo Young-jin | Lyrics by GONUNMA, Yoo Young-jin | Arranged by Yoo Young-jin | Tone Stith (11/06/2021, 944,700 streams)
 </div>
@@ -78,8 +78,8 @@ Tracklist & Credits
 GONUNMA — vocals, topline composition, lyrics, concept direction <br />
 **Featured artists** <br />
 Mark — rap (track 2) <br />
-Jaehyun — vocals (track 3) <br />
-Ten — vocals (track 4) <br />
+Ten — vocals (track 3) <br />
+Jaehyun — vocals (track 5) <br />
 Taeyong — rap, lyrics (track 6) <br />
 Doyoung — vocals (track 7) <br />
 **Production**  <br />
@@ -98,5 +98,6 @@ SM Entertainment Production Center <br />
 
 ### Additional Notes
 
+* ลำดับเพลงออกแบบให้ narrative วิ่งเป็นเส้นตรง: รัก → สารภาพ → หลังเลิก → ถึงได้รู้ว่าเธอไม่ซื่อ (YOU KNOW อยู่ track 5) → ยังอยากได้คืน → จมอยู่กับคืนนั้น — เปิดด้วย bounce สูงแล้วค่อยๆ ลึกและมืดลง จบแบบ late-night intimacy
 * โปรเจกต์นี้ถูกใช้เป็น soft launch ของศิลปินเชิงสร้างสรรค์ ภายในระบบ SM Entertainment
 * ภายหลังถูกมองว่าเป็น early blueprint ของทิศทางดนตรีในอนาคตของ James Hwang และได้รับการ rediscover ในกลุ่มผู้ฟัง R&B/indie ช่วงปี 2019–2025

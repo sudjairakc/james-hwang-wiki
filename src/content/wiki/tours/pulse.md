@@ -95,62 +95,104 @@
 
 ---
 
-## Setlist
+## Setlist (Official — เอกสารฉบับเต็ม: [pulse-setlist.md](pulse-setlist.md))
 
-### VCR 1 — THE SIGNAL (Opening)
+### Leg 1 (Jul–Oct 2023) — 23 เพลง + GIRLFRIEND (outro) · 5 Act + Before Encore + Encore
 
-1. HOW DOES IT FEEL <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-2. SAY <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-3. ALL FOR YOU <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-4. CHEEKY <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-5. IF <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-6. OUT HERE *(2024)* <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-7. SOMEWHERE, SOMEHOW *(2024)* <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
+เพลงที่ใช้ได้: PULSE + SOFTEST TOUCH + LIKE I DO + IF I KNEW (pre-release)
 
-### VCR 2 — CONTROL LOST
+**ACT 1 — IGNITION ⚡** *(เปิดด้วย confidence เต็มๆ)*
+1. HOW DOES IT FEEL? — PULSE
+2. CRUSH — SOFTEST TOUCH
+3. ALL FOR YOU — PULSE
 
-8. RIGHT ABOUT LOVE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-9. SAVE ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-10. AWKWARD MAYBE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
-11. TALK TO ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
+**ACT 2 — PULL ✦** *(ดึงคนดูเข้ามาใกล้ — ความรักที่ยังไม่มีคำตอบ)*
+4. LIKE I DO — LIKE I DO
+5. SOFTEST TOUCH — SOFTEST TOUCH
+6. TALK TO ME — PULSE
+7. YOU KNOW — LIKE I DO
 
-### VCR 3 — WHO I WAS (LIKE I DO ERA)
+**ACT 3 — TENDER 🤍** *(ช่วงนุ่มที่สุดของโชว์)*
+8. CHEEKY — PULSE
+9. YOU AIN'T GOTTA — SOFTEST TOUCH
+10. OVERSIZED JACKET — SOFTEST TOUCH
+11. IF — PULSE
 
-12. LIKE I DO <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-13. BESTFRIEND <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-14. YOU KNOW <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-15. CALL ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-16. CAN YOU LOVE ME TONIGHT <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-17. AT THE END OF THE NIGHT <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
+**ACT 4 — DRIFT 🌊** *(ชีพจรแผ่ว — ความสัมพันธ์ที่ซับซ้อนและเจ็บปวด)*
+12. BESTFRIEND — LIKE I DO
+13. AWKWARD MAYBE — PULSE
+14. SAVE ME — PULSE
+15. CAN YOU LOVE ME TONIGHT? — LIKE I DO
+16. CALL ME — LIKE I DO
 
-### VCR 4 — SILENCE / INTIMACY
+**ACT 5 — LIVE SET 🎸** *(วงสดเต็มตัว — ก่อนไคลแม็กซ์)*
+17. RIGHT ABOUT LOVE (Live Band Version) — SOFTEST TOUCH
+18. IDK WHAT YOU DO — SOFTEST TOUCH
 
-18. EVERLASTING (Solo Version) <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c9a84c;color:#c9a84c;margin-left:5px;vertical-align:middle">LIKE I DO</span>
-19. NO RESERVATION <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-20. OVERSIZED JACKET <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-21. I DON'T KNOW WHAT YOU DO <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
+**BEFORE ENCORE — IF I KNEW 🌙** *(ตัดดับมืดสนิทหลังเพลงนี้)*
+19. SAY — PULSE
+20. IF I KNEW — pre-release single จาก ARE U STILL
 
-### VCR 5 — CROSSROADS
+**ENCORE — AFTERGLOW ✨**
+21. EVERLASTING — LIKE I DO
+22. NO RESERVATIONS (Live — band jam) — SOFTEST TOUCH
+23. OUTRO: GIRLFRIEND (Instrumental — fade out ปิดโชว์) — PULSE
 
-22. YOU AIN'T GOTTA <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-23. CRUSH <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-24. IF I KNEW <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
+### Leg 2 (Jan 2024 เป็นต้นไป) — 33 เพลง + GIRLFRIEND (outro) · 6 Act + Before Encore + Encore
 
-### VCR 6 — REBIRTH (ARE U STILL) *(2024)*
+เพลงที่ใช้ได้: ทุกอัลบั้ม (ARE U STILL ออกแล้ว 8 Jan 2024)
 
-25. SLEEPWALKING <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-26. TEARS ON A PRETTY FACE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-27. JUST A DREAM <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-28. PURPOSE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-29. SELFISH <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-30. BREATHE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
+**ACT 1 — IGNITION ⚡** *(ดุกว่า Leg 1)*
+1. HOW DOES IT FEEL? — PULSE
+2. CRUSH — SOFTEST TOUCH
+3. TALK TO ME — PULSE
+4. YOU KNOW — LIKE I DO
 
-### VCR 7 — AFTER THE NOISE *(2024)*
+**ACT 2 — STEADY GROOVE 🎷** *(ชีพจรนิ่งแต่หนักแน่น — R&B ตัวจริง)*
+5. TEARS ON A PRETTY FACE — ARE U STILL
+6. ANOTHER MAN'S LIFE — ARE U STILL
+7. SLEEPWALKING — ARE U STILL
+8. ALL FOR YOU — PULSE
+9. SOFTEST TOUCH — SOFTEST TOUCH
 
-31. ORDINARY FEELINGS <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-32. ANOTHER MAN'S LIFE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
+**ACT 3 — FLUTTER 💓** *(ใจเต้นรัว — ช่วงจีบ น่ารัก)*
+10. CHEEKY — PULSE
+11. LIKE I DO — LIKE I DO
+12. BESTFRIEND — LIKE I DO
+13. IF — PULSE
+14. IDK WHAT YOU DO — SOFTEST TOUCH
 
-### VCR 8 — HOME (Encore)
+**ACT 4 — SELFISH DROP 🖤** *(โยกอยู่แล้ว... แล้วเนื้อเพลงค่อยๆ กระแทก)*
+15. PURPOSE — ARE U STILL
+16. OUT HERE — ARE U STILL
+17. SELFISH ⚠️ — SURPRISE DROP — sound โยก 90s แต่เนื้อคือการสูญเสีย (จบเพลง — หยุดยาว ไม่พูดอะไร) — ARE U STILL
 
-33. SOFTEST TOUCH <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-34. OUTRO: GIRLFRIEND <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
+**ACT 5 — REVIVE 🫀** *(กู้ชีพ — ค่อยๆ ฟื้นกลับมาด้วยวงสด)*
+18. CALL ME — LIKE I DO
+19. CAN YOU LOVE ME TONIGHT? (Stripped) — LIKE I DO
+20. ORDINARY FEELINGS — ARE U STILL
+21. JUST A DREAM — ARE U STILL
+22. BREATHE! — ARE U STILL
+23. YOU AIN'T GOTTA — SOFTEST TOUCH
+24. OVERSIZED JACKET — SOFTEST TOUCH
+
+**ACT 6 — ADRENALINE 🔥** *(ชีพจรพุ่งสู่ไคลแม็กซ์)*
+25. AWKWARD MAYBE — PULSE
+26. SAVE ME — PULSE
+27. SOMEWHERE SOMEHOW — ARE U STILL
+28. RIGHT ABOUT LOVE (Live Band Version) — SOFTEST TOUCH
+
+**BEFORE ENCORE — IF I KNEW 🌙** *(ตัดดับมืดสนิท — คนดูตะโกนเรียก encore)*
+29. SAY — PULSE
+30. IF I KNEW — ARE U STILL
+
+**ENCORE — AFTERGLOW ✨**
+31. EVERLASTING — LIKE I DO
+32. NO RESERVATIONS (Live — band jam) — SOFTEST TOUCH
+33. OUTRO: GIRLFRIEND (Instrumental — fade out ปิดโชว์) — PULSE
+
+### หมายเหตุโครงสร้าง
+
+- Encore เหมือนกันทั้ง 2 Leg: EVERLASTING → NO RESERVATIONS (Live) → GIRLFRIEND (Instrumental outro)
+- Cliffhanger หลักทั้ง 2 Leg: IF I KNEW → ตัดดับมืดสนิท
+- เพลงที่เพิ่มใน Leg 2: TEARS ON A PRETTY FACE, ANOTHER MAN'S LIFE, SLEEPWALKING, PURPOSE, OUT HERE, SELFISH, ORDINARY FEELINGS, JUST A DREAM, BREATHE!, SOMEWHERE SOMEHOW

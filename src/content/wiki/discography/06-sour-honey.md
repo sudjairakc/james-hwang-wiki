@@ -1,10 +1,10 @@
-## SOUR | HONEY - 3rd Album (10/02/2025)
+## CAN'T LEAVE ALONE - 3rd Album (10/02/2025)
 
 3rd Studio Album by GONUNMA (James Hwang)
 
 ### Recording and production
 
-SOUR | HONEY เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ J.H Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024)  <br />
+CAN'T LEAVE ALONE เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ J.H Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024) — dual concept "SOUR | HONEY" ภายในอัลบั้มกลายเป็นชื่อเรียก era นี้ในหมู่แฟนและสื่อ  <br />
 อัลบั้มพัฒนาในรูปแบบ collaborative R&B ecosystem โดยร่วมงานกับ
 * Pino
 * JUNNY
@@ -19,7 +19,7 @@ SOUR | HONEY เป็นสตูดิโออัลบั้มชุดท�
 
 ### Music and lyrics
 
-ในเชิงดนตรี SOUR | HONEY ผสมผสาน
+ในเชิงดนตรี CAN'T LEAVE ALONE ผสมผสาน
 * Contemporary R&B
 * Pop-R&B
 * K-R&B
@@ -28,7 +28,7 @@ SOUR | HONEY เป็นสตูดิโออัลบั้มชุดท�
 โดยเน้น melodic accessibility มากขึ้นเมื่อเทียบกับสองอัลบั้มก่อนหน้า  <br />
 เพลงเปิด CAN’T LEAVE ALONE (feat. Pharrell Williams) ใช้ groove แบบ Neptunes-style R&B พร้อม visual aesthetic แบบ Y2K pop-R&B และได้รับความสนใจสูงทันทีหลังปล่อย โดยการร่วมงานกับ Pharrell Williams ถูกมองว่าเป็น production-lineage collaboration ที่สำคัญของ era นี้  <br />
 เพลงไตเติล SOUR ใช้ K-R&B structure ผสม millennium-style choreography-driven performance concept แม้แฟนบางส่วนคาดการณ์ว่า “CAN’T LEAVE ALONE” เหมาะสมกับตำแหน่ง title track มากกว่า การเลือก “SOUR” เป็นเพลงโปรโมตหลักได้รับการกล่าวถึงอย่างกว้างขวางหลังศิลปินให้สัมภาษณ์ว่าต้องการเพลงที่ “รองรับ choreography ได้ชัดเจนกว่า”  <br />
-SOCIAL เป็น Y2K-inspired pop-R&B track ที่ถูกพูดถึงมากใน community listener เนื่องจากมี potential สูงในเชิง visual rollout แม้ไม่มี music video อย่างเป็นทางการ  <br />
+SHOOK เป็น contemporary R&B track ที่ใช้ boxing metaphor ตลอดทั้งเพลง ("เธอทำให้ฉัน shook จนสู้ไม่ได้") — พ่ายแพ้อย่างสมบูรณ์แต่เล่าผ่าน groove ที่ bouncy ถูกพูดถึงมากใน community listener ในฐานะ track ที่ wit ที่สุดของอัลบั้ม  <br />
 MYSTERY LADY ใช้ sampling reference จาก Movin' On ของ CeCe Peniston และได้รับการตอบรับเชิงบวกจากผู้ฟังสาย classic R&B  <br />
 เพลง HONEY ถูกมองว่าเป็นหนึ่งใน candidate title track ของอัลบั้ม ด้วย melodic accessibility แบบ early-2000s pop-R&B และ thematic linkage กับ dual-album concept  <br />
 I WANT YOU BACK (Interlude) เป็น interlude track แรกใน discography ของ James และทำหน้าที่เป็น structural transition ระหว่างสอง halves ของ narrative  <br />
@@ -44,7 +44,7 @@ I WANT YOU BACK (Interlude) เป็น interlude track แรกใน discogr
 
 ### Marketing
 
-แม้ SOUR | HONEY จะเป็น release ต่อเนื่องหลังความสำเร็จของ ARE U STILL แต่การโปรโมตอัลบั้มมีลักษณะ limited promotion period  <br />
+แม้ CAN'T LEAVE ALONE จะเป็น release ต่อเนื่องหลังความสำเร็จของ ARE U STILL แต่การโปรโมตอัลบั้มมีลักษณะ limited promotion period  <br />
 เนื่องจากศิลปินเข้าร่วมกิจกรรมของ NCT 127 อย่างต่อเนื่องในช่วงเวลาเดียวกัน
 กลยุทธ์โปรโมตประกอบด้วย
 * pre-release music video (“CAN’T LEAVE ALONE”)
@@ -56,20 +56,20 @@ I WANT YOU BACK (Interlude) เป็น interlude track แรกใน discogr
 
 ### Critical Reception
 
-SOUR|HONEY ได้รับการตอบรับในเชิงบวกโดยรวม แต่มีความเห็นแตกต่างกันในหมู่นักวิจารณ์มากกว่าอัลบั้มก่อน บางส่วนมองว่าเป็น refinement ที่ชาญฉลาด ขณะที่บางส่วนมองว่าขาด edge ของ ARE U STILL อัลบั้มได้รับคะแนนเฉลี่ย **80/100** จาก aggregator
+CAN'T LEAVE ALONE ได้รับการตอบรับในเชิงบวกโดยรวม แต่มีความเห็นแตกต่างกันในหมู่นักวิจารณ์มากกว่าอัลบั้มก่อน บางส่วนมองว่าเป็น refinement ที่ชาญฉลาด ขณะที่บางส่วนมองว่าขาด edge ของ ARE U STILL อัลบั้มได้รับคะแนนเฉลี่ย **80/100** จาก aggregator
 
 การตอบรับจากนักวิจารณ์:
-* **Pitchfork** (คะแนน 7.5) เขียนว่า “SOUR|HONEY ฟังดูเหมือน artist ที่รู้ว่าตัวเองอยู่ที่ไหน แต่ยังไม่แน่ใจว่าอยากไปที่ไหนต่อ — CAN'T LEAVE ALONE คือ peak ของอัลบั้ม และมันสูงมาก แต่ส่วนอื่นรู้สึกว่า play it safe”
+* **Pitchfork** (คะแนน 7.5) เขียนว่า “CAN'T LEAVE ALONE ฟังดูเหมือน artist ที่รู้ว่าตัวเองอยู่ที่ไหน แต่ยังไม่แน่ใจว่าอยากไปที่ไหนต่อ — CAN'T LEAVE ALONE คือ peak ของอัลบั้ม และมันสูงมาก แต่ส่วนอื่นรู้สึกว่า play it safe”
 * **Rolling Stone** ให้ 3.5/5 และระบุว่า “Pharrell Williams collaboration ทำงานได้ดีมาก แต่ rest of album ยังอยู่ในร่มเงาของมัน”
 * **Billboard Korea** มองในเชิงบวกกว่า โดยยกย่อง dual concept (SOUR vs HONEY) ว่าเป็น “narrative device ที่ทำให้อัลบั้มมีโครงสร้างเหมือน short film”
-* **IZM (Korea)** ให้ 4.0/5 และชี้ว่า “MYSTERY LADY และ SOCIAL แสดงให้เห็นว่า James ยังคง sharp ในฐานะ composer แม้ทิศทางจะ accessible มากขึ้น”
+* **IZM (Korea)** ให้ 4.0/5 และชี้ว่า “MYSTERY LADY และ SHOOK แสดงให้เห็นว่า James ยังคง sharp ในฐานะ composer แม้ทิศทางจะ accessible มากขึ้น”
 * **Consequence of Sound** เรียก CAN'T LEAVE ALONE ว่า “one of the best produced tracks of 2025 — Pharrell รู้ดีว่าเขาต้องถอยเพื่อให้ GONUNMA นำ”
 * **User & chart reception:** Melon #8, Circle Digital Top 20 CAN'T LEAVE ALONE feat. Pharrell Williams ขึ้น Spotify Global Chart Top 50 ในสัปดาห์แรก ซึ่งเป็นครั้งแรกของ James ใน global chart ระดับนี้ ยอดสตรีมอัลบั้มรวม 640M+
 
 
 ### Accolades
 
-SOUR | HONEY ได้รับ recognition ต่อเนื่องจาก momentum หลัง Grammy-winning era ของ ARE U STILL และประสบความสำเร็จเชิง streaming ในหลายตลาดเอเชีย <br />
+CAN'T LEAVE ALONE ได้รับ recognition ต่อเนื่องจาก momentum หลัง Grammy-winning era ของ ARE U STILL และประสบความสำเร็จเชิง streaming ในหลายตลาดเอเชีย <br />
 **2025**
 * Golden Disc Awards — Digital Bonsang (ชนะ)
 * Circle Chart Music Awards — Global Digital Artist (ชนะ)
@@ -84,7 +84,7 @@ SOUR | HONEY ได้รับ recognition ต่อเนื่องจาก
 
 ### Legacy
 
-SOUR | HONEY ถูกมองว่าเป็นอัลบั้มที่ทำหน้าที่
+CAN'T LEAVE ALONE ถูกมองว่าเป็นอัลบั้มที่ทำหน้าที่
 reconnecting release ระหว่าง legacy pivot (ARE U STILL) และ future stylistic direction ของ James Hwang
 โดยเฉพาะในฐานะงานที่กลับสู่ Contemporary R&B core พร้อม dual-narrative storytelling structure  <br />
 แม้อัลบั้มจะมีระดับ promotion จำกัดเนื่องจาก overlap กับกิจกรรมของ NCT 127 แต่ยังคงรักษา commercial stability และ listener engagement ได้ต่อเนื่องตลอดปี 2025  <br />
@@ -101,7 +101,7 @@ reconnecting release ระหว่าง legacy pivot (ARE U STILL) และ 
 Tracklist & Credits
 1. CAN’T LEAVE ALONE (feat. Pharrell Williams) — R&B / Contemporary R&B / Neptunes-style groove | obsession-driven opening — looped groove + minimal funk influence | MV: 03/02/2025 | Composed by GONUNMA, Pino, Pharrell Williams | Lyrics by GONUNMA, Pino | Arranged by GONUNMA, Pino | Pino, Avenoir, Maz B, 86 (7,461,004 streams)
 2. SOUR [TITLE] — R&B / Pop-R&B / K-R&B | core theme — ความสัมพันธ์ที่เริ่มหวานแต่จบด้วยความขม | MV: 10/02/2025 | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | JUNNY (935,869 streams)
-3. SOCIAL — Pop-R&B / Y2K-inspired R&B | modern relationship vs social validation | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA | Arranged by GONUNMA, JUNNY | from20 (394,250 streams)
+3. SHOOK — R&B / Contemporary R&B | boxing metaphor — defeat by attraction, ยอมรับความพ่ายแพ้ผ่าน groove ที่ bouncy | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA | Arranged by GONUNMA, JUNNY | H33RA (08/01/2026, 394,250 streams)
 4. MYSTERY LADY — R&B / Soul | classic R&B storytelling — unknown attraction | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Larrenwong (58,856 streams)
 5. HONEY — Pop-R&B / 2000s-inspired R&B | sweet phase — desire / physical closeness | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | CODY JON (337,988 streams)
 6. I WANT YOU BACK (Interlude) — R&B / Soul | short emotional recall — regret moment | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chase Shakur (112,755 streams)
@@ -133,7 +133,8 @@ Warner Music Korea <br />
 ### Additional Notes
 
 * อัลบั้มนี้เป็นการ return to R&B core หลังจาก experimental soul/disco ใน era ก่อน
-* ใช้โครงสร้าง dual concept (SOUR vs HONEY) เพื่อเล่า narrative ของความสัมพันธ์แบบสองด้าน
+* ใช้โครงสร้าง dual concept (SOUR vs HONEY) เพื่อเล่า narrative ของความสัมพันธ์แบบสองด้าน — SOUR side (track 1–5): obsession → เล่นตัว → พ่ายแพ้ → จับต้องไม่ได้ → ได้เธอมาแบบลับๆ / I WANT YOU BACK (Interlude) เป็นจุด flip narrative / HONEY side (track 7–10): confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง
+* ชื่อ dual concept "SOUR | HONEY" กลายเป็นชื่อเรียก era นี้ (era color, goods, editorial) แม้ตัวอัลบั้มใช้ชื่อ CAN'T LEAVE ALONE
 * มีการร่วมงานกับ Pharrell Williams ซึ่งเพิ่ม credibility ในระดับ global production
 * ซาวด์โดยรวมถูกออกแบบให้ accessible มากขึ้น เพื่อ reconnect กับแฟนกลุ่มเดิม ขณะยังรักษา artistic maturity
 * ถูกมองว่าเป็น “balance album” — ระหว่าง artistry และ market reach

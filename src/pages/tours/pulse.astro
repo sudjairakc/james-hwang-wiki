@@ -89,79 +89,148 @@ const legs = [
   },
 ];
 
-const setlist = [
+const setlists = [
   {
-    vcr: 1, title: 'THE SIGNAL', subtitle: 'Opening',
-    songs: [
-      { n: 1, title: 'HOW DOES IT FEEL', era: 'PULSE' },
-      { n: 2, title: 'SAY', era: 'PULSE' },
-      { n: 3, title: 'ALL FOR YOU', era: 'PULSE' },
-      { n: 4, title: 'CHEEKY', era: 'PULSE' },
-      { n: 5, title: 'IF', era: 'PULSE' },
-      { n: 6, title: 'OUT HERE', era: 'ARE U STILL', note: '2024' },
-      { n: 7, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL', note: '2024' },
+    leg: 'Leg 1 (2023)',
+    desc: '23 เพลง + GIRLFRIEND (outro) · 5 Act + Before Encore + Encore · เพลงจาก PULSE, SOFTEST TOUCH, LIKE I DO + IF I KNEW (pre-release)',
+    acts: [
+      {
+        tag: 'ACT 1', short: 'A1', title: 'IGNITION ⚡', subtitle: 'เปิดด้วย confidence เต็มๆ — ศิลปินที่รู้ว่าตัวเองคือใคร',
+        songs: [
+          { n: 1, title: 'HOW DOES IT FEEL?', era: 'PULSE' },
+          { n: 2, title: 'CRUSH', era: 'SOFTEST TOUCH' },
+          { n: 3, title: 'ALL FOR YOU', era: 'PULSE' },
+        ],
+      },
+      {
+        tag: 'ACT 2', short: 'A2', title: 'PULL ✦', subtitle: 'ดึงคนดูเข้ามาใกล้ — ความรักที่ยังไม่มีคำตอบ',
+        songs: [
+          { n: 4, title: 'LIKE I DO', era: 'LIKE I DO' },
+          { n: 5, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
+          { n: 6, title: 'TALK TO ME', era: 'PULSE' },
+          { n: 7, title: 'YOU KNOW', era: 'LIKE I DO' },
+        ],
+      },
+      {
+        tag: 'ACT 3', short: 'A3', title: 'TENDER 🤍', subtitle: 'ช่วงนุ่มที่สุดของโชว์ — ความรักในความเรียบง่าย',
+        songs: [
+          { n: 8, title: 'CHEEKY', era: 'PULSE' },
+          { n: 9, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+          { n: 10, title: 'OVERSIZED JACKET', era: 'SOFTEST TOUCH' },
+          { n: 11, title: 'IF', era: 'PULSE' },
+        ],
+      },
+      {
+        tag: 'ACT 4', short: 'A4', title: 'DRIFT 🌊', subtitle: 'ชีพจรแผ่ว — ความสัมพันธ์ที่ซับซ้อนและเจ็บปวด',
+        songs: [
+          { n: 12, title: 'BESTFRIEND', era: 'LIKE I DO' },
+          { n: 13, title: 'AWKWARD MAYBE', era: 'PULSE' },
+          { n: 14, title: 'SAVE ME', era: 'PULSE' },
+          { n: 15, title: 'CAN YOU LOVE ME TONIGHT?', era: 'LIKE I DO' },
+          { n: 16, title: 'CALL ME', era: 'LIKE I DO' },
+        ],
+      },
+      {
+        tag: 'ACT 5', short: 'A5', title: 'LIVE SET 🎸', subtitle: 'วงสดเต็มตัว — ก่อนไคลแม็กซ์',
+        songs: [
+          { n: 17, title: 'RIGHT ABOUT LOVE', era: 'SOFTEST TOUCH', note: 'Live Band' },
+          { n: 18, title: 'IDK WHAT YOU DO', era: 'SOFTEST TOUCH' },
+        ],
+      },
+      {
+        tag: 'BEFORE ENCORE', short: 'BE', title: 'IF I KNEW 🌙', subtitle: 'ตัดดับมืดสนิทหลังเพลงนี้',
+        songs: [
+          { n: 19, title: 'SAY', era: 'PULSE' },
+          { n: 20, title: 'IF I KNEW', era: 'ARE U STILL', note: 'pre-release' },
+        ],
+      },
+      {
+        tag: 'ENCORE', short: 'EN', title: 'AFTERGLOW ✨', subtitle: 'Encore — emotional resolution',
+        songs: [
+          { n: 21, title: 'EVERLASTING', era: 'LIKE I DO' },
+          { n: 22, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH', note: 'Live band jam' },
+          { n: 23, title: 'OUTRO: GIRLFRIEND', era: 'PULSE', note: 'Instrumental fade out' },
+        ],
+      },
     ],
   },
   {
-    vcr: 2, title: 'CONTROL LOST', subtitle: 'Pressure / shift energy',
-    songs: [
-      { n: 8, title: 'RIGHT ABOUT LOVE', era: 'SOFTEST TOUCH' },
-      { n: 9, title: 'SAVE ME', era: 'PULSE' },
-      { n: 10, title: 'AWKWARD MAYBE', era: 'PULSE' },
-      { n: 11, title: 'TALK TO ME', era: 'PULSE' },
-    ],
-  },
-  {
-    vcr: 3, title: 'WHO I WAS', subtitle: 'LIKE I DO ERA — back to the beginning',
-    songs: [
-      { n: 12, title: 'LIKE I DO', era: 'LIKE I DO' },
-      { n: 13, title: 'BESTFRIEND', era: 'LIKE I DO' },
-      { n: 14, title: 'YOU KNOW', era: 'LIKE I DO' },
-      { n: 15, title: 'CALL ME', era: 'LIKE I DO' },
-      { n: 16, title: 'CAN YOU LOVE ME TONIGHT', era: 'LIKE I DO' },
-      { n: 17, title: 'AT THE END OF THE NIGHT', era: 'LIKE I DO' },
-    ],
-  },
-  {
-    vcr: 4, title: 'SILENCE / INTIMACY', subtitle: 'Stripped down · Acoustic section',
-    songs: [
-      { n: 18, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
-      { n: 19, title: 'NO RESERVATION', era: 'SOFTEST TOUCH' },
-      { n: 20, title: 'OVERSIZED JACKET', era: 'SOFTEST TOUCH' },
-      { n: 21, title: "I DON'T KNOW WHAT YOU DO", era: 'SOFTEST TOUCH' },
-    ],
-  },
-  {
-    vcr: 5, title: 'CROSSROADS', subtitle: 'Transition · Rising confidence',
-    songs: [
-      { n: 22, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
-      { n: 23, title: 'CRUSH', era: 'SOFTEST TOUCH' },
-      { n: 24, title: 'IF I KNEW', era: 'ARE U STILL' },
-    ],
-  },
-  {
-    vcr: 6, title: 'REBIRTH (ARE U STILL)', subtitle: 'Soul / funk era · Live band energy (2024)',
-    songs: [
-      { n: 25, title: 'SLEEPWALKING', era: 'ARE U STILL', note: '2024' },
-      { n: 26, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL', note: '2024' },
-      { n: 27, title: 'JUST A DREAM', era: 'ARE U STILL', note: '2024' },
-      { n: 28, title: 'PURPOSE', era: 'ARE U STILL', note: '2024' },
-      { n: 29, title: 'SELFISH', era: 'ARE U STILL', note: '2024' },
-      { n: 30, title: 'BREATHE', era: 'ARE U STILL', note: '2024' },
-    ],
-  },
-  {
-    vcr: 7, title: 'AFTER THE NOISE', subtitle: 'Post-peak reflection (2024)',
-    songs: [
-      { n: 31, title: 'ORDINARY FEELINGS', era: 'ARE U STILL', note: '2024' },
-      { n: 32, title: "ANOTHER MAN'S LIFE", era: 'ARE U STILL', note: '2024' },
-    ],
-  },
-  {
-    vcr: 8, title: 'HOME', subtitle: 'Encore — Fan connection',
-    songs: [
-      { n: 33, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
-      { n: 34, title: 'OUTRO: GIRLFRIEND', era: 'PULSE' },
+    leg: 'Leg 2 (2024)',
+    desc: '33 เพลง + GIRLFRIEND (outro) · 6 Act + Before Encore + Encore · ทุกอัลบั้ม (ARE U STILL ออก 8 Jan 2024)',
+    acts: [
+      {
+        tag: 'ACT 1', short: 'A1', title: 'IGNITION ⚡', subtitle: 'เปิดด้วย confidence เต็มๆ — แต่คราวนี้ดุกว่า Leg 1',
+        songs: [
+          { n: 1, title: 'HOW DOES IT FEEL?', era: 'PULSE' },
+          { n: 2, title: 'CRUSH', era: 'SOFTEST TOUCH' },
+          { n: 3, title: 'TALK TO ME', era: 'PULSE' },
+          { n: 4, title: 'YOU KNOW', era: 'LIKE I DO' },
+        ],
+      },
+      {
+        tag: 'ACT 2', short: 'A2', title: 'STEADY GROOVE 🎷', subtitle: 'ชีพจรนิ่งแต่หนักแน่น — โชว์ความเป็น R&B ตัวจริง',
+        songs: [
+          { n: 5, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
+          { n: 6, title: "ANOTHER MAN'S LIFE", era: 'ARE U STILL' },
+          { n: 7, title: 'SLEEPWALKING', era: 'ARE U STILL' },
+          { n: 8, title: 'ALL FOR YOU', era: 'PULSE' },
+          { n: 9, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
+        ],
+      },
+      {
+        tag: 'ACT 3', short: 'A3', title: 'FLUTTER 💓', subtitle: 'ใจเต้นรัว — ช่วงจีบ น่ารัก',
+        songs: [
+          { n: 10, title: 'CHEEKY', era: 'PULSE' },
+          { n: 11, title: 'LIKE I DO', era: 'LIKE I DO' },
+          { n: 12, title: 'BESTFRIEND', era: 'LIKE I DO' },
+          { n: 13, title: 'IF', era: 'PULSE' },
+          { n: 14, title: 'IDK WHAT YOU DO', era: 'SOFTEST TOUCH' },
+        ],
+      },
+      {
+        tag: 'ACT 4', short: 'A4', title: 'SELFISH DROP 🖤', subtitle: 'โยกอยู่แล้ว... แล้วเนื้อเพลงค่อยๆ กระแทก — จบเพลงหยุดยาว ไม่พูดอะไร',
+        songs: [
+          { n: 15, title: 'PURPOSE', era: 'ARE U STILL' },
+          { n: 16, title: 'OUT HERE', era: 'ARE U STILL' },
+          { n: 17, title: 'SELFISH', era: 'ARE U STILL', note: 'SURPRISE DROP' },
+        ],
+      },
+      {
+        tag: 'ACT 5', short: 'A5', title: 'REVIVE 🫀', subtitle: 'กู้ชีพ — ค่อยๆ ฟื้นกลับมาด้วยวงสด',
+        songs: [
+          { n: 18, title: 'CALL ME', era: 'LIKE I DO' },
+          { n: 19, title: 'CAN YOU LOVE ME TONIGHT?', era: 'LIKE I DO', note: 'Stripped' },
+          { n: 20, title: 'ORDINARY FEELINGS', era: 'ARE U STILL' },
+          { n: 21, title: 'JUST A DREAM', era: 'ARE U STILL' },
+          { n: 22, title: 'BREATHE!', era: 'ARE U STILL' },
+          { n: 23, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+          { n: 24, title: 'OVERSIZED JACKET', era: 'SOFTEST TOUCH' },
+        ],
+      },
+      {
+        tag: 'ACT 6', short: 'A6', title: 'ADRENALINE 🔥', subtitle: 'ชีพจรพุ่งสู่ไคลแม็กซ์',
+        songs: [
+          { n: 25, title: 'AWKWARD MAYBE', era: 'PULSE' },
+          { n: 26, title: 'SAVE ME', era: 'PULSE' },
+          { n: 27, title: 'SOMEWHERE SOMEHOW', era: 'ARE U STILL' },
+          { n: 28, title: 'RIGHT ABOUT LOVE', era: 'SOFTEST TOUCH', note: 'Live Band' },
+        ],
+      },
+      {
+        tag: 'BEFORE ENCORE', short: 'BE', title: 'IF I KNEW 🌙', subtitle: 'ตัดดับมืดสนิท — คนดูตะโกนเรียก encore',
+        songs: [
+          { n: 29, title: 'SAY', era: 'PULSE' },
+          { n: 30, title: 'IF I KNEW', era: 'ARE U STILL' },
+        ],
+      },
+      {
+        tag: 'ENCORE', short: 'EN', title: 'AFTERGLOW ✨', subtitle: 'Encore — emotional resolution',
+        songs: [
+          { n: 31, title: 'EVERLASTING', era: 'LIKE I DO' },
+          { n: 32, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH', note: 'Live band jam' },
+          { n: 33, title: 'OUTRO: GIRLFRIEND', era: 'PULSE', note: 'Instrumental fade out' },
+        ],
+      },
     ],
   },
 ];
@@ -256,7 +325,7 @@ const setlist = [
   <!-- Setlist era chart -->
   <section class="mb-10">
     <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>Setlist Era Breakdown</div>
-    <p class="text-xs mb-3" style="color:var(--text-faint)">Era composition per VCR section · 2024 version (33 songs)</p>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">Era composition per Act · Leg 2 (2024, 33 songs)</p>
     <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
       <canvas id="pulseSetlistChart" height="160" style="width:100%;display:block"></canvas>
     </div>
@@ -290,29 +359,39 @@ const setlist = [
 
   <!-- Setlist -->
   <section>
-    <h2 class="wiki-section mb-4">Setlist</h2>
-    <div class="flex flex-col gap-3">
-      {setlist.map(block => (
-        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
-          <!-- VCR header -->
-          <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
-            <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:${color}20;color:${color}`}>VCR {block.vcr}</span>
-            <span class="text-sm font-bold">{block.title}</span>
-            <span class="text-xs" style="color:var(--text-muted)">{block.subtitle}</span>
+    <h2 class="wiki-section mb-4">Setlist (Official)</h2>
+    <div class="flex flex-col gap-10">
+      {setlists.map(sl => (
+        <div>
+          <div class="mb-3">
+            <div class="text-sm font-black" style={`color:${color}`}>{sl.leg}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{sl.desc}</div>
           </div>
-          <!-- Songs -->
-          <div style="background-color:var(--bg-surface)">
-            {block.songs.map((s, i, arr) => {
-              const ec = eraColors[s.era] ?? color;
-              return (
-                <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
-                  <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
-                  <span class="text-sm flex-1 font-medium">{s.title}</span>
-                  {s.note && <span class="text-xs px-1.5 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.note}</span>}
-                  <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+          <div class="flex flex-col gap-3">
+            {sl.acts.map(act => (
+              <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+                <!-- Act header -->
+                <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
+                  <span class="text-xs font-bold px-2 py-0.5 rounded shrink-0" style={`background-color:${color}20;color:${color}`}>{act.tag}</span>
+                  <span class="text-sm font-bold shrink-0">{act.title}</span>
+                  <span class="text-xs hidden sm:inline" style="color:var(--text-muted)">{act.subtitle}</span>
                 </div>
-              );
-            })}
+                <!-- Songs -->
+                <div style="background-color:var(--bg-surface)">
+                  {act.songs.map((s, i, arr) => {
+                    const ec = eraColors[s.era] ?? color;
+                    return (
+                      <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
+                        <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
+                        <span class="text-sm flex-1 font-medium">{s.title}</span>
+                        {s.note && <span class="text-xs px-1.5 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.note}</span>}
+                        <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ))}
@@ -320,7 +399,7 @@ const setlist = [
   </section>
 </WikiLayout>
 
-<script is:inline define:vars={{ setlist, eraColors, legs }}>
+<script is:inline define:vars={{ setlists, eraColors, legs }}>
 (function () {
   const canvas = document.getElementById('pulseSetlistChart');
   if (!canvas) return;
@@ -374,19 +453,20 @@ const setlist = [
   ctx.fillText('Shows per Leg', 16 + halfW / 2, PAD.t - 2);
   ctx.fillText('Setlist Era Mix', divX + halfW / 2, PAD.t - 2);
 
-  // ── Setlist era stacked bars ──
-  const N = setlist.length;
+  // ── Setlist era stacked bars (Leg 2 acts) ──
+  const acts = setlists[setlists.length - 1].acts;
+  const N = acts.length;
   const slotW2 = halfW / N;
-  const maxSongs = Math.max(...setlist.map(v => v.songs.length));
+  const maxSongs = Math.max(...acts.map(a => a.songs.length));
   const ox = divX + 8;
 
-  setlist.forEach((vcr, vi) => {
+  acts.forEach((act, vi) => {
     const cx = ox + vi * slotW2 + slotW2 / 2;
     const bw = slotW2 * 0.72;
     const bx = cx - bw / 2;
     let stackY = PAD.t + ch;
     const counts = {};
-    vcr.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
+    act.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
     Object.keys(eraColors).filter(e => counts[e]).forEach(era => {
       const segH = (counts[era] / maxSongs) * ch;
       stackY -= segH;
@@ -395,11 +475,11 @@ const setlist = [
     });
     ctx.font = '600 8px system-ui,sans-serif';
     ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
-    ctx.fillText('V' + vcr.vcr, cx, PAD.t + ch + 5);
+    ctx.fillText(act.short, cx, PAD.t + ch + 5);
   });
 
   // era legend bottom-right
-  const usedEras = [...new Set(setlist.flatMap(v => v.songs.map(s => s.era)))];
+  const usedEras = [...new Set(acts.flatMap(a => a.songs.map(s => s.era)))];
   let lx = ox;
   usedEras.forEach(era => {
     ctx.fillStyle = eraColors[era];
