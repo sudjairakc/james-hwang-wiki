@@ -11,49 +11,49 @@ const films = [
     title: 'Shang-Chi and the Legend of the Ten Rings',
     titleTh: 'ชาง-ชี กับตำนานลับเท็นริงส์',
     year: '2021',
-    date: 'Sep 3, 2021',
+    date: '3 ก.ย. 2021',
     phase: 'Phase 4',
     director: 'Destin Daniel Cretton',
-    role: 'James Hwang as Shang-Chi (Xu Shang-Chi)',
-    contribution: 'Actor',
+    role: 'James Hwang รับบท Shang-Chi (Xu Shang-Chi)',
+    contribution: 'นักแสดง',
     status: 'released',
     boxOffice: '$432M',
     boxOfficeFull: '631,800,855 USD',
     rtScore: '91%',
-    highlight: 'MCU debut · Asian superhero lead · First MCU film with Asian lead cast',
+    highlight: 'เปิดตัวใน MCU · ซูเปอร์ฮีโร่เอเชียนนำ · หนัง MCU เรื่องแรกที่นักแสดงนำเป็นคนเอเชีย',
   },
   {
     slug: 'legacy-of-the-ten-rings',
     num: 2,
     title: 'Shang-Chi and the Legacy of the Ten Rings',
-    titleTh: null,
+    titleTh: 'ชาง-ชี กับมรดกแห่งเท็นริงส์',
     year: '2025',
-    date: 'July 25, 2025',
+    date: '25 ก.ค. 2025',
     phase: 'Phase 5',
     director: 'Destin Daniel Cretton',
-    role: 'James Hwang as Shang-Chi + Co-Screenwriter',
-    contribution: 'Actor + Writer',
+    role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท',
+    contribution: 'นักแสดง + นักเขียน',
     status: 'released',
     boxOffice: '$610M',
     boxOfficeFull: '609,748,672 USD',
     rtScore: '88%',
-    highlight: 'Co-wrote screenplay · Expanded solo identity within MCU',
+    highlight: 'ร่วมเขียนบท · ขยายตัวตนเดี่ยวภายใน MCU',
   },
   {
-    slug: 'legion-accursed',
+    slug: 'deadly-hands',
     num: 3,
-    title: 'Shang-Chi and the Legion Accursed',
-    titleTh: null,
+    title: 'Shang-Chi and the Deadly Hands',
+    titleTh: 'ชาง-ชี กับมือมรณะ',
     year: '2026',
-    date: 'Sep 18, 2026',
+    date: '18 ก.ย. 2026',
     phase: 'Phase 6',
     director: 'Isaiah Saxon',
-    role: 'James Hwang as Shang-Chi + Co-Screenwriter',
-    contribution: 'Actor + Writer',
+    role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท',
+    contribution: 'นักแสดง + นักเขียน',
     status: 'upcoming',
     boxOffice: null,
     rtScore: null,
-    highlight: 'Trilogy conclusion · Co-wrote screenplay · Phase 6 capstone role',
+    highlight: 'บทสรุปไตรภาค · ร่วมเขียนบท · บทบาทปิดท้าย Phase 6',
   },
 ];
 
@@ -61,6 +61,7 @@ const totalBO = '$1.04B+';
 ---
 
 <WikiLayout title="Shang-Chi Trilogy" section="Filmography" relatedPages={[
+  { label: 'บทวิเคราะห์ไตรภาค', href: `${base}filmography/shang-chi/trilogy-analysis` },
   { label: 'RESONANCE Franchise', href: `${base}filmography/resonance` },
   { label: 'Filmography', href: `${base}filmography` },
   { label: 'Awards', href: `${base}awards` },
@@ -68,22 +69,22 @@ const totalBO = '$1.04B+';
   { label: 'JH Company', href: `${base}company` },
 ]}>
   <a href={`${base}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
-    ← Back to Filmography
+    ← กลับไป Filmography
   </a>
 
   <div class="mb-8">
     <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>MCU Trilogy · Marvel Studios</div>
     <h1 class="wiki-title mb-1">Shang-Chi Trilogy</h1>
-    <p class="text-sm" style="color:var(--text-muted)">Marvel Cinematic Universe · 2021–2026 · 3 films · {totalBO} combined box office</p>
+    <p class="text-sm" style="color:var(--text-muted)">Marvel Cinematic Universe · 2021–2026 · 3 ภาค · บ็อกซ์ออฟฟิศรวม {totalBO}</p>
   </div>
 
   <!-- Summary stats -->
   <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
     {[
-      { val: '3', label: 'Films' },
-      { val: totalBO, label: 'Box Office (Combined)' },
-      { val: '2021–2026', label: 'Timeline' },
-      { val: 'Phase 4–6', label: 'MCU Era' },
+      { val: '3', label: 'ภาค' },
+      { val: totalBO, label: 'บ็อกซ์ออฟฟิศรวม' },
+      { val: '2021–2026', label: 'ช่วงเวลา' },
+      { val: 'Phase 4–6', label: 'ยุค MCU' },
     ].map(s => (
       <div class="stat-card">
         <div class="stat-val">{s.val}</div>
@@ -114,8 +115,8 @@ const totalBO = '$1.04B+';
           <div class="flex items-center gap-2 shrink-0">
             <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${color}18;color:${color}`}>{f.phase}</span>
             {f.status === 'released'
-              ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">Released</span>
-              : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">Upcoming</span>
+              ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">เข้าฉายแล้ว</span>
+              : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">เร็วๆ นี้</span>
             }
             <div class="text-gray-600 group-hover:text-gray-400 transition-colors">→</div>
           </div>
@@ -124,10 +125,10 @@ const totalBO = '$1.04B+';
         <!-- Stats row -->
         <div class="grid grid-cols-3 md:grid-cols-5 divide-x" style="divide-color:var(--border);border-bottom:1px solid var(--border)">
           {[
-            { val: f.date, label: 'Release Date' },
-            { val: f.director.split(' ').slice(-1)[0], label: 'Director' },
-            { val: f.contribution, label: "James's Role" },
-            { val: f.boxOffice ?? 'TBA', label: 'Box Office' },
+            { val: f.date, label: 'วันเข้าฉาย' },
+            { val: f.director.split(' ').slice(-1)[0], label: 'ผู้กำกับ' },
+            { val: f.contribution, label: 'บทบาทของเจมส์' },
+            { val: f.boxOffice ?? 'TBA', label: 'บ็อกซ์ออฟฟิศ' },
             { val: f.rtScore ?? '—', label: 'Rotten Tomatoes' },
           ].map(c => (
             <div class="flex flex-col items-center py-2.5 px-2 text-center">
@@ -146,15 +147,33 @@ const totalBO = '$1.04B+';
     ))}
   </div>
 
+  <!-- Trilogy analysis -->
+  <a href={`${base}filmography/shang-chi/trilogy-analysis`}
+    class="block border rounded-xl overflow-hidden transition-all group mb-10"
+    style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+    <div class="flex items-center justify-between px-5 py-4">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>บทความ</div>
+        <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>
+          Shang-Chi Trilogy — บทวิเคราะห์เชิงลึก
+        </div>
+        <p class="text-xs mt-1.5 leading-relaxed" style="color:var(--text-muted)">
+          Legend of the Ten Rings · Legacy of the Ten Rings · Deadly Hands — เอกภาพเชิงธีม อาร์คตัวละคร และสถาปัตยกรรมของการปล่อยมือ
+        </p>
+      </div>
+      <div class="text-gray-600 group-hover:text-gray-400 transition-colors shrink-0 ml-4">→</div>
+    </div>
+  </a>
+
   <!-- Franchise context -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
-      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>James's Contribution Arc</div>
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>บทบาทสร้างสรรค์ของเจมส์</div>
       <div style="background-color:var(--bg-surface)">
         {[
-          { film: 'Film I', role: 'Actor only', detail: 'First MCU performance — established Shang-Chi as Korean-American lead' },
-          { film: 'Film II', role: 'Actor + Co-Writer', detail: 'Joined screenplay team — shaped character arc and dialogue' },
-          { film: 'Film III', role: 'Actor + Co-Writer', detail: 'Full creative partner on trilogy conclusion' },
+          { film: 'ภาค 1', role: 'นักแสดงอย่างเดียว', detail: 'การแสดงใน MCU ครั้งแรก — สร้าง Shang-Chi ในฐานะตัวเอกเกาหลี-อเมริกัน' },
+          { film: 'ภาค 2', role: 'นักแสดง + ผู้ร่วมเขียนบท', detail: 'เข้าร่วมทีมเขียนบท — หล่อหลอมอาร์คตัวละครและบทสนทนา' },
+          { film: 'ภาค 3', role: 'นักแสดง + ผู้ร่วมเขียนบท', detail: 'พันธมิตรสร้างสรรค์เต็มตัวในบทสรุปไตรภาค' },
         ].map((r, i, arr) => (
           <div class="flex gap-4 px-4 py-3" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
             <div class="text-xs font-bold w-14 shrink-0 mt-0.5" style={`color:${color}`}>{r.film}</div>
@@ -168,7 +187,7 @@ const totalBO = '$1.04B+';
     </div>
 
     <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
-      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>Key Cast (Film I)</div>
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>นักแสดงหลัก (ภาค 1)</div>
       <div style="background-color:var(--bg-surface)">
         {[
           { actor: 'James Hwang', role: 'Shang-Chi (Xu Shang-Chi)' },
