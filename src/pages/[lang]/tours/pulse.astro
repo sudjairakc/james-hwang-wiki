@@ -1,0 +1,287 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../../i18n';
+import { getToursPulse, eraColors, formats, legs, setlistData, reviews } from '../../../data/pages/tours-pulse';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getToursPulse(lang);
+const color = '#5a7c6a';
+
+const relatedLabels = {
+  toursOverview: { en: 'Tours Overview', th: 'ภาพรวมทัวร์' },
+  decadeTour: { en: 'DECADE Tour', th: 'DECADE Tour' },
+  pulseAlbum: { en: 'PULSE Album', th: 'PULSE Album' },
+  timeline: { en: 'Career Timeline', th: 'ไทม์ไลน์อาชีพ' },
+  awards: { en: 'Awards', th: 'รางวัล' },
+};
+const related = [
+  { label: relatedLabels.toursOverview[lang], href: `${L}tours` },
+  { label: relatedLabels.decadeTour[lang], href: `${L}tours/decade` },
+  { label: relatedLabels.pulseAlbum[lang], href: `${L}discography/pulse-era` },
+  { label: relatedLabels.timeline[lang], href: `${L}timeline` },
+  { label: relatedLabels.awards[lang], href: `${L}awards` },
+];
+
+// Merge shared format numbers with the localized version label.
+const formatRows = formats.map((f, i) => ({ ...f, version: d.formatVersions[i] }));
+
+// Merge shared setlist structure with localized leg description + act subtitles.
+const setlists = setlistData.map((sl, i) => ({
+  leg: sl.leg,
+  desc: d.setlistText[i].desc,
+  acts: sl.acts.map((act, ai) => ({ ...act, subtitle: d.setlistText[i].actSubtitles[ai] })),
+}));
+
+// Merge shared review quotes with the localized context caption.
+const reviewRows = reviews.map((r, i) => ({ ...r, context: d.reviewContexts[i] }));
+---
+
+<WikiLayout title={d.ui.title} section="Tours" lang={lang} relatedPages={related}>
+  <a href={`${L}tours`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">{d.ui.backLabel}</a>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>{d.ui.badgeLabel}</div>
+    <h1 class="wiki-title mb-1">{d.ui.title}</h1>
+    <p class="text-sm italic mb-1" style="color:var(--text-muted)">{d.ui.quote}</p>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.datesLine}</p>
+  </div>
+
+  <!-- KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '64', label: d.ui.statTotalShows },
+      { val: '$235M', label: d.ui.statTicketGross },
+      { val: '$26M', label: d.ui.statSponsorRevenue },
+      { val: '~$105M', label: d.ui.statProfitPool },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Show format -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.formatHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {formatRows.map(f => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="px-4 py-2 border-b text-xs font-bold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}10;color:${color}`}>{f.version}</div>
+          <div class="grid grid-cols-5 divide-x" style="divide-color:var(--border);background-color:var(--bg-surface)">
+            {[
+              { val: f.songs, label: d.ui.statSongs },
+              { val: f.runtime, label: d.ui.statMusic },
+              { val: f.vcrs, label: d.ui.statVcrs },
+              { val: f.ments, label: d.ui.statMents },
+              { val: f.total, label: d.ui.statTotal },
+            ].map(c => (
+              <div class="flex flex-col items-center py-3 px-2">
+                <div class="text-base font-bold">{c.val}</div>
+                <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Venue list -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.tourDatesHeading}</h2>
+    <div class="flex flex-col gap-4">
+      {legs.map(leg => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+            <span class="text-sm font-bold">{leg.name}</span>
+            <span class="text-xs font-mono" style="color:var(--text-muted)">{leg.period}</span>
+          </div>
+          <table class="w-full" style="margin:0">
+            <tbody style="background-color:var(--bg-surface)">
+              {leg.shows.map((s, i, arr) => (
+                <tr style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+                  <td class="px-4 py-2 text-xs font-mono w-28 shrink-0" style="color:var(--text-muted)">{s.date}</td>
+                  <td class="px-4 py-2 text-sm font-semibold">{s.city}
+                    {s.nights > 1 && <span class="ml-1.5 text-xs px-1.5 py-0.5 rounded font-bold" style={`background-color:${color}15;color:${color}`}>×{s.nights}</span>}
+                  </td>
+                  <td class="px-4 py-2 text-xs" style="color:var(--text-muted)">{s.country}</td>
+                  <td class="px-4 py-2 text-xs hidden md:table-cell" style="color:var(--text-muted)">{s.venue}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Setlist era chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>{d.ui.setlistEraLabel}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.setlistEraSubtitle}</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="pulseSetlistChart" height="160" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
+  <!-- Critical Reception -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.criticalReceptionHeading}</h2>
+    <div class="space-y-3 mb-4">
+      {reviewRows.map(r => (
+        <div class="rounded-lg border px-5 py-4" style={`border-color:var(--border);background-color:var(--bg-surface)`}>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-sm font-bold" style={`color:${color}`}>{r.outlet}</span>
+            {r.score && <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:color-mix(in srgb,${color} 15%,transparent);color:${color}`}>{r.score}</span>}
+            <span class="text-xs ml-auto" style="color:var(--text-muted)">{r.context}</span>
+          </div>
+          <p class="text-sm leading-relaxed italic" style="color:var(--text-muted)">{r.quote}</p>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed" style="background-color:var(--bg-muted);color:var(--text-muted)">
+      <strong style="color:var(--text)">{d.ui.consensusLabel}</strong> {d.ui.consensusText}
+    </div>
+  </section>
+
+  <!-- Setlist -->
+  <section>
+    <h2 class="wiki-section mb-4">{d.ui.setlistHeading}</h2>
+    <div class="flex flex-col gap-10">
+      {setlists.map(sl => (
+        <div>
+          <div class="mb-3">
+            <div class="text-sm font-black" style={`color:${color}`}>{sl.leg}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{sl.desc}</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            {sl.acts.map(act => (
+              <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+                <!-- Act header -->
+                <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
+                  <span class="text-xs font-bold px-2 py-0.5 rounded shrink-0" style={`background-color:${color}20;color:${color}`}>{act.tag}</span>
+                  <span class="text-sm font-bold shrink-0">{act.title}</span>
+                  <span class="text-xs hidden sm:inline" style="color:var(--text-muted)">{act.subtitle}</span>
+                </div>
+                <!-- Songs -->
+                <div style="background-color:var(--bg-surface)">
+                  {act.songs.map((s, i, arr) => {
+                    const ec = eraColors[s.era] ?? color;
+                    return (
+                      <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
+                        <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
+                        <span class="text-sm flex-1 font-medium">{s.title}</span>
+                        {s.note && <span class="text-xs px-1.5 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.note}</span>}
+                        <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
+
+<script is:inline define:vars={{ setlists: setlistData, eraColors, legs }}>
+(function () {
+  const canvas = document.getElementById('pulseSetlistChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32, H = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+
+  // left half: shows per leg; right half: setlist era stacked
+  const halfW = (W - 48) / 2;
+  const PAD = { t: 16, b: 36 };
+  const ch = H - PAD.t - PAD.b;
+
+  // ── Shows per leg ──
+  const showCounts = legs.map(l => ({ name: l.name.split(' — ')[1] || l.name, shows: l.shows.reduce((s, sh) => s + sh.nights, 0) }));
+  const maxShows = Math.max(...showCounts.map(l => l.shows));
+  const slotW1 = halfW / showCounts.length;
+  const barColors = ['#c9a84c','#9b7fc8','#5a7c6a','#5a7aaa'];
+
+  showCounts.forEach((leg, i) => {
+    const bw = slotW1 * 0.65;
+    const bx = 16 + i * slotW1 + (slotW1 - bw) / 2;
+    const bh = (leg.shows / maxShows) * ch;
+    const by = PAD.t + ch - bh;
+    ctx.fillStyle = barColors[i] + 'cc';
+    ctx.beginPath(); ctx.roundRect(bx, by, bw, bh, [3, 3, 0, 0]); ctx.fill();
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = barColors[i]; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText(leg.shows, bx + bw / 2, by - 2);
+    ctx.font = '600 8px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textBaseline = 'top';
+    ctx.fillText(leg.name.slice(0, 8), bx + bw / 2, PAD.t + ch + 5);
+    ctx.fillText('shows', bx + bw / 2, PAD.t + ch + 15);
+  });
+
+  // divider
+  const divX = halfW + 24;
+  ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([3, 4]);
+  ctx.beginPath(); ctx.moveTo(divX, PAD.t); ctx.lineTo(divX, PAD.t + ch); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // section labels
+  ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+  ctx.fillText('Shows per Leg', 16 + halfW / 2, PAD.t - 2);
+  ctx.fillText('Setlist Era Mix', divX + halfW / 2, PAD.t - 2);
+
+  // ── Setlist era stacked bars (Leg 2 acts) ──
+  const acts = setlists[setlists.length - 1].acts;
+  const N = acts.length;
+  const slotW2 = halfW / N;
+  const maxSongs = Math.max(...acts.map(a => a.songs.length));
+  const ox = divX + 8;
+
+  acts.forEach((act, vi) => {
+    const cx = ox + vi * slotW2 + slotW2 / 2;
+    const bw = slotW2 * 0.72;
+    const bx = cx - bw / 2;
+    let stackY = PAD.t + ch;
+    const counts = {};
+    act.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
+    Object.keys(eraColors).filter(e => counts[e]).forEach(era => {
+      const segH = (counts[era] / maxSongs) * ch;
+      stackY -= segH;
+      ctx.fillStyle = eraColors[era] + 'cc';
+      ctx.beginPath(); ctx.roundRect(bx, stackY, bw, segH, 2); ctx.fill();
+    });
+    ctx.font = '600 8px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText(act.short, cx, PAD.t + ch + 5);
+  });
+
+  // era legend bottom-right
+  const usedEras = [...new Set(acts.flatMap(a => a.songs.map(s => s.era)))];
+  let lx = ox;
+  usedEras.forEach(era => {
+    ctx.fillStyle = eraColors[era];
+    ctx.fillRect(lx, H - 10, 7, 7);
+    ctx.font = '8px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(era, lx + 9, H - 6);
+    lx += ctx.measureText(era).width + 20;
+  });
+})();
+</script>

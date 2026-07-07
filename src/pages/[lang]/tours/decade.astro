@@ -1,0 +1,247 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../../i18n';
+import {
+  getToursDecade,
+  color,
+  eraColors,
+  legs,
+  setlist,
+  eraBreakdown,
+  kpiValues,
+  showFormatValues,
+} from '../../../data/pages/tours-decade';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getToursDecade(lang);
+
+const relatedLabels = {
+  tours: { en: 'Tours Overview', th: 'ภาพรวมทัวร์' },
+  pulse: { en: 'PULSE World Tour', th: 'PULSE World Tour' },
+  decadeAlbum: { en: 'DECADE Album', th: 'อัลบั้ม DECADE' },
+  timeline: { en: 'Career Timeline', th: 'ไทม์ไลน์อาชีพ' },
+  awards: { en: 'Awards', th: 'รางวัล' },
+};
+const related = [
+  { label: relatedLabels.tours[lang], href: `${L}tours` },
+  { label: relatedLabels.pulse[lang], href: `${L}tours/pulse` },
+  { label: relatedLabels.decadeAlbum[lang], href: `${L}discography/decade` },
+  { label: relatedLabels.timeline[lang], href: `${L}timeline` },
+  { label: relatedLabels.awards[lang], href: `${L}awards` },
+];
+
+const kpis = d.ui.kpiLabels.map((label, i) => ({ val: kpiValues[i], label }));
+const showFormatStats = d.ui.showFormatLabels.map((label, i) => ({ val: showFormatValues[i], label }));
+---
+
+<WikiLayout title={d.ui.title} section="Tours" lang={lang} relatedPages={related}>
+  <a href={`${L}tours`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">{d.ui.backLink}</a>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>{d.ui.eraLabel}</div>
+    <h1 class="wiki-title mb-1">{d.ui.title}</h1>
+    <p class="text-sm italic mb-1" style="color:var(--text-muted)">"{d.ui.quote}"</p>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.dateInfo}</p>
+  </div>
+
+  <!-- KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {kpis.map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Show format -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.showFormatHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2 border-b text-xs font-bold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}10;color:${color}`}>{d.ui.anthologyFormatLabel}</div>
+      <div class="grid grid-cols-5 divide-x" style="divide-color:var(--border);background-color:var(--bg-surface)">
+        {showFormatStats.map(c => (
+          <div class="flex flex-col items-center py-3 px-2">
+            <div class="text-base font-bold">{c.val}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue list -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.tourDatesHeading}</h2>
+    <div class="flex flex-col gap-4">
+      {legs.map(leg => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+            <span class="text-sm font-bold">{leg.name}</span>
+            <span class="text-xs font-mono" style="color:var(--text-muted)">{leg.period}</span>
+          </div>
+          <table class="w-full" style="margin:0">
+            <tbody style="background-color:var(--bg-surface)">
+              {leg.shows.map((s, i, arr) => (
+                <tr style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+                  <td class="px-4 py-2 text-xs font-mono w-28 shrink-0" style="color:var(--text-muted)">{s.date}</td>
+                  <td class="px-4 py-2 text-sm font-semibold">{s.city}
+                    {s.nights > 1 && <span class="ml-1.5 text-xs px-1.5 py-0.5 rounded font-bold" style={`background-color:${color}15;color:${color}`}>×{s.nights}</span>}
+                  </td>
+                  <td class="px-4 py-2 text-xs" style="color:var(--text-muted)">{s.country}</td>
+                  <td class="px-4 py-2 text-xs hidden md:table-cell" style="color:var(--text-muted)">{s.venue}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Era breakdown -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.eraBreakdownHeading}</h2>
+    <div class="flex flex-wrap gap-2">
+      {Object.entries(eraBreakdown).map(([era, count]) => {
+        const ec = eraColors[era] ?? color;
+        return (
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-md border" style={`border-color:${ec}30;background-color:${ec}0c`}>
+            <span class="text-xs font-bold" style={`color:${ec}`}>{era}</span>
+            <span class="text-xs font-bold px-1.5 py-0.5 rounded" style={`background-color:${ec}20;color:${ec}`}>{count}</span>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Critical Reception -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.criticalReceptionHeading}</h2>
+    <div class="space-y-3 mb-4">
+      {d.reviews.map(r => (
+        <div class="rounded-lg border px-5 py-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-sm font-bold" style={`color:${color}`}>{r.outlet}</span>
+            {r.score && <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:color-mix(in srgb,${color} 15%,transparent);color:${color}`}>{r.score}</span>}
+            <span class="text-xs ml-auto" style="color:var(--text-muted)">{r.context}</span>
+          </div>
+          <p class="text-sm leading-relaxed italic" style="color:var(--text-muted)">{r.quote}</p>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed" style="background-color:var(--bg-muted);color:var(--text-muted)">
+      <strong style="color:var(--text)">{d.ui.consensusLabel}</strong> {d.ui.consensusText}
+    </div>
+  </section>
+
+  <!-- Setlist era chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>{d.ui.setlistEraBreakdownLabel}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.setlistEraBreakdownSub}</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="decadeSetlistChart" height="160" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
+  <!-- Setlist -->
+  <section>
+    <h2 class="wiki-section mb-4">{d.ui.setlistHeading}</h2>
+    <div class="flex flex-col gap-3">
+      {setlist.map(block => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex items-center gap-3 px-4 py-2.5 border-b" style={`border-color:color-mix(in srgb, ${color} 30%, transparent);background-color:color-mix(in srgb, ${color} 8%, var(--bg-surface))`}>
+            <span class="text-xs font-bold px-2 py-0.5 rounded" style={`background-color:${color}20;color:${color}`}>VCR {block.vcr}</span>
+            <span class="text-sm font-bold">{block.title}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{block.subtitle}</span>
+          </div>
+          <div style="background-color:var(--bg-surface)">
+            {block.songs.map((s, i, arr) => {
+              const ec = eraColors[s.era] ?? color;
+              return (
+                <div class="flex items-center gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}>
+                  <span class="text-xs font-mono w-5 text-right shrink-0" style="color:var(--text-muted)">{s.n}</span>
+                  <span class="text-sm flex-1 font-medium">{s.title}</span>
+                  <span class="text-xs px-2 py-0.5 rounded border shrink-0" style={`border-color:${ec}44;color:${ec};background-color:${ec}0f`}>{s.era}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
+
+<script is:inline define:vars={{ setlist, eraColors }}>
+(function () {
+  const canvas = document.getElementById('decadeSetlistChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32, H = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+
+  const PAD = { l: 16, r: 16, t: 16, b: 36 };
+  const cw = W - PAD.l - PAD.r, ch = H - PAD.t - PAD.b;
+  const N = setlist.length;
+  const slotW = cw / N;
+  const maxSongs = Math.max(...setlist.map(v => v.songs.length));
+
+  setlist.forEach((vcr, vi) => {
+    const cx = PAD.l + vi * slotW + slotW / 2;
+    const barW = slotW * 0.72;
+    const bx = cx - barW / 2;
+    let stackY = PAD.t + ch;
+
+    // count per era
+    const counts = {};
+    vcr.songs.forEach(s => { counts[s.era] = (counts[s.era] || 0) + 1; });
+    const eras = Object.keys(eraColors).filter(e => counts[e]);
+
+    eras.forEach(era => {
+      const segH = (counts[era] / maxSongs) * ch;
+      stackY -= segH;
+      ctx.fillStyle = eraColors[era] + 'cc';
+      ctx.beginPath(); ctx.roundRect(bx, stackY, barW, segH, 2); ctx.fill();
+    });
+
+    // song count label
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText(vcr.songs.length, cx, stackY - 3);
+
+    // VCR label
+    ctx.font = '600 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    const line1 = 'VCR' + vcr.vcr;
+    const line2 = vcr.title.length > 10 ? vcr.title.slice(0, 9) + '…' : vcr.title;
+    ctx.fillText(line1, cx, PAD.t + ch + 5);
+    ctx.fillText(line2, cx, PAD.t + ch + 16);
+  });
+
+  // era legend
+  const usedEras = [...new Set(setlist.flatMap(v => v.songs.map(s => s.era)))];
+  let lx = PAD.l;
+  usedEras.forEach(era => {
+    ctx.fillStyle = eraColors[era];
+    ctx.fillRect(lx, 3, 8, 8);
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(era, lx + 11, 7);
+    lx += ctx.measureText(era).width + 22;
+  });
+})();
+</script>
