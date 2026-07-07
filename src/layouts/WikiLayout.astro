@@ -54,6 +54,16 @@ const nav: Array<NavItem | NavGroup> = [
 
 const currentPath = Astro.url.pathname;
 const langLinks = lang ? LANGS.map(l => ({ code: l, href: swapLangInPath(currentPath, base, l) })) : null;
+
+// Sidebar section header — Thai labels for the fixed set of section names.
+const sectionTh: Record<string, string> = {
+  'Overview': 'ภาพรวม', 'Biography': 'ชีวประวัติ', 'Music': 'ดนตรี', 'Discography': 'ผลงานเพลง',
+  'Analysis': 'บทวิเคราะห์', 'Tours': 'ทัวร์คอนเสิร์ต', 'Live': 'การแสดงสด', 'Business': 'ธุรกิจ',
+  'Filmography': 'ผลงานภาพยนตร์', 'Film & Screen': 'ภาพยนตร์', 'Image': 'ภาพลักษณ์',
+  'Recognition': 'การยอมรับ', 'History': 'ประวัติ', 'Community': 'คอมมูนิตี้',
+  'Reference': 'อ้างอิง', 'Wiki': 'วิกิ',
+};
+const sectionLabel = section ? (L === 'th' ? (sectionTh[section] ?? section) : section) : undefined;
 ---
 
 <!doctype html>
@@ -118,7 +128,7 @@ const langLinks = lang ? LANGS.map(l => ({ code: l, href: swapLangInPath(current
     <div class="flex flex-1 max-w-screen-2xl mx-auto w-full">
       <!-- Sidebar -->
       <aside id="sidebar" class="hidden md:flex flex-col w-56 shrink-0 border-r py-6 px-3 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto" style="border-color:var(--border)">
-        {section && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:var(--gold)">{section}</p>}
+        {sectionLabel && <p class="text-xs font-semibold uppercase tracking-widest mb-3 px-2" style="color:var(--gold)">{sectionLabel}</p>}
         <nav class="flex flex-col gap-0.5">
           {nav.map(item => {
             if ('group' in item) {

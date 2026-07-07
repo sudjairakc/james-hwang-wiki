@@ -128,12 +128,12 @@ Disk 1 — Identity & Impact
 Honey
 CAN’T LEAVE ALONE
 SAY
-ARCHIVE I: “Midnight Notebook” (LIKE I DO Sessions, 2015–2016)(demo melody fragment + voice memo เกี่ยวกับการเขียนเพลงตอน trainee era)
+ARCHIVE I: “Midnight Notebook” (LIKE I DO Sessions, 2015–2016)(demo melody fragment + voice memo about songwriting during the trainee era)
 Tears On A Pretty Face
 HOW DOES IT FEEL
 SAVE ME
 LIKE I DO (Solo Version)
-ARCHIVE II: “Softest Touch, First Stage” (SOFTEST TOUCH Sessions, 2016–2019)(spoken reflection เกี่ยวกับการเตรียม solo debut และการทำ SM Station material)
+ARCHIVE II: “Softest Touch, First Stage” (SOFTEST TOUCH Sessions, 2016–2019)(spoken reflection about preparing for the solo debut and making SM Station material)
 SOFTEST TOUCH
 CRUSH (Solo Version)
 ALL FOR YOU
@@ -145,16 +145,16 @@ NEW (Title)
 NEW
 NEW
 NEW
-ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note จาก independent writing phase)
+ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note from the independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA
 NO RESERVATION (Extended Live Version)
-ARCHIVE IV: “Breathing in Analog” (ARE U STILL Sessions, 2023–2024)(spoken reflection เกี่ยวกับ groove-based writing และการกลับไปหา soul lineage)
+ARCHIVE IV: “Breathing in Analog” (ARE U STILL Sessions, 2023–2024)(spoken reflection about groove-based writing and returning to the soul lineage)
 Somewhere, Somehow
 Mystery Lady
 If I Knew
 Call Me
 EVERLASTING (Solo Version)
 RIGHT ABOUT LOVE (Extended Live Version)
-ARCHIVE V: “Sweet / Sour, Still Me” (CAN'T LEAVE ALONE Sessions, 2024–2025)(closing essay fragment เกี่ยวกับ duality ของ identity และความสัมพันธ์)
+ARCHIVE V: “Sweet / Sour, Still Me” (CAN'T LEAVE ALONE Sessions, 2024–2025)(closing essay fragment about the duality of identity and relationships)
 </div>

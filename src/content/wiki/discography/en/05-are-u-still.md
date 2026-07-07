@@ -126,13 +126,13 @@ the defining pivot album between independence and legacy alignment in James Hwan
 Tracklist & Credits
 1. Sleepwalking — Neo-Soul / R&B | intro track — emotional detachment / drifting state | Concept Release: 01/01/2024 | Leven Kali (1,839,427 streams)
 2. Tears On A Pretty Face [TITLE] — Contemporary R&B / Synth Funk / Nu-Disco | contrast between beauty and emotional damage | MV: 08/01/2024 | Kyle Dion (505,786 streams)
-3. If I Knew — Alternative R&B / Soul | bridge track จาก era ก่อน — regret narrative | MV: 06/10/2023 | Kyle Dion (60,268 streams)
-4. Just A Dream (feat. Janet Jackson) — Neo Soul / Contemporary R&B | dreamlike duet — legacy connection กับสาย soul/pop icon | Isaiah Falls, Alex Isley (2,679,777 streams)
+3. If I Knew — Alternative R&B / Soul | bridge track from the previous era — regret narrative | MV: 06/10/2023 | Kyle Dion (60,268 streams)
+4. Just A Dream (feat. Janet Jackson) — Neo Soul / Contemporary R&B | dreamlike duet — legacy connection with a soul/pop icon | Isaiah Falls, Alex Isley (2,679,777 streams)
 5. Purpose — Alternative R&B / Soul | identity-driven songwriting | Paco (76,839 streams)
-6. Breathe — Funk / Disco-Soul / R&B | groove-heavy performance track — จุดตัดครึ่งอัลบั้ม (cathartic release) | MV: 04/02/2024 | Leven Kali (501,947 streams)
+6. Breathe — Funk / Disco-Soul / R&B | groove-heavy performance track — album midpoint pivot (cathartic release) | MV: 04/02/2024 | Leven Kali (501,947 streams)
 7. Ordinary Feelings — Soulful Pop / R&B with '80s Soul | nostalgia-driven melody / analog influence | Mack Keane (942,644 streams)
 8. Another Man's Life — Alternative R&B / Soul | self-reflection / alternate reality theme | Mack Keane (208,482 streams)
-9. Selfish — R&B / Soul | gut punch ของ sequencing — sound โยกแต่เนื้อหนักที่สุดในอัลบั้ม | BOY SODA (378,017 streams)
+9. Selfish — R&B / Soul | gut punch of the sequencing — groovy sound but the heaviest lyrics on the album | BOY SODA (378,017 streams)
 10. Somewhere, Somehow — R&B / Soul / Disco / Hip-Hop | hybrid rhythmic structure | Gareth Donkin (119,430 streams)
 11. Out Here — Soul / R&B / Funk-Disco-Pop | closing statement — grounded identity | Gareth Donkin (90,016 streams)
 </div>

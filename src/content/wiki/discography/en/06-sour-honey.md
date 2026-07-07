@@ -100,8 +100,8 @@ The bonus track “TAKE YOU TONIGHT” has also been noted in the listener commu
 <div class="raw-tracklist">
 Tracklist & Credits
 1. CAN’T LEAVE ALONE (feat. Pharrell Williams) — R&B / Contemporary R&B / Neptunes-style groove | obsession-driven opening — looped groove + minimal funk influence | MV: 03/02/2025 | Composed by GONUNMA, Pino, Pharrell Williams | Lyrics by GONUNMA, Pino | Arranged by GONUNMA, Pino | Pino, Avenoir, Maz B, 86 (7,461,004 streams)
-2. SOUR [TITLE] — R&B / Pop-R&B / K-R&B | core theme — ความสัมพันธ์ที่เริ่มหวานแต่จบด้วยความขม | MV: 10/02/2025 | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | JUNNY (935,869 streams)
-3. SHOOK — R&B / Contemporary R&B | boxing metaphor — defeat by attraction, ยอมรับความพ่ายแพ้ผ่าน groove ที่ bouncy | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA | Arranged by GONUNMA, JUNNY | H33RA (08/01/2026, 394,250 streams)
+2. SOUR [TITLE] — R&B / Pop-R&B / K-R&B | core theme — a relationship that starts sweet but ends bitter | MV: 10/02/2025 | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | JUNNY (935,869 streams)
+3. SHOOK — R&B / Contemporary R&B | boxing metaphor — defeat by attraction, accepting the loss through a bouncy groove | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA | Arranged by GONUNMA, JUNNY | H33RA (08/01/2026, 394,250 streams)
 4. MYSTERY LADY — R&B / Soul | classic R&B storytelling — unknown attraction | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Larrenwong (58,856 streams)
 5. HONEY — Pop-R&B / 2000s-inspired R&B | sweet phase — desire / physical closeness | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | CODY JON (337,988 streams)
 6. I WANT YOU BACK (Interlude) — R&B / Soul | short emotional recall — regret moment | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chase Shakur (112,755 streams)
