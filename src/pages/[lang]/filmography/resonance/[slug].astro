@@ -1,0 +1,126 @@
+---
+import WikiLayout from '../../../../layouts/WikiLayout.astro';
+import { LANGS, type Lang } from '../../../../i18n';
+import { slugMeta, slugs, getResonanceDetail } from '../../../../data/pages/resonance-detail';
+
+export function getStaticPaths() {
+  return LANGS.flatMap(lang => slugs.map(slug => ({ params: { lang, slug } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug as string;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getResonanceDetail(lang);
+const meta = slugMeta[slug];
+const ps = d.perSlug[slug];
+
+const modules = import.meta.glob('../../../../content/wiki/filmography/resonance/*/*.md');
+const key = `../../../../content/wiki/filmography/resonance/${lang}/${slug}.md`;
+const mod = await modules[key]() as { Content: any };
+const { Content } = mod;
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={meta.title} section={d.ui.section} lang={lang} relatedPages={related}>
+  <a href={`${L}filmography/resonance`}
+    class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
+    {d.ui.back}
+  </a>
+
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>
+      {d.ui.franchisePrefix} · {ps.label}
+    </div>
+    <h1 class="wiki-title mb-2">{meta.title}</h1>
+    <p class="text-sm mb-2" style="color:var(--text-muted)">{ps.subtitle}</p>
+    <div class="flex flex-wrap items-center gap-2">
+      {meta.date && (
+        <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${meta.color}18;color:${meta.color}`}>{meta.date}</span>
+      )}
+      <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">
+        {ps.label === 'Canon' ? d.ui.reference : d.ui.upcoming}
+      </span>
+      <span class="text-xs italic" style="color:var(--text-muted)">"{ps.tagline}"</span>
+    </div>
+  </div>
+
+  <!-- Format + credits -->
+  <div class="rounded-lg border overflow-hidden mb-8" style="border-color:var(--border)">
+    <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${meta.color}44;background-color:${meta.color}08;color:${meta.color}`}>
+      {ps.format}
+    </div>
+    <div style="background-color:var(--bg-surface)">
+      {meta.credits.map((r, i, arr) => (
+        <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+          <div class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+          <div class="text-sm leading-relaxed">{r.val}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="resonance-prose prose prose-invert max-w-none">
+    <Content />
+  </div>
+</WikiLayout>
+
+<style>
+  .resonance-prose :global(h1) {
+    display: none;
+  }
+  .resonance-prose :global(h2) {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  }
+  .resonance-prose :global(h3) {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .resonance-prose :global(p) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+  .resonance-prose :global(ul), .resonance-prose :global(ol) {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .resonance-prose :global(li) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.35rem;
+  }
+  .resonance-prose :global(strong) {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .resonance-prose :global(em) {
+    color: var(--text-muted);
+    opacity: 0.85;
+  }
+  .resonance-prose :global(hr) {
+    border-color: color-mix(in srgb, var(--border) 50%, transparent);
+    margin: 1.5rem 0;
+  }
+  .resonance-prose :global(p:first-child br) {
+    display: none;
+  }
+</style>

@@ -1,0 +1,144 @@
+---
+import WikiLayout from '../../../../layouts/WikiLayout.astro';
+import { LANGS, type Lang } from '../../../../i18n';
+import { slugMeta, slugs, getShangchiDetail } from '../../../../data/pages/shangchi-detail';
+
+export function getStaticPaths() {
+  return LANGS.flatMap(lang => slugs.map(slug => ({ params: { lang, slug } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug as string;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getShangchiDetail(lang);
+const meta = slugMeta[slug];
+const ps = d.perSlug[slug];
+
+const modules = import.meta.glob('../../../../content/wiki/filmography/shang-chi/*/*.md');
+const key = `../../../../content/wiki/filmography/shang-chi/${lang}/${slug}.md`;
+const mod = await modules[key]() as { Content: any };
+const { Content } = mod;
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={ps.title} section={d.ui.section} lang={lang} relatedPages={related}>
+  <a href={`${L}filmography/shang-chi`}
+    class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
+    {d.ui.back}
+  </a>
+
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${meta.color}`}>
+      {meta.phase} · {d.ui.trilogyPrefix}
+    </div>
+    <h1 class="wiki-title mb-2">{ps.title}</h1>
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${meta.color}18;color:${meta.color}`}>{meta.year}</span>
+      {meta.showCredits && (
+        meta.boxOffice
+          ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">{d.ui.released}</span>
+          : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">{d.ui.upcoming}</span>
+      )}
+    </div>
+  </div>
+
+  <!-- KPIs -->
+  {meta.boxOffice && (
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+      {[
+        { val: ps.date, label: d.ui.kpiDate },
+        { val: meta.director.split(' ').slice(-1)[0], label: d.ui.kpiDirector },
+        { val: meta.boxOffice, label: d.ui.kpiBoxOffice },
+        { val: meta.rtScore ?? '—', label: d.ui.kpiRt },
+      ].map(s => (
+        <div class="stat-card">
+          <div class="stat-val text-base">{s.val}</div>
+          <div class="stat-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <!-- Credits block -->
+  {meta.showCredits && (
+    <div class="rounded-lg border overflow-hidden mb-8" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${meta.color}44;background-color:${meta.color}08;color:${meta.color}`}>{d.ui.creditsHeading}</div>
+      <div style="background-color:var(--bg-surface)">
+        {[
+          { label: d.ui.crDirector, val: meta.director },
+          { label: d.ui.crScreenplay, val: meta.screenwriters },
+          { label: d.ui.crProducers, val: meta.producers },
+          { label: d.ui.crStarring, val: meta.starring },
+          { label: ps.date ? d.ui.crReleaseDate : d.ui.crReleaseSched, val: ps.date || meta.year },
+          { label: d.ui.crJamesRole, val: ps.role },
+        ].map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-semibold w-28 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+            <div class="text-sm leading-relaxed">{r.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Plot / content -->
+  <div class="film-prose prose prose-invert max-w-none">
+    <Content />
+  </div>
+</WikiLayout>
+
+<style>
+  .film-prose :global(h2) {
+    display: none;
+  }
+  .film-prose :global(h3) {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  }
+  .film-prose :global(h4) {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .film-prose :global(ul) {
+    padding-left: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .film-prose :global(li) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+  .film-prose :global(p) {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 0.85rem;
+  }
+  .film-prose :global(strong) {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .film-prose :global(em) {
+    color: var(--text-muted);
+    opacity: 0.9;
+  }
+  .film-prose :global(hr) {
+    border-color: color-mix(in srgb, var(--border) 50%, transparent);
+    margin: 1.5rem 0;
+  }
+</style>

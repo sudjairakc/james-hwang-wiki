@@ -1,0 +1,124 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../../i18n';
+import { color, entries, getResonanceLanding } from '../../../data/pages/resonance-landing';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getResonanceLanding(lang);
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={d.ui.title} section="Filmography" lang={lang} relatedPages={related}>
+  <a href={`${L}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
+    {d.ui.back}
+  </a>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>{d.ui.eyebrow}</div>
+    <h1 class="wiki-title mb-1">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '4', label: d.ui.statFilms },
+      { val: '1', label: d.ui.statSeries },
+      { val: '2026–2030', label: d.ui.statTimeline },
+      { val: 'Disney', label: d.ui.statDistributor },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Entry cards -->
+  <div class="flex flex-col gap-4 mb-10">
+    {entries.map(e => {
+      const pe = d.perEntry[e.slug];
+      return (
+      <a href={`${L}filmography/resonance/${e.slug}`}
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-black shrink-0"
+              style={`background-color:${color}25;color:${color};border:1px solid ${color}44`}>
+              {e.badgeText}
+            </div>
+            <div>
+              <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{e.title}</div>
+              <div class="text-xs mt-0.5" style="color:var(--text-muted)">{pe.subtitle}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${color}18;color:${color}`}>{e.label}</span>
+            {e.status === 'reference'
+              ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a3a6a30;color:#8888cc">{d.ui.reference}</span>
+              : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">{d.ui.upcoming}</span>
+            }
+            <div class="text-gray-600 group-hover:text-gray-400 transition-colors">→</div>
+          </div>
+        </div>
+
+        {e.status !== 'reference' && (
+          <div class="grid grid-cols-3 md:grid-cols-4 divide-x" style="divide-color:var(--border);border-bottom:1px solid var(--border)">
+            {[
+              { val: e.date ?? '—', label: d.ui.colRelease },
+              { val: e.platform ?? '—', label: d.ui.colPlatform },
+              { val: e.episodes != null ? `${e.episodes} ${d.ui.episodesSuffix}` : d.ui.featureFilm, label: d.ui.colFormat },
+              { val: e.year || '—', label: d.ui.colYear },
+            ].map(c => (
+              <div class="flex flex-col items-center py-2.5 px-2 text-center">
+                <div class="text-xs font-bold">{c.val}</div>
+                <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div class="px-5 py-3 flex flex-col gap-1">
+          <div class="text-xs font-semibold" style={`color:${color}`}>{pe.role}</div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{pe.highlight}</p>
+        </div>
+      </a>
+      );
+    })}
+  </div>
+
+  <!-- Universe context -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>{d.ui.creativeRoleHeading}</div>
+      <div style="background-color:var(--bg-surface)">
+        {d.creativeRoles.map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-bold w-24 shrink-0 mt-0.5" style={`color:${color}`}>{r.role}</div>
+            <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{r.detail}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>{d.ui.universeHeading}</div>
+      <div style="background-color:var(--bg-surface)">
+        {d.universeRows.map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-2.5" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-semibold w-32 shrink-0" style="color:var(--text-muted)">{r.item}</div>
+            <div class="text-sm">{r.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</WikiLayout>

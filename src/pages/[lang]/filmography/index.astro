@@ -1,0 +1,63 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../../i18n';
+import { franchises, getFilmographyIndex } from '../../../data/pages/filmography-index';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getFilmographyIndex(lang);
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={d.ui.title} section="Film & Screen" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <div class="flex flex-col gap-6">
+    {franchises.map((f, fi) => (
+      <a href={`${L}${f.slug}`}
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <!-- Franchise header -->
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${f.color}44;background-color:${f.color}10`}>
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style={`color:${f.color}`}>{f.universe}</div>
+            <h2 id={f.franchise.toLowerCase().replace(/\s+/g, '-')} class="text-base font-black m-0 group-hover:underline" style={`color:var(--text);text-decoration-color:${f.color}`}>{f.franchise}</h2>
+          </div>
+          <div class="text-gray-600 group-hover:text-gray-400 transition-colors text-lg">→</div>
+        </div>
+
+        <!-- Film rows -->
+        {f.entries.map((e, i, arr) => (
+          <div class="flex items-center gap-4 px-5 py-3"
+            style={`${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 60%, transparent)' : ''}`}>
+            <div class="w-6 h-6 rounded flex items-center justify-center text-xs font-bold shrink-0"
+              style={`background-color:${f.color}18;color:${f.color}`}>{i + 1}</div>
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-semibold truncate">{e.title}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{d.notes[fi][i]}</div>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <span class="text-xs font-mono font-medium" style="color:var(--text-muted)">{lang === 'th' ? e.date : e.dateEn}</span>
+              <span class="text-xs px-2 py-0.5 rounded-full font-semibold"
+                style={e.status === 'Released'
+                  ? 'background-color:color-mix(in srgb,#22c55e 12%,transparent);color:#4ade80'
+                  : 'background-color:color-mix(in srgb,#facc15 10%,transparent);color:#facc15'}>
+                {e.status === 'Released' ? d.ui.statusReleased : d.ui.statusUpcoming}
+              </span>
+            </div>
+          </div>
+        ))}
+      </a>
+    ))}
+  </div>
+</WikiLayout>

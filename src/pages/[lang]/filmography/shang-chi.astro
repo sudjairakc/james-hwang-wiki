@@ -1,0 +1,144 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../../i18n';
+import { color, totalBO, films, cast, getShangchiLanding } from '../../../data/pages/shangchi-landing';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getShangchiLanding(lang);
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={d.ui.title} section="Filmography" lang={lang} relatedPages={related}>
+  <a href={`${L}filmography`} class="inline-flex items-center gap-1.5 text-xs mb-6 transition-colors" style="color:var(--text-muted)">
+    {d.ui.back}
+  </a>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style={`color:${color}`}>{d.ui.eyebrow}</div>
+    <h1 class="wiki-title mb-1">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: '3', label: d.ui.statFilms },
+      { val: totalBO, label: d.ui.statBoxOffice },
+      { val: '2021–2026', label: d.ui.statTimeline },
+      { val: 'Phase 4–6', label: d.ui.statPhase },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Film cards -->
+  <div class="flex flex-col gap-4 mb-10">
+    {films.map(f => {
+      const pf = d.perFilm[f.slug];
+      return (
+      <a href={`${L}filmography/shang-chi/${f.slug}`}
+        class="block border rounded-xl overflow-hidden transition-all group"
+        style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+
+        <div class="flex items-center justify-between px-5 py-3 border-b" style={`border-color:${color}44;background-color:${color}10`}>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-base font-black shrink-0"
+              style={`background-color:${color}25;color:${color};border:1px solid ${color}44`}>
+              {f.num}
+            </div>
+            <div>
+              <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>{f.title}</div>
+              {pf.sub && <div class="text-xs mt-0.5" style="color:var(--text-muted)">{pf.sub}</div>}
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`background-color:${color}18;color:${color}`}>{f.phase}</span>
+            {f.status === 'released'
+              ? <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#3a6a3a30;color:#5aaa5a">{d.ui.statusReleased}</span>
+              : <span class="text-xs px-2 py-0.5 rounded-full font-semibold" style="background-color:#6a6a1a30;color:#aaaa3a">{d.ui.statusUpcoming}</span>
+            }
+            <div class="text-gray-600 group-hover:text-gray-400 transition-colors">→</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 md:grid-cols-5 divide-x" style="divide-color:var(--border);border-bottom:1px solid var(--border)">
+          {[
+            { val: lang === 'th' ? f.date : f.dateEn, label: d.ui.colDate },
+            { val: f.director.split(' ').slice(-1)[0], label: d.ui.colDirector },
+            { val: pf.contribution, label: d.ui.colContribution },
+            { val: f.boxOffice ?? 'TBA', label: d.ui.colBoxOffice },
+            { val: f.rtScore ?? '—', label: d.ui.colRt },
+          ].map(c => (
+            <div class="flex flex-col items-center py-2.5 px-2 text-center">
+              <div class="text-xs font-bold">{c.val}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{c.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div class="px-5 py-3 flex flex-col gap-1">
+          <div class="text-xs font-semibold" style={`color:${color}`}>{pf.role}</div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{pf.highlight}</p>
+        </div>
+      </a>
+      );
+    })}
+  </div>
+
+  <!-- Trilogy analysis -->
+  <a href={`${L}filmography/shang-chi/trilogy-analysis`}
+    class="block border rounded-xl overflow-hidden transition-all group mb-10"
+    style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+    <div class="flex items-center justify-between px-5 py-4">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-1" style={`color:${color}`}>{d.analysisCard.label}</div>
+        <div class="text-base font-black group-hover:underline leading-tight" style={`text-decoration-color:${color}`}>
+          {d.analysisCard.title}
+        </div>
+        <p class="text-xs mt-1.5 leading-relaxed" style="color:var(--text-muted)">
+          {d.analysisCard.desc}
+        </p>
+      </div>
+      <div class="text-gray-600 group-hover:text-gray-400 transition-colors shrink-0 ml-4">→</div>
+    </div>
+  </a>
+
+  <!-- Franchise context -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>{d.ui.creativeHeading}</div>
+      <div style="background-color:var(--bg-surface)">
+        {d.creativeRoles.map((r, i, arr) => (
+          <div class="flex gap-4 px-4 py-3" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-bold w-14 shrink-0 mt-0.5" style={`color:${color}`}>{r.film}</div>
+            <div>
+              <div class="text-sm font-semibold mb-0.5">{r.role}</div>
+              <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{r.detail}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style={`border-color:${color}44;background-color:${color}08;color:${color}`}>{d.ui.castHeading}</div>
+      <div style="background-color:var(--bg-surface)">
+        {cast.map((c, i, arr) => (
+          <div class="flex items-center gap-4 px-4 py-2" style={i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <span class="text-sm font-semibold w-36 shrink-0">{c.actor}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{c.role}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</WikiLayout>
