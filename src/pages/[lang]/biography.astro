@@ -1,0 +1,89 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getBiography } from '../../data/pages/biography';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getBiography(lang);
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={d.ui.title} section="Overview" lang={lang} relatedPages={related}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.label}</div>
+    <h1 class="wiki-title mb-3">{d.ui.title}</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)">
+      {d.ui.intro}
+    </p>
+  </div>
+
+  <!-- Quick facts -->
+  <div class="rounded-xl border overflow-hidden mb-10" style="border-color:var(--border)">
+    <div class="px-5 py-3 border-b text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);border-color:var(--border);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">{d.ui.quickFactsHeading}</div>
+    <div style="background-color:var(--bg-surface)">
+      {d.quickFacts.map((r, i) => (
+        <div class="flex gap-4 px-5 py-2.5" style={i < d.quickFacts.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 50%,transparent)' : ''}>
+          <div class="text-xs font-semibold w-32 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+          <div class="text-sm leading-relaxed">{r.val}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Chapter jump nav -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {d.chapters.map(c => (
+      <a href={`#ch-${c.id}`} class="text-xs px-3 py-1.5 rounded-full border transition-colors hover:border-[var(--gold)]" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">
+        {c.period}
+      </a>
+    ))}
+  </div>
+
+  <!-- Chapters -->
+  <div class="space-y-12">
+    {d.chapters.map((ch) => (
+      <section id={`ch-${ch.id}`}>
+        <div class="flex items-start gap-4 mb-5">
+          <div class="shrink-0 mt-1">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black" style="background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)">{ch.id}</div>
+          </div>
+          <div class="border-b pb-3 flex-1" style="border-color:var(--border)">
+            <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:var(--text-muted)">{ch.period}</div>
+            <h2 class="text-lg font-bold" style="color:var(--text)">{ch.title}</h2>
+          </div>
+        </div>
+
+        <div class="pl-12 space-y-4">
+          {ch.body.map(para => (
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{para}</p>
+          ))}
+        </div>
+
+        {ch.id === '05' && (
+          <div class="pl-12 mt-4">
+            <a href={`${L}legal`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 5%,transparent)">
+              {d.ui.legalLinkLabel}
+            </a>
+          </div>
+        )}
+        {ch.id === '07' && (
+          <div class="pl-12 mt-4 flex flex-wrap gap-2">
+            <a href={`${L}discography`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{d.ui.discographyLinkLabel}</a>
+            <a href={`${L}filmography`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{d.ui.filmographyLinkLabel}</a>
+            <a href={`${L}awards`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{d.ui.awardsLinkLabel}</a>
+            <a href={`${L}timeline`} class="text-xs inline-flex items-center gap-1.5 px-3 py-1.5 rounded border transition-colors" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{d.ui.timelineLinkLabel}</a>
+          </div>
+        )}
+      </section>
+    ))}
+  </div>
+
+</WikiLayout>

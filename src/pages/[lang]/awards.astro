@@ -1,0 +1,217 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getAwards } from '../../data/pages/awards';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getAwards(lang);
+
+const related = d.related.map(r => ({ label: r.label, href: `${base}${lang}/${r.slug}` }));
+
+const totalWins = d.years.flatMap(y => y.wins).filter(w => w.result === 'WIN').length;
+const totalNoms = d.years.flatMap(y => y.wins).filter(w => w.result === 'NOM').length;
+const totalMusicWins = d.years.flatMap(y => y.musicWins).reduce((acc, w) => acc + w.count, 0);
+
+const awardsChart = d.years.map(y => ({
+  year: y.year,
+  wins: y.wins.filter(w => w.result === 'WIN').length,
+  noms: y.wins.filter(w => w.result === 'NOM').length,
+  musicWins: y.musicWins.reduce((s, w) => s + w.count, 0),
+}));
+---
+<WikiLayout title={d.ui.title} section="Recognition" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-3 gap-3 mb-10">
+    {[
+      { val: totalWins, label: d.ui.statAwardWins },
+      { val: totalNoms, label: d.ui.nominations },
+      { val: totalMusicWins, label: d.ui.musicShowWins },
+    ].map(s => (
+      <div class="stat-card text-center">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Awards chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.trajectoryHeading}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.trajectorySubtitle}</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="awardsChart" height="200" style="width:100%;display:block"></canvas>
+      <div class="flex gap-5 mt-3 flex-wrap">
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-sm" style="background-color:var(--gold)"></span><span class="text-xs" style="color:var(--text-muted)">{d.ui.wins}</span></div>
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-sm" style="background-color:#6b7280"></span><span class="text-xs" style="color:var(--text-muted)">{d.ui.nominations}</span></div>
+        <div class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-full" style="background-color:#60a5fa"></span><span class="text-xs" style="color:var(--text-muted)">{d.ui.musicShowWins}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Year sections -->
+  <div class="flex flex-col gap-10">
+    {d.years.map(y => {
+      const wins = y.wins.filter(w => w.result === 'WIN');
+      const noms = y.wins.filter(w => w.result === 'NOM');
+      return (
+        <section>
+          <!-- Year header -->
+          <div class="flex items-baseline gap-4 mb-5 pb-3 border-b" style="border-color:var(--border)">
+            <span class="wiki-year-heading">{y.year}</span>
+            <span class="text-sm font-semibold" style="color:var(--text)">{y.album}</span>
+            <span class="text-xs ml-auto px-2 py-0.5 rounded border" style="color:var(--text-muted);border-color:var(--border)">{y.albumSub}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded" style="background-color:color-mix(in srgb, var(--gold) 12%, transparent);color:var(--gold)">
+              {wins.length}{d.ui.winAbbr} / {noms.length}{d.ui.nomAbbr}
+            </span>
+          </div>
+
+          <!-- Award table -->
+          <div class="rounded-lg overflow-hidden border mb-5" style="border-color:var(--border)">
+            <table class="w-full text-sm" style="margin:0">
+              <thead>
+                <tr style="background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface));border-bottom:1px solid var(--gold)">
+                  <th class="text-left px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);width:35%">{d.ui.tableAwardShow}</th>
+                  <th class="text-left px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">{d.ui.tableCategory}</th>
+                  <th class="text-right px-4 py-2.5 text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);width:90px">{d.ui.tableResult}</th>
+                </tr>
+              </thead>
+              <tbody style="background-color:var(--bg-surface)">
+                {y.wins.map((w, i) => (
+                  <tr style={`border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent);${i === y.wins.length - 1 ? 'border-bottom:none' : ''}`}>
+                    <td class="px-4 py-2.5 text-xs font-medium" style="color:var(--text-muted)">{w.show}</td>
+                    <td class="px-4 py-2.5 text-sm" style="color:var(--text)">{w.category}</td>
+                    <td class="px-4 py-2.5 text-right">
+                      {w.result === 'WIN'
+                        ? <span class="badge-win">{d.ui.winBadge}</span>
+                        : <span class="badge-nom">{d.ui.nomBadge}</span>
+                      }
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Music show wins -->
+          {y.musicWins.length > 0 && (
+            <div class="mb-4">
+              <div class="text-xs font-semibold uppercase tracking-widest mb-2.5" style="color:var(--text-muted)">{d.ui.musicShowWins}</div>
+              <div class="flex flex-wrap gap-2">
+                {y.musicWins.map(mw => (
+                  <div class="flex items-center gap-2 px-3 py-1.5 rounded-md border text-sm" style="border-color:var(--border);background-color:var(--bg-surface)">
+                    <span class="font-medium text-xs">{mw.show}</span>
+                    <span class="text-xs px-1.5 py-0.5 rounded font-bold" style="background-color:color-mix(in srgb, var(--gold) 15%, transparent);color:var(--gold)">×{mw.count}</span>
+                  </div>
+                ))}
+                <div class="text-xs self-center ml-1" style="color:var(--text-muted)">— {y.musicWins[0]?.title}</div>
+              </div>
+            </div>
+          )}
+
+          <!-- Charts -->
+          {y.charts.length > 0 && (
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.chartMilestonesHeading}</div>
+              <ul class="flex flex-col gap-1">
+                {y.charts.map(c => (
+                  <li class="flex items-start gap-2 text-sm" style="color:var(--text-muted)">
+                    <span class="mt-1.5 w-1 h-1 rounded-full shrink-0 inline-block" style="background-color:var(--gold)"></span>
+                    {c}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+      );
+    })}
+  </div>
+</WikiLayout>
+
+<script is:inline define:vars={{ awardsChart }}>
+(function () {
+  const canvas = document.getElementById('awardsChart');
+  if (!canvas) return;
+  const W = canvas.parentElement.clientWidth - 32;
+  const H = 200;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const cs = getComputedStyle(document.documentElement);
+  const gold      = cs.getPropertyValue('--gold').trim() || '#c9a84c';
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+
+  const PAD = { l: 28, r: 12, t: 16, b: 28 };
+  const cw = W - PAD.l - PAD.r;
+  const ch = H - PAD.t - PAD.b;
+  const N = awardsChart.length;
+  const maxVal = Math.max(...awardsChart.map(d => d.wins + d.noms)) + 1;
+
+  const slotW = cw / N;
+  const barW  = Math.min(slotW * 0.28, 18);
+  const py = v => PAD.t + ch - (v / maxVal) * ch;
+
+  // grid
+  [0.25, 0.5, 0.75, 1].forEach(f => {
+    const y = PAD.t + ch * (1 - f);
+    ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+    ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + cw, y); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillText(Math.round(maxVal * f), PAD.l - 4, y);
+  });
+
+  awardsChart.forEach((d, i) => {
+    const cx = PAD.l + slotW * i + slotW / 2;
+
+    // nominations bar (behind)
+    if (d.noms > 0) {
+      ctx.fillStyle = '#6b728088';
+      ctx.beginPath();
+      ctx.roundRect(cx - barW * 0.6, py(d.noms), barW * 1.2, (d.noms / maxVal) * ch, [3, 3, 0, 0]);
+      ctx.fill();
+    }
+    // wins bar (front, offset slightly)
+    if (d.wins > 0) {
+      ctx.fillStyle = gold + 'cc';
+      ctx.beginPath();
+      ctx.roundRect(cx - barW / 2, py(d.wins), barW, (d.wins / maxVal) * ch, [3, 3, 0, 0]);
+      ctx.fill();
+      // value label
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = gold; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+      ctx.fillText(d.wins, cx, py(d.wins) - 2);
+    }
+    // music show wins dot
+    if (d.musicWins > 0) {
+      const dotY = py(d.wins) - 14;
+      ctx.beginPath(); ctx.arc(cx, dotY, 5, 0, Math.PI * 2);
+      ctx.fillStyle = '#60a5fa';
+      ctx.fill();
+      ctx.font = '700 8px system-ui,sans-serif';
+      ctx.fillStyle = '#60a5fa'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(d.musicWins, cx, dotY);
+    }
+    // year label
+    ctx.font = '600 9px system-ui,sans-serif';
+    ctx.fillStyle = textFaint; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText(d.year, cx, PAD.t + ch + 5);
+  });
+})();
+</script>

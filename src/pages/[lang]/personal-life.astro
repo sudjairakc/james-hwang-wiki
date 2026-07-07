@@ -1,0 +1,214 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getPersonalLife } from '../../data/pages/personal-life';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getPersonalLife(lang);
+
+const relatedLabels = {
+  biography: { en: 'Biography', th: 'ชีวประวัติ' },
+  publicImage: { en: 'Public Image', th: 'ภาพลักษณ์สาธารณะ' },
+  culturalImpact: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+  timeline: { en: 'Career Timeline', th: 'ไทม์ไลน์อาชีพ' },
+  fandom: { en: 'Fandom', th: 'แฟนด้อม' },
+};
+const related = [
+  { label: relatedLabels.biography[lang], href: `${L}biography` },
+  { label: relatedLabels.publicImage[lang], href: `${L}public-image` },
+  { label: relatedLabels.culturalImpact[lang], href: `${L}cultural-impact` },
+  { label: relatedLabels.timeline[lang], href: `${L}timeline` },
+  { label: relatedLabels.fandom[lang], href: `${L}fandom` },
+];
+---
+<WikiLayout title={d.ui.title} section="Biography" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Quick Facts -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.quickFactsHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.quickFacts.map((f, i, arr) => (
+        <div class="flex items-baseline gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-xs font-semibold uppercase tracking-widest w-28 shrink-0" style="color:var(--text-muted)">{f.label}</span>
+          <span class="text-sm">{f.val}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Properties -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.propertiesHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="color:var(--gold);background-color:color-mix(in srgb,var(--gold) 12%,transparent)">{d.ui.primaryBadge}</span>
+          <span class="text-sm font-bold">{d.ui.laCity}</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)" set:html={d.ui.laParagraphHtml}></p>
+      </div>
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:var(--bg-muted);color:var(--text-muted)">{d.ui.baseBadge}</span>
+          <span class="text-sm font-bold">{d.ui.seoulCity}</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)" set:html={d.ui.seoulParagraphHtml}></p>
+      </div>
+      <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 rounded font-semibold" style="background-color:var(--bg-muted);color:var(--text-muted)">{d.ui.workspaceBadge}</span>
+          <span class="text-sm font-bold">{d.ui.hqTitle}</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.ui.hqParagraph}</p>
+      </div>
+    </div>
+    <p class="mt-2 text-xs px-1" style="color:var(--text-muted)">{d.ui.noPropertyNote}</p>
+  </section>
+
+  <!-- Family Background -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.familyHeading}</h2>
+    <div class="rounded-lg border px-5 py-4 text-sm leading-relaxed space-y-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <p set:html={d.ui.familyP1Html}></p>
+      <p style="color:var(--text-muted)">{d.ui.familyP2}</p>
+      <p style="color:var(--text-muted)">{d.ui.familyP3}</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.educationHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.education.map((e, i, arr) => (
+        <div class="flex gap-5 px-5 py-4" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-24 pt-0.5">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{e.period}</span>
+          </div>
+          <div class="flex-1">
+            <div class="font-bold text-sm mb-0.5">{e.institution}</div>
+            <div class="text-xs mb-2" style="color:var(--gold)">{e.location}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{e.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Relationships -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.relationshipsHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.relationships.map((r, i, arr) => {
+        const typeColor = r.type === 'confirmed' ? '#4ade80' : r.type === 'private' ? 'var(--gold)' : 'var(--text-muted)';
+        const typeBg = r.type === 'confirmed' ? 'color-mix(in srgb,#4ade80 12%,transparent)' : r.type === 'private' ? 'color-mix(in srgb,var(--gold) 12%,transparent)' : 'var(--bg-muted)';
+        const typeLabel = r.type === 'confirmed' ? d.ui.relTypeConfirmed : r.type === 'private' ? d.ui.relTypePrivate : d.ui.relTypeRumor;
+        return (
+          <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+            <div class="shrink-0 w-20 pt-0.5">
+              <span class="text-xs font-mono font-semibold" style="color:var(--text-muted)">{r.period}</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs px-2 py-0.5 rounded font-semibold" style={`color:${typeColor};background-color:${typeBg}`}>{typeLabel}</span>
+                <span class="text-sm font-bold">{r.name}</span>
+              </div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.detail}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+    <p class="mt-2 text-xs px-1" style="color:var(--text-muted)">{d.ui.relFootnote}</p>
+  </section>
+
+  <!-- Friendships -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.friendsHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {d.friends.map(f => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-2" style="color:var(--gold)">{f.group}</div>
+          {f.names.length > 0 && (
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              {f.names.map(n => (
+                <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{n}</span>
+              ))}
+            </div>
+          )}
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{f.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.hobbiesHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.hobbies.map(h => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-1.5">{h.category}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{h.detail}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Values & Activism -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.valuesHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.values.map((v, i, arr) => {
+        const stanceColor = v.stance === 'vocal' ? '#4ade80' : v.stance === 'silent' ? '#f87171' : '#facc15';
+        const stanceBg = v.stance === 'vocal' ? 'color-mix(in srgb,#4ade80 10%,transparent)' : v.stance === 'silent' ? 'color-mix(in srgb,#f87171 10%,transparent)' : 'color-mix(in srgb,#facc15 10%,transparent)';
+        const stanceLabel = v.stance === 'vocal' ? d.ui.stanceVocal : v.stance === 'silent' ? d.ui.stanceSilent : d.ui.stanceCautious;
+        return (
+          <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+            <div class="shrink-0 w-8 pt-0.5 flex flex-col items-center">
+              <span class="text-xs px-1.5 py-0.5 rounded font-semibold" style={`color:${stanceColor};background-color:${stanceBg}`}>{stanceLabel}</span>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm font-bold mb-1">{v.topic}</div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{v.detail}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Key Incidents -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.incidentsHeading}</h2>
+    <div class="space-y-4">
+      {d.incidents.map(inc => {
+        const borderCol = inc.severity === 'high' ? 'color-mix(in srgb,#f87171 35%,transparent)' : 'color-mix(in srgb,#facc15 25%,transparent)';
+        const badgeCol = inc.severity === 'high' ? '#f87171' : '#facc15';
+        const badgeBg = inc.severity === 'high' ? 'color-mix(in srgb,#f87171 12%,transparent)' : 'color-mix(in srgb,#facc15 12%,transparent)';
+        const severityLabel = inc.severity === 'high' ? d.ui.severityHigh : inc.severity === 'medium' ? d.ui.severityMedium : d.ui.severityLow;
+        return (
+          <div class="rounded-lg border px-5 py-4" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{severityLabel}</span>
+              <span class="font-bold text-sm">{inc.title}</span>
+              <span class="text-xs font-mono ml-auto" style="color:var(--text-muted)">{inc.period}</span>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{inc.body}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+</WikiLayout>
