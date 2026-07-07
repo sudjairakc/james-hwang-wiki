@@ -1,0 +1,105 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getRivalries, typeColors, statusColors, type RivalryType, type Status, type Severity } from '../../data/pages/rivalries';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getRivalries(lang);
+
+const related = d.related.map(r => ({ label: r.label, href: `${base}${lang}/${r.slug}` }));
+---
+<WikiLayout title={d.ui.title} section="Biography" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Legend -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {(Object.entries(typeColors) as [RivalryType, string][]).map(([k, c]) => (
+      <span class="text-xs px-2.5 py-1 rounded-full font-semibold" style={`color:${c};background-color:color-mix(in srgb,${c} 12%,transparent)`}>{d.ui.typeLabels[k]}</span>
+    ))}
+    {(['ongoing','cold','periodic','resolved'] as Status[]).map(s => (
+      <span class="text-xs px-2.5 py-1 rounded border font-semibold" style={`color:${statusColors[s]};border-color:color-mix(in srgb,${statusColors[s]} 30%,transparent)`}>{d.ui.statusLabels[s]}</span>
+    ))}
+  </div>
+
+  <!-- Rivalries -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-5">{d.ui.tensionsHeading}</h2>
+    <div class="space-y-4">
+      {d.rivalries.map(r => {
+        const tc = typeColors[r.type];
+        const sc = statusColors[r.status];
+        const borderCol = r.status === 'ongoing'
+          ? 'color-mix(in srgb,#fb923c 25%,transparent)'
+          : `color-mix(in srgb,${tc} 20%,var(--border))`;
+        return (
+          <div class="rounded-xl border overflow-hidden" style={`border-color:${borderCol}`}>
+            <div class="px-5 py-3 flex flex-wrap items-center gap-2" style={`background-color:color-mix(in srgb,${tc} 7%,var(--bg-surface))`}>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full" style={`color:${tc};background-color:color-mix(in srgb,${tc} 12%,transparent)`}>{d.ui.typeLabels[r.type]}</span>
+              <span class="font-bold text-sm flex-1">{r.name}</span>
+              <span class="text-xs" style="color:var(--text-muted)">{r.role}</span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded" style={`color:${sc};background-color:color-mix(in srgb,${sc} 12%,transparent)`}>{d.ui.statusLabels[r.status]}</span>
+            </div>
+            <div class="px-5 py-1.5 border-t text-xs font-mono" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              {d.ui.originLabel}: {r.origin}
+            </div>
+            <div class="px-5 py-3 border-t text-sm leading-relaxed whitespace-pre-line" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              {r.body}
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 border-t divide-y md:divide-y-0 md:divide-x" style="border-color:color-mix(in srgb,var(--border) 50%,transparent)">
+              <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+                <div class="text-xs font-semibold uppercase tracking-wide mb-1" style={`color:${tc}`}>{d.ui.dynamicLabel}</div>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.dynamic}</p>
+              </div>
+              <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+                <div class="text-xs font-semibold uppercase tracking-wide mb-1" style={`color:${tc}`}>{d.ui.impactLabel}</div>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.impact}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Fan Wars -->
+  <section>
+    <h2 class="wiki-section mb-5">{d.ui.fanwarsHeading}</h2>
+    <div class="space-y-4">
+      {d.fanwars.map(fw => {
+        const sc = statusColors[fw.status];
+        const sevCol = fw.severity === 'high' ? '#f87171' : fw.severity === 'medium' ? '#facc15' : 'var(--text-muted)';
+        const borderCol = fw.severity === 'high'
+          ? 'color-mix(in srgb,#f87171 25%,transparent)'
+          : fw.severity === 'medium'
+          ? 'color-mix(in srgb,#facc15 20%,transparent)'
+          : 'var(--border)';
+        return (
+          <div class="rounded-xl border overflow-hidden" style={`border-color:${borderCol}`}>
+            <div class="px-5 py-3 flex flex-wrap items-center gap-2" style="background-color:var(--bg-surface)">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded border" style={`color:${sevCol};border-color:color-mix(in srgb,${sevCol} 30%,transparent)`}>{d.ui.severityLabels[fw.severity as Severity]}</span>
+              <span class="font-bold text-sm flex-1">{fw.name}</span>
+              <span class="text-xs font-mono" style="color:var(--text-muted)">{fw.period}</span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded" style={`color:${sc};background-color:color-mix(in srgb,${sc} 12%,transparent)`}>{d.ui.statusLabels[fw.status]}</span>
+            </div>
+            <div class="px-5 py-2 border-t flex flex-wrap gap-4 text-xs" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:color-mix(in srgb,var(--bg-muted) 50%,var(--bg-surface))`}>
+              <span><strong style="color:var(--text)">{d.ui.sidesLabel}</strong> <span style="color:var(--text-muted)">{fw.sides}</span></span>
+              <span><strong style="color:var(--text)">{d.ui.triggerLabel}</strong> <span style="color:var(--text-muted)">{fw.trigger}</span></span>
+            </div>
+            <div class="px-5 py-3 border-t text-sm leading-relaxed whitespace-pre-line" style={`border-color:color-mix(in srgb,var(--border) 50%,transparent);background-color:var(--bg-surface);color:var(--text-muted)`}>
+              {fw.body}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</WikiLayout>

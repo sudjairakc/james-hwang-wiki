@@ -1,0 +1,94 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getControversies, catColors, sevColors, statusColors } from '../../data/pages/controversies';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getControversies(lang);
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+
+const highCount = d.incidents.filter(i => i.severity === 'high').length;
+const ongoingCount = d.incidents.filter(i => i.status === 'ongoing').length;
+const resolvedCount = d.incidents.filter(i => i.status === 'resolved').length;
+---
+<WikiLayout title={d.ui.title} section="Biography" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Summary KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: String(d.incidents.length), label: d.ui.kpiTotalLabel, sub: d.ui.kpiTotalSub },
+      { val: String(highCount), label: d.ui.kpiHighLabel, sub: d.ui.kpiHighSub },
+      { val: String(ongoingCount), label: d.ui.kpiOngoingLabel, sub: d.ui.kpiOngoingSub },
+      { val: String(resolvedCount), label: d.ui.kpiResolvedLabel, sub: d.ui.kpiResolvedSub },
+    ].map(k => (
+      <div class="stat-card">
+        <div class="stat-val">{k.val}</div>
+        <div class="stat-label">{k.label}</div>
+        <div class="text-xs mt-1" style="color:color-mix(in srgb,var(--text-muted) 60%,transparent)">{k.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Category legend -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {(Object.entries(d.ui.catLabels) as [string, string][]).map(([k, label]) => (
+      <span class="text-xs px-2.5 py-1 rounded-full font-semibold" style={`color:${catColors[k as keyof typeof catColors]};background-color:color-mix(in srgb,${catColors[k as keyof typeof catColors]} 12%,transparent)`}>{label}</span>
+    ))}
+    {(Object.entries(d.ui.sevLegend) as [string, string][]).map(([k, label]) => (
+      <span class="text-xs px-2.5 py-1 rounded font-semibold border" style={`color:${sevColors[k as keyof typeof sevColors]};border-color:color-mix(in srgb,${sevColors[k as keyof typeof sevColors]} 30%,transparent)`}>{label}</span>
+    ))}
+  </div>
+
+  <!-- Incidents timeline -->
+  <section class="space-y-4">
+    {d.incidents.map(inc => {
+      const catColor = catColors[inc.category];
+      const catLabel = d.ui.catLabels[inc.category];
+      const sevColor = sevColors[inc.severity];
+      const sevLabel = d.ui.sevLabels[inc.severity];
+      const sta = statusColors[inc.status];
+      const staLabel = d.ui.statusLabels[inc.status];
+      const borderCol = inc.severity === 'high'
+        ? 'color-mix(in srgb,#f87171 30%,transparent)'
+        : inc.severity === 'medium'
+        ? 'color-mix(in srgb,#facc15 20%,transparent)'
+        : 'var(--border)';
+      return (
+        <div class="rounded-lg border px-5 py-4" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+          <!-- Header row -->
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="text-xs font-mono px-2 py-0.5 rounded shrink-0" style="background-color:var(--bg-muted);color:var(--text-muted)">{inc.period}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full" style={`color:${catColor};background-color:color-mix(in srgb,${catColor} 12%,transparent)`}>{catLabel}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded border" style={`color:${sevColor};border-color:color-mix(in srgb,${sevColor} 30%,transparent)`}>{sevLabel}</span>
+            <span class="font-bold text-sm flex-1">{inc.title}</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded shrink-0" style={`color:${sta.color};background-color:${sta.bg}`}>{staLabel}</span>
+          </div>
+          <!-- Body -->
+          <p class="text-sm leading-relaxed mb-3" style="color:var(--text-muted)">{inc.body}</p>
+          <!-- Outcome -->
+          <div class="text-xs leading-relaxed px-3 py-2 rounded border-l-2" style={`background-color:var(--bg-muted);border-color:${sta.color}`}>
+            <span class="font-semibold uppercase tracking-wide text-xs" style="color:var(--text)">{d.ui.outcomeLabel}</span>
+            <span style="color:var(--text-muted)">{inc.outcome}</span>
+          </div>
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- Closing note -->
+  <div class="mt-8 rounded-lg border px-5 py-4 text-sm leading-relaxed" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--text-muted)">
+    <strong style="color:var(--text)">{d.ui.patternNoteLabel}</strong> <span set:html={d.closingNoteHtml}></span>
+  </div>
+</WikiLayout>

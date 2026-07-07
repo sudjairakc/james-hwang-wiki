@@ -1,0 +1,329 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getFandom } from '../../data/pages/fandom';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getFandom(lang);
+
+const introHtml = d.ui.introHtml.replaceAll('%L%', L);
+const chantNoteHtml = d.ui.chantNoteHtml.replaceAll('%L%', L);
+
+const relatedLabels = {
+  cultural: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+  publicImage: { en: 'Public Image', th: 'ภาพลักษณ์สาธารณะ' },
+  tours: { en: 'Tours', th: 'ทัวร์คอนเสิร์ต' },
+  awards: { en: 'Awards', th: 'รางวัล' },
+  rivalries: { en: 'Rivalries & Tensions', th: 'คู่แข่ง & ความตึงเครียด' },
+};
+const related = [
+  { label: relatedLabels.cultural[lang], href: `${L}cultural-impact` },
+  { label: relatedLabels.publicImage[lang], href: `${L}public-image` },
+  { label: relatedLabels.tours[lang], href: `${L}tours` },
+  { label: relatedLabels.awards[lang], href: `${L}awards` },
+  { label: relatedLabels.rivalries[lang], href: `${L}rivalries` },
+];
+---
+
+<WikiLayout title="Gemzen Fandom" section="Community" lang={lang} relatedPages={related}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.label}</div>
+    <h1 class="wiki-title mb-3">{d.ui.title}</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)" set:html={introHtml}></p>
+  </div>
+
+  <!-- Color swatches + basics -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <!-- Color display -->
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      <div class="h-20 flex">
+        <div class="flex-1" style="background-color:#C9A84C"></div>
+        <div class="flex-1" style="background-color:#1A1A1A"></div>
+      </div>
+      <div class="px-4 py-3" style="background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.colorsLabel}</div>
+        <div class="flex gap-4">
+          <div>
+            <div class="text-sm font-semibold">{d.ui.goldAshName}</div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">#C9A84C</div>
+          </div>
+          <div>
+            <div class="text-sm font-semibold">{d.ui.onyxName}</div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">#1A1A1A</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Basics table -->
+    <div class="md:col-span-2 rounded-xl border overflow-hidden" style="border-color:var(--border)">
+      <div class="px-4 py-2.5 text-xs font-semibold uppercase tracking-widest border-b" style="color:var(--gold);border-color:var(--border);background-color:var(--bg-surface)">{d.ui.profileLabel}</div>
+      <div style="background-color:var(--bg-surface)">
+        {d.basics.map((r, i) => (
+          <div class="flex gap-3 px-4 py-2" style={i < d.basics.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}>
+            <div class="text-xs font-semibold w-36 shrink-0 mt-0.5" style="color:var(--text-muted)">{r.label}</div>
+            <div class="text-sm">{r.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Fan chant -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.chantHeading}</h2>
+    <p class="text-xs mb-4" style="color:var(--text-muted)">{d.ui.chantIntro}</p>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {d.chant.map((row, i) => (
+        <div class={`flex items-start gap-4 px-5 py-3 ${i !== d.chant.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="text-xs w-40 shrink-0 mt-0.5 italic" style="color:var(--text-faint)">{row.cue}</div>
+          <div class="w-14 shrink-0">
+            <span class={`text-xs px-1.5 py-0.5 rounded font-semibold`}
+              style={row.who === 'Fans'
+                ? 'background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)'
+                : 'background-color:var(--bg-muted);color:var(--text-muted)'}>
+              {row.who}
+            </span>
+          </div>
+          <div class={`text-sm font-medium flex-1`} style={row.who === 'Fans' ? 'color:var(--text)' : 'color:var(--text-muted)'}>{row.text}</div>
+        </div>
+      ))}
+    </div>
+    <p class="text-xs mt-2 italic" style="color:var(--text-faint)" set:html={chantNoteHtml}></p>
+  </section>
+
+  <!-- Community platforms -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.platformsHeading}</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {d.platforms.map((p, i) => (
+        <div class={`grid grid-cols-1 md:grid-cols-4 gap-0 ${i !== d.platforms.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="px-5 py-3.5 border-b md:border-b-0 md:border-r" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <div class="text-sm font-semibold">{p.name}</div>
+            <div class="text-xs mt-0.5" style="color:var(--text-muted)">{p.region}</div>
+          </div>
+          <div class="md:col-span-2 px-5 py-3.5 border-b md:border-b-0 md:border-r flex items-center" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{p.focus}</p>
+          </div>
+          <div class="px-5 py-3.5 flex items-center justify-end md:justify-center" style="background-color:var(--bg-surface)">
+            <span class="text-xs font-semibold" style="color:var(--gold)">{p.size}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Major fan projects -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.projectsHeading}</h2>
+    <div class="space-y-3">
+      {d.projects.map(p => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b" style="border-color:color-mix(in srgb,var(--gold) 25%,transparent);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+            <div>
+              <span class="text-sm font-semibold" style="color:var(--text)">{p.name}</span>
+              <span class="text-xs ml-2" style="color:var(--text-muted)">{p.year}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded border" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 8%,transparent)">{p.result}</span>
+          </div>
+          <div class="px-5 py-3.5" style="background-color:var(--bg-surface)">
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Community milestones -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.milestonesHeading}</h2>
+    <p class="text-xs mb-4" style="color:var(--text-muted)">{d.ui.milestonesIntro}</p>
+    <div class="relative pl-6">
+      <div class="absolute left-1.5 top-1 bottom-1 w-px" style="background-color:var(--border)"></div>
+      <div class="space-y-3">
+        {d.milestones.map(m => (
+          <div class="relative">
+            <div class="absolute -left-[18px] top-1.5 w-2.5 h-2.5 rounded-full border-2" style="background-color:var(--bg);border-color:var(--gold)"></div>
+            <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+              <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 border-b" style="border-color:color-mix(in srgb,var(--gold) 20%,transparent);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+                <div class="flex items-center gap-3">
+                  <span class="text-xs font-mono font-semibold" style="color:var(--gold)">{m.date}</span>
+                  <span class="text-sm font-semibold">{m.title}</span>
+                </div>
+                <span class="text-xs px-2 py-0.5 rounded border" style="border-color:color-mix(in srgb,var(--gold) 30%,transparent);color:var(--gold);background-color:color-mix(in srgb,var(--gold) 8%,transparent)">{m.metric}</span>
+              </div>
+              <div class="px-4 py-3" style="background-color:var(--bg-surface)">
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{m.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Merchandise -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.merchHeading}</h2>
+    <div class="space-y-4">
+      {d.merch.map(era => (
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full shrink-0" style={`background-color:${era.color}`}></div>
+            <span class="text-xs font-bold uppercase tracking-widest" style={`color:${era.color}`}>{era.era}</span>
+            <span class="text-xs" style="color:var(--text-faint)">{era.year}</span>
+          </div>
+          <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+            {era.items.map((item, i) => (
+              <div class={`grid grid-cols-1 md:grid-cols-4 ${i !== era.items.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+                <div class="px-5 py-3.5 md:border-r" style={`border-color:var(--border);background-color:${era.color}08`}>
+                  <div class="text-sm font-semibold">{item.name}</div>
+                  <div class="text-xs mt-0.5 font-semibold" style={`color:${era.color}`}>{item.type}</div>
+                </div>
+                <div class="md:col-span-3 px-5 py-3.5" style="background-color:var(--bg-surface)">
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Demographics chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.overviewLabel}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.overviewSubtitle}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.geoSplitLabel}</div>
+        <canvas id="fandomGeoChart" height="200" style="width:100%;display:block"></canvas>
+      </div>
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.platSizesLabel}</div>
+        <canvas id="fandomPlatChart" height="200" style="width:100%;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demographics -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.geoDistHeading}</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {d.demographics.map((dg, i) => (
+        <div class={`flex items-center gap-4 px-5 py-3 ${i !== d.demographics.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="w-40 shrink-0">
+            <div class="text-sm font-semibold">{dg.region}</div>
+          </div>
+          <div class="w-12 shrink-0 text-right">
+            <span class="text-sm font-bold" style="color:var(--gold)">{dg.share}</span>
+          </div>
+          <!-- bar -->
+          <div class="flex-1 h-1.5 rounded-full overflow-hidden" style="background-color:var(--bg-muted)">
+            <div class="h-full rounded-full" style={`width:${dg.share};background-color:var(--gold);opacity:0.7`}></div>
+          </div>
+          <div class="text-xs hidden md:block" style="color:var(--text-muted);max-width:280px">{dg.note}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</WikiLayout>
+
+<script is:inline define:vars={{ demographics: d.demographics, platforms: d.platforms }}>
+(function () {
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const gold = cs.getPropertyValue('--gold').trim()            || '#c9a84c';
+  const COLORS = ['#c9a84c','#9b7fc8','#5a7c6a','#5a7aaa','#60a5fa','#c06080','#7ca4a0','#6b7280'];
+
+  function initCanvas(id, h) {
+    const c = document.getElementById(id);
+    if (!c) return null;
+    const W = c.parentElement.clientWidth - 32;
+    const dpr = window.devicePixelRatio || 1;
+    c.width = W * dpr; c.height = h * dpr;
+    c.style.width = W + 'px'; c.style.height = h + 'px';
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx, W, H: h };
+  }
+
+  // ── Donut: geographic split ──
+  const geo = initCanvas('fandomGeoChart', 200);
+  if (geo) {
+    const { ctx, W, H } = geo;
+    const shares = demographics.map(d => parseFloat(d.share));
+    const total = shares.reduce((a, b) => a + b, 0);
+    const cx = W * 0.38, cy = H / 2, R = Math.min(cx, cy) - 16, ri = R * 0.52;
+    let angle = -Math.PI / 2;
+    shares.forEach((s, i) => {
+      const sweep = (s / total) * 2 * Math.PI;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, R, angle, angle + sweep);
+      ctx.closePath();
+      ctx.fillStyle = COLORS[i];
+      ctx.fill();
+      angle += sweep;
+    });
+    // donut hole
+    ctx.beginPath(); ctx.arc(cx, cy, ri, 0, Math.PI * 2);
+    ctx.fillStyle = cs.getPropertyValue('--bg-surface').trim() || '#1a1a1a';
+    ctx.fill();
+    // center label
+    ctx.font = '700 14px system-ui,sans-serif'; ctx.fillStyle = gold;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('Global', cx, cy - 7);
+    ctx.font = '500 10px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.fillText('Gemzen', cx, cy + 9);
+
+    // legend
+    const lx = W * 0.72, lTop = 12;
+    demographics.forEach((d, i) => {
+      const ly = lTop + i * 22;
+      ctx.fillStyle = COLORS[i]; ctx.fillRect(lx, ly, 9, 9);
+      ctx.font = '600 9.5px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+      ctx.fillText(d.region, lx + 13, ly);
+      ctx.font = '700 9.5px system-ui,sans-serif'; ctx.fillStyle = COLORS[i];
+      ctx.textAlign = 'right';
+      ctx.fillText(d.share, W - 4, ly);
+    });
+  }
+
+  // ── Bar: platform sizes ──
+  const plat = initCanvas('fandomPlatChart', 200);
+  if (plat) {
+    const { ctx, W, H } = plat;
+    const sizes = platforms.map(p => parseInt(p.size.replace(/[^0-9]/g, '')));
+    const maxSize = Math.max(...sizes);
+    const PAD = { l: 12, r: 52, t: 8, b: 8 };
+    const cw = W - PAD.l - PAD.r, ch = H - PAD.t - PAD.b;
+    const rowH = ch / platforms.length, barH = rowH * 0.45;
+
+    platforms.forEach((p, i) => {
+      const bw = (sizes[i] / maxSize) * cw;
+      const y = PAD.t + i * rowH + (rowH - barH) / 2;
+      ctx.fillStyle = COLORS[i] + 'bb';
+      ctx.beginPath(); ctx.roundRect(PAD.l, y, bw, barH, [0, 3, 3, 0]); ctx.fill();
+      // platform name above bar
+      ctx.font = '600 9px system-ui,sans-serif';
+      ctx.fillStyle = COLORS[i]; ctx.textAlign = 'left'; ctx.textBaseline = 'bottom';
+      ctx.fillText(p.name.split(' ')[0], PAD.l, y);
+      // size label right
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = COLORS[i]; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText(p.size, PAD.l + bw + 4, y + barH / 2);
+    });
+  }
+})();
+</script>

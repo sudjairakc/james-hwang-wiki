@@ -1,0 +1,202 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getMusicVideos, mvMeta, eraOrder, typeBadge } from '../../data/pages/music-videos';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getMusicVideos(lang);
+
+const relatedLabels = {
+  discography: { en: 'Discography', th: 'ผลงานเพลง' },
+  canon: { en: 'Artist Canon', th: 'แคนอน' },
+  collaborations: { en: 'Collaborations', th: 'คอลแลบ' },
+  culturalImpact: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+};
+const related = [
+  { label: relatedLabels.discography[lang], href: `${base}${lang}/discography` },
+  { label: relatedLabels.canon[lang], href: `${base}${lang}/canon` },
+  { label: relatedLabels.collaborations[lang], href: `${base}${lang}/collaborations` },
+  { label: relatedLabels.culturalImpact[lang], href: `${base}${lang}/cultural-impact` },
+];
+
+// Merge shared metadata with translated concept/notes, index-aligned.
+const mvList = mvMeta.map((m, i) => ({ ...m, ...d.mvList[i] }));
+
+const byEra = eraOrder.map(g => ({ ...g, mvs: mvList.filter(m => m.era === g.era) }));
+
+const mvChart = mvList
+  .filter(m => m.views)
+  .map(m => ({
+    title: m.title.length > 24 ? m.title.slice(0, 22) + '…' : m.title,
+    views: parseInt(m.views!.replace(/[^0-9]/g, '')),
+    era: m.era,
+    color: m.eraColor,
+    type: m.type,
+  }))
+  .sort((a, b) => b.views - a.views);
+---
+
+<WikiLayout title={d.ui.title} section="Discography" lang={lang} relatedPages={related}>
+
+  <div class="mb-8">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.label}</div>
+    <h1 class="wiki-title mb-3">{d.ui.title}</h1>
+    <p class="text-sm leading-relaxed max-w-2xl" style="color:var(--text-muted)">
+      {d.ui.intro}
+    </p>
+  </div>
+
+  <!-- Views chart -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.chartHeading}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.chartSub}</p>
+    <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <canvas id="mvViewsChart" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {[
+      { val: String(mvList.length), label: d.ui.statTotal },
+      { val: String(mvList.filter(m => m.type === 'MV').length), label: d.ui.statMVs },
+      { val: String(mvList.filter(m => m.type === 'Dance' || m.type === 'Performance').length), label: d.ui.statDancePerf },
+      { val: '6', label: d.ui.statEras },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Type legend -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {Object.entries(typeBadge).map(([type, color]) => (
+      <span class="text-xs px-2.5 py-1 rounded-full font-semibold border"
+        style={`color:${color};border-color:${color}44;background-color:${color}12`}>
+        {type}
+      </span>
+    ))}
+  </div>
+
+  <!-- By era -->
+  <div class="space-y-10">
+    {byEra.map(group => group.mvs.length > 0 && (
+      <section>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-3 h-3 rounded-full shrink-0" style={`background-color:${group.color}`}></div>
+          <h2 class="text-xs font-bold uppercase tracking-widest" style={`color:${group.color}`}>{group.era}</h2>
+          <div class="flex-1 h-px" style="background-color:var(--border)"></div>
+          <span class="text-xs" style="color:var(--text-faint)">{group.mvs.length} {group.mvs.length > 1 ? d.ui.workPlural : d.ui.workSingular}</span>
+        </div>
+
+        <div class="space-y-3">
+          {group.mvs.map(mv => (
+            <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+              <!-- Header row -->
+              <div class="flex flex-wrap items-start justify-between gap-3 px-5 py-3.5 border-b"
+                style={`border-color:${mv.eraColor}30;background-color:${mv.eraColor}08`}>
+                <div class="flex items-center gap-3 flex-wrap">
+                  <span class="text-xs px-2 py-0.5 rounded font-bold"
+                    style={`color:${typeBadge[mv.type]};background-color:${typeBadge[mv.type]}18;border:1px solid ${typeBadge[mv.type]}33`}>
+                    {mv.type}
+                  </span>
+                  <span class="font-semibold text-sm" style="color:var(--text)">{mv.title}</span>
+                </div>
+                <div class="flex items-center gap-3 shrink-0">
+                  {mv.views && <span class="text-xs font-semibold" style={`color:${mv.eraColor}`}>{mv.views} {d.ui.viewsSuffix}</span>}
+                  <span class="text-xs font-mono" style="color:var(--text-faint)">{mv.date}</span>
+                </div>
+              </div>
+
+              <!-- Details -->
+              <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x" style="divide-color:var(--border)">
+                <!-- Director + palette -->
+                <div class="px-5 py-4 space-y-3" style="background-color:var(--bg-surface)">
+                  {mv.director && (
+                    <div>
+                      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{d.ui.directorLabel}</div>
+                      <div class="text-sm">{mv.director}</div>
+                    </div>
+                  )}
+                  <div>
+                    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{d.ui.paletteLabel}</div>
+                    <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{mv.palette}</div>
+                  </div>
+                </div>
+
+                <!-- Concept -->
+                <div class="md:col-span-2 px-5 py-4" style="background-color:var(--bg-surface)">
+                  <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.conceptLabel}</div>
+                  <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{mv.concept}</p>
+                  {mv.notes && (
+                    <p class="text-xs mt-2 pt-2 border-t italic" style="color:var(--text-faint);border-color:var(--border)">{mv.notes}</p>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+
+</WikiLayout>
+
+<script is:inline define:vars={{ mvChart }}>
+(function () {
+  const canvas = document.getElementById('mvViewsChart');
+  if (!canvas) return;
+  const ROW_H = 28, PAD = { l: 170, r: 52, t: 8, b: 8 };
+  const W = canvas.parentElement.clientWidth - 32;
+  const H = ROW_H * mvChart.length + PAD.t + PAD.b;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const cw = W - PAD.l - PAD.r;
+  const cs = getComputedStyle(document.documentElement);
+  const borderCol = cs.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+  const maxV = mvChart[0].views;
+
+  // grid
+  [0.25, 0.5, 0.75, 1].forEach(f => {
+    const x = PAD.l + f * cw;
+    ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+    ctx.beginPath(); ctx.moveTo(x, PAD.t); ctx.lineTo(x, H - PAD.b); ctx.stroke();
+    ctx.setLineDash([]);
+  });
+
+  mvChart.forEach((m, i) => {
+    const y = PAD.t + i * ROW_H;
+    const barH = ROW_H * 0.45;
+    const barY = y + (ROW_H - barH) / 2;
+    const bw = (m.views / maxV) * cw;
+
+    // bar
+    ctx.fillStyle = m.color + 'bb';
+    ctx.beginPath(); ctx.roundRect(PAD.l, barY, bw, barH, [0, 3, 3, 0]); ctx.fill();
+    // glow end
+    ctx.save(); ctx.filter = 'blur(6px)'; ctx.globalAlpha = 0.35;
+    ctx.fillStyle = m.color;
+    ctx.beginPath(); ctx.arc(PAD.l + bw, barY + barH / 2, barH * 0.6, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+
+    // title
+    ctx.font = '600 10px system-ui,sans-serif';
+    ctx.fillStyle = m.color; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillText(m.title, PAD.l - 6, y + ROW_H / 2);
+    // value
+    ctx.font = '700 9px system-ui,sans-serif';
+    ctx.fillStyle = m.color; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(m.views + 'M+', PAD.l + bw + 6, y + ROW_H / 2);
+  });
+})();
+</script>
