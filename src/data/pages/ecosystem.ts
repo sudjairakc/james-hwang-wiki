@@ -107,7 +107,7 @@ const en = {
         { name: 'Studio Sessions Series', year: '2023', desc: "Ongoing Sony creator content series — 6-episode documentary of PULSE album production process. James used Sony's MDR-Z1R reference monitors throughout. Reached 28M views across YouTube and Sony's global social channels." },
         { name: 'MDR Creator Line', year: '2024', desc: "Product ambassador for Sony's MDR professional reference headphone line. Used in actual ARE U STILL mixing sessions — not retroactively placed. Series included a 12-minute mini-documentary on how monitoring quality affects vocal performance decisions." },
       ],
-      brandFit: "Sony approached JH Company in 2022 specifically because James was known to use Sony reference monitors in production — making the endorsement extension of existing behavior rather than brand adoption. Avoids Samsung electronics conflict from NCT 127 era.",
+      brandFit: "Sony first approached James in 2022 specifically because he was known to use Sony reference monitors in production — making the endorsement extension of existing behavior rather than brand adoption. The deal was formalized under JH Company after its 2023 founding. Avoids Samsung electronics conflict from NCT 127 era.",
     },
     {
       sector: 'Sneaker / Streetwear',
@@ -231,7 +231,7 @@ const th: typeof en = {
         { name: 'Studio Sessions Series', year: '2023', desc: 'ซีรีส์คอนเทนต์ creator ของ Sony — สารคดี 6 ตอนของกระบวนการผลิตอัลบั้ม PULSE James ใช้ monitor อ้างอิง MDR-Z1R ของ Sony ตลอด ยอดชม 28M ทั่ว YouTube และช่องโซเชียลระดับโลกของ Sony' },
         { name: 'MDR Creator Line', year: '2024', desc: 'เป็น ambassador ไลน์หูฟังอ้างอิงระดับมืออาชีพ MDR ของ Sony ใช้ในเซสชันมิกซ์ ARE U STILL จริง ไม่ใช่วางทีหลัง ซีรีส์รวมมินิสารคดี 12 นาทีว่าคุณภาพ monitoring ส่งผลต่อการตัดสินใจด้าน vocal อย่างไร' },
       ],
-      brandFit: 'Sony ติดต่อ JH Company ปี 2022 เพราะรู้ว่า James ใช้ monitor อ้างอิงของ Sony ในการผลิตอยู่แล้ว — ทำให้ endorsement เป็นการต่อยอดพฤติกรรมเดิมมากกว่าการรับแบรนด์ใหม่ เลี่ยงความขัดแย้งกับ Samsung electronics จากยุค NCT 127',
+      brandFit: 'Sony ติดต่อ James ครั้งแรกปี 2022 เพราะรู้ว่าเขาใช้ monitor อ้างอิงของ Sony ในการผลิตอยู่แล้ว — ทำให้ endorsement เป็นการต่อยอดพฤติกรรมเดิมมากกว่าการรับแบรนด์ใหม่ ดีลถูกทำอย่างเป็นทางการภายใต้ JH Company หลังก่อตั้งปี 2023 เลี่ยงความขัดแย้งกับ Samsung electronics จากยุค NCT 127',
     },
     {
       sector: 'Sneaker / Streetwear',

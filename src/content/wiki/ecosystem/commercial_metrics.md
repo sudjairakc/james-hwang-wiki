@@ -110,7 +110,7 @@ Key prestige tracksBreathe — ≈ 82M+Somewhere, Somehow — ≈ 54M+If I Knew 
 Impact markerGrammy breakthrough neo-soul crossover phase <br />
 
 
-## 2025 — SOUR | HONEY (3rd Studio Album)
+## 2025 — CAN'T LEAVE ALONE (3rd Studio Album · SOUR | HONEY era)
 
 
 ### Format

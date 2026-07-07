@@ -527,7 +527,7 @@ Received a nomination for Best Traditional R&B Performance ("Just A Dream").
 
 Marked a significant milestone for an Asian artist within the progressive R&B ecosystem at the global critics circuit level.
 
-10/02/2025: Released his third album "SOUR | HONEY" without promotion in Korea, focusing on US/global platforms (a business move + personal stance).
+10/02/2025: Released his third album "CAN'T LEAVE ALONE" (SOUR | HONEY era) without promotion in Korea, focusing on US/global platforms (a business move + personal stance).
 
 27/02/2025: Korean Music Awards (did not attend, clashed with the tour).
 
@@ -577,11 +577,11 @@ Attended the Melon Music Awards.
 
 Received Top 10 Artist (Bonsang).
 
-Reflected continuing domestic streaming impact even without directly promoting the SOUR | HONEY album in Korea.
+Reflected continuing domestic streaming impact even without directly promoting the CAN'T LEAVE ALONE (SOUR | HONEY) album in Korea.
 
 Attended the Soul Train Music Awards.
 
-Received a nomination for Best R&B/Soul Album (SOUR | HONEY).
+Received a nomination for Best R&B/Soul Album (CAN'T LEAVE ALONE).
 
 Reflected continuity in the progressive / alternative R&B lane following the Grammy cycle.
 
@@ -616,7 +616,7 @@ Early 2026: Due to the impact of the 2025 events in Thailand, James reduced his 
 ### 02/2026
 02/2026: Attended the Korean Music Awards.
 
-Received a nomination for Best R&B Album (SOUR | HONEY).
+Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 
 
 ### 03/2026
