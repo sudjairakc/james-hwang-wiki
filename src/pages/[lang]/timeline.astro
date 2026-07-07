@@ -1,0 +1,464 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getTimeline, ERA_COLORS, monthName } from '../../data/pages/timeline';
+// @ts-ignore
+import enRaw from '../../content/wiki/timeline/en.md?raw';
+// @ts-ignore
+import thRaw from '../../content/wiki/timeline/th.md?raw';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const t = getTimeline(lang);
+const rawContent = lang === 'en' ? enRaw : thRaw;
+
+// ── Types ─────────────────────────────────────────────────────────────────────
+interface Event { text: string; subs: string[] }
+interface Month { label: string; shortLabel: string; events: Event[] }
+interface YearEntry {
+  year: string; era: string; eraSlug: string; age: string;
+  months: Month[]; totalEvents: number;
+}
+
+function eraSlugOf(era: string) {
+  if (era.includes('PRE DEBUT'))   return 'pre-debut';
+  if (era.includes('ROOKIES'))     return 'rookies';
+  if (era.includes('NCT 127'))     return 'nct127';
+  if (era.includes('SHANG-CHI'))   return 'shangchi';
+  if (era.includes('SOLO'))        return 'solo';
+  return 'other';
+}
+
+function parseTimeline(raw: string): YearEntry[] {
+  const lines = raw.split('\n');
+  let currentEra = 'PRE DEBUT ERA';
+  let currentYear: YearEntry | null = null;
+  let currentMonth: Month | null = null;
+  let pendingLines: string[] = [];
+
+  const years: YearEntry[] = [];
+
+  function flushPending() {
+    const text = pendingLines.join(' ').trim();
+    pendingLines = [];
+    if (!text || !currentMonth) return;
+    currentMonth.events.push({ text, subs: [] });
+  }
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    if (/^# /.test(trimmed) && !/^## /.test(trimmed)) {
+      flushPending();
+      currentEra = trimmed.slice(2).trim();
+      continue;
+    }
+
+    if (/^## /.test(trimmed) && !/^### /.test(trimmed)) {
+      flushPending();
+      const yearMatch = trimmed.slice(3).trim().match(/^(\d{4})\s*\((.+?)\)\s*$/);
+      if (yearMatch) {
+        currentYear = {
+          year: yearMatch[1],
+          era: currentEra,
+          eraSlug: eraSlugOf(currentEra),
+          age: yearMatch[2].trim(),
+          months: [],
+          totalEvents: 0,
+        };
+        currentMonth = null;
+        years.push(currentYear);
+      }
+      continue;
+    }
+
+    if (/^### /.test(trimmed) && currentYear) {
+      flushPending();
+      const monthLabel = trimmed.slice(4).trim();
+      const monthMatch = monthLabel.match(/^(\d{1,2}(?:[–\-]\d{1,2})?)\/\d{4}$/);
+      currentMonth = {
+        label: monthLabel,
+        shortLabel: monthMatch ? monthName(monthMatch[1], lang) : monthLabel,
+        events: [],
+      };
+      currentYear.months.push(currentMonth);
+      continue;
+    }
+
+    if (!trimmed) {
+      flushPending();
+      continue;
+    }
+
+    if (currentMonth) {
+      pendingLines.push(trimmed);
+    }
+  }
+
+  flushPending();
+
+  for (const y of years) {
+    y.totalEvents = y.months.reduce((s, m) => s + m.events.length, 0);
+  }
+
+  return years;
+}
+
+const years = parseTimeline(rawContent);
+
+const erasOrdered: string[] = [];
+for (const y of years) {
+  if (!erasOrdered.includes(y.era)) erasOrdered.push(y.era);
+}
+
+const eraSegments: { era: string; slug: string; years: string[]; color: string }[] = [];
+for (const y of years) {
+  const last = eraSegments[eraSegments.length - 1];
+  if (last && last.slug === y.eraSlug) {
+    last.years.push(y.year);
+  } else {
+    eraSegments.push({ era: y.era.replace(/\s*\(.*\)/, ''), slug: y.eraSlug, years: [y.year], color: ERA_COLORS[y.eraSlug] ?? '#888' });
+  }
+}
+
+const totalEvents = years.reduce((s, y) => s + y.totalEvents, 0);
+
+const yearsJSON = JSON.stringify(years);
+const eraColorsJSON = JSON.stringify(ERA_COLORS);
+const uiJSON = JSON.stringify({
+  selectMonth: t.selectMonth,
+  noEvents: t.noEvents,
+  evSuffix: t.evSuffix,
+  eventSingular: t.eventSingular,
+  eventPlural: t.eventPlural,
+});
+
+const related = t.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+---
+
+<WikiLayout title={t.title} section="Biography" lang={lang} relatedPages={related}>
+
+  <!-- Page header -->
+  <div class="mb-6">
+    <div class="wiki-label mb-2">{t.label}</div>
+    <h1 class="wiki-title mb-2">{t.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{t.subtitle}</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+    {[
+      { val: String(years.length), label: t.statYears },
+      { val: String(totalEvents), label: t.statEvents },
+      { val: String(erasOrdered.length), label: t.statEras },
+      { val: `${years[0].year}–${years[years.length - 1].year}`, label: t.statSpan },
+    ].map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Era timeline bar -->
+  <div class="mb-8">
+    <div class="wiki-label mb-3">{t.erasHeading}</div>
+    <div class="flex rounded-lg overflow-hidden h-8 mb-2">
+      {eraSegments.map(seg => (
+        <div
+          class="flex items-center justify-center text-xs font-bold overflow-hidden transition-all"
+          style={`flex:${seg.years.length};background-color:${seg.color}22;border-right:1px solid var(--bg);min-width:0`}
+          title={`${seg.era} · ${seg.years[0]}–${seg.years[seg.years.length - 1]}`}>
+          <span class="truncate px-1 hidden sm:block" style={`color:${seg.color}`}>{seg.era}</span>
+        </div>
+      ))}
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {eraSegments.map(seg => (
+        <div class="flex items-center gap-1.5">
+          <div class="w-2 h-2 rounded-full shrink-0" style={`background-color:${seg.color}`}></div>
+          <span class="text-xs" style={`color:${seg.color}`}>{seg.era}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{seg.years[0]}–{seg.years[seg.years.length - 1]}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Era filter pills -->
+  <div class="flex flex-wrap gap-2 mb-6" id="era-filters">
+    <button data-era="all" class="era-pill active-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all">
+      {t.filterAll}
+    </button>
+    {erasOrdered.map(era => {
+      const slug = eraSlugOf(era);
+      const c = ERA_COLORS[slug] ?? '#888';
+      return (
+        <button
+          data-era={slug}
+          data-color={c}
+          class="era-pill px-3 py-1 rounded-full text-xs font-semibold border transition-all"
+          style="border-color:var(--border);color:var(--text-muted)">
+          {era.replace(/\s*\(.*\)/, '')}
+        </button>
+      );
+    })}
+  </div>
+
+  <!-- Year grid -->
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 mb-10" id="year-grid">
+    {years.map(y => {
+      const c = ERA_COLORS[y.eraSlug] ?? '#888';
+      return (
+        <button
+          data-year={y.year}
+          data-era={y.eraSlug}
+          data-color={c}
+          class="year-card group relative flex flex-col items-center justify-center rounded-xl border p-3 transition-all cursor-pointer text-center overflow-hidden"
+          style={`border-color:var(--border);background:var(--bg-surface);border-left:3px solid ${c}55`}>
+          <span class="year-num text-lg font-bold transition-colors" style="color:var(--text)">{y.year}</span>
+          <span class="text-xs truncate max-w-full" style="color:var(--text-muted)">{y.age}</span>
+          {y.totalEvents > 0 && (
+            <span class="event-count text-xs font-bold mt-1 px-1.5 py-0.5 rounded" style={`background-color:${c}18;color:${c}`}>
+              {y.totalEvents}
+            </span>
+          )}
+        </button>
+      );
+    })}
+  </div>
+
+  <!-- Detail panel -->
+  <div id="detail-panel" class="hidden">
+
+    <!-- Breadcrumb -->
+    <div class="flex items-center gap-2 mb-5 text-sm" style="color:var(--text-muted)">
+      <button id="back-btn" class="flex items-center gap-1 transition-colors hover-text-main">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        {t.back}
+      </button>
+      <span>/</span>
+      <span id="breadcrumb-year" class="font-semibold" style="color:var(--text)"></span>
+      <span id="breadcrumb-era" class="text-xs px-2 py-0.5 rounded-full" style="background:var(--bg-muted);color:var(--text-muted)"></span>
+    </div>
+
+    <!-- Month buttons -->
+    <div id="month-buttons" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 mb-6"></div>
+
+    <!-- Events -->
+    <div id="events-container" class="rounded-xl border overflow-hidden min-h-32" style="border-color:var(--border);background:var(--bg-surface)">
+      <p class="text-sm p-5" style="color:var(--text-muted)">{t.selectMonth}</p>
+    </div>
+
+  </div>
+
+</WikiLayout>
+
+<style>
+  /* Year card selected state */
+  .year-card.selected {
+    background-color: color-mix(in srgb, var(--gold) 8%, var(--bg-surface)) !important;
+    border-color: var(--gold) !important;
+  }
+  .year-card.selected .year-num { color: var(--gold) !important; }
+
+  /* Era pill */
+  .era-pill { cursor: pointer; transition: all 0.15s ease; }
+  .era-pill.active-pill {
+    border-color: var(--gold) !important;
+    color: var(--gold) !important;
+    background: color-mix(in srgb, var(--gold) 10%, var(--bg-surface)) !important;
+  }
+
+  /* Hidden year cards */
+  .year-card.era-hidden { display: none; }
+
+  /* Back button hover */
+  .hover-text-main:hover { color: var(--text) !important; }
+</style>
+
+<script is:inline define:vars={{ yearsJSON, eraColorsJSON, uiJSON }}>
+  const years = JSON.parse(yearsJSON);
+  const ERA_COLORS = JSON.parse(eraColorsJSON);
+  const UI = JSON.parse(uiJSON);
+
+  const yearGrid        = document.getElementById('year-grid');
+  const detailPanel     = document.getElementById('detail-panel');
+  const backBtn         = document.getElementById('back-btn');
+  const monthButtons    = document.getElementById('month-buttons');
+  const eventsContainer = document.getElementById('events-container');
+  const breadcrumbYear  = document.getElementById('breadcrumb-year');
+  const breadcrumbEra   = document.getElementById('breadcrumb-era');
+  const eraFilters      = document.getElementById('era-filters');
+
+  let activeYear = null;
+
+  // ── Era filter ────────────────────────────────────────────────────────────
+  eraFilters?.addEventListener('click', (e) => {
+    const btn = e.target.closest('.era-pill');
+    if (!btn) return;
+    const era = btn.dataset.era;
+
+    document.querySelectorAll('.era-pill').forEach(p => {
+      p.classList.remove('active-pill');
+      p.style.borderColor = '';
+      p.style.color = '';
+      p.style.background = '';
+    });
+    btn.classList.add('active-pill');
+
+    document.querySelectorAll('.year-card').forEach(card => {
+      if (era === 'all' || card.dataset.era === era) {
+        card.classList.remove('era-hidden');
+      } else {
+        card.classList.add('era-hidden');
+      }
+    });
+
+    if (activeYear && era !== 'all' && activeYear.eraSlug !== era) {
+      closeDetail();
+    }
+  });
+
+  // ── Year card click ───────────────────────────────────────────────────────
+  yearGrid?.addEventListener('click', (e) => {
+    const card = e.target.closest('.year-card');
+    if (!card) return;
+    const yearStr = card.dataset.year;
+    const yearData = years.find(y => y.year === yearStr);
+    if (!yearData) return;
+
+    document.querySelectorAll('.year-card.selected').forEach(c => {
+      c.classList.remove('selected');
+      c.style.removeProperty('background-color');
+      c.style.removeProperty('border-color');
+    });
+
+    if (activeYear && activeYear.year === yearStr) {
+      closeDetail();
+      return;
+    }
+
+    card.classList.add('selected');
+    openYear(yearData, card.dataset.color);
+    detailPanel?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  function openYear(yearData, color) {
+    activeYear = yearData;
+    const eraColor = color || ERA_COLORS[yearData.eraSlug] || '#888';
+
+    breadcrumbYear.textContent = yearData.year + ' — ' + yearData.age;
+    breadcrumbEra.textContent  = yearData.era.replace(/\s*\(.*\)/, '');
+    breadcrumbEra.style.color  = eraColor;
+    breadcrumbEra.style.backgroundColor = eraColor + '18';
+
+    monthButtons.innerHTML = '';
+    yearData.months.forEach((m, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'month-btn';
+      btn.dataset.idx = idx;
+
+      const labelEl = document.createElement('span');
+      labelEl.className = 'month-label';
+      labelEl.textContent = m.shortLabel;
+      btn.appendChild(labelEl);
+
+      if (m.events.length > 0) {
+        const countEl = document.createElement('span');
+        countEl.className = 'month-count';
+        countEl.textContent = m.events.length + ' ' + UI.evSuffix;
+        btn.appendChild(countEl);
+      }
+
+      btn.addEventListener('click', () => selectMonth(yearData, m, btn));
+      monthButtons.appendChild(btn);
+    });
+
+    eventsContainer.innerHTML = '<p class="text-sm p-5" style="color:var(--text-muted)">' + escHtml(UI.selectMonth) + '</p>';
+    detailPanel.classList.remove('hidden');
+
+    // Auto-select single month
+    if (yearData.months.length === 1) {
+      const onlyBtn = monthButtons.querySelector('.month-btn');
+      if (onlyBtn) selectMonth(yearData, yearData.months[0], onlyBtn);
+    }
+  }
+
+  function selectMonth(_yearData, monthData, btn) {
+    monthButtons.querySelectorAll('.month-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderEvents(monthData.events, monthData.label);
+  }
+
+  function extractDatePrefix(text) {
+    const m = text.match(/^(\d{1,2}\/\d{1,2}\/\d{4})[:\s]/);
+    if (m) return { date: m[1], rest: text.slice(m[0].length).trim() };
+    const m2 = text.match(/^(\d{1,2}\/\d{1,2}\/\d{4}\s*[–\-]\s*\d{1,2}\/\d{1,2}\/\d{4})[:\s]/);
+    if (m2) return { date: m2[1], rest: text.slice(m2[0].length).trim() };
+    return null;
+  }
+
+  function renderEvents(events, monthLabel) {
+    if (!events || events.length === 0) {
+      eventsContainer.innerHTML = '<p class="text-sm p-5" style="color:var(--text-muted)">' + escHtml(UI.noEvents) + '</p>';
+      return;
+    }
+
+    const evWord = events.length > 1 ? UI.eventPlural : UI.eventSingular;
+    const header = monthLabel
+      ? `<div style="padding:0.75rem 1.25rem 0.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
+           <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.09em;color:var(--gold)">${escHtml(monthLabel)}</span>
+           <span style="font-size:0.65rem;color:var(--text-faint)">${events.length} ${escHtml(evWord)}</span>
+         </div>`
+      : '';
+
+    const rows = events.map((ev, i) => {
+      const parsed = extractDatePrefix(ev.text);
+      const dateTag = parsed
+        ? `<span class="event-date-tag">${escHtml(parsed.date)}</span>`
+        : '';
+      const bodyText = escHtml(parsed ? parsed.rest : ev.text);
+
+      const subs = ev.subs.length
+        ? `<ul class="event-sub-list">${ev.subs.map(s => `<li>${escHtml(s)}</li>`).join('')}</ul>`
+        : '';
+
+      const isLast = i === events.length - 1;
+      return `
+        <div class="event-row relative">
+          ${!isLast ? '<div class="event-spine"></div>' : ''}
+          <div class="event-dot"></div>
+          <div class="event-body" style="${isLast ? 'padding-bottom:0.25rem' : ''}">
+            ${dateTag ? `<div style="margin-bottom:0.3rem">${dateTag}</div>` : ''}
+            <p class="event-text">${bodyText}</p>
+            ${subs}
+          </div>
+        </div>`;
+    }).join('');
+
+    eventsContainer.innerHTML = `${header}<div style="padding:1rem 1.25rem">${rows}</div>`;
+  }
+
+  function closeDetail() {
+    activeYear = null;
+    detailPanel.classList.add('hidden');
+    document.querySelectorAll('.year-card.selected').forEach(c => c.classList.remove('selected'));
+  }
+
+  function escHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  backBtn?.addEventListener('click', closeDetail);
+</script>
