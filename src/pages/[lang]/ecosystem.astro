@@ -1,0 +1,339 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getEcosystem, deals, groupDeals, tourStats } from '../../data/pages/ecosystem';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getEcosystem(lang);
+const introHtml = d.ui.introHtml.replaceAll('%L%', L);
+
+// Merge shared identity/money with localized fields.
+const solodeals = deals.map((b, i) => ({ ...b, ...d.solodeals[i] }));
+const groupdeals = groupDeals.map((b, i) => ({ ...b, ...d.groupNotes[i] }));
+const tours = tourStats.map((t, i) => ({ ...t, scale: d.tourScale[i] }));
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+
+// For charts (non-translatable brand/value + tour numbers).
+const chartDeals = deals;
+const chartTours = tourStats;
+---
+<WikiLayout title={d.ui.title} section="Business" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm mb-3" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+    <p class="text-sm leading-7 max-w-3xl" style="color:var(--text-muted)" set:html={introHtml}></p>
+  </div>
+
+  <!-- Income summary -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {d.incomeSummary.map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+        <div class="text-xs mt-1" style="color:color-mix(in srgb, var(--text-muted) 60%, transparent)">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Ecosystem charts -->
+  <section class="mb-10">
+    <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{d.ui.revenueOverview}</div>
+    <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.revenueOverviewSub}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.brandChartTitle}</div>
+        <canvas id="brandsChart" height="160" style="width:100%;display:block"></canvas>
+      </div>
+      <div class="rounded-xl border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.tourChartTitle}</div>
+        <canvas id="tourEconChart" height="160" style="width:100%;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solo deals -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-6">{d.ui.soloHeading}</h2>
+    <div class="space-y-6">
+      {solodeals.map(deal => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <!-- Brand header -->
+          <div class="flex flex-wrap items-start justify-between gap-3 px-5 py-4 border-b"
+            style="border-color:color-mix(in srgb, var(--gold) 30%, transparent);background-color:color-mix(in srgb, var(--gold) 5%, var(--bg-surface))">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:var(--text-muted)">{deal.sector}</div>
+              <div class="text-lg font-black" style="color:var(--text)">{deal.brand}</div>
+              <div class="text-xs mt-1 italic" style="color:var(--gold)">"{deal.concept}"</div>
+            </div>
+            <div class="flex flex-col items-end gap-1 shrink-0">
+              <div class="text-base font-bold" style="color:var(--gold)">{deal.value}</div>
+              <div class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{d.ui.since} {deal.since} · {deal.status}</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x" style="--tw-divide-opacity:1;divide-color:var(--border)">
+            <!-- Deliverables -->
+            <div class="px-5 py-4" style="background-color:var(--bg-surface)">
+              <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.deliverables}</div>
+              <ul class="space-y-1.5">
+                {deal.deliverables.map(item => (
+                  <li class="flex items-start gap-2 text-xs leading-relaxed" style="color:var(--text-muted)">
+                    <span class="mt-1.5 w-1 h-1 rounded-full shrink-0" style="background-color:var(--gold)"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <!-- Campaigns -->
+            <div class="px-5 py-4 lg:col-span-2" style="background-color:var(--bg-surface)">
+              <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.campaignHistory}</div>
+              <div class="space-y-3">
+                {deal.campaigns.map(c => (
+                  <div class="flex gap-3">
+                    <div class="text-xs font-mono pt-0.5 shrink-0 w-8" style="color:var(--text-faint)">{c.year}</div>
+                    <div>
+                      <div class="text-xs font-semibold mb-0.5" style="color:var(--text)">{c.name}</div>
+                      <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{c.desc}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand fit note -->
+          <div class="px-5 py-3 border-t text-xs leading-relaxed" style="border-color:var(--border);background-color:var(--bg-muted);color:var(--text-muted)">
+            <span class="font-semibold" style="color:var(--text)">{d.ui.brandFitLabel} </span>{deal.brandFit}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Group deals -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.groupHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {groupdeals.map(gd => (
+        <div class="flex items-center gap-4 px-4 py-3 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex-1">
+            <div class="font-bold">{gd.brand}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{gd.note}</div>
+          </div>
+          <div class="text-right shrink-0">
+            <div class="text-sm font-bold" style="color:var(--gold)">{gd.value}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{gd.sector}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SM contract constraints -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.smHeading}</h2>
+    <div class="rounded-lg border px-4 py-3 text-sm" style="border-color:color-mix(in srgb, #ef4444 30%, transparent);background-color:color-mix(in srgb, #ef4444 5%, var(--bg-surface))">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#f87171">{d.ui.smRestricted}</div>
+      <div class="flex flex-wrap gap-2">
+        {d.smConstraints.map(c => (
+          <span class="text-xs px-2 py-1 rounded border" style="border-color:color-mix(in srgb, #ef4444 25%, transparent);color:#f87171;background-color:color-mix(in srgb, #ef4444 8%, transparent)">{c}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour breakdown -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.tourHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {tours.map(t => (
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="px-4 py-3 border-b flex items-baseline justify-between" style="border-color:var(--gold);background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface))">
+            <div>
+              <span class="font-black text-base">{t.name}</span>
+              <span class="text-xs ml-2" style="color:var(--text-muted)">{t.years}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{t.shows} {d.ui.showsSuffix}</span>
+          </div>
+          <div class="px-4 py-3 space-y-2" style="background-color:var(--bg-surface)">
+            {[
+              { label: d.ui.rowTicket, val: t.ticketGross, highlight: false },
+              { label: d.ui.rowSponsor, val: t.sponsorRev, highlight: false },
+              { label: d.ui.rowCombined, val: t.combinedGross, highlight: false },
+              { label: d.ui.rowProduction, val: `−${t.productionCost}`, highlight: false },
+              { label: d.ui.rowProfit, val: t.profitPool, highlight: true },
+              { label: d.ui.rowIncome, val: t.personalIncome, highlight: true },
+            ].map(row => (
+              <div class="flex items-center justify-between text-sm py-0.5 border-b" style={`border-color:color-mix(in srgb, var(--border) 40%, transparent);${row.highlight ? 'border-bottom:none' : ''}`}>
+                <span style={`color:${row.highlight ? 'var(--text)' : 'var(--text-muted)'}`}>{row.label}</span>
+                <span class="font-bold" style={`color:${row.highlight ? 'var(--gold)' : 'var(--text)'}`}>{row.val}</span>
+              </div>
+            ))}
+          </div>
+          <div class="px-4 py-2 text-xs" style="color:var(--text-muted);background-color:var(--bg-muted)">{t.scale}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- JH Company touring capital -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.capitalHeading}</h2>
+    <div class="rounded-lg border px-5 py-4 flex flex-col md:flex-row md:items-center gap-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div>
+        <div class="text-3xl font-black" style="color:var(--gold)">{d.capitalValue}</div>
+        <div class="text-sm font-semibold">{d.ui.capitalLabel}</div>
+        <div class="text-xs mt-0.5" style="color:var(--text-muted)">{d.ui.capitalNote}</div>
+      </div>
+      <div class="md:ml-auto flex flex-wrap gap-2">
+        {d.capitalTags.map(a => (
+          <span class="text-xs px-2.5 py-1 rounded border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-muted)">{a}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Warner role -->
+  <section>
+    <h2 class="wiki-section mb-4">{d.ui.warnerHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {d.warnerCols.map(col => (
+        <div class="stat-card">
+          <div class="wiki-label mb-3">{col.title}</div>
+          <ul class="flex flex-col gap-1.5">
+            {col.items.map(i => (
+              <li class="flex items-center gap-2 text-sm" style="color:var(--text-muted)">
+                <span class="w-1 h-1 rounded-full shrink-0" style="background-color:var(--gold)"></span>
+                {i}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-3 text-xs" style="color:var(--text-muted)">{d.ui.revShareLabel} <span style="color:var(--gold)">{d.revShare}</span></div>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
+
+<script is:inline define:vars={{ solodeals: chartDeals, tours: chartTours }}>
+(function () {
+  const cs = getComputedStyle(document.documentElement);
+  const textFaint = cs.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.25)';
+  const borderCol = cs.getPropertyValue('--border').trim()     || 'rgba(255,255,255,0.1)';
+  const COLORS = ['#c9a84c','#9b7fc8','#5a7c6a','#60a5fa','#c06080'];
+
+  function initCanvas(id, h) {
+    const c = document.getElementById(id);
+    if (!c) return null;
+    const W = c.parentElement.clientWidth - 32;
+    const dpr = window.devicePixelRatio || 1;
+    c.width = W * dpr; c.height = h * dpr;
+    c.style.width = W + 'px'; c.style.height = h + 'px';
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx, W, H: h };
+  }
+
+  // ── Brand deal values ──
+  const brands = solodeals.map((d, i) => {
+    const m = d.value.match(/\$([\d.]+)[–-]([\d.]+)/);
+    return { label: d.brand, lo: m ? +m[1] : 1, hi: m ? +m[2] : 2, color: COLORS[i] };
+  });
+  const b = initCanvas('brandsChart', 160);
+  if (b) {
+    const { ctx, W, H } = b;
+    const PAD = { l: 88, r: 40, t: 8, b: 8 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const maxVal = Math.max(...brands.map(d => d.hi)) * 1.1;
+    const rowH = ch / brands.length;
+    const barH = rowH * 0.4;
+
+    brands.forEach((br, i) => {
+      const y = PAD.t + i * rowH + (rowH - barH) / 2;
+      const x1 = PAD.l + (br.lo / maxVal) * cw;
+      const x2 = PAD.l + (br.hi / maxVal) * cw;
+      ctx.fillStyle = br.color + '33';
+      ctx.beginPath(); ctx.roundRect(PAD.l, y, x2 - PAD.l, barH, 3); ctx.fill();
+      ctx.fillStyle = br.color + 'cc';
+      ctx.beginPath(); ctx.roundRect(x1, y, x2 - x1, barH, 3); ctx.fill();
+      ctx.font = '600 10px system-ui,sans-serif';
+      ctx.fillStyle = br.color; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText(br.label, PAD.l - 6, y + barH / 2);
+      ctx.font = '700 9px system-ui,sans-serif';
+      ctx.fillStyle = br.color; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText('$' + br.lo + '–' + br.hi + 'M', x2 + 4, y + barH / 2);
+    });
+    ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+    ctx.fillText('$ Million / yr', PAD.l + cw / 2, H);
+  }
+
+  // ── Tour economics waterfall ──
+  const tourColors = ['#5a7c6a', '#6e5a7c'];
+  const te = initCanvas('tourEconChart', 160);
+  if (te) {
+    const { ctx, W, H } = te;
+    const PAD = { l: 12, r: 12, t: 16, b: 28 };
+    const cw = W - PAD.l - PAD.r;
+    const ch = H - PAD.t - PAD.b;
+    const metrics = [
+      { label: 'Ticket\nGross', key: 'ticketGross' },
+      { label: 'Sponsor\nRev', key: 'sponsorRev' },
+      { label: 'Production\nCost', key: 'productionCost' },
+      { label: 'Profit\nPool', key: 'profitPool' },
+    ];
+    const vals = tours.map(t => metrics.map(m => parseInt(t[m.key].replace(/[^0-9]/g, ''))));
+    const maxVal = Math.max(...vals.flat()) * 1.1;
+    const slotW = cw / metrics.length;
+    const barW = slotW * 0.3;
+
+    [0.5, 1].forEach(f => {
+      const y = PAD.t + ch * (1 - f);
+      ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 4]);
+      ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(PAD.l + cw, y); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.font = '9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+      ctx.fillText('$' + Math.round(maxVal / 1.1 * f) + 'M', PAD.l - 2, y);
+    });
+
+    metrics.forEach((m, mi) => {
+      const cx = PAD.l + mi * slotW + slotW / 2;
+      tours.forEach((t, ti) => {
+        const val = parseInt(t[m.key].replace(/[^0-9]/g, ''));
+        const bh = (val / maxVal) * ch;
+        const bx = cx + (ti - 0.5) * (barW + 2);
+        const by = PAD.t + ch - bh;
+        ctx.fillStyle = tourColors[ti] + 'cc';
+        ctx.beginPath(); ctx.roundRect(bx, by, barW, bh, [3, 3, 0, 0]); ctx.fill();
+        ctx.font = '700 8px system-ui,sans-serif';
+        ctx.fillStyle = tourColors[ti]; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+        ctx.fillText('$' + val + 'M', bx + barW / 2, by - 1);
+      });
+      const lines = m.label.split('\n');
+      ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+      lines.forEach((l, li) => ctx.fillText(l, cx, PAD.t + ch + 4 + li * 11));
+    });
+
+    tours.forEach((t, ti) => {
+      const lx = PAD.l + cw * 0.55 + ti * 80;
+      ctx.fillStyle = tourColors[ti];
+      ctx.fillRect(lx, PAD.t, 10, 8);
+      ctx.font = '600 9px system-ui,sans-serif'; ctx.fillStyle = textFaint;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      ctx.fillText(t.name, lx + 13, PAD.t + 4);
+    });
+  }
+})();
+</script>
