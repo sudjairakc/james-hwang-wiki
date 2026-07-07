@@ -1,0 +1,228 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getPublicImage } from '../../data/pages/public-image';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getPublicImage(lang);
+
+const relatedLabels = {
+  cultural: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+  canon: { en: 'Artist Canon', th: 'แคนอนศิลปิน' },
+  timeline: { en: 'Career Timeline', th: 'ไทม์ไลน์อาชีพ' },
+  legal: { en: 'Legal', th: 'กฎหมาย' },
+  ecosystem: { en: 'Endorsements', th: 'พรีเซ็นเตอร์ & ดีล' },
+};
+const related = [
+  { label: relatedLabels.cultural[lang], href: `${L}cultural-impact` },
+  { label: relatedLabels.canon[lang], href: `${L}canon` },
+  { label: relatedLabels.timeline[lang], href: `${L}timeline` },
+  { label: relatedLabels.legal[lang], href: `${L}legal` },
+  { label: relatedLabels.ecosystem[lang], href: `${L}ecosystem` },
+];
+
+function severityLabel(sev: 'low' | 'medium' | 'neutral') {
+  return sev === 'medium' ? d.ui.severityMedium : sev === 'neutral' ? d.ui.severityNeutral : d.ui.severityLow;
+}
+---
+<WikiLayout title={d.ui.title} section="Biography" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Bio facts -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.bioHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.bioFacts.map((f, i, arr) => (
+        <div class="flex items-baseline gap-4 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <span class="text-xs font-semibold uppercase tracking-widest w-28 shrink-0" style="color:var(--text-muted)">{f.label}</span>
+          <span class="text-sm">{f.val}</span>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 rounded-lg border px-4 py-3 text-sm leading-relaxed" style="border-color:var(--border);background-color:var(--bg-surface);color:var(--text-muted)">
+      {d.ui.familyNote}
+    </div>
+  </section>
+
+  <!-- NCT 127 dynamics -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.groupDynamicsHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.nctDynamics.map(dyn => {
+        const borderCol = dyn.severity === 'medium' ? 'color-mix(in srgb, #facc15 25%, transparent)' : 'var(--border)';
+        const badgeCol = dyn.severity === 'medium' ? '#facc15' : dyn.severity === 'neutral' ? '#4ade80' : 'var(--text-muted)';
+        const badgeBg = dyn.severity === 'medium' ? 'color-mix(in srgb, #facc15 10%, transparent)' : dyn.severity === 'neutral' ? 'color-mix(in srgb, #4ade80 10%, transparent)' : 'var(--bg-muted)';
+        return (
+          <div class="rounded-lg border px-4 py-3" style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded font-semibold uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{severityLabel(dyn.severity)}</span>
+              <span class="text-sm font-bold">{dyn.topic}</span>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{dyn.text}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Political engagement -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.politicalHeading}</h2>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.politicalItems.map((p, i, arr) => (
+        <div class="flex gap-5 px-4 py-3" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-24">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{p.period}</span>
+          </div>
+          <div>
+            <div class="text-sm font-bold mb-1">{p.event}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-2 text-xs px-1" style="color:var(--text-muted)">
+      {d.ui.politicalFootnote}
+    </div>
+  </section>
+
+  <!-- Pictorials -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.pictorialsHeading}</h2>
+    <div class="rounded-xl overflow-hidden border" style="border-color:var(--border)">
+      {d.pictorials.map((p, i) => (
+        <div class={`grid grid-cols-1 md:grid-cols-4 ${i !== d.pictorials.length - 1 ? 'border-b' : ''}`} style="border-color:var(--border)">
+          <div class="px-5 py-3.5 md:border-r" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <div class="flex items-center gap-2 mb-0.5">
+              <span class="text-sm font-bold">{p.pub}</span>
+              {p.cover && <span class="text-xs px-1.5 py-0.5 rounded font-semibold" style="background-color:color-mix(in srgb,var(--gold) 15%,transparent);color:var(--gold)">{d.ui.coverBadge}</span>}
+            </div>
+            <div class="text-xs font-mono" style="color:var(--text-muted)">{p.issue}</div>
+          </div>
+          <div class="md:col-span-3 px-5 py-3.5" style="background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{p.concept}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Variety appearances -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.varietyHeading}</h2>
+    <div class="space-y-2">
+      {d.variety.map(v => (
+        <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+          <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b" style="border-color:color-mix(in srgb,var(--border) 60%,transparent);background-color:var(--bg-surface)">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{v.year}</span>
+              <span class="text-sm font-semibold">{v.show}</span>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted)">{v.platform}</span>
+          </div>
+          <div class="px-5 py-3" style="background-color:var(--bg-surface)">
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{v.context}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Interpersonal Reputation -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.reputationHeading}</h2>
+    <div class="space-y-3">
+      {d.reputationItems.map(r => (
+        <div class="rounded-lg border-l-2 pl-4 py-3 pr-4" style={`border-color:${r.color};background-color:color-mix(in srgb,${r.color} 4%,var(--bg-surface))`}>
+          <div class="text-xs font-semibold uppercase tracking-widest mb-1.5" style={`color:${r.color}`}>{r.label}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{r.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.socialHeading}</h2>
+
+    <!-- Evolution timeline -->
+    <div class="rounded-lg border overflow-hidden mb-4" style="border-color:var(--border)">
+      {d.socialEvolution.map((e, i, arr) => (
+        <div class="flex gap-4 px-5 py-3.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+          <div class="shrink-0 w-32 pt-0.5">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{e.period}</span>
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold mb-1" style={`color:${e.color}`}>{e.label}</div>
+            <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{e.detail}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Platform stats -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.socialPlatforms.map(s => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-sm font-bold">{s.platform}</span>
+            <span class="text-xs font-mono px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{s.handle}</span>
+            <span class="text-xs font-semibold ml-auto" style="color:var(--gold)">{s.followers}</span>
+          </div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{s.notable}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Controversies & rumors -->
+  <section>
+    <h2 class="wiki-section mb-4">{d.ui.controversiesHeading}</h2>
+    <div class="flex flex-col gap-2">
+      {d.controversies.map(c => {
+        const sev = c.severity;
+        const borderCol = sev === 'medium' ? 'color-mix(in srgb, #facc15 20%, transparent)' : 'var(--border)';
+        const badgeCol = sev === 'medium' ? '#facc15' : 'var(--text-muted)';
+        const badgeBg = sev === 'medium' ? 'color-mix(in srgb, #facc15 10%, transparent)' : 'var(--bg-muted)';
+        return (
+          <div class="rounded-lg border px-4 py-3 flex flex-col md:flex-row md:items-start gap-3"
+            style={`border-color:${borderCol};background-color:var(--bg-surface)`}>
+            <div class="shrink-0 md:w-32">
+              <span class="text-xs font-mono px-2 py-0.5 rounded" style="background-color:var(--bg-muted);color:var(--text-muted)">{c.era}</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1 flex-wrap">
+                <span class="text-xs font-semibold px-2 py-0.5 rounded uppercase tracking-wide" style={`color:${badgeCol};background-color:${badgeBg}`}>{severityLabel(c.severity)}</span>
+                <span class="text-sm font-bold">{c.type}</span>
+                {c.names.length > 0 && (
+                  <div class="flex gap-1 flex-wrap">
+                    {c.names.map(n => (
+                      <span class="text-xs px-2 py-0.5 rounded border" style="border-color:var(--border);color:var(--text-muted)">{n}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{c.note}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Sasaeng note -->
+    <div class="mt-4 rounded-lg border px-4 py-3 text-sm leading-relaxed" style="border-color:color-mix(in srgb,#facc15 20%,var(--border));background-color:color-mix(in srgb,#facc15 4%,var(--bg-surface))">
+      <span class="text-xs font-semibold uppercase tracking-widest mr-2" style="color:#facc15">{d.ui.sasaengLabel}</span>
+      <span style="color:var(--text-muted)">{d.sasaengNote}</span>
+    </div>
+  </section>
+</WikiLayout>

@@ -1,0 +1,916 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getCanon, rangeChart, danceRadar, prodRadar, personalityRadar, subRadars, sopaFriends, liner98 } from '../../data/pages/canon';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getCanon(lang);
+
+const relatedLabels = {
+  cultural: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+  public: { en: 'Public Image', th: 'ภาพลักษณ์สาธารณะ' },
+  discography: { en: 'Discography', th: 'ผลงานเพลง' },
+  filmography: { en: 'Filmography', th: 'ผลงานภาพยนตร์' },
+  timeline: { en: 'Career Timeline', th: 'ไทม์ไลน์อาชีพ' },
+};
+const related = [
+  { label: relatedLabels.cultural[lang], href: `${base}${lang}/cultural-impact` },
+  { label: relatedLabels.public[lang], href: `${base}${lang}/public-image` },
+  { label: relatedLabels.discography[lang], href: `${base}${lang}/discography` },
+  { label: relatedLabels.filmography[lang], href: `${base}${lang}/filmography` },
+  { label: relatedLabels.timeline[lang], href: `${base}${lang}/timeline` },
+];
+---
+<WikiLayout title={d.ui.title} section="Reference" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Quick identity -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {d.identity.map(f => (
+      <div class="stat-card">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{f.label}</div>
+        <div class="text-sm font-bold leading-snug">{f.val}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- ── VOCAL ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-5">{d.ui.vocalHeading}</h2>
+
+    <!-- Range stats -->
+    <div class="grid grid-cols-3 gap-3 mb-6">
+      {d.vocalStats.map(s => (
+        <div class="stat-card text-center">
+          <div class="stat-val text-xl">{s.val}</div>
+          <div class="stat-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Features -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.keyFeaturesLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.vocalFeatures.map((f, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{f.feat}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{f.desc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <!-- Techniques -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.styleAdjustLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.vocalTechniques.map((t, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{t.tech}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{t.desc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocal range chart -->
+    <div class="mt-6">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{d.ui.rangeComparisonLabel}</div>
+      <p class="text-xs mb-3" style="color:var(--text-faint)">{d.ui.rangeComparisonIntro}</p>
+      <div class="rounded-lg border overflow-hidden p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <canvas id="rangeChart" height="160" style="width:100%;display:block"></canvas>
+        <!-- legend -->
+        <div class="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#c9a84c55;border:1.5px solid #c9a84c"></span><span class="text-xs font-semibold" style="color:#c9a84c">James Hwang</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#60a5fa44;border:1.5px solid #60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Male Idol (avg)</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-2.5 rounded" style="background-color:#6b728044;border:1.5px solid #6b7280"></span><span class="text-xs font-semibold" style="color:#9ca3af">Global Male Singer (avg)</span></div>
+          <div class="flex items-center gap-2"><span class="inline-block w-8 h-1 rounded" style="background-color:#c9a84c;opacity:0.4"></span><span class="text-xs" style="color:var(--text-faint)">Power Core (G3–E4)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocal refs -->
+    <div class="mt-6">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.referenceArtistsLabel}</div>
+      <div class="flex flex-wrap gap-2">
+        {d.vocalRefs.map(r => (
+          <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <span class="text-sm font-bold">{r.artist}</span>
+            <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Vibrato + Resonance -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.vibratoProfileLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.vibratoProfile.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-24 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.resonanceRegisterLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.resonanceRegister.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Vibrato waveform chart -->
+    <div class="mt-4 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.vibratoWaveHeading}</div>
+      <canvas id="vibratoWave" height="70" style="width:100%;display:block"></canvas>
+    </div>
+
+    <!-- Onset + Dynamic -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.onsetArticulationLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.onsetArticulation.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.dynamicSustainLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.dynamicSustain.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic range chart -->
+    <div class="mt-4 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.dynamicRangeHeading}</div>
+      <canvas id="dynamicRange" height="56" style="width:100%;display:block"></canvas>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTION ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-5">{d.ui.productionHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      {d.productionDNA.map(p => (
+        <div class="flex gap-3 px-4 py-3 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-xs font-bold w-28 shrink-0 pt-0.5 leading-snug" style="color:var(--gold)">{p.elem}</span>
+          <span class="text-sm leading-relaxed" style="color:var(--text-muted)">{p.desc}</span>
+        </div>
+      ))}
+    </div>
+    <!-- Production radar -->
+    <div class="flex flex-col md:flex-row gap-6 items-center mb-6">
+      <div class="shrink-0 mx-auto">
+        <canvas id="prodRadarChart" width="260" height="260"></canvas>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-5 mb-4 flex-wrap">
+          {prodRadar.datasets.map(ds => (
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-6 h-0.5 rounded" style={`background-color:${ds.color}`}></span>
+              <span class="text-xs font-semibold" style={`color:${ds.color}`}>{ds.name}</span>
+            </div>
+          ))}
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+          {prodRadar.axes.map((axis, i) => (
+            <div class="flex items-center gap-3">
+              <span class="text-xs w-36 shrink-0" style="color:var(--text-muted)">{axis}</span>
+              <div class="flex-1 flex items-center gap-2">
+                {prodRadar.datasets.map(ds => (
+                  <div class="flex items-center gap-1">
+                    <div class="h-1.5 rounded-full" style={`width:${ds.scores[i] * 8}px;background-color:${ds.color}99`}></div>
+                    <span class="text-xs font-bold" style={`color:${ds.color}`}>{ds.scores[i]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.producerRefsLabel}</div>
+    <div class="flex flex-wrap gap-2">
+      {d.productionRefs.map(r => (
+        <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-bold">{r.producer}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── DANCE ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-5">{d.ui.danceHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <!-- Style grid -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.styleBreakdownLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.danceStyle.map((ds, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style={`color:${ds.cat === 'Limitation' || ds.cat === 'ข้อจำกัด' ? '#f87171' : 'var(--gold)'}`}>{ds.cat}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{ds.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <!-- Compare table -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.vsContemporariesLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          <div class="grid grid-cols-4 px-3 py-2" style="background-color:color-mix(in srgb, var(--gold) 8%, var(--bg-surface));border-bottom:1px solid var(--gold)">
+            {[d.ui.compareHeaderAspect, 'Taeyong', 'Mark', 'James'].map(h => (
+              <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">{h}</div>
+            ))}
+          </div>
+          {d.danceCompare.map((row, i, arr) => (
+            <div class="grid grid-cols-4 px-3 py-2.5 text-sm" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <div class="text-xs font-semibold" style="color:var(--text-muted)">{row.aspect}</div>
+              <div style="color:var(--text-muted)">{row.taeyong}</div>
+              <div style="color:var(--text-muted)">{row.mark}</div>
+              <div class="font-semibold">{row.james}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <!-- Dance compare radar -->
+    <div class="flex flex-col md:flex-row gap-6 items-center mb-6">
+      <div class="shrink-0 mx-auto">
+        <canvas id="danceRadarChart" width="260" height="260"></canvas>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-5 mb-4 flex-wrap">
+          {danceRadar.dancers.map(dc => (
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-6 h-0.5 rounded" style={`background-color:${dc.color}`}></span>
+              <span class="text-xs font-semibold" style={`color:${dc.color}`}>{dc.name}</span>
+            </div>
+          ))}
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+          {danceRadar.axes.map((axis, i) => (
+            <div class="flex items-center gap-3">
+              <span class="text-xs w-36 shrink-0" style="color:var(--text-muted)">{axis}</span>
+              <div class="flex-1 flex items-center gap-3">
+                {danceRadar.dancers.map(dc => (
+                  <div class="flex items-center gap-1">
+                    <div class="h-1.5 rounded-full" style={`width:${dc.scores[i] * 8}px;background-color:${dc.color}99`}></div>
+                    <span class="text-xs font-bold" style={`color:${dc.color}`}>{dc.scores[i]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Dance refs -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.referenceArtistsLabel}</div>
+    <div class="flex flex-wrap gap-2 mb-6">
+      {d.danceRefs.map(r => (
+        <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg border" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-bold">{r.artist}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{r.area}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- Timing + Spatial -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.timingWeightLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.danceTimingWeight.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.spatialTransitionLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.danceSpatial.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-24 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Timing diagram -->
+    <div class="mt-4 mb-6 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.timingDiagramHeading}</div>
+      <canvas id="timingDiagram" height="88" style="width:100%;display:block"></canvas>
+    </div>
+
+    <!-- Musicality + Performance Context -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.musicalityMappingLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.danceMusicality.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.elem}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.resp}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.performanceContextLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.dancePerformanceCtx.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-28 shrink-0 pt-0.5" style="color:var(--gold)">{r.ctx}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILL RADAR ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.skillRadarHeading}</h2>
+    <p class="text-sm mb-4" style="color:var(--text-muted)">{d.ui.skillRadarIntro}</p>
+    <div class="flex items-center gap-5 mb-6 flex-wrap">
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Standard</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#6b7280"></span><span class="text-xs font-semibold" style="color:#6b7280">Global Average</span></div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-6 items-center">
+      <div class="shrink-0">
+        <canvas id="radarChart" width="320" height="320"></canvas>
+      </div>
+      <div class="flex-1 grid grid-cols-1 gap-2">
+        {d.radarSkills.map((s, i) => (
+          <div class="flex items-center gap-3">
+            <div class="w-2.5 h-2.5 rounded-full shrink-0" style={`background-color:var(--gold);opacity:${0.5 + i * 0.07}`}></div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between gap-2 mb-0.5">
+                <span class="text-sm font-bold truncate">{s.name}</span>
+                <span class="text-xs font-bold shrink-0" style="color:var(--gold)">{s.james}</span>
+              </div>
+              <div class="h-1.5 rounded-full overflow-hidden" style="background-color:var(--bg-muted)">
+                <div class="h-full rounded-full" style={`width:${s.james / 10 * 100}%;background-color:var(--gold)`}></div>
+              </div>
+              <div class="text-xs mt-0.5" style="color:var(--text-faint)">{s.note}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SUB RADARS ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.skillBreakdownHeading}</h2>
+    <p class="text-sm mb-4" style="color:var(--text-muted)">{d.ui.skillBreakdownIntro}</p>
+    <div class="flex items-center gap-5 mb-6 flex-wrap">
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Standard</span></div>
+      <div class="flex items-center gap-2"><span class="inline-block w-6 h-0.5 rounded" style="background-color:#6b7280"></span><span class="text-xs font-semibold" style="color:#6b7280">Global Average</span></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {subRadars.map(sr => (
+        <div class="rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3 text-center" style={`color:${sr.color}`}>{sr.label}</div>
+          <canvas id={sr.id} width="220" height="220" class="mx-auto block"></canvas>
+          <div class="mt-3 grid grid-cols-2 gap-x-3 gap-y-1.5">
+            {sr.skills.map(s => (
+              <div class="flex items-center justify-between gap-1">
+                <span class="text-xs truncate" style="color:var(--text-muted)">{s.name}</span>
+                <span class="flex gap-1 shrink-0 items-center">
+                  <span class="text-xs font-bold" style="color:#6b7280">{s.global}</span>
+                  <span class="text-xs" style="color:var(--text-faint)">·</span>
+                  <span class="text-xs font-bold" style="color:#60a5fa">{s.idol}</span>
+                  <span class="text-xs" style="color:var(--text-faint)">·</span>
+                  <span class="text-xs font-bold" style={`color:${sr.color}`}>{s.james}</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── ARTIST PROFILE ── -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-5">{d.ui.artistProfileHeading}</h2>
+
+    <!-- Physical + Industry -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.physicalBaselineLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.physicalBaseline.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.industryPositioningLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.industryPositioning.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.attr}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Personality radar -->
+    <div class="mt-6 mb-6 rounded-lg border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-4" style="color:var(--text-muted)">{d.ui.personalityRadarLabel}</div>
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <canvas id="personalityRadarChart" width="240" height="240" class="shrink-0 mx-auto"></canvas>
+        <div class="flex-1 space-y-2">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <div class="flex items-center gap-2"><span class="inline-block w-5 h-0.5 rounded" style="background-color:var(--gold)"></span><span class="text-xs font-semibold" style="color:var(--gold)">James Hwang</span></div>
+            <div class="flex items-center gap-2"><span class="inline-block w-5 h-0.5 rounded" style="background-color:#60a5fa"></span><span class="text-xs font-semibold" style="color:#60a5fa">K-Idol Average</span></div>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.ui.personalityNote1}</p>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.ui.personalityNote2}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personality + Stage Persona -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.personalityBaselineLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.personalityBaseline.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.trait}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.stagePersonaLabel}</div>
+        <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+          {d.stagePersona.map((r, i, arr) => (
+            <div class="flex gap-3 px-4 py-2.5" style={`background-color:var(--bg-surface);${i < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 50%, transparent)' : ''}`}>
+              <span class="text-xs font-bold w-32 shrink-0 pt-0.5" style="color:var(--gold)">{r.ctx}</span>
+              <span class="text-sm" style="color:var(--text-muted)">{r.val}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FRIENDS ── -->
+  <section>
+    <h2 class="wiki-section mb-5">{d.ui.friendsHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.sopaLabel}</div>
+        <div class="flex flex-wrap gap-2">
+          {sopaFriends.map(f => (
+            <div class="px-3 py-2 rounded-lg border text-center min-w-20" style="border-color:var(--border);background-color:var(--bg-surface)">
+              <div class="text-sm font-bold">{f.name}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{f.group}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-muted)">{d.ui.liner98Label}</div>
+        <div class="flex flex-wrap gap-2">
+          {liner98.map(f => (
+            <div class="px-3 py-2 rounded-lg border text-center min-w-20" style="border-color:var(--border);background-color:var(--bg-surface)">
+              <div class="text-sm font-bold">{f.name}</div>
+              <div class="text-xs" style="color:var(--text-muted)">{f.group}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</WikiLayout>
+
+<script is:inline define:vars={{ rangeChart }}>
+(function () {
+  const canvas = document.getElementById('rangeChart');
+  if (!canvas) return;
+
+  // Size canvas to its CSS width
+  const cssW = canvas.parentElement.clientWidth - 32; // subtract padding
+  const cssH = 160;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = cssW * dpr;
+  canvas.height = cssH * dpr;
+  canvas.style.width = cssW + 'px';
+  canvas.style.height = cssH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const W = cssW, H = cssH;
+  const PAD_L = 130, PAD_R = 16, PAD_T = 28, PAD_B = 28;
+  const chartW = W - PAD_L - PAD_R;
+  const { scaleMin, scaleMax, groups } = rangeChart;
+  const span = scaleMax - scaleMin;
+  const noteX = midi => PAD_L + (midi - scaleMin) / span * chartW;
+
+  const cssStyle = getComputedStyle(document.documentElement);
+  const textMuted = cssStyle.getPropertyValue('--text-muted').trim() || 'rgba(255,255,255,0.5)';
+  const textFaint = cssStyle.getPropertyValue('--text-faint').trim() || 'rgba(255,255,255,0.3)';
+  const borderCol = cssStyle.getPropertyValue('--border').trim() || 'rgba(255,255,255,0.1)';
+
+  // note name helper
+  const NOTE_NAMES = ['C','C#','D','Eb','E','F','F#','G','Ab','A','Bb','B'];
+  const noteName = midi => NOTE_NAMES[midi % 12] + Math.floor(midi / 12 - 1);
+
+  // vertical grid lines at every C (octave boundary)
+  ctx.font = '10px system-ui,sans-serif';
+  ctx.textAlign = 'center';
+  for (let midi = scaleMin; midi <= scaleMax; midi++) {
+    if (midi % 12 === 0) { // C notes
+      const x = noteX(midi);
+      ctx.beginPath(); ctx.moveTo(x, PAD_T - 12); ctx.lineTo(x, H - PAD_B);
+      ctx.strokeStyle = borderCol; ctx.lineWidth = 1; ctx.setLineDash([2, 3]); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = textFaint;
+      ctx.fillText(noteName(midi), x, PAD_T - 16);
+    }
+  }
+
+  // row layout: 3 groups, each occupying a vertical band
+  const groupH = (H - PAD_T - PAD_B) / groups.length;
+  const BAR_H = 10;
+  const FALSETTO_H = 8;
+  const CORE_H = 4;
+
+  groups.forEach((grp, gi) => {
+    const rowMid = PAD_T + gi * groupH + groupH / 2;
+
+    // group label
+    ctx.font = '600 11px system-ui,sans-serif';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = grp.color;
+    ctx.fillText(grp.label, PAD_L - 8, rowMid);
+
+    grp.rows.forEach(row => {
+      const x1 = noteX(row.lo), x2 = noteX(row.hi);
+      const w = Math.max(x2 - x1, 2);
+
+      if (row.type === 'Chest') {
+        const y = rowMid - BAR_H / 2;
+        ctx.fillStyle = grp.color + '40';
+        ctx.strokeStyle = grp.color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.roundRect(x1, y, w, BAR_H, 3); ctx.fill(); ctx.stroke();
+        // note labels at edges
+        ctx.font = '9px system-ui,sans-serif';
+        ctx.textAlign = 'center'; ctx.fillStyle = grp.color;
+        ctx.fillText(noteName(row.lo), x1, rowMid + BAR_H / 2 + 9);
+        ctx.fillText(noteName(row.hi), x2, rowMid + BAR_H / 2 + 9);
+      } else if (row.type === 'Falsetto') {
+        const y = rowMid - BAR_H / 2 - FALSETTO_H - 2;
+        ctx.fillStyle = grp.color + '25';
+        ctx.strokeStyle = grp.color + 'aa';
+        ctx.lineWidth = 1; ctx.setLineDash([3, 2]);
+        ctx.beginPath(); ctx.roundRect(x1, y, w, FALSETTO_H, 2); ctx.fill(); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.font = '9px system-ui,sans-serif';
+        ctx.textAlign = 'center'; ctx.fillStyle = grp.color + 'cc';
+        ctx.fillText(noteName(row.hi), x2, y - 3);
+      } else if (row.type === 'Power Core') {
+        const y = rowMid + BAR_H / 2 + 3;
+        ctx.fillStyle = grp.color + '55';
+        ctx.beginPath(); ctx.roundRect(x1, y, w, CORE_H, 2); ctx.fill();
+      }
+    });
+  });
+})();
+</script>
+
+<script is:inline define:vars={{ radarSkills: d.radarSkills, subRadars, danceRadar, prodRadar, personalityRadar }}>
+(function () {
+  const cssStyle = getComputedStyle(document.documentElement);
+  const cssVar = v => cssStyle.getPropertyValue(v).trim();
+  const border = cssVar('--border') || 'rgba(255,255,255,0.12)';
+  const textMuted = cssVar('--text-muted') || 'rgba(255,255,255,0.5)';
+
+  // datasets: array of { scores: number[], color, fill, lineWidth, dash }
+  function drawRadar(canvasEl, labels, datasets, size, R) {
+    const ctx = canvasEl.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    canvasEl.width = size * dpr;
+    canvasEl.height = size * dpr;
+    canvasEl.style.width = size + 'px';
+    canvasEl.style.height = size + 'px';
+    ctx.scale(dpr, dpr);
+
+    const cx = size / 2, cy = size / 2;
+    const N = labels.length;
+    const angle = i => (2 * Math.PI / N) * i - Math.PI / 2;
+    const pt = (i, r) => [cx + r * Math.cos(angle(i)), cy + r * Math.sin(angle(i))];
+
+    // grid rings
+    [0.25, 0.5, 0.75, 1].forEach(frac => {
+      ctx.beginPath();
+      for (let i = 0; i < N; i++) {
+        const [x, y] = pt(i, R * frac);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = frac === 1 ? 'rgba(255,255,255,0.15)' : border;
+      ctx.lineWidth = 1; ctx.setLineDash([]);
+      ctx.stroke();
+    });
+
+    // spokes
+    for (let i = 0; i < N; i++) {
+      const [x, y] = pt(i, R);
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y);
+      ctx.strokeStyle = border; ctx.lineWidth = 1; ctx.setLineDash([]); ctx.stroke();
+    }
+
+    // draw each dataset back-to-front (global → idol → james)
+    datasets.forEach(ds => {
+      ctx.setLineDash(ds.dash || []);
+      ctx.beginPath();
+      ds.scores.forEach((score, i) => {
+        const [x, y] = pt(i, R * (score / 10));
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      });
+      ctx.closePath();
+      if (ds.fill) { ctx.fillStyle = ds.fill; ctx.fill(); }
+      ctx.strokeStyle = ds.color; ctx.lineWidth = ds.lineWidth || 1.5; ctx.stroke();
+      ctx.setLineDash([]);
+
+      // dots only for james (last dataset)
+      if (ds.dots) {
+        ds.scores.forEach((score, i) => {
+          const [x, y] = pt(i, R * (score / 10));
+          ctx.beginPath(); ctx.arc(x, y, 3, 0, 2 * Math.PI);
+          ctx.fillStyle = ds.color; ctx.fill();
+        });
+      }
+    });
+
+    // labels
+    ctx.font = (size >= 300 ? '600 11px' : '600 10px') + ' system-ui,sans-serif';
+    ctx.fillStyle = textMuted; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const labelR = R + (size >= 300 ? 22 : 18);
+    labels.forEach((name, i) => {
+      const [x, y] = pt(i, labelR);
+      const lines = name.split('/');
+      lines.forEach((line, li) => {
+        ctx.fillText(line.trim(), x, y + (li - (lines.length - 1) / 2) * 12);
+      });
+    });
+  }
+
+  const gold = cssVar('--gold') || '#c9a84c';
+  const IDOL_COLOR = '#60a5fa';
+  const GLOBAL_COLOR = '#6b7280';
+
+  // main overview chart
+  const main = document.getElementById('radarChart');
+  if (main) {
+    const labels = radarSkills.map(s => s.name);
+    drawRadar(main, labels, [
+      { scores: radarSkills.map(s => s.global), color: GLOBAL_COLOR, lineWidth: 1, dash: [3, 3] },
+      { scores: radarSkills.map(s => s.idol),   color: IDOL_COLOR,   lineWidth: 1.5, dash: [5, 3] },
+      { scores: radarSkills.map(s => s.james),  color: gold, fill: gold + '28', lineWidth: 2, dots: true },
+    ], 320, 128);
+  }
+
+  // dance compare radar (3 dancers)
+  const danceEl = document.getElementById('danceRadarChart');
+  if (danceEl) {
+    drawRadar(danceEl, danceRadar.axes, danceRadar.dancers.map((d, idx) => ({
+      scores: d.scores,
+      color: d.color,
+      fill: idx === danceRadar.dancers.length - 1 ? d.color + '20' : null,
+      lineWidth: idx === danceRadar.dancers.length - 1 ? 2 : 1.5,
+      dash: idx === 0 ? [4, 3] : idx === 1 ? [6, 3] : [],
+      dots: idx === danceRadar.dancers.length - 1,
+    })), 260, 96);
+  }
+
+  // production DNA radar (2 datasets)
+  const prodEl = document.getElementById('prodRadarChart');
+  if (prodEl) {
+    drawRadar(prodEl, prodRadar.axes, prodRadar.datasets.map((d, idx) => ({
+      scores: d.scores,
+      color: d.color,
+      fill: idx === prodRadar.datasets.length - 1 ? d.color + '20' : null,
+      lineWidth: idx === prodRadar.datasets.length - 1 ? 2 : 1.5,
+      dash: idx === 0 ? [5, 3] : [],
+      dots: idx === prodRadar.datasets.length - 1,
+    })), 260, 96);
+  }
+
+  // sub-skill charts
+  subRadars.forEach(sr => {
+    const el = document.getElementById(sr.id);
+    if (!el) return;
+    const labels = sr.skills.map(s => s.name);
+    drawRadar(el, labels, [
+      { scores: sr.skills.map(s => s.global), color: GLOBAL_COLOR, lineWidth: 1, dash: [3, 3] },
+      { scores: sr.skills.map(s => s.idol),   color: IDOL_COLOR,   lineWidth: 1.5, dash: [5, 3] },
+      { scores: sr.skills.map(s => s.james),  color: sr.color, fill: sr.color + '28', lineWidth: 2, dots: true },
+    ], 220, 82);
+  });
+
+  // personality radar
+  const persEl = document.getElementById('personalityRadarChart');
+  if (persEl) {
+    drawRadar(persEl, personalityRadar.axes, [
+      { scores: personalityRadar.idolAvg, color: IDOL_COLOR, lineWidth: 1.5, dash: [5, 3] },
+      { scores: personalityRadar.scores,  color: gold, fill: gold + '28', lineWidth: 2, dots: true },
+    ], 240, 88);
+  }
+
+  // ── vibrato waveform ──
+  const vibratoEl = document.getElementById('vibratoWave');
+  if (vibratoEl) {
+    const cssW = vibratoEl.parentElement.clientWidth - 32;
+    const cssH = 70;
+    const dpr = window.devicePixelRatio || 1;
+    vibratoEl.width = cssW * dpr; vibratoEl.height = cssH * dpr;
+    vibratoEl.style.width = cssW + 'px'; vibratoEl.style.height = cssH + 'px';
+    const vc = vibratoEl.getContext('2d');
+    vc.scale(dpr, dpr);
+    const VW = cssW, VH = cssH, vmid = VH / 2;
+    const breakX = VW * 0.55;
+    const vborder = border;
+
+    // center guide
+    vc.beginPath(); vc.moveTo(0, vmid); vc.lineTo(VW, vmid);
+    vc.strokeStyle = vborder; vc.lineWidth = 1; vc.setLineDash([2, 4]); vc.stroke(); vc.setLineDash([]);
+
+    // waveform
+    vc.beginPath(); vc.strokeStyle = gold; vc.lineWidth = 2;
+    vc.moveTo(0, vmid);
+    vc.lineTo(breakX, vmid);
+    const vibratoSpan = VW - breakX;
+    for (let x = 0; x <= vibratoSpan; x++) {
+      const t = x / vibratoSpan;
+      const amp = Math.min(t / 0.25, 1) * 9;
+      vc.lineTo(breakX + x, vmid + amp * Math.sin(t * 3.5 * 2 * Math.PI));
+    }
+    vc.stroke();
+
+    // break line
+    vc.beginPath(); vc.moveTo(breakX, 10); vc.lineTo(breakX, VH - 10);
+    vc.strokeStyle = gold + '55'; vc.lineWidth = 1; vc.setLineDash([3, 3]); vc.stroke(); vc.setLineDash([]);
+
+    // labels
+    vc.font = '10px system-ui,sans-serif'; vc.fillStyle = cssVar('--text-muted') || '#888';
+    vc.textAlign = 'center';
+    vc.fillText('straight tone', breakX * 0.5, vmid - 13);
+    vc.fillText('delayed vibrato', breakX + vibratoSpan * 0.5, vmid - 15);
+    vc.font = '9px system-ui,sans-serif';
+    vc.textAlign = 'left';  vc.fillText('note start', 4, VH - 4);
+    vc.textAlign = 'right'; vc.fillText('note end', VW - 4, VH - 4);
+  }
+
+  // ── dynamic range bar ──
+  const dynEl = document.getElementById('dynamicRange');
+  if (dynEl) {
+    const cssW = dynEl.parentElement.clientWidth - 32;
+    const cssH = 56;
+    const dpr = window.devicePixelRatio || 1;
+    dynEl.width = cssW * dpr; dynEl.height = cssH * dpr;
+    dynEl.style.width = cssW + 'px'; dynEl.style.height = cssH + 'px';
+    const dc = dynEl.getContext('2d');
+    dc.scale(dpr, dpr);
+    const DW = cssW;
+    const PAD = 20, barY = 18, barH = 18, barW = DW - PAD * 2;
+
+    const grad = dc.createLinearGradient(PAD, 0, PAD + barW, 0);
+    grad.addColorStop(0,   '#2a3a5a'); grad.addColorStop(0.4, '#3a5a4a');
+    grad.addColorStop(0.7, '#6a4a2a'); grad.addColorStop(1,   '#8a2a2a');
+    dc.fillStyle = grad;
+    dc.beginPath(); dc.roundRect(PAD, barY, barW, barH, 4); dc.fill();
+
+    // comfort zone mp→mf (40%–70%)
+    const cx = PAD + barW * 0.40, cw = barW * 0.30;
+    dc.fillStyle = gold + '55'; dc.strokeStyle = gold; dc.lineWidth = 1.5;
+    dc.beginPath(); dc.roundRect(cx, barY, cw, barH, 3); dc.fill(); dc.stroke();
+
+    const zones = [
+      { label: 'pp', p: 0.10 }, { label: 'p', p: 0.30 }, { label: 'mp', p: 0.475 },
+      { label: 'mf', p: 0.625 }, { label: 'f', p: 0.775 }, { label: 'ff', p: 0.925 },
+    ];
+    zones.forEach(z => {
+      const comfort = z.label === 'mp' || z.label === 'mf';
+      dc.font = comfort ? 'bold 10px system-ui,sans-serif' : '10px system-ui,sans-serif';
+      dc.fillStyle = comfort ? gold : (cssVar('--text-muted') || '#888');
+      dc.textAlign = 'center'; dc.textBaseline = 'middle';
+      dc.fillText(z.label, PAD + barW * z.p, barY + barH / 2);
+    });
+
+    dc.font = '9px system-ui,sans-serif'; dc.fillStyle = gold;
+    dc.textAlign = 'center'; dc.textBaseline = 'top';
+    dc.fillText('comfort zone', cx + cw / 2, barY + barH + 4);
+    dc.fillStyle = cssVar('--text-faint') || '#555';
+    dc.textAlign = 'left';  dc.fillText('softest', PAD, barY + barH + 4);
+    dc.textAlign = 'right'; dc.fillText('loudest', DW - PAD, barY + barH + 4);
+  }
+
+  // ── timing pocket diagram ──
+  const timingEl = document.getElementById('timingDiagram');
+  if (timingEl) {
+    const cssW = timingEl.parentElement.clientWidth - 32;
+    const cssH = 88;
+    const dpr = window.devicePixelRatio || 1;
+    timingEl.width = cssW * dpr; timingEl.height = cssH * dpr;
+    timingEl.style.width = cssW + 'px'; timingEl.style.height = cssH + 'px';
+    const tc = timingEl.getContext('2d');
+    tc.scale(dpr, dpr);
+    const TW = cssW, TH = cssH;
+    const PAD_L = 68, PAD_R = 16;
+    const bW = (TW - PAD_L - PAD_R) / 4;
+    const rows = [
+      { label: 'Ahead',   y: 24, color: '#60a5fa' },
+      { label: 'On Beat', y: 44, color: cssVar('--text-muted') || '#888' },
+      { label: 'Pocket',  y: 64, color: gold },
+    ];
+
+    tc.font = '10px system-ui,sans-serif'; tc.textAlign = 'right'; tc.textBaseline = 'middle';
+    rows.forEach(r => {
+      tc.beginPath(); tc.moveTo(PAD_L, r.y); tc.lineTo(TW - PAD_R, r.y);
+      tc.strokeStyle = border; tc.lineWidth = 1; tc.setLineDash([2, 4]); tc.stroke(); tc.setLineDash([]);
+      tc.fillStyle = r.color; tc.fillText(r.label, PAD_L - 6, r.y);
+    });
+
+    for (let b = 0; b < 4; b++) {
+      const beatX = PAD_L + b * bW + bW * 0.5;
+      tc.beginPath(); tc.moveTo(beatX, 10); tc.lineTo(beatX, TH - 10);
+      tc.strokeStyle = border; tc.lineWidth = 1; tc.stroke();
+      tc.font = '9px system-ui,sans-serif'; tc.fillStyle = cssVar('--text-faint') || '#555';
+      tc.textAlign = 'center'; tc.textBaseline = 'top'; tc.fillText(`beat ${b + 1}`, beatX, 2);
+
+      // ghost on-beat dot
+      tc.beginPath(); tc.arc(beatX, rows[1].y, 4, 0, 2 * Math.PI);
+      tc.fillStyle = border; tc.fill();
+      // James pocket dot (slightly behind)
+      tc.beginPath(); tc.arc(beatX + bW * 0.08, rows[2].y, 5, 0, 2 * Math.PI);
+      tc.fillStyle = gold; tc.fill();
+    }
+
+    // legend
+    tc.font = '9px system-ui,sans-serif'; tc.textBaseline = 'bottom';
+    tc.fillStyle = gold; tc.textAlign = 'right';
+    tc.fillText('● James (pocket)', TW - PAD_R, TH);
+    tc.fillStyle = border;
+    tc.fillText('○ exact beat  ', TW - PAD_R - 110, TH);
+  }
+})();
+</script>

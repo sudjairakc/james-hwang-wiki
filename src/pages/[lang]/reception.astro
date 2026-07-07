@@ -1,0 +1,304 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getReception, publications, scoreMatrix, yearEnd } from '../../data/pages/reception';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getReception(lang);
+
+const relatedLabels = {
+  artistry: { en: 'Artistry & Analysis', th: 'ศิลปะการทำงาน & บทวิเคราะห์' },
+  cultural: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+  awards: { en: 'Awards', th: 'รางวัล' },
+  discography: { en: 'Discography', th: 'ผลงานเพลง' },
+  fandom: { en: 'Gemzen Fandom', th: 'แฟนด้อม Gemzen' },
+};
+const related = [
+  { label: relatedLabels.artistry[lang], href: `${base}${lang}/artistry` },
+  { label: relatedLabels.cultural[lang], href: `${base}${lang}/cultural-impact` },
+  { label: relatedLabels.awards[lang], href: `${base}${lang}/awards` },
+  { label: relatedLabels.discography[lang], href: `${base}${lang}/discography` },
+  { label: relatedLabels.fandom[lang], href: `${base}${lang}/fandom` },
+];
+---
+
+<WikiLayout title={d.ui.metaTitle} section="Image" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.heading}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- Summary stat cards -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    {d.summaryStats.map(s => (
+      <div class="stat-card">
+        <div class="stat-val">{s.val}</div>
+        <div class="stat-label">{s.label}</div>
+        <div class="text-xs mt-0.5" style="color:var(--text-faint)">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- ── A1 · Aggregate scores ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.aggregateHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.aggregateIntro}</p>
+    <div class="flex flex-col gap-3">
+      {d.albumScores.map(a => (
+        <div class="rounded-lg border overflow-hidden" style={`border-color:${a.highlight ? `color-mix(in srgb,${a.color} 45%,var(--border))` : 'var(--border)'};background-color:var(--bg-surface)`}>
+          <div class="flex items-center gap-4 px-4 py-3">
+            <!-- score badge -->
+            <div class="flex flex-col items-center justify-center rounded-lg shrink-0" style={`width:54px;height:54px;background-color:color-mix(in srgb,${a.color} 16%,var(--bg-muted))`}>
+              <span class="text-lg font-black leading-none" style={`color:${a.color}`}>{a.score}</span>
+              <span class="text-xs leading-none mt-0.5" style="color:var(--text-faint)">/100</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm font-bold" style="color:var(--text)">{a.album}</span>
+                <span class="text-xs font-mono" style="color:var(--text-faint)">{a.year}</span>
+                <span class="text-xs" style={`color:${a.color}`}>{a.stars}</span>
+              </div>
+              <div class="text-xs italic mt-0.5" style="color:var(--text-muted)">{a.tag}</div>
+            </div>
+          </div>
+          <!-- score bar -->
+          <div class="h-1.5 w-full" style="background-color:var(--bg-muted)">
+            <div class="h-full" style={`width:${a.score}%;background-color:${a.color}`}></div>
+          </div>
+          <div class="px-4 py-2.5">
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{a.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── A5 · In-depth album reviews ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.reviewsHeading}</h2>
+    <p class="text-xs mb-6" style="color:var(--text-faint)">{d.ui.reviewsIntro}</p>
+    <div class="flex flex-col gap-6">
+      {d.albumReviews.map(r => (
+        <article class="rounded-xl border overflow-hidden" style={`border-color:color-mix(in srgb,${r.color} 30%,var(--border));background-color:var(--bg-surface)`}>
+          <div class="px-6 py-4 border-b" style={`border-color:var(--border);background-color:color-mix(in srgb,${r.color} 8%,var(--bg-surface))`}>
+            <div class="flex items-center gap-3 flex-wrap mb-1">
+              <h3 class="text-lg font-black m-0" style="color:var(--text)">{r.album}</h3>
+              <span class="text-xs font-mono" style="color:var(--text-faint)">{r.year}</span>
+              <span class="text-sm" style={`color:${r.color}`}>{r.stars}</span>
+              <span class="text-xs font-black px-2 py-0.5 rounded ml-auto" style={`background-color:color-mix(in srgb,${r.color} 16%,var(--bg-muted));color:${r.color}`}>{r.score}/100</span>
+            </div>
+            <div class="text-sm italic" style="color:var(--text-muted)">"{r.pull}"</div>
+          </div>
+          <div class="px-6 py-5 article-prose">
+            {r.body.map(p => <p>{p}</p>)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── A2 · Publication scorecard matrix ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.scorecardHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.scorecardIntro}</p>
+    <div class="rounded-lg border overflow-x-auto" style="border-color:var(--border)">
+      <div class="min-w-[640px]">
+        <!-- header -->
+        <div class="grid items-center px-3 py-2.5" style={`grid-template-columns:160px repeat(${publications.length}, 1fr);background-color:color-mix(in srgb,var(--gold) 6%,var(--bg-muted));border-bottom:1px solid color-mix(in srgb,var(--gold) 25%,transparent)`}>
+          <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--text-muted)">{d.ui.scorecardAlbumCol}</div>
+          {publications.map(p => (
+            <div class="text-xs font-semibold text-center" style="color:var(--text-muted)">{p}</div>
+          ))}
+        </div>
+        {scoreMatrix.map((row, ri) => (
+          <div class="grid items-center px-3 py-2.5" style={`grid-template-columns:160px repeat(${publications.length}, 1fr);background-color:${row.highlight ? `color-mix(in srgb,${row.color} 7%,var(--bg-surface))` : 'var(--bg-surface)'};${ri < scoreMatrix.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}`}>
+            <div class="text-xs font-semibold flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full shrink-0" style={`background-color:${row.color}`}></span>
+              {row.album}
+            </div>
+            {row.scores.map(s => (
+              <div class="text-xs text-center font-mono" style={`color:${s === '—' ? 'var(--text-faint)' : 'var(--text)'}`}>{s}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── A3 · Year-end placements ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.yearEndHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.yearEndIntro}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {yearEnd.map(y => (
+        <div class="rounded-lg border flex items-center gap-3 px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-black px-2.5 py-1 rounded shrink-0" style={`background-color:color-mix(in srgb,${y.color} 16%,var(--bg-muted));color:${y.color}`}>{y.rank}</span>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-semibold">{y.pub}</div>
+            <div class="text-xs" style="color:var(--text-muted)">{y.list}</div>
+          </div>
+          <span class="text-xs px-2 py-0.5 rounded shrink-0" style={`background-color:color-mix(in srgb,${y.color} 10%,transparent);color:${y.color}`}>{y.work}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── A4 · Critical consensus evolution ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.consensusHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.consensusIntro}</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {d.consensusArc.map((c, i) => (
+        <div class="rounded-lg border overflow-hidden" style={`border-color:${c.highlight ? 'color-mix(in srgb,var(--gold) 45%,var(--border))' : 'var(--border)'};background-color:var(--bg-surface)`}>
+          <div class="px-4 py-2.5 border-b flex items-center gap-2" style={`border-color:var(--border);background-color:${c.highlight ? 'color-mix(in srgb,var(--gold) 8%,var(--bg-muted))' : 'var(--bg-muted)'}`}>
+            <span class="text-xs font-mono font-bold" style="color:var(--gold)">{i + 1}</span>
+            <span class="text-sm font-bold" style={c.highlight ? 'color:var(--gold)' : 'color:var(--text)'}>{c.phase}</span>
+          </div>
+          <div class="px-4 py-3">
+            <div class="text-xs font-mono mb-2" style="color:var(--text-faint)">{c.period}</div>
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{c.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── B1 · Video essays ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.videoHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.videoIntro}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.videoEssays.map(v => (
+        <div class="rounded-lg border overflow-hidden flex flex-col" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="flex items-center justify-between px-4 py-2.5 border-b" style="border-color:var(--border);background-color:var(--bg-muted)">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="text-xs" style="color:var(--gold)">▶</span>
+              <span class="text-xs font-semibold truncate" style="color:var(--text)">{v.channel}</span>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="text-xs font-mono" style="color:var(--text-faint)">{v.runtime}</span>
+              <span class="text-xs font-bold" style="color:var(--gold)">{v.views}</span>
+            </div>
+          </div>
+          <div class="px-4 py-3 flex-1">
+            <div class="text-sm font-semibold leading-snug mb-1.5">{v.title}</div>
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{v.thesis}</p>
+          </div>
+          <div class="px-4 pb-3">
+            <span class="text-xs px-2 py-0.5 rounded" style="background-color:color-mix(in srgb,var(--gold) 10%,transparent);color:var(--gold)">{v.tag}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── B2 · Reaction & discourse ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.discourseHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.discourseIntro}</p>
+    <div class="rounded-lg border overflow-hidden" style="border-color:var(--border)">
+      {d.discourse.map((dd, i) => (
+        <div class="flex items-start gap-4 px-4 py-3.5" style={`background-color:var(--bg-surface);${i < d.discourse.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 50%,transparent)' : ''}`}>
+          <span class="text-xs font-semibold px-2 py-0.5 rounded shrink-0 mt-0.5" style="background-color:var(--bg-muted);color:var(--text-muted)">{dd.platform}</span>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-semibold">{dd.title}</div>
+            <p class="text-xs leading-relaxed mt-0.5 m-0" style="color:var(--text-muted)">{dd.desc}</p>
+          </div>
+          <span class="text-xs font-bold shrink-0 mt-0.5" style="color:var(--gold)">{dd.metric}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── C1 · Industry voices ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.industryHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.industryIntro}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.industryQuotes.map(q => (
+        <div class="rounded-lg border px-5 py-4 flex flex-col" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-2xl leading-none mb-2" style="color:color-mix(in srgb,var(--gold) 50%,transparent)">"</div>
+          <p class="text-sm leading-relaxed flex-1 m-0" style="color:var(--text)">{q.quote}</p>
+          <div class="mt-3 pt-3 border-t" style="border-color:color-mix(in srgb,var(--border) 50%,transparent)">
+            <div class="text-xs font-semibold" style="color:var(--gold)">{q.who}</div>
+            <div class="text-xs mt-0.5" style="color:var(--text-faint)">{q.context}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── C2 · Peer positioning ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.peerHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.peerIntro}</p>
+    <div class="rounded-lg border overflow-x-auto" style="border-color:var(--border)">
+      <div class="min-w-[560px]">
+        <div class="grid px-3 py-2.5" style={`grid-template-columns:repeat(${d.peerTier.cols.length}, 1fr);background-color:color-mix(in srgb,var(--gold) 6%,var(--bg-muted));border-bottom:1px solid color-mix(in srgb,var(--gold) 25%,transparent)`}>
+          {d.peerTier.cols.map((c, ci) => (
+            <div class="text-xs font-semibold uppercase tracking-widest" style={`color:${ci === d.peerTier.cols.length - 1 ? 'var(--gold)' : 'var(--text-muted)'}`}>{c}</div>
+          ))}
+        </div>
+        {d.peerTier.rows.map((row, ri) => (
+          <div class="grid px-3 py-2.5 text-xs" style={`grid-template-columns:repeat(${d.peerTier.cols.length}, 1fr);background-color:var(--bg-surface);${ri < d.peerTier.rows.length - 1 ? 'border-bottom:1px solid color-mix(in srgb,var(--border) 40%,transparent)' : ''}`}>
+            {row.map((cell, ci) => (
+              <div class={ci === 0 ? 'font-semibold' : ''} style={`color:${ci === row.length - 1 ? 'var(--text)' : 'var(--text-muted)'}`}>{cell}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Long-form critical essays ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-2">{d.ui.essaysHeading}</h2>
+    <p class="text-xs mb-6" style="color:var(--text-faint)">{d.ui.essaysIntro}</p>
+    <div class="flex flex-col gap-6">
+      {d.essays.map(e => (
+        <article class="rounded-xl border overflow-hidden" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="px-6 py-4 border-b" style="border-color:var(--border);background-color:var(--bg-muted)">
+            <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--gold)">{e.kicker}</div>
+            <h3 class="text-xl font-black m-0" style="color:var(--text)">{e.title}</h3>
+            <div class="text-xs italic mt-1" style="color:var(--text-muted)">{e.subtitle}</div>
+          </div>
+          <div class="px-6 py-5 article-prose">
+            {e.body.map(b => (
+              <p>{b.lead && <strong style="color:var(--text)">{b.lead} — </strong>}{b.text}</p>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── E · Influence on next generation ── -->
+  <section>
+    <h2 class="wiki-section mb-2">{d.ui.influenceHeading}</h2>
+    <p class="text-xs mb-5" style="color:var(--text-faint)">{d.ui.influenceIntro}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.influence.map(f => (
+        <div class="rounded-lg border-l-2 px-4 py-3" style="border-color:var(--gold);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">
+          <div class="text-sm font-semibold mb-1" style="color:var(--text)">{f.artist}</div>
+          <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{f.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
+
+<style>
+  .article-prose p {
+    font-size: 0.9rem;
+    line-height: 1.85;
+    color: var(--text-muted);
+    margin: 0 0 1rem 0;
+  }
+  .article-prose p:last-child { margin-bottom: 0; }
+</style>
