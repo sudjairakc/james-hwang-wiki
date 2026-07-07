@@ -10,7 +10,7 @@ const en = {
     title: 'JH Company',
     subtitle: 'Founded 2023 · Seoul HQ · Single-artist creative studio & IP house',
     introHtml:
-      'JH Company was established by <strong style="color:var(--text)">James Hwang</strong> in May 2023, immediately following the ' +
+      'JH Company was established by <strong style="color:var(--text)">James Hwang</strong> on April 30, 2023, immediately following the ' +
       '<a href="%L%legal" style="color:var(--gold)">settlement of his contract dispute with SM Entertainment</a>. ' +
       'The company manages his <a href="%L%discography" style="color:var(--gold)">music catalog</a>, ' +
       '<a href="%L%tours" style="color:var(--gold)">touring operations</a>, ' +
@@ -176,7 +176,7 @@ const th: typeof en = {
     title: 'JH Company',
     subtitle: 'ก่อตั้ง 2023 · สำนักงานใหญ่กรุงโซล · ครีเอทีฟสตูดิโอศิลปินเดี่ยว & IP house',
     introHtml:
-      'JH Company ก่อตั้งโดย <strong style="color:var(--text)">James Hwang</strong> ในเดือนพฤษภาคม 2023 ทันทีหลังจาก' +
+      'JH Company ก่อตั้งโดย <strong style="color:var(--text)">James Hwang</strong> เมื่อวันที่ 30 เมษายน 2023 ทันทีหลังจาก' +
       '<a href="%L%legal" style="color:var(--gold)">การ settle ข้อพิพาทสัญญากับ SM Entertainment</a> ' +
       'บริษัทดูแล<a href="%L%discography" style="color:var(--gold)">คลังเพลง</a>, ' +
       '<a href="%L%tours" style="color:var(--gold)">การดำเนินงานทัวร์</a>, ' +
