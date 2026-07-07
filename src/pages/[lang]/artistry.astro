@@ -1,0 +1,279 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getArtistry, eraColors } from '../../data/pages/artistry';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const d = getArtistry(lang);
+
+const relatedLabels = {
+  discography: { en: 'Discography', th: 'ผลงานเพลง' },
+  canon: { en: 'Canon', th: 'แคนอน' },
+  production: { en: 'Production Credits', th: 'เครดิตโปรดักชัน' },
+  cultural: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },
+};
+const related = [
+  { label: relatedLabels.discography[lang], href: `${base}${lang}/discography` },
+  { label: relatedLabels.canon[lang], href: `${base}${lang}/canon` },
+  { label: relatedLabels.production[lang], href: `${base}${lang}/production-credits` },
+  { label: relatedLabels.cultural[lang], href: `${base}${lang}/cultural-impact` },
+];
+---
+
+<WikiLayout title={d.ui.title} section="Music" lang={lang} relatedPages={related}>
+  <div class="mb-8">
+    <div class="wiki-label mb-2">{d.ui.label}</div>
+    <h1 class="wiki-title mb-2">{d.ui.title}</h1>
+    <p class="text-sm" style="color:var(--text-muted)">{d.ui.subtitle}</p>
+  </div>
+
+  <!-- I. Liminal space -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.liminalHeading}</h2>
+    <p class="text-sm leading-relaxed mb-4" style="color:var(--text-muted)" set:html={d.ui.liminalIntro}></p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+      {d.liminalExamples.map(e => (
+        <div class="flex items-baseline gap-3 rounded-lg border px-4 py-2.5" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-bold shrink-0">{e.song}</span>
+          <span class="text-xs px-1.5 py-0.5 rounded shrink-0" style="background-color:color-mix(in srgb, var(--gold) 10%, transparent);color:var(--gold)">{e.state}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{e.detail}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- II. Confidence vs Vulnerability -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.tensionHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.modes.map(m => (
+        <div class="rounded-xl border p-5" style={`border-color:${m.color}44;background-color:var(--bg-surface)`}>
+          <div class="text-xs font-bold uppercase tracking-widest mb-2" style={`color:${m.color}`}>{m.label}</div>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            {m.songs.map(s => (
+              <span class="text-xs px-2 py-0.5 rounded border" style={`border-color:${m.color}44;color:${m.color}`}>{s}</span>
+            ))}
+          </div>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- III. Production evolution -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.evolutionHeading}</h2>
+    <div class="flex flex-col gap-2">
+      {d.evolution.map(e => {
+        const c = eraColors[e.era];
+        return (
+          <div class="flex gap-4 rounded-lg border px-4 py-3 items-baseline" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <span class="text-xs font-mono shrink-0 w-10" style={`color:${c}`}>{e.year}</span>
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-baseline gap-2">
+                <span class="text-sm font-bold" style={`color:${c}`}>{e.era}</span>
+                <span class="text-xs" style="color:var(--text)">{e.sound}</span>
+              </div>
+              <div class="text-xs mt-0.5" style="color:var(--text-muted)">{e.meaning}</div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- IV. Lyrical motifs -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.motifsHeading}</h2>
+    <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+      {d.motifs.map((m, i, arr) => (
+        <div class={`flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-3 ${i < arr.length - 1 ? 'border-b' : ''}`}
+          style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-sm font-semibold sm:w-64 shrink-0">{m.motif}</span>
+          <span class="text-xs" style="color:var(--text-muted)">{m.songs}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- V. Critic assessment -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.criticHeading}</h2>
+    <div class="flex flex-col gap-2">
+      {d.ratings.map(r => {
+        const c = eraColors[r.era];
+        return (
+          <div class="rounded-lg border px-5 py-3.5" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
+              <span class="text-sm font-black" style={`color:${c}`}>{r.era}</span>
+              <span class="text-sm font-bold" style="color:var(--gold)">{r.stars}</span>
+              <span class="text-xs italic" style="color:var(--text-muted)">"{r.epithet}"</span>
+            </div>
+            <p class="text-xs leading-relaxed" style="color:var(--text-muted)">{r.note}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- VI. Counterpoints -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.counterpointsHeading}</h2>
+    <p class="text-xs mb-4" style="color:var(--text-faint)">{d.ui.counterpointsIntro}</p>
+    <div class="flex flex-col gap-3">
+      {d.perspectives.map(p => (
+        <div class="rounded-xl border p-5" style={`border-color:${p.color}44;background-color:var(--bg-surface)`}>
+          <div class="text-sm font-bold mb-3" style={`color:${p.color}`}>{p.title}</div>
+          <ul class="space-y-2 m-0 pl-0" style="list-style:none">
+            {p.points.map(pt => (
+              <li class="text-xs leading-relaxed flex gap-2" style="color:var(--text-muted)">
+                <span style={`color:${p.color}`}>—</span>
+                <span>{pt}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Authorship & production realism -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.realismHeading}</h2>
+    <p class="text-sm leading-relaxed mb-4" style="color:var(--text-muted)" set:html={d.ui.realismIntro}></p>
+
+    <!-- Graduated authorship by era -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">{d.ui.authorshipSubhead}</div>
+    <div class="flex flex-col gap-2 mb-5">
+      {d.authorshipByEra.map(a => {
+        const c = eraColors[a.era];
+        return (
+          <div class="flex gap-4 rounded-lg border px-4 py-2.5 items-baseline" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <span class="text-xs font-mono shrink-0 w-10" style={`color:${c}`}>{a.year}</span>
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-baseline gap-2">
+                <span class="text-sm font-bold" style={`color:${c}`}>{a.era}</span>
+                <span class="text-xs font-semibold" style="color:var(--text)">{a.role}</span>
+              </div>
+              <div class="text-xs mt-0.5" style="color:var(--text-muted)">{a.detail}</div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Stress tests -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">{d.ui.stressTestsSubhead}</div>
+    <div class="flex flex-col gap-2 mb-5">
+      {d.realismTests.map(t => {
+        const holds = t.status === 'holds';
+        const col = holds ? '#5a7c6a' : '#c06080';
+        return (
+          <div class="rounded-lg border-l-2 px-4 py-3" style={`border-color:${col};background-color:color-mix(in srgb,${col} 4%,var(--bg-surface))`}>
+            <div class="flex items-baseline gap-2 mb-1">
+              <span class="text-xs font-bold px-1.5 py-0.5 rounded shrink-0" style={`background-color:${col}22;color:${col}`}>{holds ? d.ui.holds : d.ui.seam}</span>
+              <span class="text-sm font-semibold">{t.q}</span>
+            </div>
+            <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{t.finding}</p>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Production realism -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">{d.ui.productionSubhead}</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+      {d.productionRealism.map(p => (
+        <div class="rounded-xl border p-4" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-2">{p.aspect}</div>
+          <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{p.text}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed border-l-2" style="background-color:var(--bg-muted);color:var(--text-muted);border-color:var(--gold)">
+      <strong style="color:var(--text)">{d.ui.verdictLabel}</strong> {d.authorshipVerdict}
+    </div>
+  </section>
+
+  <!-- MJ reliance debate -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.mjHeading}</h2>
+    <p class="text-sm leading-relaxed mb-4" style="color:var(--text-muted)" set:html={d.ui.mjIntro}></p>
+    <div class="flex flex-col gap-2 mb-4">
+      {d.mjTouchpoints.map(t => (
+        <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 rounded-lg border px-4 py-2.5" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-xs font-bold uppercase tracking-wider sm:w-40 shrink-0" style="color:var(--gold)">{t.layer}</span>
+          <span class="text-xs leading-relaxed" style="color:var(--text-muted)">{t.detail}</span>
+        </div>
+      ))}
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      {d.mjDebate.map(dd => (
+        <div class="rounded-xl border p-5" style={`border-color:${dd.color}44;background-color:var(--bg-surface)`}>
+          <div class="text-sm font-bold mb-3" style={`color:${dd.color}`}>{dd.side}</div>
+          <ul class="space-y-2 m-0 pl-0" style="list-style:none">
+            {dd.points.map(pt => (
+              <li class="text-xs leading-relaxed flex gap-2" style="color:var(--text-muted)">
+                <span style={`color:${dd.color}`}>—</span><span>{pt}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed border-l-2" style="background-color:var(--bg-muted);color:var(--text-muted);border-color:var(--gold)">
+      <strong style="color:var(--text)">{d.ui.verdictLabel}</strong> {d.mjVerdict}
+    </div>
+  </section>
+
+  <!-- Why he stays in NCT -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.stayHeading}</h2>
+    <p class="text-sm leading-relaxed mb-4" style="color:var(--text-muted)">{d.stayContext}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      {d.stayReasons.map(r => (
+        <div class="rounded-xl border-l-2 p-5" style={`border-color:${r.color};background-color:color-mix(in srgb,${r.color} 4%,var(--bg-surface))`}>
+          <div class="text-sm font-bold mb-2" style={`color:${r.color}`}>{r.lens}</div>
+          <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{r.body}</p>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg px-4 py-3 text-xs leading-relaxed border-l-2" style="background-color:var(--bg-muted);color:var(--text-muted);border-color:var(--gold)">
+      <strong style="color:var(--text)">{d.ui.verdictLabel}</strong> {d.stayVerdict}
+    </div>
+  </section>
+
+  <!-- VII. Character construction -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-2">{d.ui.constructionHeading}</h2>
+    <p class="text-sm leading-relaxed mb-4" style="color:var(--text-muted)" set:html={d.ui.constructionIntro}></p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.constructionPillars.map((p, i) => (
+        <div class={`rounded-xl border p-5 ${i === d.constructionPillars.length - 1 ? 'md:col-span-2' : ''}`} style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-sm font-bold mb-2" style="color:var(--gold)">{p.title}</div>
+          <p class="text-xs leading-relaxed m-0" style="color:var(--text-muted)">{p.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Entry points -->
+  <section>
+    <h2 class="wiki-section mb-4">{d.ui.entryHeading}</h2>
+    <div class="rounded-xl border overflow-hidden" style="border-color:var(--border)">
+      {d.entryPoints.map((e, i, arr) => (
+        <div class={`flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-3 ${i < arr.length - 1 ? 'border-b' : ''}`}
+          style="border-color:var(--border);background-color:var(--bg-surface)">
+          <span class="text-xs font-semibold sm:w-64 shrink-0" style="color:var(--gold)">{d.ui.entryPrefix} {e.mood}</span>
+          <span class="text-sm" style="color:var(--text)">{e.songs}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>

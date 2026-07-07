@@ -1,54 +1,63 @@
 ---
 import '../styles/global.css';
+import { LANGS, swapLangInPath, type Lang } from '../i18n';
 
 interface Props {
   title: string;
   description?: string;
   section?: string;
+  lang?: Lang;
   relatedPages?: Array<{ label: string; href: string }>;
 }
 
-const { title, description = 'The definitive wiki for James Hwang — artist, actor, auteur.', section, relatedPages } = Astro.props;
+const { title, description = 'The definitive wiki for James Hwang — artist, actor, auteur.', section, lang, relatedPages } = Astro.props;
 const base = import.meta.env.BASE_URL;
 
-const nav = [
-  { group: 'Artist' },
-  { label: 'Overview',           href: `${base}`,                   icon: '◈' },
-  { label: 'Biography',          href: `${base}biography`,          icon: '◎' },
-  { label: 'Personal Life',      href: `${base}personal-life`,      icon: '◎' },
-  { label: 'Timeline',           href: `${base}timeline`,           icon: '◷' },
-  { group: 'Music' },
-  { label: 'Discography',        href: `${base}discography`,        icon: '◉' },
-  { label: 'Artistry & Analysis',href: `${base}artistry`,           icon: '✦' },
-  { label: 'Music Videos',       href: `${base}music-videos`,       icon: '▶' },
-  { label: 'Tours',              href: `${base}tours`,              icon: '◆' },
-  { label: 'Collaborations',     href: `${base}collaborations`,     icon: '♫' },
-  { label: 'Production Credits', href: `${base}production-credits`, icon: '◎' },
-  { group: 'Film' },
-  { label: 'Filmography',        href: `${base}filmography`,        icon: '▷' },
-  { group: 'Business' },
-  { label: 'Company',            href: `${base}company`,            icon: '◇' },
-  { label: 'Endorsements',       href: `${base}ecosystem`,          icon: '◐' },
-  { label: 'Legal',              href: `${base}legal`,              icon: '⚖' },
-  { group: 'Image' },
-  { label: 'Public Image',       href: `${base}public-image`,       icon: '◑' },
-  { label: 'Fashion & Style',    href: `${base}fashion`,            icon: '◇' },
-  { label: 'Awards',             href: `${base}awards`,             icon: '★' },
-  { label: 'Interviews & Quotes',href: `${base}interviews`,         icon: '◎' },
-  { label: 'Critical Reception', href: `${base}reception`,           icon: '✍' },
-  { label: 'Cultural Impact',    href: `${base}cultural-impact`,    icon: '◑' },
-  { group: 'Community' },
-  { label: 'Canon',              href: `${base}canon`,              icon: '◈' },
-  { label: 'Fandom',             href: `${base}fandom`,             icon: '♡' },
-  { label: 'Controversies',      href: `${base}controversies`,      icon: '◈' },
-  { label: 'Rivalries & Tensions', href: `${base}rivalries`,        icon: '⚔' },
+// Display language for nav labels; page prefix carries lang only for migrated pages.
+const L: Lang = lang ?? 'en';
+const pagePrefix = lang ? `${base}${lang}/` : base;
+
+type NavItem = { label: Record<Lang, string>; slug: string; icon: string };
+type NavGroup = { group: Record<Lang, string> };
+const nav: Array<NavItem | NavGroup> = [
+  { group: { en: 'Artist', th: 'ศิลปิน' } },
+  { label: { en: 'Overview', th: 'ภาพรวม' },                    slug: '',                   icon: '◈' },
+  { label: { en: 'Biography', th: 'ชีวประวัติ' },                 slug: 'biography',          icon: '◎' },
+  { label: { en: 'Personal Life', th: 'ชีวิตส่วนตัว' },            slug: 'personal-life',      icon: '◎' },
+  { label: { en: 'Timeline', th: 'ไทม์ไลน์' },                    slug: 'timeline',           icon: '◷' },
+  { group: { en: 'Music', th: 'ดนตรี' } },
+  { label: { en: 'Discography', th: 'ผลงานเพลง' },               slug: 'discography',        icon: '◉' },
+  { label: { en: 'Artistry & Analysis', th: 'ศิลปะการทำงาน & บทวิเคราะห์' }, slug: 'artistry', icon: '✦' },
+  { label: { en: 'Music Videos', th: 'มิวสิกวิดีโอ' },             slug: 'music-videos',       icon: '▶' },
+  { label: { en: 'Tours', th: 'ทัวร์คอนเสิร์ต' },                  slug: 'tours',              icon: '◆' },
+  { label: { en: 'Collaborations', th: 'คอลแลบ' },              slug: 'collaborations',     icon: '♫' },
+  { label: { en: 'Production Credits', th: 'เครดิตโปรดักชัน' },     slug: 'production-credits', icon: '◎' },
+  { group: { en: 'Film', th: 'ภาพยนตร์' } },
+  { label: { en: 'Filmography', th: 'ผลงานภาพยนตร์' },           slug: 'filmography',        icon: '▷' },
+  { group: { en: 'Business', th: 'ธุรกิจ' } },
+  { label: { en: 'Company', th: 'บริษัท' },                      slug: 'company',            icon: '◇' },
+  { label: { en: 'Endorsements', th: 'พรีเซ็นเตอร์ & ดีล' },       slug: 'ecosystem',          icon: '◐' },
+  { label: { en: 'Legal', th: 'กฎหมาย' },                       slug: 'legal',              icon: '⚖' },
+  { group: { en: 'Image', th: 'ภาพลักษณ์' } },
+  { label: { en: 'Public Image', th: 'ภาพลักษณ์สาธารณะ' },        slug: 'public-image',       icon: '◑' },
+  { label: { en: 'Fashion & Style', th: 'แฟชั่น & สไตล์' },        slug: 'fashion',            icon: '◇' },
+  { label: { en: 'Awards', th: 'รางวัล' },                       slug: 'awards',             icon: '★' },
+  { label: { en: 'Interviews & Quotes', th: 'สัมภาษณ์ & คำพูด' },  slug: 'interviews',         icon: '◎' },
+  { label: { en: 'Critical Reception', th: 'เสียงวิจารณ์' },        slug: 'reception',          icon: '✍' },
+  { label: { en: 'Cultural Impact', th: 'อิทธิพลเชิงวัฒนธรรม' },    slug: 'cultural-impact',    icon: '◑' },
+  { group: { en: 'Community', th: 'คอมมูนิตี้' } },
+  { label: { en: 'Canon', th: 'แคนอน' },                        slug: 'canon',              icon: '◈' },
+  { label: { en: 'Fandom', th: 'แฟนด้อม' },                     slug: 'fandom',             icon: '♡' },
+  { label: { en: 'Controversies', th: 'ประเด็นดราม่า' },          slug: 'controversies',      icon: '◈' },
+  { label: { en: 'Rivalries & Tensions', th: 'คู่แข่ง & ความตึงเครียด' }, slug: 'rivalries',    icon: '⚔' },
 ];
 
 const currentPath = Astro.url.pathname;
+const langLinks = lang ? LANGS.map(l => ({ code: l, href: swapLangInPath(currentPath, base, l) })) : null;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={L}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,11 +80,22 @@ const currentPath = Astro.url.pathname;
     <!-- Top bar -->
     <header class="border-b sticky top-0 z-50" style="background-color:var(--bg-header);border-color:var(--border)">
       <div class="max-w-screen-2xl mx-auto px-4 h-14 flex items-center justify-between">
-        <a href={base} class="flex items-center gap-3 group">
+        <a href={pagePrefix} class="flex items-center gap-3 group">
           <span class="text-xl font-bold tracking-tight" style="color:var(--gold)">JH</span>
           <span class="text-sm font-semibold transition-colors" style="color:var(--text)">JamesHwangVerse</span>
         </a>
         <div class="flex items-center gap-2">
+          {langLinks && (
+            <div class="flex items-center rounded-md border overflow-hidden text-xs font-semibold" style="border-color:var(--border)">
+              {langLinks.map(l => (
+                <a
+                  href={l.href}
+                  class="px-2 py-1 transition-colors uppercase"
+                  style={l.code === L ? 'background-color:var(--gold);color:var(--bg)' : 'color:var(--text-muted)'}
+                >{l.code}</a>
+              ))}
+            </div>
+          )}
           <!-- Dark/Light toggle -->
           <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-md transition-colors" style="color:var(--text-muted)">
             <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,18 +123,19 @@ const currentPath = Astro.url.pathname;
           {nav.map(item => {
             if ('group' in item) {
               return (
-                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group}</p>
+                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group[L]}</p>
               );
             }
-            const isActive = currentPath === item.href || currentPath === item.href + '/';
+            const href = `${pagePrefix}${item.slug}`;
+            const isActive = currentPath === href || currentPath === href + '/';
             return (
               <a
-                href={item.href}
+                href={href}
                 class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm transition-colors sidebar-link ${isActive ? 'font-medium sidebar-active' : 'sidebar-inactive'}`}
                 style={isActive ? 'color:var(--gold);background-color:var(--bg-muted)' : 'color:var(--text-muted)'}
               >
                 <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
-                {item.label}
+                {item.label[L]}
               </a>
             );
           })}
@@ -128,18 +149,19 @@ const currentPath = Astro.url.pathname;
           {nav.map(item => {
             if ('group' in item) {
               return (
-                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group}</p>
+                <p class="text-xs font-semibold uppercase tracking-widest px-2 pt-4 pb-1 first:pt-0" style="color:var(--text-faint)">{item.group[L]}</p>
               );
             }
-            const isActive = currentPath === item.href || currentPath === item.href + '/';
+            const href = `${pagePrefix}${item.slug}`;
+            const isActive = currentPath === href || currentPath === href + '/';
             return (
               <a
-                href={item.href}
+                href={href}
                 class={`flex items-center gap-2.5 px-2 py-2 rounded-md text-sm mb-0.5 transition-colors sidebar-link ${isActive ? 'font-medium sidebar-active' : 'sidebar-inactive'}`}
                 style={isActive ? 'color:var(--gold);background-color:var(--bg-muted)' : 'color:var(--text-muted)'}
               >
                 <span class="text-xs w-3.5 shrink-0 opacity-70">{item.icon}</span>
-                {item.label}
+                {item.label[L]}
               </a>
             );
           })}
