@@ -1,0 +1,155 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { langStaticPaths, type Lang } from '../../i18n';
+import { getHome, albums, badgeColors, groupMeta } from '../../data/pages/home';
+
+export function getStaticPaths() {
+  return langStaticPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const base = import.meta.env.BASE_URL;
+const L = `${base}${lang}/`;
+const d = getHome(lang);
+const bioHtml = d.bioHtml.replaceAll('%L%', L);
+
+const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
+// Merge translated group content with shared slugs/icons/colors.
+const sectionGroups = d.groups.map((g, gi) => ({
+  group: g.group,
+  color: groupMeta[gi].color,
+  items: g.items.map((it, ii) => ({
+    title: it.title,
+    desc: it.desc,
+    href: `${L}${groupMeta[gi].slugs[ii]}`,
+    icon: groupMeta[gi].icons[ii],
+  })),
+}));
+---
+
+<WikiLayout title={d.ui.title} section="Wiki" lang={lang} relatedPages={related}>
+
+  <!-- Hero -->
+  <div class="mb-10">
+    <div class="wiki-label mb-3">{d.ui.heroLabel}</div>
+    <h1 class="wiki-title-hero mb-4">{d.ui.name}</h1>
+
+    <!-- Identity chips -->
+    <div class="flex flex-wrap gap-2 mb-5">
+      {d.identityChips.map(c => (
+        <span class="text-xs px-2.5 py-1 rounded-full border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-surface)">{c}</span>
+      ))}
+    </div>
+
+    <!-- Role badges -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      {d.roleBadges.map((label, i) => (
+        <span class="text-xs px-3 py-1 rounded-full font-semibold" style={`background-color:${badgeColors[i]}18;color:${badgeColors[i]};border:1px solid ${badgeColors[i]}33`}>{label}</span>
+      ))}
+    </div>
+
+    <!-- Bio paragraph -->
+    <div class="rounded-xl border p-6 mb-8 max-w-3xl" style="border-color:var(--border);background-color:var(--bg-surface);border-left:3px solid var(--gold)">
+      <p class="text-sm leading-7" style="color:var(--text-muted)" set:html={bioHtml}></p>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
+    {d.stats.map(s => (
+      <div class="stat-card text-center">
+        <div class="stat-val">{s.value}</div>
+        <div class="text-xs font-semibold mt-1 mb-0.5" style="color:var(--text)">{s.label}</div>
+        <div class="stat-label normal-case tracking-normal">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Career milestones strip -->
+  <section class="mb-12 pt-4">
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">{d.ui.milestonesHeading}</div>
+      <a href={`${L}timeline`} class="text-xs transition-colors hover:opacity-80" style="color:var(--gold)">{d.ui.fullTimeline}</a>
+    </div>
+    <div class="relative">
+      <!-- Spine -->
+      <div class="absolute left-3 top-3 bottom-3 w-px" style="background-color:var(--border)"></div>
+      <div class="flex flex-col gap-0">
+        {d.milestones.map((m, i) => (
+          <div class="flex items-start gap-4 group">
+            <!-- Dot -->
+            <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 relative z-10 transition-all"
+              style="border-color:var(--border);background:var(--bg-surface)">
+              <div class="w-2 h-2 rounded-full" style="background-color:var(--gold);opacity:0.5"></div>
+            </div>
+            <!-- Content -->
+            <div class="flex-1 pb-4 border-b" style={`border-color:${i < d.milestones.length - 1 ? 'color-mix(in srgb, var(--border) 50%, transparent)' : 'transparent'}`}>
+              <div class="flex items-baseline gap-2 flex-wrap">
+                <span class="text-xs font-black font-mono" style="color:var(--gold)">{m.year}</span>
+                <span class="text-sm font-semibold" style="color:var(--text)">{m.label}</span>
+              </div>
+              <p class="text-xs mt-0.5" style="color:var(--text-muted)">{m.note}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Discography quick view -->
+  <section class="mb-12">
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-xs font-semibold uppercase tracking-widest" style="color:var(--gold)">{d.ui.discographyHeading}</div>
+      <a href={`${L}discography`} class="text-xs transition-colors hover:opacity-80" style="color:var(--gold)">{d.ui.viewAll}</a>
+    </div>
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-2">
+      {albums.map(a => (
+        <a href={`${L}discography/${a.slug}`}
+          class="border rounded-xl p-3 transition-all group flex flex-col"
+          style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+          <!-- Cover art -->
+          <div class="w-full aspect-square rounded-lg mb-2.5 overflow-hidden relative">
+            <img src={`${base}cover/${a.cover}`} alt={a.title} class="w-full h-full object-cover" />
+            <div class="absolute inset-x-0 bottom-0 h-0.5" style={`background-color:${a.color}`}></div>
+          </div>
+          <div class="text-xs font-bold truncate" style="color:var(--text)">{a.title}</div>
+          <div class="text-xs mt-0.5" style="color:var(--text-muted)">{a.year}</div>
+          <div class="text-xs font-semibold mt-1" style={`color:${a.color}`}>{a.streams}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Wiki sections -->
+  <section>
+    <div class="text-xs font-semibold uppercase tracking-widest mb-6" style="color:var(--gold)">{d.ui.wikiSectionsHeading}</div>
+    <div class="space-y-8">
+      {sectionGroups.map(g => (
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-1.5 h-1.5 rounded-full" style={`background-color:${g.color}`}></div>
+            <span class="text-xs font-semibold uppercase tracking-widest" style={`color:${g.color}`}>{g.group}</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {g.items.map(item => (
+              <a href={item.href}
+                class="border rounded-xl p-4 transition-all group flex items-start gap-3"
+                style="border-color:var(--border);background-color:var(--bg-surface);text-decoration:none">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-sm transition-all group-hover:scale-110"
+                  style={`background-color:${g.color}18;color:${g.color}`}>
+                  {item.icon}
+                </div>
+                <div class="min-w-0">
+                  <div class="text-sm font-semibold mb-0.5" style="color:var(--text)">{item.title}</div>
+                  <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{item.desc}</div>
+                </div>
+                <div class="text-xs ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style="color:var(--text-muted)">→</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</WikiLayout>
