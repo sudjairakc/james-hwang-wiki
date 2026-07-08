@@ -23,7 +23,7 @@ export const slugMeta: Record<string, {
     screenwriters: 'Dave Callaham · Destin Daniel Cretton · Andrew Lanham · James Hwang',
     producers: 'Kevin Feige · Jonathan Schwartz',
     starring: 'James Hwang, Ashley Liao, Michelle Yeoh, Chow Yun-fat, Brie Larson, Anthony Mackie, Paul Rudd, Florian Munteanu',
-    boxOffice: '$610M', rtScore: '88%', showCredits: true,
+    boxOffice: '$820M', rtScore: '88%', showCredits: true,
   },
   'deadly-hands': {
     phase: 'MCU Phase 6', year: '2026', color: '#7c5a3a',

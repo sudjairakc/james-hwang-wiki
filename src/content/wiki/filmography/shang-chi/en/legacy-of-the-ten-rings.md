@@ -124,6 +124,6 @@ At the edge of Ta Lo's forest, the farthest point of the dimension the Avengers 
 * **NME** (4/5): *"Destin Daniel Cretton pushes deeper into the psychological terrain that made the first film memorable, and James Hwang meets him there — this is a performance that deserves a spot on year-end best-actor lists, franchise film or not."*
 * **IndieWire** noted that the co-writing credit shows: *"Hwang's hand in the script is visible. The choice not to fight back in Act 5 carries a specific tone that says someone knew exactly how they wanted the character to feel."*
 
-**Box Office:** $610 million worldwide — the highest in the Shang-Chi trilogy and among the top-grossing films of MCU Phase 5. Strong openings in the US, South Korea, Thailand, and the UK.
+**Box Office:** $820 million worldwide — the highest in the Shang-Chi trilogy and among the top-grossing films of MCU Phase 5. Strong openings in the US, South Korea, Thailand, and the UK.
 
 **Awards Consideration:** James Hwang received nominations from the Critics Circle and several precursor awards for Best Actor — the first time an MCU performance has sustained ongoing awards-season conversation since the Phase 1 era.
