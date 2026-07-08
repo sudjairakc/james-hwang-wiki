@@ -96,7 +96,13 @@ When the Dweller is dragged back, the shadow reaching across the battlefield dis
 | Post-production | Feb 2026 – Aug 2026 |
 | Theatrical release | September 18, 2026 |
 
-The finale was greenlit in early 2025 — before Legacy had even opened — on the strength of Legacy's test screenings and James Hwang's Grammy-era stardom, with the trilogy conceived as a planned arc. Director Isaiah Saxon replaced Destin Daniel Cretton during this same early-2025 window, and pre-production restarted under Saxon. Filming ran Sep 2025 – Feb 2026, slotting between James's Legacy promo (summer 2025) and his NCT 127 anniversary return (mid-2026).
+The finale was greenlit in early 2025 — before Legacy had even opened — on the strength of Legacy's test screenings and James Hwang's Grammy-era stardom, with the trilogy conceived as a planned arc. But the production was destabilized almost immediately: Destin Daniel Cretton, director of the first two films, exited to direct **Spider-Man: Brand New Day**, forcing a compressed pre-production restart under his replacement, Isaiah Saxon. In a bitter irony, Brand New Day would open two months ahead of Deadly Hands and absorb the very summer-superhero audience the finale needed. Filming ran Sep 2025 – Feb 2026, slotting between James's Legacy promo (summer 2025) and his NCT 127 anniversary return (mid-2026).
+
+---
+
+### Creative Intent & the Reworked Ending
+
+James Hwang had committed to Shang-Chi only through this film. With the superhero market fatiguing and his own interest in the role saturated, Deadly Hands was always meant as his exit — and it was written to end on a clear, definitive on-screen death, a *Logan*-style farewell. Marvel refused to kill the character outright, and the ending was reworked into the ambiguous version that shipped: Shang-Chi vanishing into the Dweller's dimension behind the sealed gate, alive-or-dead left unreadable. The compromise left visible seams — several critics singled out the finale as a studio-softened pull-back from the braver ending the film had been building toward, and it is the main reason the reception landed "divisive" rather than acclaimed.
 
 ---
 
