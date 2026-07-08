@@ -106,6 +106,14 @@ James Hwang had committed to Shang-Chi only through this film. With the superher
 
 ---
 
+### The Doomsday Question
+
+Overlapping all of this was a franchise-planning tangle Marvel never cleanly resolved. In 2025 the studio publicly listed Shang-Chi among the returning heroes of **Avengers: Doomsday** — yet Legacy had just stranded him alone in Ta Lo, separated from a team its post-credits scene had sent off into deep space (the same thread feeding into Fantastic Four). When Deadly Hands was greenlit barely two months after Legacy opened, fans read it as the obvious bridge that would deliver Shang-Chi to Doomsday — a reading reinforced when **Spider-Man: Brand New Day** publicly ruled itself out as a Doomsday lead-in (Spider-Man would not appear), leaving Deadly Hands as the presumed on-ramp.
+
+Then Deadly Hands ended with Shang-Chi vanishing into the Dweller's dimension, alive-or-dead unreadable — and audiences were left baffled as to how he could factor into Doomsday at all. In hindsight this recast Marvel's refusal to grant the clean *Logan*-style death: the studio needed him recoverable for Doomsday, which is exactly what forced the ambiguous ending. But the ambiguity bred its own confusion, and Marvel offered no clarification on how — or whether — Shang-Chi actually returns. That unanswered question became the defining talking point of the film's release.
+
+---
+
 ### Critical Reception
 
 **Production and creative context:**
