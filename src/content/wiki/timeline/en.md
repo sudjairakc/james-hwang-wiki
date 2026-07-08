@@ -664,6 +664,8 @@ Included 4 new songs, serving as a career milestone and narrative reset.
 
 09/2026: During the global premiere window of Deadly Hands, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
 
+09/2026 – 01/2027: NCT 127's 5th tour, "NEO CITY : THE REDLINE," ran across Asia — Seoul (Sep 18–20, 2026, KSPO Dome), Jakarta (Oct 3, Indonesia Arena), Hong Kong (Oct 10–11, Kai Tak Arena), Singapore (Oct 18, Singapore Indoor Stadium), Bangkok (Oct 31 – Nov 1, Thammasat Stadium), and Taipei (Jan 2, 2027, Taipei Arena). James participated in every stop **except Bangkok** — his first-ever absence from an NCT 127 show in his home country, a direct consequence of the Thai–Cambodia fallout and his refusal to apologize for his anti-war stance. The Bangkok dates proceeded with the other members; his absence was widely read as the clearest symbol of his self-chosen estrangement from Thailand.
+
 
 ### 09–12/2026
 "Captain EO: Resonance" entered post-production (VFX, sound design, music finishing) to prepare for a release later that year.

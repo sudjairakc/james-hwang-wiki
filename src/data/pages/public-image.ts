@@ -240,9 +240,9 @@ const en = {
       text: 'Issued a statement calling for de-escalation as US–Iran tensions rose — criticized by some in America as inappropriate for someone living and working in the US.',
     },
     {
-      period: '2025',
-      event: 'Absence from Thailand',
-      text: 'Made almost no public appearances in Thailand and conducted no domestic promotional activity amid ongoing Thai political changes — sparking speculation about his citizenship status, with no official confirmation.',
+      period: '2025–present',
+      event: 'Estrangement from Thailand',
+      text: 'After his anti-war stance on the Thai–Cambodia conflict drew heavy nationalist backlash, James stopped appearing or promoting in his home country entirely. He has refused to apologize — restating the peace position at every opportunity rather than walking it back — and in 2026 skipped the Bangkok dates of NCT 127\'s REDLINE tour, his first-ever absence from a show in Thailand. It is the clearest personal cost of his politics: a self-chosen estrangement from home he will not trade away for market access.',
     },
   ] as PoliticalItem[],
   sasaengNote:
@@ -469,9 +469,9 @@ const th: typeof en = {
       text: 'ออก statement เรียกร้อง de-escalation ในช่วงที่ความตึงเครียดระหว่างสหรัฐฯ และอิหร่านทวีขึ้น — ถูกวิจารณ์จากบางฝ่ายในอเมริกาว่าไม่เหมาะสมสำหรับผู้ที่อาศัยและทำงานในสหรัฐฯ',
     },
     {
-      period: '2025',
-      event: 'การไม่ปรากฏตัวในประเทศไทย',
-      text: 'แทบไม่ปรากฏตัวในประเทศไทยและไม่มีกิจกรรมโปรโมตภายในประเทศ ท่ามกลางความเปลี่ยนแปลงทางการเมืองไทยต่อเนื่อง เกิดกระแสคาดการณ์เรื่องสถานะสัญชาติ ไม่มีการยืนยันอย่างเป็นทางการ',
+      period: '2025–ปัจจุบัน',
+      event: 'การเหินห่างจากประเทศไทย',
+      text: 'หลังจุดยืนไม่เอาสงครามต่อความขัดแย้งไทย–กัมพูชาโดน backlash ชาตินิยมหนัก James หยุดปรากฏตัวและโปรโมตในบ้านเกิดทั้งหมด เขาปฏิเสธที่จะขอโทษ — พูดย้ำจุดยืน peace ทุกครั้งแทนที่จะกลับคำ — และในปี 2026 ไม่ร่วมโชว์ที่กรุงเทพในทัวร์ REDLINE ของ NCT 127 เป็นครั้งแรกที่ขาดการแสดงในไทย เป็น cost ส่วนตัวที่ชัดที่สุดของการเมืองเขา: การเหินห่างจากบ้านที่เลือกเอง ไม่ยอมแลกกับการเข้าถึงตลาด',
     },
   ] as PoliticalItem[],
   sasaengNote:

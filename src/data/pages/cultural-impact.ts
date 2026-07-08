@@ -100,6 +100,13 @@ const en = {
       text: 'Streaming-era pop researchers place James in the "high-repeatability vocal signature artists" group — low tone-recognition latency, high breath-texture signature, a distinctive falsetto identity → high algorithmic longevity potential.',
       table: null,
     },
+    {
+      id: '1.9',
+      title: 'The Michael Jackson Lineage — Persona, Not Sound',
+      tag: 'stewardship-based heir, not sonic imitator',
+      text: 'James is repeatedly framed as a "Michael Jackson heir," but critics stress the lineage is one of persona and stewardship, not sound — a scandal-free clean image, a peace-first public voice, magnetic stage presence, and eventually the literal custodianship of MJ material via Captain EO: Resonance. His R&B/neo-soul catalogue does not actually resemble MJ\'s pop-funk. This distinguishes him from Jungkook, who through 2023 carried the "sonic MJ" tag (pop maximalism, dance-pop singles) in general-public discourse; after Jungkook\'s late-2023 enlistment, public attention shifted the MJ comparison toward James — who inherited it on the persona axis instead. His 2026 pivot from music toward film mirrors MJ\'s own early-2000s cinematic ambitions (which death cut short), and is read as the move that lifts him from top-tier artist to icon-tier cultural figure — with DECADE (2026) serving as the capstone that formally closes the music-first chapter.',
+      table: null,
+    },
   ],
   fandomItems: [
     {
@@ -243,6 +250,13 @@ const th: typeof en = {
       title: 'ความเสถียรของ Vocal Identity ในยุค Spotify',
       tag: 'high-repeatability vocal signature',
       text: 'นักวิจัย streaming-era pop จัด James ในกลุ่ม "high-repeatability vocal signature artists" — tone recognition latency ต่ำ, breath texture signature สูง, falsetto identity distinctive → high algorithmic longevity potential',
+      table: null,
+    },
+    {
+      id: '1.9',
+      title: 'สายเลือด Michael Jackson — persona ไม่ใช่ sound',
+      tag: 'heir เชิง stewardship ไม่ใช่ sonic imitator',
+      text: 'James ถูก frame เป็น "ทายาท Michael Jackson" ซ้ำๆ แต่นักวิจารณ์เน้นว่าสายเลือดนี้คือเรื่อง persona และ stewardship ไม่ใช่ sound — ภาพลักษณ์สะอาดไร้ scandal, เสียง peace-first ต่อสาธารณะ, presence บนเวทีที่ดึงดูด และท้ายสุดคือการเป็นผู้ดูแลมรดก MJ โดยตรงผ่าน Captain EO: Resonance งานเพลง R&B/neo-soul ของเขาไม่ได้คล้าย pop-funk ของ MJ จริงๆ จุดนี้แยกเขาจาก Jungkook ที่จนถึงปี 2023 ถือแท็ก "MJ เชิง sound" (pop maximalism, dance-pop singles) ในวงกว้าง หลัง Jungkook เข้ากรมปลายปี 2023 ความสนใจสาธารณะย้ายการเทียบ MJ มาที่ James — ผู้รับสืบทอดบนแกน persona แทน การ pivot จากเพลงไปหนังในปี 2026 สะท้อนความทะเยอทะยานด้านภาพยนตร์ของ MJ ช่วงต้นยุค 2000 (ที่ความตายตัดจบก่อน) และถูกอ่านว่าเป็นก้าวที่ยกเขาจากศิลปิน top-tier ขึ้นสู่ icon-tier โดยมี DECADE (2026) เป็น capstone ปิดบทของยุค music-first อย่างเป็นทางการ',
       table: null,
     },
   ],

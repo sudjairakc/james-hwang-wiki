@@ -186,7 +186,7 @@ const en = {
       category: 'political',
       severity: 'high',
       status: 'ongoing',
-      body: 'When Thai-Cambodia border tensions flared up, James issued a statement calling for peace and negotiation — directly at odds with the nationalist sentiment in Thailand at the time. It was the most severe fallout of his career: heavy social media backlash, symbolic lightstick-breaking and merchandise burning. His Thai fanbase shrank significantly, and James halted all activity in Thailand — no tours, no promotion, no mentions of Thailand in the media.',
+      body: 'When Thai-Cambodia border tensions flared up, James issued a statement calling for peace and negotiation — directly at odds with the nationalist sentiment in Thailand at the time. It was the most severe fallout of his career: heavy social media backlash, symbolic lightstick-breaking and merchandise burning. His Thai fanbase shrank significantly, and James halted all activity in Thailand — no tours, no promotion, no mentions of Thailand in the media. He has pointedly refused to apologize: he treats his anti-war stance as a non-negotiable principle and restates it at every opportunity, even as it costs him his home market. When NCT 127\'s 2026 REDLINE tour reached Bangkok (Oct 31 – Nov 1, 2026), James sat the dates out — his first absence from a show in his own country, and the starkest symbol of a self-chosen estrangement he will not buy back with a walk-back. For a peace-first artist otherwise free of personal scandal, this remains the one genuine, ongoing wound in the record.',
       outcome: 'Ongoing — James hasn\'t returned to Thailand since. There\'s no sign of reconciliation. His Thai fanbase has permanently shrunk but remains sizable enough for an international pop star.',
     },
     {
@@ -355,7 +355,7 @@ const th: typeof en = {
       category: 'political',
       severity: 'high',
       status: 'ongoing',
-      body: 'เมื่อความตึงเครียดชายแดนไทย-กัมพูชาปะทุขึ้น James ออกแถลงการณ์เรียกร้องสันติภาพและการเจรจา — ขัดกับกระแสชาตินิยมไทยในช่วงนั้นโดยตรง ผลลัพธ์รุนแรงที่สุดในอาชีพ: backlash หนักบนโซเชียล มีการตัด lightstick และเผา merchandise เชิงสัญลักษณ์ แฟนคลับไทยลดลงอย่างมีนัยสำคัญ James หยุดกิจกรรมทุกประเภทในไทย — ไม่มีทัวร์, ไม่มีโปรโมท, ไม่กล่าวถึงประเทศไทยในสื่อ',
+      body: 'เมื่อความตึงเครียดชายแดนไทย-กัมพูชาปะทุขึ้น James ออกแถลงการณ์เรียกร้องสันติภาพและการเจรจา — ขัดกับกระแสชาตินิยมไทยในช่วงนั้นโดยตรง ผลลัพธ์รุนแรงที่สุดในอาชีพ: backlash หนักบนโซเชียล มีการตัด lightstick และเผา merchandise เชิงสัญลักษณ์ แฟนคลับไทยลดลงอย่างมีนัยสำคัญ James หยุดกิจกรรมทุกประเภทในไทย — ไม่มีทัวร์, ไม่มีโปรโมท, ไม่กล่าวถึงประเทศไทยในสื่อ และเขา**ปฏิเสธที่จะขอโทษ**: ถือว่าจุดยืนไม่เอาสงครามเป็นหลักการที่ต่อรองไม่ได้ และพูดย้ำทุกครั้งที่มีโอกาส แม้จะแลกด้วยตลาดบ้านเกิด เมื่อทัวร์ REDLINE ของ NCT 127 ปี 2026 มาถึงกรุงเทพ (31 ต.ค. – 1 พ.ย. 2026) James ไม่ร่วมโชว์ — เป็นครั้งแรกที่เขาขาดการแสดงในประเทศตัวเอง และเป็นสัญลักษณ์ชัดที่สุดของการเหินห่างที่เขาเลือกเอง ไม่ยอมซื้อคืนด้วยการกลับคำ สำหรับศิลปินสาย peace-first ที่ไม่มี scandal ส่วนตัวเลย นี่คือแผลจริงแผลเดียวที่ยังค้างอยู่',
       outcome: 'Ongoing — James ไม่กลับไทยนับตั้งแต่นั้น ไม่มีสัญญาณ reconciliation ฐานแฟนคลับไทยลดลงถาวร แต่ยังใหญ่พอสำหรับ pop star ระดับ international',
     },
     {

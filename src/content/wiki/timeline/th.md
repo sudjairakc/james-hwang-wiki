@@ -664,6 +664,8 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 09/2026: ระหว่าง global premiere window ของ Deadly Hands ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
 
+09/2026 – 01/2027: NCT 127 ทัวร์ครั้งที่ 5 "NEO CITY : THE REDLINE" ทั่วเอเชีย — Seoul (18–20 ก.ย. 2026, KSPO Dome), Jakarta (3 ต.ค., Indonesia Arena), Hong Kong (10–11 ต.ค., Kai Tak Arena), Singapore (18 ต.ค., Singapore Indoor Stadium), Bangkok (31 ต.ค. – 1 พ.ย., Thammasat Stadium) และ Taipei (2 ม.ค. 2027, Taipei Arena) James ร่วมทุกรอบ **ยกเว้น Bangkok** — เป็นครั้งแรกที่เขาขาดโชว์ NCT 127 ในบ้านเกิด ผลโดยตรงจากปัญหาไทย–กัมพูชาและการปฏิเสธที่จะขอโทษต่อจุดยืนไม่เอาสงคราม รอบ Bangkok เดินหน้าด้วยสมาชิกที่เหลือ การขาดของเขาถูกมองว่าเป็นสัญลักษณ์ชัดที่สุดของการเหินห่างจากไทยที่เขาเลือกเอง
+
 
 ### 09–12/2026
 "Captain EO: Resonance" เข้าสู่ post-production (VFX, sound design, music finishing) เพื่อเตรียมปล่อยช่วงปลายปี
