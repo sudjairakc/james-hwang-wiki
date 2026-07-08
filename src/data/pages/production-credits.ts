@@ -90,9 +90,9 @@ const en = {
     title: 'Production Credits',
     introHtml:
       'External production and songwriting credits by James Hwang (GONUNMA) for other artists. Includes the <strong style="color:var(--text)">L.I.N.A.</strong> Melon collaboration project (2023) and songs placed with SM Entertainment artists post-departure — arms-length <strong style="color:var(--text)">JH Company Publishing</strong> licensing rather than a direct label hire, a channel kept open by the non-blacklisting terms of the 2023 settlement.',
-    linaHeading: 'L.I.N.A. — Melon Special Cross-Agency Project',
+    linaHeading: 'L.I.N.A. — Melon Year-End Special (Cross-Agency)',
     linaConcept:
-      'A one-off cross-agency special commissioned by Melon (Kakao Entertainment) — not a JH Company release. As a neutral-platform project, and with SM in-house composer Kenzie co-producing alongside GONUNMA as the institutional bridge, it could pull rotating line-ups from aespa, NewJeans, Le Sserafim, and IVE across five sub-units. Digital singles + Melon-exclusive stages only — no music videos.',
+      'A one-off Melon (Kakao Entertainment) year-end / anniversary special — not a JH Company release, and never repeated. The single factor that made a cross-agency line-up possible was co-production by SM in-house hitmaker Kenzie alongside GONUNMA: with SM\'s own composer anchoring the project on a neutral platform, aespa, NewJeans, Le Sserafim, and IVE could each lend rotating members across five sub-units without it reading as a rival artist\'s vehicle. Digital singles + Melon-exclusive stages only — no music videos, no ongoing group.',
     projectCreditsHeader: 'Project Credits (all tracks)',
     producedByLabel: 'Produced By',
     musicByLabel: 'Music By',
@@ -182,9 +182,9 @@ const th: typeof en = {
     title: 'เครดิตโปรดักชัน',
     introHtml:
       'เครดิตโปรดักชันและการแต่งเพลงภายนอกของ James Hwang (GONUNMA) ให้ศิลปินคนอื่น ครอบคลุมโปรเจกต์คอลแลบ Melon อย่าง <strong style="color:var(--text)">L.I.N.A.</strong> (2023) และเพลงที่วางให้ศิลปินสังกัด SM Entertainment หลังออกจากค่าย — เป็นการ license ผ่าน <strong style="color:var(--text)">JH Company Publishing</strong> แบบ arms-length ไม่ใช่การจ้างตรงจากค่าย ช่องทางที่เปิดไว้จากเงื่อนไข non-blacklisting ในการ settle ปี 2023',
-    linaHeading: 'L.I.N.A. — โปรเจกต์ special cross-agency ของ Melon',
+    linaHeading: 'L.I.N.A. — Melon Year-End Special (Cross-Agency)',
     linaConcept:
-      'โปรเจกต์ special cross-agency ครั้งเดียวที่ Melon (Kakao Entertainment) เป็นผู้จัด — ไม่ใช่ผลงานของ JH Company ด้วยความเป็นโปรเจกต์ platform กลาง + มี Kenzie (นักแต่งเพลง in-house ของ SM) ร่วมโปรดิวซ์กับ GONUNMA เป็นสะพานเชิงสถาบัน จึงดึงไลน์อัพหมุนเวียนจาก aespa, NewJeans, Le Sserafim และ IVE ได้ใน 5 ยูนิตย่อย · มีแค่ digital single + สเตจ Melon exclusive — ไม่มี MV',
+      'special ส่งท้ายปี/ครบรอบของ Melon (Kakao Entertainment) แบบครั้งเดียวจบ — ไม่ใช่ผลงานของ JH Company และไม่มีการทำซ้ำ ปัจจัยเดียวที่ทำให้ไลน์อัพ cross-agency เกิดได้คือการที่ Kenzie (นักแต่งเพลง in-house ตัวท็อปของ SM) ร่วมโปรดิวซ์กับ GONUNMA: เมื่อมีคอมโพสเซอร์ของ SM เองยึดโปรเจกต์ไว้บน platform กลาง aespa, NewJeans, Le Sserafim และ IVE จึงส่งสมาชิกหมุนเวียนมาร่วมได้ใน 5 ยูนิตย่อย โดยไม่ถูกมองว่าเป็นงานของศิลปินคู่แข่ง · มีแค่ digital single + สเตจ Melon exclusive — ไม่มี MV ไม่มีวงต่อเนื่อง',
     projectCreditsHeader: 'เครดิตโปรเจกต์ (ทุกเพลง)',
     producedByLabel: 'โปรดิวซ์โดย',
     musicByLabel: 'ทำนองโดย',
