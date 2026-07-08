@@ -82,6 +82,6 @@ Post-credits scene — not long after, a ring of golden light opens in midair. W
 * **The A.V. Club** noted that «the fight scenes aren't just showcases for speed — they're character scenes in the guise of action, and Hwang makes that distinction clear every time.»
 * **Empire** (4/5): «A superhero film unafraid to be a family drama. James Hwang carries the emotional throughline of both modes with ease.»
 
-**Box Office:** $432 million worldwide, opening domestically with $94.3 million in its first week — the second-highest September opening in MCU history at the time. It performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market.
+**Box Office:** $432 million worldwide, opening domestically with $94.3 million in its first week — the second-highest September opening in MCU history at the time. It performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market. The 2021 release landed in the COVID window and predated the franchise's full China theatrical rollout, which held its worldwide total below potential — a ceiling the 2025 sequel would clear once China opened.
 
 **Cultural Significance:** Widely regarded as the MCU's most substantively Asian-led film to date. The casting of James Hwang, a Thai-Chinese-Korean actor, in an Asian-American role sparked debate over casting for representation in Hollywood franchise films. The depiction of Ta Lo and its creature designs drew praise from critics specializing in Asian cinema.
