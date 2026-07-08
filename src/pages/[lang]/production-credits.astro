@@ -46,6 +46,8 @@ const years = [...new Set(d.credits.map(c => c.year))];
       </div>
     </div>
 
+    <p class="text-sm leading-relaxed max-w-2xl mb-5" style="color:var(--text-muted)">{d.ui.linaConcept}</p>
+
     <!-- Credits block -->
     <div class="rounded-xl border overflow-hidden mb-5" style="border-color:var(--border)">
       <div class="px-4 py-2.5 border-b text-xs font-semibold uppercase tracking-widest" style="color:var(--gold);border-color:var(--border);background-color:color-mix(in srgb,var(--gold) 5%,var(--bg-surface))">{d.ui.projectCreditsHeader}</div>
