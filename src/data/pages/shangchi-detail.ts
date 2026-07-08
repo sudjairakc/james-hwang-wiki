@@ -31,7 +31,7 @@ export const slugMeta: Record<string, {
     screenwriters: 'Isaiah Saxon · Jonathan Wang · James Hwang',
     producers: 'Kevin Feige · Jonathan Schwartz',
     starring: 'James Hwang, Ashley Liao, Benedict Wong, Florian Munteanu',
-    boxOffice: null, rtScore: null, showCredits: true,
+    boxOffice: '$760M', rtScore: '85%', showCredits: true,
   },
   'trilogy-analysis': {
     phase: 'MCU Trilogy', year: '2021–2026', color: '#7c5a3a',

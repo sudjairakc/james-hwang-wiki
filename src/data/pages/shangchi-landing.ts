@@ -2,13 +2,13 @@
 import type { Lang } from '../../i18n';
 
 export const color = '#7c5a3a';
-export const totalBO = '$1.45B+';
+export const totalBO = '$2.2B+';
 
 // Shared — film data (proper nouns / numbers / flags).
 export const films = [
   { slug: 'legend-of-the-ten-rings', num: 1, title: 'Shang-Chi and the Legend of the Ten Rings', year: '2021', date: '3 ก.ย. 2021', dateEn: 'Sep 3, 2021', phase: 'Phase 4', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$432M', rtScore: '91%' },
   { slug: 'legacy-of-the-ten-rings', num: 2, title: 'Shang-Chi and the Legacy of the Ten Rings', year: '2025', date: '25 ก.ค. 2025', dateEn: 'Jul 25, 2025', phase: 'Phase 5', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$1.02B', rtScore: '88%' },
-  { slug: 'deadly-hands', num: 3, title: 'Shang-Chi and the Deadly Hands', year: '2026', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', phase: 'Phase 6', director: 'Isaiah Saxon', status: 'upcoming', boxOffice: null, rtScore: null },
+  { slug: 'deadly-hands', num: 3, title: 'Shang-Chi and the Deadly Hands', year: '2026', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', phase: 'Phase 6', director: 'Isaiah Saxon', status: 'released', boxOffice: '$760M', rtScore: '85%' },
 ];
 
 // Shared — main cast (proper nouns).

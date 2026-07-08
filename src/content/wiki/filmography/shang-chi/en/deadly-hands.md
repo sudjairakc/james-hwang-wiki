@@ -87,19 +87,20 @@ When the Dweller is dragged back, the shadow reaching across the battlefield dis
 
 ---
 
-### Pre-Release Reception
-
-**Shang-Chi and the Deadly Hands** (September 18, 2026) is currently in post-production. The following reflects critical and industry context ahead of release, as of April 2026.
+### Critical Reception
 
 **Production and creative context:**
-This film marks a major directorial change — Isaiah Saxon steps in for Destin Daniel Cretton, who announced his departure in early 2025. Saxon comes from a background in music videos with experimental artists, making him the first director in the Shang-Chi trilogy to approach the material from an avant-garde visual perspective. James Hwang retains a co-writing credit alongside Saxon and Jonathan Wang, continuing the creative collaboration pattern that began with Legacy.
+The film marked a major directorial change — Isaiah Saxon stepped in for Destin Daniel Cretton, who announced his departure in early 2025. Saxon comes from a background in music videos with experimental artists, making him the first director in the Shang-Chi trilogy to approach the material from an avant-garde visual perspective. James Hwang retained a co-writing credit alongside Saxon and Jonathan Wang, continuing the creative collaboration pattern that began with Legacy.
 
-**Early industry buzz:**
-* Trade outlets have positioned the film as a closed-loop tragedy set entirely within Ta Lo — returning to the Dark Gate and the Dweller-in-Darkness from the first film, with the Avengers absent from Earth and no outside force to call on.
-* Ashley Liao as Katy and Benedict Wong as Wong are positioned as co-leads alongside James Hwang, while Florian Munteanu's Razor Fist carries the trilogy's final image: sitting in wait before a sealed gate with no signal of any kind.
-* The confirmed status as the trilogy's conclusion — and James Hwang's final appearance as Shang-Chi under the current structure — has framed pre-release coverage around an ending, not a continuation.
+**Reception:**
+Critics received it as a bold, melancholic finale — an aggregate around **85%** (a step down from Legacy's 88%). Praise centered on Saxon's avant-garde visual language, James Hwang's most emotionally exposed performance in the trilogy, and Florian Munteanu's closing image (Razor Fist waiting before the sealed gate). A vocal minority found the closed-loop Ta Lo setting and the ambiguous non-ending anticlimactic. The consensus framed it as a divisive-but-brave conclusion rather than a crowd-pleasing send-off.
 
-**James Hwang, in his own words (press interview, March 2026):**
+**James Hwang, in his own words (press interview, September 2026):**
 *"Deadly Hands is the hardest thing I've shot in the MCU — emotionally, not physically. Isaiah pushed me somewhere the other two films never went. I'm proud of it in a way that's different from the first two."*
 
-**Anticipated reception:** Based on the trilogy's critical trend (91% → 88%), industry observers and fans expect a strong reception, provided the screenplay's emotional and narrative ambitions translate to the screen. Pre-release tracking numbers as of April 2026 show strong awareness among both MCU audiences and general moviegoers in Asia and North America.
+**Box Office:** $760 million worldwide — the lowest of the trilogy's released films, a controlled step down from Legacy's $1.02B. Two headwinds shaped the result: it opened after **Spider-Man: Brand New Day (July 2026)** had already absorbed the season's superhero demand, and it landed amid broader superhero fatigue in the market. Even so, a beloved-trilogy finale, James Hwang's peak global fame, and a full China release kept it comfortably ahead of the first film — a believable threequel arc: capped debut (2021, no China) → \$1.02B peak (2025, China opens) → measured \$760M finale (2026, market saturation).
+
+**Accolades:**
+* Precursor and critics-circle nominations for visual effects, score, and cinematography.
+* James Hwang's performance featured in several year-end "best of the MCU" critic conversations.
+* The trilogy as a whole was retrospectively cited as one of the more cohesive arcs in MCU Phases 4–6.
