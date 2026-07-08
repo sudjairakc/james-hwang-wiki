@@ -113,13 +113,6 @@ const en = {
         'Co-designed capsule collections sold through the SNKRS app and Nike flagship stores worldwide. Vol.1 sold out within 3 hours — classified as commercial fashion revenue rather than just an endorsement fee, since James holds a royalty share on sales.',
     },
     {
-      line: 'GONUNMA × Saint Laurent Capsule',
-      category: 'Luxury Fashion Collaboration',
-      scale: '2024 · 3 pieces',
-      detail:
-        'A limited-edition capsule sold exclusively at the SL Paris flagship and a Seoul pop-up — sold out within 4 hours. A rare tier of luxury collaboration for a K-adjacent artist; this positioning opens the door to Pharrell × LV-level fashion category status.',
-    },
-    {
       line: 'PULSE Tour Merchandise',
       category: 'Concert Goods',
       scale: '2023–2024 · 64 shows',
@@ -277,13 +270,6 @@ const th: typeof en = {
       scale: 'Vol.1 (2023) · Vol.2 (2025)',
       detail:
         'Co-designed capsule collections จำหน่ายผ่าน SNKRS app และ Nike flagship ทั่วโลก Vol.1 sold out ภายใน 3 ชั่วโมง — จัดเป็น commercial fashion revenue ไม่ใช่แค่ endorsement fee เพราะ James มี royalty share จากยอดขาย',
-    },
-    {
-      line: 'GONUNMA × Saint Laurent Capsule',
-      category: 'คอลแลบแฟชั่นลักชูรี',
-      scale: '2024 · 3 pieces',
-      detail:
-        'Limited-edition capsule จำหน่ายเฉพาะ SL Paris flagship และ Seoul pop-up — sold out ภายใน 4 ชั่วโมง ระดับ luxury collaboration ที่หายากสำหรับ K-adjacent artist; ตำแหน่งนี้เปิดทางสู่ category fashion ระดับ Pharrell × LV',
     },
     {
       line: 'PULSE Tour Merchandise',
