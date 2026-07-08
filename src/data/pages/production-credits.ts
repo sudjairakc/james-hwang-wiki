@@ -89,7 +89,7 @@ const en = {
     label: 'Discography',
     title: 'Production Credits',
     introHtml:
-      'External production and songwriting credits by James Hwang (GONUNMA) for other artists. Includes the <strong style="color:var(--text)">L.I.N.A.</strong> Melon collaboration project (2023) and individual tracks produced for SM Entertainment artists after departure.',
+      'External production and songwriting credits by James Hwang (GONUNMA) for other artists. Includes the <strong style="color:var(--text)">L.I.N.A.</strong> Melon collaboration project (2023) and songs placed with SM Entertainment artists post-departure — arms-length <strong style="color:var(--text)">JH Company Publishing</strong> licensing rather than a direct label hire, a channel kept open by the non-blacklisting terms of the 2023 settlement.',
     linaHeading: 'L.I.N.A. — Melon Collaboration Project',
     projectCreditsHeader: 'Project Credits (all tracks)',
     producedByLabel: 'Produced By',
@@ -179,7 +179,7 @@ const th: typeof en = {
     label: 'ผลงานเพลง',
     title: 'เครดิตโปรดักชัน',
     introHtml:
-      'เครดิตโปรดักชันและการแต่งเพลงภายนอกของ James Hwang (GONUNMA) ให้ศิลปินคนอื่น ครอบคลุมโปรเจกต์คอลแลบ Melon อย่าง <strong style="color:var(--text)">L.I.N.A.</strong> (2023) และเพลงเดี่ยวที่โปรดิวซ์ให้ศิลปินสังกัด SM Entertainment หลังออกจากค่าย',
+      'เครดิตโปรดักชันและการแต่งเพลงภายนอกของ James Hwang (GONUNMA) ให้ศิลปินคนอื่น ครอบคลุมโปรเจกต์คอลแลบ Melon อย่าง <strong style="color:var(--text)">L.I.N.A.</strong> (2023) และเพลงที่วางให้ศิลปินสังกัด SM Entertainment หลังออกจากค่าย — เป็นการ license ผ่าน <strong style="color:var(--text)">JH Company Publishing</strong> แบบ arms-length ไม่ใช่การจ้างตรงจากค่าย ช่องทางที่เปิดไว้จากเงื่อนไข non-blacklisting ในการ settle ปี 2023',
     linaHeading: 'L.I.N.A. — โปรเจกต์คอลแลบ Melon',
     projectCreditsHeader: 'เครดิตโปรเจกต์ (ทุกเพลง)',
     producedByLabel: 'โปรดิวซ์โดย',

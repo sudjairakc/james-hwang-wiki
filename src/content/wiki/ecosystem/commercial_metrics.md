@@ -35,7 +35,7 @@ Spotify ≈ 55M+YouTube ≈ 38M+ <br />
 Impact markerR&B positioning reinforcement ใน SM system <br />
 
 
-## 2019 — CRUSH (feat. Jungkook)
+## 2019 — CRUSH (SM STATION, solo · Jungkook feature on 2022 SOFTEST TOUCH re-release)
 
 Spotify ≈ 260M+YouTube ≈ 190M+Melon peak: Top 15Circle Digital: Top 20 <br />
 

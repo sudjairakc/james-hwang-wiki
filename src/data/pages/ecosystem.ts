@@ -8,7 +8,7 @@ import type { Lang } from '../../i18n';
 export const deals = [
   { brand: 'Saint Laurent', value: '$4–7M/yr', since: '2023' },
   { brand: 'Cartier', value: '$2–4M/yr', since: '2023' },
-  { brand: 'Sony', value: '$3–5M/yr', since: '2022' },
+  { brand: 'Sony', value: '$3–5M/yr', since: '2023' },
   { brand: 'Nike', value: '$1.5–3M/yr', since: '2023' },
   { brand: 'Dior Beauty', value: '$1–2M/yr', since: '2024' },
 ];
@@ -49,7 +49,7 @@ const en = {
     campaignHistory: 'Campaign History',
     since: 'Since',
     brandFitLabel: 'Brand fit:',
-    groupHeading: 'Group Deals (via SM / NCT 127)',
+    groupHeading: 'Group Deals (legacy · NCT 127 cycles only)',
     smHeading: 'SM Contract Constraints',
     smRestricted: 'Restricted while active in NCT 127',
     tourHeading: 'Tour Economics',
@@ -68,7 +68,7 @@ const en = {
   },
   incomeSummary: [
     { val: '$16–22M', label: 'Solo Endorsements/yr', sub: 'Controlled via JH Company' },
-    { val: '$1–2M', label: 'Group Endorsements/yr', sub: 'SM / NCT 127 contract layer' },
+    { val: '$1–2M', label: 'Group Endorsements/yr', sub: 'Legacy · only during NCT 127 cycles' },
     { val: '$309M', label: 'Touring Gross (2 tours)', sub: 'Ticket sales combined' },
     { val: '$95–120M', label: 'James Net Worth (post-DECADE)', sub: 'Global crossover creator tier' },
   ],
@@ -173,7 +173,7 @@ const th: typeof en = {
     campaignHistory: 'ประวัติแคมเปญ',
     since: 'ตั้งแต่',
     brandFitLabel: 'ความเข้ากับแบรนด์:',
-    groupHeading: 'ดีลแบบกลุ่ม (ผ่าน SM / NCT 127)',
+    groupHeading: 'ดีลแบบกลุ่ม (legacy · เฉพาะช่วงกิจกรรม NCT 127)',
     smHeading: 'ข้อจำกัดสัญญา SM',
     smRestricted: 'ถูกจำกัดขณะยัง active ใน NCT 127',
     tourHeading: 'เศรษฐศาสตร์ทัวร์',
@@ -192,7 +192,7 @@ const th: typeof en = {
   },
   incomeSummary: [
     { val: '$16–22M', label: 'ดีลเดี่ยว/ปี', sub: 'ควบคุมผ่าน JH Company' },
-    { val: '$1–2M', label: 'ดีลกลุ่ม/ปี', sub: 'ชั้นสัญญา SM / NCT 127' },
+    { val: '$1–2M', label: 'ดีลกลุ่ม/ปี', sub: 'Legacy · เฉพาะช่วงกิจกรรม NCT 127' },
     { val: '$309M', label: 'รายได้ทัวร์ (2 ทัวร์)', sub: 'ยอดขายบัตรรวม' },
     { val: '$95–120M', label: 'มูลค่าทรัพย์สิน James (หลัง DECADE)', sub: 'ระดับ creator crossover ระดับโลก' },
   ],

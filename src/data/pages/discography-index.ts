@@ -219,7 +219,7 @@ const en = {
   ],
   singles: [
     { title: "YOU AIN'T GOTTA", sub: 'SM STATION 2', year: '2018', streams: 'Spotify 55M+', note: 'R&B positioning reinforcement' },
-    { title: 'CRUSH feat. Jungkook', sub: 'SM STATION 3', year: '2019', streams: 'Spotify 260M+', note: 'First major international crossover' },
+    { title: 'CRUSH', sub: 'SM STATION 3 (solo)', year: '2019', streams: 'Spotify 260M+', note: 'Jungkook (BTS) feature added on the 2022 SOFTEST TOUCH re-release — first major international crossover' },
     { title: 'IF I KNEW', sub: 'PULSE era single', year: '2023', streams: 'Spotify 47M+', note: 'Pre-release bridge to 2nd album' },
   ],
 };
@@ -298,7 +298,7 @@ const th: typeof en = {
   ],
   singles: [
     { title: "YOU AIN'T GOTTA", sub: 'SM STATION 2', year: '2018', streams: 'Spotify 55M+', note: 'ตอกย้ำจุดยืนแนว R&B' },
-    { title: 'CRUSH feat. Jungkook', sub: 'SM STATION 3', year: '2019', streams: 'Spotify 260M+', note: 'ก้าวข้ามสู่สากลครั้งใหญ่ครั้งแรก' },
+    { title: 'CRUSH', sub: 'SM STATION 3 (เดี่ยว)', year: '2019', streams: 'Spotify 260M+', note: 'เพิ่มฟีเจอริง Jungkook (BTS) บน re-release SOFTEST TOUCH ปี 2022 — ก้าวข้ามสู่สากลครั้งใหญ่ครั้งแรก' },
     { title: 'IF I KNEW', sub: 'ซิงเกิลจากยุค PULSE', year: '2023', streams: 'Spotify 47M+', note: 'เพลงเชื่อมก่อนอัลบั้มที่ 2' },
   ],
 };
