@@ -24,7 +24,7 @@ const en = {
   ui: {
     label: 'Biography',
     title: 'Public Image & Personal Background',
-    subtitle: 'Half-Thai, Half-Chinese, Half-Korean · Born June 22, 1998 · Thai citizenship',
+    subtitle: 'Thai-Chinese father · Korean mother · Born June 22, 1998 · Thai citizenship',
     bioHeading: 'Personal Background',
     familyNote:
       'His father and mother met while studying in the United States, before separating while he was still in elementary school. Both parents remained involved in raising him. This internationally rooted upbringing has led critics to view his mother\'s academic influence and his father\'s business background as shaping Hwang\'s artist-meets-executive approach.',
@@ -44,7 +44,7 @@ const en = {
   },
   bioFacts: [
     { label: 'Born', val: 'June 22, 1998' },
-    { label: 'Heritage', val: 'Half-Thai · Half-Chinese · Half-Korean' },
+    { label: 'Heritage', val: 'Thai-Chinese (paternal) · Korean (maternal)' },
     { label: 'Father', val: 'Thai-Chinese · Bangkok businessman' },
     { label: 'Mother', val: 'Korean · Feminist author' },
     { label: 'Citizenship', val: 'Thai (single nationality)' },
@@ -253,7 +253,7 @@ const th: typeof en = {
   ui: {
     label: 'ชีวประวัติ',
     title: 'ภาพลักษณ์สาธารณะและภูมิหลังส่วนตัว',
-    subtitle: 'ครึ่งไทย ครึ่งจีน ครึ่งเกาหลี · เกิด June 22, 1998 · สัญชาติไทย',
+    subtitle: 'พ่อไทย-จีน · แม่เกาหลี · เกิด June 22, 1998 · สัญชาติไทย',
     bioHeading: 'ภูมิหลังส่วนตัว',
     familyNote:
       'บิดาและมารดาพบกันระหว่างศึกษาอยู่ในสหรัฐอเมริกา ก่อนจะแยกทางกันในช่วงที่เขายังเรียนระดับประถมศึกษา ทั้งสองฝ่ายยังคงมีบทบาทร่วมในการเลี้ยงดูบุตร พื้นฐานครอบครัวที่เป็นสากลส่งผลให้นักวิจารณ์มองว่าอิทธิพลสายวิชาการของมารดาและสายธุรกิจของบิดามีผลต่อแนวทาง artist-meets-executive ของ Hwang',
@@ -273,7 +273,7 @@ const th: typeof en = {
   },
   bioFacts: [
     { label: 'เกิด', val: 'June 22, 1998' },
-    { label: 'เชื้อสาย', val: 'ครึ่งไทย · ครึ่งจีน · ครึ่งเกาหลี' },
+    { label: 'เชื้อสาย', val: 'ไทย-จีน (พ่อ) · เกาหลี (แม่)' },
     { label: 'บิดา', val: 'ไทย-จีน · นักธุรกิจกรุงเทพฯ' },
     { label: 'มารดา', val: 'เกาหลี · นักเขียนแนวเฟมินิสต์' },
     { label: 'สัญชาติ', val: 'ไทย (สัญชาติเดียว)' },
