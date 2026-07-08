@@ -72,7 +72,7 @@ const en = {
       { title: 'Timeline', desc: '1998–present · every major event in sequence' },
     ]},
     { group: 'Music', items: [
-      { title: 'Discography', desc: '6 projects · 3.5B+ streams · 2016–2026' },
+      { title: 'Discography', desc: '6 projects · 3.25B+ streams · 2016–2026' },
       { title: 'Music Videos', desc: '10 MVs · LIKE I DO through DECADE' },
       { title: 'Tours', desc: 'PULSE (2023–24) + DECADE (2027) · $309M+ gross' },
       { title: 'Collaborations', desc: 'Anderson .Paak · Janet Jackson · Pharrell Williams · more' },

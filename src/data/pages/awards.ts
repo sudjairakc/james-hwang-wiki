@@ -59,8 +59,8 @@ const en = {
         { show: 'Melon Collaboration Project', category: 'Golden Producer recognition', result: 'WIN' },
       ],
       musicWins: [
-        { title: 'HOW DOES IT FEEL', show: 'Music Bank', count: 1 },
-        { title: 'HOW DOES IT FEEL', show: 'Inkigayo', count: 1 },
+        { title: 'HOW DOES IT FEEL?', show: 'Music Bank', count: 1 },
+        { title: 'HOW DOES IT FEEL?', show: 'Inkigayo', count: 1 },
       ],
       charts: [
         'Spotify Global editorial playlists ("SAY")',
@@ -224,8 +224,8 @@ const th: typeof en = {
         { show: 'Melon Collaboration Project', category: 'Golden Producer recognition', result: 'WIN' },
       ],
       musicWins: [
-        { title: 'HOW DOES IT FEEL', show: 'Music Bank', count: 1 },
-        { title: 'HOW DOES IT FEEL', show: 'Inkigayo', count: 1 },
+        { title: 'HOW DOES IT FEEL?', show: 'Music Bank', count: 1 },
+        { title: 'HOW DOES IT FEEL?', show: 'Inkigayo', count: 1 },
       ],
       charts: [
         'เพลย์ลิสต์ editorial ระดับโลกของ Spotify ("SAY")',

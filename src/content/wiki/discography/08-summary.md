@@ -160,7 +160,7 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note จาก PULSE Sessions 2022 |
 | 6 | TALK TO ME | จาก PULSE |
 | 7 | YOU AIN'T GOTTA | จาก SOFTEST TOUCH |
-| 8 | NO RESERVATION (Extended Live Version) | live rearranged version จาก PULSE Tour |
+| 8 | NO RESERVATIONS (Extended Live Version) | live rearranged version จาก PULSE Tour |
 | 9 | ARCHIVE IV: "Breathing in Analog" | spoken reflection จาก ARE U STILL Sessions 2023–2024 |
 | 10 | SOMEWHERE, SOMEHOW | จาก ARE U STILL |
 | 11 | MYSTERY LADY | จาก CAN'T LEAVE ALONE |
@@ -174,7 +174,7 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 Disk 1 เรียงตาม emotional and artistic impact — ไม่ใช่ chronological  
 Disk 2 เน้น process, deep cuts และ reinterpretations — สะท้อน evolution ของ songwriting  
 เพลงใหม่ 4 เพลงใน Disk 2 ทำหน้าที่เป็น bridge ไปสู่ era ถัดไป  
-Live versions ของ RIGHT ABOUT LOVE และ NO RESERVATION ถูก highlight ในฐานะ highlights ของ PULSE Tour ที่ขยาย dynamic range ของต้นฉบับ
+Live versions ของ RIGHT ABOUT LOVE และ NO RESERVATIONS ถูก highlight ในฐานะ highlights ของ PULSE Tour ที่ขยาย dynamic range ของต้นฉบับ
 
 ---
 

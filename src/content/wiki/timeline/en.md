@@ -330,7 +330,7 @@ This marked his first major-tier awards circuit nomination as a fully solo artis
 ### 12/2023
 02/12/2023: Attended the Melon Music Awards.
 
-Performed "HOW DOES IT FEEL," "SAY," and "LIKE I DO."
+Performed "HOW DOES IT FEEL?," "SAY," and "LIKE I DO."
 
 Won Top 10 Artist, Millions Top 10 Artist, and Best Male Solo.
 

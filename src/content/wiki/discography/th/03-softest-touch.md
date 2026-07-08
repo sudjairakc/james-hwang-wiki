@@ -40,7 +40,7 @@ SOFTEST TOUCH ได้รับการตอบรับในเชิงบ
 
 การตอบรับจากนักวิจารณ์:
 * **IZM (Korea)** ให้คะแนน 4.0/5 และเขียนว่า “SOFTEST TOUCH คือหลักฐานที่ชัดที่สุดว่า James Hwang ไม่ใช่ idol ที่รอให้ระบบกำหนด แต่คือศิลปินที่รู้ตัวเองมาตลอด เขาแค่ต้องการพื้นที่”
-* **Pitchfork** (โซล section) บรรยายว่า “mini album ที่มี emotional directness สูงผิดปกติสำหรับ debut โซโล่ R&B จากศิลปินเกาหลี โดยเฉพาะ NO RESERVATION ที่มี vocal precision แบบที่หาได้ยากในยุคนี้”
+* **Pitchfork** (โซล section) บรรยายว่า “mini album ที่มี emotional directness สูงผิดปกติสำหรับ debut โซโล่ R&B จากศิลปินเกาหลี โดยเฉพาะ NO RESERVATIONS ที่มี vocal precision แบบที่หาได้ยากในยุคนี้”
 * **Consequence of Sound** ยกย่อง CRUSH feat. Jungkook ว่าเป็น “K-pop crossover ที่ organic ที่สุดในปี 2022 — ไม่มีกลิ่นอาย marketing แม้แต่น้อย”
 * **The Korea Herald** ระบุว่าอัลบั้มนี้ทำให้ “นิยามของ K-pop idol ต้องถูกนิยามใหม่อีกครั้ง”
 
@@ -80,7 +80,7 @@ SOFTEST TOUCH ถือเป็นโซโล่เดบิวต์ที่
 <div class="raw-tracklist">
 Tracklist & Credits
 1. SOFTEST TOUCH [TITLE] — R&B / Synth Funk / Dance-Pop | Composed by GONUNMA, Ryan S. Jhun, Kenzie, Tay Jasper | Lyrics by GONUNMA, Kenzie | Arranged by Ryan S. Jhun, Kenzie | MV Release: 11/01/2022 | Khalid (31/03/2023, 21,032,762 streams)
-2. NO RESERVATION — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie, Jesse Barrera | Lyrics by GONUNMA, Kenzie | Arranged by Jesse Barrera, Kenzie | Live Release: 25/01/2022 | Jesse Barrera (03/02/2023, 9,181,480 streams)
+2. NO RESERVATIONS — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie, Jesse Barrera | Lyrics by GONUNMA, Kenzie | Arranged by Jesse Barrera, Kenzie | Live Release: 25/01/2022 | Jesse Barrera (03/02/2023, 9,181,480 streams)
 3. YOU AIN’T GOTTA — Soul / Funk / R&B | Composed by GONUNMA, dress, Adrian McKinnon | Lyrics by GONUNMA | Arranged by dress | Albert Posis (10/02/2023, 1,272,906 streams)
 4. Oversized Jacket — Acoustic R&B / Soul / Pop | Composed by GONUNMA, Jesse Barrera, Kevin Chung | Lyrics by GONUNMA | Arranged by Jesse Barrera | Jesse Barrera, Albert Posis (30/05/2025, 770,773 streams)
 5. RIGHT ABOUT LOVE — Acoustic R&B / Indie Soul | Composed by GONUNMA, Kevin Chung, MZMC | Lyrics by GONUNMA | Arranged by Kevin Chung | Kevin Chung (29/09/2023, 4,519,251 streams)

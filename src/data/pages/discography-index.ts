@@ -61,7 +61,7 @@ export const albumMeta: Record<
     color: '#5a7c6a',
     label: 'JH Company / Warner Music Korea',
     genres: ['R&B', 'Pop', 'Synth Funk', 'Nu-Disco'],
-    titleTrack: 'HOW DOES IT FEEL',
+    titleTrack: 'HOW DOES IT FEEL?',
   },
   'are-u-still': {
     cover: 'are_you_still.png',

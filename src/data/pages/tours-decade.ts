@@ -52,7 +52,7 @@ export const setlist = [
     songs: [
       { n: 1, title: 'SAY', era: 'PULSE' },
       { n: 2, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
-      { n: 3, title: 'HOW DOES IT FEEL', era: 'PULSE' },
+      { n: 3, title: 'HOW DOES IT FEEL?', era: 'PULSE' },
       { n: 4, title: 'SAVE ME', era: 'PULSE' },
       { n: 5, title: "CAN\'T LEAVE ALONE", era: "CAN\'T LEAVE ALONE" },
     ],
@@ -89,7 +89,7 @@ export const setlist = [
     songs: [
       { n: 18, title: 'TALK TO ME', era: 'PULSE' },
       { n: 19, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
-      { n: 20, title: 'NO RESERVATION', era: 'SOFTEST TOUCH' },
+      { n: 20, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH' },
       { n: 21, title: "HE'S NOT ME", era: "CAN\'T LEAVE ALONE" },
     ],
   },

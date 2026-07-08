@@ -57,7 +57,7 @@ Spotify lifecycle (album)≈ 320M+ <br />
 YouTube era total≈ 210M+ <br />
 Circle Album ChartTop 5 debut <br />
 Title track — SOFTEST TOUCHSpotify ≈ 95M+YouTube ≈ 82M+Melon peak: #18Circle Digital: Top 30Apple Music Asia: Top 25 หลายประเทศ <br />
-Supporting tracksNO RESERVATION — ≈ 48M+ <br />
+Supporting tracksNO RESERVATIONS — ≈ 48M+ <br />
 Catalog uplift (era effect)LIKE I DO resurgenceCRUSH renewed streaming spike <br />
 
 ### Impact marker
@@ -79,7 +79,7 @@ YouTube era total≈ 390M+ <br />
 Apple Music AsiaTop 10 (7+ territories) <br />
 iTunes Album ChartTop 10 (15+ countries) <br />
 Spotify Viral ChartsSoutheast AsiaNorth America <br />
-Title track — HOW DOES IT FEELSpotify ≈ 155M+YouTube ≈ 140M+Melon peak: #7Circle Digital: Top 15 <br />
+Title track — HOW DOES IT FEEL?Spotify ≈ 155M+YouTube ≈ 140M+Melon peak: #7Circle Digital: Top 15 <br />
 Global crossover single — SAY (feat. keshi)Spotify ≈ 210M+YouTube ≈ 120M+ <br />
 Key B-sidesALL FOR YOU — ≈ 95M+SAVE ME — ≈ 78M+TALK TO ME — ≈ 61M+ <br />
 
@@ -146,8 +146,8 @@ YouTube era total≈ 210M+ <br />
 Apple Music AsiaTop 10 (KR / JP / TH / ID / SG) <br />
 iTunes Album ChartTop 5 (KR)Top 10 (JP / TH / TW / ID / SG)Top 20 (US R&B Albums) <br />
 Lead single — NEWSpotify ≈ 95M+YouTube ≈ 78M+Melon peak: #9Circle Digital: Top 25 <br />
-Live-rearranged highlightsRIGHT ABOUT LOVE (Extended) — ≈ 52M+NO RESERVATION (Extended) — ≈ 47M+ <br />
-Catalog resurgence effectLIKE I DOSOFTEST TOUCHHOW DOES IT FEELTears On A Pretty FaceCAN’T LEAVE ALONE <br />
+Live-rearranged highlightsRIGHT ABOUT LOVE (Extended) — ≈ 52M+NO RESERVATIONS (Extended) — ≈ 47M+ <br />
+Catalog resurgence effectLIKE I DOSOFTEST TOUCHHOW DOES IT FEEL?Tears On A Pretty FaceCAN’T LEAVE ALONE <br />
 streaming uplift range≈ +22% ถึง +41% YoY <br />
 Melon yearly artist indexTop 12 <br />
 Spotify peak monthly listeners (2026)≈ 32M <br />

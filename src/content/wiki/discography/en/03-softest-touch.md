@@ -40,7 +40,7 @@ SOFTEST TOUCH received a positive reception from critics and listeners both in K
 
 Critical response:
 * **IZM (Korea)** gave the album a 4.0/5 rating and wrote, “SOFTEST TOUCH is the clearest evidence that James Hwang is not an idol waiting for the system to define him, but an artist who has always known himself — he just needed the space.”
-* **Pitchfork** (Seoul section) described it as “a mini album with unusually high emotional directness for a Korean artist’s solo R&B debut, especially NO RESERVATION, which features a vocal precision rarely found in this era.”
+* **Pitchfork** (Seoul section) described it as “a mini album with unusually high emotional directness for a Korean artist’s solo R&B debut, especially NO RESERVATIONS, which features a vocal precision rarely found in this era.”
 * **Consequence of Sound** praised CRUSH feat. Jungkook as “the most organic K-pop crossover of 2022 — without even a hint of marketing artifice.”
 * **The Korea Herald** stated that the album meant “the definition of a K-pop idol had to be redefined once again.”
 
@@ -80,7 +80,7 @@ Within the industry, the album is regarded as one of the rare cases of an SM art
 <div class="raw-tracklist">
 Tracklist & Credits
 1. SOFTEST TOUCH [TITLE] — R&B / Synth Funk / Dance-Pop | Composed by GONUNMA, Ryan S. Jhun, Kenzie, Tay Jasper | Lyrics by GONUNMA, Kenzie | Arranged by Ryan S. Jhun, Kenzie | MV Release: 11/01/2022 | Khalid (31/03/2023, 21,032,762 streams)
-2. NO RESERVATION — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie, Jesse Barrera | Lyrics by GONUNMA, Kenzie | Arranged by Jesse Barrera, Kenzie | Live Release: 25/01/2022 | Jesse Barrera (03/02/2023, 9,181,480 streams)
+2. NO RESERVATIONS — Acoustic R&B / Soul Pop | Composed by GONUNMA, Kenzie, Jesse Barrera | Lyrics by GONUNMA, Kenzie | Arranged by Jesse Barrera, Kenzie | Live Release: 25/01/2022 | Jesse Barrera (03/02/2023, 9,181,480 streams)
 3. YOU AIN’T GOTTA — Soul / Funk / R&B | Composed by GONUNMA, dress, Adrian McKinnon | Lyrics by GONUNMA | Arranged by dress | Albert Posis (10/02/2023, 1,272,906 streams)
 4. Oversized Jacket — Acoustic R&B / Soul / Pop | Composed by GONUNMA, Jesse Barrera, Kevin Chung | Lyrics by GONUNMA | Arranged by Jesse Barrera | Jesse Barrera, Albert Posis (30/05/2025, 770,773 streams)
 5. RIGHT ABOUT LOVE — Acoustic R&B / Indie Soul | Composed by GONUNMA, Kevin Chung, MZMC | Lyrics by GONUNMA | Arranged by Kevin Chung | Kevin Chung (29/09/2023, 4,519,251 streams)

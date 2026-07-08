@@ -22,7 +22,7 @@ export const franchises = [
     entries: [
       { title: 'Captain EO: RESONANCE', date: 'December 4, 2026', dateEn: 'December 4, 2026', status: 'Upcoming' },
       { title: 'RESONANCE: The Missing Chord', date: 'November 2, 2028', dateEn: 'November 2, 2028', status: 'Upcoming' },
-      { title: 'RESONANCE II: Silent Orchestra', date: 'December 2030 TBA', dateEn: 'December 2030 TBA', status: 'Upcoming' },
+      { title: 'RESONANCE II: The Silent Orchestra', date: 'December 2030 TBA', dateEn: 'December 2030 TBA', status: 'Upcoming' },
       { title: 'RESONANCE III', date: 'December 2031 TBA', dateEn: 'December 2031 TBA', status: 'Upcoming' },
     ],
   },

@@ -28,7 +28,7 @@ artist-controlled production with external texture collaborators
 แต่เพิ่ม tonal contrast ภายใน tracklist มากขึ้นเพื่อสร้าง performance catalog structure แทน narrative-linear album แบบเดิม <br />
 
 ตัวอย่าง tonal reception ของแต่ละเพลง:
-* HOW DOES IT FEEL เพลงไตเติลที่มีอิทธิพลจาก groove-driven pop-funk แบบ Justin Timberlake อย่างชัดเจน โดดเด่นด้วย falsetto hook และ stage-oriented rhythm structure ได้รับคำชมว่าเป็นหนึ่งใน performance single ที่ “ล้ำยุค” ที่สุดของปี 2023 และได้รับความนิยมสูงในหมู่แฟนเพลง
+* HOW DOES IT FEEL? เพลงไตเติลที่มีอิทธิพลจาก groove-driven pop-funk แบบ Justin Timberlake อย่างชัดเจน โดดเด่นด้วย falsetto hook และ stage-oriented rhythm structure ได้รับคำชมว่าเป็นหนึ่งใน performance single ที่ “ล้ำยุค” ที่สุดของปี 2023 และได้รับความนิยมสูงในหมู่แฟนเพลง
 * SAY (feat. keshi) ได้รับการกล่าวถึงว่าเป็นหนึ่งใน unexpected collaboration ที่สำคัญของอัลบั้ม ด้วย dual-vocal texture ระหว่าง Korean pop phrasing และ alternative R&B ของ keshi ทำหน้าที่เป็น global positioning track หลักของ release
 * ALL FOR YOU ได้รับความสนใจจากผู้ฟังสาย R&B ด้วยโครงสร้าง chord progression แบบ 90s-style R&B และ groove mid-tempo ที่อ้างอิงยุคคลาสสิกของ genre อย่างชัดเจน
 * TALK TO ME เป็นหนึ่งในเพลง tonal contrast สำคัญของอัลบั้ม ด้วย dark alternative R&B atmosphere ที่ถูกเปรียบเทียบกับงานของ Taemin ในเชิง mood design แม้ได้รับคำชมด้าน aesthetic แต่แฟนบางส่วนมองว่าแตกต่างจากโทนหลักของอัลบั้มอย่างชัดเจน
@@ -44,11 +44,11 @@ artist-controlled production with external texture collaborators
 PULSE ได้รับการตอบรับจากนักวิจารณ์ในระดับดีถึงดีมาก โดยถูกมองเป็นจุดพิสูจน์ว่า James Hwang สามารถดำรงอยู่ในฐานะ full-scale solo artist ที่ควบคุมทั้ง creative direction และ commercial strategy ได้อย่างอิสระ อัลบั้มนี้ได้รับคะแนนเฉลี่ย **82/100** จาก aggregator นักวิจารณ์เกาหลี
 
 การตอบรับจากนักวิจารณ์:
-* **Melon Critics** บรรยาย HOW DOES IT FEEL ว่าเป็น “performance single ที่ทรงพลังที่สุดในวงการ K-R&B ปี 2023 — ทุกเฟรมของ stage เป็นของเขาอย่างสมบูรณ์”
+* **Melon Critics** บรรยาย HOW DOES IT FEEL? ว่าเป็น “performance single ที่ทรงพลังที่สุดในวงการ K-R&B ปี 2023 — ทุกเฟรมของ stage เป็นของเขาอย่างสมบูรณ์”
 * **Billboard Korea** ยก SAY feat. keshi เป็น “best K-pop crossover collaboration of 2023” และมองว่า dual-vocal structure คือ blueprint ใหม่ของ international R&B positioning
 * **Pitchfork** (Best New Music คะแนน 7.8) เขียนว่า “PULSE ฟังดูเหมือน artist ที่ยืนหยัดได้ด้วยตัวเอง — groove มี intention ที่ชัดเจน และ falsetto hook ของเขาทำงานหนักในทุก track”
 * **Complex** ระบุว่า “หากคุณต้องการหลักฐานว่า K-R&B สามารถ compete กับ Western R&B ในระดับ production ได้ PULSE คือคำตอบ”
-* **User & chart reception:** Melon #7, Circle Digital Top 15 ในสัปดาห์แรก ได้รับคะแนน 9.1/10 จาก Melon user review aggregator HOW DOES IT FEEL ถูก feature ใน Spotify Editorial Playlist “R&B Central” และ “K-Pop Rising” พร้อมกันในสัปดาห์แรกของการปล่อย
+* **User & chart reception:** Melon #7, Circle Digital Top 15 ในสัปดาห์แรก ได้รับคะแนน 9.1/10 จาก Melon user review aggregator HOW DOES IT FEEL? ถูก feature ใน Spotify Editorial Playlist “R&B Central” และ “K-Pop Rising” พร้อมกันในสัปดาห์แรกของการปล่อย
 
 
 ### Marketing
@@ -60,7 +60,7 @@ PULSE ใช้ multi-track promotion strategy แทน traditional single roll
 * performance clips
 * playlist-based targeting
 โดยเพลงต่อไปนี้ทำหน้าที่เป็น performance anchors
-* HOW DOES IT FEEL
+* HOW DOES IT FEEL?
 * SAY
 * ALL FOR YOU
 * TALK TO ME
@@ -112,7 +112,7 @@ SM-system soloist → global producer-artist
 
 <div class="raw-tracklist">
 Tracklist & Credits
-1. HOW DOES IT FEEL [TITLE] — Dance-Pop / Synth Funk / Contemporary R&B | lead single - stage performance — groove-driven + falsetto hook | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | MV: 21/07/2023 | kid LAROI (20/06/2025, 7,973,504 streams)
+1. HOW DOES IT FEEL? [TITLE] — Dance-Pop / Synth Funk / Contemporary R&B | lead single - stage performance — groove-driven + falsetto hook | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | MV: 21/07/2023 | kid LAROI (20/06/2025, 7,973,504 streams)
 2. SAY (feat. keshi) [TITLE] — Contemporary R&B / Dance-Pop / Nu-Disco | dual vocal texture (KR + US R&B) — global positioning track | Composed by GONUNMA, keshi | Lyrics by GONUNMA, keshi | Arranged by GONUNMA | MV: 28/07/2023 | keshi (12/07/2024, 62,084,985 streams)
 3. ALL FOR YOU — 90s-style R&B / Contemporary R&B | classic chord progression + modern mix — homage to 90s R&B | Composed by GONUNMA, sunkis | Lyrics by GONUNMA | Arranged by GONUNMA | Dance Session: 04/08/2023 | sunkis (03/05/2024, 2,364,634 streams)
 4. TALK TO ME — Lo-fi R&B / Alternative R&B | minimal drum + space-heavy mix — conversational tone | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Dance Session: 11/08/2023 | starfall (08/11/2024, 1,798,426 streams)
@@ -146,7 +146,7 @@ Warner Music Korea <br />
 ### Additional Notes
 
 * อัลบั้มนี้ใช้ multi-track promotion strategy — ไม่ยึดโครงสร้าง single แบบดั้งเดิม
-* มีการปล่อย MV + Dance Session + Performance Video สำหรับหลายเพลง (เช่น HOW DOES IT FEEL, SAY, ALL FOR YOU, TALK TO ME) ทำให้ “แทบทุกเพลงสามารถทำหน้าที่เป็นเพลงโปรโมทได้”
+* มีการปล่อย MV + Dance Session + Performance Video สำหรับหลายเพลง (เช่น HOW DOES IT FEEL?, SAY, ALL FOR YOU, TALK TO ME) ทำให้ “แทบทุกเพลงสามารถทำหน้าที่เป็นเพลงโปรโมทได้”
 * เป็นการสะท้อนว่าอัลบั้มนี้ถูกออกแบบในลักษณะ performance catalog ไม่ใช่แค่ tracklist ธรรมดา
 * เป็นจุดเปลี่ยนสำคัญ: จาก “solo artist ภายใต้ระบบ” → “producer-artist ที่ควบคุมทั้ง sound และ rollout strategy”
 

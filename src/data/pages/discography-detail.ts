@@ -42,14 +42,14 @@ export const metrics: Record<string, AlbumMetrics> = {
     chartPeak: 'Melon #18 · Circle Album Top 5',
     titleTrack: { title: 'SOFTEST TOUCH', spotify: '95M+', youtube: '82M+' },
     keyTracks: [
-      { title: 'NO RESERVATION', streams: '48M+' },
+      { title: 'NO RESERVATIONS', streams: '48M+' },
       { title: 'CRUSH feat. Jungkook', streams: '260M+' },
     ],
   },
   'pulse-era': {
     albumStreams: '650M+',
     chartPeak: 'Melon #7 · Circle Digital Top 15',
-    titleTrack: { title: 'HOW DOES IT FEEL', spotify: '155M+', youtube: '140M+' },
+    titleTrack: { title: 'HOW DOES IT FEEL?', spotify: '155M+', youtube: '140M+' },
     crossover: { title: 'SAY feat. keshi', spotify: '210M+', youtube: '120M+' },
     keyTracks: [
       { title: 'ALL FOR YOU', streams: '95M+' },
@@ -86,7 +86,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     titleTrack: { title: 'NEW (Lead Single)', spotify: '95M+', youtube: '78M+' },
     keyTracks: [
       { title: 'RIGHT ABOUT LOVE (Extended)', streams: '52M+' },
-      { title: 'NO RESERVATION (Extended)', streams: '47M+' },
+      { title: 'NO RESERVATIONS (Extended)', streams: '47M+' },
     ],
   },
 };

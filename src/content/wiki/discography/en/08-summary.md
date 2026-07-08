@@ -160,7 +160,7 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note from the PULSE Sessions 2022 |
 | 6 | TALK TO ME | From PULSE |
 | 7 | YOU AIN'T GOTTA | From SOFTEST TOUCH |
-| 8 | NO RESERVATION (Extended Live Version) | live rearranged version from the PULSE Tour |
+| 8 | NO RESERVATIONS (Extended Live Version) | live rearranged version from the PULSE Tour |
 | 9 | ARCHIVE IV: "Breathing in Analog" | spoken reflection from the ARE U STILL Sessions 2023–2024 |
 | 10 | SOMEWHERE, SOMEHOW | From ARE U STILL |
 | 11 | MYSTERY LADY | From CAN'T LEAVE ALONE |
@@ -174,7 +174,7 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 Disk 1 is sequenced by emotional and artistic impact — not chronologically  
 Disk 2 focuses on process, deep cuts, and reinterpretations — reflecting the evolution of the songwriting  
 The four new songs on Disk 2 serve as a bridge to the next era  
-The live versions of RIGHT ABOUT LOVE and NO RESERVATION are highlighted as standouts of the PULSE Tour, expanding the dynamic range of the originals
+The live versions of RIGHT ABOUT LOVE and NO RESERVATIONS are highlighted as standouts of the PULSE Tour, expanding the dynamic range of the originals
 
 ---
 

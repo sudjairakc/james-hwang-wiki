@@ -31,7 +31,7 @@ The anthology's structure is divided into two parts
 The 4 new songs on the album maintain the sonic direction rooted in Contemporary R&B and the melodic minimalism of GONUNMA's mature era, and have been noted as a quality continuation from the CAN'T LEAVE ALONE period  <br />
 The anthology also includes live rearranged versions of
 * “RIGHT ABOUT LOVE (Extended Live Version)”
-* “NO RESERVATION (Extended Live Version)”
+* “NO RESERVATIONS (Extended Live Version)”
 
 developed during the PULSE Tour (2023), which received strong reception from listeners as versions that expand the dynamic range and harmonic layering of the originals
 
@@ -69,7 +69,7 @@ Critical response:
 * **Pitchfork** (score 8.0) wrote: "DECADE isn't just a greatest hits collection — it's a self-portrait where the artist chose every brushstroke himself. The archival spoken material layers make this anthology sound more like a memoir than a music collection."
 * **The Guardian** gave 4/5 and stated: "James Hwang has used his 10th anniversary to create the best entry in this genre since Beyoncé's 4Ever — sequencing that reflects genuine emotional intelligence."
 * **Billboard Korea** described: "All 4 new songs, especially NEW, function as a declaration of intent toward the next chapter, rather than mere album filler."
-* **IZM (Korea)** gave 4.5/5 and noted: "The live rearranged versions of RIGHT ABOUT LOVE and NO RESERVATION are highlights that prove his studio work surpasses the originals in several dimensions."
+* **IZM (Korea)** gave 4.5/5 and noted: "The live rearranged versions of RIGHT ABOUT LOVE and NO RESERVATIONS are highlights that prove his studio work surpasses the originals in several dimensions."
 * **Complex Korea** called DECADE "the definitive argument for GONUNMA's place in the global R&B conversation — not just in Asia"
 
 **Catalog impact:** Within 30 days of DECADE's release, overall back-catalog streams increased by an average of 22–41% across all eras, with LIKE I DO (+41%), SOFTEST TOUCH (+35%), and CRUSH feat. Jungkook (+28%) seeing the highest uplift
@@ -130,7 +130,7 @@ CAN’T LEAVE ALONE
 SAY
 ARCHIVE I: “Midnight Notebook” (LIKE I DO Sessions, 2015–2016)(demo melody fragment + voice memo about songwriting during the trainee era)
 Tears On A Pretty Face
-HOW DOES IT FEEL
+HOW DOES IT FEEL?
 SAVE ME
 LIKE I DO (Solo Version)
 ARCHIVE II: “Softest Touch, First Stage” (SOFTEST TOUCH Sessions, 2016–2019)(spoken reflection about preparing for the solo debut and making SM Station material)
@@ -148,7 +148,7 @@ NEW IV
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note from the independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA
-NO RESERVATION (Extended Live Version)
+NO RESERVATIONS (Extended Live Version)
 ARCHIVE IV: “Breathing in Analog” (ARE U STILL Sessions, 2023–2024)(spoken reflection about groove-based writing and returning to the soul lineage)
 Somewhere, Somehow
 Mystery Lady

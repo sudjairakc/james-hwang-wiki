@@ -44,7 +44,7 @@
 
 1. SAY <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
 2. TEARS ON A PRETTY FACE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7aaa;color:#5a7aaa;margin-left:5px;vertical-align:middle">ARE U STILL</span>
-3. HOW DOES IT FEEL <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
+3. HOW DOES IT FEEL? <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
 4. SAVE ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
 5. CAN'T LEAVE ALONE <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c06080;color:#c06080;margin-left:5px;vertical-align:middle">CAN'T LEAVE ALONE</span>
 
@@ -73,7 +73,7 @@
 
 18. TALK TO ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #5a7c6a;color:#5a7c6a;margin-left:5px;vertical-align:middle">PULSE</span>
 19. YOU AIN'T GOTTA <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
-20. NO RESERVATION <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
+20. NO RESERVATIONS <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #9b7fc8;color:#9b7fc8;margin-left:5px;vertical-align:middle">SOFTEST TOUCH</span>
 21. HE'S NOT ME <span style="display:inline-block;font-size:0.6rem;font-weight:600;letter-spacing:0.05em;padding:1px 7px;border-radius:10px;border:1px solid #c06080;color:#c06080;margin-left:5px;vertical-align:middle">CAN'T LEAVE ALONE</span>
 
 ### VCR 6 — LATE NIGHT CORE

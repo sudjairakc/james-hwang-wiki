@@ -96,7 +96,7 @@ const en = {
       pull: 'The statement album',
       body: [
         'The most coherent album in the whole discography — every decision carries clear intention. This is the first time James self-produced the entire album, and it shows in every choice, from opening with the club-confident HOW DOES IT FEEL? to the pure love poem of IF, closing with the instrumental GIRLFRIEND.',
-        "TALK TO ME is where dark alt-R&B atmosphere works best across his entire catalog, while HOW DOES IT FEEL remains James's most ahead-of-its-time performance single to date — every track was built directly for live performance, groove leading and lyrics following, with the falsetto hook becoming an instantly recognizable signature.",
+        "TALK TO ME is where dark alt-R&B atmosphere works best across his entire catalog, while HOW DOES IT FEEL? remains James's most ahead-of-its-time performance single to date — every track was built directly for live performance, groove leading and lyrics following, with the falsetto hook becoming an instantly recognizable signature.",
         'If there\'s a knock, it\'s that PULSE is perfect in a way that\'s entirely calculated — there\'s no moment that slips outside the plan, which for some is completeness and for others a lack of risk. But as a "statement" of who he is after leaving the old system, it works on every level.',
       ],
     },
@@ -281,7 +281,7 @@ const th: typeof en = {
       pull: 'The statement album',
       body: [
         'อัลบั้มที่ coherent ที่สุดในทั้ง discography — ทุกการตัดสินใจมี intention ชัดเจน นี่เป็นครั้งแรกที่ James self-produced ครบทุกเพลง และมันได้ยินออกในทุกการเลือก ตั้งแต่การเปิดด้วย HOW DOES IT FEEL? ที่เป็น club-confident จนถึง IF ที่เป็น pure love poem และจบด้วย GIRLFRIEND ที่เป็น instrumental',
-        'TALK TO ME คือจุดที่ dark alt-R&B atmosphere ทำงานดีที่สุดใน catalog ทั้งหมดของเขา ส่วน HOW DOES IT FEEL ยังคงเป็น performance single ที่ล้ำยุคที่สุดของ James จนถึงปัจจุบัน — ทุก track ถูก build มาเพื่อ live performance โดยตรง groove มาก่อน เนื้อร้องตามมา และ falsetto hook กลายเป็น signature ที่จำได้ทันที',
+        'TALK TO ME คือจุดที่ dark alt-R&B atmosphere ทำงานดีที่สุดใน catalog ทั้งหมดของเขา ส่วน HOW DOES IT FEEL? ยังคงเป็น performance single ที่ล้ำยุคที่สุดของ James จนถึงปัจจุบัน — ทุก track ถูก build มาเพื่อ live performance โดยตรง groove มาก่อน เนื้อร้องตามมา และ falsetto hook กลายเป็น signature ที่จำได้ทันที',
         'ถ้ามีข้อติ ก็คือ PULSE สมบูรณ์แบบในแบบที่คำนวณไว้หมดแล้ว — มันไม่มี moment ที่หลุดออกนอกแผน ซึ่งสำหรับบางคนคือความสมบูรณ์ สำหรับบางคนคือการขาดความเสี่ยง แต่ในฐานะ "statement" ว่าเขาคือใครหลังออกจากระบบเดิม มันทำงานได้ครบทุกมิติ',
       ],
     },

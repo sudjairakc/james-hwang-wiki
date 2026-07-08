@@ -48,7 +48,7 @@ around the same time.
 in addition.
 * "CAN YOU LOVE ME TONIGHT" gained popularity through groove-driven short-form edits, and "AT THE END OF THE NIGHT" was noted within the K-R&B listener community as one of the slow-jam structures that diverged from SM Entertainment's production approach at the time, showcasing James's independent tonal direction since early in his career.
 * As a result of more than half the tracklist gaining renewed visibility through social video platforms, LIKE I DO has been reevaluated within the retrospective canon as a foundational document of James Hwang's musical identity, rather than merely the trainee-era experimentation project it was initially seen as.
-This rediscovery phenomenon also played a key role in expanding his global audience in late 2023 through early 2024, coinciding with the success of "HOW DOES IT FEEL" from the album PULSE, and contributed directly to the commercial momentum and cultural anticipation ahead of the release of his next album, Are You Still (2024), which became the peak-phase milestone of his career trajectory in the early-solo era.
+This rediscovery phenomenon also played a key role in expanding his global audience in late 2023 through early 2024, coinciding with the success of "HOW DOES IT FEEL?" from the album PULSE, and contributed directly to the commercial momentum and cultural anticipation ahead of the release of his next album, Are You Still (2024), which became the peak-phase milestone of his career trajectory in the early-solo era.
 
 
 **Executive Producer**: Lee Soo-man <br />

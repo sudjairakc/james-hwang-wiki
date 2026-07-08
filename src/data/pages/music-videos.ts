@@ -28,7 +28,7 @@ export const mvMeta: Array<{
   { title: 'SOFTEST TOUCH', type: 'MV', date: '2022.01.11', era: 'SOFTEST TOUCH', eraColor: '#9b7fc8', director: 'Director Oh Sung-jin', palette: 'Blush pink · Soft lilac · Cream white', views: '82M+' },
 
   // PULSE era
-  { title: 'HOW DOES IT FEEL', type: 'MV', date: '2023.07.21', era: 'PULSE', eraColor: '#5a7c6a', director: 'Lumpens', palette: 'Deep charcoal · Warm amber · Low candlelight gold', views: '140M+' },
+  { title: 'HOW DOES IT FEEL?', type: 'MV', date: '2023.07.21', era: 'PULSE', eraColor: '#5a7c6a', director: 'Lumpens', palette: 'Deep charcoal · Warm amber · Low candlelight gold', views: '140M+' },
   { title: 'SAY (feat. keshi)', type: 'MV', date: '2023.07.28', era: 'PULSE', eraColor: '#5a7c6a', director: 'Warren Fu', palette: 'Natural daylight · Muted beige · Urban grey', views: '120M+' },
   { title: 'ALL FOR YOU', type: 'Dance', date: '2023.08.04', era: 'PULSE', eraColor: '#5a7c6a', director: 'JH Company Visual Team', palette: 'Golden hour amber · Cream · Concrete', views: '42M+' },
   { title: 'TALK TO ME', type: 'Dance', date: '2023.08.11', era: 'PULSE', eraColor: '#5a7c6a', director: 'JH Company Visual Team', palette: 'Cool grey · Blue-black · Dim white', views: '38M+' },
@@ -117,7 +117,7 @@ const en = {
     },
     {
       concept:
-        'Indoor dance session. Low-key dark studio, blue-grey light. Solo freestyle session — less structured choreography, more improvisational movement. Intended to contrast with the polish of HOW DOES IT FEEL.',
+        'Indoor dance session. Low-key dark studio, blue-grey light. Solo freestyle session — less structured choreography, more improvisational movement. Intended to contrast with the polish of HOW DOES IT FEEL?.',
       notes: undefined,
     },
     {
@@ -210,7 +210,7 @@ const th: typeof en = {
     },
     {
       concept:
-        'Dance session แบบ indoor สตูดิโอมืดโทน low-key แสงสีฟ้าเทา เป็น solo freestyle session — ท่าเต้น structured น้อยลง เน้นการเคลื่อนไหวแบบ improvisation ตั้งใจให้ contrast กับความ polish ของ HOW DOES IT FEEL',
+        'Dance session แบบ indoor สตูดิโอมืดโทน low-key แสงสีฟ้าเทา เป็น solo freestyle session — ท่าเต้น structured น้อยลง เน้นการเคลื่อนไหวแบบ improvisation ตั้งใจให้ contrast กับความ polish ของ HOW DOES IT FEEL?',
       notes: undefined,
     },
     {

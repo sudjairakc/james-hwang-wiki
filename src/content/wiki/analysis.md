@@ -68,7 +68,7 @@ Solo debut ที่พิสูจน์ว่า James ไม่ใช่แ�
 ### PULSE (2023) — ★★★★½
 *"The statement album"*
 
-อัลบั้มที่ coherent ที่สุดในทั้ง discography ทุกการตัดสินใจมี intention ชัดเจน ตั้งแต่การเปิดด้วย HOW DOES IT FEEL? ที่เป็น club-confident จนถึง IF ที่เป็น pure love poem และจบด้วย GIRLFRIEND instrumental TALK TO ME คือจุดที่ dark alt-R&B atmosphere ทำงานดีที่สุดใน catalog HOW DOES IT FEEL เป็น performance single ที่ล้ำยุคที่สุดของเขาจนถึงปัจจุบัน
+อัลบั้มที่ coherent ที่สุดในทั้ง discography ทุกการตัดสินใจมี intention ชัดเจน ตั้งแต่การเปิดด้วย HOW DOES IT FEEL? ที่เป็น club-confident จนถึง IF ที่เป็น pure love poem และจบด้วย GIRLFRIEND instrumental TALK TO ME คือจุดที่ dark alt-R&B atmosphere ทำงานดีที่สุดใน catalog HOW DOES IT FEEL? เป็น performance single ที่ล้ำยุคที่สุดของเขาจนถึงปัจจุบัน
 
 ### ARE U STILL (2024) — ★★★★★
 *"The apex"*

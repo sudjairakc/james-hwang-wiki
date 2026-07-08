@@ -31,7 +31,7 @@ DECADE เป็นอัลบั้ม anthology ชุดแรกของ G
 เพลงใหม่ 4 เพลงในอัลบั้มยังคง sonic direction ในแกน Contemporary R&B และ melodic minimalism แบบ mature-era ของ GONUNMA และได้รับการกล่าวถึงว่าเป็น continuation ที่มีคุณภาพต่อเนื่องจากช่วง CAN'T LEAVE ALONE  <br />
 นอกจากนี้ anthology ยังรวม live rearranged versions ของ
 * “RIGHT ABOUT LOVE (Extended Live Version)”
-* “NO RESERVATION (Extended Live Version)”
+* “NO RESERVATIONS (Extended Live Version)”
 
 ซึ่งพัฒนาขึ้นระหว่าง PULSE Tour (2023) และได้รับการตอบรับสูงจากผู้ฟังในฐานะเวอร์ชันที่ขยาย dynamic range และ harmonic layering ของต้นฉบับ
 
@@ -69,7 +69,7 @@ physical edition ถูกออกแบบในฐานะ archival object �
 * **Pitchfork** (คะแนน 8.0) เขียนว่า "DECADE ไม่ใช่แค่ greatest hits — มันคือ self-portrait ที่ศิลปินเลือกทุก brushstroke เอง archival spoken material layers ทำให้ anthology นี้ฟังดูเหมือน memoir มากกว่า music collection"
 * **The Guardian** ให้ 4/5 และระบุว่า "James Hwang ใช้โอกาสครบรอบ 10 ปีสร้างสิ่งที่ดีที่สุดในประเภทนี้นับตั้งแต่ Beyoncé's 4Ever — sequencing ที่สะท้อน emotional intelligence จริง ๆ"
 * **Billboard Korea** บรรยายว่า "เพลงใหม่ทั้ง 4 เพลง โดยเฉพาะ NEW ทำหน้าที่เป็น declaration of intent ไปสู่ chapter ถัดไป แทนที่จะเป็นแค่ album filler"
-* **IZM (Korea)** ให้ 4.5/5 และชี้ว่า "live rearranged versions ของ RIGHT ABOUT LOVE และ NO RESERVATION คือ highlights ที่พิสูจน์ว่างานในสตูดิโอของเขาดีกว่าต้นฉบับในหลายมิติ"
+* **IZM (Korea)** ให้ 4.5/5 และชี้ว่า "live rearranged versions ของ RIGHT ABOUT LOVE และ NO RESERVATIONS คือ highlights ที่พิสูจน์ว่างานในสตูดิโอของเขาดีกว่าต้นฉบับในหลายมิติ"
 * **Complex Korea** เรียก DECADE ว่า "the definitive argument for GONUNMA's place in the global R&B conversation — not just in Asia"
 
 **Catalog impact:** ภายใน 30 วันหลังปล่อย DECADE ยอดสตรีม back catalog ทั้งหมดเพิ่มขึ้นเฉลี่ย 22–41% ทั่วทุก era โดย LIKE I DO (+41%), SOFTEST TOUCH (+35%) และ CRUSH feat. Jungkook (+28%) ได้รับ uplift สูงสุด
@@ -130,7 +130,7 @@ CAN’T LEAVE ALONE
 SAY
 ARCHIVE I: “Midnight Notebook” (LIKE I DO Sessions, 2015–2016)(demo melody fragment + voice memo เกี่ยวกับการเขียนเพลงตอน trainee era)
 Tears On A Pretty Face
-HOW DOES IT FEEL
+HOW DOES IT FEEL?
 SAVE ME
 LIKE I DO (Solo Version)
 ARCHIVE II: “Softest Touch, First Stage” (SOFTEST TOUCH Sessions, 2016–2019)(spoken reflection เกี่ยวกับการเตรียม solo debut และการทำ SM Station material)
@@ -148,7 +148,7 @@ NEW
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note จาก independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA
-NO RESERVATION (Extended Live Version)
+NO RESERVATIONS (Extended Live Version)
 ARCHIVE IV: “Breathing in Analog” (ARE U STILL Sessions, 2023–2024)(spoken reflection เกี่ยวกับ groove-based writing และการกลับไปหา soul lineage)
 Somewhere, Somehow
 Mystery Lady

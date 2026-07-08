@@ -330,7 +330,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 ### 12/2023
 02/12/2023: เข้าร่วมงาน Melon Music Awards
 
-แสดง "HOW DOES IT FEEL", "SAY" และ "LIKE I DO"
+แสดง "HOW DOES IT FEEL?", "SAY" และ "LIKE I DO"
 
 คว้ารางวัล Top 10 Artist, Millions Top 10 Artist และ Best Male Solo
 

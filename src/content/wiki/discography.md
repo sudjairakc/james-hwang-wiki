@@ -12,7 +12,7 @@
 | SOFTEST TOUCH | [discography/03-softest-touch.md](discography/03-softest-touch.md) |
 | PULSE + CHICKEN THIGNS + If I Knew + L.I.N.A. | [discography/04-pulse-era.md](discography/04-pulse-era.md) |
 | Are U Still | [discography/05-are-u-still.md](discography/05-are-u-still.md) |
-| CAN'T LEAVE ALONE (SOUR \| HONEY era) | [discography/06-sour-honey.md](discography/06-sour-honey.md) |
+| CAN'T LEAVE ALONE | [discography/06-sour-honey.md](discography/06-sour-honey.md) |
 | DECADE (anthology) | [discography/07-decade.md](discography/07-decade.md) |
 | สรุป discography ทุกอัลบั้ม (mood/theme ต่อเพลง) | [discography/08-summary.md](discography/08-summary.md) |
 

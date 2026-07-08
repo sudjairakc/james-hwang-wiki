@@ -48,7 +48,7 @@ LIKE I DO เผยแพร่ในรูปแบบ digital mini album โ�
 นอกจากนี้ 
 * “CAN YOU LOVE ME TONIGHT” ได้รับความนิยมจาก groove-driven short-form edits และ “AT THE END OF THE NIGHT” ถูกกล่าวถึงใน community ผู้ฟัง K-R&B ว่าเป็นหนึ่งใน slow-jam structures ที่แตกต่างจากแนวทาง production ของ SM Entertainment ในช่วงเวลาเดียวกัน และแสดงให้เห็นความเป็น independent tonal direction ของ James ตั้งแต่ช่วง early career
 * ผลจากการที่มากกว่าครึ่งหนึ่งของ tracklist ได้รับ renewed visibility ผ่านแพลตฟอร์ม social video ทำให้ LIKE I DO ถูก reevaluate ในเชิง retrospective canon ว่าเป็น foundational document ของ musical identity ของ James Hwang มากกว่าจะเป็นเพียง trainee-era experimentation project ตามที่เคยถูกมองในช่วงแรก
-ปรากฏการณ์ rediscovery นี้ยังมีบทบาทสำคัญในการขยายฐานผู้ฟัง global audience ของเขาในช่วงปลายปี 2023 ต่อเนื่องถึงต้นปี 2024 ซึ่งเกิดขึ้นพร้อมกับความสำเร็จของ “HOW DOES IT FEEL” จากอัลบั้ม PULSE และมีส่วนโดยตรงต่อ momentum เชิงพาณิชย์และ cultural anticipation ก่อนการเปิดตัวอัลบั้มถัดไป Are You Still (2024) ที่กลายเป็น peak-phase milestone ของ career trajectory ในระยะ early-solo era
+ปรากฏการณ์ rediscovery นี้ยังมีบทบาทสำคัญในการขยายฐานผู้ฟัง global audience ของเขาในช่วงปลายปี 2023 ต่อเนื่องถึงต้นปี 2024 ซึ่งเกิดขึ้นพร้อมกับความสำเร็จของ “HOW DOES IT FEEL?” จากอัลบั้ม PULSE และมีส่วนโดยตรงต่อ momentum เชิงพาณิชย์และ cultural anticipation ก่อนการเปิดตัวอัลบั้มถัดไป Are You Still (2024) ที่กลายเป็น peak-phase milestone ของ career trajectory ในระยะ early-solo era
 
 
 **Executive Producer**: Lee Soo-man <br />

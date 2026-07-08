@@ -29,7 +29,7 @@ type LinaTrack = {
 // all values are proper nouns, dates, or numbers.
 export const linaProject = {
   title: 'L.I.N.A.',
-  released: 'December 3, 2023',
+  released: 'December 3, 2023 (rollout through 2025)',
   producedBy: 'GONUNMA, Kenzie',
   musicBy: 'GONUNMA, Kenzie',
   lyricBy: 'GONUNMA, Kenzie',

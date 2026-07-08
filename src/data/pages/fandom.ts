@@ -19,7 +19,7 @@ const en = {
     goldAshName: 'Gold Ash',
     onyxName: 'Onyx',
     profileLabel: 'Fandom Profile',
-    chantHeading: 'Fan Chant — HOW DOES IT FEEL',
+    chantHeading: 'Fan Chant — HOW DOES IT FEEL?',
     chantIntro: 'Standard chant pattern used during live performances. Each cue marks the moment fans respond.',
     chantNoteHtml:
       'Note: Fan chant pattern varies by song and concert segment. Silent-listening sections (no chant) are observed during ballad and deep-cut performances — a documented Gemzen cultural marker. See <a href="%L%cultural-impact" style="color:var(--gold)">Cultural Impact §2.6</a>.',
@@ -85,7 +85,7 @@ const en = {
   ],
   milestones: [
     { date: 'Jun 2023', title: 'First global trend #1', desc: 'The PULSE release pushed #JamesHwang to worldwide trending #1 on X for the first time — 1.4M tweets within 24 hours.', metric: '#1 WW · 1.4M tweets' },
-    { date: 'Aug 2023', title: 'HOW DOES IT FEEL — 100M club', desc: 'The MV hit 100M views — the first song to do so as an independent artist after founding JH Company.', metric: '100M views' },
+    { date: 'Aug 2023', title: 'HOW DOES IT FEEL? — 100M club', desc: 'The MV hit 100M views — the first song to do so as an independent artist after founding JH Company.', metric: '100M views' },
     { date: 'Mar 2024', title: 'TEARS ON A PRETTY FACE billboard takeover', desc: 'Gemzen crowdfunded billboards across 14 cities in 6 countries to celebrate the MV release — including Times Square and Siam in central Bangkok.', metric: '14 cities · 6 countries' },
     { date: 'Feb 2025', title: 'Grammy night stream surge', desc: 'On Grammy night, ARE U STILL surged onto the Spotify Global Daily Top 10 — catalog streams up +340% within a single day.', metric: '+340% catalog' },
     { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN\'T LEAVE ALONE (feat. Pharrell) became the third MV to hit 100M — confirming a solid global MV audience base.", metric: '3× 100M MV' },
@@ -161,7 +161,7 @@ const th: typeof en = {
     goldAshName: 'Gold Ash',
     onyxName: 'Onyx',
     profileLabel: 'Fandom Profile',
-    chantHeading: 'Fan Chant — HOW DOES IT FEEL',
+    chantHeading: 'Fan Chant — HOW DOES IT FEEL?',
     chantIntro: 'รูปแบบแชนต์มาตรฐานที่ใช้ระหว่างการแสดงสด แต่ละ cue คือจุดที่แฟนตอบรับ',
     chantNoteHtml:
       'หมายเหตุ: รูปแบบแชนต์แตกต่างกันไปตามเพลงและช่วงคอนเสิร์ต ช่วง silent-listening (ไม่มีแชนต์) พบได้ระหว่างการแสดงเพลงบัลลาดและ deep-cut — เป็น cultural marker ของ Gemzen ที่มีการบันทึกไว้ ดู <a href="%L%cultural-impact" style="color:var(--gold)">อิทธิพลเชิงวัฒนธรรม §2.6</a>',
@@ -227,7 +227,7 @@ const th: typeof en = {
   ],
   milestones: [
     { date: 'Jun 2023', title: 'First global trend #1', desc: 'PULSE release ดัน #JamesHwang ขึ้น worldwide trending #1 บน X ครั้งแรก — 1.4M tweets ใน 24 ชม.', metric: '#1 WW · 1.4M tweets' },
-    { date: 'Aug 2023', title: 'HOW DOES IT FEEL — 100M club', desc: 'MV แตะ 100M views เป็นเพลงแรกในฐานะ independent artist หลังตั้ง JH Company', metric: '100M views' },
+    { date: 'Aug 2023', title: 'HOW DOES IT FEEL? — 100M club', desc: 'MV แตะ 100M views เป็นเพลงแรกในฐานะ independent artist หลังตั้ง JH Company', metric: '100M views' },
     { date: 'Mar 2024', title: 'TEARS ON A PRETTY FACE billboard takeover', desc: 'Gemzen ระดมทุนซื้อ billboard 14 เมือง 6 ประเทศ ฉลอง MV release — รวมถึง Times Square และ Siam ใจกลางกรุงเทพ', metric: '14 cities · 6 countries' },
     { date: 'Feb 2025', title: 'Grammy night stream surge', desc: 'คืนประกาศ Grammy ARE U STILL พุ่งขึ้น Spotify Global Daily Top 10 — catalog streams +340% ภายในวันเดียว', metric: '+340% catalog' },
     { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN\'T LEAVE ALONE (feat. Pharrell) เป็น MV ตัวที่สามที่แตะ 100M — confirm ฐาน global MV audience", metric: '3× 100M MV' },

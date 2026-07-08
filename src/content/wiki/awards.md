@@ -43,7 +43,7 @@ slug: "awards"
 
 ### Music show wins
 
-HOW DOES IT FEEL <br />
+HOW DOES IT FEEL? <br />
 
 | Show | Wins |
 |------|------|
@@ -165,7 +165,7 @@ SOUR <br />
 
 | Award Show | Category | Result |
 |-----------|----------|--------|
-| Best R&B Album (SOUR \| HONEY) | Korean Music Awards | NOMINATION |
+| Best R&B Album (CAN'T LEAVE ALONE) | Korean Music Awards | NOMINATION |
 
 ### Music show wins
 
