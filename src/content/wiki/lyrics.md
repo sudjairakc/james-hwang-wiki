@@ -1150,7 +1150,7 @@ aint nobody gon saving me from this burning love
 
 ---
 
-### 6. BREATHE!
+### 6. BREATHE
 *(cover: Leven Kali, 2026)*
 
 Uh / Mmh, yeah / Mmh, yeah, yeah, oh, oh, yeah / Mmh, yeah / Mmh, yeah / Mmh, yeah, yeah

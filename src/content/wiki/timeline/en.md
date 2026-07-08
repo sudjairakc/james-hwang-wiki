@@ -3,7 +3,7 @@
 # SM ROOKIES ERA (2013–2015)
 
 
-## 2013 (age 15)
+## 2013 (age 14–15)
 
 ### 02/2013
 February: James finished lower secondary school before joining SM Entertainment's audition in Thailand, choosing "I'll Never Break Your Heart" by Backstreet Boys and "Sherlock" by SHINee, along with a hip-hop freestyle dance showcase mixed with tricking flips, and fluent Korean communication — the point that caught the special attention of the Korean judges.
@@ -18,7 +18,7 @@ March–November 2013: A wave of discussion emerged in online communities about 
 
 
 
-## 2014 (age 16)
+## 2014 (age 15–16)
 
 ### 01/2014
 Throughout the year: Attended School of Performing Arts Seoul (pre-debut), which developed his language fluency (Korean/English/Japanese) through real-world environment, and began building connections with trainees of the same generation, including a network extending to idols of similar age.
@@ -29,7 +29,7 @@ Throughout the year: Attended School of Performing Arts Seoul (pre-debut), which
 
 
 
-## 2015 (age 17)
+## 2015 (age 16–17)
 
 ### 03/2015
 06/03/2015: Performed "Bassbot" and began being positioned as a performer with high physicality (linked to the martial arts skills he had trained alongside).
@@ -42,7 +42,7 @@ Throughout the year: Attended School of Performing Arts Seoul (pre-debut), which
 # NCT 127 ERA (2016–2019)
 
 
-## 2016 (age 18)
+## 2016 (age 17–18)
 
 ### 02/2016
 02/2016: SM Rookies held a showcase in Thailand, testing the overseas market and gauging the initial fanbase of foreign members.
@@ -63,7 +63,7 @@ August–October 2016: Internal discussion began within SM about "building James
 
 
 
-## 2017 (age 19)
+## 2017 (age 18–19)
 
 ### 01/2017
 04/01/2017: Released "Limitless," in which James took part in some vocal arrangement (uncredited), reflecting the producer role beginning to emerge.
@@ -86,7 +86,7 @@ Early 2017: The group's internal vocal architecture began to shift from the Taei
 
 
 
-## 2018 (age 20)
+## 2018 (age 19–20)
 
 ### 03/2018
 13/03/2018: Released "Touch" (NCT 2018), a lighter concept that opened up to a broader audience.
@@ -113,7 +113,7 @@ After Jungwoo joined NCT 127 in a full capacity, a role overlap occurred in the 
 
 
 
-## 2019 (age 21)
+## 2019 (age 20–21)
 
 ### 01–03/2019
 01/2019 – 03/2019: The "Neo City – The Origin" tour, during which James had periods of not joining certain cities.
@@ -148,7 +148,7 @@ Late 2019: James's positioning within the team began to be seen as an "upper-mid
 # SHANG-CHI ERA (2020–2022)
 
 
-## 2020 (age 22)
+## 2020 (age 21–22)
 
 ### 02/2020
 02/2020: Began filming "Shang-Chi and the Legend of the Ten Rings" and entered full-scale Hollywood-level production.
@@ -183,7 +183,7 @@ Late 2020: Internal evaluation within the production team began to view James as
 
 
 
-## 2021 (age 23)
+## 2021 (age 22–23)
 
 ### 04/2021
 19/04/2021: Released the film's first teaser poster.
@@ -210,7 +210,7 @@ Late 2020: Internal evaluation within the production team began to view James as
 
 
 
-## 2022 (age 24)
+## 2022 (age 23–24)
 
 ### 01/2022
 11/01/2022: Made his solo debut with "SOFTEST TOUCH," seen as "releasing potential that had long been held back."
@@ -241,7 +241,7 @@ Mid-2022: Internal discussion began about the renewal direction for several fore
 # SOLO ERA (2023-2024)
 
 
-## 2023 (age 25)
+## 2023 (age 24–25)
 
 ### 01/2023
 09/01/2023 – 28/01/2023: James joined the "Neo City: The Link" tour in America and Latin America, the last major group activity period before the dispute arose, with tension over contract terms and career direction beginning to build behind the scenes.
@@ -352,7 +352,7 @@ Late in the month: James released continued content and teasers for the "ARE U S
 
 
 
-## 2024 (age 26)
+## 2024 (age 25–26)
 
 ### 01/2024
 02/01/2024: Attended the Seoul Music Awards.
@@ -502,7 +502,7 @@ Received the AAA Asia Celebrity Award, reflecting his status as a global crossov
 # POPSTAR ERA (2025-present)
 
 
-## 2025 (age 27)
+## 2025 (age 26–27)
 
 ### 01/2025
 11–12/01/2025: James joined SMTOWN LIVE 2025 with NCT 127, taking part only in the Seoul leg to balance his schedule.
@@ -603,7 +603,7 @@ Reflected his global activity that year (Grammy + Marvel lead role + BET nominat
 
 
 
-## 2026 (age 28)
+## 2026 (age 27–28)
 
 ### 01/2026
 Early 2026: Due to the impact of the 2025 events in Thailand, James reduced his use of Thai in public appearances and had no scheduled work in Thailand, though he continued global-level activities. His public image remained in a "controversial but globally dominant" state.
@@ -686,7 +686,7 @@ Began developing the narrative spine for the film trilogy branch (Resonance cine
 
 
 
-## 2027 (age 29)
+## 2027 (age 28–29)
 
 ### 01–02/2027
 01/2027 – 02/2027: Began the 2nd concert: "DECADE TOUR" (Leg 1 – Limited Run).
@@ -787,7 +787,7 @@ NCT 127 group activities.
 
 
 
-## 2028 (age 30)
+## 2028 (age 29–30)
 
 ### 01/2028
 07/01/2028: Attended the Golden Globe Awards.
@@ -892,7 +892,7 @@ Opened up the myth layer of Missing Chord for the long-term trilogy arc.
 
 
 
-## 2029 (age 31)
+## 2029 (age 30–31)
 
 ### 04/2029
 04/2029 – 12/2029: THE RESONANCE entered development + early pre-production.
@@ -927,7 +927,7 @@ Tone positioning: the darkest chapter of the trilogy.
 
 
 
-## 2030 (age 32)
+## 2030 (age 31–32)
 
 ### 01/2030
 01/2030 – 10/2030: THE SILENT ORCHESTRA final post-production & global marketing rollout.
@@ -984,7 +984,7 @@ Opened the Myth Collapse Layer phase of the trilogy.
 
 
 
-## 2031 (age 33)
+## 2031 (age 32–33)
 
 ### 12/2031
 12/2031: THE RESONANCE released (global release).

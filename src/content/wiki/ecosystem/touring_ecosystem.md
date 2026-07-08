@@ -156,7 +156,7 @@ James เป็น:
 
 | Source | Retained Capital | Strategic Impact |
 |-------|----------------|----------------|
-| PULSE + DECADE touring | ~$128M | transition to mid-tier entertainment company |
+| PULSE + DECADE touring | ~$84M | transition to single-artist creator + franchise IP house |
 
 บริษัทจาก boutique artist-label  
 กลายเป็น mid-tier entertainment company ทันที
@@ -169,9 +169,9 @@ canon-consistent estimate:
 
 | Metric | Estimated Range |
 |-------|----------------|
-| Annual revenue | $35M–60M |
+| Annual revenue | $95M–160M |
 | Valuation | $180M–320M |
-| Employees | 45–90 |
+| Employees | 90–130 |
 | Divisions | label / touring / production / IP |
 
 บริษัทเริ่ม transition จาก
@@ -248,7 +248,7 @@ touring profit ไม่ได้เข้า Warner โดยตรง
 | Sponsors | $26M | $14M | $40M |
 | Profit pool | $105M | $40M | $145M |
 | James personal income | $44M | $17M | $61M |
-| JH Company retained capital | — | — | $128M |
+| JH Company retained capital | — | — | $84M |
 
 Estimated James net worth after DECADE
 

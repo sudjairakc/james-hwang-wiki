@@ -265,7 +265,7 @@ const en = {
       period: '2024–present',
       title: 'NCT 127 Fan Divide',
       severity: 'medium',
-      body: 'His first return to NCT 127 in 2024 (the group\'s 8th anniversary) and his full return in 2026 (the 10th anniversary) sent shockwaves through the fandom. SM Entertainment\'s strategy of managing both sides — pushing James back into the group while also building tension around it — split the fanbase into roughly two equal camps: those welcoming James back and those opposed. A side effect is that all content featuring James, both within and outside NCT, generates unusually high engagement — both positive and negative — making James a "controversy magnet" that SM has yet to systematically resolve.',
+      body: 'His first appearance with NCT 127 (as an external artist) in 2024 (the group\'s 8th anniversary) and his full return in 2026 (the 10th anniversary) sent shockwaves through the fandom. SM Entertainment\'s strategy of managing both sides — pushing James back into the group while also building tension around it — split the fanbase into roughly two equal camps: those welcoming James back and those opposed. A side effect is that all content featuring James, both within and outside NCT, generates unusually high engagement — both positive and negative — making James a "controversy magnet" that SM has yet to systematically resolve.',
     },
   ] as Incident[],
 };
@@ -489,7 +489,7 @@ const th: typeof en = {
       period: '2024–ปัจจุบัน',
       title: 'ความแตกแยกในแฟนด้อม NCT 127',
       severity: 'medium',
-      body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 (ครบรอบ 8 ปีวง) และอย่างเต็มรูปแบบในปี 2026 (ครบรอบ 10 ปี) สร้างแรงสั่นสะเทือนในแฟนด้อม กลยุทธ์ SM Entertainment ในการ manage สองฝั่ง — ทั้ง push James กลับเข้าวง และ build กระแส tension — ส่งผลให้แฟนคลับแตกออกเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ยินดีกับ James และฝ่ายที่ต่อต้าน ผลพลอยได้คือทุก content ที่มี James ทั้งใน NCT และนอก NCT ล้วนมี engagement สูงผิดปกติ — ทั้งแง่บวกและแง่ลบ ทำให้ James กลายเป็น "controversy magnet" ที่ SM ยังไม่ได้แก้อย่างเป็นระบบ',
+      body: 'การปรากฏตัวกับ NCT 127 ครั้งแรกในปี 2024 (ครบรอบ 8 ปีวง ในฐานะ external artist) — โดยกลับมา active อย่างเป็นทางการตั้งแต่ธันวาคม 2024 และอย่างเต็มรูปแบบในปี 2026 (ครบรอบ 10 ปี) สร้างแรงสั่นสะเทือนในแฟนด้อม กลยุทธ์ SM Entertainment ในการ manage สองฝั่ง — ทั้ง push James กลับเข้าวง และ build กระแส tension — ส่งผลให้แฟนคลับแตกออกเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ยินดีกับ James และฝ่ายที่ต่อต้าน ผลพลอยได้คือทุก content ที่มี James ทั้งใน NCT และนอก NCT ล้วนมี engagement สูงผิดปกติ — ทั้งแง่บวกและแง่ลบ ทำให้ James กลายเป็น "controversy magnet" ที่ SM ยังไม่ได้แก้อย่างเป็นระบบ',
     },
   ] as Incident[],
 };
