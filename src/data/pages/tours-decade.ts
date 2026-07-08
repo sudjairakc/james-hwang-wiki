@@ -15,7 +15,7 @@ export const eraColors: Record<string, string> = {
   'SOFTEST TOUCH': '#9b7fc8',
   'PULSE': '#5a7c6a',
   'ARE U STILL': '#5a7aaa',
-  'SOUR | HONEY': '#c06080',
+  "CAN\'T LEAVE ALONE": '#c06080',
   'DECADE': '#888888',
 };
 
@@ -54,7 +54,7 @@ export const setlist = [
       { n: 2, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
       { n: 3, title: 'HOW DOES IT FEEL', era: 'PULSE' },
       { n: 4, title: 'SAVE ME', era: 'PULSE' },
-      { n: 5, title: "CAN'T LEAVE ALONE", era: 'SOUR | HONEY' },
+      { n: 5, title: "CAN\'T LEAVE ALONE", era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
@@ -63,7 +63,7 @@ export const setlist = [
       { n: 6, title: 'LIKE I DO (Solo Version)', era: 'LIKE I DO' },
       { n: 7, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
       { n: 8, title: 'CRUSH (Solo Version)', era: 'SOFTEST TOUCH' },
-      { n: 9, title: 'HONEY', era: 'SOUR | HONEY' },
+      { n: 9, title: 'HONEY', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
@@ -71,7 +71,7 @@ export const setlist = [
     songs: [
       { n: 10, title: 'ALL FOR YOU', era: 'PULSE' },
       { n: 11, title: 'BREATHE', era: 'ARE U STILL' },
-      { n: 12, title: 'SHOOK', era: 'SOUR | HONEY' },
+      { n: 12, title: 'SHOOK', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
@@ -81,7 +81,7 @@ export const setlist = [
       { n: 14, title: 'NEW', era: 'DECADE' },
       { n: 15, title: 'NEW', era: 'DECADE' },
       { n: 16, title: 'NEW', era: 'DECADE' },
-      { n: 17, title: 'SOMETHING REAL', era: 'SOUR | HONEY' },
+      { n: 17, title: 'SOMETHING REAL', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
@@ -90,7 +90,7 @@ export const setlist = [
       { n: 18, title: 'TALK TO ME', era: 'PULSE' },
       { n: 19, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
       { n: 20, title: 'NO RESERVATION', era: 'SOFTEST TOUCH' },
-      { n: 21, title: "HE'S NOT ME", era: 'SOUR | HONEY' },
+      { n: 21, title: "HE'S NOT ME", era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
@@ -99,17 +99,17 @@ export const setlist = [
       { n: 22, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
       { n: 23, title: 'IF I KNEW', era: 'ARE U STILL' },
       { n: 24, title: 'CALL ME', era: 'LIKE I DO' },
-      { n: 25, title: 'COME BACK TO ME', era: 'SOUR | HONEY' },
-      { n: 26, title: 'LOVE THIS PAIN AWAY', era: 'SOUR | HONEY' },
+      { n: 25, title: 'COME BACK TO ME', era: "CAN\'T LEAVE ALONE" },
+      { n: 26, title: 'LOVE THIS PAIN AWAY', era: "CAN\'T LEAVE ALONE" },
       { n: 27, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
     ],
   },
   {
     vcr: 7, title: 'SOUR RESOLUTION', subtitle: 'Encore',
     songs: [
-      { n: 28, title: 'SOUR', era: 'SOUR | HONEY' },
-      { n: 29, title: 'MYSTERY LADY', era: 'SOUR | HONEY' },
-      { n: 30, title: 'TAKE YOU TONIGHT', era: 'SOUR | HONEY' },
+      { n: 28, title: 'SOUR', era: "CAN\'T LEAVE ALONE" },
+      { n: 29, title: 'MYSTERY LADY', era: "CAN\'T LEAVE ALONE" },
+      { n: 30, title: 'TAKE YOU TONIGHT', era: "CAN\'T LEAVE ALONE" },
     ],
   },
 ];
@@ -117,7 +117,7 @@ export const setlist = [
 // Shared — era song-count breakdown (era names are proper nouns, not translated).
 export const eraBreakdown: Record<string, number> = {
   'LIKE I DO': 3, 'SOFTEST TOUCH': 4, 'PULSE': 4,
-  'ARE U STILL': 3, 'SOUR | HONEY': 7, 'DECADE': 4,
+  'ARE U STILL': 3, "CAN\'T LEAVE ALONE": 7, 'DECADE': 4,
 };
 
 // Shared — KPI card values, aligned by index with ui.kpiLabels below.

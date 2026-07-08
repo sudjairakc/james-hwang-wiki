@@ -39,10 +39,10 @@ export const mvMeta: Array<{
   { title: 'TEARS ON A PRETTY FACE', type: 'MV', date: '2024.01.08', era: 'ARE U STILL', eraColor: '#5a7aaa', director: 'Jenn Nkiru', palette: 'Night street black · Electric accent · Chrome flash', views: '240M+' },
   { title: 'BREATHE', type: 'Performance', date: '2024.02.04', era: 'ARE U STILL', eraColor: '#5a7aaa', director: 'JH Company Visual Team', palette: 'Pure white · Hard shadow · Gold light', views: '62M+' },
 
-  // SOUR|HONEY era
-  { title: "CAN'T LEAVE ALONE (feat. Pharrell Williams)", type: 'MV', date: '2025.02.03', era: 'SOUR|HONEY', eraColor: '#c06080', director: 'Dave Meyers', palette: 'Saturated primary colors · White sneakers · Bold pattern', views: '175M+' },
-  { title: 'SOUR', type: 'MV', date: '2025.02.10', era: 'SOUR|HONEY', eraColor: '#c06080', director: 'Lumpens', palette: 'Desaturated blue-white · Steel grey · Deep shadow', views: '120M+' },
-  { title: 'HONEY', type: 'MV', date: '2025.02.10', era: 'SOUR|HONEY', eraColor: '#c06080', director: 'Lumpens', palette: 'Warm daylight · Honey gold · Natural ivory', views: '108M+' },
+  // CAN\'T LEAVE ALONE era
+  { title: "CAN\'T LEAVE ALONE (feat. Pharrell Williams)", type: 'MV', date: '2025.02.03', era: "CAN\'T LEAVE ALONE", eraColor: '#c06080', director: 'Dave Meyers', palette: 'Saturated primary colors · White sneakers · Bold pattern', views: '175M+' },
+  { title: 'SOUR', type: 'MV', date: '2025.02.10', era: "CAN\'T LEAVE ALONE", eraColor: '#c06080', director: 'Lumpens', palette: 'Desaturated blue-white · Steel grey · Deep shadow', views: '120M+' },
+  { title: 'HONEY', type: 'MV', date: '2025.02.10', era: "CAN\'T LEAVE ALONE", eraColor: '#c06080', director: 'Lumpens', palette: 'Warm daylight · Honey gold · Natural ivory', views: '108M+' },
 
   // DECADE era
   { title: 'NEW', type: 'MV', date: '2026.09.09', era: 'DECADE', eraColor: '#6e5a7c', director: 'Kogonada', palette: 'Muted purple · Ash grey · Warm black', views: '78M+' },
@@ -54,7 +54,7 @@ export const eraOrder: Array<{ era: string; color: string }> = [
   { era: 'SOFTEST TOUCH', color: '#9b7fc8' },
   { era: 'PULSE', color: '#5a7c6a' },
   { era: 'ARE U STILL', color: '#5a7aaa' },
-  { era: 'SOUR|HONEY', color: '#c06080' },
+  { era: "CAN\'T LEAVE ALONE", color: '#c06080' },
   { era: 'DECADE', color: '#6e5a7c' },
 ];
 

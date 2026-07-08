@@ -527,7 +527,7 @@ Received a nomination for Best Traditional R&B Performance ("Just A Dream").
 
 Marked a significant milestone for an Asian artist within the progressive R&B ecosystem at the global critics circuit level.
 
-10/02/2025: Released his third album "CAN'T LEAVE ALONE" (SOUR | HONEY era) without promotion in Korea, focusing on US/global platforms (a business move + personal stance).
+10/02/2025: Released his third album "CAN'T LEAVE ALONE" (CAN'T LEAVE ALONE era) without promotion in Korea, focusing on US/global platforms (a business move + personal stance).
 
 27/02/2025: Korean Music Awards (did not attend, clashed with the tour).
 
@@ -577,7 +577,7 @@ Attended the Melon Music Awards.
 
 Received Top 10 Artist (Bonsang).
 
-Reflected continuing domestic streaming impact even without directly promoting the CAN'T LEAVE ALONE (SOUR | HONEY) album in Korea.
+Reflected continuing domestic streaming impact even without directly promoting the CAN'T LEAVE ALONE album in Korea.
 
 Attended the Soul Train Music Awards.
 

@@ -113,7 +113,7 @@ Tears On A Pretty Face <br />
 | Best Traditional R&B Performance | NOMINATION |
 | global neo-soul crossover breakthrough recognition phase | — |
 
-## 2025 (SOUR | HONEY)
+## 2025 (CAN'T LEAVE ALONE)
 
 ### Award ประจำปี
 

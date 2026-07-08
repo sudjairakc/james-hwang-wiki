@@ -11,7 +11,7 @@ export const eraColors: Record<string, string> = {
   'SOFTEST TOUCH': '#9b7fc8',
   'PULSE': '#5a7c6a',
   'ARE U STILL': '#5a7aaa',
-  "CAN'T LEAVE ALONE": '#c06080',
+  "CAN\'T LEAVE ALONE": '#c06080',
   'DECADE': '#6e5a7c',
 };
 
@@ -77,7 +77,7 @@ const en = {
     { era: 'SOFTEST TOUCH', year: '2022', sound: 'Synth funk + indie soul', meaning: 'Growing more confident, but still carrying bedroom-session intimacy' },
     { era: 'PULSE', year: '2023', sound: 'Fully self-produced for the first time · groove-first design', meaning: 'The falsetto hook becomes a signature · every song built for live performance' },
     { era: 'ARE U STILL', year: '2024', sound: 'Live-influenced groove · analog texture', meaning: 'Leaving PULSE\'s precision for humanized rhythm, deliberately referencing the MJ/Prince era' },
-    { era: "CAN'T LEAVE ALONE", year: '2025', sound: 'Contemporary R&B core', meaning: 'The maturity of someone past the Grammy era — accessible but not shallow' },
+    { era: "CAN\'T LEAVE ALONE", year: '2025', sound: 'Contemporary R&B core', meaning: 'The maturity of someone past the Grammy era — accessible but not shallow' },
   ],
   motifs: [
     { motif: 'Waiting for the other person to decide first', songs: 'SAY · EVERLASTING · CAN YOU LOVE ME TONIGHT?' },
@@ -91,7 +91,7 @@ const en = {
     { era: 'SOFTEST TOUCH', stars: '★★★★', epithet: 'The permission slip he wrote himself', note: 'Proof of a songwriter with a distinct voice — OVERSIZED JACKET / NO RESERVATIONS show an emotional specificity the K-pop system rarely permits' },
     { era: 'PULSE', stars: '★★★★½', epithet: 'The statement album', note: 'The most coherent album in the discography — every decision has intention · TALK TO ME is where dark alt-R&B works best in the catalog' },
     { era: 'ARE U STILL', stars: '★★★★★', epithet: 'The apex', note: 'SELFISH is a masterstroke of sequencing · the Grammy for Best Progressive R&B is well-earned — if PULSE announced the identity, this proves it was no fluke' },
-    { era: "CAN'T LEAVE ALONE", stars: '★★★★', epithet: 'The graceful recalibration', note: 'A deliberate cooldown after the peak — the Pharrell collab is the highlight, but the HONEY side loses momentum toward the end' },
+    { era: "CAN\'T LEAVE ALONE", stars: '★★★★', epithet: 'The graceful recalibration', note: 'A deliberate cooldown after the peak — the Pharrell collab is the highlight, but the HONEY side loses momentum toward the end' },
   ],
   perspectives: [
     {
@@ -117,7 +117,7 @@ const en = {
       color: '#5a7c6a',
       points: [
         '4 projects in 4 years (2022–2026) + a multi-leg world tour + overlapping NCT 127 activity — a heavy load for someone holding all creative control himself',
-        "CAN'T LEAVE ALONE sounds under-baked in places and was under-promoted because of scheduling conflicts, not quality",
+        "CAN\'T LEAVE ALONE sounds under-baked in places and was under-promoted because of scheduling conflicts, not quality",
         'DECADE (2026) arrived too fast for an anthology — it feels like a label/commercial decision · contrast with Frank Ocean, who waited 4 years between albums until anticipation itself became weight',
       ],
     },
@@ -180,7 +180,7 @@ const en = {
     { era: 'SOFTEST TOUCH', year: '2022', role: 'Co-write + co-production', detail: 'Still relying on the SM producer network, but creative control begins to rise' },
     { era: 'PULSE', year: '2023', role: 'Sole producer (first time)', detail: 'Produced & arranged the whole album alone — the point where the authorship claim is heaviest' },
     { era: 'ARE U STILL', year: '2024', role: 'Lead producer + collaborators', detail: 'Composed with Kyle Dion, Leven Kali · arranged with Sam Wills, Mack Keane' },
-    { era: "CAN'T LEAVE ALONE", year: '2025', role: 'Co-produce / co-write', detail: 'With Pino, JUNNY · track 1 with Pharrell Williams' },
+    { era: "CAN\'T LEAVE ALONE", year: '2025', role: 'Co-produce / co-write', detail: 'With Pino, JUNNY · track 1 with Pharrell Williams' },
   ],
   realismTests: [
     {
@@ -243,7 +243,7 @@ const en = {
   ],
   entryPoints: [
     { mood: 'smooth, groovy R&B', songs: 'LIKE I DO · CRUSH · TEARS ON A PRETTY FACE' },
-    { mood: 'feel-good songs, nothing heavy', songs: "HOW DOES IT FEEL? · CAN'T LEAVE ALONE · BESTFRIEND" },
+    { mood: 'feel-good songs, nothing heavy', songs: "HOW DOES IT FEEL? · CAN\'T LEAVE ALONE · BESTFRIEND" },
     { mood: 'beautiful sad songs', songs: 'IF I KNEW · OVERSIZED JACKET · SOMEWHERE SOMEHOW' },
     { mood: 'songs that make you feel seen', songs: 'PURPOSE · SAVE ME · AWKWARD MAYBE' },
     { mood: 'starting from the very best', songs: 'SAY · SOFTEST TOUCH · SELFISH' },
@@ -311,7 +311,7 @@ const th: typeof en = {
     { era: 'SOFTEST TOUCH', year: '2022', sound: 'Synth funk + indie soul', meaning: 'เริ่ม confident ขึ้น แต่ยังมี intimacy แบบ bedroom session' },
     { era: 'PULSE', year: '2023', sound: 'Self-produced ครบทุกเพลงครั้งแรก · groove-first design', meaning: 'Falsetto hook กลายเป็น signature · ทุกเพลงถูก build เพื่อ live performance' },
     { era: 'ARE U STILL', year: '2024', sound: 'Live-influenced groove · analog texture', meaning: 'ออกจาก precision ของ PULSE สู่ humanized rhythm อ้างอิง MJ/Prince era อย่างตั้งใจ' },
-    { era: "CAN'T LEAVE ALONE", year: '2025', sound: 'Contemporary R&B core', meaning: 'Maturity ของคนที่ผ่าน Grammy era แล้ว — accessible แต่ไม่ shallow' },
+    { era: "CAN\'T LEAVE ALONE", year: '2025', sound: 'Contemporary R&B core', meaning: 'Maturity ของคนที่ผ่าน Grammy era แล้ว — accessible แต่ไม่ shallow' },
   ],
   motifs: [
     { motif: 'รอให้อีกฝ่ายตัดสินใจก่อน', songs: 'SAY · EVERLASTING · CAN YOU LOVE ME TONIGHT?' },
@@ -325,7 +325,7 @@ const th: typeof en = {
     { era: 'SOFTEST TOUCH', stars: '★★★★', epithet: 'The permission slip he wrote himself', note: 'พิสูจน์ว่าเป็น songwriter ที่มี distinct voice — OVERSIZED JACKET / NO RESERVATIONS แสดง emotional specificity ที่ K-pop system ไม่ค่อยอนุญาต' },
     { era: 'PULSE', stars: '★★★★½', epithet: 'The statement album', note: 'อัลบั้มที่ coherent ที่สุดใน discography — ทุกการตัดสินใจมี intention · TALK TO ME คือจุดที่ dark alt-R&B ทำงานดีที่สุดใน catalog' },
     { era: 'ARE U STILL', stars: '★★★★★', epithet: 'The apex', note: 'SELFISH คือ masterstroke ของ sequencing · Grammy Best Progressive R&B สมศักดิ์ศรี — ถ้า PULSE คือการประกาศตัวตน นี่คือการพิสูจน์ว่าไม่ใช่ fluke' },
-    { era: "CAN'T LEAVE ALONE", stars: '★★★★', epithet: 'The graceful recalibration', note: 'Deliberate cooldown หลัง peak — Pharrell collab คือ highlight แต่ HONEY side มี momentum หลุดมือช่วงท้าย' },
+    { era: "CAN\'T LEAVE ALONE", stars: '★★★★', epithet: 'The graceful recalibration', note: 'Deliberate cooldown หลัง peak — Pharrell collab คือ highlight แต่ HONEY side มี momentum หลุดมือช่วงท้าย' },
   ],
   perspectives: [
     {
@@ -351,7 +351,7 @@ const th: typeof en = {
       color: '#5a7c6a',
       points: [
         '4 projects ใน 4 ปี (2022–2026) + world tour ข้าม leg + กิจกรรม NCT 127 overlap — หนักมากสำหรับคนที่ถือ creative control ทุกอย่างเอง',
-        "CAN'T LEAVE ALONE ฟังดู under-baked บางจุด และถูก under-promote เพราะ scheduling conflict ไม่ใช่ quality",
+        "CAN\'T LEAVE ALONE ฟังดู under-baked บางจุด และถูก under-promote เพราะ scheduling conflict ไม่ใช่ quality",
         'DECADE (2026) ออกเร็วเกินไปสำหรับ anthology — รู้สึกเหมือน label/commercial decision · contrast กับ Frank Ocean ที่รอ 4 ปีระหว่างอัลบั้มจน anticipation สะสมเป็น weight',
       ],
     },
@@ -414,7 +414,7 @@ const th: typeof en = {
     { era: 'SOFTEST TOUCH', year: '2022', role: 'Co-write + co-production', detail: 'ยังพึ่ง SM producer network แต่ creative control เริ่มสูงขึ้น' },
     { era: 'PULSE', year: '2023', role: 'Sole producer (ครั้งแรก)', detail: 'Produced & arranged ทั้งอัลบั้มคนเดียว — จุดที่ authorship claim หนักสุด' },
     { era: 'ARE U STILL', year: '2024', role: 'Lead producer + collaborators', detail: 'Composed ร่วม Kyle Dion, Leven Kali · arranged ร่วม Sam Wills, Mack Keane' },
-    { era: "CAN'T LEAVE ALONE", year: '2025', role: 'Co-produce / co-write', detail: 'ร่วม Pino, JUNNY · track 1 ร่วม Pharrell Williams' },
+    { era: "CAN\'T LEAVE ALONE", year: '2025', role: 'Co-produce / co-write', detail: 'ร่วม Pino, JUNNY · track 1 ร่วม Pharrell Williams' },
   ],
   realismTests: [
     {
@@ -477,7 +477,7 @@ const th: typeof en = {
   ],
   entryPoints: [
     { mood: 'R&B smooth โยกๆ', songs: 'LIKE I DO · CRUSH · TEARS ON A PRETTY FACE' },
-    { mood: 'เพลงฟีลดีๆ ไม่ต้องคิดมาก', songs: "HOW DOES IT FEEL? · CAN'T LEAVE ALONE · BESTFRIEND" },
+    { mood: 'เพลงฟีลดีๆ ไม่ต้องคิดมาก', songs: "HOW DOES IT FEEL? · CAN\'T LEAVE ALONE · BESTFRIEND" },
     { mood: 'เพลงเศร้าสวยๆ', songs: 'IF I KNEW · OVERSIZED JACKET · SOMEWHERE SOMEHOW' },
     { mood: 'เพลงที่ฟังแล้วรู้สึก seen', songs: 'PURPOSE · SAVE ME · AWKWARD MAYBE' },
     { mood: 'เริ่มจากจุดที่ดีที่สุด', songs: 'SAY · SOFTEST TOUCH · SELFISH' },

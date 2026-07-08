@@ -78,7 +78,7 @@ Career peak ที่สมเหตุสมผลในทุกมิติ T
 ### CAN'T LEAVE ALONE (2025) — ★★★★
 *"The graceful recalibration"*
 
-หลัง ARE U STILL อัลบั้มนี้ฟังดูเป็น deliberate cooldown มากกว่า forward leap Pharrell collaboration ใน CAN'T LEAVE ALONE (feat. Pharrell) คือ highlight ที่ไม่มีเพลงไหนในอัลบั้มเข้าใกล้ได้ dual concept SOUR/HONEY ทำงานได้ดีในแง่ structure แต่ HONEY side มี momentum ที่ค่อยๆ หลุดมือหลัง HE'S NOT ME ยังคงเป็นอัลบั้มที่ดีมากในมาตรฐานทั่วไป แต่วางอยู่ถัดจาก ARE U STILL ทำให้รู้สึก modest กว่าที่ควร
+หลัง ARE U STILL อัลบั้มนี้ฟังดูเป็น deliberate cooldown มากกว่า forward leap Pharrell collaboration ใน CAN'T LEAVE ALONE (feat. Pharrell) คือ highlight ที่ไม่มีเพลงไหนในอัลบั้มเข้าใกล้ได้ dual concept CAN'T LEAVE ALONE ทำงานได้ดีในแง่ structure แต่ HONEY side มี momentum ที่ค่อยๆ หลุดมือหลัง HE'S NOT ME ยังคงเป็นอัลบั้มที่ดีมากในมาตรฐานทั่วไป แต่วางอยู่ถัดจาก ARE U STILL ทำให้รู้สึก modest กว่าที่ควร
 
 ---
 

@@ -331,7 +331,7 @@ Strategic rationale:
 
 | Era Usage | Scope |
 |----------|------|
-| Production window | PULSE → ARE U STILL → SOUR | HONEY |
+| Production window | PULSE → ARE U STILL → CAN'T LEAVE ALONE |
 
 ---
 

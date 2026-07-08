@@ -177,7 +177,7 @@ const en = {
       category: 'personal',
       severity: 'low',
       status: 'faded',
-      body: 'A short relationship between James and Hanni was confirmed by sources close to the parties, though both chose not to go public. Rumors circulating on social media during the SOUR|HONEY era (2025) cited social media interaction as the surface reason, though insiders viewed that as a cover story. A brief age-gap debate flared up in the fandom.',
+      body: 'A short relationship between James and Hanni was confirmed by sources close to the parties, though both chose not to go public. Rumors circulating on social media during the CAN\'T LEAVE ALONE era (2025) cited social media interaction as the surface reason, though insiders viewed that as a cover story. A brief age-gap debate flared up in the fandom.',
       outcome: 'Ended before James announced his relationship with Ashley Liao. No official confirmation was ever given by either side.',
     },
     {
@@ -346,7 +346,7 @@ const th: typeof en = {
       category: 'personal',
       severity: 'low',
       status: 'faded',
-      body: 'ความสัมพันธ์ระยะสั้นระหว่าง James และ Hanni ถูกยืนยันโดยแหล่งข่าวใกล้ชิด ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวลือที่ปรากฏบนโซเชียลช่วง SOUR|HONEY (2025) อ้างถึง social media interaction เป็น surface reason แต่วงในมองว่าเป็น cover story กระแสถกเถียงเรื่องช่วงอายุเกิดขึ้นในแฟนด้อมสั้นๆ',
+      body: 'ความสัมพันธ์ระยะสั้นระหว่าง James และ Hanni ถูกยืนยันโดยแหล่งข่าวใกล้ชิด ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวลือที่ปรากฏบนโซเชียลช่วง CAN\'T LEAVE ALONE (2025) อ้างถึง social media interaction เป็น surface reason แต่วงในมองว่าเป็น cover story กระแสถกเถียงเรื่องช่วงอายุเกิดขึ้นในแฟนด้อมสั้นๆ',
       outcome: 'สิ้นสุดก่อน James ประกาศความสัมพันธ์กับ Ashley Liao ไม่มีการยืนยันอย่างเป็นทางการจากทุกฝ่าย',
     },
     {

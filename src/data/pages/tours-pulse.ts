@@ -12,7 +12,7 @@ export const eraColors: Record<string, string> = {
   'SOFTEST TOUCH': '#9b7fc8',
   'PULSE': '#5a7c6a',
   'ARE U STILL': '#5a7aaa',
-  'SOUR | HONEY': '#c06080',
+  "CAN\'T LEAVE ALONE": '#c06080',
 };
 
 // Show format — numeric/time values, aligned by index with `formatVersions` below.

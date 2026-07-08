@@ -127,7 +127,7 @@ export const genreMap = (() => {
     { title: 'SOFTEST TOUCH', year: 2022, color: '#9b7fc8', genres: ['Indie / Alt Pop', 'Pop R&B', 'R&B'] },
     { title: 'PULSE', year: 2023, color: '#5a7c6a', genres: ['Pop R&B', 'R&B', 'Synth Funk', 'Nu-Disco'] },
     { title: 'ARE U STILL', year: 2024, color: '#5a7aaa', genres: ['R&B', 'Alternative R&B', 'Funk', 'Soul', 'Neo-Soul'] },
-    { title: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', genres: ['R&B', 'Contemporary R&B', 'Soul'] },
+    { title: "CAN\'T LEAVE ALONE", year: 2025, color: '#c06080', genres: ['R&B', 'Contemporary R&B', 'Soul'] },
     { title: 'DECADE', year: 2026, color: '#6e5a7c', genres: ['Pop R&B', 'R&B', 'Soul', 'Neo-Soul'] },
   ];
 
@@ -202,11 +202,11 @@ const en = {
     },
     {
       slug: 'sour-honey',
-      title: "CAN'T LEAVE ALONE",
-      subtitle: '3rd Studio Album · SOUR | HONEY era',
+      title: "CAN\'T LEAVE ALONE",
+      subtitle: '3rd Studio Album · CAN\'T LEAVE ALONE era',
       type: '3rd Studio Album',
       era: 'Post-Grammy',
-      highlight: "SOUR | HONEY dual narrative · CAN'T LEAVE ALONE feat. Pharrell Williams 260M+",
+      highlight: "CAN\'T LEAVE ALONE dual narrative · CAN\'T LEAVE ALONE feat. Pharrell Williams 260M+",
     },
     {
       slug: 'decade',
@@ -281,11 +281,11 @@ const th: typeof en = {
     },
     {
       slug: 'sour-honey',
-      title: "CAN'T LEAVE ALONE",
-      subtitle: 'สตูดิโออัลบั้มที่ 3 · ยุค SOUR | HONEY',
+      title: "CAN\'T LEAVE ALONE",
+      subtitle: 'สตูดิโออัลบั้มที่ 3 · ยุค CAN\'T LEAVE ALONE',
       type: 'สตูดิโออัลบั้มที่ 3',
       era: 'หลังแกรมมี่',
-      highlight: "เรื่องราวคู่ขนาน SOUR | HONEY · CAN'T LEAVE ALONE feat. Pharrell Williams ทะลุ 260M+",
+      highlight: "เรื่องราวคู่ขนาน CAN\'T LEAVE ALONE · CAN\'T LEAVE ALONE feat. Pharrell Williams ทะลุ 260M+",
     },
     {
       slug: 'decade',

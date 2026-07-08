@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-CAN'T LEAVE ALONE is the third studio album by GONUNMA (James Hwang) under J.H Company, released through an international distribution partnership with Warner Music Korea. Released on February 10, 2025, it is seen as a clear return to a Contemporary R&B core following the neo-soul / funk / disco experimentation of ARE U STILL (2024) — the album's dual concept "SOUR | HONEY" became the name fans and media use for this era.  <br />
+CAN'T LEAVE ALONE is the third studio album by GONUNMA (James Hwang) under J.H Company, released through an international distribution partnership with Warner Music Korea. Released on February 10, 2025, it is seen as a clear return to a Contemporary R&B core following the neo-soul / funk / disco experimentation of ARE U STILL (2024) — the album's dual concept "CAN'T LEAVE ALONE" became the name fans and media use for this era.  <br />
 The album was developed as a collaborative R&B ecosystem, working with
 * Pino
 * JUNNY
@@ -134,7 +134,7 @@ Warner Music Korea <br />
 
 * This album marks a return to an R&B core after the experimental soul/disco of the previous era.
 * Uses a dual concept structure (SOUR vs HONEY) to tell a two-sided relationship narrative — SOUR side (tracks 1–5): obsession → playing hard to get → defeat → unattainable → secretly winning her over / I WANT YOU BACK (Interlude) is the narrative's flip point / HONEY side (tracks 7–10): confident → asking to come back → wanting something real → admitting he's falling apart.
-* The dual concept name "SOUR | HONEY" became the name used for this era (era color, merchandise, editorial), even though the album itself is titled CAN'T LEAVE ALONE.
+* The dual concept name "CAN'T LEAVE ALONE" became the name used for this era (era color, merchandise, editorial), even though the album itself is titled CAN'T LEAVE ALONE.
 * The collaboration with Pharrell Williams added credibility at a global production level.
 * The overall sound was designed to be more accessible, in order to reconnect with the existing fanbase while maintaining artistic maturity.
 * Viewed as a “balance album” — between artistry and market reach.

@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-CAN'T LEAVE ALONE เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ J.H Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024) — dual concept "SOUR | HONEY" ภายในอัลบั้มกลายเป็นชื่อเรียก era นี้ในหมู่แฟนและสื่อ  <br />
+CAN'T LEAVE ALONE เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ J.H Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024) — dual concept "CAN'T LEAVE ALONE" ภายในอัลบั้มกลายเป็นชื่อเรียก era นี้ในหมู่แฟนและสื่อ  <br />
 อัลบั้มพัฒนาในรูปแบบ collaborative R&B ecosystem โดยร่วมงานกับ
 * Pino
 * JUNNY
@@ -134,7 +134,7 @@ Warner Music Korea <br />
 
 * อัลบั้มนี้เป็นการ return to R&B core หลังจาก experimental soul/disco ใน era ก่อน
 * ใช้โครงสร้าง dual concept (SOUR vs HONEY) เพื่อเล่า narrative ของความสัมพันธ์แบบสองด้าน — SOUR side (track 1–5): obsession → เล่นตัว → พ่ายแพ้ → จับต้องไม่ได้ → ได้เธอมาแบบลับๆ / I WANT YOU BACK (Interlude) เป็นจุด flip narrative / HONEY side (track 7–10): confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง
-* ชื่อ dual concept "SOUR | HONEY" กลายเป็นชื่อเรียก era นี้ (era color, goods, editorial) แม้ตัวอัลบั้มใช้ชื่อ CAN'T LEAVE ALONE
+* ชื่อ dual concept "CAN'T LEAVE ALONE" กลายเป็นชื่อเรียก era นี้ (era color, goods, editorial) แม้ตัวอัลบั้มใช้ชื่อ CAN'T LEAVE ALONE
 * มีการร่วมงานกับ Pharrell Williams ซึ่งเพิ่ม credibility ในระดับ global production
 * ซาวด์โดยรวมถูกออกแบบให้ accessible มากขึ้น เพื่อ reconnect กับแฟนกลุ่มเดิม ขณะยังรักษา artistic maturity
 * ถูกมองว่าเป็น “balance album” — ระหว่าง artistry และ market reach

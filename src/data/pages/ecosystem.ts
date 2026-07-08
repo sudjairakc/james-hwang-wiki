@@ -117,7 +117,7 @@ const en = {
       campaigns: [
         { name: 'GONUNMA × Nike Capsule Vol.1', year: '2023', desc: 'Co-designed capsule collection with Nike Sportswear team: 5-piece set (coach jacket, cargo pants, tank, 2 colorway Air Force 1s). Design concept: stage wardrobe meets daily utility. Dropped globally via SNKRS app. Sold out in under 3 hours.' },
         { name: 'PULSE Tour Integration', year: '2023-24', desc: 'James wore Nike across all 64 PULSE Tour dates — backstage content pushed 40M+ impressions. Nike integrated tour-exclusive colorways not available in retail, creating secondary market demand.' },
-        { name: 'GONUNMA × Nike Capsule Vol.2', year: '2025', desc: "SOUR|HONEY era drop. Duality concept: Vol.2A (SOUR — minimal black palette) and Vol.2B (HONEY — warm cream/gold). First time a Nike capsule was released in two simultaneous colorway stories. Nike's Asia streetwear division reported highest K-pop adjacent campaign performance to date." },
+        { name: 'GONUNMA × Nike Capsule Vol.2', year: '2025', desc: "CAN\'T LEAVE ALONE era drop. Duality concept: Vol.2A (SOUR — minimal black palette) and Vol.2B (HONEY — warm cream/gold). First time a Nike capsule was released in two simultaneous colorway stories. Nike's Asia streetwear division reported highest K-pop adjacent campaign performance to date." },
       ],
       brandFit: "Nike's recruitment was driven by tour wardrobe discussions — the brand offered to supply PULSE Tour looks and the relationship evolved into co-design. James's dance background made the sportswear alignment genuinely credible to sneaker culture audiences.",
     },
@@ -128,7 +128,7 @@ const en = {
       deliverables: ['2 regional campaign shoots/yr', 'Fragrance and skincare product seeding', 'Seoul and Bangkok VIP events', 'Digital content (Weibo, Instagram, LINE)'],
       campaigns: [
         { name: 'Dior Homme Intense Campaign Asia', year: '2024', desc: 'Regional face of Dior Homme Intense fragrance across Korea, Thailand, Japan, and Taiwan. Campaign art direction: low-light studio environment, no gimmick — James in the act of listening, not performing. Shot by Hong Kong-based photographer Leslie Zhang.' },
-        { name: 'Sauvage Elixir Korea Launch', year: '2024', desc: "Co-branded launch event at Dior's Seoul Cheongdam flagship. James hosted a closed listening session of unreleased SOUR|HONEY tracks as ambient backdrop — 200 press/VIP guests. Positioned fragrance launch as artistic event rather than retail activation." },
+        { name: 'Sauvage Elixir Korea Launch', year: '2024', desc: "Co-branded launch event at Dior's Seoul Cheongdam flagship. James hosted a closed listening session of unreleased CAN\'T LEAVE ALONE tracks as ambient backdrop — 200 press/VIP guests. Positioned fragrance launch as artistic event rather than retail activation." },
         { name: 'Dior Beauty Men Asia Digital Series', year: '2025', desc: "6-part skincare content series across Dior Beauty's regional channels. James narrates his pre-show routine using Dior skincare products. Series was produced entirely in-house by JH Company — first time Dior Beauty Asia allowed full creative control to a regional ambassador." },
       ],
       brandFit: "Dior Beauty specifically sought a K-adjacent male ambassador who would not lean into traditional idol aesthetics. James's art-house public image and resistance to conventional beauty marketing made him rare in this category — a male grooming face who does not self-describe as a beauty influencer.",
@@ -241,7 +241,7 @@ const th: typeof en = {
       campaigns: [
         { name: 'GONUNMA × Nike Capsule Vol.1', year: '2023', desc: 'คอลเลกชันแคปซูลออกแบบร่วมกับทีม Nike Sportswear: เซ็ต 5 ชิ้น (coach jacket, cargo pants, tank, Air Force 1 2 สี) คอนเซ็ปต์: wardrobe เวทีเจอ utility ประจำวัน วางขายทั่วโลกผ่าน SNKRS app ขายหมดในไม่ถึง 3 ชั่วโมง' },
         { name: 'PULSE Tour Integration', year: '2023-24', desc: 'James ใส่ Nike ครบทั้ง 64 รอบ PULSE Tour — คอนเทนต์ backstage ดัน 40M+ impressions Nike ใส่ colorway เฉพาะทัวร์ที่ไม่มีขายในร้าน สร้างดีมานด์ตลาดรอง' },
-        { name: 'GONUNMA × Nike Capsule Vol.2', year: '2025', desc: 'ดรอปยุค SOUR|HONEY คอนเซ็ปต์ duality: Vol.2A (SOUR — โทนดำมินิมอล) และ Vol.2B (HONEY — ครีม/ทองอุ่น) เป็นครั้งแรกที่แคปซูล Nike ออก 2 เรื่องราว colorway พร้อมกัน ดิวิชัน streetwear เอเชียของ Nike รายงานผลแคมเปญสาย K-pop สูงสุดเท่าที่เคยมี' },
+        { name: 'GONUNMA × Nike Capsule Vol.2', year: '2025', desc: 'ดรอปยุค CAN\'T LEAVE ALONE คอนเซ็ปต์ duality: Vol.2A (SOUR — โทนดำมินิมอล) และ Vol.2B (HONEY — ครีม/ทองอุ่น) เป็นครั้งแรกที่แคปซูล Nike ออก 2 เรื่องราว colorway พร้อมกัน ดิวิชัน streetwear เอเชียของ Nike รายงานผลแคมเปญสาย K-pop สูงสุดเท่าที่เคยมี' },
       ],
       brandFit: 'การชวนของ Nike เริ่มจากการคุยเรื่อง wardrobe ทัวร์ — แบรนด์เสนอ supply ลุค PULSE Tour แล้วความสัมพันธ์พัฒนาเป็น co-design พื้นฐานการเต้นของ James ทำให้ความเข้ากับ sportswear น่าเชื่อถือจริงในสายตาคน sneaker culture',
     },
@@ -252,7 +252,7 @@ const th: typeof en = {
       deliverables: ['ถ่ายแคมเปญระดับภูมิภาค 2 ครั้ง/ปี', 'product seeding น้ำหอมและ skincare', 'อีเวนต์ VIP โซลและกรุงเทพ', 'คอนเทนต์ดิจิทัล (Weibo, Instagram, LINE)'],
       campaigns: [
         { name: 'Dior Homme Intense Campaign Asia', year: '2024', desc: 'เป็นหน้าระดับภูมิภาคของน้ำหอม Dior Homme Intense ในเกาหลี ไทย ญี่ปุ่น และไต้หวัน art direction: สตูดิโอแสงน้อย ไม่มีลูกเล่น — James ในท่ากำลังฟัง ไม่ใช่กำลังแสดง ถ่ายโดยช่างภาพฐานฮ่องกง Leslie Zhang' },
-        { name: 'Sauvage Elixir Korea Launch', year: '2024', desc: 'อีเวนต์เปิดตัว co-branded ที่ Dior flagship เชิงดัมโซล James จัดเซสชันฟังเพลง SOUR|HONEY ที่ยังไม่ปล่อยเป็น backdrop บรรยากาศ — แขกสื่อ/VIP 200 คน วางการเปิดตัวน้ำหอมเป็นอีเวนต์เชิงศิลปะมากกว่า retail activation' },
+        { name: 'Sauvage Elixir Korea Launch', year: '2024', desc: 'อีเวนต์เปิดตัว co-branded ที่ Dior flagship เชิงดัมโซล James จัดเซสชันฟังเพลง CAN\'T LEAVE ALONE ที่ยังไม่ปล่อยเป็น backdrop บรรยากาศ — แขกสื่อ/VIP 200 คน วางการเปิดตัวน้ำหอมเป็นอีเวนต์เชิงศิลปะมากกว่า retail activation' },
         { name: 'Dior Beauty Men Asia Digital Series', year: '2025', desc: 'ซีรีส์คอนเทนต์ skincare 6 ตอนทั่วช่องภูมิภาคของ Dior Beauty James เล่ารูทีนก่อนโชว์โดยใช้สินค้า skincare ของ Dior ผลิตทั้งหมด in-house โดย JH Company — ครั้งแรกที่ Dior Beauty Asia ให้ ambassador ระดับภูมิภาคคุม creative เต็มที่' },
       ],
       brandFit: 'Dior Beauty ตามหา ambassador ชายสาย K โดยเฉพาะที่ไม่เอนไปทาง idol aesthetic แบบเดิม public image สาย art-house และการต้านการตลาดความงามแบบทั่วไปของ James ทำให้เขาหายากในหมวดนี้ — หน้า grooming ชายที่ไม่นิยามตัวเองเป็น beauty influencer',

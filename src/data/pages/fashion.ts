@@ -80,16 +80,16 @@ const en = {
         'The Dazed Korea Grammy issue (March 2024) — shot the week after the Grammy ceremony with deconstructed formalwear and industrial sets — is frequently cited in the fashion industry as the "moment that repositioned James from K-pop idol to global fashion subject."',
     },
     {
-      era: 'SOUR | HONEY',
+      era: "CAN\'T LEAVE ALONE",
       period: '2025',
       color: '#c06080',
       label: 'Duality · Two-Register Visual Language',
       albumAesthetic:
         'A duality concept splitting the visual identity into two poles: SOUR (cold-tone — steel blue, ash, clinical white) and HONEY (warm-tone — amber, cream, gold). Harper\'s Bazaar Korea (Jan 2025) shot two separate 8-page spreads following this concept — one of the most elaborate editorials of his career.',
       stageWardrobe:
-        'No dedicated SOUR|HONEY tour — the wardrobe concept was translated into award show appearances and the US promotion circuit. Two main looks for the Grammy performance (Feb 2025): warm-tone for the entrance, cold-tone for the closing performance.',
+        'No dedicated CAN\'T LEAVE ALONE tour — the wardrobe concept was translated into award show appearances and the US promotion circuit. Two main looks for the Grammy performance (Feb 2025): warm-tone for the entrance, cold-tone for the closing performance.',
       keyPieces: ['HONEY palette editorial (Harper\'s Bazaar Korea Jan 2025)', 'SOUR palette editorial (same issue, separate spread)', 'Grammy 2025 performance wardrobe'],
-      designers: ['Harper\'s Bazaar Korea styling team', 'GONUNMA × Nike Capsule Vol.2 — SOUR/HONEY duality concept'],
+      designers: ['Harper\'s Bazaar Korea styling team', 'GONUNMA × Nike Capsule Vol.2 — CAN\'T LEAVE ALONE duality concept'],
       context:
         'Nike Capsule Vol.2 (2025) marked the first time Nike released a capsule across two simultaneous colorway stories (Vol.2A SOUR and Vol.2B HONEY) — James carried the album concept directly into the structure of a commercial product.',
     },
@@ -101,7 +101,7 @@ const en = {
       albumAesthetic:
         'Deep mauve-purple — an anthology era gathering every prior visual language. Esquire Korea (Oct 2026) mixed archival pieces from the JH Company vault with new studio work in a single spread — a visual statement that James sees himself as the curator of his own decade.',
       stageWardrobe:
-        'The DECADE Tour (Jan 2027–) — the most elaborate staging of his career. Each era section has its own wardrobe palette: gold (LIKE I DO section), purple (SOFTEST TOUCH), black/white (PULSE), blue (ARE U STILL), duality (SOUR|HONEY), mauve (DECADE new tracks). It\'s the first tour where James uses wardrobe to narrate his own history.',
+        'The DECADE Tour (Jan 2027–) — the most elaborate staging of his career. Each era section has its own wardrobe palette: gold (LIKE I DO section), purple (SOFTEST TOUCH), black/white (PULSE), blue (ARE U STILL), duality (CAN\'T LEAVE ALONE), mauve (DECADE new tracks). It\'s the first tour where James uses wardrobe to narrate his own history.',
       keyPieces: ['Esquire Korea retrospective editorial (Oct 2026 cover)', 'GMA performance wardrobe (Sep 2026)', 'DECADE Tour multi-era stage costumes'],
       designers: ['Esquire Korea archival feature', 'JH Company in-house creative team (DECADE Tour staging)'],
       context:
@@ -122,7 +122,7 @@ const en = {
       rep: 'Nike Sportswear (co-design)',
       period: '2023–present',
       origin: 'Nike first came in by supplying the PULSE Tour wardrobe — the relationship evolved into a co-design capsule because James\'s dance background made the sportswear alignment credible.',
-      work: 'GONUNMA × Nike Capsule Vol.1 (2023, sold out in 3 hours) · Vol.2 SOUR/HONEY duality (2025) · ongoing tour wardrobe',
+      work: 'GONUNMA × Nike Capsule Vol.1 (2023, sold out in 3 hours) · Vol.2 CAN\'T LEAVE ALONE duality (2025) · ongoing tour wardrobe',
       significance: 'The capsule uses a royalty-share structure rather than a flat endorsement fee — a commercial partnership in which James is a creative co-owner.',
     },
   ],
@@ -215,16 +215,16 @@ const th: typeof en = {
         'Dazed Korea Grammy issue (March 2024) — ออกแบบในสัปดาห์หลัง Grammy ceremony ด้วย deconstructed formalwear และ industrial sets ถูกอ้างถึงบ่อยมากในวงการ fashion ในฐานะ "moment that repositioned James from K-pop idol to global fashion subject"',
     },
     {
-      era: 'SOUR | HONEY',
+      era: "CAN\'T LEAVE ALONE",
       period: '2025',
       color: '#c06080',
       label: 'Duality · Two-Register Visual Language',
       albumAesthetic:
         'Duality concept ที่แยก visual identity เป็นสองขั้ว: SOUR (cold-tone — steel blue, ash, clinical white) และ HONEY (warm-tone — amber, cream, gold) Harper\'s Bazaar Korea (Jan 2025) ถ่ายสองชุด 8 หน้าแยกกันตาม concept นี้ — หนึ่งใน editorial ที่ elaborate ที่สุดในอาชีพ',
       stageWardrobe:
-        'ไม่มี dedicated SOUR|HONEY tour — wardrobe concept ถูก translate เป็น award show appearances และ US promotion circuit สองชุดหลักสำหรับ Grammy performance (Feb 2025): warm-tone สำหรับ entrance, cold-tone สำหรับ closing performance',
+        'ไม่มี dedicated CAN\'T LEAVE ALONE tour — wardrobe concept ถูก translate เป็น award show appearances และ US promotion circuit สองชุดหลักสำหรับ Grammy performance (Feb 2025): warm-tone สำหรับ entrance, cold-tone สำหรับ closing performance',
       keyPieces: ['HONEY palette editorial (Harper\'s Bazaar Korea Jan 2025)', 'SOUR palette editorial (same issue, separate spread)', 'Grammy 2025 performance wardrobe'],
-      designers: ['Harper\'s Bazaar Korea styling team', 'GONUNMA × Nike Capsule Vol.2 — SOUR/HONEY duality concept'],
+      designers: ['Harper\'s Bazaar Korea styling team', 'GONUNMA × Nike Capsule Vol.2 — CAN\'T LEAVE ALONE duality concept'],
       context:
         'Nike Capsule Vol.2 (2025) เป็นครั้งแรกที่ Nike ออก capsule ในสอง simultaneous colorway stories (Vol.2A SOUR และ Vol.2B HONEY) — James นำ album concept เข้าไปในโครงสร้าง commercial product โดยตรง',
     },
@@ -236,7 +236,7 @@ const th: typeof en = {
       albumAesthetic:
         'Deep mauve-purple — anthology era ที่รวบรวมทุก visual language ก่อนหน้า Esquire Korea (Oct 2026) ใช้ archival pieces จาก JH Company vault ผสมกับงาน studio ใหม่ในชุดเดียว — visual statement ว่า James มองตัวเองเป็น curator ของ decade ของตัวเอง',
       stageWardrobe:
-        'DECADE Tour (Jan 2027–) — elaborate staging สูงที่สุดในอาชีพ แต่ละ era section มี wardrobe palette ของตัวเอง: gold (LIKE I DO section), purple (SOFTEST TOUCH), black/white (PULSE), blue (ARE U STILL), duality (SOUR|HONEY), mauve (DECADE new tracks) tour เป็นครั้งแรกที่ James ใช้ wardrobe เพื่อ narrate ประวัติศาสตร์ของตัวเอง',
+        'DECADE Tour (Jan 2027–) — elaborate staging สูงที่สุดในอาชีพ แต่ละ era section มี wardrobe palette ของตัวเอง: gold (LIKE I DO section), purple (SOFTEST TOUCH), black/white (PULSE), blue (ARE U STILL), duality (CAN\'T LEAVE ALONE), mauve (DECADE new tracks) tour เป็นครั้งแรกที่ James ใช้ wardrobe เพื่อ narrate ประวัติศาสตร์ของตัวเอง',
       keyPieces: ['Esquire Korea retrospective editorial (Oct 2026 cover)', 'GMA performance wardrobe (Sep 2026)', 'DECADE Tour multi-era stage costumes'],
       designers: ['Esquire Korea archival feature', 'JH Company in-house creative team (DECADE Tour staging)'],
       context:
@@ -257,7 +257,7 @@ const th: typeof en = {
       rep: 'Nike Sportswear (co-design)',
       period: '2023–ปัจจุบัน',
       origin: 'Nike เข้ามาจากการขอ supply PULSE Tour wardrobe ก่อน — ความสัมพันธ์ evolve เป็น co-design capsule เพราะ dance background ของ James ทำให้ sportswear alignment credible',
-      work: 'GONUNMA × Nike Capsule Vol.1 (2023, sold out 3h) · Vol.2 SOUR/HONEY duality (2025) · ongoing tour wardrobe',
+      work: 'GONUNMA × Nike Capsule Vol.1 (2023, sold out 3h) · Vol.2 CAN\'T LEAVE ALONE duality (2025) · ongoing tour wardrobe',
       significance: 'Capsule มี royalty share structure ไม่ใช่แค่ endorsement fee — เป็น commercial partnership ที่ James เป็น creative co-owner',
     },
   ],

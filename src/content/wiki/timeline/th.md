@@ -527,7 +527,7 @@ Top Global (Excl. U.S.) Artist
 
 ถือเป็น milestone สำคัญของศิลปินเอเชียใน progressive R&B ecosystem ระดับ global critics circuit
 
-10/02/2025: ปล่อยอัลบั้มที่ 3 "CAN'T LEAVE ALONE" (ยุค SOUR | HONEY) แบบไม่โปรโมทในเกาหลี โฟกัส US/Global platforms (business move + personal stance)
+10/02/2025: ปล่อยอัลบั้มที่ 3 "CAN'T LEAVE ALONE" (ยุค CAN'T LEAVE ALONE) แบบไม่โปรโมทในเกาหลี โฟกัส US/Global platforms (business move + personal stance)
 
 27/02/2025: Korean Music Awards (ไม่ได้ไป ชนกับทัวร์)
 
@@ -577,7 +577,7 @@ Favorite Male R&B Artist
 
 ได้รับ Top 10 Artist (Bonsang)
 
-สะท้อน domestic streaming impact ต่อเนื่อง แม้ไม่ได้โปรโมตอัลบั้ม CAN'T LEAVE ALONE (SOUR | HONEY) ในเกาหลีโดยตรง
+สะท้อน domestic streaming impact ต่อเนื่อง แม้ไม่ได้โปรโมตอัลบั้ม CAN'T LEAVE ALONE ในเกาหลีโดยตรง
 
 เข้าร่วมงาน Soul Train Music Awards
 

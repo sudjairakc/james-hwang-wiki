@@ -88,7 +88,7 @@ const en = {
     { date: 'Aug 2023', title: 'HOW DOES IT FEEL — 100M club', desc: 'The MV hit 100M views — the first song to do so as an independent artist after founding JH Company.', metric: '100M views' },
     { date: 'Mar 2024', title: 'TEARS ON A PRETTY FACE billboard takeover', desc: 'Gemzen crowdfunded billboards across 14 cities in 6 countries to celebrate the MV release — including Times Square and Siam in central Bangkok.', metric: '14 cities · 6 countries' },
     { date: 'Feb 2025', title: 'Grammy night stream surge', desc: 'On Grammy night, ARE U STILL surged onto the Spotify Global Daily Top 10 — catalog streams up +340% within a single day.', metric: '+340% catalog' },
-    { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN'T LEAVE ALONE (feat. Pharrell) became the third MV to hit 100M — confirming a solid global MV audience base.", metric: '3× 100M MV' },
+    { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN\'T LEAVE ALONE (feat. Pharrell) became the third MV to hit 100M — confirming a solid global MV audience base.", metric: '3× 100M MV' },
     { date: 'Jan 2026', title: 'DECADE anniversary fan project record', desc: 'The 5,000-copy fan book sold out in 6 hours + a global streaming relay across 34 countries celebrated the 10th anniversary.', metric: '34 countries' },
   ],
   merch: [
@@ -121,12 +121,12 @@ const en = {
       ],
     },
     {
-      era: 'SOUR|HONEY',
+      era: "CAN\'T LEAVE ALONE",
       year: '2025',
       color: '#c06080',
       items: [
-        { name: 'SOUR|HONEY Dual Package', type: 'Album Package', desc: 'Two separate physical editions (SOUR ver. / HONEY ver.) each with distinct photography, color palette, and packaging material. Designed to be displayed together — the spines form a single continuous image.' },
-        { name: "SOUR|HONEY Season's Greetings 2025", type: 'Annual Goods', desc: "Calendar (desk + wall) · planner · photo card advent set (24 cards) · year-end letter from James. JH Company's first Season's Greetings release." },
+        { name: "CAN\'T LEAVE ALONE Dual Package", type: 'Album Package', desc: 'Two separate physical editions (SOUR ver. / HONEY ver.) each with distinct photography, color palette, and packaging material. Designed to be displayed together — the spines form a single continuous image.' },
+        { name: "CAN\'T LEAVE ALONE Season's Greetings 2025", type: 'Annual Goods', desc: "Calendar (desk + wall) · planner · photo card advent set (24 cards) · year-end letter from James. JH Company's first Season's Greetings release." },
       ],
     },
     {
@@ -144,7 +144,7 @@ const en = {
     { region: 'Korea', share: '18%', note: 'Core domestic base — heaviest chart voting activity and fan cafe participation' },
     { region: 'Thailand', share: '17%', note: "Largest single-country fandom — driven by James's Thai heritage and LINE community activity" },
     { region: 'Southeast Asia (ex-TH)', share: '13%', note: 'Philippines, Indonesia, Vietnam, Malaysia — K-pop crossover audience' },
-    { region: 'Europe', share: '11%', note: 'UK-led; grew through PULSE and SOUR|HONEY arena tours and Harry Styles-adjacent press coverage' },
+    { region: 'Europe', share: '11%', note: 'UK-led; grew through PULSE and CAN\'T LEAVE ALONE arena tours and Harry Styles-adjacent press coverage' },
     { region: 'China & Taiwan', share: '9%', note: 'Weibo-based, strong streaming support culture' },
     { region: 'Japan', share: '4%', note: 'Older demographic, physical-focused' },
     { region: 'Rest of World', share: '4%', note: 'Latin America, Middle East, Oceania' },
@@ -230,7 +230,7 @@ const th: typeof en = {
     { date: 'Aug 2023', title: 'HOW DOES IT FEEL — 100M club', desc: 'MV แตะ 100M views เป็นเพลงแรกในฐานะ independent artist หลังตั้ง JH Company', metric: '100M views' },
     { date: 'Mar 2024', title: 'TEARS ON A PRETTY FACE billboard takeover', desc: 'Gemzen ระดมทุนซื้อ billboard 14 เมือง 6 ประเทศ ฉลอง MV release — รวมถึง Times Square และ Siam ใจกลางกรุงเทพ', metric: '14 cities · 6 countries' },
     { date: 'Feb 2025', title: 'Grammy night stream surge', desc: 'คืนประกาศ Grammy ARE U STILL พุ่งขึ้น Spotify Global Daily Top 10 — catalog streams +340% ภายในวันเดียว', metric: '+340% catalog' },
-    { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN'T LEAVE ALONE (feat. Pharrell) เป็น MV ตัวที่สามที่แตะ 100M — confirm ฐาน global MV audience", metric: '3× 100M MV' },
+    { date: 'Jul 2025', title: 'Three 100M-view MVs', desc: "CAN\'T LEAVE ALONE (feat. Pharrell) เป็น MV ตัวที่สามที่แตะ 100M — confirm ฐาน global MV audience", metric: '3× 100M MV' },
     { date: 'Jan 2026', title: 'DECADE anniversary fan project record', desc: 'Fan book 5,000 เล่ม sold out ใน 6 ชม. + global streaming relay 34 ประเทศ ฉลอง 10 ปี', metric: '34 countries' },
   ],
   merch: [
@@ -263,12 +263,12 @@ const th: typeof en = {
       ],
     },
     {
-      era: 'SOUR|HONEY',
+      era: "CAN\'T LEAVE ALONE",
       year: '2025',
       color: '#c06080',
       items: [
-        { name: 'SOUR|HONEY Dual Package', type: 'แพ็กเกจอัลบั้ม', desc: 'สองอัลบั้มจริงแยกกัน (SOUR ver. / HONEY ver.) แต่ละเวอร์ชันมีภาพถ่าย โทนสี และวัสดุแพ็กเกจต่างกัน ออกแบบให้วางคู่กัน — สันหนังสือประกอบกันเป็นภาพเดียวต่อเนื่อง' },
-        { name: "SOUR|HONEY Season's Greetings 2025", type: 'สินค้าประจำปี', desc: 'ปฏิทิน (ตั้งโต๊ะ + แขวนผนัง) · แพลนเนอร์ · ชุดโฟโต้การ์ด advent (24 ใบ) · จดหมายท้ายปีจาก James Season\'s Greetings ชุดแรกของ JH Company' },
+        { name: "CAN\'T LEAVE ALONE Dual Package", type: 'แพ็กเกจอัลบั้ม', desc: 'สองอัลบั้มจริงแยกกัน (SOUR ver. / HONEY ver.) แต่ละเวอร์ชันมีภาพถ่าย โทนสี และวัสดุแพ็กเกจต่างกัน ออกแบบให้วางคู่กัน — สันหนังสือประกอบกันเป็นภาพเดียวต่อเนื่อง' },
+        { name: "CAN\'T LEAVE ALONE Season's Greetings 2025", type: 'สินค้าประจำปี', desc: 'ปฏิทิน (ตั้งโต๊ะ + แขวนผนัง) · แพลนเนอร์ · ชุดโฟโต้การ์ด advent (24 ใบ) · จดหมายท้ายปีจาก James Season\'s Greetings ชุดแรกของ JH Company' },
       ],
     },
     {
@@ -286,7 +286,7 @@ const th: typeof en = {
     { region: 'เกาหลี', share: '18%', note: 'ฐานในประเทศหลัก — มีกิจกรรมโหวตชาร์ตและการมีส่วนร่วมในแฟนคาเฟ่หนักที่สุด' },
     { region: 'ไทย', share: '17%', note: 'แฟนด้อมประเทศเดียวที่ใหญ่ที่สุด — ขับเคลื่อนโดยเชื้อสายไทยของ James และกิจกรรมคอมมูนิตี้ LINE' },
     { region: 'เอเชียตะวันออกเฉียงใต้ (ไม่รวมไทย)', share: '13%', note: 'ฟิลิปปินส์, อินโดนีเซีย, เวียดนาม, มาเลเซีย — กลุ่มผู้ชม K-pop crossover' },
-    { region: 'ยุโรป', share: '11%', note: 'นำโดย UK; เติบโตผ่านทัวร์ arena ของ PULSE และ SOUR|HONEY และข่าวสารที่ใกล้เคียงกับ Harry Styles' },
+    { region: 'ยุโรป', share: '11%', note: 'นำโดย UK; เติบโตผ่านทัวร์ arena ของ PULSE และ CAN\'T LEAVE ALONE และข่าวสารที่ใกล้เคียงกับ Harry Styles' },
     { region: 'จีนและไต้หวัน', share: '9%', note: 'ฐานหลักบน Weibo วัฒนธรรมซัพพอร์ตสตรีมมิงเข้มแข็ง' },
     { region: 'ญี่ปุ่น', share: '4%', note: 'กลุ่มอายุมากกว่า เน้นสินค้า physical' },
     { region: 'ส่วนที่เหลือของโลก', share: '4%', note: 'ละตินอเมริกา, ตะวันออกกลาง, โอเชียเนีย' },

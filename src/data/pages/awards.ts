@@ -101,8 +101,8 @@ const en = {
     },
     {
       year: '2025',
-      album: "CAN'T LEAVE ALONE",
-      albumSub: '3rd Studio Album · SOUR | HONEY era',
+      album: "CAN\'T LEAVE ALONE",
+      albumSub: '3rd Studio Album · CAN\'T LEAVE ALONE era',
       wins: [
         { show: 'Golden Disc Awards', category: 'Digital Bonsang', result: 'WIN' },
         { show: 'Circle Chart Music Awards', category: 'Global Digital Artist', result: 'WIN' },
@@ -266,8 +266,8 @@ const th: typeof en = {
     },
     {
       year: '2025',
-      album: "CAN'T LEAVE ALONE",
-      albumSub: 'อัลบั้มเต็มชุดที่ 3 · SOUR | HONEY era',
+      album: "CAN\'T LEAVE ALONE",
+      albumSub: 'อัลบั้มเต็มชุดที่ 3 · CAN\'T LEAVE ALONE era',
       wins: [
         { show: 'Golden Disc Awards', category: 'Digital Bonsang', result: 'WIN' },
         { show: 'Circle Chart Music Awards', category: 'Global Digital Artist', result: 'WIN' },

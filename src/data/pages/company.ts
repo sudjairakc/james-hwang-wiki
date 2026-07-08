@@ -239,7 +239,7 @@ const th: typeof en = {
       type: 'ทรัพย์สินทางปัญญาเพลงบันทึกเสียง (Recorded Music IP)',
       ownership: '100% (JH Company) · จัดจำหน่ายผ่าน Warner Music Korea',
       detail:
-        "SOFTEST TOUCH, PULSE, ARE U STILL, CAN'T LEAVE ALONE, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog",
+        "SOFTEST TOUCH, PULSE, ARE U STILL, CAN\'T LEAVE ALONE, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog",
     },
     {
       asset: 'คลังเพลงยุค SM (2016–2023)',

@@ -79,7 +79,7 @@ James อยู่ใน timeline เดียวกับ:
 
 ตั้งแต่:
 
-LIKE I DO → SOFTEST TOUCH → PULSE → ARE U STILL → SOUR | HONEY
+LIKE I DO → SOFTEST TOUCH → PULSE → ARE U STILL → CAN'T LEAVE ALONE
 
 เกิด pattern:
 

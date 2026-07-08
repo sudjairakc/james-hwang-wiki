@@ -14,7 +14,7 @@ export const scoreMatrix = [
   { album: 'SOFTEST TOUCH',     color: '#9b7fc8', scores: ['7.6', '3.5/5', '7/10', '4/5',   'B',     '4.0/5'] },
   { album: 'PULSE',             color: '#5a7c6a', scores: ['8.0', '4/5',   '8/10', '4/5',   'A−',    '4.0/5'] },
   { album: 'ARE U STILL',       color: '#5a7aaa', scores: ['8.4', '4.5/5', '9/10', '4.5/5', 'A',     '4.5/5'], highlight: true },
-  { album: "CAN'T LEAVE ALONE", color: '#c06080', scores: ['7.5', '3.5/5', '7/10', '4/5',   'B+',    '3.5/5'] },
+  { album: "CAN\'T LEAVE ALONE", color: '#c06080', scores: ['7.5', '3.5/5', '7/10', '4/5',   'B+',    '3.5/5'] },
   { album: 'DECADE',            color: '#6e5a7c', scores: ['7.2', '3.5/5', '7/10', '3.5/5', 'B',     '3.5/5'] },
 ];
 
@@ -69,7 +69,7 @@ const en = {
     { album: 'SOFTEST TOUCH', year: 2022, color: '#9b7fc8', score: 80, stars: '★★★★', tag: '"The permission slip he wrote himself"', note: 'The solo debut critics point to as proof James is a songwriter with a distinct voice, not just an idol doing R&B' },
     { album: 'PULSE', year: 2023, color: '#5a7c6a', score: 85, stars: '★★★★½', tag: '"The statement album"', note: 'The album critics call the most coherent — self-produced in full for the first time, with performance-single design ahead of its time' },
     { album: 'ARE U STILL', year: 2024, color: '#5a7aaa', score: 88, stars: '★★★★★', tag: '"The apex"', note: 'Career peak · aggregator 88/100 · Grammy Best Progressive R&B Album — the consensus pick critics agree is a masterwork', highlight: true },
-    { album: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', score: 79, stars: '★★★★', tag: '"The graceful recalibration"', note: 'A deliberate cooldown after ARE U STILL — the Pharrell collab is the highlight, but the HONEY side loses momentum toward the end' },
+    { album: "CAN\'T LEAVE ALONE", year: 2025, color: '#c06080', score: 79, stars: '★★★★', tag: '"The graceful recalibration"', note: 'A deliberate cooldown after ARE U STILL — the Pharrell collab is the highlight, but the HONEY side loses momentum toward the end' },
     { album: 'DECADE', year: 2026, color: '#6e5a7c', score: 76, stars: '★★★★', tag: '"The early anthology"', note: 'An anthology critics praise on craft but question on timing — arriving too soon for the career to have enough distance to look back' },
   ],
   albumReviews: [
@@ -110,11 +110,11 @@ const en = {
       ],
     },
     {
-      album: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', stars: '★★★★', score: 79,
+      album: "CAN\'T LEAVE ALONE", year: 2025, color: '#c06080', stars: '★★★★', score: 79,
       pull: 'The graceful recalibration',
       body: [
         'After ARE U STILL, this album sounds like a deliberate cooldown rather than a forward leap — a return to a contemporary R&B core with the maturity of someone who\'s already been through a Grammy-winning era: more accessible, but not quite shallow.',
-        "The Pharrell collaboration on CAN'T LEAVE ALONE (feat. Pharrell) is a highlight nothing else on the album comes close to. The dual SOUR/HONEY concept works well structurally — two moods, two sides of a relationship placed side by side — but in practice the HONEY side gradually loses momentum after HE'S NOT ME, leaving the album's back half feeling lighter than the front.",
+        "The Pharrell collaboration on CAN\'T LEAVE ALONE (feat. Pharrell) is a highlight nothing else on the album comes close to. The dual CAN\'T LEAVE ALONE concept works well structurally — two moods, two sides of a relationship placed side by side — but in practice the HONEY side gradually loses momentum after HE'S NOT ME, leaving the album's back half feeling lighter than the front.",
         'Still a very good album by ordinary standards, but sitting right after ARE U STILL makes it feel more modest than it should. That\'s the price of following an apex — some critics read it as "playing it safe after the Grammy" rather than a step forward.',
       ],
     },
@@ -123,7 +123,7 @@ const en = {
       pull: 'The early anthology',
       body: [
         "An anthology album celebrating 10 years of the catalog — archive material plus 4 new songs. On craft, critics praise the curation and remastering for making an artist's growth arc across every era clearly visible; NEW as the lead single confirms the vocal identity remains steady and recognizable.",
-        "But the main question critics raise is timing — anthologies usually arrive once a career has enough distance to look back with real weight, but DECADE lands while James is still at his peak and CAN'T LEAVE ALONE only came out the year before. It ends up feeling more like a commercial milestone than an organic artistic statement.",
+        "But the main question critics raise is timing — anthologies usually arrive once a career has enough distance to look back with real weight, but DECADE lands while James is still at his peak and CAN\'T LEAVE ALONE only came out the year before. It ends up feeling more like a commercial milestone than an organic artistic statement.",
         "The 76 score reflects that feeling — no one disputes the quality of the songs, but plenty question whether it needed to exist right now. It's a good album that arrived at the wrong time — the mirror opposite of LIKE I DO, a good album that arrived ahead of its time.",
       ],
     },
@@ -149,7 +149,7 @@ const en = {
   ],
   industryQuotes: [
     { quote: 'เขาเขียนเพลงเหมือนคนที่รู้ว่า silence ก็เป็น instrument หนึ่ง — นั่นคือสิ่งที่ producer ส่วนใหญ่ใช้เวลาทั้งชีวิตกว่าจะเข้าใจ', who: 'A&R executive, major US label', context: 'Said on an industry podcast, after ARE U STILL' },
-    { quote: "I came in as a feature, but that song was already his. People assume I produced it — I didn't. He did.", who: 'Pharrell Williams', context: "On CAN'T LEAVE ALONE (feat. Pharrell) — correcting the misconception about who the primary composer was" },
+    { quote: "I came in as a feature, but that song was already his. People assume I produced it — I didn't. He did.", who: 'Pharrell Williams', context: "On CAN\'T LEAVE ALONE (feat. Pharrell) — correcting the misconception about who the primary composer was" },
     { quote: 'The K-R&B tag was always a marketing convenience. ARE U STILL made it indefensible.', who: 'NME senior critic', context: 'From a review that became the consensus-defining piece' },
     { quote: 'ในฐานะ producer เกาหลี ผมเคยคิดว่า falsetto-led R&B ขายยากในตลาดหลัก เขาพิสูจน์ว่าผมคิดผิด', who: 'Veteran SM-era producer', context: 'From an interview with a Korean music outlet' },
   ],
@@ -184,7 +184,7 @@ const en = {
       subtitle: 'A perspective from old fans who wish he\'d "stayed with one sound" a little longer',
       body: [
         { text: "If you're a fan who came in during SOFTEST TOUCH through NO RESERVATIONS or OVERSIZED JACKET — that album felt like James was clearly defining his own sound: acoustic soul, intimate, unhurried. Then PULSE arrived with HOW DOES IT FEEL?, a synth-funk club track that doesn't resemble SOFTEST TOUCH in the slightest." },
-        { text: "Then ARE U STILL pivoted toward a neo-soul/disco lineage inspired by the MJ era, and then CAN'T LEAVE ALONE came back around to contemporary R&B again. Four albums, four directions." },
+        { text: "Then ARE U STILL pivoted toward a neo-soul/disco lineage inspired by the MJ era, and then CAN\'T LEAVE ALONE came back around to contemporary R&B again. Four albums, four directions." },
         { lead: '"I don\'t know which song of his to recommend"', text: 'is a legitimate concern for a casual listener trying to recommend him, because each album sounds like a different person. Anyone who fell for one album\'s sound tends to feel lost on the next.' },
         { lead: '"He just abandoned the SOFTEST TOUCH fans"', text: "the sound changes on almost every album, which means the fan base attached to any one album's texture never gets a sequel to the thing they loved." },
         { text: "The defense says changing sound every album is evidence of artistic growth, not inconsistency — Prince, D'Angelo, and Frank Ocean never made the same album twice either. But it has to be said that what let those artists survive the changes was an instantly recognizable vocal identity." },
@@ -198,9 +198,9 @@ const en = {
       body: [
         { text: 'Look at the release timeline: 2022 SOFTEST TOUCH · 2023 PULSE + tour begins · 2024 ARE U STILL + tour continuing through May · 2025 CAN\'T LEAVE ALONE · 2026 DECADE — four projects in four years, plus a continuous multi-leg world tour, plus overlapping NCT 127 activity in some stretches.' },
         { text: 'For an artist holding every piece of creative control himself — composition, lyrics, arrangement, production — this is a genuinely heavy output, and some cracks have already started to show in the catalog.' },
-        { lead: "CAN'T LEAVE ALONE sounds under-baked in places", text: "the HONEY side, especially the stretch from HE'S NOT ME to LOVE THIS PAIN AWAY, has tonal momentum that gradually slips — unlike PULSE, where every track feels carefully considered. Given another 6 months to gestate, that album might have been tighter." },
-        { lead: 'A promotion cycle that got sacrificed', text: "CAN'T LEAVE ALONE was under-promoted because of overlapping NCT 127 activity — an album that could have hit bigger was capped by a scheduling conflict, not by quality." },
-        { lead: 'DECADE in 2026 arrived too soon', text: "anthologies normally come out once a career has enough distance to look back, but DECADE dropped while James is still young in his career and CAN'T LEAVE ALONE had only come out the year before. It ends up feeling like a commercial decision more than an organic statement, even though the album itself is good." },
+        { lead: "CAN\'T LEAVE ALONE sounds under-baked in places", text: "the HONEY side, especially the stretch from HE'S NOT ME to LOVE THIS PAIN AWAY, has tonal momentum that gradually slips — unlike PULSE, where every track feels carefully considered. Given another 6 months to gestate, that album might have been tighter." },
+        { lead: 'A promotion cycle that got sacrificed', text: "CAN\'T LEAVE ALONE was under-promoted because of overlapping NCT 127 activity — an album that could have hit bigger was capped by a scheduling conflict, not by quality." },
+        { lead: 'DECADE in 2026 arrived too soon', text: "anthologies normally come out once a career has enough distance to look back, but DECADE dropped while James is still young in his career and CAN\'T LEAVE ALONE had only come out the year before. It ends up feeling like a commercial decision more than an organic statement, even though the album itself is good." },
         { text: 'The counterargument: James is working within a narrow window — momentum from the SM era has to be used fully before the cultural cycle turns, and ARE U STILL already proved that even at a fast pace the quality can still be Grammy-winning. But the open question remains — if he slowed down and let each album breathe more, where would his ceiling actually be?' },
       ],
     },
@@ -254,7 +254,7 @@ const th: typeof en = {
     { album: 'SOFTEST TOUCH', year: 2022, color: '#9b7fc8', score: 80, stars: '★★★★', tag: '"The permission slip he wrote himself"', note: 'Solo debut ที่ critic ใช้ยืนยันว่า James เป็น songwriter ที่มี distinct voice ไม่ใช่ idol ที่ทำ R&B' },
     { album: 'PULSE', year: 2023, color: '#5a7c6a', score: 85, stars: '★★★★½', tag: '"The statement album"', note: 'อัลบั้มที่ critic ยกว่า coherent ที่สุด — self-produced ทุกเพลงครั้งแรก, performance-single design ล้ำยุค' },
     { album: 'ARE U STILL', year: 2024, color: '#5a7aaa', score: 88, stars: '★★★★★', tag: '"The apex"', note: 'Career peak · aggregator 88/100 · Grammy Best Progressive R&B Album — ตัว consensus ที่ critic เห็นพ้องว่าเป็น masterwork', highlight: true },
-    { album: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', score: 79, stars: '★★★★', tag: '"The graceful recalibration"', note: 'Deliberate cooldown หลัง ARE U STILL — Pharrell collab เป็น highlight แต่ HONEY side เสีย momentum ช่วงปลาย' },
+    { album: "CAN\'T LEAVE ALONE", year: 2025, color: '#c06080', score: 79, stars: '★★★★', tag: '"The graceful recalibration"', note: 'Deliberate cooldown หลัง ARE U STILL — Pharrell collab เป็น highlight แต่ HONEY side เสีย momentum ช่วงปลาย' },
     { album: 'DECADE', year: 2026, color: '#6e5a7c', score: 76, stars: '★★★★', tag: '"The early anthology"', note: 'Anthology ที่ critic ชมตัวงานแต่ตั้งคำถามเรื่อง timing — ออกเร็วเกินกว่าที่ career จะมี distance พอจะ look back' },
   ],
   albumReviews: [
@@ -295,11 +295,11 @@ const th: typeof en = {
       ],
     },
     {
-      album: "CAN'T LEAVE ALONE", year: 2025, color: '#c06080', stars: '★★★★', score: 79,
+      album: "CAN\'T LEAVE ALONE", year: 2025, color: '#c06080', stars: '★★★★', score: 79,
       pull: 'The graceful recalibration',
       body: [
         'หลัง ARE U STILL อัลบั้มนี้ฟังดูเป็น deliberate cooldown มากกว่า forward leap — เป็นการกลับสู่ Contemporary R&B core ด้วย maturity ของคนที่ผ่าน Grammy-winning era มาแล้ว accessible ขึ้นแต่ไม่ถึงกับ shallow',
-        'Pharrell collaboration ใน CAN\'T LEAVE ALONE (feat. Pharrell) คือ highlight ที่ไม่มีเพลงไหนในอัลบั้มเข้าใกล้ได้ ส่วน dual concept SOUR/HONEY ทำงานได้ดีในแง่ structure — สอง mood สองด้านของความสัมพันธ์ที่วางคู่กัน แต่ในทางปฏิบัติ HONEY side มี momentum ที่ค่อย ๆ หลุดมือหลัง HE\'S NOT ME ทำให้ครึ่งหลังของอัลบั้มรู้สึกเบากว่าครึ่งแรก',
+        'Pharrell collaboration ใน CAN\'T LEAVE ALONE (feat. Pharrell) คือ highlight ที่ไม่มีเพลงไหนในอัลบั้มเข้าใกล้ได้ ส่วน dual concept CAN\'T LEAVE ALONE ทำงานได้ดีในแง่ structure — สอง mood สองด้านของความสัมพันธ์ที่วางคู่กัน แต่ในทางปฏิบัติ HONEY side มี momentum ที่ค่อย ๆ หลุดมือหลัง HE\'S NOT ME ทำให้ครึ่งหลังของอัลบั้มรู้สึกเบากว่าครึ่งแรก',
         'ยังคงเป็นอัลบั้มที่ดีมากในมาตรฐานทั่วไป แต่การวางอยู่ถัดจาก ARE U STILL ทำให้มันรู้สึก modest กว่าที่ควร — นี่คือราคาที่ต้องจ่ายเมื่ออัลบั้มก่อนหน้าคือ apex บางส่วนของ critic จึงอ่านมันเป็น "play it safe หลัง Grammy" มากกว่าก้าวต่อ',
       ],
     },
@@ -334,7 +334,7 @@ const th: typeof en = {
   ],
   industryQuotes: [
     { quote: 'เขาเขียนเพลงเหมือนคนที่รู้ว่า silence ก็เป็น instrument หนึ่ง — นั่นคือสิ่งที่ producer ส่วนใหญ่ใช้เวลาทั้งชีวิตกว่าจะเข้าใจ', who: 'A&R executive, major US label', context: 'พูดในพอดแคสต์อุตสาหกรรม หลัง ARE U STILL' },
-    { quote: "I came in as a feature, but that song was already his. People assume I produced it — I didn't. He did.", who: 'Pharrell Williams', context: "ว่าด้วย CAN'T LEAVE ALONE (feat. Pharrell) — แก้ misconception ว่าใครเป็น primary composer" },
+    { quote: "I came in as a feature, but that song was already his. People assume I produced it — I didn't. He did.", who: 'Pharrell Williams', context: "ว่าด้วย CAN\'T LEAVE ALONE (feat. Pharrell) — แก้ misconception ว่าใครเป็น primary composer" },
     { quote: 'The K-R&B tag was always a marketing convenience. ARE U STILL made it indefensible.', who: 'NME senior critic', context: 'บทวิจารณ์ที่กลายเป็น consensus-defining piece' },
     { quote: 'ในฐานะ producer เกาหลี ผมเคยคิดว่า falsetto-led R&B ขายยากในตลาดหลัก เขาพิสูจน์ว่าผมคิดผิด', who: 'Veteran SM-era producer', context: 'สัมภาษณ์ใน Korean music outlet' },
   ],
@@ -383,9 +383,9 @@ const th: typeof en = {
       body: [
         { text: 'ดู release timeline: 2022 SOFTEST TOUCH · 2023 PULSE + ทัวร์เริ่ม · 2024 ARE U STILL + ทัวร์ต่อเนื่องถึง May · 2025 CAN\'T LEAVE ALONE · 2026 DECADE — สี่ projects ใน สี่ ปี บวก world tour ข้าม leg ต่อเนื่อง บวกกิจกรรม NCT 127 ที่ overlap บางช่วง' },
         { text: 'สำหรับ artist ที่ถือ creative control ทุกอย่างด้วยตัวเอง — composition, lyrics, arrangement, production — นี่คือ output ที่หนักมาก และร่องรอยบางอย่างก็เริ่มปรากฏใน catalog แล้ว' },
-        { lead: "CAN'T LEAVE ALONE ฟังดู under-baked บางจุด", text: 'HONEY side โดยเฉพาะช่วง HE\'S NOT ME ถึง LOVE THIS PAIN AWAY มี tonal momentum ที่ค่อย ๆ หลุดมือ ต่างจาก PULSE ที่ทุก track รู้สึกว่าถูก considered อย่างละเอียด ถ้ามีเวลา gestate อีก 6 เดือน อัลบั้มนั้นอาจ tighter กว่านี้' },
-        { lead: 'Promotion cycle ที่ถูก sacrifice', text: "CAN'T LEAVE ALONE ถูก under-promote เพราะ NCT 127 activity overlap — อัลบั้มที่อาจดังได้มากกว่านี้ถูก cap ด้วย scheduling conflict ไม่ใช่ quality" },
-        { lead: 'DECADE ในปี 2026 มาเร็วเกินไป', text: "anthology ปกติออกหลัง career มี distance พอจะ look back แต่ DECADE ออกตอน James ยังอายุน้อยและ CAN'T LEAVE ALONE เพิ่งออกปีก่อน มันเลยรู้สึกเหมือน commercial decision มากกว่า organic statement แม้ตัวอัลบั้มจะดี" },
+        { lead: "CAN\'T LEAVE ALONE ฟังดู under-baked บางจุด", text: 'HONEY side โดยเฉพาะช่วง HE\'S NOT ME ถึง LOVE THIS PAIN AWAY มี tonal momentum ที่ค่อย ๆ หลุดมือ ต่างจาก PULSE ที่ทุก track รู้สึกว่าถูก considered อย่างละเอียด ถ้ามีเวลา gestate อีก 6 เดือน อัลบั้มนั้นอาจ tighter กว่านี้' },
+        { lead: 'Promotion cycle ที่ถูก sacrifice', text: "CAN\'T LEAVE ALONE ถูก under-promote เพราะ NCT 127 activity overlap — อัลบั้มที่อาจดังได้มากกว่านี้ถูก cap ด้วย scheduling conflict ไม่ใช่ quality" },
+        { lead: 'DECADE ในปี 2026 มาเร็วเกินไป', text: "anthology ปกติออกหลัง career มี distance พอจะ look back แต่ DECADE ออกตอน James ยังอายุน้อยและ CAN\'T LEAVE ALONE เพิ่งออกปีก่อน มันเลยรู้สึกเหมือน commercial decision มากกว่า organic statement แม้ตัวอัลบั้มจะดี" },
         { text: 'ข้อแก้ต่าง: James อยู่ใน window ที่แคบ — momentum จาก SM era ต้องถูกใช้ให้เต็มที่ก่อน cultural cycle เปลี่ยน และ ARE U STILL ก็พิสูจน์แล้วว่าแม้ pace เร็ว quality ก็ยัง Grammy-winning ได้ แต่คำถามที่ค้างอยู่คือ — ถ้าเขา slow down และให้แต่ละอัลบั้มมีเวลา breathe มากกว่านี้ ceiling ของเขาจะอยู่ที่ไหน' },
       ],
     },

@@ -59,7 +59,7 @@ const en = {
       id: '1.4',
       title: 'R&B Masculinity Arc',
       tag: 'responsive masculinity archetype',
-      text: 'Across LIKE I DO → SOUR | HONEY, a "masculine softness normalization arc" emerges — an archetype scholars call responsive masculinity (in contrast to reactive masculinity).',
+      text: 'Across LIKE I DO → CAN\'T LEAVE ALONE, a "masculine softness normalization arc" emerges — an archetype scholars call responsive masculinity (in contrast to reactive masculinity).',
       table: {
         cols: ['Album', 'Masculinity Frame'],
         rows: [
@@ -204,7 +204,7 @@ const th: typeof en = {
       id: '1.4',
       title: 'เส้นทาง Masculinity ใน R&B',
       tag: 'responsive masculinity archetype',
-      text: 'ตลอด LIKE I DO → SOUR | HONEY เกิด "masculine softness normalization arc" — archetype ที่นักวิชาการเรียกว่า responsive masculinity (contrast กับ reactive masculinity)',
+      text: 'ตลอด LIKE I DO → CAN\'T LEAVE ALONE เกิด "masculine softness normalization arc" — archetype ที่นักวิชาการเรียกว่า responsive masculinity (contrast กับ reactive masculinity)',
       table: {
         cols: ['อัลบั้ม', 'กรอบความเป็นชาย'],
         rows: [

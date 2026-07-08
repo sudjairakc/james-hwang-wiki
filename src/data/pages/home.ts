@@ -7,10 +7,10 @@ import type { Lang } from '../../i18n';
 // Shared (non-translatable) — album cards.
 export const albums = [
   { slug: 'like-i-do',      cover: 'like_i_do.png',     title: 'LIKE I DO',      year: '2016', type: 'Mini Album',       streams: '210M+', color: '#c9a84c' },
-  { slug: 'softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '320M+', color: '#9b7fc8' },
-  { slug: 'pulse-era',      cover: 'pulse.png',         title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '540M+', color: '#5a7c6a' },
+  { slug: 'softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '450M+', color: '#9b7fc8' },
+  { slug: 'pulse-era',      cover: 'pulse.png',         title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '650M+', color: '#5a7c6a' },
   { slug: 'are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#5a7aaa' },
-  { slug: 'sour-honey',     cover: 'sour_honey.png',    title: "CAN'T LEAVE ALONE", year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
+  { slug: 'sour-honey',     cover: 'sour_honey.png',    title: "CAN\'T LEAVE ALONE", year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
   { slug: 'decade',         cover: 'decade.png',        title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '480M+', color: '#6e5a7c' },
 ];
 

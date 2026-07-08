@@ -10,7 +10,7 @@ export const slugMeta: Record<string, { file: string; cover: string; title: stri
   'softest-touch': { file: '03-softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',    year: '2022', date: 'Jan 11, 2022', color: '#9b7fc8' },
   'pulse-era':     { file: '04-pulse-era',      cover: 'pulse.png',         title: 'PULSE',            year: '2023', date: 'Jul 21, 2023', color: '#5a7c6a' },
   'are-u-still':   { file: '05-are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',      year: '2024', date: 'Jan 8, 2024',  color: '#5a7aaa' },
-  'sour-honey':    { file: '06-sour-honey',     cover: 'sour_honey.png',    title: "CAN'T LEAVE ALONE", year: '2025', date: 'Feb 10, 2025', color: '#c06080' },
+  'sour-honey':    { file: '06-sour-honey',     cover: 'sour_honey.png',    title: "CAN\'T LEAVE ALONE", year: '2025', date: 'Feb 10, 2025', color: '#c06080' },
   'decade':        { file: '07-decade',         cover: 'decade.png',        title: 'DECADE',           year: '2026', date: 'Sep 9, 2026',  color: '#6e5a7c' },
 };
 
@@ -72,7 +72,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     albumStreams: '640M+',
     chartPeak: 'Melon #8 · Circle Digital Top 20',
     titleTrack: { title: 'SOUR', spotify: '145M+', youtube: '120M+' },
-    crossover: { title: "CAN'T LEAVE ALONE feat. Pharrell Williams", spotify: '260M+', youtube: '175M+' },
+    crossover: { title: "CAN\'T LEAVE ALONE feat. Pharrell Williams", spotify: '260M+', youtube: '175M+' },
     keyTracks: [
       { title: 'MYSTERY LADY', streams: '92M+' },
       { title: 'SHOOK', streams: '58M+' },
@@ -130,7 +130,7 @@ const en = {
     'softest-touch': '1st Mini Album',
     'pulse-era': '1st Studio Album',
     'are-u-still': '2nd Studio Album',
-    'sour-honey': '3rd Studio Album · SOUR | HONEY era',
+    'sour-honey': '3rd Studio Album · CAN\'T LEAVE ALONE era',
     'decade': 'Anthology Album',
   } as Record<string, string>,
   note: {
@@ -174,7 +174,7 @@ const th: typeof en = {
     'softest-touch': 'Mini Album ชุดที่ 1',
     'pulse-era': 'สตูดิโออัลบั้มชุดที่ 1',
     'are-u-still': 'สตูดิโออัลบั้มชุดที่ 2',
-    'sour-honey': 'สตูดิโออัลบั้มชุดที่ 3 · ยุค SOUR | HONEY',
+    'sour-honey': 'สตูดิโออัลบั้มชุดที่ 3 · ยุค CAN\'T LEAVE ALONE',
     'decade': 'อัลบั้มรวมเพลง (Anthology)',
   } as Record<string, string>,
   note: {

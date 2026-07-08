@@ -148,7 +148,7 @@ const en = {
       period: '2024–2025',
       type: 'private',
       name: 'Hanni (NewJeans)',
-      detail: 'Sources close to both parties indicate a brief relationship during this period — both sides chose not to disclose it publicly. Buzz that surfaced on social media during the SOUR|HONEY era (2025) was attributed to ordinary social media interaction, but industry sources view that framing as a cover story.',
+      detail: 'Sources close to both parties indicate a brief relationship during this period — both sides chose not to disclose it publicly. Buzz that surfaced on social media during the CAN\'T LEAVE ALONE era (2025) was attributed to ordinary social media interaction, but industry sources view that framing as a cover story.',
     },
     {
       period: '2024',
@@ -203,7 +203,7 @@ const en = {
     },
     {
       category: 'Writing',
-      detail: 'Has written lyrics and treatments for his own projects since the PULSE era — writing credits have grown steadily from SOUR|HONEY through Shang-Chi and DECADE. He currently holds a co-screenwriting credit on the MCU trilogy.',
+      detail: 'Has written lyrics and treatments for his own projects since the PULSE era — writing credits have grown steadily from CAN\'T LEAVE ALONE through Shang-Chi and DECADE. He currently holds a co-screenwriting credit on the MCU trilogy.',
     },
   ] as Hobby[],
   values: [
@@ -372,7 +372,7 @@ const th: typeof en = {
       period: '2024–2025',
       type: 'private',
       name: 'Hanni (NewJeans)',
-      detail: 'แหล่งข่าวใกล้ชิดระบุว่ามีความสัมพันธ์ระยะสั้นในช่วงนี้ — ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวที่ปรากฏบนโซเชียลช่วง SOUR|HONEY (2025) ถูกอ้างถึงว่ามาจาก social media interaction แต่แหล่งในวงการมองว่าเป็น cover story',
+      detail: 'แหล่งข่าวใกล้ชิดระบุว่ามีความสัมพันธ์ระยะสั้นในช่วงนี้ — ทั้งสองฝ่ายเลือกไม่เปิดเผยสาธารณะ ข่าวที่ปรากฏบนโซเชียลช่วง CAN\'T LEAVE ALONE (2025) ถูกอ้างถึงว่ามาจาก social media interaction แต่แหล่งในวงการมองว่าเป็น cover story',
     },
     {
       period: '2024',
@@ -427,7 +427,7 @@ const th: typeof en = {
     },
     {
       category: 'การเขียน',
-      detail: 'เขียน lyrics และ treatment สำหรับโปรเจกต์ของตัวเองมาตั้งแต่ยุค PULSE — credit เขียนบทเพิ่มขึ้นเรื่อยๆ ตั้งแต่ SOUR|HONEY จนถึง Shang-Chi และ DECADE ปัจจุบันมี co-screenwriting credit ใน MCU trilogy',
+      detail: 'เขียน lyrics และ treatment สำหรับโปรเจกต์ของตัวเองมาตั้งแต่ยุค PULSE — credit เขียนบทเพิ่มขึ้นเรื่อยๆ ตั้งแต่ CAN\'T LEAVE ALONE จนถึง Shang-Chi และ DECADE ปัจจุบันมี co-screenwriting credit ใน MCU trilogy',
     },
   ] as Hobby[],
   values: [

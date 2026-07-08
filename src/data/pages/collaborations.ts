@@ -13,7 +13,7 @@ export const collabChart = [
   { title: 'CRUSH',              artist: 'feat. Jungkook',       spotify: 260, youtube: null, color: '#9b7fc8', year: '2022' },
   { title: 'SAY',                artist: 'feat. keshi',          spotify: 210, youtube: 120,  color: '#5a7c6a', year: '2023' },
   { title: 'JUST A DREAM',       artist: 'feat. Janet Jackson',  spotify: 130, youtube: 95,   color: '#5a7aaa', year: '2024' },
-  { title: "CAN'T LEAVE ALONE",  artist: 'feat. Pharrell',       spotify: 260, youtube: 175,  color: '#c06080', year: '2025' },
+  { title: "CAN\'T LEAVE ALONE",  artist: 'feat. Pharrell',       spotify: 260, youtube: 175,  color: '#c06080', year: '2025' },
 ];
 
 // Shared, unused in the original page — preserved verbatim.
@@ -101,10 +101,10 @@ const en = {
       note: 'Described by Rolling Stone as "a conversation between two eras." Jackson\'s involvement was initiated through CAA introduction. Track received Grammy committee consideration in Best R&B Song category.',
     },
     {
-      title: "CAN'T LEAVE ALONE (feat. Pharrell Williams)",
+      title: "CAN\'T LEAVE ALONE (feat. Pharrell Williams)",
       artist: 'Pharrell Williams',
       artistRole: 'Featured vocalist & co-producer',
-      album: "CAN'T LEAVE ALONE",
+      album: "CAN\'T LEAVE ALONE",
       albumSlug: 'sour-honey',
       year: '2025',
       genre: 'Contemporary R&B / Neo-Soul',
@@ -214,10 +214,10 @@ const th: typeof en = {
       note: 'ถูกอธิบายโดย Rolling Stone ว่าเป็น "a conversation between two eras" การมาร่วมงานของ Jackson เริ่มจากการแนะนำผ่าน CAA เพลงนี้ได้รับการพิจารณาจากคณะกรรมการ Grammy ในสาขา Best R&B Song',
     },
     {
-      title: "CAN'T LEAVE ALONE (feat. Pharrell Williams)",
+      title: "CAN\'T LEAVE ALONE (feat. Pharrell Williams)",
       artist: 'Pharrell Williams',
       artistRole: 'Featured vocalist & co-producer',
-      album: "CAN'T LEAVE ALONE",
+      album: "CAN\'T LEAVE ALONE",
       albumSlug: 'sour-honey',
       year: '2025',
       genre: 'Contemporary R&B / Neo-Soul',
