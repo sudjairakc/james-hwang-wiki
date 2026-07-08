@@ -87,6 +87,19 @@ When the Dweller is dragged back, the shadow reaching across the battlefield dis
 
 ---
 
+### Production
+
+| Phase | Timeframe |
+|---|---|
+| Pre-production | Feb 2025 – Sep 2025 |
+| Filming | Sep 2025 – Feb 2026 |
+| Post-production | Feb 2026 – Aug 2026 |
+| Theatrical release | September 18, 2026 |
+
+The finale was greenlit in early 2025 — before Legacy had even opened — on the strength of Legacy's test screenings and James Hwang's Grammy-era stardom, with the trilogy conceived as a planned arc. Director Isaiah Saxon replaced Destin Daniel Cretton during this same early-2025 window, and pre-production restarted under Saxon. Filming ran Sep 2025 – Feb 2026, slotting between James's Legacy promo (summer 2025) and his NCT 127 anniversary return (mid-2026).
+
+---
+
 ### Critical Reception
 
 **Production and creative context:**

@@ -108,6 +108,19 @@ At the edge of Ta Lo's forest, the farthest point of the dimension the Avengers 
 
 ---
 
+### Production
+
+| Phase | Timeframe |
+|---|---|
+| Pre-production | Oct 2023 – Jun 2024 |
+| Filming | Jun 2024 – Nov 2024 |
+| Post-production | Dec 2024 – Mar 2025 |
+| Theatrical release | July 25, 2025 |
+
+Filming began right after the PULSE World Tour wrapped (May 2024). The film tested exceptionally strongly in early-2025 audience screenings — which, together with James Hwang's Grammy wins (Feb 2025) and surging global profile, gave Marvel the confidence to greenlight the trilogy's finale before Legacy had even reached theaters.
+
+---
+
 ### Critical Reception
 
 **Shang-Chi and the Legacy of the Ten Rings** was received as a worthy and emotionally ambitious sequel. Critics pointed to James Hwang's expanded creative role — including his co-writing credit — as a visible factor in the depth of the character work.
@@ -124,6 +137,6 @@ At the edge of Ta Lo's forest, the farthest point of the dimension the Avengers 
 * **NME** (4/5): *"Destin Daniel Cretton pushes deeper into the psychological terrain that made the first film memorable, and James Hwang meets him there — this is a performance that deserves a spot on year-end best-actor lists, franchise film or not."*
 * **IndieWire** noted that the co-writing credit shows: *"Hwang's hand in the script is visible. The choice not to fight back in Act 5 carries a specific tone that says someone knew exactly how they wanted the character to feel."*
 
-**Box Office:** $1.02 billion worldwide — the highest in the Shang-Chi trilogy, the first Shang-Chi film to cross $1B, and among the top-grossing films of MCU Phase 5. The jump from the first film was driven by two factors absent in 2021: a full theatrical release in China — where a Chinese-heritage lead (James Hwang) and cast (Tony Leung, Fala Chen) played strongly — and James's post-Grammy global superstardom. Strong openings in China, the US, South Korea, Thailand, and the UK.
+**Box Office:** $1.02 billion worldwide — the highest in the Shang-Chi trilogy, the first Shang-Chi film to cross $1B, and among the top-grossing films of MCU Phase 5. The jump from the first film was driven by two factors absent in 2021: a full theatrical release in China — where a Chinese-heritage lead (James Hwang) and cast (Tony Leung, Fala Chen) played strongly — and James's post-Grammy global superstardom. Strong openings in China, the US, South Korea, Thailand, and the UK. CinemaScore **A**; exit-poll audience scores were the highest of the trilogy — the very metric that had already greenlit the finale months earlier.
 
 **Awards Consideration:** James Hwang received nominations from the Critics Circle and several precursor awards for Best Actor — the first time an MCU performance has sustained ongoing awards-season conversation since the Phase 1 era.

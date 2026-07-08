@@ -65,6 +65,19 @@ Post-credits scene — not long after, a ring of golden light opens in midair. W
 
 ---
 
+### Production
+
+| Phase | Timeframe |
+|---|---|
+| Pre-production | Aug 2019 – Jan 2020 |
+| Filming | Feb 2020 – Oct 2020 (COVID-19 halt Mar–Jun; resumed in Australia) |
+| Post-production | Nov 2020 – Jul 2021 |
+| Theatrical release | September 3, 2021 |
+
+Casting was confirmed at Comic-Con in July 2019. Principal photography was interrupted by the COVID-19 shutdown and finished in Australia, wrapping October 24, 2020.
+
+---
+
 ### Critical Reception
 
 **Shang-Chi and the Legend of the Ten Rings** was widely praised upon release, particularly for its action design, emotional depth, and James Hwang's lead performance.
