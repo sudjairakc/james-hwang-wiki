@@ -42,7 +42,7 @@ const en = {
     stationHeading: 'SM Station Co-Releases',
     stationSub: 'Pre-solo debut · 2018–2019',
     stationCallout:
-      "Both SM Station tracks were later revisited on DECADE (2026) as solo reinterpretation versions — signaling James's intent to reclaim and recontextualize his pre-independence catalog.",
+      "Both SM Station singles were later folded into SOFTEST TOUCH (2022) as part of the official solo catalog — signaling James's intent to reclaim and recontextualize his pre-independence work.",
     philosophyHeading: 'Collaboration Philosophy',
     philosophySelectionTitle: 'Artist Selection',
     philosophySelectionBody:
@@ -55,7 +55,7 @@ const en = {
       "One major feature per album, escalating in scale: Jungkook (K-pop peer) → keshi (alt-R&B) → Janet Jackson (legacy R&B) → Pharrell Williams (legacy production). Each step was deliberate positioning.",
   },
   stats: [
-    { val: '6', label: 'Unique collaborators' },
+    { val: '5', label: 'Unique collaborators' },
     { val: totalFeaturedStreams, label: 'Featured track streams' },
     { val: '4', label: 'Solo album features' },
     { val: '2', label: 'SM Station co-releases' },
@@ -116,22 +116,22 @@ const en = {
   ],
   stationSingles: [
     {
-      title: 'RIGHT ABOUT LOVE (feat. Taeyong)',
+      title: "YOU AIN'T GOTTA",
       partner: 'Taeyong',
       partnerGroup: 'NCT 127',
       year: '2018',
       platform: 'SM STATION 2',
       eraColor: '#c9a84c',
-      note: "Released during SM Station 2. NCT unit collaboration showcasing James's vocal chemistry with Taeyong as production-driven counterpart. Later re-recorded as solo version on DECADE anthology.",
+      note: "Released as James's 1st SM Station single ahead of his solo debut. Later folded into SOFTEST TOUCH (2022) as part of the album's acoustic-soul core.",
     },
     {
-      title: 'EVERLASTING (with Ten)',
-      partner: 'Ten',
-      partnerGroup: 'WayV / NCT',
+      title: 'CRUSH (feat. Jungkook)',
+      partner: 'Jungkook',
+      partnerGroup: 'BTS',
       year: '2019',
       platform: 'SM STATION 3',
       eraColor: '#c9a84c',
-      note: 'SM Station 3 collaboration. Two multilingual members with overlapping Thai heritage. Track became retrospectively significant after both left SM in 2022–2023. Solo version appeared on DECADE.',
+      note: "Released as James's 2nd SM Station single ahead of his solo debut. Later included as the bonus closing track on SOFTEST TOUCH (2022) — where it became the album's biggest crossover moment — and reimagined as a solo version on DECADE (2026).",
     },
   ],
 };
@@ -229,22 +229,22 @@ const th: typeof en = {
   ],
   stationSingles: [
     {
-      title: 'RIGHT ABOUT LOVE (feat. Taeyong)',
+      title: "YOU AIN'T GOTTA",
       partner: 'Taeyong',
       partnerGroup: 'NCT 127',
       year: '2018',
       platform: 'SM STATION 2',
       eraColor: '#c9a84c',
-      note: 'ปล่อยในช่วง SM Station 2 คอลแลบระดับ NCT unit ที่โชว์ vocal chemistry ระหว่าง James กับ Taeyong ในฐานะคู่หูฝั่ง production ภายหลังถูกอัดใหม่เป็นเวอร์ชันเดี่ยวในอัลบั้มรวม DECADE',
+      note: 'ปล่อยเป็นซิงเกิล SM Station แรกของ James ก่อนเดบิวต์เดี่ยว ภายหลังถูกรวมเข้า SOFTEST TOUCH (2022) เป็นส่วนหนึ่งของแกน acoustic-soul ของอัลบั้ม',
     },
     {
-      title: 'EVERLASTING (with Ten)',
-      partner: 'Ten',
-      partnerGroup: 'WayV / NCT',
+      title: 'CRUSH (feat. Jungkook)',
+      partner: 'Jungkook',
+      partnerGroup: 'BTS',
       year: '2019',
       platform: 'SM STATION 3',
       eraColor: '#c9a84c',
-      note: 'คอลแลบใน SM Station 3 สมาชิกสองคนที่พูดได้หลายภาษาและมี Thai heritage ร่วมกัน เพลงนี้กลายเป็นเพลงสำคัญย้อนหลังหลังทั้งคู่ออกจาก SM ในปี 2022–2023 เวอร์ชันเดี่ยวปรากฏในอัลบั้ม DECADE',
+      note: 'ปล่อยเป็นซิงเกิล SM Station ที่สองของ James ก่อนเดบิวต์เดี่ยว ภายหลังใส่เป็น bonus track ปิดอัลบั้ม SOFTEST TOUCH (2022) — กลายเป็นช่วง crossover ที่ใหญ่ที่สุดของอัลบั้ม — และทำเวอร์ชันเดี่ยวใหม่ในอัลบั้ม DECADE (2026)',
     },
   ],
 };

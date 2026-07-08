@@ -67,7 +67,7 @@ const en = {
     revShareLabel: 'Revenue share:',
   },
   incomeSummary: [
-    { val: '$14–20M', label: 'Solo Endorsements/yr', sub: 'Controlled via JH Company' },
+    { val: '$16–22M', label: 'Solo Endorsements/yr', sub: 'Controlled via JH Company' },
     { val: '$1–2M', label: 'Group Endorsements/yr', sub: 'SM / NCT 127 contract layer' },
     { val: '$309M', label: 'Touring Gross (2 tours)', sub: 'Ticket sales combined' },
     { val: '$95–120M', label: 'James Net Worth (post-DECADE)', sub: 'Global crossover creator tier' },
@@ -191,7 +191,7 @@ const th: typeof en = {
     revShareLabel: 'ส่วนแบ่งรายได้:',
   },
   incomeSummary: [
-    { val: '$14–20M', label: 'ดีลเดี่ยว/ปี', sub: 'ควบคุมผ่าน JH Company' },
+    { val: '$16–22M', label: 'ดีลเดี่ยว/ปี', sub: 'ควบคุมผ่าน JH Company' },
     { val: '$1–2M', label: 'ดีลกลุ่ม/ปี', sub: 'ชั้นสัญญา SM / NCT 127' },
     { val: '$309M', label: 'รายได้ทัวร์ (2 ทัวร์)', sub: 'ยอดขายบัตรรวม' },
     { val: '$95–120M', label: 'มูลค่าทรัพย์สิน James (หลัง DECADE)', sub: 'ระดับ creator crossover ระดับโลก' },

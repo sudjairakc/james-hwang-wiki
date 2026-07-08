@@ -38,7 +38,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'softest-touch': {
-    albumStreams: '320M+',
+    albumStreams: '450M+',
     chartPeak: 'Melon #18 · Circle Album Top 5',
     titleTrack: { title: 'SOFTEST TOUCH', spotify: '95M+', youtube: '82M+' },
     keyTracks: [
@@ -47,7 +47,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'pulse-era': {
-    albumStreams: '540M+',
+    albumStreams: '650M+',
     chartPeak: 'Melon #7 · Circle Digital Top 15',
     titleTrack: { title: 'HOW DOES IT FEEL', spotify: '155M+', youtube: '140M+' },
     crossover: { title: 'SAY feat. keshi', spotify: '210M+', youtube: '120M+' },

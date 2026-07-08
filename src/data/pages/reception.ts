@@ -61,7 +61,7 @@ const en = {
   summaryStats: [
     { val: '88', label: 'Peak Metascore', sub: 'ARE U STILL (2024)' },
     { val: '8.4', label: 'Highest Pitchfork', sub: 'ARE U STILL' },
-    { val: '1', label: 'Grammy Win', sub: 'Best Progressive R&B' },
+    { val: '2', label: 'Grammy Wins', sub: 'Best Progressive R&B + Best R&B Performance' },
     { val: '6', label: 'Year-End Lists', sub: '2024 cycle' },
   ],
   albumScores: [
@@ -246,7 +246,7 @@ const th: typeof en = {
   summaryStats: [
     { val: '88', label: 'Metascore สูงสุด', sub: 'ARE U STILL (2024)' },
     { val: '8.4', label: 'Pitchfork สูงสุด', sub: 'ARE U STILL' },
-    { val: '1', label: 'รางวัล Grammy', sub: 'Best Progressive R&B' },
+    { val: '2', label: 'รางวัล Grammy', sub: 'Best Progressive R&B + Best R&B Performance' },
     { val: '6', label: 'ติด Year-End List', sub: '2024 cycle' },
   ],
   albumScores: [

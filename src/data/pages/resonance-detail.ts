@@ -69,7 +69,7 @@ const en = {
     upcoming: 'Upcoming',
   },
   perSlug: {
-    'series-captain-eo-resonance': { subtitle: 'Disney+ Original Series · Season 1', label: 'Series', tagline: 'The Starwave crew begins their mission', format: '6 Episodes · Disney+ · Weekly rollout (EP1–2 premiere)' },
+    'series-captain-eo-resonance': { subtitle: 'Disney+ Original Limited Series', label: 'Series', tagline: 'The Starwave crew begins their mission', format: '6 Episodes · Disney+ · Weekly rollout (EP1–2 premiere)' },
     'i-missing-chord': { subtitle: 'Film I of the RESONANCE Saga', label: 'Film I', tagline: 'The beginning of a cosmic journey', format: 'Feature Film · Theatrical' },
     'ii-silent-orchestra': { subtitle: 'Film II of the RESONANCE Saga', label: 'Film II', tagline: 'When the music dies, the universe follows', format: 'Feature Film · Theatrical' },
     'iii-resonance': { subtitle: 'Film III of the RESONANCE Saga · Final Movement', label: 'Film III', tagline: 'The final movement', format: 'Feature Film · Theatrical' },
@@ -93,7 +93,7 @@ const th: typeof en = {
     upcoming: 'เร็วๆ นี้',
   },
   perSlug: {
-    'series-captain-eo-resonance': { subtitle: 'ซีรีส์ออริจินอล Disney+ · ซีซัน 1', label: 'ซีรีส์', tagline: 'ทีม Starwave เริ่มภารกิจ', format: '6 ตอน · Disney+ · ปล่อยรายสัปดาห์ (EP1–2 พรีเมียร์)' },
+    'series-captain-eo-resonance': { subtitle: 'ซีรีส์ลิมิเต็ดออริจินอล Disney+', label: 'ซีรีส์', tagline: 'ทีม Starwave เริ่มภารกิจ', format: '6 ตอน · Disney+ · ปล่อยรายสัปดาห์ (EP1–2 พรีเมียร์)' },
     'i-missing-chord': { subtitle: 'ภาพยนตร์ภาค I ของ RESONANCE Saga', label: 'ภาค I', tagline: 'จุดเริ่มต้นของการเดินทางข้ามจักรวาล', format: 'ภาพยนตร์ · ฉายในโรง' },
     'ii-silent-orchestra': { subtitle: 'ภาพยนตร์ภาค II ของ RESONANCE Saga', label: 'ภาค II', tagline: 'เมื่อเสียงดนตรีดับ จักรวาลก็ดับตาม', format: 'ภาพยนตร์ · ฉายในโรง' },
     'iii-resonance': { subtitle: 'ภาพยนตร์ภาค III ของ RESONANCE Saga · บทสุดท้าย', label: 'ภาค III', tagline: 'บทเพลงสุดท้าย', format: 'ภาพยนตร์ · ฉายในโรง' },

@@ -141,10 +141,10 @@ SOUR
 Breathe
 
 Disk 2 — Process & Emotion
-NEW (Title)
-NEW
-NEW
-NEW
+NEW I (Title)
+NEW II
+NEW III
+NEW IV
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note จาก independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA

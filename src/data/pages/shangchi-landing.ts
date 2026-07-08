@@ -38,7 +38,7 @@ const en = {
     'deadly-hands': { sub: '', role: 'James Hwang as Shang-Chi + co-writer', contribution: 'Actor + writer', highlight: 'Trilogy conclusion · co-writer · closing role of Phase 6' },
   } as Record<string, { sub: string; role: string; contribution: string; highlight: string }>,
   creativeRoles: [
-    { film: 'Film 1', role: 'Actor only', detail: 'First MCU performance — establishes Shang-Chi as a Korean-American protagonist' },
+    { film: 'Film 1', role: 'Actor only', detail: 'First MCU performance — establishes Shang-Chi as an Asian-American protagonist' },
     { film: 'Film 2', role: 'Actor + co-writer', detail: 'Joins the writers room — shapes the character arc and dialogue' },
     { film: 'Film 3', role: 'Actor + co-writer', detail: 'Full creative partner in the trilogy conclusion' },
   ],
@@ -74,7 +74,7 @@ const th: typeof en = {
     'deadly-hands': { sub: 'ชาง-ชี กับมือมรณะ', role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท', contribution: 'นักแสดง + นักเขียน', highlight: 'บทสรุปไตรภาค · ร่วมเขียนบท · บทบาทปิดท้าย Phase 6' },
   } as Record<string, { sub: string; role: string; contribution: string; highlight: string }>,
   creativeRoles: [
-    { film: 'ภาค 1', role: 'นักแสดงอย่างเดียว', detail: 'การแสดงใน MCU ครั้งแรก — สร้าง Shang-Chi ในฐานะตัวเอกเกาหลี-อเมริกัน' },
+    { film: 'ภาค 1', role: 'นักแสดงอย่างเดียว', detail: 'การแสดงใน MCU ครั้งแรก — สร้าง Shang-Chi ในฐานะตัวเอกเอเชียน-อเมริกัน' },
     { film: 'ภาค 2', role: 'นักแสดง + ผู้ร่วมเขียนบท', detail: 'เข้าร่วมทีมเขียนบท — หล่อหลอมอาร์คตัวละครและบทสนทนา' },
     { film: 'ภาค 3', role: 'นักแสดง + ผู้ร่วมเขียนบท', detail: 'พันธมิตรสร้างสรรค์เต็มตัวในบทสรุปไตรภาค' },
   ],

@@ -156,7 +156,7 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 **Disk 2 — Process & Emotion**
 | # | เพลง | หมายเหตุ |
 |---|---|---|
-| 1–4 | NEW (×4) | เพลงใหม่ 4 เพลง — forward-looking statement สำหรับ era ถัดไป |
+| 1–4 | NEW I–IV | เพลงใหม่ 4 เพลง — forward-looking statement สำหรับ era ถัดไป |
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note จาก PULSE Sessions 2022 |
 | 6 | TALK TO ME | จาก PULSE |
 | 7 | YOU AIN'T GOTTA | จาก SOFTEST TOUCH |

@@ -21,7 +21,7 @@ const en = {
   quickFacts: [
     { label: 'Full Name', val: 'Hwang Ji-nam (황지남) · Huáng Zhìnán (黃志南) · James Hwang' },
     { label: 'Born', val: 'June 22, 1998 · Bangkok, Thailand' },
-    { label: 'Heritage', val: 'Half-Thai (paternal) · Half-Chinese (maternal) · Half-Korean (maternal)' },
+    { label: 'Heritage', val: 'Thai-Chinese (paternal) · Korean (maternal)' },
     { label: 'Citizenship', val: 'Thai (single nationality)' },
     { label: 'Languages', val: 'Thai · Chinese · Korean · English · Japanese (fluent)' },
     { label: 'Education', val: 'School of Performing Arts Seoul (SOPA) · enrolled 2014 · graduated Feb 7, 2017' },
@@ -100,7 +100,7 @@ const en = {
       body: [
         "CAN'T LEAVE ALONE — the SOUR|HONEY dual-concept album — released February 10, 2025, with no Korean broadcast promotion — a deliberate business and personal positioning choice focused entirely on US and global platforms. In June 2025, James announced a pause on NCT 127 group activity through July 2026 to focus on solo work and the Shang-Chi trilogy's conclusion. Shang-Chi and the Legacy of the Ten Rings premiered July 25, 2025; James carried a co-screenwriting credit — his first formal writing credit on a studio production.",
         "In July–August 2025, political events in Thailand created a brief moment of public division around James. He issued a measured, peace-oriented response, reduced his use of Thai in public appearances, and paused Thailand-based activities through the remainder of the year.",
-        "In September 2026, two major releases converged: DECADE — his first anthology album, marking ten years from his NCT 127 debut, with four new tracks — and Shang-Chi and the Legion Accursed, directed by Isaiah Saxon and co-written by James, closing the trilogy. In the same month, his relationship with co-star Ashley Liao was publicly confirmed through a joint statement. In June–July 2026, James had returned to NCT 127 for the group's 10th anniversary activities, participating in full across all dates outside Thailand.",
+        "In September 2026, two major releases converged: DECADE — his first anthology album, marking ten years from his NCT 127 debut, with four new tracks — and Shang-Chi and the Deadly Hands, directed by Isaiah Saxon and co-written by James, closing the trilogy. In the same month, his relationship with co-star Ashley Liao was publicly confirmed through a joint statement. In June–July 2026, James had returned to NCT 127 for the group's 10th anniversary activities, participating in full across all dates outside Thailand.",
         "CAPTAIN EO: RESONANCE, the Disney+ franchise he developed as creator, co-director, composer, and lead actor, premiered as a holiday flagship series in December 2026. The DECADE tour opened January 2027. A decade had elapsed from SM Rookies trainee to Grammy-winning, MCU-lead, IP-owning independent artist.",
       ],
     },
@@ -130,7 +130,7 @@ const th: typeof en = {
   quickFacts: [
     { label: 'ชื่อเต็ม', val: 'Hwang Ji-nam (황지남) · Huáng Zhìnán (黃志南) · James Hwang' },
     { label: 'เกิด', val: 'June 22, 1998 · Bangkok, Thailand' },
-    { label: 'เชื้อสาย', val: 'ครึ่งไทย (ฝั่งพ่อ) · ครึ่งจีน (ฝั่งแม่) · ครึ่งเกาหลี (ฝั่งแม่)' },
+    { label: 'เชื้อสาย', val: 'ไทย-จีน (ฝ่ายพ่อ) · เกาหลี (ฝ่ายแม่)' },
     { label: 'สัญชาติ', val: 'ไทย (สัญชาติเดียว)' },
     { label: 'ภาษา', val: 'ไทย · จีน · เกาหลี · อังกฤษ · ญี่ปุ่น (คล่องแคล่ว)' },
     { label: 'การศึกษา', val: 'School of Performing Arts Seoul (SOPA) · เข้าเรียนปี 2014 · จบการศึกษา Feb 7, 2017' },
@@ -209,7 +209,7 @@ const th: typeof en = {
       body: [
         'CAN\'T LEAVE ALONE — อัลบั้ม dual-concept SOUR|HONEY — ปล่อยวันที่ February 10, 2025 โดยไม่มีการโปรโมตทางออกอากาศในเกาหลี — เป็นการตัดสินใจเชิงธุรกิจและตำแหน่งส่วนตัวที่ตั้งใจโฟกัสไปที่แพลตฟอร์มสหรัฐฯ และระดับโลกเท่านั้น เดือน June 2025 James ประกาศพักกิจกรรมกลุ่มกับ NCT 127 ไปจนถึง July 2026 เพื่อโฟกัสงานเดี่ยวและปิดไตรภาค Shang-Chi Shang-Chi and the Legacy of the Ten Rings ฉายรอบปฐมทัศน์วันที่ July 25, 2025 James มีเครดิตร่วมเขียนบท — เครดิตการเขียนบทอย่างเป็นทางการครั้งแรกของเขาในงาน studio production',
         'ช่วง July–August 2025 เหตุการณ์ทางการเมืองใน Thailand สร้างความแตกแยกในการรับรู้สาธารณะรอบตัว James ช่วงสั้นๆ เขาออกแถลงการณ์ที่ระมัดระวังและเน้นสันติภาพ ลดการใช้ภาษาไทยในที่สาธารณะ และพักกิจกรรมที่เกี่ยวกับ Thailand ไปตลอดช่วงที่เหลือของปี',
-        'เดือน September 2026 มีสองผลงานใหญ่มาบรรจบกัน: DECADE — อัลบั้ม anthology ชุดแรกของเขา ฉลองครบสิบปีนับจากเดบิวต์กับ NCT 127 พร้อมเพลงใหม่สี่เพลง — และ Shang-Chi and the Legion Accursed กำกับโดย Isaiah Saxon และร่วมเขียนบทโดย James ปิดไตรภาคอย่างสมบูรณ์ ในเดือนเดียวกัน ความสัมพันธ์ของเขากับนักแสดงร่วม Ashley Liao ก็ถูกยืนยันต่อสาธารณะผ่านแถลงการณ์ร่วม ช่วง June–July 2026 James กลับมาร่วมกิจกรรมฉลองครบรอบ 10 ปีของ NCT 127 โดยเข้าร่วมเต็มที่ในทุกวันที่จัดนอก Thailand',
+        'เดือน September 2026 มีสองผลงานใหญ่มาบรรจบกัน: DECADE — อัลบั้ม anthology ชุดแรกของเขา ฉลองครบสิบปีนับจากเดบิวต์กับ NCT 127 พร้อมเพลงใหม่สี่เพลง — และ Shang-Chi and the Deadly Hands กำกับโดย Isaiah Saxon และร่วมเขียนบทโดย James ปิดไตรภาคอย่างสมบูรณ์ ในเดือนเดียวกัน ความสัมพันธ์ของเขากับนักแสดงร่วม Ashley Liao ก็ถูกยืนยันต่อสาธารณะผ่านแถลงการณ์ร่วม ช่วง June–July 2026 James กลับมาร่วมกิจกรรมฉลองครบรอบ 10 ปีของ NCT 127 โดยเข้าร่วมเต็มที่ในทุกวันที่จัดนอก Thailand',
         'CAPTAIN EO: RESONANCE แฟรนไชส์ Disney+ ที่เขาพัฒนาขึ้นในฐานะผู้สร้าง ผู้กำกับร่วม ผู้ประพันธ์ดนตรี และนักแสดงนำ ฉายรอบปฐมทัศน์เป็นซีรีส์เรือธงช่วงเทศกาลในเดือน December 2026 ทัวร์ DECADE เปิดตัวเดือน January 2027 หนึ่งทศวรรษผ่านไปนับจากเทรนนี SM Rookies สู่การเป็นศิลปินอิสระที่คว้า Grammy เป็นนักแสดงนำ MCU และเป็นเจ้าของ IP ด้วยตัวเอง',
       ],
     },

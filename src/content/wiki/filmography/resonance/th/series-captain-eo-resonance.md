@@ -298,7 +298,7 @@ _**[FADE TO BLACK]**_<br />
 * Legacy: การมี MJ มาช่วยดีดนิ้วในวินาทีสุดท้าย คือการคารวะต้นฉบับที่ทรงพลังที่สุดโดยไม่กลบรัศมีตัวเอกใหม่<br />
 
 🎨 ทิศทางงานสร้างแบบซีรีส์ (Production Approach)<br />
-* Showrunner: Dave Filoni หรือ Tony Gilroy — คนหนึ่งเน้นจิตวิญญาณ Star Wars อีกคนเน้นความสมจริงของตัวละคร<br />
+* Showrunner: Tony Gilroy — เน้นความสมจริงของตัวละครและโทน grounded<br />
 * Vibe: เน้นถ่ายทำใน The Volume (จอ LED ยักษ์) เพื่อประหยัดค่าโลเคชั่นแต่ได้งานภาพระดับหนังโรง<br />
 
 🎸 FINAL ACT: บทพูดเด็ดปิดท้ายโปรเจกต์<br />
@@ -309,20 +309,20 @@ Koro: "จักรวาลน่ะไม่ได้พังหรอก... 
 
 ### Pre-Release Reception
 
-**RESONANCE: Captain EO** (Disney+, December 4, 2026) is currently in post-production as of April 2026. The following reflects pre-release context.
+**Captain EO: RESONANCE** (Disney+, December 4, 2026) is currently in post-production as of April 2026. The following reflects pre-release context.
 
 **Critical and industry positioning:**
-The series is positioned as Disney+'s flagship prestige animation release for Q4 2026. James Hwang's involvement as creator, executive producer, and composer of the original score has generated significant trade coverage, particularly given that it represents his first long-form original IP outside the MCU.
+The series is positioned as Disney+'s flagship prestige live-action release for Q4 2026. James Hwang's involvement as creator, executive producer, and lead actor has generated significant trade coverage, particularly given that it represents his first long-form original IP outside the MCU.
 
 **Creative team buzz:**
-* The involvement of Kogonada as director on episodes 3–4 has elevated the critical conversation around the series well beyond standard animation releases.
+* The involvement of Kogonada as director on episodes 3–4 has elevated the critical conversation around the series well beyond standard streaming releases.
 * Ludwig Göransson's score for the series is anticipated as a major component of the Disney+ marketing push.
 * The character design and world-building, developed in collaboration with James Hwang's JH Company visual team over a two-year development period, has been described in production profiles as "visually unlike anything in the Disney+ catalog."
 
 **Awards consideration:**
-The series has been flagged by animation trade press as a strong Emmy contender in the following categories: Outstanding Animated Series, Outstanding Original Music and Lyrics, and Outstanding Main Title Design. Precursor conversations have mentioned James Hwang's name in both creative and performance categories given his vocal role.
+The series has been flagged by trade press as a strong Emmy contender in the following categories: Outstanding Limited or Anthology Series, Outstanding Lead Actor (Limited Series), Outstanding Original Music and Lyrics, and Outstanding Main Title Design. Precursor conversations have mentioned James Hwang's name in both creative and performance categories given his lead role.
 
 **Fan anticipation:**
-Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi: Legion Accursed.
+Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi and the Deadly Hands.
 
 **Context note:** This is a pre-release entry. Viewership data and critical scores will be updated upon premiere.

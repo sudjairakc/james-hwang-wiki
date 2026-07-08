@@ -54,7 +54,7 @@ const en = {
   ],
   chant: [
     { cue: '"Cause if you came here to party"', who: 'James', text: 'Cause if you came here to party' },
-    { cue: '(after line)', who: 'Fans', text: 'JAMES HWANG!' },,
+    { cue: '(after line)', who: 'Fans', text: 'JAMES HWANG!' },
     { cue: 'Chorus end', who: 'Fans', text: 'GEMZEN! (echo)' },
   ],
   projects: [
@@ -196,7 +196,7 @@ const th: typeof en = {
   ],
   chant: [
     { cue: '"Cause if you came here to party"', who: 'James', text: 'Cause if you came here to party' },
-    { cue: '(หลังท่อนนี้)', who: 'Fans', text: 'JAMES HWANG!' },,
+    { cue: '(หลังท่อนนี้)', who: 'Fans', text: 'JAMES HWANG!' },
     { cue: 'ท้ายท่อนคอรัส', who: 'Fans', text: 'GEMZEN! (echo)' },
   ],
   projects: [

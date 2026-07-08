@@ -16,7 +16,7 @@ export const typeColors: Record<RivalryType, string> = {
   political:     '#5a7aaa',
   celebrity:     '#c06080',
   institutional: '#9b7fc8',
-  fandom:        '#5a7c6a',
+  fandom:        '#9b7fc8',
 };
 
 export const statusColors: Record<Status, string> = {

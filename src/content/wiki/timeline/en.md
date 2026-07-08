@@ -316,7 +316,7 @@ The single reached No. 1 on music charts, reinforcing his success as a solo arti
 ### 11/2023
 29/10/2023 (continuing into early November): Announced the end of the "PULSE 2023" tour (leg 1) with a concert in Taipei, while confirming plans to expand the tour in 2024.
 
-In the same announcement, James revealed that his second album "Are You Still" would be released on 08/01/2024 and would be a project building on the narrative from his first album.
+In the same announcement, James revealed that his second album "ARE U STILL" would be released on 08/01/2024 and would be a project building on the narrative from his first album.
 
 Throughout the month: No appearances together with SM Entertainment or NCT 127, with his status still seen as "unresolved but not hostile."
 
@@ -348,7 +348,7 @@ Received the Best Musician (Male Solo) award.
 
 Reinforced his positioning as a performer–producer dual-role artist.
 
-Late in the month: James released continued content and teasers for the "Are You Still" album to prepare for 2024.
+Late in the month: James released continued content and teasers for the "ARE U STILL" album to prepare for 2024.
 
 
 
@@ -367,7 +367,7 @@ Received the Digital Bonsang award.
 
 Reflected the cumulative digital performance of PULSE continuing into early 2024.
 
-08/01/2024: James released his second full-length album "Are You Still" with the title track "Tears on a Pretty Face," which built on the narrative from "PULSE" toward a more emotional / introspective tone.
+08/01/2024: James released his second full-length album "ARE U STILL" with the title track "Tears on a Pretty Face," which built on the narrative from "PULSE" toward a more emotional / introspective tone.
 
 10/01/2024: Attended the Circle Chart Music Awards.
 
@@ -428,7 +428,7 @@ The track "Supercute" was composed / arranged by James.
 ### 10/2024
 Entered year-end editorial coverage from several American media outlets (such as Pitchfork, Complex, and Rolling Stone).
 
-ARE YOU STILL was placed on several Best R&B Albums of the Year lists.
+ARE U STILL was placed on several Best R&B Albums of the Year lists.
 
 Reinforced his positioning as a neo-soul / progressive R&B crossover release recognized within the US critics ecosystem.
 
@@ -446,7 +446,7 @@ This period marked: "James re-entering SM's ecosystem as a producer before a per
 
 11/2024: Attended the Soul Train Music Awards.
 
-Received a nomination for Best R&B/Soul Album (ARE YOU STILL).
+Received a nomination for Best R&B/Soul Album (ARE U STILL).
 
 Received a nomination for Best New Artist.
 
@@ -454,7 +454,7 @@ Marked his first significant recognition from the Black music heritage award eco
 
 22–23/11/2024: Attended the MAMA Awards.
 
-Performed a stage from ARE YOU STILL.
+Performed a stage from ARE U STILL.
 
 Received a nomination for Best Male Solo Artist.
 
@@ -462,7 +462,7 @@ Received a nomination for Best R&B Performance ("Tears On A Pretty Face").
 
 30/11/2024: Attended the Melon Music Awards.
 
-Performed a special stage from ARE YOU STILL (such as "Tears On A Pretty Face").
+Performed a special stage from ARE U STILL (such as "Tears On A Pretty Face").
 
 Received Top 10 Artist (Bonsang).
 
@@ -476,13 +476,13 @@ Early December 2024: SM Entertainment announced that James Hwang would officiall
 
 Top Global (Excl. U.S.) Artist.
 
-Reflected the continuing global streaming performance of PULSE and ARE YOU STILL.
+Reflected the continuing global streaming performance of PULSE and ARE U STILL.
 
 14/12/2024: Attended The Fact Music Awards.
 
 Received the Artist of the Year (Bonsang) award.
 
-Reflected continuing domestic recognition following ARE YOU STILL's international success.
+Reflected continuing domestic recognition following ARE U STILL's international success.
 
 20/12/2024: Attended the KBS Music Bank Global Festival with NCT 127, performing "Fact Check" and "Walk," taking on a vocal part in place of Taeil for the first time.
 
@@ -519,7 +519,7 @@ Recognition from the Black cultural arts institution ecosystem for his progressi
 
 02/02/2025: Attended the Grammy Awards.
 
-Won Best Progressive R&B Album (ARE YOU STILL).
+Won Best Progressive R&B Album (ARE U STILL).
 
 Won Best R&B Performance ("Tears On A Pretty Face").
 
@@ -531,7 +531,7 @@ Marked a significant milestone for an Asian artist within the progressive R&B ec
 
 27/02/2025: Korean Music Awards (did not attend, clashed with the tour).
 
-Received the Best R&B Album award (ARE YOU STILL).
+Received the Best R&B Album award (ARE U STILL).
 
 A critics-driven recognition distinct from the idol award circuit, reinforcing his positioning as an R&B album at the international production ecosystem level.
 
@@ -561,7 +561,7 @@ His first nomination on a major Black music television award platform following 
 
 
 ### 08/2025
-30/08/2025: Marvel announced development of Shang-Chi 3 (officially entering the development phase: writers' room + early concept).
+30/08/2025: Marvel announced development of Shang-Chi and the Deadly Hands (officially entering the development phase: writers' room + early concept).
 
 
 ### 10/2025
@@ -587,7 +587,7 @@ Reflected continuity in the progressive / alternative R&B lane following the Gra
 
 11–12/2025: Disney, Lucasfilm, and the MJ Estate began discussions on a Captain EO reboot project as a Disney+ series, with James co-developing it (still in the development/packaging stage, not yet filming).
 
-03/11/2025 – Q1/2026: Shang-Chi 3 entered pre-production/limited principal photography (unit test shoots + action previs) at Trilith Studios.
+03/11/2025 – Q1/2026: Deadly Hands entered pre-production/limited principal photography (unit test shoots + action previs) at Trilith Studios.
 
 
 ### 12/2025
@@ -608,9 +608,9 @@ Reflected his global activity that year (Grammy + Marvel lead role + BET nominat
 ### 01/2026
 Early 2026: Due to the impact of the 2025 events in Thailand, James reduced his use of Thai in public appearances and had no scheduled work in Thailand, though he continued global-level activities. His public image remained in a "controversial but globally dominant" state.
 
-01–03/2026: Principal photography for Shang-Chi 3, using a multi-unit system and block shooting to compress the schedule while maintaining studio-level quality.
+01–03/2026: Principal photography for Deadly Hands, using a multi-unit system and block shooting to compress the schedule while maintaining studio-level quality.
 
-01–03/2026: During the filming of Shang-Chi 3, James and Ashley Liao worked together continuously across multiple location shooting units, a period during which some entertainment trade media began noticing a closeness between the two off-camera, though no official reports of a relationship had yet surfaced.
+01–03/2026: During the filming of Deadly Hands, James and Ashley Liao worked together continuously across multiple location shooting units, a period during which some entertainment trade media began noticing a closeness between the two off-camera, though no official reports of a relationship had yet surfaced.
 
 
 ### 02/2026
@@ -620,7 +620,7 @@ Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 
 
 ### 03/2026
-03/2026 – 07/2026: Entered main post-production on Shang-Chi 3 (editing, VFX, scoring run as a parallel pipeline starting during filming).
+03/2026 – 07/2026: Entered main post-production on Deadly Hands (editing, VFX, scoring run as a parallel pipeline starting during filming).
 
 03/2026: Informal sightings were reported within production industry circles that the two continued to meet outside the filming schedule during the post-shoot window, though this remained at the level of industry rumor only.
 
@@ -644,17 +644,17 @@ Joined nearly the entire anniversary tour, except for Thailand, in line with the
 
 
 ### 07–09/2026
-07/2026 – 09/2026: Shang-Chi 3 entered final post-production & global marketing rollout.
+07/2026 – 09/2026: Deadly Hands entered final post-production & global marketing rollout.
 
 Final VFX polish, sound mix, IMAX/Dolby mastering.
 
 Main trailer release, global press tour, brand campaigns.
 
-07–08/2026: During Shang-Chi 3's global press tour, the two began appearing together in promotional settings several times outside scripted press interactions, causing some entertainment media to note a growing closeness in their dynamic.
+07–08/2026: During Deadly Hands' global press tour, the two began appearing together in promotional settings several times outside scripted press interactions, causing some entertainment media to note a growing closeness in their dynamic.
 
 
 ### 09/2026
-09/2026: Shang-Chi 3 released (global release); positioning: a Marvel film with an experimental / auteur-driven tone, clearly distinct from previous installments.
+09/2026: Shang-Chi and the Deadly Hands released (global release); positioning: a Marvel film with an experimental / auteur-driven tone, clearly distinct from previous installments.
 
 09/2026: James released the album "Decade – 1st Anthology Album."
 
@@ -662,7 +662,7 @@ Compiled major works across his career.
 
 Included 4 new songs, serving as a career milestone and narrative reset.
 
-09/2026: During the global premiere window of Shang-Chi 3, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
+09/2026: During the global premiere window of Deadly Hands, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
 
 
 ### 09–12/2026

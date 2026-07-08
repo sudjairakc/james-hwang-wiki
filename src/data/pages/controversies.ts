@@ -5,7 +5,7 @@
 
 import type { Lang } from '../../i18n';
 
-type Category = 'political' | 'industry' | 'personal' | 'fandom';
+type Category = 'political' | 'industry' | 'personal' | 'fandom' | 'social';
 type Severity = 'high' | 'medium' | 'low';
 type Status = 'resolved' | 'ongoing' | 'faded';
 
@@ -147,7 +147,7 @@ const en = {
     {
       period: '2024',
       title: 'Cultural Appropriation Allegations — ARE U STILL Era',
-      category: 'social' as Category,
+      category: 'social',
       severity: 'medium',
       status: 'faded',
       body: 'Criticism circulated that ARE U STILL leaned too heavily on African-American cultural influence — arising on Twitter/X during the Grammy campaign, focused on neo-soul influences, vocal style, and music video aesthetics. There was no direct evidence of appropriating cultural symbols, while many African-American fans spoke up in support and rejected the label.',
@@ -316,7 +316,7 @@ const th: typeof en = {
     {
       period: '2024',
       title: 'ข้อกล่าวหา Cultural Appropriation — ยุค ARE U STILL',
-      category: 'social' as Category,
+      category: 'social',
       severity: 'medium',
       status: 'faded',
       body: 'กระแสวิจารณ์ว่า ARE U STILL ได้รับอิทธิพลจากวัฒนธรรมแอฟริกัน-อเมริกันมากเกินไป — เกิดใน Twitter/X ช่วง Grammy campaign เน้นที่ neo-soul influences, vocal style, และ music video aesthetic ไม่มีหลักฐานการ appropriate สัญลักษณ์ทางวัฒนธรรมโดยตรง ขณะที่แฟนคลับชาวแอฟริกัน-อเมริกันหลายคนออกมาแสดงความเห็นสนับสนุนและปฏิเสธการ label ดังกล่าว',

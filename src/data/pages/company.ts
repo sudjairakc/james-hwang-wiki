@@ -53,12 +53,12 @@ const en = {
     { name: 'Film & Franchise', icon: '▶', desc: 'RESONANCE universe · Disney+ / Trilogy films' },
   ],
   revenue: [
-    { segment: 'Touring', share: '38–45%', role: 'Primary revenue engine', pct: 42 },
-    { segment: 'Endorsements', share: '22–28%', role: 'High-margin celebrity leverage', pct: 25 },
-    { segment: 'Film / Franchise IP', share: '12–18%', role: 'Valuation multiplier pillar', pct: 15 },
-    { segment: 'Recorded Music', share: '8–12%', role: 'Catalog growth layer', pct: 10 },
-    { segment: 'Publishing', share: '5–8%', role: 'Long-tail royalty structure', pct: 6.5 },
-    { segment: 'Merchandising', share: '6–9%', role: 'Brand identity monetization', pct: 7.5 },
+    { segment: 'Touring', share: '38–45%', role: 'Primary revenue engine', pct: 40 },
+    { segment: 'Endorsements', share: '22–28%', role: 'High-margin celebrity leverage', pct: 24 },
+    { segment: 'Film / Franchise IP', share: '12–18%', role: 'Valuation multiplier pillar', pct: 14 },
+    { segment: 'Recorded Music', share: '8–12%', role: 'Catalog growth layer', pct: 9 },
+    { segment: 'Publishing', share: '5–8%', role: 'Long-tail royalty structure', pct: 6 },
+    { segment: 'Merchandising', share: '6–9%', role: 'Brand identity monetization', pct: 7 },
   ],
   ipPortfolio: [
     {
@@ -94,7 +94,7 @@ const en = {
       type: 'Trademark / Brand IP',
       ownership: '100% James Hwang — confirmed in SM settlement 2023',
       detail:
-        'Rights to the GONUNMA name and trademark were confirmed in the settlement with SM. It\'s now retained as a producer alias on credits and is no longer used as a public artist name.',
+        'Rights to the GONUNMA name and trademark were confirmed in the settlement with SM. It\'s retired as a performing/artist name but retained as a producer credit and as a product/capsule brand line.',
     },
   ],
   merchandise: [
@@ -219,12 +219,12 @@ const th: typeof en = {
     { name: 'ภาพยนตร์ & แฟรนไชส์', icon: '▶', desc: 'จักรวาล RESONANCE · Disney+ / ไตรภาคภาพยนตร์' },
   ],
   revenue: [
-    { segment: 'ทัวร์คอนเสิร์ต', share: '38–45%', role: 'เครื่องยนต์รายได้หลัก', pct: 42 },
-    { segment: 'พรีเซ็นเตอร์', share: '22–28%', role: 'มาร์จิ้นสูงจากพลังคนดัง', pct: 25 },
-    { segment: 'ภาพยนตร์ / Franchise IP', share: '12–18%', role: 'เสาหลักตัวคูณมูลค่าบริษัท', pct: 15 },
-    { segment: 'เพลงที่บันทึกเสียง', share: '8–12%', role: 'ชั้นการเติบโตของคลังเพลง', pct: 10 },
-    { segment: 'การเผยแพร่ (Publishing)', share: '5–8%', role: 'โครงสร้างค่าลิขสิทธิ์ระยะยาว (long-tail)', pct: 6.5 },
-    { segment: 'สินค้าที่ระลึก', share: '6–9%', role: 'การสร้างรายได้จากอัตลักษณ์แบรนด์', pct: 7.5 },
+    { segment: 'ทัวร์คอนเสิร์ต', share: '38–45%', role: 'เครื่องยนต์รายได้หลัก', pct: 40 },
+    { segment: 'พรีเซ็นเตอร์', share: '22–28%', role: 'มาร์จิ้นสูงจากพลังคนดัง', pct: 24 },
+    { segment: 'ภาพยนตร์ / Franchise IP', share: '12–18%', role: 'เสาหลักตัวคูณมูลค่าบริษัท', pct: 14 },
+    { segment: 'เพลงที่บันทึกเสียง', share: '8–12%', role: 'ชั้นการเติบโตของคลังเพลง', pct: 9 },
+    { segment: 'การเผยแพร่ (Publishing)', share: '5–8%', role: 'โครงสร้างค่าลิขสิทธิ์ระยะยาว (long-tail)', pct: 6 },
+    { segment: 'สินค้าที่ระลึก', share: '6–9%', role: 'การสร้างรายได้จากอัตลักษณ์แบรนด์', pct: 7 },
   ],
   ipPortfolio: [
     {
@@ -260,7 +260,7 @@ const th: typeof en = {
       type: 'เครื่องหมายการค้า / IP แบรนด์',
       ownership: '100% James Hwang — ยืนยันใน settlement กับ SM ปี 2023',
       detail:
-        'สิทธิ์ในชื่อและเครื่องหมายการค้า GONUNMA ได้รับการยืนยันในข้อตกลงกับ SM ปัจจุบัน retain ไว้เป็น producer alias บน credits ไม่ได้ใช้เป็น public artist name อีกต่อไป',
+        'สิทธิ์ในชื่อและเครื่องหมายการค้า GONUNMA ได้รับการยืนยันในข้อตกลงกับ SM เกษียณจากการใช้เป็น performing/artist name แล้ว แต่ยัง retain ไว้เป็น producer credit และเป็น product/capsule brand line',
     },
   ],
   merchandise: [

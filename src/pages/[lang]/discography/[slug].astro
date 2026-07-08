@@ -166,7 +166,7 @@ function parseDecadeDisks(raw: string): DecadeDisk[] {
           archiveNote: am ? am[2] : undefined,
         });
       } else {
-        current.tracks.push({ title: t, isArchive: false, isNew: t === 'NEW (Title)' || t === 'NEW' });
+        current.tracks.push({ title: t, isArchive: false, isNew: t === 'NEW' || /^NEW\b/.test(t) });
       }
     }
   }

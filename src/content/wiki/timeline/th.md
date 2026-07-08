@@ -316,7 +316,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 ### 11/2023
 29/10/2023 (ต่อเนื่องถึงต้น พ.ย.): ประกาศจบทัวร์ "PULSE 2023" (leg 1) ด้วยคอนเสิร์ตที่ไทเป พร้อมยืนยันแผนขยายทัวร์ในปี 2024
 
-ในประกาศเดียวกัน James เปิดเผยว่าอัลบั้มที่สอง "Are You Still" จะปล่อยในวันที่ 08/01/2024 และจะเป็นโปรเจกต์ที่ต่อยอด narrative จากอัลบั้มแรก
+ในประกาศเดียวกัน James เปิดเผยว่าอัลบั้มที่สอง "ARE U STILL" จะปล่อยในวันที่ 08/01/2024 และจะเป็นโปรเจกต์ที่ต่อยอด narrative จากอัลบั้มแรก
 
 ตลอดเดือน: ไม่มีการปรากฏตัวร่วมกับ SM Entertainment หรือ NCT 127 โดยสถานะยังถูกมองว่า "unresolved แต่ไม่เป็นศัตรู"
 
@@ -348,7 +348,7 @@ performance นี้ได้เรตติ้งสูงสุดของ�
 
 reinforce positioning ในฐานะ performer–producer dual-role artist
 
-ปลายเดือน: James ปล่อย content และ teaser ต่อเนื่องสำหรับอัลบั้ม "Are You Still" เพื่อเตรียมเข้าสู่ปี 2024
+ปลายเดือน: James ปล่อย content และ teaser ต่อเนื่องสำหรับอัลบั้ม "ARE U STILL" เพื่อเตรียมเข้าสู่ปี 2024
 
 
 
@@ -367,7 +367,7 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 สะท้อน cumulative digital performance ของ PULSE ต่อเนื่องถึงต้นปี 2024
 
-08/01/2024: James ปล่อยอัลบั้มเต็มชุดที่ 2 "Are You Still" พร้อมไตเติล "Tears on a Pretty Face" ซึ่งต่อยอด narrative จาก "PULSE" ไปสู่โทนที่เป็น emotional / introspective มากขึ้น
+08/01/2024: James ปล่อยอัลบั้มเต็มชุดที่ 2 "ARE U STILL" พร้อมไตเติล "Tears on a Pretty Face" ซึ่งต่อยอด narrative จาก "PULSE" ไปสู่โทนที่เป็น emotional / introspective มากขึ้น
 
 10/01/2024: เข้าร่วมงาน Circle Chart Music Awards
 
@@ -428,7 +428,7 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 ### 10/2024
 เข้าสู่ year-end editorial coverage ของสื่ออเมริกันหลายสำนัก (เช่น Pitchfork, Complex และ Rolling Stone)
 
-ARE YOU STILL ถูกจัดอยู่ในรายชื่อ Best R&B Albums of the Year หลายรายการ
+ARE U STILL ถูกจัดอยู่ในรายชื่อ Best R&B Albums of the Year หลายรายการ
 
 reinforce positioning ในฐานะ neo-soul / progressive R&B crossover release ที่ได้รับ recognition ใน critics ecosystem ของสหรัฐฯ
 
@@ -446,7 +446,7 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 11/2024: เข้าร่วมงาน Soul Train Music Awards
 
-ได้รับการเสนอชื่อเข้าชิง Best R&B/Soul Album (ARE YOU STILL)
+ได้รับการเสนอชื่อเข้าชิง Best R&B/Soul Album (ARE U STILL)
 
 ได้รับการเสนอชื่อเข้าชิง Best New Artist
 
@@ -454,7 +454,7 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 22–23/11/2024: เข้าร่วมงาน MAMA Awards
 
-แสดง performance stage จาก ARE YOU STILL
+แสดง performance stage จาก ARE U STILL
 
 ได้รับการเสนอชื่อเข้าชิง Best Male Solo Artist
 
@@ -462,7 +462,7 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 30/11/2024: เข้าร่วมงาน Melon Music Awards
 
-แสดง special stage จาก ARE YOU STILL (เช่น "Tears On A Pretty Face")
+แสดง special stage จาก ARE U STILL (เช่น "Tears On A Pretty Face")
 
 ได้รับ Top 10 Artist (Bonsang)
 
@@ -476,13 +476,13 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 Top Global (Excl. U.S.) Artist
 
-สะท้อน global streaming performance ต่อเนื่องของ PULSE และ ARE YOU STILL
+สะท้อน global streaming performance ต่อเนื่องของ PULSE และ ARE U STILL
 
 14/12/2024: เข้าร่วมงาน The Fact Music Awards
 
 รับรางวัล Artist of the Year (Bonsang)
 
-สะท้อน domestic recognition ต่อเนื่องหลัง ARE YOU STILL international success
+สะท้อน domestic recognition ต่อเนื่องหลัง ARE U STILL international success
 
 20/12/2024: เข้าร่วมงาน KBS Music Bank Global Festival กับ NCT 127 แสดง "Fact Check" และ "Walk" โดยรับพาร์ทโวคอลแทน Taeil เป็นครั้งแรก
 
@@ -519,7 +519,7 @@ Top Global (Excl. U.S.) Artist
 
 02/02/2025: เข้าร่วมงาน Grammy Awards
 
-ชนะ Best Progressive R&B Album (ARE YOU STILL)
+ชนะ Best Progressive R&B Album (ARE U STILL)
 
 ชนะ Best R&B Performance ("Tears On A Pretty Face")
 
@@ -531,7 +531,7 @@ Top Global (Excl. U.S.) Artist
 
 27/02/2025: Korean Music Awards (ไม่ได้ไป ชนกับทัวร์)
 
-รับรางวัล Best R&B Album (ARE YOU STILL)
+รับรางวัล Best R&B Album (ARE U STILL)
 
 เป็น critics-driven recognition ต่างจาก idol award circuit และ reinforce positioning ในฐานะ R&B album ระดับ international production ecosystem
 
@@ -561,7 +561,7 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 08/2025
-30/08/2025: Marvel ประกาศพัฒนา Shang-Chi ภาค 3 (เข้าสู่ development phase อย่างเป็นทางการ: writers' room + early concept)
+30/08/2025: Marvel ประกาศพัฒนา Shang-Chi and the Deadly Hands (เข้าสู่ development phase อย่างเป็นทางการ: writers' room + early concept)
 
 
 ### 10/2025
@@ -587,7 +587,7 @@ Favorite Male R&B Artist
 
 11–12/2025: Disney, Lucasfilm, และ MJ Estate เริ่มหารือโปรเจกต์รีบูต Captain EO เป็นซีรีส์ Disney+ โดย James ร่วมพัฒนา (ยังอยู่ในขั้น development/packaging, ยังไม่ถ่ายทำ)
 
-03/11/2025 – Q1/2026: Shang-Chi 3 เข้าสู่ pre-production/limited principal photography (unit test shoots + action previs) ที่ Trilith Studios
+03/11/2025 – Q1/2026: Deadly Hands เข้าสู่ pre-production/limited principal photography (unit test shoots + action previs) ที่ Trilith Studios
 
 
 ### 12/2025
@@ -608,9 +608,9 @@ Top Global (Excl. U.S.) Artist
 ### 01/2026
 ต้นปี 2026: จากผลกระทบเหตุการณ์ในไทยช่วงปี 2025 James ลดการใช้ภาษาไทยใน public appearance และยังไม่มีตารางงานในประเทศไทย แต่ยังคงทำกิจกรรมระดับ global อย่างต่อเนื่อง ภาพลักษณ์อยู่ในสถานะ "controversial but globally dominant"
 
-01–03/2026: ถ่ายทำหลัก (principal photography) ของ Shang-Chi 3 โดยใช้ระบบ multi-unit และ block shooting เพื่อ compress schedule ให้สั้นลง แต่ยังคงคุณภาพงานระดับสตูดิโอ
+01–03/2026: ถ่ายทำหลัก (principal photography) ของ Deadly Hands โดยใช้ระบบ multi-unit และ block shooting เพื่อ compress schedule ให้สั้นลง แต่ยังคงคุณภาพงานระดับสตูดิโอ
 
-01–03/2026: ระหว่างการถ่ายทำ Shang-Chi 3 James และ Ashley Liao มีการทำงานร่วมกันอย่างต่อเนื่องในหลาย location shooting unit ซึ่งเป็นช่วงเวลาที่สื่อ entertainment trade บางแห่งเริ่มสังเกตเห็นความสนิทสนมของทั้งสองในระดับ off-camera แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
+01–03/2026: ระหว่างการถ่ายทำ Deadly Hands James และ Ashley Liao มีการทำงานร่วมกันอย่างต่อเนื่องในหลาย location shooting unit ซึ่งเป็นช่วงเวลาที่สื่อ entertainment trade บางแห่งเริ่มสังเกตเห็นความสนิทสนมของทั้งสองในระดับ off-camera แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
 
 
 ### 02/2026
@@ -620,7 +620,7 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 03/2026
-03/2026 – 07/2026: เข้าสู่ main post-production ของ Shang-Chi 3 (editing, VFX, scoring ทำแบบ parallel pipeline ตั้งแต่ระหว่างการถ่ายทำ)
+03/2026 – 07/2026: เข้าสู่ main post-production ของ Deadly Hands (editing, VFX, scoring ทำแบบ parallel pipeline ตั้งแต่ระหว่างการถ่ายทำ)
 
 03/2026: มีรายงาน sightings แบบ informal ในวงการ production circle ว่าทั้งสองยังคงพบกันนอกตารางถ่ายทำในช่วง post-shoot window แต่ถูกจัดอยู่ในระดับ industry rumor เท่านั้น
 
@@ -644,17 +644,17 @@ James กลับมาร่วมกิจกรรมวงแบบ full pa
 
 
 ### 07–09/2026
-07/2026 – 09/2026: Shang-Chi 3 เข้าสู่ final post-production & global marketing rollout
+07/2026 – 09/2026: Deadly Hands เข้าสู่ final post-production & global marketing rollout
 
 final VFX polish, sound mix, IMAX/Dolby mastering
 
 ปล่อย trailer หลัก, global press tour, brand campaigns
 
-07–08/2026: ระหว่าง global press tour ของ Shang-Chi 3 ทั้งสองเริ่มปรากฏตัวร่วมกันใน promotional environment หลายครั้งนอก scripted press interaction ซึ่งสื่อ entertainment บางแห่งเริ่มตั้งข้อสังเกตถึง dynamic ที่ใกล้ชิดมากขึ้น
+07–08/2026: ระหว่าง global press tour ของ Deadly Hands ทั้งสองเริ่มปรากฏตัวร่วมกันใน promotional environment หลายครั้งนอก scripted press interaction ซึ่งสื่อ entertainment บางแห่งเริ่มตั้งข้อสังเกตถึง dynamic ที่ใกล้ชิดมากขึ้น
 
 
 ### 09/2026
-09/2026: Shang-Chi 3 เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
+09/2026: Shang-Chi and the Deadly Hands เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
 
 09/2026: James ปล่อยอัลบั้ม "Decade – 1st Anthology Album"
 
@@ -662,7 +662,7 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 มีเพลงใหม่ 4 เพลง ทำหน้าที่เป็น career milestone และ narrative reset
 
-09/2026: ระหว่าง global premiere window ของ Shang-Chi 3 ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
+09/2026: ระหว่าง global premiere window ของ Deadly Hands ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
 
 
 ### 09–12/2026
