@@ -66,7 +66,7 @@ const en = {
       type: 'Franchise IP',
       ownership: 'Co-owned — The Walt Disney Company · Lucasfilm · MJ Estate · JH Company',
       detail:
-        'Captain EO: RESONANCE draws its rights from the original Captain EO (1986), which is held by multiple parties — Disney is the majority rights holder and distributor, Lucasfilm as producer of the original, the MJ Estate holds the music and likeness rights to Michael Jackson, and JH Company holds creative ownership as creator of the new universe. JH Company\'s stake is smaller than Disney\'s, but it retains creative control and co-direction rights — making this the highest-value franchise asset in the portfolio.',
+        'Captain EO: RESONANCE draws its rights from the original Captain EO (1986), which is held by multiple parties — Disney is the majority rights holder and distributor, Lucasfilm as producer of the original, the MJ Estate holds the music and likeness rights to Michael Jackson, and JH Company holds creative ownership as creator of the new universe. JH Company\'s stake is smaller than Disney\'s, but it retains creative control and co-direction rights — making this the highest-value franchise asset in the portfolio. The deal closed because every party benefited: the MJ Estate trusted a documented MJ-lineage artist to reactivate a dormant property on favorable royalty + strict likeness-guardrail terms; a franchise-fatigued Lucasfilm gained a low-risk new tentpole it did not have to originate; and Disney — already backing James after Shang-Chi — kept majority + distribution while he carried the creative risk and funded development.',
     },
     {
       asset: 'Music Catalog (2022–present)',
@@ -225,7 +225,7 @@ const th: typeof en = {
       type: 'ทรัพย์สินทางปัญญาแฟรนไชส์ (Franchise IP)',
       ownership: 'ถือร่วมกัน — The Walt Disney Company · Lucasfilm · MJ Estate · JH Company',
       detail:
-        'Captain EO: RESONANCE ต้องอิงสิทธิ์จาก original Captain EO (1986) ซึ่งมีหลายฝ่ายถือ — Disney เป็น majority rights holder และ distributor, Lucasfilm ในฐานะ producer ของต้นฉบับ, MJ Estate ถือสิทธิ์เพลงและ likeness ของ Michael Jackson, JH Company ถือ creative ownership ในฐานะผู้สร้าง new universe JH Company มีสัดส่วนน้อยกว่า Disney แต่ retain สิทธิ์ creative control และ co-direction ถือเป็น franchise asset ที่มีมูลค่าสูงที่สุดในพอร์ตโฟลิโอ',
+        'Captain EO: RESONANCE ต้องอิงสิทธิ์จาก original Captain EO (1986) ซึ่งมีหลายฝ่ายถือ — Disney เป็น majority rights holder และ distributor, Lucasfilm ในฐานะ producer ของต้นฉบับ, MJ Estate ถือสิทธิ์เพลงและ likeness ของ Michael Jackson, JH Company ถือ creative ownership ในฐานะผู้สร้าง new universe JH Company มีสัดส่วนน้อยกว่า Disney แต่ retain สิทธิ์ creative control และ co-direction ถือเป็น franchise asset ที่มีมูลค่าสูงที่สุดในพอร์ตโฟลิโอ ดีลปิดได้เพราะทุกฝ่ายได้ประโยชน์: MJ Estate เชื่อใจศิลปินสาย MJ-lineage ให้ revive IP ที่หลับอยู่บนเงื่อนไข royalty ที่ดี + guardrail เรื่อง likeness ที่เข้มงวด · Lucasfilm ที่แฟรนไชส์หลักกำลังล้าได้ tentpole ใหม่ความเสี่ยงต่ำที่ไม่ต้องริเริ่มเอง · Disney ที่หนุน James อยู่แล้วหลัง Shang-Chi เก็บ majority + distribution ไว้ ขณะที่ James แบก creative risk และลงทุนพัฒนา',
     },
     {
       asset: 'คลังเพลง (2022–ปัจจุบัน)',
