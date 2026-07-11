@@ -42,7 +42,12 @@ const en = {
         { show: 'Global R&B Editorial Playlists', category: 'Circulation (Multi-market)', result: 'WIN' },
         { show: 'Melon', category: 'Catalog Streaming Uplift — LIKE I DO / CRUSH', result: 'WIN' },
       ],
-      musicWins: [] as { title: string; show: string; count: number }[],
+      musicWins: [
+        { title: 'SOFTEST TOUCH', show: 'M Countdown', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Music Bank', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Show! Music Core', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Inkigayo', count: 1 },
+      ],
       charts: [
         'Global curated R&B playlists (Asia + North America)',
         'Catalog resurgence streaming uplift after official solo debut release',
@@ -54,7 +59,8 @@ const en = {
       albumSub: '1st Studio Album',
       wins: [
         { show: 'Melon Music Awards', category: 'Top 10 Artist (Bonsang)', result: 'WIN' },
-        { show: 'Asia Artist Awards', category: 'Best Musician (Male Solo)', result: 'WIN' },
+        { show: 'Melon Music Awards', category: 'Millions Top 10 Artist', result: 'WIN' },
+        { show: 'Melon Music Awards', category: 'Best Male Solo Artist', result: 'WIN' },
         { show: 'MAMA Awards', category: 'Best Male Solo Artist', result: 'NOM' },
         { show: 'Melon Collaboration Project', category: 'Golden Producer recognition', result: 'WIN' },
       ],
@@ -157,10 +163,10 @@ const en = {
       album: 'RESONANCE: THE MISSING CHORD',
       albumSub: 'Film I · RESONANCE Saga · Acting',
       wins: [
-        { show: 'Golden Globe Awards', category: 'Best Actor in a Television Series – Drama', result: 'WIN' },
+        { show: 'Golden Globe Awards', category: 'Best Actor in a Motion Picture – Drama', result: 'WIN' },
         { show: "Critics' Choice Movie Awards", category: 'Best Actor', result: 'NOM' },
-        { show: 'SAG Awards', category: 'Male Actor in a Drama Series', result: 'NOM' },
-        { show: 'Astra TV Awards', category: 'Best Actor in a Streaming Drama Series', result: 'WIN' },
+        { show: 'SAG Awards', category: 'Outstanding Performance by a Male Actor in a Leading Role', result: 'NOM' },
+        { show: 'Astra Film Awards', category: 'Best Actor in a Motion Picture – Drama', result: 'WIN' },
       ],
       musicWins: [] as { title: string; show: string; count: number }[],
       charts: [
@@ -207,7 +213,12 @@ const th: typeof en = {
         { show: 'Global R&B Editorial Playlists', category: 'Circulation (Multi-market)', result: 'WIN' },
         { show: 'Melon', category: 'Catalog Streaming Uplift — LIKE I DO / CRUSH', result: 'WIN' },
       ],
-      musicWins: [] as { title: string; show: string; count: number }[],
+      musicWins: [
+        { title: 'SOFTEST TOUCH', show: 'M Countdown', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Music Bank', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Show! Music Core', count: 1 },
+        { title: 'SOFTEST TOUCH', show: 'Inkigayo', count: 1 },
+      ],
       charts: [
         'เพลย์ลิสต์ R&B ที่คัดสรรระดับโลก (เอเชีย + อเมริกาเหนือ)',
         'ยอดสตรีมแคตตาล็อกเก่ากลับมาพุ่ง หลัง official solo debut release',
@@ -219,7 +230,8 @@ const th: typeof en = {
       albumSub: 'อัลบั้มเต็มชุดที่ 1',
       wins: [
         { show: 'Melon Music Awards', category: 'Top 10 Artist (Bonsang)', result: 'WIN' },
-        { show: 'Asia Artist Awards', category: 'Best Musician (Male Solo)', result: 'WIN' },
+        { show: 'Melon Music Awards', category: 'Millions Top 10 Artist', result: 'WIN' },
+        { show: 'Melon Music Awards', category: 'Best Male Solo Artist', result: 'WIN' },
         { show: 'MAMA Awards', category: 'Best Male Solo Artist', result: 'NOM' },
         { show: 'Melon Collaboration Project', category: 'Golden Producer recognition', result: 'WIN' },
       ],
@@ -322,10 +334,10 @@ const th: typeof en = {
       album: 'RESONANCE: THE MISSING CHORD',
       albumSub: 'Film I · RESONANCE Saga · การแสดง',
       wins: [
-        { show: 'Golden Globe Awards', category: 'Best Actor in a Television Series – Drama', result: 'WIN' },
+        { show: 'Golden Globe Awards', category: 'Best Actor in a Motion Picture – Drama', result: 'WIN' },
         { show: "Critics' Choice Movie Awards", category: 'Best Actor', result: 'NOM' },
-        { show: 'SAG Awards', category: 'Male Actor in a Drama Series', result: 'NOM' },
-        { show: 'Astra TV Awards', category: 'Best Actor in a Streaming Drama Series', result: 'WIN' },
+        { show: 'SAG Awards', category: 'Outstanding Performance by a Male Actor in a Leading Role', result: 'NOM' },
+        { show: 'Astra Film Awards', category: 'Best Actor in a Motion Picture – Drama', result: 'WIN' },
       ],
       musicWins: [] as { title: string; show: string; count: number }[],
       charts: [

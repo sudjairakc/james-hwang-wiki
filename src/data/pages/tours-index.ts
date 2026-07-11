@@ -26,7 +26,7 @@ export const tourMeta: Record<
     period: 'July 28, 2023 – May 30, 2024',
     legs: 4,
     shows: 64,
-    cities: 34,
+    cities: 46,
     songsPerNight: '23–33',
     runtime: '1h 42m – 2h 26m',
     ticketGross: '$235M',
@@ -69,7 +69,7 @@ const en = {
   ui: {
     label: 'Live',
     title: 'Tours',
-    subtitle: '$309M combined gross · 82 shows · 44 cities · 2 world tours',
+    subtitle: '$309M combined gross · 82 shows · 56 cities · 2 world tours',
     tourStatShows: 'Shows',
     tourStatCities: 'Cities',
     tourStatLegs: 'Legs',
@@ -130,7 +130,7 @@ const th: typeof en = {
   ui: {
     label: 'Live',
     title: 'ทัวร์คอนเสิร์ต',
-    subtitle: 'รายได้รวม $309M · 82 โชว์ · 44 เมือง · 2 ทัวร์โลก',
+    subtitle: 'รายได้รวม $309M · 82 โชว์ · 56 เมือง · 2 ทัวร์โลก',
     tourStatShows: 'โชว์',
     tourStatCities: 'เมือง',
     tourStatLegs: 'เลก',

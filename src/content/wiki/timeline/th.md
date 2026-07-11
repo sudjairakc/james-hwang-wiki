@@ -389,7 +389,7 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 
 ### 03–05/2024
-18/03/2024 – 14/05/2024: ทัวร์ต่อในอเมริกาเหนือ ละตินอเมริกา (รวม venue ใหญ่ เช่น Madison Square Garden, SAP Center)
+18/03/2024 – 14/05/2024: ทัวร์ต่อในอเมริกาเหนือ ละตินอเมริกา (รวม venue ใหญ่ เช่น Madison Square Garden, Intuit Dome)
 
 14/04/2024: James เข้าร่วม farewell gathering ของ Taeyong (private) ก่อนเข้ากรม 15/04 เป็นการ reconnect เชิง "ความสัมพันธ์ส่วนตัว" ไม่ใช่องค์กร
 

@@ -82,7 +82,7 @@ const en = {
       status: 'alert',
     },
     {
-      period: 'Late February 2023',
+      period: 'Mid-March 2023',
       label: 'SM counter-sues · Dispatch leak',
       text: 'SM Entertainment countersued, citing reputational damage. Simultaneously, Dispatch published excerpts of the recordings, and public discourse began questioning the treatment of foreign artists at the company.',
       status: 'alert',
@@ -198,7 +198,7 @@ const th: typeof en = {
       status: 'alert',
     },
     {
-      period: 'ปลายกุมภาพันธ์ 2023',
+      period: 'กลางมีนาคม 2023',
       label: 'SM counter-sues · Dispatch leak',
       text: 'SM Entertainment ฟ้องกลับโดยอ้างความเสียหายต่อชื่อเสียง ขณะเดียวกัน Dispatch เผยแพร่บางส่วนของบันทึกเสียง กระแสสังคมเริ่มตั้งคำถามต่อการปฏิบัติต่อศิลปินต่างชาติ',
       status: 'alert',

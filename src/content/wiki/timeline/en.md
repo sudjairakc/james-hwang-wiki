@@ -389,7 +389,7 @@ Reflected his international streaming footprint in Asia and North America.
 
 
 ### 03–05/2024
-18/03/2024 – 14/05/2024: Continued the tour in North America and Latin America (including major venues such as Madison Square Garden and SAP Center).
+18/03/2024 – 14/05/2024: Continued the tour in North America and Latin America (including major venues such as Madison Square Garden and Intuit Dome).
 
 14/04/2024: James attended Taeyong's farewell gathering (private) before his enlistment on 15/04, a reconnection on a "personal relationship" level rather than an organizational one.
 

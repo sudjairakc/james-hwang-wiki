@@ -116,15 +116,15 @@ export const setlist = [
 
 // Shared — era song-count breakdown (era names are proper nouns, not translated).
 export const eraBreakdown: Record<string, number> = {
-  'LIKE I DO': 3, 'SOFTEST TOUCH': 4, 'PULSE': 4,
-  'ARE U STILL': 3, "CAN\'T LEAVE ALONE": 7, 'DECADE': 4,
+  'LIKE I DO': 3, 'SOFTEST TOUCH': 4, 'PULSE': 5,
+  'ARE U STILL': 4, "CAN\'T LEAVE ALONE": 10, 'DECADE': 4,
 };
 
 // Shared — KPI card values, aligned by index with ui.kpiLabels below.
 export const kpiValues = ['18', '$74M', '$14M', '~$40M'];
 
 // Shared — show-format grid values, aligned by index with ui.showFormatLabels below.
-export const showFormatValues = ['29', '1h 27m', '6', '5', '2h 00m'];
+export const showFormatValues = ['30', '1h 27m', '7', '5', '2h 00m'];
 
 const en = {
   ui: {
@@ -132,14 +132,14 @@ const en = {
     title: 'DECADE Tour',
     quote:
       "LIKE I DO, I gave it all, / A SOFTEST TOUCH, before the fall. / Feel my PULSE, it's running wild, / A DECADE lives in songs we made.",
-    dateInfo: 'January 13 – February 28, 2027 · 18 shows · $74M gross',
+    dateInfo: 'January 15 – February 18, 2027 · 18 shows · $74M gross',
     backLink: '← Back to Tours',
     kpiLabels: ['Total Shows', 'Ticket Gross', 'Sponsor Revenue', 'Profit Pool'],
     showFormatHeading: 'Show Format',
     anthologyFormatLabel: 'Anthology Format',
     showFormatLabels: ['Songs', 'Music', 'VCRs', 'Ments', 'Total'],
     tourDatesHeading: 'Tour Dates',
-    eraBreakdownHeading: 'Era Breakdown (29 songs)',
+    eraBreakdownHeading: 'Era Breakdown (30 songs)',
     criticalReceptionHeading: 'Critical Reception',
     consensusLabel: 'Consensus —',
     consensusText:
@@ -160,7 +160,7 @@ const en = {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 25 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 30 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'Concert review, Los Angeles · February 2027',
     },
     {
@@ -186,14 +186,14 @@ const th: typeof en = {
     title: 'DECADE Tour',
     quote:
       'LIKE I DO ฉันทุ่มเทหมดใจ / SOFTEST TOUCH ก่อนที่มันจะร่วงหล่น / รู้สึกถึง PULSE ที่พุ่งทะยานไม่หยุด / DECADE มีชีวิตอยู่ในเพลงที่เราสร้างร่วมกัน',
-    dateInfo: 'January 13 – February 28, 2027 · 18 โชว์ · รายได้ $74M',
+    dateInfo: 'January 15 – February 18, 2027 · 18 โชว์ · รายได้ $74M',
     backLink: '← กลับไปหน้าทัวร์คอนเสิร์ต',
     kpiLabels: ['โชว์ทั้งหมด', 'รายได้ตั๋ว', 'รายได้สปอนเซอร์', 'กำไรสุทธิ'],
     showFormatHeading: 'รูปแบบโชว์',
     anthologyFormatLabel: 'รูปแบบ Anthology',
     showFormatLabels: ['เพลง', 'ดนตรี', 'VCRs', 'Ments', 'รวม'],
     tourDatesHeading: 'วันที่ทัวร์',
-    eraBreakdownHeading: 'สัดส่วน Era (29 เพลง)',
+    eraBreakdownHeading: 'สัดส่วน Era (30 เพลง)',
     criticalReceptionHeading: 'เสียงวิจารณ์',
     consensusLabel: 'Consensus —',
     consensusText:
@@ -214,7 +214,7 @@ const th: typeof en = {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 25 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 30 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'รีวิวคอนเสิร์ต ที่ Los Angeles · February 2027',
     },
     {
