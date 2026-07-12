@@ -265,7 +265,7 @@ const en = {
       period: '2024–present',
       title: 'NCT 127 Fan Divide',
       severity: 'medium',
-      body: 'His first appearance with NCT 127 (as an external artist) in 2024 (the group\'s 8th anniversary) and his full return in 2026 (the 10th anniversary) sent shockwaves through the fandom. SM Entertainment\'s strategy of managing both sides — pushing James back into the group while also building tension around it — split the fanbase into roughly two equal camps: those welcoming James back and those opposed. A side effect is that all content featuring James, both within and outside NCT, generates unusually high engagement — both positive and negative — making James a "controversy magnet" that SM has yet to systematically resolve.',
+      body: 'His first appearance with NCT 127 (as an external artist) in 2024 (the group\'s 8th anniversary) — returning to active group participation from December 2024, then in full for the 2026 10th anniversary — sent shockwaves through the fandom. SM Entertainment\'s strategy of managing both sides — pushing James back into the group while also building tension around it — split the fanbase into roughly two equal camps: those welcoming James back and those opposed. A side effect is that all content featuring James, both within and outside NCT, generates unusually high engagement — both positive and negative — making James a "controversy magnet" that SM has yet to systematically resolve.',
     },
   ] as Incident[],
 };

@@ -409,7 +409,7 @@ Reflected his international streaming footprint in Asia and North America.
 
 
 ### 03–05/2024
-18/03/2024 – 14/05/2024: Continued the tour in North America and Latin America (including major venues such as Madison Square Garden and Intuit Dome).
+18/03/2024 – 14/05/2024: Continued the tour in North America and Latin America (including major venues such as Madison Square Garden and Crypto.com Arena).
 
 14/04/2024: James attended Taeyong's farewell gathering (private) before his enlistment on 15/04, a reconnection on a "personal relationship" level rather than an organizational one.
 
@@ -490,7 +490,7 @@ Marked his return to the MMA stage as a solo artist after the 2024 global expans
 
 
 ### 12/2024
-Early December 2024: SM Entertainment announced that James Hwang would officially return to activities with NCT 127, starting with a year-end comeback project.
+Early December 2024: Under a negotiated agreement without real precedent in K-pop — one that let James keep full ownership of JH Company and his post-2023 catalog, choose which dates and releases to join, and sign no renewed exclusive contract — SM Entertainment announced that James Hwang would return to activities with NCT 127 as an external artist, starting with a year-end comeback project. Idols who fully depart an agency after a legal dispute had never come back to group activity before; SM negotiated rather than lose him permanently, now that he carried a global name the group could no longer generate on its own.
 
 12/2024: Received a nomination for the Billboard Music Awards.
 
@@ -652,17 +652,17 @@ Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 
 
 ### 05/2026
-05/2026: JH Company and SM concluded negotiations on the terms of James's return for the 10th anniversary — an arrangement without real precedent in K-pop, where artists who fully depart an agency after a legal dispute don't come back to group activity. The terms: James retained full JH Company ownership and his post-2023 catalog, chose which dates and releases to join, and signed no renewed exclusive contract.
+05/2026: Ahead of the anniversary, JH Company and SM concluded the terms for James's full-scale participation in the 10th anniversary — an extension of the same external-artist framework that had governed his December 2024 return: full JH Company ownership and post-2023 catalog retained, dates and releases of his own choosing, and no renewed exclusive contract.
 
 
 ### 06/2026
 06/2026 – 07/2026: NCT 127's 10th anniversary project.
 
-James returned to full participation in group activities.
+James resumed full participation in group activities after his hiatus.
 
 Joined nearly the entire anniversary tour, except for Thailand, in line with the prior context, marking an "official full-circle comeback" as an idol after his time away from group activities.
 
-07/2026: After the 10th anniversary project concluded, Mark Lee announced his departure from NCT 127 to focus on solo work and international projects — the first active departure of a core member (not part of the rotation system), in contrast to James, who, despite having once disputed with SM to the point of founding his own company, chose to stay with NCT 127 as an external artist — a contrast widely discussed by media and fans alike (see [Artistry & Analysis](artistry) — Why He Stays).
+07/2026: After the 10th anniversary project concluded — one James took part in but Mark Lee did not, having concluded his contract with SM Entertainment on April 8, 2026 (exactly ten years after his debut) and departed NCT 127 for solo work and international projects — media and fans widely discussed the contrast: Mark's was the first active departure of a core member (not part of the rotation system), while James, despite having once disputed with SM to the point of founding his own company, chose to stay with NCT 127 as an external artist (see [Artistry & Analysis](artistry) — Why He Stays).
 
 06/2026: During the anniversary tour period, reports emerged that Ashley Liao appeared unofficially in the audience section at one of the U.S. concert stops, fueling speculation among fans about the relationship between the two.
 

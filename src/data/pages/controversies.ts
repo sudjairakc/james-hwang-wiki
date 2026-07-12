@@ -177,7 +177,7 @@ const en = {
       category: 'fandom',
       severity: 'medium',
       status: 'ongoing',
-      body: 'His first partial return to NCT 127 in 2024, and full return in 2026 under a negotiated agreement without real precedent in K-pop, created a structural divide in the fandom — SM ran a strategy where both "James is back" and "James is absent" generated comparably high engagement. Fans split into roughly two camps: those who welcomed James back and framed the 2026 deal as vindication of his 2023 stand, and those who felt he pulled the spotlight away from the group regardless of the terms.',
+      body: 'His return to NCT 127 in 2024 — as an external artist, under a negotiated agreement without real precedent in K-pop — and his full-scale participation in the group\'s 2026 10th anniversary created a structural divide in the fandom — SM ran a strategy where both "James is back" and "James is absent" generated comparably high engagement. Fans split into roughly two camps: those who welcomed James back and framed the 2024 deal as vindication of his 2023 stand, and those who felt he pulled the spotlight away from the group regardless of the terms.',
       outcome: 'Still ongoing and a chronic tension — every NCT 127 release, whether James is on it or not, generates unusually high buzz. SM has yet to show any systematic approach to resolving it.',
     },
     {
@@ -355,7 +355,7 @@ const th: typeof en = {
       category: 'fandom',
       severity: 'medium',
       status: 'ongoing',
-      body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 และเต็มรูปแบบในปี 2026 ภายใต้ข้อตกลงที่แทบไม่มี precedent มาก่อนในวงการ K-pop สร้าง structural divide ในแฟนด้อม — SM ใช้กลยุทธ์ที่ทำให้ทั้ง "James กลับมา" และ "James ไม่อยู่" ต่างก็สร้าง engagement สูงพอกัน แฟนคลับแบ่งเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ต้อนรับ James และมองดีลปี 2026 เป็นการพิสูจน์ว่าจุดยืนปี 2023 ของเขาถูกต้อง กับฝ่ายที่มองว่า James ดึง spotlight ออกจากวงอยู่ดีไม่ว่าเงื่อนไขจะเป็นแบบไหน',
+      body: 'การกลับเข้าร่วม NCT 127 ในปี 2024 — ในฐานะ external artist ภายใต้ข้อตกลงที่แทบไม่มี precedent มาก่อนในวงการ K-pop — และการเข้าร่วมงานครบรอบ 10 ปีปี 2026 แบบเต็มตัว สร้าง structural divide ในแฟนด้อม — SM ใช้กลยุทธ์ที่ทำให้ทั้ง "James กลับมา" และ "James ไม่อยู่" ต่างก็สร้าง engagement สูงพอกัน แฟนคลับแบ่งเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ต้อนรับ James และมองดีลปี 2024 เป็นการพิสูจน์ว่าจุดยืนปี 2023 ของเขาถูกต้อง กับฝ่ายที่มองว่า James ดึง spotlight ออกจากวงอยู่ดีไม่ว่าเงื่อนไขจะเป็นแบบไหน',
       outcome: 'ยังคง ongoing และเป็น chronic tension ทุก NCT 127 release ที่มีหรือไม่มี James จะมีกระแสสูงผิดปกติเสมอ SM ยังไม่มีท่าทีแก้ปัญหาอย่างเป็นระบบ',
     },
     {

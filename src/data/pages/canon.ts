@@ -330,7 +330,7 @@ const en = {
     { attr: 'Solo Positioning', val: 'Artist-tier — not pure entertainer idol; clear and growing creative credit' },
     { attr: 'Market Target', val: 'Crossover — K-pop base + R&B/soul listeners + MCU general audience' },
     { attr: 'Peer Reputation', val: 'Respected for work ethic and precision — not the life of the party, but sought as collaborator' },
-    { attr: 'Label Relationship', val: 'Independent (JH Company, 2023) — returned to NCT 127 as external artist 2024 + 2026' },
+    { attr: 'Label Relationship', val: 'Independent (JH Company, 2023) — returned to NCT 127 as external artist in 2024 (full participation for the 2026 10th anniversary)' },
   ],
   radarSkills: [
     { name: 'Vocal Control', james: 9.5, idol: 7.5, global: 4.0, note: 'Breath, dynamics, precision' },
@@ -544,7 +544,7 @@ const th: typeof en = {
     { attr: 'ตำแหน่งงานเดี่ยว', val: 'ระดับ Artist — ไม่ใช่ entertainer idol ล้วนๆ; creative credit ชัดเจนและเพิ่มขึ้นเรื่อยๆ' },
     { attr: 'กลุ่มเป้าหมายตลาด', val: 'Crossover — ฐาน K-pop + คนฟัง R&B/soul + ผู้ชม MCU ทั่วไป' },
     { attr: 'ชื่อเสียงในวงการ', val: 'ได้รับความเคารพเรื่อง work ethic และความละเอียด — ไม่ใช่คนสนุกสนานที่สุด แต่เป็นที่ต้องการในฐานะ collaborator' },
-    { attr: 'ความสัมพันธ์กับค่าย', val: 'อิสระ (JH Company, 2023) — กลับมาที่ NCT 127 ในฐานะ external artist ปี 2024 + 2026' },
+    { attr: 'ความสัมพันธ์กับค่าย', val: 'อิสระ (JH Company, 2023) — กลับมาที่ NCT 127 ในฐานะ external artist ปี 2024 (ร่วมเต็มตัวในงานครบรอบ 10 ปี ปี 2026)' },
   ],
   radarSkills: [
     { name: 'Vocal Control', james: 9.5, idol: 7.5, global: 4.0, note: 'Breath, dynamics, precision' },

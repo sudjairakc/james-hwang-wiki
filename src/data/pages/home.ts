@@ -62,7 +62,7 @@ const en = {
     { year: '2021', label: 'Hollywood', note: 'Shang-Chi and the Legend of the Ten Rings · $432M box office' },
     { year: '2022', label: 'Solo', note: '"SOFTEST TOUCH" — official solo identity launch' },
     { year: '2023', label: 'Independent', note: 'SM departure · JH Company founded · PULSE World Tour' },
-    { year: '2024', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
+    { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
     { year: '2026', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE anthology' },
   ],
   groups: [
@@ -145,7 +145,7 @@ const th: typeof en = {
     { year: '2021', label: 'ฮอลลีวูด', note: 'Shang-Chi and the Legend of the Ten Rings · บ็อกซ์ออฟฟิศ $432M' },
     { year: '2022', label: 'เดี่ยว', note: '"SOFTEST TOUCH" — เปิดตัวตัวตนเดี่ยวอย่างเป็นทางการ' },
     { year: '2023', label: 'อิสระ', note: 'ออกจาก SM · ก่อตั้ง JH Company · ทัวร์ PULSE World Tour' },
-    { year: '2024', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
+    { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
     { year: '2026', label: 'RESONANCE', note: 'ซีรีส์ Disney+ Captain EO: RESONANCE · อัลบั้มรวม DECADE' },
   ],
   groups: [

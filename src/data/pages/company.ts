@@ -146,10 +146,10 @@ const en = {
         'As a single-artist company, the revenue ceiling is tied entirely to James\'s own output — there\'s no roster diversification to spread risk or add revenue streams the way a typical label would. Industry analysts see JH Company as "leaving money on the table" by not expanding its roster despite having the infrastructure and reputation to do so, but James maintains that scale isn\'t the goal, and accepts this ceiling as the trade-off for retaining full control.',
     },
     {
-      label: '2026 Return Agreement',
+      label: '2024 Return Agreement',
       color: '#9b7fc8',
       text:
-        'When James rejoined NCT 127 for the group\'s 10th anniversary activities in June–July 2026, the deal that made it possible was itself the story. K-pop precedent is unambiguous — idols who fully depart an agency after a legal dispute don\'t come back to group activity; the industry pattern going back to the earliest big-agency exits is a clean, permanent break. SM negotiated instead, because losing him a second time — this time permanently, and after he\'d become a Grammy-winning global name the group could no longer generate on its own — was worse for the company than sharing control. The terms JH Company secured were unprecedented for a returning idol: James kept full ownership of JH Company and his post-2023 catalog, chose which dates and releases to participate in, and answered to no renewed exclusive contract. It was framed internally, and later in press coverage, as the moment the "Hwang Clause" era of leverage went from legal precedent to commercial practice.',
+        'When James returned to NCT 127 as an external artist in December 2024, the deal that made it possible was itself the story. K-pop precedent is unambiguous — idols who fully depart an agency after a legal dispute don\'t come back to group activity; the industry pattern going back to the earliest big-agency exits is a clean, permanent break. SM negotiated instead, because losing him permanently — after he\'d become a Grammy-winning global name the group could no longer generate on its own — was worse for the company than sharing control. The terms JH Company secured were unprecedented for a returning idol: James kept full ownership of JH Company and his post-2023 catalog, chose which dates and releases to participate in, and answered to no renewed exclusive contract. It was under that same framework that he later resumed full activity for the group\'s 10th anniversary in 2026 — and it was framed internally, and later in press coverage, as the moment the "Hwang Clause" era of leverage went from legal precedent to commercial practice.',
     },
   ],
   valPhases: [
@@ -161,7 +161,7 @@ const en = {
     { name: 'James Hwang', since: '2023', role: 'Founder · Sole Artist' },
   ],
   partners: [
-    { name: 'SM Entertainment', layer: 'Group Activity — 2026 Return Agreement', role: 'First negotiated return-to-group deal of its kind in K-pop — James retains full JH Company ownership, activity choice, and revenue independence while rejoining select NCT 127 dates' },
+    { name: 'SM Entertainment', layer: 'Group Activity — 2024 Return Agreement', role: 'First negotiated return-to-group deal of its kind in K-pop (Dec 2024) — James retains full JH Company ownership, activity choice, and revenue independence while participating in select NCT 127 dates' },
     { name: 'Warner Music Korea', layer: 'Global Distribution', role: 'Music distribution infrastructure' },
     { name: 'Avex Group', layer: 'Japan', role: 'Territory execution partner' },
     { name: 'Creative Artists Agency', layer: 'US', role: 'Representation + packaging' },
@@ -311,10 +311,10 @@ const th: typeof en = {
         'การเป็น single-artist company เพดานรายได้ผูกกับ output ของ James คนเดียว — ไม่มี roster diversification มาช่วยกระจายความเสี่ยงหรือเพิ่ม revenue stream แบบ label ทั่วไป นักวิเคราะห์อุตสาหกรรมมองว่า JH Company "ทิ้งเงินบนโต๊ะ" ด้วยการไม่ขยาย roster ทั้งที่มี infrastructure และ reputation พร้อม แต่ James ยืนยันว่า scale ไม่ใช่เป้าหมาย และยอมรับ ceiling นี้เป็น trade-off ของการคุมทุกอย่างได้เต็มที่',
     },
     {
-      label: 'ข้อตกลงการกลับวงปี 2026',
+      label: 'ข้อตกลงการกลับวงปี 2024',
       color: '#9b7fc8',
       text:
-        'ตอนที่ James กลับมาร่วมกิจกรรม NCT 127 สำหรับ 10th anniversary ในเดือนมิถุนายน–กรกฎาคม 2026 ตัวดีลที่ทำให้เกิดขึ้นได้คือประเด็นที่ถูกพูดถึงเอง precedent ของวงการ K-pop ชัดเจนมาตลอด — idol ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบ ไม่เคยกลับมาร่วมกิจกรรมกลุ่มอีก แพทเทิร์นของวงการย้อนไปถึงกรณีออกจากค่ายใหญ่ครั้งแรกๆ คือการตัดขาดถาวรแบบเด็ดขาด SM เลือกเจรจาแทน เพราะการเสียเขาไปอีกครั้ง — คราวนี้แบบถาวร หลังเขากลายเป็นชื่อระดับโลกที่คว้า Grammy ที่วงเองไม่สามารถสร้างได้แล้ว — สร้างความเสียหายให้บริษัทมากกว่าการแบ่งอำนาจควบคุมบางส่วน เงื่อนไขที่ JH Company ได้มาไม่เคยมีมาก่อนสำหรับ idol ที่กลับวง — James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมกิจกรรมหรือปล่อยเพลงไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ ทั้งภายในบริษัทและสื่อในเวลาต่อมา มองเรื่องนี้เป็นจุดที่ "Hwang Clause" เปลี่ยนจาก legal precedent เป็น commercial practice จริงๆ',
+        'ตอนที่ James กลับมาร่วมกิจกรรม NCT 127 ในฐานะ external artist เมื่อเดือนธันวาคม 2024 ตัวดีลที่ทำให้เกิดขึ้นได้คือประเด็นที่ถูกพูดถึงเอง precedent ของวงการ K-pop ชัดเจนมาตลอด — idol ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบ ไม่เคยกลับมาร่วมกิจกรรมกลุ่มอีก แพทเทิร์นของวงการย้อนไปถึงกรณีออกจากค่ายใหญ่ครั้งแรกๆ คือการตัดขาดถาวรแบบเด็ดขาด SM เลือกเจรจาแทน เพราะการเสียเขาไปแบบถาวร หลังเขากลายเป็นชื่อระดับโลกที่คว้า Grammy ที่วงเองไม่สามารถสร้างได้แล้ว สร้างความเสียหายให้บริษัทมากกว่าการแบ่งอำนาจควบคุมบางส่วน เงื่อนไขที่ JH Company ได้มาไม่เคยมีมาก่อนสำหรับ idol ที่กลับวง — James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมกิจกรรมหรือปล่อยเพลงไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ และภายใต้กรอบเดียวกันนี้เองที่เขากลับมา active เต็มตัวอีกครั้งในงานครบรอบ 10 ปีปี 2026 ทั้งภายในบริษัทและสื่อในเวลาต่อมามองเรื่องนี้เป็นจุดที่ "Hwang Clause" เปลี่ยนจาก legal precedent เป็น commercial practice จริงๆ',
     },
   ],
   valPhases: [
@@ -326,7 +326,7 @@ const th: typeof en = {
     { name: 'James Hwang', since: '2023', role: 'ผู้ก่อตั้ง · ศิลปินเพียงหนึ่งเดียว' },
   ],
   partners: [
-    { name: 'SM Entertainment', layer: 'กิจกรรมกลุ่ม — ข้อตกลงการกลับวงปี 2026', role: 'ดีลกลับวงแบบเจรจาครั้งแรกในลักษณะนี้ของวงการ K-pop — James คุมความเป็นเจ้าของ JH Company, เลือกกิจกรรมเอง, และคุมรายได้อิสระไว้เต็มที่ ระหว่างกลับไปร่วมบางวันของ NCT 127' },
+    { name: 'SM Entertainment', layer: 'กิจกรรมกลุ่ม — ข้อตกลงการกลับวงปี 2024', role: 'ดีลกลับวงแบบเจรจาครั้งแรกในลักษณะนี้ของวงการ K-pop (ธ.ค. 2024) — James คุมความเป็นเจ้าของ JH Company, เลือกกิจกรรมเอง, และคุมรายได้อิสระไว้เต็มที่ ระหว่างเข้าร่วมบางวันของ NCT 127' },
     { name: 'Warner Music Korea', layer: 'จัดจำหน่ายทั่วโลก', role: 'โครงสร้างพื้นฐานจัดจำหน่ายเพลง' },
     { name: 'Avex Group', layer: 'ญี่ปุ่น', role: 'พาร์ทเนอร์ดำเนินงานในพื้นที่' },
     { name: 'Creative Artists Agency', layer: 'สหรัฐฯ', role: 'ตัวแทน + packaging' },

@@ -150,7 +150,7 @@ const en = {
   mjVerdict:
     'The balance point: MJ-reliance is a real perception risk, especially when vocals + era + franchise stack up — but the evidence in the catalog (a sound that changes every album + a recognizable songwriting identity) shows a lineage he chooses to use, not an identity borrowed wholesale. The open question: will RESONANCE prove he can extend MJ without being swallowed, or become the point where his identity is permanently overshadowed by MJ?',
   stayContext:
-    'Normally, in both the Korean and Western markets, artists who outgrow their group or stay long enough that the creative room runs out tend to leave — Beyoncé left Destiny\'s Child, Harry Styles left One Direction, and in 2026 Mark Lee himself left NCT 127 to focus on solo work. But James — someone whose dispute with SM was severe enough that he had to start his own company, who is Grammy- and MCU-level famous, and who has every business reason to cut ties — chose to stay with NCT 127 as an external artist. That is an anomaly that needs explaining.',
+    'Normally, in both the Korean and Western markets, artists who outgrow their group or stay long enough that the creative room runs out tend to leave — Beyoncé left Destiny\'s Child, Harry Styles left One Direction, and in April 2026 Mark Lee himself left NCT 127 to focus on solo work. But James — someone whose dispute with SM was severe enough that he had to start his own company, who is Grammy- and MCU-level famous, and who has every business reason to cut ties — chose to stay with NCT 127 as an external artist. That is an anomaly that needs explaining.',
   stayReasons: [
     {
       lens: 'Psychology — an identity built before the fame',
@@ -170,7 +170,7 @@ const en = {
     {
       lens: 'Strategy — the downside of cutting ties outweighs the upside',
       color: '#5a7c6a',
-      body: 'Practically, staying has almost no cost: NCT 127 uses a system where members can run solo work in parallel. Keeping the membership = retaining the Korean fanbase + SM distribution channel + insurance if the solo/film cycle stalls. Mark\'s exit signals "closing a door" that James has no reason to close — he gets both freedom (JH Company) and a safety net (the group) at once. The 2026 return agreement made the arithmetic explicit: SM negotiated, not dictated, terms — full JH Company ownership retained, activity chosen by James, no renewed exclusive contract — because losing him a second time cost the company more than sharing control did.',
+      body: 'Practically, staying has almost no cost: NCT 127 uses a system where members can run solo work in parallel. Keeping the membership = retaining the Korean fanbase + SM distribution channel + insurance if the solo/film cycle stalls. Mark\'s exit signals "closing a door" that James has no reason to close — he gets both freedom (JH Company) and a safety net (the group) at once. The 2024 return agreement made the arithmetic explicit: SM negotiated, not dictated, terms — full JH Company ownership retained, activity chosen by James, no renewed exclusive contract — because losing him a second time cost the company more than sharing control did.',
     },
   ],
   stayVerdict:
@@ -384,7 +384,7 @@ const th: typeof en = {
   mjVerdict:
     'จุดสมดุล: MJ-reliance เป็นความเสี่ยงเชิง perception จริง โดยเฉพาะเมื่อ vocal + era + franchise วางซ้อนกัน — แต่หลักฐานใน catalog (sound ที่เปลี่ยนทุกอัลบั้ม + songwriting identity ที่จำได้) ชี้ว่าเป็น lineage ที่เลือกใช้ ไม่ใช่ตัวตนที่ยืมมาทั้งก้อน คำถามที่ยังเปิด: RESONANCE จะพิสูจน์ว่าเขาต่อยอด MJ ได้โดยไม่ถูกกลืน หรือจะกลายเป็นจุดที่ identity ของเขาถูก MJ overshadow ถาวร',
   stayContext:
-    'ปกติทั้งตลาดเกาหลีและตะวันตก ศิลปินที่ดังเกินวง หรืออยู่ในวงนานจน creative ไม่พอ มักออก — Beyoncé ออกจาก Destiny\'s Child, Harry Styles ออกจาก One Direction และในปี 2026 Mark Lee เองก็ออกจาก NCT 127 เพื่อโฟกัสงานเดี่ยว แต่ James — คนที่มีข้อพิพาทกับ SM หนักจนต้องตั้งค่ายเอง, ดังระดับ Grammy + MCU, และมีเหตุผลทางธุรกิจทุกข้อที่จะตัดขาด — กลับเลือกอยู่กับ NCT 127 ต่อในฐานะ external artist นี่คือ anomaly ที่ต้องอธิบาย',
+    'ปกติทั้งตลาดเกาหลีและตะวันตก ศิลปินที่ดังเกินวง หรืออยู่ในวงนานจน creative ไม่พอ มักออก — Beyoncé ออกจาก Destiny\'s Child, Harry Styles ออกจาก One Direction และในเดือนเมษายน 2026 Mark Lee เองก็ออกจาก NCT 127 เพื่อโฟกัสงานเดี่ยว แต่ James — คนที่มีข้อพิพาทกับ SM หนักจนต้องตั้งค่ายเอง, ดังระดับ Grammy + MCU, และมีเหตุผลทางธุรกิจทุกข้อที่จะตัดขาด — กลับเลือกอยู่กับ NCT 127 ต่อในฐานะ external artist นี่คือ anomaly ที่ต้องอธิบาย',
   stayReasons: [
     {
       lens: 'จิตวิทยา — identity ที่สร้างก่อนชื่อเสียง',
@@ -404,7 +404,7 @@ const th: typeof en = {
     {
       lens: 'กลยุทธ์ — downside ของการตัดขาดสูงกว่า upside',
       color: '#5a7c6a',
-      body: 'เชิงปฏิบัติ การอยู่ต่อแทบไม่มี cost: NCT 127 ใช้ระบบที่สมาชิกทำงานเดี่ยวคู่ขนานได้ การคง membership = retain Korean fanbase + SM distribution channel + insurance หาก solo/film cycle สะดุด ขณะที่การออกแบบ Mark สื่อถึง "ปิดประตู" ที่ James ไม่มีเหตุผลต้องปิด — เขาได้ทั้งอิสระ (JH Company) และ safety net (วง) พร้อมกัน ข้อตกลงการกลับวงปี 2026 ทำให้สมการนี้ชัดเจนเป็นรูปธรรม — SM เจรจา ไม่ใช่สั่ง เงื่อนไข: James คุมความเป็นเจ้าของ JH Company ไว้เต็มร้อย เลือกกิจกรรมเอง ไม่ต้องเซ็นสัญญาผูกขาดใหม่ — เพราะการเสียเขาไปอีกครั้งสร้างความเสียหายให้บริษัทมากกว่าการยอมแบ่งอำนาจควบคุม',
+      body: 'เชิงปฏิบัติ การอยู่ต่อแทบไม่มี cost: NCT 127 ใช้ระบบที่สมาชิกทำงานเดี่ยวคู่ขนานได้ การคง membership = retain Korean fanbase + SM distribution channel + insurance หาก solo/film cycle สะดุด ขณะที่การออกแบบ Mark สื่อถึง "ปิดประตู" ที่ James ไม่มีเหตุผลต้องปิด — เขาได้ทั้งอิสระ (JH Company) และ safety net (วง) พร้อมกัน ข้อตกลงการกลับวงปี 2024 ทำให้สมการนี้ชัดเจนเป็นรูปธรรม — SM เจรจา ไม่ใช่สั่ง เงื่อนไข: James คุมความเป็นเจ้าของ JH Company ไว้เต็มร้อย เลือกกิจกรรมเอง ไม่ต้องเซ็นสัญญาผูกขาดใหม่ — เพราะการเสียเขาไปอีกครั้งสร้างความเสียหายให้บริษัทมากกว่าการยอมแบ่งอำนาจควบคุม',
     },
   ],
   stayVerdict:
