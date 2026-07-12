@@ -11,9 +11,9 @@ const en = {
     label: 'History',
     title: 'Legal',
     heading: 'Contract Dispute & Departure',
-    subtitle: 'SM Entertainment · 2022–2023 · Settled April 27, 2023',
+    subtitle: 'SM Entertainment · 2022–2023 · Settled April 27, 2023 · Cited in 2023 industry-wide reform',
     introHtml:
-      'In late 2022, James Hwang initiated legal proceedings against SM Entertainment over creative rights and financial transparency, culminating in a settlement that granted full IP ownership and enabled the founding of <a href="%L%company" style="color:var(--gold)">JH Company</a>. The case became a landmark reference point for artist rights in K-pop. See the <a href="%L%timeline" style="color:var(--gold)">career timeline</a> for the full chronology of events.',
+      'In late 2022, James Hwang initiated legal proceedings against SM Entertainment over creative rights and financial transparency, culminating in a settlement that granted full IP ownership and enabled the founding of <a href="%L%company" style="color:var(--gold)">JH Company</a>. What began as an individual contract dispute grew into the reference case for a broader reckoning — triggering a Fair Trade Commission inquiry, a domino of quiet renegotiations at other agencies, and a National Assembly amendment press nicknamed the "Hwang Clause." See the <a href="%L%timeline" style="color:var(--gold)">career timeline</a> for the full chronology of events.',
     outcomeHeading: 'Resolved via mutual settlement',
     issuesHeading: 'Core Issues',
     timelineHeading: 'Timeline',
@@ -99,6 +99,42 @@ const en = {
       text: 'Both parties reached a settlement, terminating the contract and withdrawing all lawsuits. SM expressed regret over the inappropriate remarks and stated it would revise its contract policies. James officially ended his membership status in NCT 127.',
       status: 'resolved',
     },
+    {
+      period: 'Late April 2023',
+      label: 'SM share price falls',
+      text: 'In the trading sessions following the settlement and the earlier Dispatch leak, SM Entertainment (KOSDAQ: 041510) shares fell noticeably as institutional investors questioned internal governance — moving the story from entertainment pages into business coverage.',
+      status: 'alert',
+    },
+    {
+      period: 'May 2023',
+      label: 'Fair Trade Commission inquiry opens',
+      text: "Korea's Fair Trade Commission opened a sector-wide inquiry into standard idol contract practices, citing the James Hwang case as the immediate trigger — expanding the matter from a single artist's dispute into an industry-wide review.",
+      status: 'alert',
+    },
+    {
+      period: 'Mid-2023',
+      label: 'Quiet renegotiations elsewhere',
+      text: 'Trade press reported that artists at several other major agencies began privately citing the case while renegotiating their own renewal terms. None went public, and no agency confirmed it, but the pattern was widely enough reported to be described as a "domino effect."',
+      status: 'neutral',
+    },
+    {
+      period: 'Late 2023',
+      label: 'Documentary crossover',
+      text: 'A documentary covering the dispute crossed over from K-pop trade press into general entertainment coverage, introducing the case — and James — to audiences outside the K-pop fandom for the first time.',
+      status: 'neutral',
+    },
+    {
+      period: 'November 2023',
+      label: 'National Assembly cites the case',
+      text: 'While passing an amendment to the Popular Culture and Arts Industry Development Act tightening rules on contract-extension loopholes and mandatory disclosure of internal communications during disputes, lawmakers referenced the case directly; press nicknamed the amendment the "Hwang Clause," though it carries no such official name.',
+      status: 'resolved',
+    },
+    {
+      period: 'December 2023',
+      label: 'Idol-rights advocacy body founded',
+      text: 'James became a founding backer of an advocacy body formed by affected artists and entertainment-law advocates to support idols navigating contract disputes — a shift from individual precedent to an organized push for reform.',
+      status: 'resolved',
+    },
   ],
   aftermath: [
     {
@@ -112,6 +148,14 @@ const en = {
     {
       title: 'Industry Impact',
       text: 'The case reflects contract structures and management power dynamics in K-pop, particularly for large multi-unit groups. By pairing legal channels with media disclosure, he was able to exit the contract without disadvantage, becoming a closely watched precedent in the industry.',
+    },
+    {
+      title: 'Regulatory and Legislative Fallout',
+      text: 'Beyond his own settlement, the case triggered a Fair Trade Commission sector inquiry and a National Assembly contract-law amendment — a rare instance of an individual K-pop artist dispute reshaping industry-wide regulation rather than just resolving privately.',
+    },
+    {
+      title: 'Documentary and Public Awareness',
+      text: 'A documentary on the dispute reached audiences well outside the K-pop fandom, making the case — and by extension James himself — known to a general entertainment-news audience for the first time, ahead of his later Grammy-era crossover.',
     },
   ],
   related: [
@@ -127,9 +171,9 @@ const th: typeof en = {
     label: 'ประวัติ',
     title: 'กฎหมาย',
     heading: 'ข้อพิพาทสัญญาและการแยกทาง',
-    subtitle: 'SM Entertainment · 2022–2023 · ตกลงกันได้เมื่อ 27 เมษายน 2023',
+    subtitle: 'SM Entertainment · 2022–2023 · ตกลงกันได้เมื่อ 27 เมษายน 2023 · ถูกอ้างอิงในการปฏิรูปทั้งวงการปี 2023',
     introHtml:
-      'ปลายปี 2022 James Hwang ยื่นดำเนินคดีทางกฎหมายต่อ SM Entertainment ในประเด็นสิทธิ์ความคิดสร้างสรรค์และความโปร่งใสทางการเงิน จนนำไปสู่การ settle ที่มอบกรรมสิทธิ์ IP เต็มรูปแบบและเปิดทางให้ก่อตั้ง <a href="%L%company" style="color:var(--gold)">JH Company</a> คดีนี้กลายเป็นจุดอ้างอิงสำคัญด้านสิทธิ์ศิลปินใน K-pop ดู <a href="%L%timeline" style="color:var(--gold)">ไทม์ไลน์อาชีพ</a> สำหรับลำดับเหตุการณ์ฉบับเต็ม',
+      'ปลายปี 2022 James Hwang ยื่นดำเนินคดีทางกฎหมายต่อ SM Entertainment ในประเด็นสิทธิ์ความคิดสร้างสรรค์และความโปร่งใสทางการเงิน จนนำไปสู่การ settle ที่มอบกรรมสิทธิ์ IP เต็มรูปแบบและเปิดทางให้ก่อตั้ง <a href="%L%company" style="color:var(--gold)">JH Company</a> จากคดีข้อพิพาทส่วนตัวคดีเดียว กลายเป็นจุดเปลี่ยนที่ใหญ่กว่านั้น — ทำให้ Fair Trade Commission เปิดสอบสวน เกิด domino การเจรจาสัญญาเงียบๆ ในค่ายอื่น และมีการแก้กฎหมายที่สื่อเรียกเล่นๆ ว่า "Hwang Clause" ดู <a href="%L%timeline" style="color:var(--gold)">ไทม์ไลน์อาชีพ</a> สำหรับลำดับเหตุการณ์ฉบับเต็ม',
     outcomeHeading: 'ยุติด้วยการ settle ร่วมกัน',
     issuesHeading: 'ประเด็นหลัก',
     timelineHeading: 'ไทม์ไลน์',
@@ -215,6 +259,42 @@ const th: typeof en = {
       text: 'ทั้งสองฝ่ายบรรลุข้อตกลง ยุติสัญญา ถอนฟ้องทั้งหมด SM แสดงความเสียใจต่อถ้อยคำที่ไม่เหมาะสมและระบุว่าจะปรับปรุงนโยบายสัญญา James สิ้นสุดสถานะสมาชิก NCT 127',
       status: 'resolved',
     },
+    {
+      period: 'ปลายเมษายน 2023',
+      label: 'หุ้น SM ร่วง',
+      text: 'ในช่วงซื้อขายหลังการ settle และหลัง Dispatch leak ก่อนหน้านี้ หุ้น SM Entertainment (KOSDAQ: 041510) ร่วงลงชัดเจน นักลงทุนสถาบันเริ่มตั้งคำถามเรื่อง governance ภายใน — ทำให้เรื่องนี้ย้ายจากหน้าบันเทิงไปอยู่หน้าธุรกิจ',
+      status: 'alert',
+    },
+    {
+      period: 'พฤษภาคม 2023',
+      label: 'Fair Trade Commission เปิดสอบสวน',
+      text: 'คณะกรรมการการค้าที่เป็นธรรมของเกาหลี (Fair Trade Commission) เปิดการสอบสวนแนวปฏิบัติสัญญา idol ทั้งวงการ โดยอ้างคดีของ James Hwang เป็นจุดเริ่มต้นโดยตรง — ขยายเรื่องจากข้อพิพาทศิลปินคนเดียวเป็นการทบทวนทั้งอุตสาหกรรม',
+      status: 'alert',
+    },
+    {
+      period: 'กลางปี 2023',
+      label: 'การเจรจาเงียบๆ ในค่ายอื่น',
+      text: 'สื่อวงการรายงานว่าศิลปินจากหลายค่ายใหญ่เริ่มอ้างอิงคดีนี้ระหว่างเจรจาสัญญาต่อของตัวเองแบบเงียบๆ ไม่มีใครออกมาพูดเปิดเผย ไม่มีค่ายไหนยืนยัน แต่กระแสนี้ถูกรายงานมากพอจะถูกเรียกว่า "domino effect"',
+      status: 'neutral',
+    },
+    {
+      period: 'ปลายปี 2023',
+      label: 'สารคดีข้ามวงการ',
+      text: 'สารคดีที่พูดถึงคดีนี้ข้ามจากสื่อวงการ K-pop ไปสู่สื่อบันเทิงทั่วไป ทำให้คดีนี้ — และตัว James — เป็นที่รู้จักในกลุ่มผู้ชมนอกวง K-pop เป็นครั้งแรก',
+      status: 'neutral',
+    },
+    {
+      period: 'พฤศจิกายน 2023',
+      label: 'National Assembly อ้างอิงคดีนี้',
+      text: 'ระหว่างผ่านร่างแก้ไข Popular Culture and Arts Industry Development Act ที่เข้มงวดขึ้นเรื่องช่องโหว่การขยายสัญญาและการเปิดเผยบันทึกการสื่อสารภายในระหว่างข้อพิพาท สมาชิกสภาอ้างอิงคดีนี้โดยตรง สื่อเรียกร่างแก้ไขนี้เล่นๆ ว่า "Hwang Clause" แม้จะไม่ใช่ชื่อทางการก็ตาม',
+      status: 'resolved',
+    },
+    {
+      period: 'ธันวาคม 2023',
+      label: 'ก่อตั้งองค์กรสิทธิ idol',
+      text: 'James กลายเป็นผู้ร่วมก่อตั้งองค์กร advocacy ที่รวมศิลปินที่ได้รับผลกระทบและนักกฎหมายด้าน entertainment เพื่อสนับสนุน idol ที่เจอข้อพิพาทสัญญา — เปลี่ยนจากการเป็น precedent รายบุคคล เป็นแรงผลักดันการปฏิรูปแบบมีองค์กรรองรับ',
+      status: 'resolved',
+    },
   ],
   aftermath: [
     {
@@ -228,6 +308,14 @@ const th: typeof en = {
     {
       title: 'ผลกระทบต่อวงการ',
       text: 'กรณีนี้สะท้อนโครงสร้างสัญญาและอำนาจการบริหารใน K-pop โดยเฉพาะวงขนาดใหญ่ที่มีหลายยูนิต การใช้ช่องทางกฎหมายควบคู่กับการเปิดเผยข้อมูลผ่านสื่อทำให้เขาสามารถยุติสัญญาได้โดยไม่เสียเปรียบ และกลายเป็นกรณีศึกษาที่ถูกจับตาในวงการ',
+    },
+    {
+      title: 'ผลกระทบด้านกฎหมายและกฎระเบียบ',
+      text: 'นอกเหนือจากการ settle ของตัวเอง คดีนี้ทำให้ Fair Trade Commission เปิดสอบสวนทั้งวงการ และ National Assembly แก้กฎหมายสัญญา — เป็นกรณีหายากที่ข้อพิพาทของศิลปิน K-pop คนเดียวเปลี่ยนกฎระเบียบทั้งอุตสาหกรรม ไม่ใช่แค่จบแบบส่วนตัว',
+    },
+    {
+      title: 'สารคดีและการรับรู้ในวงกว้าง',
+      text: 'สารคดีเกี่ยวกับคดีนี้ไปถึงผู้ชมนอกวง K-pop ทำให้คดีนี้ — และตัว James เอง — เป็นที่รู้จักในกลุ่มผู้ชมข่าวบันเทิงทั่วไปเป็นครั้งแรก ก่อนกระแส crossover ยุค Grammy ที่ตามมา',
     },
   ],
   related: [

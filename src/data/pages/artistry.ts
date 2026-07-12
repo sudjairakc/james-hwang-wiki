@@ -170,7 +170,7 @@ const en = {
     {
       lens: 'Strategy — the downside of cutting ties outweighs the upside',
       color: '#5a7c6a',
-      body: 'Practically, staying has almost no cost: NCT 127 uses a system where members can run solo work in parallel. Keeping the membership = retaining the Korean fanbase + SM distribution channel + insurance if the solo/film cycle stalls. Mark\'s exit signals "closing a door" that James has no reason to close — he gets both freedom (JH Company) and a safety net (the group) at once',
+      body: 'Practically, staying has almost no cost: NCT 127 uses a system where members can run solo work in parallel. Keeping the membership = retaining the Korean fanbase + SM distribution channel + insurance if the solo/film cycle stalls. Mark\'s exit signals "closing a door" that James has no reason to close — he gets both freedom (JH Company) and a safety net (the group) at once. The 2026 return agreement made the arithmetic explicit: SM negotiated, not dictated, terms — full JH Company ownership retained, activity chosen by James, no renewed exclusive contract — because losing him a second time cost the company more than sharing control did.',
     },
   ],
   stayVerdict:
@@ -404,7 +404,7 @@ const th: typeof en = {
     {
       lens: 'กลยุทธ์ — downside ของการตัดขาดสูงกว่า upside',
       color: '#5a7c6a',
-      body: 'เชิงปฏิบัติ การอยู่ต่อแทบไม่มี cost: NCT 127 ใช้ระบบที่สมาชิกทำงานเดี่ยวคู่ขนานได้ การคง membership = retain Korean fanbase + SM distribution channel + insurance หาก solo/film cycle สะดุด ขณะที่การออกแบบ Mark สื่อถึง "ปิดประตู" ที่ James ไม่มีเหตุผลต้องปิด — เขาได้ทั้งอิสระ (JH Company) และ safety net (วง) พร้อมกัน',
+      body: 'เชิงปฏิบัติ การอยู่ต่อแทบไม่มี cost: NCT 127 ใช้ระบบที่สมาชิกทำงานเดี่ยวคู่ขนานได้ การคง membership = retain Korean fanbase + SM distribution channel + insurance หาก solo/film cycle สะดุด ขณะที่การออกแบบ Mark สื่อถึง "ปิดประตู" ที่ James ไม่มีเหตุผลต้องปิด — เขาได้ทั้งอิสระ (JH Company) และ safety net (วง) พร้อมกัน ข้อตกลงการกลับวงปี 2026 ทำให้สมการนี้ชัดเจนเป็นรูปธรรม — SM เจรจา ไม่ใช่สั่ง เงื่อนไข: James คุมความเป็นเจ้าของ JH Company ไว้เต็มร้อย เลือกกิจกรรมเอง ไม่ต้องเซ็นสัญญาผูกขาดใหม่ — เพราะการเสียเขาไปอีกครั้งสร้างความเสียหายให้บริษัทมากกว่าการยอมแบ่งอำนาจควบคุม',
     },
   ],
   stayVerdict:

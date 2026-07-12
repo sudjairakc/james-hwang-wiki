@@ -64,7 +64,7 @@ Critical response:
 * **Billboard Korea** was more positive, praising the dual concept (SOUR vs HONEY) as a “narrative device that gives the album a structure like a short film.”
 * **IZM (Korea)** gave it 4.0/5, noting, “MYSTERY LADY and SHOOK show that James remains sharp as a composer even as his direction becomes more accessible.”
 * **Consequence of Sound** called CAN'T LEAVE ALONE “one of the best produced tracks of 2025 — Pharrell knows exactly when to step back and let GONUNMA lead.”
-* **User & chart reception:** Melon #8, Circle Digital Top 20. CAN'T LEAVE ALONE feat. Pharrell Williams entered the Spotify Global Chart Top 50 in its first week, marking James's first time on a global chart at this level. Total album streams surpassed 640M+.
+* **User & chart reception:** Melon #8, Circle Digital Top 20. CAN'T LEAVE ALONE feat. Pharrell Williams entered the Spotify Global Chart Top 50 in its first week, marking James's first time on a global chart at this level. Total album streams surpassed 1.9B+.
 
 
 ### Accolades

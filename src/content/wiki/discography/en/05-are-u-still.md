@@ -76,7 +76,7 @@ Critical response:
 * **NME** gave it 4.5/5 and called it "the moment K-R&B stopped being a genre qualifier and became just R&B."
 * **IZM (Korea)** gave it 4.5/5 and noted that "the soul-disco hybrid structure in BREATHE and SOMEWHERE SOMEHOW shows that this artist has far deeper musical literacy than expected."
 * **Grammy Committee (64th Grammy Awards):** the album earned James his first-ever consideration in the Best Progressive R&B Album category.
-* **User & chart reception:** Melon #2 within the first 3 days, Circle Digital Top 5 for 6 consecutive weeks, over 820M+ total streams within 18 months, and a 9.4/10 user review score on Melon.
+* **User & chart reception:** Melon #2 within the first 3 days, Circle Digital Top 5 for 6 consecutive weeks, over 2.2B+ total streams to date, and a 9.4/10 user review score on Melon.
 
 
 ### Accolades

@@ -192,9 +192,13 @@ Late 2020: Internal evaluation within the production team began to view James as
 ### 08/2021
 16/08/2021: World premiere of Shang-Chi in Hollywood.
 
+19/08/2021: A press-tour interview clip went viral online, introducing James to Western audiences outside the K-pop context for the first time — SM's global PR team, recognizing the reach, began routing select international press requests through the agency.
+
 
 ### 09/2021
 01/09/2021: Released the soundtrack, including "Fire in the Sky" with Anderson .Paak, which helped reinforce his image as a global artist.
+
+09/2021: Entertainment Weekly's Shang-Chi cast cover story featured James, captioned throughout as "NCT 127's James Hwang" — his first English-language magazine cover credit.
 
 17/09/2021: Released "Sticker," with James's distribution increasing again, reflecting the trust level placed in the upper vocal layer.
 
@@ -224,6 +228,10 @@ Claimed No. 1 on multiple major music shows (M Countdown, Music Bank, Show! Musi
 27/03/2022: Performed "Fire in the Sky" at the 94th Academy Awards, reinforcing his status as a global performer.
 
 03/2022: Appeared in "Everything Everywhere All at Once" in a supporting role.
+
+
+### 07/2022
+07/2022: Named the face of a Calvin Klein global campaign — his first international brand ambassadorship, arranged and negotiated through SM's licensing arm rather than independently. Framed in press as "an idol chosen by a brand," a contrast later drawn against his post-independence deals.
 
 
 ### 06–08/2022
@@ -284,9 +292,13 @@ Signed a partnership with Warner Music Korea.
 
 Used material developed since 2022 as the foundation for a new album.
 
+Late April: In the trading sessions following the settlement and the earlier Dispatch leak, SM Entertainment (KOSDAQ: 041510) shares fell noticeably, moving the story from entertainment coverage into business news.
+
 
 ### 05–06/2023
 May–June period: James fully returned to a public schedule, making the media rounds in the US again (such as late-night shows and digital performance platforms) to reinforce his global presence.
+
+05/2023: Korea's Fair Trade Commission opened a sector-wide inquiry into standard idol contract practices, citing James's case as the immediate trigger.
 
 22/06/2023: Announced his first full-length album "PULSE," along with plans for the "PULSE 2023 – 1st Live Concert" tour, stating that the first leg would be held in Asia and would expand into a global tour the following year.
 
@@ -306,11 +318,15 @@ Continued the tour in Korea, Japan, China, and Taiwan, with positive responses a
 
 Released performance clips and live sessions to reinforce his artist-producer image.
 
+Trade press began reporting that artists at several other major agencies were quietly citing his case while renegotiating their own contract renewals — a pattern reported widely enough to be called a "domino effect," though no other artist went public.
+
 
 ### 10/2023
 06/10/2023: Released the single "If I Knew" during the same period as NCT 127's comeback, with no interaction between the two sides, reflecting a status of "separate but not clashing."
 
 The single reached No. 1 on music charts, reinforcing his success as a solo artist.
+
+10/2023: A documentary covering the contract dispute crossed over from K-pop trade press into general entertainment coverage, introducing the case — and James — to audiences outside the K-pop fandom for the first time.
 
 
 ### 11/2023
@@ -325,6 +341,8 @@ Throughout the month: No appearances together with SM Entertainment or NCT 127, 
 Received a nomination for Best Male Solo Artist.
 
 This marked his first major-tier awards circuit nomination as a fully solo artist.
+
+11/2023: While passing an amendment to the Popular Culture and Arts Industry Development Act tightening rules on contract-extension loopholes and internal-communication disclosure, the National Assembly cited his case directly; press nicknamed the amendment the "Hwang Clause," though it carries no such official name.
 
 
 ### 12/2023
@@ -345,6 +363,8 @@ This performance received the event's highest ratings, earning him the nickname 
 27/12/2023: Attended the Asia Artist Awards.
 
 Received the Best Musician (Male Solo) award.
+
+12/2023: Became a founding backer of an idol-rights advocacy body formed by affected artists and entertainment-law advocates — converting his individual legal precedent into an organized industry push.
 
 Reinforced his positioning as a performer–producer dual-role artist.
 
@@ -629,6 +649,10 @@ Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 04/2026 – 09/2026: Filmed "Captain EO: Resonance," Disney's series project building on Michael Jackson's Captain EO, with James serving both as actor and creative contributor.
 
 04–06/2026: Even while fully engaged in the Disney series filming schedule, reports continued that the two met periodically in Los Angeles during overlapping studio work and shared industry events.
+
+
+### 05/2026
+05/2026: JH Company and SM concluded negotiations on the terms of James's return for the 10th anniversary — an arrangement without real precedent in K-pop, where artists who fully depart an agency after a legal dispute don't come back to group activity. The terms: James retained full JH Company ownership and his post-2023 catalog, chose which dates and releases to join, and signed no renewed exclusive contract.
 
 
 ### 06/2026

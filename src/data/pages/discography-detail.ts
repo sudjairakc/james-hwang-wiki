@@ -38,7 +38,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'softest-touch': {
-    albumStreams: '450M+',
+    albumStreams: '500M+',
     chartPeak: 'Melon #18 · Circle Album Top 5',
     titleTrack: { title: 'SOFTEST TOUCH', spotify: '95M+', youtube: '82M+' },
     keyTracks: [
@@ -47,7 +47,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'pulse-era': {
-    albumStreams: '650M+',
+    albumStreams: '1.4B+',
     chartPeak: 'Melon #7 · Circle Digital Top 15',
     titleTrack: { title: 'HOW DOES IT FEEL?', spotify: '155M+', youtube: '140M+' },
     crossover: { title: 'SAY feat. keshi', spotify: '210M+', youtube: '120M+' },
@@ -58,7 +58,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'are-u-still': {
-    albumStreams: '820M+',
+    albumStreams: '2.2B+',
     chartPeak: 'Melon #2 · Circle Digital Top 5',
     titleTrack: { title: 'TEARS ON A PRETTY FACE', spotify: '285M+', youtube: '240M+' },
     crossover: { title: 'JUST A DREAM feat. Janet Jackson', spotify: '130M+', youtube: '95M+' },
@@ -69,7 +69,7 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'sour-honey': {
-    albumStreams: '640M+',
+    albumStreams: '1.9B+',
     chartPeak: 'Melon #8 · Circle Digital Top 20',
     titleTrack: { title: 'SOUR', spotify: '145M+', youtube: '120M+' },
     crossover: { title: "CAN\'T LEAVE ALONE feat. Pharrell Williams", spotify: '260M+', youtube: '175M+' },
@@ -80,10 +80,10 @@ export const metrics: Record<string, AlbumMetrics> = {
     ],
   },
   'decade': {
-    albumStreams: '480M+',
+    albumStreams: '2.5B+',
     spotifyPeak: '32M monthly listeners (peak 2026)',
-    chartPeak: 'Melon #9 · Circle Digital Top 25 · US R&B Albums Top 20',
-    titleTrack: { title: 'NEW (Lead Single)', spotify: '95M+', youtube: '78M+' },
+    chartPeak: 'Billboard 200 #1 · Hot 100 #1 (NEW) · RIAA Platinum · Melon #9',
+    titleTrack: { title: 'NEW (Lead Single)', spotify: '480M+', youtube: '410M+' },
     keyTracks: [
       { title: 'RIGHT ABOUT LOVE (Extended)', streams: '52M+' },
       { title: 'NO RESERVATIONS (Extended)', streams: '47M+' },

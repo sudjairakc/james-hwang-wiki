@@ -7,11 +7,11 @@ import type { Lang } from '../../i18n';
 // Shared (non-translatable) — album cards.
 export const albums = [
   { slug: 'like-i-do',      cover: 'like_i_do.png',     title: 'LIKE I DO',      year: '2016', type: 'Mini Album',       streams: '210M+', color: '#c9a84c' },
-  { slug: 'softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '450M+', color: '#9b7fc8' },
-  { slug: 'pulse-era',      cover: 'pulse.png',         title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '650M+', color: '#5a7c6a' },
-  { slug: 'are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '820M+', color: '#5a7aaa' },
-  { slug: 'sour-honey',     cover: 'sour_honey.png',    title: "CAN\'T LEAVE ALONE", year: '2025', type: '3rd Studio Album', streams: '640M+', color: '#c06080' },
-  { slug: 'decade',         cover: 'decade.png',        title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '480M+', color: '#6e5a7c' },
+  { slug: 'softest-touch',  cover: 'softest_touch.png', title: 'SOFTEST TOUCH',  year: '2022', type: '1st Mini Album',   streams: '500M+', color: '#9b7fc8' },
+  { slug: 'pulse-era',      cover: 'pulse.png',         title: 'PULSE',          year: '2023', type: '1st Studio Album', streams: '1.4B+', color: '#5a7c6a' },
+  { slug: 'are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',    year: '2024', type: '2nd Studio Album', streams: '2.2B+', color: '#5a7aaa' },
+  { slug: 'sour-honey',     cover: 'sour_honey.png',    title: "CAN\'T LEAVE ALONE", year: '2025', type: '3rd Studio Album', streams: '1.9B+', color: '#c06080' },
+  { slug: 'decade',         cover: 'decade.png',        title: 'DECADE',         year: '2026', type: 'Anthology',         streams: '2.5B+', color: '#6e5a7c' },
 ];
 
 // Shared — role badge colors (labels are translated below).
@@ -49,7 +49,7 @@ const en = {
     'James Hwang debuted under SM Entertainment as a member of <strong style="color:var(--text)">NCT 127</strong> (2016), before departing via contract settlement in 2023 to found <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a>. Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> spanning contemporary R&B, neo-soul, and funk — earning <a href="%L%awards" style="color:var(--gold);font-weight:600">2 Grammy Awards</a> in 2025. Simultaneously, he established himself in Hollywood through the <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> trilogy (MCU) and the original <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> franchise (Disney), for which he serves as creator, co-director, composer, and lead actor.',
   stats: [
     { label: 'Career Span', value: '2013–', sub: 'SM Rookies → Independent' },
-    { label: 'Total Streams', value: '3.5B+', sub: 'All platforms combined' },
+    { label: 'Total Streams', value: '8.7B+', sub: 'All platforms combined' },
     { label: 'Grammy Awards', value: '2', sub: 'Best Prog. R&B + Best R&B Perf.' },
     { label: 'Tour Gross', value: '$309M', sub: 'PULSE + DECADE tours' },
     { label: 'Endorsements', value: '$22M/yr', sub: 'Saint Laurent, Cartier, Sony…' },
@@ -72,7 +72,7 @@ const en = {
       { title: 'Timeline', desc: '1998–present · every major event in sequence' },
     ]},
     { group: 'Music', items: [
-      { title: 'Discography', desc: '6 projects · 3.25B+ streams · 2016–2026' },
+      { title: 'Discography', desc: '6 projects · 8.7B+ streams · 2016–2026' },
       { title: 'Music Videos', desc: '10 MVs · LIKE I DO through DECADE' },
       { title: 'Tours', desc: 'PULSE (2023–24) + DECADE (2027) · $309M+ gross' },
       { title: 'Collaborations', desc: 'Anderson .Paak · Janet Jackson · Pharrell Williams · more' },
@@ -132,7 +132,7 @@ const th: typeof en = {
     'James Hwang เดบิวต์กับ SM Entertainment ในฐานะสมาชิก <strong style="color:var(--text)">NCT 127</strong> (2016) ก่อนแยกทางผ่านการ settle สัญญาในปี 2023 เพื่อก่อตั้ง <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a> ได้รับการยกย่องเป็นผู้บุกเบิก <em>post-agency authorship</em> ใน K-pop เขาสร้าง <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> ที่ครอบคลุม contemporary R&B, neo-soul และ funk — คว้า <a href="%L%awards" style="color:var(--gold);font-weight:600">Grammy 2 รางวัล</a> ในปี 2025 พร้อมกันนั้นก็ปักหลักในฮอลลีวูดผ่านไตรภาค <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> (MCU) และแฟรนไชส์ออริจินอล <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> (Disney) ที่เขารับหน้าที่ผู้สร้าง ผู้กำกับร่วม ผู้ประพันธ์ดนตรี และนักแสดงนำ',
   stats: [
     { label: 'ช่วงอาชีพ', value: '2013–', sub: 'SM Rookies → อิสระ' },
-    { label: 'ยอดสตรีมรวม', value: '3.5B+', sub: 'รวมทุกแพลตฟอร์ม' },
+    { label: 'ยอดสตรีมรวม', value: '8.7B+', sub: 'รวมทุกแพลตฟอร์ม' },
     { label: 'รางวัล Grammy', value: '2', sub: 'Best Prog. R&B + Best R&B Perf.' },
     { label: 'รายได้ทัวร์', value: '$309M', sub: 'ทัวร์ PULSE + DECADE' },
     { label: 'ดีลพรีเซ็นเตอร์', value: '$22M/ปี', sub: 'Saint Laurent, Cartier, Sony…' },
@@ -155,7 +155,7 @@ const th: typeof en = {
       { title: 'ไทม์ไลน์', desc: '1998–ปัจจุบัน · ทุกเหตุการณ์สำคัญเรียงลำดับ' },
     ]},
     { group: 'ดนตรี', items: [
-      { title: 'ผลงานเพลง', desc: '6 โปรเจ็กต์ · สตรีม 3.5B+ · 2016–2026' },
+      { title: 'ผลงานเพลง', desc: '6 โปรเจ็กต์ · สตรีม 8.7B+ · 2016–2026' },
       { title: 'มิวสิกวิดีโอ', desc: '10 MV · LIKE I DO ถึง DECADE' },
       { title: 'ทัวร์คอนเสิร์ต', desc: 'PULSE (2023–24) + DECADE (2027) · รายได้ $309M+' },
       { title: 'คอลแลบ', desc: 'Anderson .Paak · Janet Jackson · Pharrell Williams · อื่นๆ' },

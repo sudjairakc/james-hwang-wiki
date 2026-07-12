@@ -115,7 +115,16 @@ const en = {
       severity: 'high',
       status: 'resolved',
       body: 'James filed an injunction to suspend his SM contract, alleging deliberate project delays to extend the contract term, the company claiming songs he wrote as "corporate property," and internal meeting language that pressured foreign artists. Dispatch published excerpts of a leaked meeting recording — including the line "foreign members should be mindful of their position." SM countersued, alleging reputational damage. The first round of mediation failed.',
-      outcome: 'Settled on April 27, 2023 — the contract was terminated, both sides dropped their lawsuits, and SM issued an apology and pledged policy changes. James retained full catalog rights for post-SM work and kept the rights to the name GONUNMA. It became a landmark case for artist rights in K-pop.',
+      outcome: 'Settled on April 27, 2023 — the contract was terminated, both sides dropped their lawsuits, and SM issued an apology and pledged policy changes. James retained full catalog rights for post-SM work and kept the rights to the name GONUNMA. It became a landmark case for artist rights in K-pop — see below for the industry-wide fallout it triggered.',
+    },
+    {
+      period: '2023',
+      title: 'Industry Reform Wave — the "Hwang Clause"',
+      category: 'industry',
+      severity: 'high',
+      status: 'resolved',
+      body: 'What began as a single artist\'s contract dispute widened over the following year. SM shares fell noticeably in the sessions after the leak and settlement; Korea\'s Fair Trade Commission opened a sector-wide inquiry into idol contract practices, citing the case directly; artists at several other major agencies were reported to be quietly citing it in their own renewal negotiations; and a documentary on the dispute crossed over into general entertainment coverage well outside K-pop circles.',
+      outcome: 'In November 2023, the National Assembly cited the case while passing an amendment to the Popular Culture and Arts Industry Development Act tightening contract-extension and disclosure rules — press nicknamed it the "Hwang Clause," though that carries no official status. That December, James became a founding backer of an idol-rights advocacy body, converting a personal legal win into an organized industry push.',
     },
     {
       period: '2023',
@@ -168,7 +177,7 @@ const en = {
       category: 'fandom',
       severity: 'medium',
       status: 'ongoing',
-      body: 'His first partial return to NCT 127 in 2024, and full return in 2026, created a structural divide in the fandom — SM ran a strategy where both "James is back" and "James is absent" generated comparably high engagement. Fans split into roughly two camps: those who welcomed James back and those who felt he pulled the spotlight away from the group.',
+      body: 'His first partial return to NCT 127 in 2024, and full return in 2026 under a negotiated agreement without real precedent in K-pop, created a structural divide in the fandom — SM ran a strategy where both "James is back" and "James is absent" generated comparably high engagement. Fans split into roughly two camps: those who welcomed James back and framed the 2026 deal as vindication of his 2023 stand, and those who felt he pulled the spotlight away from the group regardless of the terms.',
       outcome: 'Still ongoing and a chronic tension — every NCT 127 release, whether James is on it or not, generates unusually high buzz. SM has yet to show any systematic approach to resolving it.',
     },
     {
@@ -284,7 +293,16 @@ const th: typeof en = {
       severity: 'high',
       status: 'resolved',
       body: 'James ยื่นคำร้องต่อศาลเพื่อระงับสัญญา SM อ้างการ delay โปรเจกต์ตั้งใจเพื่อยืดสัญญา, การ claim เพลงที่เขาเขียนเป็น "ทรัพย์สินบริษัท", และถ้อยคำในการประชุมภายในที่กดทับศิลปินต่างชาติ Dispatch เผยแพร่บางส่วนของบันทึกเสียงการประชุม — รวมถึงประโยค "foreign members should be mindful of their position" SM ฟ้องกลับอ้างความเสียหายต่อชื่อเสียง การไกล่เกลี่ยรอบแรกล้มเหลว',
-      outcome: 'Settlement 27 เมษายน 2023 — ยุติสัญญา, ถอนฟ้องทั้งสองฝ่าย, SM ออกแถลงการณ์ขอโทษและสัญญาปรับนโยบาย James ได้สิทธิ์ catalog เต็มรูปแบบสำหรับงานหลัง SM และ retain สิทธิ์ชื่อ GONUNMA กลายเป็น landmark case เรื่องสิทธิ์ศิลปินใน K-pop',
+      outcome: 'Settlement 27 เมษายน 2023 — ยุติสัญญา, ถอนฟ้องทั้งสองฝ่าย, SM ออกแถลงการณ์ขอโทษและสัญญาปรับนโยบาย James ได้สิทธิ์ catalog เต็มรูปแบบสำหรับงานหลัง SM และ retain สิทธิ์ชื่อ GONUNMA กลายเป็น landmark case เรื่องสิทธิ์ศิลปินใน K-pop — ดูผลกระทบทั้งวงการที่ตามมาด้านล่าง',
+    },
+    {
+      period: '2023',
+      title: 'กระแสปฏิรูปวงการ — "Hwang Clause"',
+      category: 'industry',
+      severity: 'high',
+      status: 'resolved',
+      body: 'จากข้อพิพาทสัญญาของศิลปินคนเดียว ขยายวงกว้างขึ้นตลอดปีถัดมา หุ้น SM ร่วงชัดเจนในช่วงซื้อขายหลัง leak และการ settle, Fair Trade Commission ของเกาหลีเปิดสอบสวนแนวปฏิบัติสัญญา idol ทั้งวงการโดยอ้างคดีนี้โดยตรง, ศิลปินจากค่ายใหญ่อื่นถูกรายงานว่าอ้างอิงคดีนี้เงียบๆ ระหว่างเจรจาต่อสัญญาของตัวเอง และสารคดีเกี่ยวกับคดีนี้ข้ามไปสู่สื่อบันเทิงทั่วไปนอกวงการ K-pop',
+      outcome: 'พฤศจิกายน 2023 National Assembly อ้างอิงคดีนี้ระหว่างผ่านร่างแก้ไข Popular Culture and Arts Industry Development Act ที่เข้มงวดขึ้นเรื่องการขยายสัญญาและการเปิดเผยข้อมูล — สื่อเรียกเล่นๆ ว่า "Hwang Clause" แม้ไม่ใช่ชื่อทางการ ธันวาคมปีเดียวกัน James กลายเป็นผู้ร่วมก่อตั้งองค์กร advocacy สิทธิ idol เปลี่ยนจากชัยชนะทางกฎหมายส่วนตัว เป็นแรงผลักดันการปฏิรูปทั้งวงการ',
     },
     {
       period: '2023',
@@ -337,7 +355,7 @@ const th: typeof en = {
       category: 'fandom',
       severity: 'medium',
       status: 'ongoing',
-      body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 และเต็มรูปแบบในปี 2026 สร้าง structural divide ในแฟนด้อม — SM ใช้กลยุทธ์ที่ทำให้ทั้ง "James กลับมา" และ "James ไม่อยู่" ต่างก็สร้าง engagement สูงพอกัน แฟนคลับแบ่งเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ต้อนรับ James และฝ่ายที่มองว่า James ดึง spotlight ออกจากวง',
+      body: 'การกลับเข้าร่วม NCT 127 ครั้งแรกในปี 2024 และเต็มรูปแบบในปี 2026 ภายใต้ข้อตกลงที่แทบไม่มี precedent มาก่อนในวงการ K-pop สร้าง structural divide ในแฟนด้อม — SM ใช้กลยุทธ์ที่ทำให้ทั้ง "James กลับมา" และ "James ไม่อยู่" ต่างก็สร้าง engagement สูงพอกัน แฟนคลับแบ่งเป็นสองกลุ่มพอๆ กัน: ฝ่ายที่ต้อนรับ James และมองดีลปี 2026 เป็นการพิสูจน์ว่าจุดยืนปี 2023 ของเขาถูกต้อง กับฝ่ายที่มองว่า James ดึง spotlight ออกจากวงอยู่ดีไม่ว่าเงื่อนไขจะเป็นแบบไหน',
       outcome: 'ยังคง ongoing และเป็น chronic tension ทุก NCT 127 release ที่มีหรือไม่มี James จะมีกระแสสูงผิดปกติเสมอ SM ยังไม่มีท่าทีแก้ปัญหาอย่างเป็นระบบ',
     },
     {

@@ -64,7 +64,7 @@ CAN'T LEAVE ALONE ได้รับการตอบรับในเชิ�
 * **Billboard Korea** มองในเชิงบวกกว่า โดยยกย่อง dual concept (SOUR vs HONEY) ว่าเป็น “narrative device ที่ทำให้อัลบั้มมีโครงสร้างเหมือน short film”
 * **IZM (Korea)** ให้ 4.0/5 และชี้ว่า “MYSTERY LADY และ SHOOK แสดงให้เห็นว่า James ยังคง sharp ในฐานะ composer แม้ทิศทางจะ accessible มากขึ้น”
 * **Consequence of Sound** เรียก CAN'T LEAVE ALONE ว่า “one of the best produced tracks of 2025 — Pharrell รู้ดีว่าเขาต้องถอยเพื่อให้ GONUNMA นำ”
-* **User & chart reception:** Melon #8, Circle Digital Top 20 CAN'T LEAVE ALONE feat. Pharrell Williams ขึ้น Spotify Global Chart Top 50 ในสัปดาห์แรก ซึ่งเป็นครั้งแรกของ James ใน global chart ระดับนี้ ยอดสตรีมอัลบั้มรวม 640M+
+* **User & chart reception:** Melon #8, Circle Digital Top 20 CAN'T LEAVE ALONE feat. Pharrell Williams ขึ้น Spotify Global Chart Top 50 ในสัปดาห์แรก ซึ่งเป็นครั้งแรกของ James ใน global chart ระดับนี้ ยอดสตรีมอัลบั้มรวม 1.9B+
 
 
 ### Accolades

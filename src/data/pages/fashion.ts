@@ -46,10 +46,10 @@ const en = {
         'Purple-lavender palette — the first time James had a meaningful hand in the visual direction. Still under SM approval, but the direction sharpened: darker skin tones, oversized tailoring, clean architecture.',
       stageWardrobe:
         'No full-scale tour during this era — music show performances used editorial tailoring that began reflecting more personal taste: structured jackets, monochrome palettes, minimal accessories.',
-      keyPieces: ['Oversized white tailoring (W Korea Feb 2022 cover)', 'Architectural sharp suiting (Vogue Korea Apr 2022)', 'Minimal black editorial (Oscars appearance)'],
-      designers: ['W Korea — Hong Jang-hyun (photographer)', 'Vogue Korea editorial team'],
+      keyPieces: ['Oversized white tailoring (W Korea Feb 2022 cover)', 'Architectural sharp suiting (Vogue Korea Apr 2022)', 'Minimal black editorial (Oscars appearance)', 'Calvin Klein global campaign (Jul 2022)'],
+      designers: ['W Korea — Hong Jang-hyun (photographer)', 'Vogue Korea editorial team', 'Calvin Klein (SM-brokered ambassadorship)'],
       context:
-        'The W Korea cover (February 2022) was a turning point — several fashion critics noted it as the first time James displayed a visual identity clearly distinct from the K-pop idol format.',
+        'The W Korea cover (February 2022) was a turning point — several fashion critics noted it as the first time James displayed a visual identity clearly distinct from the K-pop idol format. That July, SM\'s licensing arm landed his first global brand ambassadorship, fronting a Calvin Klein campaign — a deal negotiated by the agency, not by James, and pitched to press as "an idol chosen by a brand." It stands as the clearest before-picture against the Saint Laurent relationship a year later, where the brand came to him instead.',
     },
     {
       era: 'PULSE',
@@ -181,10 +181,10 @@ const th: typeof en = {
         'Purple-lavender palette — ครั้งแรกที่ James มีส่วนร่วมใน visual direction อย่างมีนัยสำคัญ ยังอยู่ภายใต้ SM approval แต่ทิศทางชัดเจนขึ้น: ผิวสีเข้ม, oversized tailoring, สถาปัตยกรรมสะอาด',
       stageWardrobe:
         'ไม่มี full-scale tour ในช่วงนี้ — music show performances ใช้ editorial tailoring ที่เริ่มสะท้อน personal taste มากขึ้น: structured jackets, monochrome palettes, minimal accessories',
-      keyPieces: ['Oversized white tailoring (W Korea Feb 2022 cover)', 'Sharp suiting เชิงสถาปัตยกรรม (Vogue Korea Apr 2022)', 'Minimal black editorial (Oscars appearance)'],
-      designers: ['W Korea — Hong Jang-hyun (photographer)', 'Vogue Korea editorial team'],
+      keyPieces: ['Oversized white tailoring (W Korea Feb 2022 cover)', 'Sharp suiting เชิงสถาปัตยกรรม (Vogue Korea Apr 2022)', 'Minimal black editorial (Oscars appearance)', 'Calvin Klein global campaign (Jul 2022)'],
+      designers: ['W Korea — Hong Jang-hyun (photographer)', 'Vogue Korea editorial team', 'Calvin Klein (ดีลที่ SM เป็นคนจัดการ)'],
       context:
-        'W Korea cover (February 2022) เป็นจุดเปลี่ยน — นักวิจารณ์แฟชั่นหลายคนระบุว่าเป็นครั้งแรกที่ James แสดง visual identity ที่แยกออกจาก K-pop idol format ชัดเจน',
+        'W Korea cover (February 2022) เป็นจุดเปลี่ยน — นักวิจารณ์แฟชั่นหลายคนระบุว่าเป็นครั้งแรกที่ James แสดง visual identity ที่แยกออกจาก K-pop idol format ชัดเจน เดือนกรกฎาคมปีเดียวกัน ฝ่าย licensing ของ SM ปิดดีล global ambassadorship แรกให้เขา คือแคมเปญ Calvin Klein — ดีลที่ค่ายเป็นคนเจรจา ไม่ใช่ James เอง สื่อตอนนั้นนำเสนอในมุม "idol ที่ถูกแบรนด์เลือก" ถือเป็นภาพ before-picture ที่ชัดสุด เทียบกับความสัมพันธ์กับ Saint Laurent อีกหนึ่งปีต่อมาที่แบรนด์เข้าหาเขาเองแทน',
     },
     {
       era: 'PULSE',

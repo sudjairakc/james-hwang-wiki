@@ -47,6 +47,7 @@ const en = {
     { item: 'IP Ownership', val: 'The Walt Disney Company · Lucasfilm · MJ Estate · JH Company' },
     { item: 'Rights Structure', val: 'Disney (majority + distribution) · Lucasfilm (original Captain EO legacy) · MJ Estate (music + likeness) · JH Company (creative ownership + new universe)' },
     { item: 'Why the deal closed', val: 'Each party had a reason to say yes. MJ Estate: trusted James — a documented MJ-lineage artist (vocal / dance / production DNA) — to honor rather than exploit the legacy, on favorable royalty + strict likeness-guardrail terms that respectfully reactivate a dormant property. Lucasfilm: with its core franchise fatigued, gained a low-risk new tentpole it did not have to originate. Disney: already backing James after Shang-Chi, kept majority + distribution while he shouldered the creative risk. JH Company funded development and took a minority creative-ownership stake in return.' },
+    { item: 'Theme Park Attraction', val: 'A Captain EO: RESONANCE dark-ride attraction, announced for Disney parks in 2027 and slated to open in 2028 — the first time the franchise crosses from screen into a physical Disney park experience, mirroring the original Captain EO (1986) attraction\'s place in park history.' },
   ],
   related: [
     { label: 'Shang-Chi Trilogy', slug: 'filmography/shang-chi' },
@@ -92,6 +93,7 @@ const th: typeof en = {
     { item: 'เจ้าของ IP', val: 'The Walt Disney Company · Lucasfilm · MJ Estate · JH Company' },
     { item: 'โครงสร้างสิทธิ์', val: 'Disney (ส่วนใหญ่ + จัดจำหน่าย) · Lucasfilm (มรดก Captain EO เดิม) · MJ Estate (เพลง + likeness) · JH Company (creative ownership + จักรวาลใหม่)' },
     { item: 'ทำไมดีลถึงปิดได้', val: 'ทุกฝ่ายมีเหตุผลตอบตกลง MJ Estate: เชื่อใจ James — ศิลปินสาย MJ-lineage ชัดเจน (DNA เสียง/เต้น/production) — ว่าจะให้เกียรติมรดกไม่ใช่หากิน บนเงื่อนไข royalty ที่ดี + guardrail เรื่อง likeness ที่เข้มงวด revive IP ที่หลับอยู่อย่างเคารพ · Lucasfilm: แฟรนไชส์หลักกำลังล้า ได้ tentpole ใหม่ความเสี่ยงต่ำที่ไม่ต้องริเริ่มเอง · Disney: หนุน James อยู่แล้วหลัง Shang-Chi เก็บ majority + distribution ไว้ ขณะที่ James แบก creative risk · JH Company ลงทุนพัฒนาและได้ creative-ownership stake ส่วนน้อยเป็นการแลกเปลี่ยน' },
+    { item: 'Theme Park Attraction', val: 'dark-ride attraction ของ Captain EO: RESONANCE ประกาศสำหรับ Disney park ในปี 2027 กำหนดเปิดปี 2028 — ครั้งแรกที่แฟรนไชส์นี้ข้ามจากจอไปสู่ physical experience ใน Disney park จริง สะท้อนตำแหน่งของ attraction Captain EO ต้นฉบับ (1986) ในประวัติศาสตร์ park' },
   ],
   related: [
     { label: 'ไตรภาค Shang-Chi', slug: 'filmography/shang-chi' },

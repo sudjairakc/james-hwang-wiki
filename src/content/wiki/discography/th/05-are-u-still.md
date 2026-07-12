@@ -77,7 +77,7 @@ _“a deliberate pivot toward legacy-driven sound rather than trend-driven produ
 * **NME** ให้ 4.5/5 และเรียกมันว่า "the moment K-R&B stopped being a genre qualifier and became just R&B"
 * **IZM (Korea)** ให้ 4.5/5 และชี้ว่า "โครงสร้าง soul-disco hybrid ใน BREATHE และ SOMEWHERE SOMEHOW แสดงให้เห็นว่า artist นี้มี musical literacy ที่ลึกมากกว่าที่คาด"
 * **Grammy Committee (64th Grammy Awards):** อัลบั้มนี้ทำให้ James ได้รับการพิจารณาเป็นครั้งแรกในสาขา Best Progressive R&B Album
-* **User & chart reception:** Melon #2 ใน 3 วันแรก, Circle Digital Top 5 ต่อเนื่อง 6 สัปดาห์ ยอดสตรีมรวม 820M+ ภายใน 18 เดือน คะแนน user review 9.4/10 บน Melon
+* **User & chart reception:** Melon #2 ใน 3 วันแรก, Circle Digital Top 5 ต่อเนื่อง 6 สัปดาห์ ยอดสตรีมรวม 2.2B+ จนถึงปัจจุบัน คะแนน user review 9.4/10 บน Melon
 
 
 ### Accolades

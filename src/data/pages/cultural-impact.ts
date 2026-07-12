@@ -156,6 +156,11 @@ const en = {
     { label: 'Generation Classification', val: 'Transnational Idol-Auteur Generation 1' },
     { label: 'Comparable Tier', val: 'IU · G-Dragon · Taemin · The Weeknd' },
     { label: 'Unique Position', val: 'First Southeast Asian-origin global idol-auteur franchise architect inside Korean system trajectory' },
+    { label: 'Multi-Hyphenate Stack', val: 'Grammy-winning artist + credited co-screenwriter + co-director + label CEO simultaneously — a combination no member of any comparable global group currently holds' },
+    { label: 'Nobel Peace Prize', val: 'Nominated, 2026 — cited for the Gaza ceasefire and Thai-Cambodia peace statements' },
+    { label: 'UNESCO Goodwill Ambassador', val: 'Appointed 2026 — a standing title, not a one-off appearance' },
+    { label: 'Guinness World Record', val: 'First artist to simultaneously top the Billboard 200, Hot 100, and global box office chart in the same week (DECADE / Deadly Hands week, Sept 2026)' },
+    { label: 'Academic Case Study', val: 'Subject of a university course on the "post-agency idol model," first taught 2026' },
   ],
 };
 
@@ -308,6 +313,11 @@ const th: typeof en = {
     { label: 'การจัดประเภทเจเนอเรชัน', val: 'Transnational Idol-Auteur Generation 1' },
     { label: 'ระดับที่เทียบเคียงได้', val: 'IU · G-Dragon · Taemin · The Weeknd' },
     { label: 'ตำแหน่งที่ไม่เหมือนใคร', val: 'ผู้บุกเบิกคนแรกที่มีต้นกำเนิดจากเอเชียตะวันออกเฉียงใต้ ในฐานะ global idol-auteur และ franchise architect ภายใน trajectory ของระบบเกาหลี' },
+    { label: 'Multi-Hyphenate Stack', val: 'Grammy winner + co-screenwriter ที่มีเครดิต + co-director + CEO ค่ายตัวเอง พร้อมกัน — combination ที่ไม่มีสมาชิกจากกลุ่มระดับโลกใดถืออยู่ตอนนี้' },
+    { label: 'Nobel Peace Prize', val: 'ได้รับการเสนอชื่อ ปี 2026 — อ้างอิงจากแถลงการณ์หยุดยิง Gaza และสันติภาพไทย-กัมพูชา' },
+    { label: 'UNESCO Goodwill Ambassador', val: 'ได้รับแต่งตั้งปี 2026 — เป็นตำแหน่งถาวร ไม่ใช่แค่การปรากฏตัวครั้งเดียว' },
+    { label: 'Guinness World Record', val: 'ศิลปินคนแรกที่ครองอันดับ 1 พร้อมกันทั้ง Billboard 200, Hot 100 และ box office chart ระดับโลกในสัปดาห์เดียวกัน (สัปดาห์ DECADE / Deadly Hands, ก.ย. 2026)' },
+    { label: 'Academic Case Study', val: 'เป็นหัวข้อวิชาเรียนในมหาวิทยาลัยเรื่อง "post-agency idol model" เปิดสอนครั้งแรกปี 2026' },
   ],
 };
 
