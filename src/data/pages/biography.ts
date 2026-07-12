@@ -22,7 +22,7 @@ const en = {
     { label: 'Full Name', val: 'Hwang Ji-nam (황지남) · Huáng Zhìnán (黃志南) · James Hwang' },
     { label: 'Born', val: 'June 22, 1998 · Bangkok, Thailand' },
     { label: 'Heritage', val: 'Thai-Chinese (paternal) · Korean (maternal)' },
-    { label: 'Citizenship', val: 'Thai (single nationality)' },
+    { label: 'Citizenship', val: 'Thai · U.S. residency filing (2027–)' },
     { label: 'Languages', val: 'Thai · Chinese · Korean · English · Japanese (fluent)' },
     { label: 'Education', val: 'School of Performing Arts Seoul (SOPA) · enrolled 2014 · graduated Feb 7, 2017' },
     { label: 'Stage Name', val: 'GONUNMA (고눈마) — producer/songwriting credit + SNS handles (2016–present) · public/promotion name is James Hwang (from 2023 independence)' },
@@ -114,6 +114,15 @@ const en = {
     { label: 'Discography', slug: 'discography' },
     { label: 'Filmography', slug: 'filmography' },
   ],
+  gallery: {
+    heading: 'Portraits & Photographs',
+    portraits: [
+      { src: 'jh_age_16.png', caption: 'Age 16 — pre-debut trainee years (c. 2014)' },
+      { src: 'jh_age_20.png', caption: 'Age 20 — NCT 127 era (c. 2018)' },
+      { src: 'jh_age_25.png', caption: 'Age 25 — post-independence, PULSE era (c. 2023)' },
+    ],
+    group: { src: 'nct127_regulate.png', caption: "NCT 127's Regulate (2018) — James Hwang pictured with the group during the Regular-Irregular repackage era." },
+  },
 };
 
 const th: typeof en = {
@@ -133,7 +142,7 @@ const th: typeof en = {
     { label: 'ชื่อเต็ม', val: 'Hwang Ji-nam (황지남) · Huáng Zhìnán (黃志南) · James Hwang' },
     { label: 'เกิด', val: 'June 22, 1998 · Bangkok, Thailand' },
     { label: 'เชื้อสาย', val: 'ไทย-จีน (ฝ่ายพ่อ) · เกาหลี (ฝ่ายแม่)' },
-    { label: 'สัญชาติ', val: 'ไทย (สัญชาติเดียว)' },
+    { label: 'สัญชาติ', val: 'ไทย · ยื่นขอถิ่นที่อยู่สหรัฐ (2027–)' },
     { label: 'ภาษา', val: 'ไทย · จีน · เกาหลี · อังกฤษ · ญี่ปุ่น (คล่องแคล่ว)' },
     { label: 'การศึกษา', val: 'School of Performing Arts Seoul (SOPA) · เข้าเรียนปี 2014 · จบการศึกษา Feb 7, 2017' },
     { label: 'ชื่อในวงการ', val: 'GONUNMA (고눈마) — เครดิต producer/แต่งเพลง + ชื่อแอคเคานต์ SNS (2016–ปัจจุบัน) · ชื่อโปรโมท/สาธารณะคือ James Hwang (ตั้งแต่เป็นอิสระปี 2023)' },
@@ -225,6 +234,15 @@ const th: typeof en = {
     { label: 'ผลงานเพลง', slug: 'discography' },
     { label: 'ผลงานภาพยนตร์', slug: 'filmography' },
   ],
+  gallery: {
+    heading: 'ภาพพอร์เทรตและภาพถ่าย',
+    portraits: [
+      { src: 'jh_age_16.png', caption: 'อายุ 16 — ช่วงเป็นเทรนนีก่อนเดบิวต์ (ราวปี 2014)' },
+      { src: 'jh_age_20.png', caption: 'อายุ 20 — ยุค NCT 127 (ราวปี 2018)' },
+      { src: 'jh_age_25.png', caption: 'อายุ 25 — หลังแยกตัวเป็นอิสระ ยุค PULSE (ราวปี 2023)' },
+    ],
+    group: { src: 'nct127_regulate.png', caption: 'Regulate ของ NCT 127 (2018) — James Hwang อยู่ในภาพร่วมกับวงช่วง repackage Regular-Irregular' },
+  },
 };
 
 export const biography = { en, th };

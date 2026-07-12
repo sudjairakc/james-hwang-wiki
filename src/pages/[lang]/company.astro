@@ -47,6 +47,69 @@ const related = [
     ))}
   </div>
 
+  <!-- Brand Identity -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.ui.brandHeading}</h2>
+    <div class="rounded-xl border overflow-hidden mb-4" style="border-color:color-mix(in srgb, var(--gold) 30%, transparent)">
+      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x" style="--tw-divide-opacity:1;divide-color:var(--border)">
+        {[
+          { label: d.ui.brandNameLabel, val: d.brand.meaning },
+          { label: d.ui.brandTaglineLabel, val: d.brand.tagline },
+          { label: d.ui.brandPlatformLabel, val: d.brand.platform },
+        ].map(f => (
+          <div class="px-5 py-4" style="background-color:color-mix(in srgb, var(--gold) 5%, var(--bg-surface))">
+            <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--text-muted)">{f.label}</div>
+            <div class="text-base font-bold" style="color:var(--gold)">{f.val}</div>
+          </div>
+        ))}
+      </div>
+      <div class="px-5 py-4 border-t" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <div class="text-xs font-semibold uppercase tracking-widest mb-1.5" style="color:var(--text-muted)">{d.ui.brandPositioningLabel}</div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{d.brand.positioning}</p>
+      </div>
+    </div>
+
+    <!-- Pillars -->
+    <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.brandPillarsLabel}</div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mb-5">
+      {d.brand.pillars.map(p => (
+        <div class="stat-card flex flex-col gap-1.5">
+          <div class="text-sm font-bold" style="color:var(--gold)">{p.name}</div>
+          <div class="text-xs leading-relaxed" style="color:var(--text-muted)">{p.desc}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.brandPersonalityLabel}</div>
+        <div class="flex flex-wrap gap-2">
+          {d.brand.personality.map(t => (
+            <span class="text-xs px-2.5 py-1 rounded border" style="border-color:var(--border);color:var(--text-muted);background-color:var(--bg-muted)">{t}</span>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{d.ui.brandArchetypeLabel}</div>
+        <div class="flex flex-wrap gap-2">
+          {d.brand.archetype.map(t => (
+            <span class="text-xs px-2.5 py-1 rounded border" style="border-color:color-mix(in srgb, var(--gold) 30%, transparent);color:var(--gold);background-color:color-mix(in srgb, var(--gold) 8%, transparent)">{t}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- CI board figure -->
+    <figure class="mt-6">
+      <div class="rounded-xl border overflow-hidden" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <img src={`${base}brand/${d.brand.image}`} alt={d.ui.brandBoardLabel} class="w-full h-auto block" loading="lazy" />
+      </div>
+      <figcaption class="text-xs mt-2 leading-relaxed" style="color:var(--text-faint)">
+        <span class="font-semibold" style="color:var(--text-muted)">{d.ui.brandBoardLabel}. </span>{d.brand.imageCaption}
+      </figcaption>
+    </figure>
+  </section>
+
   <!-- Ownership -->
   <section class="mb-10">
     <h2 class="wiki-section mb-4">{d.ui.ownershipHeading}</h2>

@@ -18,6 +18,7 @@ const en = {
     issuesHeading: 'Core Issues',
     timelineHeading: 'Timeline',
     aftermathHeading: 'Aftermath',
+    structureHeading: 'Cross-Border Legal Structure',
     severityLabels: { high: 'High', medium: 'Medium' } as Record<string, string>,
   },
   outcome: [
@@ -158,6 +159,32 @@ const en = {
       text: 'A documentary on the dispute reached audiences well outside the K-pop fandom, making the case — and by extension James himself — known to a general entertainment-news audience for the first time, ahead of his later Grammy-era crossover.',
     },
   ],
+  structure: [
+    {
+      title: 'Immigration Status',
+      text: 'James entered Korea on an E-6 (arts & entertainment) visa at debut, moved to an F-2 long-term resident visa over his NCT 127 years, and held F-5 permanent residency by the time of the dispute. That residency — not the SM contract — is what let him keep living and working in Korea independently after the 2023 settlement.',
+    },
+    {
+      title: 'Company Incorporation',
+      text: 'JH Company is registered in Seoul as a Korean 주식회사 (jusik-hoesa, a stock corporation). Korean law lets a foreign national wholly own a domestic company, and his F-5 status removed the usual foreign-investment visa hurdle; James holds an 82% controlling stake.',
+    },
+    {
+      title: 'Standing as a Foreign Claimant',
+      text: 'Korean courts and the Fair Trade Commission grant standing regardless of nationality, so his single Thai citizenship never limited his right to file the injunction or to benefit from the FTC inquiry. Foreignness featured in the case as a discrimination issue, not as any limit on his legal capacity.',
+    },
+    {
+      title: 'US Entity & Visa',
+      text: 'His MCU work and the Disney / Lucasfilm RESONANCE IP run through a US entity and an O-1 "extraordinary ability" visa. The late-2026 relocation moved his primary residence — and the center of his film-side business — to the United States.',
+    },
+    {
+      title: 'Tax Residency',
+      text: "He was Korea tax-resident through the SM and solo years — exposed to Korea's high wealth and property taxes, which is why he kept few personal holdings and no property in Thailand — and shifted toward US tax residency after the 2026 move. As a Thai citizen taxed only on income remitted to Thailand, living abroad leaves him limited ongoing Thai exposure.",
+    },
+    {
+      title: 'Path to U.S. Citizenship',
+      text: 'After relocating his primary residence to the United States in late 2026, James filed for permanent residency in 2027 — an EB-1 "extraordinary ability" petition backed by his Grammy wins, MCU lead status, and Guinness record. A green card puts naturalization within reach around the early 2030s (or three years out if married to a U.S. citizen). Because the U.S. permits dual nationality he would add American citizenship without renouncing his Thai one — the trade-off being U.S. worldwide-income taxation for life. He carries no U.S. military obligation: the draft is inactive, and he was a non-resident abroad through the Selective Service ages.',
+    },
+  ],
   related: [
     { label: 'JH Company', slug: 'company' },
     { label: 'Career Timeline', slug: 'timeline' },
@@ -178,6 +205,7 @@ const th: typeof en = {
     issuesHeading: 'ประเด็นหลัก',
     timelineHeading: 'ไทม์ไลน์',
     aftermathHeading: 'ผลที่ตามมา',
+    structureHeading: 'โครงสร้างกฎหมายข้ามพรมแดน',
     severityLabels: { high: 'สูง', medium: 'ปานกลาง' } as Record<string, string>,
   },
   outcome: [
@@ -316,6 +344,32 @@ const th: typeof en = {
     {
       title: 'สารคดีและการรับรู้ในวงกว้าง',
       text: 'สารคดีเกี่ยวกับคดีนี้ไปถึงผู้ชมนอกวง K-pop ทำให้คดีนี้ — และตัว James เอง — เป็นที่รู้จักในกลุ่มผู้ชมข่าวบันเทิงทั่วไปเป็นครั้งแรก ก่อนกระแส crossover ยุค Grammy ที่ตามมา',
+    },
+  ],
+  structure: [
+    {
+      title: 'สถานะการเข้าเมือง',
+      text: 'James เข้าเกาหลีด้วย visa E-6 (ศิลปะและบันเทิง) ตอนเดบิวต์ เปลี่ยนเป็น F-2 (พำนักระยะยาว) ระหว่างช่วง NCT 127 และถือ F-5 (ถิ่นที่อยู่ถาวร) แล้วตอนเกิดข้อพิพาท สถานะ residency นี้เอง — ไม่ใช่สัญญา SM — ที่ทำให้เขายังอยู่และทำงานในเกาหลีได้อย่างอิสระหลัง settle ปี 2023',
+    },
+    {
+      title: 'การจดทะเบียนบริษัท',
+      text: 'JH Company จดทะเบียนที่ Seoul เป็น 주식회사 (jusik-hoesa บริษัทจำกัดแบบเกาหลี) กฎหมายเกาหลีให้คนต่างชาติถือครองบริษัทในประเทศได้ 100% และสถานะ F-5 ตัดเงื่อนไข visa การลงทุนต่างชาติที่ปกติต้องมี James ถือหุ้นควบคุม 82%',
+    },
+    {
+      title: 'สิทธิ์ในฐานะผู้ฟ้องต่างชาติ',
+      text: 'ศาลเกาหลีและ Fair Trade Commission ให้สิทธิ์ยื่นฟ้องโดยไม่ขึ้นกับสัญชาติ สัญชาติไทยเดี่ยวของเขาจึงไม่เคยจำกัดสิทธิ์ในการยื่น injunction หรือได้ประโยชน์จากการสอบสวนของ FTC ความเป็นต่างชาติปรากฏในคดีในฐานะประเด็นการเลือกปฏิบัติ ไม่ใช่ข้อจำกัดความสามารถทางกฎหมาย',
+    },
+    {
+      title: 'นิติบุคคลและ visa ฝั่งสหรัฐ',
+      text: 'งาน MCU และ IP ของ RESONANCE (Disney / Lucasfilm) ดำเนินผ่านนิติบุคคลในสหรัฐและ visa O-1 ("ความสามารถพิเศษ") การย้ายถิ่นปลายปี 2026 ย้ายที่พำนักหลัก — และศูนย์กลางธุรกิจฝั่งภาพยนตร์ — ไปอยู่ที่สหรัฐ',
+    },
+    {
+      title: 'ถิ่นที่อยู่ทางภาษี',
+      text: 'เขาเป็น tax resident เกาหลีตลอดช่วง SM และช่วงเดี่ยว — เจอภาษีความมั่งคั่งและภาษีทรัพย์สินสูงของเกาหลี จึงถือทรัพย์สินส่วนตัวไว้น้อยและไม่มีอสังหาฯ ในไทย — และเลื่อนไปเป็น tax resident สหรัฐหลังย้ายปี 2026 ในฐานะพลเมืองไทยที่ถูกเก็บภาษีเฉพาะเงินที่นำเข้าประเทศไทย การใช้ชีวิตในต่างแดนทำให้ภาระภาษีไทยต่อเนื่องมีจำกัด',
+    },
+    {
+      title: 'เส้นทางสู่สัญชาติสหรัฐ',
+      text: 'หลังย้ายที่พำนักหลักไปสหรัฐปลายปี 2026 James ยื่นขอ permanent residency ในปี 2027 — คำร้อง EB-1 "extraordinary ability" โดยอ้าง Grammy, สถานะนำใน MCU และสถิติ Guinness เมื่อได้ green card การขอสัญชาติจะอยู่ในระยะเอื้อมราวต้นทศวรรษ 2030 (หรือ 3 ปีถ้าแต่งกับพลเมืองสหรัฐ) เพราะสหรัฐอนุญาต dual nationality เขาจึงเพิ่มสัญชาติอเมริกันได้โดยไม่ต้องสละสัญชาติไทย แลกกับการถูกเก็บภาษีรายได้ทั่วโลกตลอดชีพ และไม่มีภาระทหารสหรัฐ — ไม่มีการเกณฑ์ และเขาเป็น non-resident อยู่ต่างแดนช่วงอายุ Selective Service',
     },
   ],
   related: [

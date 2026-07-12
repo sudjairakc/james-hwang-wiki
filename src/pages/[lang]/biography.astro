@@ -38,6 +38,27 @@ const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
     </div>
   </div>
 
+  <!-- Portraits & photographs -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.gallery.heading}</h2>
+    <div class="grid grid-cols-3 gap-3 mb-4">
+      {d.gallery.portraits.map(p => (
+        <figure>
+          <div class="rounded-lg border overflow-hidden aspect-[2/3]" style="border-color:var(--border);background-color:var(--bg-surface)">
+            <img src={`${base}photos/${p.src}`} alt={p.caption} class="w-full h-full object-cover object-top" loading="lazy" />
+          </div>
+          <figcaption class="text-xs mt-1.5 leading-snug" style="color:var(--text-faint)">{p.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+    <figure class="max-w-md">
+      <div class="rounded-lg border overflow-hidden" style="border-color:var(--border);background-color:var(--bg-surface)">
+        <img src={`${base}photos/${d.gallery.group.src}`} alt={d.gallery.group.caption} class="w-full h-auto block" loading="lazy" />
+      </div>
+      <figcaption class="text-xs mt-1.5 leading-relaxed" style="color:var(--text-faint)">{d.gallery.group.caption}</figcaption>
+    </figure>
+  </section>
+
   <!-- Chapter jump nav -->
   <div class="flex flex-wrap gap-2 mb-8">
     {d.chapters.map(c => (

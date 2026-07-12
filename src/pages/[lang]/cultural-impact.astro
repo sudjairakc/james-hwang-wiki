@@ -34,6 +34,35 @@ const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
     ))}
   </div>
 
+  <!-- ── Stature / By the Numbers ── -->
+  <section class="mb-12">
+    <h2 class="wiki-section mb-1 pb-2 border-b" style="border-color:var(--border)">{d.ui.statureHeading}</h2>
+    <p class="text-xs mt-2 mb-4" style="color:var(--text-faint)">{d.ui.statureSub}</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+      {d.scoreboard.map(s => (
+        <div class="stat-card">
+          <div class="stat-val">{s.val}</div>
+          <div class="stat-label">{s.label}</div>
+          <div class="text-xs mt-1" style="color:color-mix(in srgb, var(--text-muted) 60%, transparent)">{s.sub}</div>
+        </div>
+      ))}
+    </div>
+    <div class="rounded-lg border overflow-hidden" style="border-color:color-mix(in srgb, var(--gold) 30%, transparent)">
+      <div class="grid text-xs px-4 py-2" style="grid-template-columns:1.4fr 1.4fr 2fr;background-color:color-mix(in srgb, var(--gold) 6%, var(--bg-muted));border-bottom:1px solid color-mix(in srgb, var(--gold) 25%, transparent)">
+        {d.statureTierCols.map((c, ci) => (
+          <div class="font-semibold uppercase tracking-widest" style={`color:${ci === d.statureTierCols.length - 1 ? 'var(--gold)' : 'var(--text-muted)'}`}>{c}</div>
+        ))}
+      </div>
+      {d.statureTiers.map((row, ri, arr) => (
+        <div class="grid text-xs px-4 py-2.5" style={`grid-template-columns:1.4fr 1.4fr 2fr;background-color:var(--bg-surface);${ri < arr.length - 1 ? 'border-bottom:1px solid color-mix(in srgb, var(--border) 40%, transparent)' : ''}`}>
+          {row.map((cell, ci) => (
+            <div class={ci === 0 ? 'font-semibold' : ''} style={`color:${ci === 2 ? 'var(--gold)' : ci === 1 ? 'var(--text)' : 'var(--text-muted)'}`}>{cell}</div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- ── Academic Reception ── -->
   <section class="mb-12">
     <h2 class="wiki-section mb-6 pb-2 border-b" style="border-color:var(--border)">

@@ -17,6 +17,8 @@ const en = {
     academicSectionHeading: '1 · Cultural Impact / Academic Reception',
     fandomSectionHeading: '2 · Fandom Sociology',
     legacyHeading: 'Legacy Projection (Academic Forecast)',
+    statureHeading: 'Stature — By the Numbers',
+    statureSub: 'Where he lands on the global fame scale, in hard figures',
   },
   related: [
     { label: 'Public Image', slug: 'public-image' },
@@ -162,6 +164,25 @@ const en = {
     { label: 'Guinness World Record', val: 'First artist to simultaneously top the Billboard 200, Hot 100, and global box office chart in the same week (DECADE / Deadly Hands week, Sept 2026)' },
     { label: 'Academic Case Study', val: 'Subject of a university course on the "post-agency idol model," first taught 2026' },
   ],
+  scoreboard: [
+    { val: '8.7B+', label: 'Career Streams', sub: 'All platforms' },
+    { val: '32M', label: 'Spotify Monthly Listeners', sub: 'Peak 2026' },
+    { val: '#1 · #1', label: 'Billboard 200 · Hot 100', sub: 'DECADE / "NEW"' },
+    { val: '2', label: 'Grammy Wins', sub: '+1 nomination' },
+    { val: '~75M', label: 'Social Followers', sub: 'IG + X + TikTok + YouTube' },
+    { val: '$309M', label: 'Touring Gross', sub: 'PULSE + DECADE' },
+    { val: '$432M', label: 'Film Box Office', sub: 'Shang-Chi (2021)' },
+    { val: '1st', label: 'Guinness World Record', sub: 'Billboard + Hot 100 + box office, one week' },
+  ],
+  statureTierCols: ['Metric', 'James Hwang', 'Where that lands him'],
+  statureTiers: [
+    ['Spotify monthly listeners', '32M', 'Global-superstar range — top tier of soloists worldwide'],
+    ['Combined social reach', '~75M', 'A-list global celebrity'],
+    ['Career streams', '8.7B+', 'Tier-1 K-soloist / global crossover (IU · G-Dragon · The Weeknd band)'],
+    ['US charting', 'Billboard 200 #1 + Hot 100 #1', 'Full Western-market arrival — rare for any K-soloist'],
+    ['Screen', '$432M film + Emmy & Saturn recognition', 'A-list Hollywood crossover, not a cameo idol'],
+    ['Beyond music', '2 Grammys · Guinness · Nobel & UNESCO 2026', 'Global public figure past the music industry'],
+  ],
 };
 
 const th: typeof en = {
@@ -174,6 +195,8 @@ const th: typeof en = {
     academicSectionHeading: '1 · อิทธิพลเชิงวัฒนธรรม / การยอมรับเชิงวิชาการ',
     fandomSectionHeading: '2 · สังคมวิทยาแฟนด้อม',
     legacyHeading: 'การคาดการณ์มรดก (Academic Forecast)',
+    statureHeading: 'ระดับชื่อเสียง — เป็นตัวเลข',
+    statureSub: 'ดังระดับไหนบน fame scale โลก วัดเป็นตัวเลขจริง',
   },
   related: [
     { label: 'ภาพลักษณ์สาธารณะ', slug: 'public-image' },
@@ -318,6 +341,25 @@ const th: typeof en = {
     { label: 'UNESCO Goodwill Ambassador', val: 'ได้รับแต่งตั้งปี 2026 — เป็นตำแหน่งถาวร ไม่ใช่แค่การปรากฏตัวครั้งเดียว' },
     { label: 'Guinness World Record', val: 'ศิลปินคนแรกที่ครองอันดับ 1 พร้อมกันทั้ง Billboard 200, Hot 100 และ box office chart ระดับโลกในสัปดาห์เดียวกัน (สัปดาห์ DECADE / Deadly Hands, ก.ย. 2026)' },
     { label: 'Academic Case Study', val: 'เป็นหัวข้อวิชาเรียนในมหาวิทยาลัยเรื่อง "post-agency idol model" เปิดสอนครั้งแรกปี 2026' },
+  ],
+  scoreboard: [
+    { val: '8.7B+', label: 'สตรีมสะสม', sub: 'ทุกแพลตฟอร์ม' },
+    { val: '32M', label: 'Spotify Monthly Listeners', sub: 'พีคปี 2026' },
+    { val: '#1 · #1', label: 'Billboard 200 · Hot 100', sub: 'DECADE / "NEW"' },
+    { val: '2', label: 'Grammy ที่ชนะ', sub: '+1 การเสนอชื่อ' },
+    { val: '~75M', label: 'ผู้ติดตามโซเชียล', sub: 'IG + X + TikTok + YouTube' },
+    { val: '$309M', label: 'รายได้ทัวร์', sub: 'PULSE + DECADE' },
+    { val: '$432M', label: 'รายได้หนัง', sub: 'Shang-Chi (2021)' },
+    { val: '1st', label: 'Guinness World Record', sub: 'Billboard + Hot 100 + box office สัปดาห์เดียว' },
+  ],
+  statureTierCols: ['ตัวชี้วัด', 'James Hwang', 'อยู่ระดับไหน'],
+  statureTiers: [
+    ['Spotify monthly listeners', '32M', 'ระดับ global superstar — ท็อปเทียร์ของศิลปินเดี่ยวทั้งโลก'],
+    ['Social reach รวม', '~75M', 'คนดังระดับ A-list ระดับโลก'],
+    ['สตรีมสะสม', '8.7B+', 'Tier-1 K-soloist / crossover ระดับโลก (กลุ่ม IU · G-Dragon · The Weeknd)'],
+    ['ชาร์ตสหรัฐ', 'Billboard 200 #1 + Hot 100 #1', 'เข้าตลาดตะวันตกเต็มตัว — หายากสำหรับ K-soloist'],
+    ['งานจอ', 'หนัง $432M + รางวัล Emmy & Saturn', 'crossover Hollywood ระดับ A-list ไม่ใช่ idol รับเชิญ'],
+    ['นอกวงการเพลง', '2 Grammy · Guinness · Nobel & UNESCO 2026', 'บุคคลสาธารณะระดับโลกเกินวงการเพลง'],
   ],
 };
 

@@ -725,6 +725,8 @@ Short promotion, focused on demand-driven ticketing rather than a full promotion
 
 
 ### 02–05/2027
+03/2027: With his primary residence now in the United States, James filed for U.S. permanent residency — an EB-1 "extraordinary ability" petition built on his Grammy wins, MCU lead status, and Guinness record. Because the U.S. permits dual nationality, it required no renunciation of his Thai citizenship, carried no military obligation, and set up a longer path toward dual Thai–U.S. citizenship (naturalization reachable in the early 2030s). Read against his estrangement from Thailand, Thai media framed it as another step away — though he kept his Thai passport.
+
 THE MISSING CHORD entered the development phase.
 
 Locked in Elias's identity-reveal arc as the core of the first installment.

@@ -101,4 +101,17 @@ const related = d.related.map(r => ({ label: r.label, href: `${L}${r.slug}` }));
       ))}
     </div>
   </section>
+
+  <!-- Cross-border legal structure -->
+  <section class="mt-10">
+    <h2 class="wiki-section mb-4">{d.ui.structureHeading}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {d.structure.map(s => (
+        <div class="rounded-lg border px-4 py-3" style="border-color:var(--border);background-color:var(--bg-surface)">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-muted)">{s.title}</div>
+          <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{s.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
 </WikiLayout>

@@ -65,12 +65,29 @@ const en = {
     capitalNote: 'Transition: boutique artist label → single-artist creator + franchise IP house',
     warnerHeading: 'Warner Music Korea — Distribution Role',
     revShareLabel: 'Revenue share:',
+    wealthHeading: 'Estimated Wealth',
+    wealthSub: 'How the fortune is built — and how much of it is actually liquid',
+    wealthAssetsTitle: 'Net-Worth Composition',
+    wealthIncomeTitle: 'Where the Money Comes From',
+    wealthTotalLabel: 'Estimated Total Net Worth',
   },
   incomeSummary: [
     { val: '$16–22M', label: 'Solo Endorsements/yr', sub: 'Controlled via JH Company' },
     { val: '$1–2M', label: 'Group Endorsements/yr', sub: 'Legacy · only during NCT 127 cycles' },
     { val: '$309M', label: 'Touring Gross (2 tours)', sub: 'Ticket sales combined' },
-    { val: '$95–120M', label: 'James Net Worth (post-DECADE)', sub: 'Global crossover creator tier' },
+    { val: '$440–650M', label: 'Est. Total Net Worth', sub: 'Incl. ~82% JH Company equity · see breakdown below' },
+  ],
+  wealthTotal: '$440–650M',
+  wealthAssets: [
+    { source: 'Liquid personal assets', detail: 'Cash, securities, and Seoul + Los Angeles residences', value: '$95–120M' },
+    { source: 'JH Company equity (82%)', detail: 'Founder stake in a $420–650M enterprise — illiquid paper value, not cash on hand', value: '$345–530M' },
+  ],
+  wealthIncome: [
+    { source: 'Touring (personal take)', detail: 'PULSE $40–48M + DECADE $15–19M, net of production cost', value: '$55–67M' },
+    { source: 'Endorsements', detail: 'Saint Laurent · Cartier · Sony · Nike · Dior, all booked through JH Company', value: '$16–22M/yr' },
+    { source: 'Film fees (MCU)', detail: 'Shang-Chi lead scale in 2021 rising to star-tier by Deadly Hands (2026); RESONANCE pays JH Company an IP backend, not a personal fee', value: '$3–5M → $12–18M/film' },
+    { source: 'Recorded music & publishing', detail: '8.7B+ career streams plus tracks written for SM artists (Jaehyun, aespa)', value: '8–20% royalty share' },
+    { source: 'Merchandise', detail: 'Concert merch and capsule drops (e.g. Nike SNKRS)', value: '$18–28M/tour' },
   ],
   solodeals: [
     {
@@ -189,12 +206,29 @@ const th: typeof en = {
     capitalNote: 'การเปลี่ยนผ่าน: ค่ายศิลปิน boutique → creator + franchise IP house สำหรับศิลปินเดี่ยว',
     warnerHeading: 'Warner Music Korea — บทบาทจัดจำหน่าย',
     revShareLabel: 'ส่วนแบ่งรายได้:',
+    wealthHeading: 'ประเมินความมั่งคั่ง',
+    wealthSub: 'ทรัพย์สินมาจากไหน และเป็นเงินสดได้จริงเท่าไหร่',
+    wealthAssetsTitle: 'องค์ประกอบมูลค่าทรัพย์สิน',
+    wealthIncomeTitle: 'เงินมาจากไหน',
+    wealthTotalLabel: 'มูลค่าทรัพย์สินสุทธิรวม (ประมาณ)',
   },
   incomeSummary: [
     { val: '$16–22M', label: 'ดีลเดี่ยว/ปี', sub: 'ควบคุมผ่าน JH Company' },
     { val: '$1–2M', label: 'ดีลกลุ่ม/ปี', sub: 'Legacy · เฉพาะช่วงกิจกรรม NCT 127' },
     { val: '$309M', label: 'รายได้ทัวร์ (2 ทัวร์)', sub: 'ยอดขายบัตรรวม' },
-    { val: '$95–120M', label: 'มูลค่าทรัพย์สิน James (หลัง DECADE)', sub: 'ระดับ creator crossover ระดับโลก' },
+    { val: '$440–650M', label: 'มูลค่าทรัพย์สินสุทธิรวม (ประมาณ)', sub: 'รวมหุ้น JH Company ~82% · ดูรายละเอียดด้านล่าง' },
+  ],
+  wealthTotal: '$440–650M',
+  wealthAssets: [
+    { source: 'ทรัพย์สินส่วนตัวที่เป็นสภาพคล่อง', detail: 'เงินสด หลักทรัพย์ และที่พักใน Seoul + Los Angeles', value: '$95–120M' },
+    { source: 'หุ้น JH Company (82%)', detail: 'หุ้นผู้ก่อตั้งในกิจการมูลค่า $420–650M — เป็นมูลค่ากระดาษที่ยังไม่ใช่เงินสด', value: '$345–530M' },
+  ],
+  wealthIncome: [
+    { source: 'ทัวร์ (ส่วนที่เข้ากระเป๋า)', detail: 'PULSE $40–48M + DECADE $15–19M หักต้นทุนการผลิตแล้ว', value: '$55–67M' },
+    { source: 'Endorsement', detail: 'Saint Laurent · Cartier · Sony · Nike · Dior ทั้งหมดผ่าน JH Company', value: '$16–22M/ปี' },
+    { source: 'ค่าตัวหนัง (MCU)', detail: 'ระดับนำ Shang-Chi ปี 2021 ขยับขึ้นระดับดาราแถวหน้าตอน Deadly Hands (2026); RESONANCE จ่าย IP backend ให้ JH Company ไม่ใช่ค่าตัวส่วนตัว', value: '$3–5M → $12–18M/เรื่อง' },
+    { source: 'เพลงบันทึกเสียง & publishing', detail: 'สตรีมสะสม 8.7B+ บวกเพลงที่เขียนให้ศิลปิน SM (Jaehyun, aespa)', value: 'ส่วนแบ่ง royalty 8–20%' },
+    { source: 'สินค้า merchandise', detail: 'merch คอนเสิร์ต + capsule drop (เช่น Nike SNKRS)', value: '$18–28M/ทัวร์' },
   ],
   solodeals: [
     {

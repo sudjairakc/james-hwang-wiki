@@ -725,6 +725,8 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 
 ### 02–05/2027
+03/2027: เมื่อที่พำนักหลักย้ายมาอยู่สหรัฐแล้ว James ยื่นขอ U.S. permanent residency — คำร้อง EB-1 "extraordinary ability" ที่อ้าง Grammy, สถานะนำใน MCU และสถิติ Guinness เพราะสหรัฐอนุญาต dual nationality จึงไม่ต้องสละสัญชาติไทย ไม่มีภาระทหาร และปูทางระยะยาวสู่การถือสองสัญชาติ ไทย–สหรัฐ (ขอสัญชาติได้ราวต้นทศวรรษ 2030) เมื่ออ่านคู่กับการห่างเหินจากไทย สื่อไทยตีความว่าเป็นอีกก้าวที่ถอยห่าง — แม้เขายังถือ passport ไทยอยู่
+
 THE MISSING CHORD เข้าสู่ development phase
 
 lock Elias identity-reveal arc เป็นแกนของภาคแรก
