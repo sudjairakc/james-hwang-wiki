@@ -110,20 +110,19 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 |---|---|---|---|---|---|
 | 1 | CAN'T LEAVE ALONE (feat. Pharrell Williams) | R&B / Contemporary R&B / Neptunes-style groove | กลางค่อนเร็ว groovy | obsessed มีเสน่ห์ดึงดูด | "ฉันออกจากที่นี่โดยไม่มีเธอไม่ได้" — หลงเสน่ห์จนกลั้นใจไม่ได้ |
 | 2 | SOUR | R&B / Pop-R&B / K-R&B | เร็ว club-energy | ดึงดูดกัน เล่นตัว ร้อนแรง | เธอสวยแต่เล่นตัว — ทัศนคติ sour แต่ยิ่งทำให้อยากได้ |
-| 3 | SHOOK | R&B / Contemporary R&B | กลาง groovy | พ่ายแพ้สมบูรณ์ ยอมรับ | boxing metaphor — "เธอทำให้ฉัน shook จนสู้ไม่ได้" |
-| 4 | MYSTERY LADY | R&B / Soul | ช้ากลาง | ลึกลับ หลงภาพ จับต้องไม่ได้ | เธอเหมือนภาพลวงตา — ปรากฏแล้วก็หายไป |
-| 5 | HONEY | Pop-R&B / 2000s-inspired R&B | กลาง หวาน | ลับๆ ตื่นเต้น celebrity romance | ได้อยู่ด้วยกันแล้ว หวานเหมือนน้ำผึ้ง — แอบซ่อนจาก paparazzi |
-| 6 | I WANT YOU BACK (Interlude) | R&B / Soul | — | (Interlude — transition SOUR→HONEY side) | ไม่มีเนื้อ ทำหน้าที่ตัด genre ระหว่างสอง half |
-| 7 | HE'S NOT ME | R&B / Soul | กลาง bouncy | confident ไม่โอ้อวด ตรงไปตรงมา | "เธอรู้ว่าเขาสู้ฉันไม่ได้" — บอกเธอให้หยุดเปรียบเทียบ |
-| 8 | COME BACK TO ME | R&B / Soul | ช้ากลาง | เปราะบาง ขอโอกาส | ขอให้กลับมา — chorus ร้องแค่ "come back to me" วนซ้ำ |
-| 9 | SOMETHING REAL | Alternative R&B / Soul | กลาง | ค้นหา จริงใจ ต้องการ | "ต้องการอะไรที่จริงๆ ไม่ใช่แค่เกม" |
-| 10 | LOVE THIS PAIN AWAY | R&B / Soul (melancholic) | ช้า | ยอมรับ เจ็บปวด หวังสุดท้าย | ความสัมพันธ์กำลังพัง — "ใครจะมารักความเจ็บปวดนี้ให้หายไป?" |
-| 11 | TAKE YOU TONIGHT (Bonus) | R&B / Contemporary R&B | กลาง late-night | retro-futuristic intimate | late-night closer — "ขอพาเธอไปคืนนี้" *(exploratory bonus track)* |
+| 3 | MYSTERY LADY | R&B / Soul | ช้ากลาง | ลึกลับ หลงภาพ จับต้องไม่ได้ | เธอเหมือนภาพลวงตา — ปรากฏแล้วก็หายไป |
+| 4 | HONEY | Pop-R&B / 2000s-inspired R&B | กลาง หวาน | ลับๆ ตื่นเต้น celebrity romance | ได้อยู่ด้วยกันแล้ว หวานเหมือนน้ำผึ้ง — แอบซ่อนจาก paparazzi |
+| 5 | I WANT YOU BACK (Interlude) | R&B / Soul | — | (Interlude — transition SOUR→HONEY side) | ไม่มีเนื้อ ทำหน้าที่ตัด genre ระหว่างสอง half |
+| 6 | HE'S NOT ME | R&B / Soul | กลาง bouncy | confident ไม่โอ้อวด ตรงไปตรงมา | "เธอรู้ว่าเขาสู้ฉันไม่ได้" — บอกเธอให้หยุดเปรียบเทียบ |
+| 7 | COME BACK TO ME | R&B / Soul | ช้ากลาง | เปราะบาง ขอโอกาส | ขอให้กลับมา — chorus ร้องแค่ "come back to me" วนซ้ำ |
+| 8 | SOMETHING REAL | Alternative R&B / Soul | กลาง | ค้นหา จริงใจ ต้องการ | "ต้องการอะไรที่จริงๆ ไม่ใช่แค่เกม" |
+| 9 | LOVE THIS PAIN AWAY | R&B / Soul (melancholic) | ช้า | ยอมรับ เจ็บปวด หวังสุดท้าย | ความสัมพันธ์กำลังพัง — "ใครจะมารักความเจ็บปวดนี้ให้หายไป?" |
+| 10 | TAKE YOU TONIGHT (Bonus) | R&B / Contemporary R&B | กลาง late-night | retro-futuristic intimate | late-night closer — "ขอพาเธอไปคืนนี้" *(exploratory bonus track)* |
 
 ### Arc
-**SOUR side (1–5):** obsession → เล่นตัว → พ่ายแพ้ → จับต้องไม่ได้ → ได้เธอมาแล้ว (ลับๆ)  
+**SOUR side (1–4):** obsession → เล่นตัว → จับต้องไม่ได้ → ได้เธอมาแล้ว (ลับๆ)  
 **I WANT YOU BACK Interlude:** จุดตัด — flip narrative  
-**HONEY side (7–10):** confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง  
+**HONEY side (6–9):** confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง  
 **TAKE YOU TONIGHT (Bonus):** late-night experimental closer — แยกออกจาก narrative หลัก
 
 ---

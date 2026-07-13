@@ -75,7 +75,6 @@ export const metrics: Record<string, AlbumMetrics> = {
     crossover: { title: "CAN\'T LEAVE ALONE feat. Pharrell Williams", spotify: '260M+', youtube: '175M+' },
     keyTracks: [
       { title: 'MYSTERY LADY', streams: '92M+' },
-      { title: 'SHOOK', streams: '58M+' },
       { title: 'TAKE YOU TONIGHT', streams: '41M+' },
     ],
   },

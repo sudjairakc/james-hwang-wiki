@@ -1442,42 +1442,7 @@ I'm tryna flip the script, 'cause she likes it sour
 
 ---
 
-### 3. SHOOK
-*(cover: H33RA, 2026)*
-
-It's the way she got me stuck / In a chokehold / Caught me cold
-Shoulda known she'd have me shook / I'm down and out / For the count
-It's the way she got me stuck / Caught up on her / I just don't learn
-Shoulda known she'd have me / Shoulda known she'd have me shook
-
-Just throw in the towel / My back's to the ground
-Ain't no hope left here now / Oh no (oh no)
-Beaten black and blue / My ego been bruised / Oh no
-
-I've been too conceited / Thinkin' this was easy
-You might be my weakness / Girl
-I hate to admit it / The truth is I'm trippin'
-Can I get a witness?
-
-It's the way she got me stuck / In a chokehold / Caught me cold
-Shoulda known she'd have me shook / I'm down and out / For the count
-It's the way she got me stuck / Caught up on her / I just don't learn
-Shoulda known she'd have me / Shoulda known she'd have me shook
-
-Who could ever stand a chance? / Once she throw her hands
-She bound to hear my plea / Left, right damn I'm done / On my knees
-Someone call me a / Referee
-If the bell don't seal my fate / Girl gon' beat the faith / Right outta me / Oh no
-
-I've been too conceited / Thinkin' this was easy
-You might be my weakness / Girl
-I hate to admit it / The truth is I'm trippin' / Can I get a witness?
-
-*(chorus x2)*
-
----
-
-### 4. MYSTERY LADY
+### 3. MYSTERY LADY
 *(cover: Larrenwong, 2025)*
 
 Everywhere I look I see you / It's weighing heavy on my mind
@@ -1504,7 +1469,7 @@ Fighting hard but I can't hold on / Just a glimpse and then she's gone
 
 ---
 
-### 5. HONEY
+### 4. HONEY
 *(cover: CODY JON, 2025)*
 
 Hot night in Hollywood / Moving to something good
@@ -1539,12 +1504,12 @@ Ooo so sweet like honey / Baby it feels like honey *(x2)*
 
 ---
 
-### 6. I WANT YOU BACK (Interlude)
+### 5. I WANT YOU BACK (Interlude)
 *(Interlude — ไม่มีเนื้อเพลง)*
 
 ---
 
-### 7. HE'S NOT ME
+### 6. HE'S NOT ME
 *(cover: Dylan Sinclair, 2025)*
 
 Just everything, no blues, just bounce / Bounce, just bounce, yep
@@ -1572,13 +1537,13 @@ Girl, you know he isn't me (girl, I want you, oh, oh no)
 
 ---
 
-### 8. COME BACK TO ME
+### 7. COME BACK TO ME
 *(cover: Chikoruss, 2025)*
 *(เนื้อเพลงเต็มไม่มีข้อมูล — chorus หลักคือ "come back to me" วนซ้ำ)*
 
 ---
 
-### 9. SOMETHING REAL
+### 8. SOMETHING REAL
 *(cover: Jaymin, 2025)*
 
 I need something real, hm / I need something that I can feel
@@ -1605,7 +1570,7 @@ Won't tell you no lie, baby, I'm trying / Just keep your eyes on me
 
 ---
 
-### 10. LOVE THIS PAIN AWAY
+### 9. LOVE THIS PAIN AWAY
 *(cover: Pino, 2025)*
 
 You don't wanna know me anymore / You can't stand to love me, you're not sure
@@ -1644,7 +1609,7 @@ So who's gonna love this pain away, yeah
 
 ---
 
-### 11. TAKE YOU TONIGHT (Bonus)
+### 10. TAKE YOU TONIGHT (Bonus)
 *(cover: 808toofly & pryme!, 2025)*
 
 Don't wanna fight, oh girl, this feeling so right

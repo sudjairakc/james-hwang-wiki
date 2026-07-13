@@ -110,20 +110,19 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 |---|---|---|---|---|---|
 | 1 | CAN'T LEAVE ALONE (feat. Pharrell Williams) | R&B / Contemporary R&B / Neptunes-style groove | Mid-fast, groovy | Obsessed, magnetically charming | "I can't leave here without you" — utterly captivated, unable to hold back |
 | 2 | SOUR | R&B / Pop-R&B / K-R&B | Fast, club-energy | Magnetic, playing hard to get, hot | She's beautiful but plays hard to get — a sour attitude that only makes him want her more |
-| 3 | SHOOK | R&B / Contemporary R&B | Mid-tempo, groovy | Completely defeated, accepting | Boxing metaphor — "you've got me so shook I can't fight back" |
-| 4 | MYSTERY LADY | R&B / Soul | Slow-mid | Mysterious, entranced, untouchable | She's like an illusion — appearing, then vanishing |
-| 5 | HONEY | Pop-R&B / 2000s-inspired R&B | Mid-tempo, sweet | Secretive, exciting, celebrity romance | Finally together, sweet as honey — hiding from paparazzi |
-| 6 | I WANT YOU BACK (Interlude) | R&B / Soul | — | (Interlude — transition SOUR→HONEY side) | No lyrics — serves as a genre transition between the two halves |
-| 7 | HE'S NOT ME | R&B / Soul | Mid-tempo, bouncy | Confident, unassuming, direct | "You know he can't compete with me" — telling her to stop comparing |
-| 8 | COME BACK TO ME | R&B / Soul | Slow-mid | Vulnerable, asking for a chance | Asking her to come back — the chorus just repeats "come back to me" |
-| 9 | SOMETHING REAL | Alternative R&B / Soul | Mid-tempo | Searching, sincere, wanting | "I want something real, not just a game" |
-| 10 | LOVE THIS PAIN AWAY | R&B / Soul (melancholic) | Slow | Accepting, hurt, one last hope | The relationship is falling apart — "who will love this pain away?" |
-| 11 | TAKE YOU TONIGHT (Bonus) | R&B / Contemporary R&B | Mid-tempo, late-night | Retro-futuristic, intimate | Late-night closer — "let me take you tonight" *(exploratory bonus track)* |
+| 3 | MYSTERY LADY | R&B / Soul | Slow-mid | Mysterious, entranced, untouchable | She's like an illusion — appearing, then vanishing |
+| 4 | HONEY | Pop-R&B / 2000s-inspired R&B | Mid-tempo, sweet | Secretive, exciting, celebrity romance | Finally together, sweet as honey — hiding from paparazzi |
+| 5 | I WANT YOU BACK (Interlude) | R&B / Soul | — | (Interlude — transition SOUR→HONEY side) | No lyrics — serves as a genre transition between the two halves |
+| 6 | HE'S NOT ME | R&B / Soul | Mid-tempo, bouncy | Confident, unassuming, direct | "You know he can't compete with me" — telling her to stop comparing |
+| 7 | COME BACK TO ME | R&B / Soul | Slow-mid | Vulnerable, asking for a chance | Asking her to come back — the chorus just repeats "come back to me" |
+| 8 | SOMETHING REAL | Alternative R&B / Soul | Mid-tempo | Searching, sincere, wanting | "I want something real, not just a game" |
+| 9 | LOVE THIS PAIN AWAY | R&B / Soul (melancholic) | Slow | Accepting, hurt, one last hope | The relationship is falling apart — "who will love this pain away?" |
+| 10 | TAKE YOU TONIGHT (Bonus) | R&B / Contemporary R&B | Mid-tempo, late-night | Retro-futuristic, intimate | Late-night closer — "let me take you tonight" *(exploratory bonus track)* |
 
 ### Arc
-**SOUR side (1–5):** obsession → playing hard to get → defeat → untouchable → finally together (in secret)  
+**SOUR side (1–4):** obsession → playing hard to get → untouchable → finally together (in secret)  
 **I WANT YOU BACK Interlude:** the turning point — flips the narrative  
-**HONEY side (7–10):** confident → asking her back → wanting something real → admitting it's falling apart  
+**HONEY side (6–9):** confident → asking her back → wanting something real → admitting it's falling apart  
 **TAKE YOU TONIGHT (Bonus):** late-night experimental closer — set apart from the main narrative
 
 ---

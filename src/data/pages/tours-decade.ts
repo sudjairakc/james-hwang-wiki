@@ -71,45 +71,44 @@ export const setlist = [
     songs: [
       { n: 10, title: 'ALL FOR YOU', era: 'PULSE' },
       { n: 11, title: 'BREATHE', era: 'ARE U STILL' },
-      { n: 12, title: 'SHOOK', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
     vcr: 4, title: 'NEW ERA', subtitle: 'DECADE exclusive tracks',
     songs: [
-      { n: 13, title: 'NEW [Title Track]', era: 'DECADE' },
+      { n: 12, title: 'NEW [Title Track]', era: 'DECADE' },
+      { n: 13, title: 'NEW', era: 'DECADE' },
       { n: 14, title: 'NEW', era: 'DECADE' },
       { n: 15, title: 'NEW', era: 'DECADE' },
-      { n: 16, title: 'NEW', era: 'DECADE' },
-      { n: 17, title: 'SOMETHING REAL', era: "CAN\'T LEAVE ALONE" },
+      { n: 16, title: 'SOMETHING REAL', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
     vcr: 5, title: 'MID / R&B FLOW', subtitle: 'Groove section',
     songs: [
-      { n: 18, title: 'TALK TO ME', era: 'PULSE' },
-      { n: 19, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
-      { n: 20, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH' },
-      { n: 21, title: "HE'S NOT ME", era: "CAN\'T LEAVE ALONE" },
+      { n: 17, title: 'TALK TO ME', era: 'PULSE' },
+      { n: 18, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+      { n: 19, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH' },
+      { n: 20, title: "HE'S NOT ME", era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
     vcr: 6, title: 'LATE NIGHT CORE', subtitle: 'Intimacy section',
     songs: [
-      { n: 22, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
-      { n: 23, title: 'IF I KNEW', era: 'ARE U STILL' },
-      { n: 24, title: 'CALL ME', era: 'LIKE I DO' },
-      { n: 25, title: 'COME BACK TO ME', era: "CAN\'T LEAVE ALONE" },
-      { n: 26, title: 'LOVE THIS PAIN AWAY', era: "CAN\'T LEAVE ALONE" },
-      { n: 27, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
+      { n: 21, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
+      { n: 22, title: 'IF I KNEW', era: 'ARE U STILL' },
+      { n: 23, title: 'CALL ME', era: 'LIKE I DO' },
+      { n: 24, title: 'COME BACK TO ME', era: "CAN\'T LEAVE ALONE" },
+      { n: 25, title: 'LOVE THIS PAIN AWAY', era: "CAN\'T LEAVE ALONE" },
+      { n: 26, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
     ],
   },
   {
     vcr: 7, title: 'SOUR RESOLUTION', subtitle: 'Encore',
     songs: [
-      { n: 28, title: 'SOUR', era: "CAN\'T LEAVE ALONE" },
-      { n: 29, title: 'MYSTERY LADY', era: "CAN\'T LEAVE ALONE" },
-      { n: 30, title: 'TAKE YOU TONIGHT', era: "CAN\'T LEAVE ALONE" },
+      { n: 27, title: 'SOUR', era: "CAN\'T LEAVE ALONE" },
+      { n: 28, title: 'MYSTERY LADY', era: "CAN\'T LEAVE ALONE" },
+      { n: 29, title: 'TAKE YOU TONIGHT', era: "CAN\'T LEAVE ALONE" },
     ],
   },
 ];
@@ -117,14 +116,14 @@ export const setlist = [
 // Shared — era song-count breakdown (era names are proper nouns, not translated).
 export const eraBreakdown: Record<string, number> = {
   'LIKE I DO': 3, 'SOFTEST TOUCH': 4, 'PULSE': 5,
-  'ARE U STILL': 4, "CAN\'T LEAVE ALONE": 10, 'DECADE': 4,
+  'ARE U STILL': 4, "CAN\'T LEAVE ALONE": 9, 'DECADE': 4,
 };
 
 // Shared — KPI card values, aligned by index with ui.kpiLabels below.
 export const kpiValues = ['18', '$74M', '$14M', '~$40M'];
 
 // Shared — show-format grid values, aligned by index with ui.showFormatLabels below.
-export const showFormatValues = ['30', '1h 27m', '7', '5', '2h 00m'];
+export const showFormatValues = ['29', '1h 27m', '7', '5', '2h 00m'];
 
 const en = {
   ui: {
@@ -139,7 +138,7 @@ const en = {
     anthologyFormatLabel: 'Anthology Format',
     showFormatLabels: ['Songs', 'Music', 'VCRs', 'Ments', 'Total'],
     tourDatesHeading: 'Tour Dates',
-    eraBreakdownHeading: 'Era Breakdown (30 songs)',
+    eraBreakdownHeading: 'Era Breakdown (29 songs)',
     criticalReceptionHeading: 'Critical Reception',
     consensusLabel: 'Consensus —',
     consensusText:
@@ -160,7 +159,7 @@ const en = {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 30 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'Concert review, Los Angeles · February 2027',
     },
     {
@@ -193,7 +192,7 @@ const th: typeof en = {
     anthologyFormatLabel: 'รูปแบบ Anthology',
     showFormatLabels: ['เพลง', 'ดนตรี', 'VCRs', 'Ments', 'รวม'],
     tourDatesHeading: 'วันที่ทัวร์',
-    eraBreakdownHeading: 'สัดส่วน Era (30 เพลง)',
+    eraBreakdownHeading: 'สัดส่วน Era (29 เพลง)',
     criticalReceptionHeading: 'เสียงวิจารณ์',
     consensusLabel: 'Consensus —',
     consensusText:
@@ -214,7 +213,7 @@ const th: typeof en = {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 30 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'รีวิวคอนเสิร์ต ที่ Los Angeles · February 2027',
     },
     {

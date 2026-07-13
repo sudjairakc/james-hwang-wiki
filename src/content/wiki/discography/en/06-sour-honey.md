@@ -28,7 +28,6 @@ Musically, CAN'T LEAVE ALONE blends
 with a greater emphasis on melodic accessibility compared to the two previous albums.  <br />
 Opening track CAN’T LEAVE ALONE (feat. Pharrell Williams) uses a Neptunes-style R&B groove with a Y2K pop-R&B visual aesthetic and drew high attention immediately after release, with the Pharrell Williams collaboration seen as a key production-lineage collaboration of this era.  <br />
 Title track SOUR uses a K-R&B structure combined with a millennium-style choreography-driven performance concept. Although some fans expected "CAN’T LEAVE ALONE" to be better suited to the title-track slot, the choice of "SOUR" as the main promotional single was widely discussed after the artist explained in an interview that he wanted a song that "clearly supports choreography."  <br />
-SHOOK is a contemporary R&B track built around a boxing metaphor throughout ("You've got me shook, I can't fight back") — a total defeat told through a bouncy groove, and it has been widely discussed in the listener community as the wittiest track on the album.  <br />
 MYSTERY LADY uses a sampling reference from CeCe Peniston's Movin' On and received a positive response from classic R&B listeners.  <br />
 HONEY is regarded as one of the album's candidate title tracks, with early-2000s pop-R&B melodic accessibility and thematic linkage to the dual-album concept.  <br />
 I WANT YOU BACK (Interlude) is the first interlude track in James's discography and serves as the structural transition between the two halves of the narrative.  <br />
@@ -62,7 +61,7 @@ Critical response:
 * **Pitchfork** (score 7.5) wrote, “CAN'T LEAVE ALONE sounds like an artist who knows where he is but isn't yet sure where he wants to go next — CAN'T LEAVE ALONE is the album's peak, and it's a high one, but the rest feels like it's playing it safe.”
 * **Rolling Stone** gave it 3.5/5 and stated, “The Pharrell Williams collaboration works extremely well, but the rest of the album remains in its shadow.”
 * **Billboard Korea** was more positive, praising the dual concept (SOUR vs HONEY) as a “narrative device that gives the album a structure like a short film.”
-* **IZM (Korea)** gave it 4.0/5, noting, “MYSTERY LADY and SHOOK show that James remains sharp as a composer even as his direction becomes more accessible.”
+* **IZM (Korea)** gave it 4.0/5, noting, “MYSTERY LADY shows that James remains sharp as a composer even as his direction becomes more accessible.”
 * **Consequence of Sound** called CAN'T LEAVE ALONE “one of the best produced tracks of 2025 — Pharrell knows exactly when to step back and let GONUNMA lead.”
 * **User & chart reception:** Melon #8, Circle Digital Top 20. CAN'T LEAVE ALONE feat. Pharrell Williams entered the Spotify Global Chart Top 50 in its first week, marking James's first time on a global chart at this level. Total album streams surpassed 1.9B+.
 
@@ -101,15 +100,14 @@ The bonus track “TAKE YOU TONIGHT” has also been noted in the listener commu
 Tracklist & Credits
 1. CAN’T LEAVE ALONE (feat. Pharrell Williams) — R&B / Contemporary R&B / Neptunes-style groove | obsession-driven opening — looped groove + minimal funk influence | MV: 03/02/2025 | Composed by GONUNMA, Pino, Pharrell Williams | Lyrics by GONUNMA, Pino | Arranged by GONUNMA, Pino | Pino, Avenoir, Maz B, 86 (7,461,004 streams)
 2. SOUR [TITLE] — R&B / Pop-R&B / K-R&B | core theme — a relationship that starts sweet but ends bitter | MV: 10/02/2025 | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | JUNNY (935,869 streams)
-3. SHOOK — R&B / Contemporary R&B | boxing metaphor — defeat by attraction, accepting the loss through a bouncy groove | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA | Arranged by GONUNMA, JUNNY | H33RA (08/01/2026, 394,250 streams)
-4. MYSTERY LADY — R&B / Soul | classic R&B storytelling — unknown attraction | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Larrenwong (58,856 streams)
-5. HONEY — Pop-R&B / 2000s-inspired R&B | sweet phase — desire / physical closeness | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | CODY JON (337,988 streams)
-6. I WANT YOU BACK (Interlude) — R&B / Soul | short emotional recall — regret moment | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chase Shakur (112,755 streams)
-7. HE’S NOT ME — R&B / Soul | comparison narrative — insecurity in love | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Dylan Sinclair (908,617 streams)
-8. COME BACK TO ME — R&B / Soul | direct plea — emotional vulnerability peak | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chikoruss (256,067 streams)
-9. SOMETHING REAL — Alternative R&B / Soul | searching for authenticity in unstable love | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Jaymin (2,689,961 streams)
-10. LOVE THIS PAIN AWAY — R&B / Soul (melancholic) | acceptance — choosing to heal | Composed by GONUNMA, Pino | Lyrics by GONUNMA | Arranged by GONUNMA, Pino | Pino (1,310,876 streams)
-11. TAKE YOU TONIGHT (Bonus Track) — R&B / Contemporary R&B | late-night closer — physical intimacy tone | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | 808toofly, pryme! (1,320,216 streams)
+3. MYSTERY LADY — R&B / Soul | classic R&B storytelling — unknown attraction | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Larrenwong (58,856 streams)
+4. HONEY — Pop-R&B / 2000s-inspired R&B | sweet phase — desire / physical closeness | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | CODY JON (337,988 streams)
+5. I WANT YOU BACK (Interlude) — R&B / Soul | short emotional recall — regret moment | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chase Shakur (112,755 streams)
+6. HE’S NOT ME — R&B / Soul | comparison narrative — insecurity in love | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Dylan Sinclair (908,617 streams)
+7. COME BACK TO ME — R&B / Soul | direct plea — emotional vulnerability peak | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Chikoruss (256,067 streams)
+8. SOMETHING REAL — Alternative R&B / Soul | searching for authenticity in unstable love | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Jaymin (2,689,961 streams)
+9. LOVE THIS PAIN AWAY — R&B / Soul (melancholic) | acceptance — choosing to heal | Composed by GONUNMA, Pino | Lyrics by GONUNMA | Arranged by GONUNMA, Pino | Pino (1,310,876 streams)
+10. TAKE YOU TONIGHT (Bonus Track) — R&B / Contemporary R&B | late-night closer — physical intimacy tone | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | 808toofly, pryme! (1,320,216 streams)
 </div>
 
 
