@@ -422,9 +422,9 @@ Reflected his international streaming footprint in Asia and North America.
 
 ### 06–11/2024
 06/2024: James posted a statement via Weverse saying he was taking a 1-month break from everything after the long tour.
-11/07/2024: Began filming Shang-Chi 2 at Disney Studios Australia (working title: "Sleeping Valley").
+11/07/2024: Began filming Shang-Chi 2 at Disney Studios Australia (working title: "Sleeping Valley") — day one of the back-to-back block that shot Shang-Chi 2 and 3 as one continuous production through March 2025.
 
-07/2024 – 11/2024: Continued filming (block shooting) while managing his music work remotely.
+07/2024 – 11/2024: Continued filming (block shooting) on the Shang-Chi 2 portion while managing his music work remotely.
 
 
 ### 08/2024
@@ -462,7 +462,7 @@ This period marked: "James re-entering SM's ecosystem as a producer before a per
 ### 11/2024
 03/11/2024: James attended Jaehyun's farewell gathering before his enlistment (04/11), reinforcing that his relationship with the members was fully restored.
 
-14/11/2024: Wrapped filming for Shang-Chi 2.
+14/11/2024: Wrapped the Shang-Chi 2 portion — the unit was not struck. It rolled straight into the Shang-Chi 3 (Last of the Ten Rings) material within the same block, while post-production on Film 2 opened in parallel.
 
 11/2024: Attended the Soul Train Music Awards.
 
@@ -490,6 +490,8 @@ Marked his return to the MMA stage as a solo artist after the 2024 global expans
 
 
 ### 12/2024
+10/2024: Destin Daniel Cretton signed on to direct Spider-Man: Brand New Day while still shooting the Shang-Chi block in Sydney, withdrawing from the Disney+ series Wonder Man to clear his schedule.
+
 Early December 2024: Under a negotiated agreement without real precedent in K-pop — one that let James keep full ownership of JH Company and his post-2023 catalog, choose which dates and releases to join, and sign no renewed exclusive contract — SM Entertainment announced that James Hwang would return to activities with NCT 127 as an external artist, starting with a year-end comeback project. Idols who fully depart an agency after a legal dispute had never come back to group activity before; SM negotiated rather than lose him permanently, now that he carried a global name the group could no longer generate on its own.
 
 12/2024: Received a nomination for the Billboard Music Awards.
@@ -528,6 +530,8 @@ Received the AAA Asia Celebrity Award, reflecting his status as a global crossov
 11–12/01/2025: James joined SMTOWN LIVE 2025 with NCT 127, taking part only in the Seoul leg to balance his schedule.
 
 18/01/2025 – 22/05/2025: The "Neo City — The Momentum" tour ran in full, marking his first comeback on the tour stage since returning to the group.
+
+12/2024 – 03/2025: Filming continued on the Shang-Chi 3 (Last of the Ten Rings) portion of the same back-to-back block, overlapping the Neo City tour head-on. James flew between the Sydney stages and tour dates across Asia for four straight months, with the production scheduling around his show nights. It was the most punishing stretch of his career, and the price he paid to keep all of 2026 clear for music.
 
 
 ### 02/2025
@@ -581,10 +585,12 @@ His first nomination on a major Black music television award platform following 
 
 
 ### 08/2025
-30/08/2025: Marvel announced development of Shang-Chi and the Deadly Hands (officially entering the development phase: writers' room + early concept).
+30/08/2025: Marvel locked the release date for Shang-Chi and the Last of the Ten Rings (Sep 18, 2026) and disclosed publicly for the first time that the finale had already finished shooting in March 2025, back-to-back with Legacy — news fans immediately read as proof the studio had planned the trilogy's endgame years in advance.
 
 
 ### 10/2025
+08–12/2025: Destin Daniel Cretton shot Spider-Man: Brand New Day (Glasgow from 3 August, wrapped 19 December). Post-production on Last of the Ten Rings continued under its VFX supervisors throughout.
+
 10/2025: Received a nomination for the American Music Awards.
 
 Favorite Male R&B Artist.
@@ -607,7 +613,7 @@ Reflected continuity in the progressive / alternative R&B lane following the Gra
 
 11–12/2025: Disney, Lucasfilm, and the MJ Estate began discussions on a Captain EO reboot project as a Disney+ series, with James co-developing it (still in the development/packaging stage, not yet filming).
 
-03/11/2025 – Q1/2026: Deadly Hands entered pre-production/limited principal photography (unit test shoots + action previs) at Trilith Studios.
+03/11/2025 – Q1/2026: Last of the Ten Rings entered pre-production/limited principal photography (unit test shoots + action previs) at Trilith Studios.
 
 
 ### 12/2025
@@ -628,9 +634,9 @@ Reflected his global activity that year (Grammy + Marvel lead role + BET nominat
 ### 01/2026
 Early 2026: Due to the impact of the 2025 events in Thailand, James reduced his use of Thai in public appearances and had no scheduled work in Thailand, though he continued global-level activities. His public image remained in a "controversial but globally dominant" state.
 
-01–03/2026: Principal photography for Deadly Hands, using a multi-unit system and block shooting to compress the schedule while maintaining studio-level quality.
+01–02/2026: Additional photography on Last of the Ten Rings — pushed to sit half a year after Legacy's release so the ending could be adjusted against real audience response, and the only window Cretton had free between Brand New Day wrapping (19/12/2025) and that film's post. It was during this window that some entertainment trade outlets began noticing an off-camera closeness between James and Ashley Liao, though no official reports of a relationship had yet surfaced.
 
-01–03/2026: During the filming of Deadly Hands, James and Ashley Liao worked together continuously across multiple location shooting units, a period during which some entertainment trade media began noticing a closeness between the two off-camera, though no official reports of a relationship had yet surfaced.
+03/2026: Last of the Ten Rings entered full post-production (editing, VFX, scoring). James had no shooting schedule, attending occasional ADR sessions and spending the rest of the window building the DECADE album.
 
 
 ### 02/2026
@@ -640,7 +646,9 @@ Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 
 
 ### 03/2026
-03/2026 – 07/2026: Entered main post-production on Deadly Hands (editing, VFX, scoring run as a parallel pipeline starting during filming).
+03/2026 – 08/2026: Entered the final stretch of post-production on Last of the Ten Rings (final VFX, color, mix), closing out a seventeen-month post tail that had begun in April 2025, with Cretton coming in for the final pass in the last two months after delivering Brand New Day.
+
+31/07/2026: Spider-Man: Brand New Day opened and cleared a billion dollars worldwide. The wave it generated raised expectations for Last of the Ten Rings rather than draining them.
 
 03/2026: Informal sightings were reported within production industry circles that the two continued to meet outside the filming schedule during the post-shoot window, though this remained at the level of industry rumor only.
 
@@ -668,17 +676,17 @@ Joined nearly the entire anniversary tour, except for Thailand, in line with the
 
 
 ### 07–09/2026
-07/2026 – 09/2026: Deadly Hands entered final post-production & global marketing rollout.
+07/2026 – 09/2026: Last of the Ten Rings entered final post-production & global marketing rollout.
 
 Final VFX polish, sound mix, IMAX/Dolby mastering.
 
 Main trailer release, global press tour, brand campaigns.
 
-07–08/2026: During Deadly Hands' global press tour, the two began appearing together in promotional settings several times outside scripted press interactions, causing some entertainment media to note a growing closeness in their dynamic.
+07–08/2026: During Last of the Ten Rings' global press tour, the two began appearing together in promotional settings several times outside scripted press interactions, causing some entertainment media to note a growing closeness in their dynamic.
 
 
 ### 09/2026
-09/2026: Shang-Chi and the Deadly Hands released (global release); positioning: a Marvel film with an experimental / auteur-driven tone, clearly distinct from previous installments.
+09/2026: Shang-Chi and the Last of the Ten Rings released (global release); positioning: a Marvel film with an experimental / auteur-driven tone, clearly distinct from previous installments.
 
 09/2026: James released the album "Decade – 1st Anthology Album."
 
@@ -686,7 +694,7 @@ Compiled major works across his career.
 
 Included 4 new songs, serving as a career milestone and narrative reset.
 
-09/2026: During the global premiere window of Deadly Hands, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
+09/2026: During the global premiere window of Last of the Ten Rings, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
 
 09/2026 – 01/2027: NCT 127's 5th tour, "NEO CITY : THE REDLINE," ran across Asia — Seoul (Sep 18–20, 2026, KSPO Dome), Jakarta (Oct 3, Indonesia Arena), Hong Kong (Oct 10–11, Kai Tak Arena), Singapore (Oct 18, Singapore Indoor Stadium), Bangkok (Oct 31 – Nov 1, Thammasat Stadium), and Taipei (Jan 2, 2027, Taipei Arena). James participated in every stop **except Bangkok** — his first-ever absence from an NCT 127 show in his home country, a direct consequence of the Thai–Cambodia fallout and his refusal to apologize for his anti-war stance. The Bangkok dates proceeded with the other members; his absence was widely read as the clearest symbol of his self-chosen estrangement from Thailand.
 

@@ -139,10 +139,10 @@ const en = {
       detail: 'Sources close to both parties indicate a brief real relationship — both sides and SM\'s team systematically kept it out of the press. There was no official confirmation; public rumors were dismissed with the "labelmates" explanation, the same as with Winter (2021).',
     },
     {
-      period: 'Early 2026',
+      period: 'Late 2025',
       type: 'rumor',
       name: 'Ashley Liao',
-      detail: 'Relationship rumors originating from the Deadly Hands set, unconfirmed at the time. Later revealed to have been the start of an actual relationship.',
+      detail: 'Relationship rumors originating from the Last of the Ten Rings additional-photography block (Oct–Nov 2025), unconfirmed at the time. Later revealed to have been the start of an actual relationship.',
     },
     {
       period: '2024–2025',
@@ -160,7 +160,7 @@ const en = {
       period: 'Sep 2026',
       type: 'confirmed',
       name: 'Ashley Liao',
-      detail: 'Announced via a joint statement from both parties, the same month Shang-Chi and the Deadly Hands was released in theaters. Most fans responded positively, as it was a relationship that had shown signs for a long time.',
+      detail: 'Announced via a joint statement from both parties, the same month Shang-Chi and the Last of the Ten Rings was released in theaters. Most fans responded positively, as it was a relationship that had shown signs for a long time.',
     },
   ] as RelEntry[],
   friends: [
@@ -363,10 +363,10 @@ const th: typeof en = {
       detail: 'แหล่งข่าวใกล้ชิดระบุว่ามีความสัมพันธ์จริงในช่วงสั้น — ทั้งสองฝ่ายและทีมงาน SM เลือกปิดข่าวอย่างเป็นระบบ ไม่มีการยืนยันอย่างเป็นทางการ ข่าวลือในสาธารณะถูก dismiss ด้วย "ร่วมสังกัด" เช่นเดียวกับ Winter (2021)',
     },
     {
-      period: 'ต้นปี 2026',
+      period: 'ปลายปี 2025',
       type: 'rumor',
       name: 'Ashley Liao',
-      detail: 'ข่าวลือเรื่องความสัมพันธ์จากกองถ่าย Deadly Hands ไม่มีการยืนยัน ณ เวลานั้น ต่อมาเปิดเผยว่าเป็นการเริ่มต้นของความสัมพันธ์จริง',
+      detail: 'ข่าวลือเรื่องความสัมพันธ์จากช่วงถ่ายเพิ่มเติมของ Last of the Ten Rings (ต.ค.–พ.ย. 2025) ไม่มีการยืนยัน ณ เวลานั้น ต่อมาเปิดเผยว่าเป็นการเริ่มต้นของความสัมพันธ์จริง',
     },
     {
       period: '2024–2025',
@@ -384,7 +384,7 @@ const th: typeof en = {
       period: 'Sep 2026',
       type: 'confirmed',
       name: 'Ashley Liao',
-      detail: 'ประกาศผ่าน joint statement พร้อมกันทั้งสองฝ่าย หลังจาก Shang-Chi and the Deadly Hands เข้าฉายในเดือนเดียวกัน แฟนคลับส่วนใหญ่ตอบรับเชิงบวก เนื่องจากเป็นความสัมพันธ์ที่มีสัญญาณมายาวนาน',
+      detail: 'ประกาศผ่าน joint statement พร้อมกันทั้งสองฝ่าย หลังจาก Shang-Chi and the Last of the Ten Rings เข้าฉายในเดือนเดียวกัน แฟนคลับส่วนใหญ่ตอบรับเชิงบวก เนื่องจากเป็นความสัมพันธ์ที่มีสัญญาณมายาวนาน',
     },
   ] as RelEntry[],
   friends: [

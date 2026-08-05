@@ -22,7 +22,7 @@ export default defineConfig({
       'filmography/resonance/ii-silent-orchestra', 'filmography/resonance/iii-resonance',
       'filmography/resonance/canon',
       'filmography/shang-chi/legend-of-the-ten-rings', 'filmography/shang-chi/legacy-of-the-ten-rings',
-      'filmography/shang-chi/deadly-hands', 'filmography/shang-chi/trilogy-analysis',
+      'filmography/shang-chi/last-of-the-ten-rings', 'filmography/shang-chi/trilogy-analysis',
     ].map((p) => [`/${p}`, `/james-hwang-wiki/en/${p}`]),
   ),
   vite: {

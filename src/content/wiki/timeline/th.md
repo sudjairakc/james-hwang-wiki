@@ -422,9 +422,9 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 ### 06–11/2024
 06/2024: เจมส์โพสต์ statement ผ่าน Weverse ว่าขอพักจากทุกอย่างเป็นเวลา 1 เดือนหลังทัวร์อย่างยาวนาน
-11/07/2024: เริ่มถ่ายทำ Shang-Chi 2 ที่ Disney Studios Australia (working title: "Sleeping Valley")
+11/07/2024: เริ่มถ่ายทำ Shang-Chi 2 ที่ Disney Studios Australia (working title: "Sleeping Valley") — เป็นวันเปิดกล้องของบล็อก back-to-back ที่ถ่าย Shang-Chi 2 และ 3 รวดเดียวยาวถึง มี.ค. 2025
 
-07/2024 – 11/2024: ถ่ายทำต่อเนื่อง (block shooting) พร้อม manage งานเพลงแบบ remote
+07/2024 – 11/2024: ถ่ายทำต่อเนื่อง (block shooting) ในส่วนของ Shang-Chi 2 พร้อม manage งานเพลงแบบ remote
 
 
 ### 08/2024
@@ -462,7 +462,7 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 ### 11/2024
 03/11/2024: James เข้าร่วม farewell gathering ของ Jaehyun ก่อนเข้ากรม (04/11) reinforce ว่าความสัมพันธ์กับสมาชิก fully restored
 
-14/11/2024: ปิดกล้อง Shang-Chi 2
+14/11/2024: ปิดกล้องส่วนของ Shang-Chi 2 — ยูนิตไม่ได้ยุบ แต่เดินหน้าเข้าถ่ายส่วนของ Shang-Chi 3 (Last of the Ten Rings) ต่อทันทีในบล็อกเดียวกัน ขณะที่ post ของภาค 2 เปิดสายคู่ขนาน
 
 11/2024: เข้าร่วมงาน Soul Train Music Awards
 
@@ -490,6 +490,8 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 
 ### 12/2024
+10/2024: Destin Daniel Cretton เซ็นกำกับ Spider-Man: Brand New Day ระหว่างที่ยังถ่ายบล็อก Shang-Chi อยู่ที่ซิดนีย์ พร้อมถอนตัวจากซีรีส์ Wonder Man ของ Disney+ เพื่อเคลียร์ตาราง
+
 ต้นเดือน 12/2024: ภายใต้ข้อตกลงที่แทบไม่มี precedent มาก่อนในวงการ K-pop — ข้อตกลงที่ให้ James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมวันไหนหรือผลงานไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ — SM Entertainment ประกาศว่า James Hwang จะกลับมาร่วมกิจกรรมกับ NCT 127 ในฐานะ external artist โดยเริ่มจากโปรเจกต์คัมแบคปลายปี artist ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบไม่เคยกลับมาร่วมกิจกรรมกลุ่มมาก่อน SM เลือกเจรจาแทนที่จะเสียเขาไปถาวร ในตอนที่เขากลายเป็นชื่อระดับโลกที่วงเองสร้างไม่ได้แล้ว
 
 12/2024: ได้รับการเสนอชื่อเข้าชิง Billboard Music Awards
@@ -528,6 +530,8 @@ Top Global (Excl. U.S.) Artist
 11–12/01/2025: James เข้าร่วม SMTOWN LIVE 2025 กับ NCT 127 และเข้าร่วมเฉพาะรอบ Seoul เพื่อบาลานซ์ตาราง
 
 18/01/2025 – 22/05/2025: ทัวร์ "Neo City — The Momentum" ดำเนินเต็มรูปแบบ ถือเป็นการคัมแบคบนเวทีทัวร์ครั้งแรกหลังกลับวง
+
+12/2024 – 03/2025: ถ่ายทำส่วนของ Shang-Chi 3 (Last of the Ten Rings) ต่อเนื่องในบล็อก back-to-back เดียวกัน ทับซ้อนกับทัวร์ Neo City เต็มๆ James บินไป-กลับระหว่างสตูดิโอที่ซิดนีย์กับรอบทัวร์ในเอเชียตลอดสี่เดือน กองถ่ายจัดตารางรอบวันทัวร์ของเขาเป็นหลัก เป็นช่วงตารางที่โหดที่สุดในอาชีพเขา และเป็นราคาที่เขายอมจ่ายเพื่อให้ปี 2026 ว่างทั้งปีสำหรับงานเพลง
 
 
 ### 02/2025
@@ -581,10 +585,12 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 08/2025
-30/08/2025: Marvel ประกาศพัฒนา Shang-Chi and the Deadly Hands (เข้าสู่ development phase อย่างเป็นทางการ: writers' room + early concept)
+30/08/2025: Marvel ยืนยันวันฉาย Shang-Chi and the Last of the Ten Rings (18 ก.ย. 2026) พร้อมเปิดเผยต่อสาธารณะเป็นครั้งแรกว่าภาคจบถ่ายทำเสร็จตั้งแต่ มี.ค. 2025 แล้ว โดยถ่าย back-to-back กับ Legacy — ข่าวที่ทำให้แฟนตีความทันทีว่าสตูดิโอวางเกมไตรภาคไว้ล่วงหน้าหลายปี
 
 
 ### 10/2025
+08–12/2025: Destin Daniel Cretton ถ่าย Spider-Man: Brand New Day (กลาสโกว์ 3 ส.ค. – ปิดกล้อง 19 ธ.ค.) ส่วน post ของ Last of the Ten Rings เดินอยู่ใต้ VFX supervisor ระหว่างนี้
+
 10/2025: ได้รับการเสนอชื่อเข้าชิง American Music Awards
 
 Favorite Male R&B Artist
@@ -607,7 +613,7 @@ Favorite Male R&B Artist
 
 11–12/2025: Disney, Lucasfilm, และ MJ Estate เริ่มหารือโปรเจกต์รีบูต Captain EO เป็นซีรีส์ Disney+ โดย James ร่วมพัฒนา (ยังอยู่ในขั้น development/packaging, ยังไม่ถ่ายทำ)
 
-03/11/2025 – Q1/2026: Deadly Hands เข้าสู่ pre-production/limited principal photography (unit test shoots + action previs) ที่ Trilith Studios
+03/11/2025 – Q1/2026: Last of the Ten Rings เข้าสู่ pre-production/limited principal photography (unit test shoots + action previs) ที่ Trilith Studios
 
 
 ### 12/2025
@@ -628,9 +634,7 @@ Top Global (Excl. U.S.) Artist
 ### 01/2026
 ต้นปี 2026: จากผลกระทบเหตุการณ์ในไทยช่วงปี 2025 James ลดการใช้ภาษาไทยใน public appearance และยังไม่มีตารางงานในประเทศไทย แต่ยังคงทำกิจกรรมระดับ global อย่างต่อเนื่อง ภาพลักษณ์อยู่ในสถานะ "controversial but globally dominant"
 
-01–03/2026: ถ่ายทำหลัก (principal photography) ของ Deadly Hands โดยใช้ระบบ multi-unit และ block shooting เพื่อ compress schedule ให้สั้นลง แต่ยังคงคุณภาพงานระดับสตูดิโอ
-
-01–03/2026: ระหว่างการถ่ายทำ Deadly Hands James และ Ashley Liao มีการทำงานร่วมกันอย่างต่อเนื่องในหลาย location shooting unit ซึ่งเป็นช่วงเวลาที่สื่อ entertainment trade บางแห่งเริ่มสังเกตเห็นความสนิทสนมของทั้งสองในระดับ off-camera แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
+01–02/2026: ถ่ายเพิ่มเติม (additional photography) ของ Last of the Ten Rings — เลื่อนมาไว้หลัง Legacy เข้าฉายไปแล้วครึ่งปีเพื่อปรับตอนจบตามปฏิกิริยาผู้ชมจริง และเป็นหน้าต่างเดียวที่ Cretton ว่าง ระหว่าง Brand New Day ปิดกล้อง (19/12/2025) กับ post ของเรื่องนั้น เป็นช่วงที่สื่อ entertainment trade บางแห่งเริ่มสังเกตความสนิทสนมระหว่าง James กับ Ashley Liao ในระดับ off-camera แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
 
 
 ### 02/2026
@@ -640,7 +644,9 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 03/2026
-03/2026 – 07/2026: เข้าสู่ main post-production ของ Deadly Hands (editing, VFX, scoring ทำแบบ parallel pipeline ตั้งแต่ระหว่างการถ่ายทำ)
+03/2026 – 08/2026: เข้าสู่ช่วงท้ายของ post-production Last of the Ten Rings (final VFX, color, mix) ปิดหาง post ที่ยาวสิบเจ็ดเดือนนับจาก เม.ย. 2025 โดย Cretton เข้ามาปิด final pass ในสองเดือนสุดท้ายหลังส่ง Brand New Day เสร็จ
+
+31/07/2026: Spider-Man: Brand New Day เข้าฉาย ทะลุพันล้านดอลลาร์ กระแสที่ตามมาดันความคาดหวังของ Last of the Ten Rings ขึ้นแทนที่จะดูดไป
 
 03/2026: มีรายงาน sightings แบบ informal ในวงการ production circle ว่าทั้งสองยังคงพบกันนอกตารางถ่ายทำในช่วง post-shoot window แต่ถูกจัดอยู่ในระดับ industry rumor เท่านั้น
 
@@ -668,17 +674,17 @@ James กลับมา active เต็มตัวอีกครั้งห
 
 
 ### 07–09/2026
-07/2026 – 09/2026: Deadly Hands เข้าสู่ final post-production & global marketing rollout
+07/2026 – 09/2026: Last of the Ten Rings เข้าสู่ final post-production & global marketing rollout
 
 final VFX polish, sound mix, IMAX/Dolby mastering
 
 ปล่อย trailer หลัก, global press tour, brand campaigns
 
-07–08/2026: ระหว่าง global press tour ของ Deadly Hands ทั้งสองเริ่มปรากฏตัวร่วมกันใน promotional environment หลายครั้งนอก scripted press interaction ซึ่งสื่อ entertainment บางแห่งเริ่มตั้งข้อสังเกตถึง dynamic ที่ใกล้ชิดมากขึ้น
+07–08/2026: ระหว่าง global press tour ของ Last of the Ten Rings ทั้งสองเริ่มปรากฏตัวร่วมกันใน promotional environment หลายครั้งนอก scripted press interaction ซึ่งสื่อ entertainment บางแห่งเริ่มตั้งข้อสังเกตถึง dynamic ที่ใกล้ชิดมากขึ้น
 
 
 ### 09/2026
-09/2026: Shang-Chi and the Deadly Hands เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
+09/2026: Shang-Chi and the Last of the Ten Rings เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
 
 09/2026: James ปล่อยอัลบั้ม "Decade – 1st Anthology Album"
 
@@ -686,7 +692,7 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 มีเพลงใหม่ 4 เพลง ทำหน้าที่เป็น career milestone และ narrative reset
 
-09/2026: ระหว่าง global premiere window ของ Deadly Hands ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
+09/2026: ระหว่าง global premiere window ของ Last of the Ten Rings ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
 
 09/2026 – 01/2027: NCT 127 ทัวร์ครั้งที่ 5 "NEO CITY : THE REDLINE" ทั่วเอเชีย — Seoul (18–20 ก.ย. 2026, KSPO Dome), Jakarta (3 ต.ค., Indonesia Arena), Hong Kong (10–11 ต.ค., Kai Tak Arena), Singapore (18 ต.ค., Singapore Indoor Stadium), Bangkok (31 ต.ค. – 1 พ.ย., Thammasat Stadium) และ Taipei (2 ม.ค. 2027, Taipei Arena) James ร่วมทุกรอบ **ยกเว้น Bangkok** — เป็นครั้งแรกที่เขาขาดโชว์ NCT 127 ในบ้านเกิด ผลโดยตรงจากปัญหาไทย–กัมพูชาและการปฏิเสธที่จะขอโทษต่อจุดยืนไม่เอาสงคราม รอบ Bangkok เดินหน้าด้วยสมาชิกที่เหลือ การขาดของเขาถูกมองว่าเป็นสัญลักษณ์ชัดที่สุดของการเหินห่างจากไทยที่เขาเลือกเอง
 

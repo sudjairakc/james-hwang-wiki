@@ -322,6 +322,6 @@ The series is positioned as Disney+'s flagship prestige live-action release for 
 The series has been flagged by trade press as a strong Emmy contender in the following categories: Outstanding Limited or Anthology Series, Outstanding Lead Actor (Limited Series), Outstanding Original Music and Lyrics, and Outstanding Main Title Design. Precursor conversations have mentioned James Hwang's name in both creative and performance categories given his lead role.
 
 **Fan anticipation:**
-Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi and the Deadly Hands.
+Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi and the Last of the Ten Rings.
 
 **Context note:** This is a pre-release entry. Viewership data and critical scores will be updated upon premiere.

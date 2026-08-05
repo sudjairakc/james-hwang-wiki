@@ -2,13 +2,13 @@
 import type { Lang } from '../../i18n';
 
 export const color = '#7c5a3a';
-export const totalBO = '$2.2B+';
+export const totalBO = '$2.46B';
 
 // Shared — film data (proper nouns / numbers / flags).
 export const films = [
   { slug: 'legend-of-the-ten-rings', num: 1, title: 'Shang-Chi and the Legend of the Ten Rings', year: '2021', date: '3 ก.ย. 2021', dateEn: 'Sep 3, 2021', phase: 'Phase 4', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$432M', rtScore: '91%' },
   { slug: 'legacy-of-the-ten-rings', num: 2, title: 'Shang-Chi and the Legacy of the Ten Rings', year: '2025', date: '25 ก.ค. 2025', dateEn: 'Jul 25, 2025', phase: 'Phase 5', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$1.02B', rtScore: '88%' },
-  { slug: 'deadly-hands', num: 3, title: 'Shang-Chi and the Deadly Hands', year: '2026', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', phase: 'Phase 6', director: 'Isaiah Saxon', status: 'released', boxOffice: '$760M', rtScore: '85%' },
+  { slug: 'last-of-the-ten-rings', num: 3, title: 'Shang-Chi and the Last of the Ten Rings', year: '2026', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', phase: 'Phase 6', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$1.01B', rtScore: '85%' },
 ];
 
 // Shared — main cast (proper nouns).
@@ -35,7 +35,7 @@ const en = {
   perFilm: {
     'legend-of-the-ten-rings': { sub: '', role: 'James Hwang as Shang-Chi (Xu Shang-Chi)', contribution: 'Actor', highlight: 'MCU debut · Asian superhero lead · first MCU film led by an Asian actor' },
     'legacy-of-the-ten-rings': { sub: '', role: 'James Hwang as Shang-Chi + co-writer', contribution: 'Actor + writer', highlight: 'Co-writer · expands his solo identity within the MCU' },
-    'deadly-hands': { sub: '', role: 'James Hwang as Shang-Chi + co-writer', contribution: 'Actor + writer', highlight: 'Trilogy conclusion · co-writer · closing role of Phase 6' },
+    'last-of-the-ten-rings': { sub: '', role: 'James Hwang as Shang-Chi + co-writer', contribution: 'Actor + writer', highlight: 'Trilogy conclusion · co-writer · closing role of Phase 6' },
   } as Record<string, { sub: string; role: string; contribution: string; highlight: string }>,
   creativeRoles: [
     { film: 'Film 1', role: 'Actor only', detail: 'First MCU performance — establishes Shang-Chi as an Asian-American protagonist' },
@@ -45,7 +45,7 @@ const en = {
   analysisCard: {
     label: 'Article',
     title: 'Shang-Chi Trilogy — In-Depth Analysis',
-    desc: 'Legend of the Ten Rings · Legacy of the Ten Rings · Deadly Hands — thematic unity, character arcs, and the architecture of letting go',
+    desc: 'Legend of the Ten Rings · Legacy of the Ten Rings · Last of the Ten Rings — thematic unity, character arcs, and the architecture of letting go',
   },
   related: [
     { label: 'Trilogy Analysis', slug: 'filmography/shang-chi/trilogy-analysis' },
@@ -71,7 +71,7 @@ const th: typeof en = {
   perFilm: {
     'legend-of-the-ten-rings': { sub: 'ชาง-ชี กับตำนานลับเท็นริงส์', role: 'James Hwang รับบท Shang-Chi (Xu Shang-Chi)', contribution: 'นักแสดง', highlight: 'เปิดตัวใน MCU · ซูเปอร์ฮีโร่เอเชียนนำ · หนัง MCU เรื่องแรกที่นักแสดงนำเป็นคนเอเชีย' },
     'legacy-of-the-ten-rings': { sub: 'ชาง-ชี กับมรดกแห่งเท็นริงส์', role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท', contribution: 'นักแสดง + นักเขียน', highlight: 'ร่วมเขียนบท · ขยายตัวตนเดี่ยวภายใน MCU' },
-    'deadly-hands': { sub: 'ชาง-ชี กับมือมรณะ', role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท', contribution: 'นักแสดง + นักเขียน', highlight: 'บทสรุปไตรภาค · ร่วมเขียนบท · บทบาทปิดท้าย Phase 6' },
+    'last-of-the-ten-rings': { sub: 'ชาง-ชี กับคนสุดท้ายแห่งเท็นริงส์', role: 'James Hwang รับบท Shang-Chi + ผู้ร่วมเขียนบท', contribution: 'นักแสดง + นักเขียน', highlight: 'บทสรุปไตรภาค · ร่วมเขียนบท · บทบาทปิดท้าย Phase 6' },
   } as Record<string, { sub: string; role: string; contribution: string; highlight: string }>,
   creativeRoles: [
     { film: 'ภาค 1', role: 'นักแสดงอย่างเดียว', detail: 'การแสดงใน MCU ครั้งแรก — สร้าง Shang-Chi ในฐานะตัวเอกเอเชียน-อเมริกัน' },
@@ -81,7 +81,7 @@ const th: typeof en = {
   analysisCard: {
     label: 'บทความ',
     title: 'Shang-Chi Trilogy — บทวิเคราะห์เชิงลึก',
-    desc: 'Legend of the Ten Rings · Legacy of the Ten Rings · Deadly Hands — เอกภาพเชิงธีม อาร์คตัวละคร และสถาปัตยกรรมของการปล่อยมือ',
+    desc: 'Legend of the Ten Rings · Legacy of the Ten Rings · Last of the Ten Rings — เอกภาพเชิงธีม อาร์คตัวละคร และสถาปัตยกรรมของการปล่อยมือ',
   },
   related: [
     { label: 'บทวิเคราะห์ไตรภาค', slug: 'filmography/shang-chi/trilogy-analysis' },

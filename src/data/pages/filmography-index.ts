@@ -11,7 +11,7 @@ export const franchises = [
     entries: [
       { title: 'Shang-Chi and the Legend of the Ten Rings', date: '3 ก.ย. 2021', dateEn: 'Sep 3, 2021', status: 'Released' },
       { title: 'Shang-Chi and the Legacy of the Ten Rings', date: '25 ก.ค. 2025', dateEn: 'Jul 25, 2025', status: 'Released' },
-      { title: 'Shang-Chi and the Deadly Hands', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', status: 'Released' },
+      { title: 'Shang-Chi and the Last of the Ten Rings', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', status: 'Released' },
     ],
   },
   {

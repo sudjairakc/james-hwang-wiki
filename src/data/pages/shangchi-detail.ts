@@ -25,13 +25,13 @@ export const slugMeta: Record<string, {
     starring: 'James Hwang, Ashley Liao, Michelle Yeoh, Chow Yun-fat, Brie Larson, Anthony Mackie, Paul Rudd, Florian Munteanu',
     boxOffice: '$1.02B', rtScore: '88%', showCredits: true,
   },
-  'deadly-hands': {
+  'last-of-the-ten-rings': {
     phase: 'MCU Phase 6', year: '2026', color: '#7c5a3a',
-    director: 'Isaiah Saxon',
-    screenwriters: 'Isaiah Saxon · Jonathan Wang · James Hwang',
+    director: 'Destin Daniel Cretton',
+    screenwriters: 'Dave Callaham · Destin Daniel Cretton · Andrew Lanham · James Hwang',
     producers: 'Kevin Feige · Jonathan Schwartz',
-    starring: 'James Hwang, Ashley Liao, Benedict Wong, Florian Munteanu',
-    boxOffice: '$760M', rtScore: '85%', showCredits: true,
+    starring: 'James Hwang, Ashley Liao, Yuen Wah, Finn Jones, Anthony Wong Chau-sang, Max Zhang, Florian Munteanu',
+    boxOffice: '$1.01B', rtScore: '85%', showCredits: true,
   },
   'trilogy-analysis': {
     phase: 'MCU Trilogy', year: '2021–2026', color: '#7c5a3a',
@@ -65,7 +65,7 @@ const en = {
   perSlug: {
     'legend-of-the-ten-rings': { title: 'Shang-Chi and the Legend of the Ten Rings', date: 'September 3, 2021', role: 'James Hwang as Shang-Chi (Xu Shang-Chi)' },
     'legacy-of-the-ten-rings': { title: 'Shang-Chi and the Legacy of the Ten Rings', date: 'July 25, 2025', role: 'James Hwang as Shang-Chi · co-writer' },
-    'deadly-hands': { title: 'Shang-Chi and the Deadly Hands', date: 'September 18, 2026', role: 'James Hwang as Shang-Chi · co-writer' },
+    'last-of-the-ten-rings': { title: 'Shang-Chi and the Last of the Ten Rings', date: 'September 18, 2026', role: 'James Hwang as Shang-Chi · co-writer' },
     'trilogy-analysis': { title: 'Shang-Chi Trilogy — In-Depth Analysis', date: '', role: '' },
   } as Record<string, { title: string; date: string; role: string }>,
   related: [
@@ -101,7 +101,7 @@ const th: typeof en = {
   perSlug: {
     'legend-of-the-ten-rings': { title: 'Shang-Chi and the Legend of the Ten Rings', date: '3 กันยายน 2021', role: 'James Hwang รับบท Shang-Chi (Xu Shang-Chi)' },
     'legacy-of-the-ten-rings': { title: 'Shang-Chi and the Legacy of the Ten Rings', date: '25 กรกฎาคม 2025', role: 'James Hwang รับบท Shang-Chi · ผู้ร่วมเขียนบท' },
-    'deadly-hands': { title: 'Shang-Chi and the Deadly Hands', date: '18 กันยายน 2026', role: 'James Hwang รับบท Shang-Chi · ผู้ร่วมเขียนบท' },
+    'last-of-the-ten-rings': { title: 'Shang-Chi and the Last of the Ten Rings', date: '18 กันยายน 2026', role: 'James Hwang รับบท Shang-Chi · ผู้ร่วมเขียนบท' },
     'trilogy-analysis': { title: 'Shang-Chi Trilogy — บทวิเคราะห์เชิงลึก', date: '', role: '' },
   } as Record<string, { title: string; date: string; role: string }>,
   related: [

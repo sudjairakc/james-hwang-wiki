@@ -85,7 +85,7 @@ const en = {
   wealthIncome: [
     { source: 'Touring (personal take)', detail: 'PULSE $40–48M + DECADE $15–19M, net of production cost', value: '$55–67M' },
     { source: 'Endorsements', detail: 'Saint Laurent · Cartier · Sony · Nike · Dior, all booked through JH Company', value: '$16–22M/yr' },
-    { source: 'Film fees (MCU)', detail: 'Shang-Chi lead scale in 2021 rising to star-tier by Deadly Hands (2026); RESONANCE pays JH Company an IP backend, not a personal fee', value: '$3–5M → $12–18M/film' },
+    { source: 'Film fees (MCU)', detail: 'Shang-Chi lead scale in 2021 rising to star-tier by Last of the Ten Rings (2026); RESONANCE pays JH Company an IP backend, not a personal fee', value: '$3–5M → $12–18M/film' },
     { source: 'Recorded music & publishing', detail: '8.7B+ career streams plus tracks written for SM artists (Jaehyun, aespa)', value: '8–20% royalty share' },
     { source: 'Merchandise', detail: 'Concert merch and capsule drops (e.g. Nike SNKRS)', value: '$18–28M/tour' },
   ],
@@ -226,7 +226,7 @@ const th: typeof en = {
   wealthIncome: [
     { source: 'ทัวร์ (ส่วนที่เข้ากระเป๋า)', detail: 'PULSE $40–48M + DECADE $15–19M หักต้นทุนการผลิตแล้ว', value: '$55–67M' },
     { source: 'Endorsement', detail: 'Saint Laurent · Cartier · Sony · Nike · Dior ทั้งหมดผ่าน JH Company', value: '$16–22M/ปี' },
-    { source: 'ค่าตัวหนัง (MCU)', detail: 'ระดับนำ Shang-Chi ปี 2021 ขยับขึ้นระดับดาราแถวหน้าตอน Deadly Hands (2026); RESONANCE จ่าย IP backend ให้ JH Company ไม่ใช่ค่าตัวส่วนตัว', value: '$3–5M → $12–18M/เรื่อง' },
+    { source: 'ค่าตัวหนัง (MCU)', detail: 'ระดับนำ Shang-Chi ปี 2021 ขยับขึ้นระดับดาราแถวหน้าตอน Last of the Ten Rings (2026); RESONANCE จ่าย IP backend ให้ JH Company ไม่ใช่ค่าตัวส่วนตัว', value: '$3–5M → $12–18M/เรื่อง' },
     { source: 'เพลงบันทึกเสียง & publishing', detail: 'สตรีมสะสม 8.7B+ บวกเพลงที่เขียนให้ศิลปิน SM (Jaehyun, aespa)', value: 'ส่วนแบ่ง royalty 8–20%' },
     { source: 'สินค้า merchandise', detail: 'merch คอนเสิร์ต + capsule drop (เช่น Nike SNKRS)', value: '$18–28M/ทัวร์' },
   ],
