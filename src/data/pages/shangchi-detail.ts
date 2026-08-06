@@ -30,7 +30,7 @@ export const slugMeta: Record<string, {
     director: 'Destin Daniel Cretton',
     screenwriters: 'Dave Callaham · Destin Daniel Cretton · Andrew Lanham · James Hwang',
     producers: 'Kevin Feige · Jonathan Schwartz',
-    starring: 'James Hwang, Ashley Liao, Yuen Wah, Finn Jones, Anthony Wong Chau-sang, Max Zhang, Florian Munteanu',
+    starring: 'James Hwang, Ashley Liao, Yuen Wah, Finn Jones, Anthony Wong Chau-sang, Vincent Zhao, Max Zhang, Deanie Ip, Anna Cathcart, Izaac Wang, Florian Munteanu, Justin H. Min, Randall Park',
     boxOffice: '$1.01B', rtScore: '85%', showCredits: true,
   },
   'trilogy-analysis': {

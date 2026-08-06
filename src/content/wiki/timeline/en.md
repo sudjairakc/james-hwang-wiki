@@ -565,7 +565,7 @@ A critics-driven recognition distinct from the idol award circuit, reinforcing h
 
 
 ### 04/2025
-28/04/2025 – 08/2025: Began filming Avengers: Doomsday (block shooting for select scenes/units only, not a lead role) to support the fan-misdirection strategy from the end-credits of Shang-Chi and the Legacy of the Ten Rings, which stated that "Shang-Chi will not return."
+28/04/2025 – 08/2025: Began filming Avengers: Doomsday (block shooting for select scenes/units only, not a lead role) under maximum secrecy, because Legacy's end-credits had just closed on Shang-Chi resigning from the Avengers. Marvel's March 2025 announcement of his name in the Doomsday cast list was used to stoke a year of speculation over whether he would actually return — an answer held back for the trilogy's finale.
 
 
 ### 06/2025
@@ -696,7 +696,11 @@ Included 4 new songs, serving as a career milestone and narrative reset.
 
 09/2026: During the global premiere window of Last of the Ten Rings, James's and Ashley Liao's agencies jointly issued a statement confirming the two "are dating," following months of continued sighting reports beforehand, with both Asian and US media interpreting the relationship as a result of their years-long collaboration on the Shang-Chi franchise.
 
-09/2026 – 01/2027: NCT 127's 5th tour, "NEO CITY : THE REDLINE," ran across Asia — Seoul (Sep 18–20, 2026, KSPO Dome), Jakarta (Oct 3, Indonesia Arena), Hong Kong (Oct 10–11, Kai Tak Arena), Singapore (Oct 18, Singapore Indoor Stadium), Bangkok (Oct 31 – Nov 1, Thammasat Stadium), and Taipei (Jan 2, 2027, Taipei Arena). James participated in every stop **except Bangkok** — his first-ever absence from an NCT 127 show in his home country, a direct consequence of the Thai–Cambodia fallout and his refusal to apologize for his anti-war stance. The Bangkok dates proceeded with the other members; his absence was widely read as the clearest symbol of his self-chosen estrangement from Thailand.
+09/2026 – 01/2027: NCT 127's 5th tour, "NEO CITY : THE REDLINE," ran across ten Asian cities — Seoul (Sep 18–20, 2026, KSPO Dome), Jakarta (Oct 3, Indonesia Arena), Hong Kong (Oct 10–11, Kai Tak Arena), Singapore (Oct 18, Singapore Indoor Stadium), Saitama (Oct 24–25, Belluna Dome), Bangkok (Oct 31 – Nov 1, Thammasat Stadium), Manila (Dec 12, SM Mall of Asia Arena), Taipei (Jan 2, 2027, Taipei Arena), Kuala Lumpur (Jan 9, UNIFI Arena), and Macau (Jan 16, The Venetian Arena).
+
+James joined 8 of the 10 cities. Seoul's opening night fell on the exact day Shang-Chi and the Last of the Ten Rings opened worldwide (Sep 18) — he closed the film's Asian press tour in Seoul that same week and walked onto the KSPO Dome stage the night his own film opened at #1 globally, trading away the entire US opening-weekend TV circuit to do it. The image of a billion-dollar film's lead singing with his group that same night became one of the most-shared moments of the year.
+
+His two absences were **Bangkok** — his first-ever missed NCT 127 show in his home country, a direct consequence of the Thai–Cambodia fallout and his refusal to apologize for his anti-war stance; the Bangkok dates proceeded with the other members, and his absence was widely read as the clearest symbol of his self-chosen estrangement from Thailand — and **Manila**, which collided unavoidably with the world-premiere week of Avengers: Doomsday (mid-December 2026). The press ran the two absences side by side: one missed by choice, the other by schedule.
 
 
 ### 09–12/2026

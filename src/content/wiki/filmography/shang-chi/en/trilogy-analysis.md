@@ -104,9 +104,9 @@ Putting a girl who makes fireworks into a film whose antagonist is a god is a be
 
 For three middle acts she is a victim. She's the one who warns Katy, which is why she sneaks down to see whether her warning landed in time, and the pillar comes down on her. After that she's unconscious and carried off as leverage for the rite.
 
-The payoff is in Act 5. When the fracture reaches under the stone platform the four hundred souls drop back in waves, and the first person to stand is her — because her body has been unconscious since yesterday, so getting her soul back is the only thing that changes in her. She gets up into dust thick enough that people can't see each other at ten meters, climbs the highest pile of rubble, and fires sparks into the sky in a pattern — three, pause, three, pause — telling people who can't see anything at all which way is out.
+The payoff is in Act 5. When the fracture reaches under the stone platform the souls that have not yet burned out drop back in waves, and the first person to stand is her — because her body has been unconscious since yesterday, so getting her soul back is the only thing that changes in her. She gets up into dust thick enough that people can't see each other at ten meters, climbs the highest pile of rubble, and fires sparks into the sky in a pattern — three, pause, three, pause — telling people who can't see anything at all which way is out.
 
-The toy nobody cared about becomes the thing that leads four hundred people out of a collapsing dimension — which confirms Katy's thesis using a new character who never has to state the theme out loud.
+The toy nobody cared about becomes the thing that leads people out of a collapsing dimension — which confirms Katy's thesis using a new character who never has to state the theme out loud. And the film refuses to let it be a clean win: the figure Auntie Xiu counts at the mouth of the path is eighty-seven out of four hundred. Those sparks didn't bring everyone out. They brought out the ones who could still see them in time.
 
 #### 6.5 Guang Bo
 
@@ -174,7 +174,7 @@ The handoffs between films run through credits scenes that work thematically rat
 
 **Breakfast** is a symbol Film 3 builds itself and runs to the end. Two steamed buns on his first day back in Ta Lo. Porridge arriving an hour later each week as the fear takes hold. Porridge arriving exactly as always on the morning both of them know the other knows. And two steamed buns in the refugee camp at the end, with the same sentence: finish it all. An entire relationship told through breakfast, with no dialogue about feelings anywhere in it.
 
-**The sparks that won't light a lamp** are set up as a joke in Act 1 and become the thing that leads four hundred people out of a collapsing dimension in Act 5 — the payoff most exactly aligned with the trilogy's thesis.
+**The sparks that won't light a lamp** are set up as a joke in Act 1 and become the thing that leads eighty-seven people out of a collapsing dimension in Act 5 — the payoff most exactly aligned with the trilogy's thesis.
 
 **The last one** is the motif Film 3's title states outright. Shang-Chi is the last bearer of the Ten Rings and the last vessel of dragon power in the universe. Guang Bo is the last guardian of a land that no longer exists. And Katy is the last person who remembers Ta Lo was real — which connects straight back to Fin Fang Foom's dying words in Film 2, that being the last one who still remembers is far heavier than dying alongside your whole race.
 
@@ -208,4 +208,4 @@ What changes at the end is not that he finally proved himself. He never once pro
 
 Because that place never existed. Only the people did — which is what his mother knew on the day she walked out of the bamboo grove with a man the whole land had judged unworthy.
 
-So the trilogy's final image is not a hero who gets his home back. It's eight timber houses on a hillside that belongs to no god, with seven mounds of earth at the back of the camp, two children newly born, a girl sitting on a fence rail snapping sparks for the little ones, a woman writing the legends of a land that no longer exists into a blank notebook, and an old woman handing over two steamed buns and telling him to finish them.
+So the trilogy's final image is not a hero who gets his home back. It's eight timber houses on a hillside that belongs to no god, with four mounds of earth at the back of the camp, two children newly born, a girl sitting on a fence rail snapping sparks for the little ones, a woman writing the legends of a land that no longer exists into a blank notebook, and an old woman handing over two steamed buns and telling him to finish them.
