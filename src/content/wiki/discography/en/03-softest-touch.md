@@ -8,6 +8,51 @@ James served as topliner, lyricist, co-producer, and concept lead for the entire
 Executive production was overseen by Lee Soo-man
 
 
+### Production chronology
+
+**Recording — February 2016 to December 2019 · Seoul**
+
+SOFTEST TOUCH was assembled over nearly four years, in the gaps of an NCT 127 schedule, and the length of that window is the reason the album sounds like three different periods stacked on top of each other. The earliest sessions overlap the tail of the LIKE I DO recordings; the latest were cut after the Shang-Chi casting had already been announced.
+
+| Stage | Where | Notes |
+|---|---|---|
+| Songwriting sessions | SM Big Shot Studio · SM SSAM Studio | 02/2016 – 06/2019, spread across the whole window |
+| Vocal recording | SM Yellow Tail Studio · SM LVYIN Studio | 2017 – 12/2019, in bookings of two to five days between group promotions |
+| SM STATION carry-overs | SM Blue Ocean Studio | "YOU AIN'T GOTTA" (STATION 2, 2018) and "CRUSH" (STATION 3, 2019) were tracked as standalone singles and later folded into the album to connect the narrative |
+| Feature session | SM Yellow Tail Studio | Jungkook's vocal for "CRUSH" was cut in a single session and required an inter-agency clearance that took longer than the recording did |
+| Mixing (original) | SM Blue Ocean Studio | Yoo Young-jin, 2019 |
+
+**The shelf — 2020 to 2021**
+
+The album was complete by December 2019 and then did not come out for two years. The reasons were sequencing rather than quality: James began filming Shang-Chi in February 2020, the production ran through October under pandemic conditions, and by the time he was back the label's release calendar had moved to NCT 2020 and then to the *Sticker* cycle. A solo mini album from a member with an unpredictable schedule kept losing its slot.
+
+**Reactivation — September 2021 to January 2022**
+
+The release was greenlit in September 2021, in the window between NCT 127's *Sticker* and its *Favorite* repackage, and the two-year gap forced a rebuild rather than a straight release.
+
+- **Audio** — the 2019 mixes were revised and the album was re-mastered, because streaming loudness practice had shifted since 2019 and the original masters sat noticeably quieter than the catalog around them
+- **Visual** — this is the sharper break. **Min Hee-jin**, who had signed off the LIKE I DO sleeve as SM's Creative Director, had left the company in 2019. The concept assets prepared for a 2019 release were made under a visual regime that no longer existed, and the entire concept package was rebuilt from scratch in November and December 2021 by SM's internal visual direction team.
+- **Schedule** — the release was slotted deliberately: NCT 2021's *Universe* landed 14/12/2021, SMTOWN LIVE : SMCU EXPRESS @KWANGYA ran 01/01/2022, and SOFTEST TOUCH went out on 11/01/2022 into the clear week that followed.
+
+| Stage | Where | Notes |
+|---|---|---|
+| Mix revision | SM Blue Ocean Studio | 11/2021, Yoo Young-jin |
+| Re-mastering | Sterling Sound, New York | 12/2021, Chris Gehringer |
+| Concept rebuild | SM visual direction team | 11/2021 – 12/2021 |
+
+**Choreography — November to December 2021**
+
+Choreography was handled by SM's performance direction under **Kasper**, with the routine for "SOFTEST TOUCH" built in November 2021 and cast rehearsal running through December at SM's Cheongdam practice rooms. This is the last James Hwang release choreographed inside an agency system; from PULSE onward the work was commissioned externally.
+
+**Music video and promotion**
+
+The "SOFTEST TOUCH" video was shot 27/12 – 28/12/2021 and released with the album on 11/01/2022. During the same promotion cycle SM also finally produced a video for "LIKE I DO (feat. Mark Lee)" — a song from 2016 that had never had one — which went out on 22/01/2022.
+
+**Publishing and rights**
+
+Registered on the same terms as LIKE I DO: writer share to James, publisher share and masters to SM Entertainment. As with the 2016 album, the DECADE anthology carries re-recorded solo versions of "SOFTEST TOUCH" and "CRUSH" rather than the originals, cleared with SM in April 2026.
+
+
 ### Music and lyrics
 
 Musically, SOFTEST TOUCH expands the sonic palette from the intimate R&B of LIKE I DO (2016) toward hybrid R&B, synth funk, indie soul, and dance-pop with a more global orientation.
@@ -114,22 +159,39 @@ Jungkook — vocals (track 7) <br />
 **Executive production** <br />
 Lee Soo-man <br />
 **Lead producers** <br />
-Ryan S. Jhun <br />
-Kenzie <br />
-Yoo Young-jin <br />
+Ryan S. Jhun · Kenzie · Yoo Young-jin <br />
 **Additional producers** <br />
-DEEZ <br />
-dress <br />
-IMLAY <br />
-Royal Dive <br />
-MZMC <br />
-Jesse Barrera <br />
-Adrian McKinnon <br />
-Tay Jasper <br />
-Kevin Chung <br />
-A&R / Project supervision <br />
+DEEZ · dress · IMLAY · Royal Dive · MZMC · Jesse Barrera · Adrian McKinnon · Tay Jasper · Kevin Chung <br />
+**Vocal direction** <br />
+Kenzie (tracks 1, 2, 5) <br />
+Yoo Young-jin (tracks 3, 7) <br />
+Andrew Choi (tracks 4, 6) <br />
+**Background vocals** <br />
+GONUNMA (all tracks) · Kenzie (track 1) · Jesse Barrera (tracks 2, 4) <br />
+**Musicians** <br />
+Jesse Barrera — acoustic guitar (tracks 2, 4, 5) <br />
+Kevin Chung — keys (tracks 4, 5) <br />
+Ko Yu-jin — bass (tracks 1, 3, 7) <br />
+Han Ji-woo — electric guitar (tracks 3, 6) <br />
+**Recording** <br />
+Seo Min-cheol — SM Big Shot Studio · SM SSAM Studio <br />
+Baek Seung-hyun — SM Yellow Tail Studio · SM LVYIN Studio <br />
+Oh Da-hae — SM Yellow Tail Studio (feature session, track 7) <br />
+**Digital editing** <br />
+Choi Ye-rin · Ryu Se-jin — SM Blue Ocean Studio <br />
+**Mixing** <br />
+Yoo Young-jin — SM Blue Ocean Studio (original mixes 2019; revised 11/2021) <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, New York (re-mastered 12/2021) <br />
+**Performance direction** <br />
+Kasper — choreography and performance direction <br />
+**Visual and creative** <br />
+SM Entertainment visual direction team — concept package rebuilt 11/2021 – 12/2021 <br />
+**A&R and project supervision** <br />
+Yoon Chae-hee — A&R lead <br />
 SM Entertainment Production Center <br />
-
+**Label** <br />
+SM Entertainment <br />
 
 ### Additional Notes
 * A solo debut regarded as “releasing long-restrained potential” for James Hwang

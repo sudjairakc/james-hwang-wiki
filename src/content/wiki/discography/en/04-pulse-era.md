@@ -207,16 +207,38 @@ Tracklist & Credits
 GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
 **Featured artist** <br />
 keshi — vocals (track 2) <br />
-**Additional collaborators** (texture enhancement / composition support) <br />
-Jesse Barrera <br />
-Albert Posis <br />
-sunkis <br />
-Yessam <br />
 **Production** <br />
-Produced by GONUNMA (all tracks) <br />
+Produced and arranged by GONUNMA (all tracks) — no executive producer credited; JH Company holds no position above the artist <br />
+**Additional collaborators** (texture enhancement / composition support) <br />
+Jesse Barrera · Albert Posis · sunkis · Yessam <br />
+**Vocal direction** <br />
+GONUNMA (all tracks) <br />
+**Background vocals** <br />
+GONUNMA (all tracks) · keshi (track 2) <br />
+**Musicians** <br />
+Jesse Barrera — guitar (tracks 3, 9) <br />
+Ko Yu-jin — bass (tracks 1, 3, 5) <br />
+Seorin Horns — horns (track 3) <br />
+**Recording** <br />
+Ha Seung-min — Koko Sound Studio, Gangnam-gu (vocals) <br />
+Kwon Ji-an — Vibe Studio, Cheongdam-dong (live overdubs) <br />
+**Digital editing** <br />
+Kwon Ji-an <br />
+**Mixing** <br />
+Larrabee Studios, North Hollywood <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ (streaming master and tour playback master cut separately) <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio, Seongsu-dong <br />
+**Music video** <br />
+Kim Ja-kyoung (VM Project Architecture) — "HOW DOES IT FEEL?", Studio Grid, Paju <br />
+JH Company in-house crew — dance session videos <br />
+**A&R and project supervision** <br />
+JH Company — the company's first release; no external A&R and no label approval layer <br />
+**Publishing** <br />
+JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

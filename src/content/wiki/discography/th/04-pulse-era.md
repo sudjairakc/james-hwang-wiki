@@ -204,19 +204,41 @@ Tracklist & Credits
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
+GONUNMA — ร้องนำ, แต่งเพลง, เนื้อร้อง, เรียบเรียง, กำกับการผลิต <br />
 **Featured artist** <br />
-keshi — vocals (track 2) <br />
-**Additional collaborators** (texture enhancement / composition support) <br />
-Jesse Barrera <br />
-Albert Posis <br />
-sunkis <br />
-Yessam <br />
+keshi — ร้อง (แทร็ก 2) <br />
 **Production** <br />
-Produced by GONUNMA (all tracks) <br />
+โปรดิวซ์และเรียบเรียงโดย GONUNMA (ทุกแทร็ก) — ไม่มีเครดิต executive producer เพราะ JH Company ไม่มีตำแหน่งใดอยู่เหนือตัวศิลปิน <br />
+**Additional collaborators** (เติมพื้นผิว / ช่วยแต่ง) <br />
+Jesse Barrera · Albert Posis · sunkis · Yessam <br />
+**Vocal direction** <br />
+GONUNMA (ทุกแทร็ก) <br />
+**Background vocals** <br />
+GONUNMA (ทุกแทร็ก) · keshi (แทร็ก 2) <br />
+**นักดนตรี** <br />
+Jesse Barrera — กีตาร์ (แทร็ก 3, 9) <br />
+Ko Yu-jin — เบส (แทร็ก 1, 3, 5) <br />
+Seorin Horns — เครื่องเป่า (แทร็ก 3) <br />
+**การบันทึกเสียง** <br />
+Ha Seung-min — Koko Sound Studio กังนัม (เสียงร้อง) <br />
+Kwon Ji-an — Vibe Studio ชองดัมดง (โอเวอร์ดับเครื่องสด) <br />
+**Digital editing** <br />
+Kwon Ji-an <br />
+**การมิกซ์** <br />
+Larrabee Studios, North Hollywood <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ (ตัดมาสเตอร์สำหรับสตรีมมิงและมาสเตอร์สำหรับระบบเล่นกลับในทัวร์แยกกัน) <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio ซองซูดง <br />
+**MV** <br />
+Kim Ja-kyoung (VM Project Architecture) — "HOW DOES IT FEEL?" ที่ Studio Grid พาจู <br />
+ทีมงานภายใน JH Company — คลิป dance session <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+JH Company — งานปล่อยชิ้นแรกของบริษัท ไม่มี A&R ภายนอกและไม่มีชั้นอนุมัติของค่าย <br />
+**Publishing** <br />
+JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes

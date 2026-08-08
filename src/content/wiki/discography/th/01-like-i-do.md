@@ -7,6 +7,39 @@ James มีบทบาทเป็น topliner และผู้ร่วม�
 ทิศทางเสียงของอัลบั้มเน้นโครงสร้าง R&B เชิงบรรยากาศ (atmospheric R&B) และการเล่าเรื่องผ่าน melodic phrasing แตกต่างจากแนว performance-driven sound ของ NCT 127 ในช่วงเวลาเดียวกันอย่างชัดเจน
 
 
+### Production chronology
+
+**การเขียนและการอัด — มิถุนายน 2015 ถึง เมษายน 2016 · โซล**
+
+โปรเจกต์เริ่มจากการเป็นแบบฝึกหัดภายใน ไม่ใช่งานสำหรับปล่อย James ส่ง topline เข้าศูนย์ผลิตของ SM มาตั้งแต่ปี 2014 ในฐานะส่วนหนึ่งของสายฝึกแต่งเพลงสำหรับเทรนนี และพอถึงกลางปี 2015 ก็มีเพลงที่ถูกข้ามไปให้ศิลปินคนอื่นมากพอจน A&R ของเขาเสนอให้รวบมาไว้ใต้ชื่อชั่วคราวชื่อเดียว GONUNMA — ชื่อหน้ากากที่เขาจะได้ติดตัวออกมาจาก *King of Mask Singer* ในภายหลัง — ถูกเลือกด้วยเหตุผลนั้นพอดี มันทำให้ค่ายทดลองทิศทาง R&B เดี่ยวได้โดยไม่ต้องเอาแบรนด์ NCT 127 ไปผูก
+
+เซสชันเดินระหว่างมิถุนายน 2015 ถึงเมษายน 2016 แทรกอยู่ระหว่างตารางเทรนนีแล้วต่อด้วยการเตรียมเดบิวต์ NCT 127 เขาอายุสิบเจ็ดตลอดเกือบทั้งช่วง
+
+| ขั้นตอน | ที่ไหน | หมายเหตุ |
+|---|---|---|
+| เซสชันแต่งเพลง | SM Big Shot Studio ชองดัมดง | 06/2015 – 12/2015 ส่วนใหญ่เย็นวันธรรมดาหลังเลิกฝึก |
+| อัดเสียงร้อง | SM Yellow Tail Studio และ SM Blue Ocean Studio | 01/2016 – 04/2016 ครั้งละสามถึงสี่ชั่วโมง |
+| อัดเสียงแขกรับเชิญ | SM Starlight Studio | 02/2016 – 04/2016 พาร์ตสมาชิกอัดแยกตามตารางของแต่ละคน |
+| มิกซ์ | SM Blue Ocean Studio | Yoo Young-jin มิกซ์อัลบั้มเอง เหมือนที่เขาทำกับงาน SM ส่วนใหญ่ในยุคนั้น |
+| มาสเตอร์ | Sterling Sound นิวยอร์ก | Chris Gehringer |
+
+**ช่วงถูกดอง — พฤษภาคม ถึง ตุลาคม 2016**
+
+อัลบั้มเสร็จตั้งแต่เมษายน 2016 แล้วนอนอยู่เจ็ดเดือน มีสองเรื่องเกิดขึ้นพร้อมกัน — NCT 127 เดบิวต์ด้วย "Fire Truck" เมื่อ 07/07/2016 และ SM STATION Season 1 กำลังอยู่กลางรอบปล่อยซิงเกิลรายสัปดาห์ โปรเจกต์นี้ถูกจัดคิวเข้า STATION สองครั้งและถูกถอนออกทั้งสองครั้ง — ครั้งหนึ่งเพราะสัปดาห์ปล่อยชนกับรอบเดบิวต์ NCT 127 และอีกครั้งเพราะการอ่านสถานการณ์ภายในมองว่างาน R&B เดี่ยวจากสมาชิกต่างชาติในปีเดบิวต์จะถูกอ่านว่าเป็นการดึงความสนใจออกจากวง
+
+**การปล่อย — 11 พฤศจิกายน 2016**
+
+สิ่งที่ออกมาในที่สุดคือการประนีประนอม — มินิอัลบั้มดิจิทัลล้วน ไม่มี MV ไม่มี concept photo ไม่มีงานแถลงข่าว ไม่มีเวที music show สินทรัพย์ภาพชิ้นเดียวที่ผลิตขึ้นคือภาพปกภาพเดียว อนุมัติโดยทีมกำกับงานภาพของ SM ภายใต้ **Min Hee-jin** ซึ่งขณะนั้นเป็น Creative Director ของค่าย นับเป็นชิ้นเดียวของงานปล่อยครั้งนี้ที่ผ่านระบบงานภาพเลย
+
+การไม่มี MV คือเหตุผลว่าทำไม "LIKE I DO (feat. Mark Lee)" ถึงมี MV ปี 2022 — มันถูกถ่ายหกปีให้หลังในรอบโปรโมต SOFTEST TOUCH ให้กับเพลงที่ไม่เคยมี MV มาก่อน
+
+**Publishing และสิทธิ์**
+
+ทั้งเจ็ดแทร็กถูกลงทะเบียนกับฝ่าย publishing ของ SM Entertainment ตามเงื่อนไขนักแต่งเพลงยุคเทรนนีมาตรฐาน — writer share เป็นของ James ส่วน publisher share เป็นของค่าย ส่วน master ยังอยู่กับ SM
+
+นี่คือความต่างที่ส่งผลมากที่สุดข้อเดียวระหว่าง LIKE I DO กับทุกอย่างที่ James ปล่อยหลังปี 2023 ข้อตกลงปี 2023 คืนงานแต่งเพลงต้นฉบับให้เขา แต่ไฟล์บันทึกเสียงในอัลบั้มนี้ทำขึ้นในสถานที่ของบริษัทภายใต้สัญญาของบริษัท และ SM ยังถือส่วนได้เสียใน master อยู่ นั่นคือเหตุผลว่าทำไม anthology ชุด DECADE ถึงใส่ **LIKE I DO (Solo Version)** ที่อัดใหม่แทนที่จะใช้แทร็กปี 2016 และเป็นเหตุผลว่าทำไมการอัดใหม่นั้นถึงต้องมีเอกสารเคลียร์สิทธิ์ที่ทั้งสองบริษัทลงนามเมื่อเมษายน 2026
+
+
 ### Music and lyrics
 
 ในเชิงดนตรี อัลบั้มผสมผสาน Contemporary R&B, Alt R&B, Indie Pop และ Soul Pop โดยใช้โครงสร้างเพลงแบบ minimal arrangement และ vocal layering เพื่อสร้างบรรยากาศแบบ late-night intimacy
@@ -84,26 +117,43 @@ Tracklist & Credits
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, topline composition, lyrics, concept direction <br />
+GONUNMA — ร้องนำ, topline composition, เนื้อร้อง, กำกับคอนเซปต์ <br />
 **Featured artists** <br />
-Mark — rap (track 2) <br />
-Ten — vocals (track 3) <br />
-Jaehyun — vocals (track 5) <br />
-Taeyong — rap, lyrics (track 6) <br />
-Doyoung — vocals (track 7) <br />
-**Production**  <br />
+Mark — แร็ป (แทร็ก 2) <br />
+Ten — ร้อง (แทร็ก 3) <br />
+Jaehyun — ร้อง (แทร็ก 5) <br />
+Taeyong — แร็ป, เนื้อร้อง (แทร็ก 6) <br />
+Doyoung — ร้อง (แทร็ก 7) <br />
+**Production** <br />
 Lee Soo-man — executive producer <br />
-Ryan S. Jhun <br />
-Yoo Young-jin <br />
-DEEZ <br />
-Kenzie <br />
-dress <br />
-IMLAY <br />
-Royal Dive <br />
-MZMC <br />
-A&R / Project supervision  <br />
+Ryan S. Jhun · Yoo Young-jin · DEEZ · Kenzie · dress · IMLAY · Royal Dive · MZMC <br />
+**Vocal direction** <br />
+Yoo Young-jin (แทร็ก 1, 2, 7) <br />
+Kenzie (แทร็ก 3, 4) <br />
+DEEZ (แทร็ก 5, 6) <br />
+**Background vocals** <br />
+GONUNMA (ทุกแทร็ก) · Kenzie (แทร็ก 3) <br />
+**นักดนตรี** <br />
+Han Ji-woo — กีตาร์ (แทร็ก 3, 4) <br />
+Ko Yu-jin — เบส (แทร็ก 1, 5) <br />
+Seorin Strings — เครื่องสาย (แทร็ก 7) <br />
+**การบันทึกเสียง** <br />
+Seo Min-cheol — SM Big Shot Studio <br />
+Baek Seung-hyun — SM Yellow Tail Studio <br />
+Oh Da-hae — SM Starlight Studio (เซสชันแขกรับเชิญ) <br />
+**Digital editing** <br />
+Choi Ye-rin — SM Blue Ocean Studio <br />
+**การมิกซ์** <br />
+Yoo Young-jin — SM Blue Ocean Studio <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound นิวยอร์ก <br />
+**งานภาพและครีเอทีฟ** <br />
+Min Hee-jin — กำกับงานภาพ (เฉพาะภาพปก งานปล่อยครั้งนี้ไม่มีการถ่ายภาพคอนเซปต์ ไม่มี concept film และไม่มี MV) <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+Yoon Chae-hee — หัวหน้า A&R <br />
 SM Entertainment Production Center <br />
-
+**Label** <br />
+SM Entertainment <br />
 
 ### Additional Notes
 

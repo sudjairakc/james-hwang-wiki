@@ -7,6 +7,39 @@ James served as topliner and co-writer on every track on the album, working alon
 The album's sonic direction leaned firmly into atmospheric R&B structures and storytelling through melodic phrasing, a clear departure from NCT 127's performance-driven sound during the same period.
 
 
+### Production chronology
+
+**Writing and recording — June 2015 to April 2016 · Seoul**
+
+The project began as an internal exercise rather than a release. James had been submitting toplines to SM's production centre since 2014 as part of his trainee songwriting track, and by mid-2015 enough of them had been passed over for other artists that his A&R suggested collecting them under a working name. GONUNMA — the mask name he would later carry out of *King of Mask Singer* — was chosen for exactly that reason: it let the label test a solo R&B direction without attaching the NCT 127 brand to it.
+
+Sessions ran between June 2015 and April 2016, fitted around trainee schedules and then around NCT 127 debut preparation. He was seventeen for most of them.
+
+| Stage | Where | Notes |
+|---|---|---|
+| Songwriting sessions | SM Big Shot Studio, Cheongdam-dong | 06/2015 – 12/2015, mostly weekday evenings after training |
+| Vocal recording | SM Yellow Tail Studio and SM Blue Ocean Studio | 01/2016 – 04/2016, three to four hours per booking |
+| Guest vocal sessions | SM Starlight Studio | 02/2016 – 04/2016, member features cut separately around their own schedules |
+| Mixing | SM Blue Ocean Studio | Yoo Young-jin mixed the album himself, as he did most SM output of the period |
+| Mastering | Sterling Sound, New York | Chris Gehringer |
+
+**The shelf — May to October 2016**
+
+The album was finished in April 2016 and sat unreleased for seven months. Two things were happening at once: NCT 127 debuted with "Fire Truck" on 07/07/2016, and SM STATION Season 1 was in the middle of its weekly single run. The project was slated twice for a STATION slot and pulled both times — once because the release week collided with the NCT 127 debut cycle, and once because the internal read was that a solo R&B release from a debut-year foreign member would read as a distraction from the group.
+
+**Release — 11 November 2016**
+
+What eventually went out was a compromise: a digital-only mini album, no music video, no concept photos, no press conference, no music show stage. The only visual asset produced for it was a single sleeve image, signed off by SM's creative direction team under **Min Hee-jin**, then the label's Creative Director. It is the only piece of the release that went through the visual system at all.
+
+The absence of a music video is why "LIKE I DO (feat. Mark Lee)" has a 2022 video: it was shot six years later, during the SOFTEST TOUCH promotion cycle, for a song that had never had one.
+
+**Publishing and rights**
+
+All seven tracks were registered to SM Entertainment's publishing arm under standard trainee-era songwriter terms — writer share to James, publisher share to the label. The masters remained with SM.
+
+This is the single most consequential difference between LIKE I DO and everything James released after 2023. The 2023 settlement returned his original songwriting to him, but the recordings on this album were made on company premises under company contract, and SM retains its master interest in them. It is the reason the DECADE anthology carries a re-recorded **LIKE I DO (Solo Version)** rather than the 2016 track, and the reason that re-recording needed a clearance document signed by both companies in April 2026.
+
+
 ### Music and lyrics
 
 Musically, the album blends Contemporary R&B, Alt R&B, Indie Pop, and Soul Pop, using minimal arrangements and vocal layering to build a late-night intimacy.
@@ -91,19 +124,36 @@ Ten — vocals (track 3) <br />
 Jaehyun — vocals (track 5) <br />
 Taeyong — rap, lyrics (track 6) <br />
 Doyoung — vocals (track 7) <br />
-**Production**  <br />
+**Production** <br />
 Lee Soo-man — executive producer <br />
-Ryan S. Jhun <br />
-Yoo Young-jin <br />
-DEEZ <br />
-Kenzie <br />
-dress <br />
-IMLAY <br />
-Royal Dive <br />
-MZMC <br />
-A&R / Project supervision  <br />
+Ryan S. Jhun · Yoo Young-jin · DEEZ · Kenzie · dress · IMLAY · Royal Dive · MZMC <br />
+**Vocal direction** <br />
+Yoo Young-jin (tracks 1, 2, 7) <br />
+Kenzie (tracks 3, 4) <br />
+DEEZ (tracks 5, 6) <br />
+**Background vocals** <br />
+GONUNMA (all tracks) · Kenzie (track 3) <br />
+**Musicians** <br />
+Han Ji-woo — guitar (tracks 3, 4) <br />
+Ko Yu-jin — bass (tracks 1, 5) <br />
+Seorin Strings — strings (track 7) <br />
+**Recording** <br />
+Seo Min-cheol — SM Big Shot Studio <br />
+Baek Seung-hyun — SM Yellow Tail Studio <br />
+Oh Da-hae — SM Starlight Studio (guest vocal sessions) <br />
+**Digital editing** <br />
+Choi Ye-rin — SM Blue Ocean Studio <br />
+**Mixing** <br />
+Yoo Young-jin — SM Blue Ocean Studio <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, New York <br />
+**Visual and creative** <br />
+Min Hee-jin — creative direction (sleeve artwork; no photography, concept film, or music video was produced for this release) <br />
+**A&R and project supervision** <br />
+Yoon Chae-hee — A&R lead <br />
 SM Entertainment Production Center <br />
-
+**Label** <br />
+SM Entertainment <br />
 
 ### Additional Notes
 

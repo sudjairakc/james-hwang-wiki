@@ -210,15 +210,42 @@ Tracklist & Credits
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
+GONUNMA — ร้องนำ, แต่งเพลง, เนื้อร้อง, เรียบเรียง, กำกับการผลิต <br />
 **Featured artist** <br />
-Janet Jackson — vocals (track 4) <br />
-**Producer** <br />
-GONUNMA <br />
+Janet Jackson — ร้อง (แทร็ก 4) <br />
+**Production** <br />
+โปรดิวซ์โดย GONUNMA <br />
 **Arrangement** <br />
-GONUNMA <br />
-Sam Wills <br />
-Mack Keane <br />
+GONUNMA · Sam Wills · Mack Keane <br />
+**Songwriting (topline)** <br />
+GONUNMA · Kyle Dion · Leven Kali · Sam Wills · Mack Keane — อัลบั้มเดียวของ James Hwang ที่นักแต่งเพลงภายนอกถือเครดิต topline <br />
+**Vocal direction** <br />
+GONUNMA · Kyle Dion <br />
+**Background vocals** <br />
+GONUNMA · Kyle Dion · Leven Kali <br />
+**นักดนตรี** <br />
+Leven Kali — Juno-106, Rhodes Mk I, Wurlitzer 200A <br />
+Mack Keane — เบส <br />
+Sam Wills — กลอง <br />
+นักดนตรีเซสชันของ EastWest — ริทึมเซกชัน อัดสดเข้าไมค์คู่จับเสียงห้อง <br />
+**การบันทึกเสียง** <br />
+Ha Seung-min — JH Studio ซองซูดง (เสียงร้อง อัลบั้มแรกของห้องนี้) <br />
+ทีมวิศวกรของ EastWest Studios — Studio 2 ลอสแอนเจลิส (อัดวงสด) <br />
+**การมิกซ์** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ <br />
+**Choreography** <br />
+Kim Ye-rim — YGX กังนัม <br />
+**MV** <br />
+"Tears On A Pretty Face" — Sunset Studio โซล <br />
+"Breathe" — โลเคชันโกดัง อินชอน <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+JH Company <br />
+**Publishing** <br />
+JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
+
+**Label**
 **Label** <br />
 J.H Company <br />
 Warner Music Korea

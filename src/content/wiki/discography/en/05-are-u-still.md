@@ -212,12 +212,39 @@ Tracklist & Credits
 GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
 **Featured artist** <br />
 Janet Jackson — vocals (track 4) <br />
-**Producer** <br />
-GONUNMA <br />
+**Production** <br />
+Produced by GONUNMA <br />
 **Arrangement** <br />
-GONUNMA <br />
-Sam Wills <br />
-Mack Keane <br />
+GONUNMA · Sam Wills · Mack Keane <br />
+**Songwriting (topline)** <br />
+GONUNMA · Kyle Dion · Leven Kali · Sam Wills · Mack Keane — the only James Hwang album on which outside writers hold a topline credit <br />
+**Vocal direction** <br />
+GONUNMA · Kyle Dion <br />
+**Background vocals** <br />
+GONUNMA · Kyle Dion · Leven Kali <br />
+**Musicians** <br />
+Leven Kali — Juno-106, Rhodes Mk I, Wurlitzer 200A <br />
+Mack Keane — bass <br />
+Sam Wills — drums <br />
+EastWest session players — rhythm section, tracked live to a room pair <br />
+**Recording** <br />
+Ha Seung-min — JH Studio, Seongsu-dong (vocals; the room's first album) <br />
+EastWest Studios engineering staff — Studio 2, Los Angeles (band tracking) <br />
+**Mixing** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ <br />
+**Choreography** <br />
+Kim Ye-rim — YGX, Gangnam-gu <br />
+**Music video** <br />
+"Tears On A Pretty Face" — Sunset Studio, Seoul <br />
+"Breathe" — warehouse location, Incheon <br />
+**A&R and project supervision** <br />
+JH Company <br />
+**Publishing** <br />
+JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
+
+**Label**
 **Label** <br />
 J.H Company <br />
 Warner Music Korea

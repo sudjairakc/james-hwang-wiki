@@ -167,16 +167,39 @@ The inclusion of live rearranged material and archival studio recordings has led
 GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
 **Production** <br />
 Produced by GONUNMA <br />
-**Live arrangement** (selected tracks) <br />
+**Vocal direction** <br />
+GONUNMA <br />
+**Live arrangement** (extended live versions) <br />
 GONUNMA — live harmonic restructuring <br />
-touring band (PULSE Tour ensemble) — performance arrangement support <br />
+PULSE Tour touring band — performance arrangement support <br />
 **Archival material** <br />
-studio voice memos (2015–2025 sessions) <br />
-demo fragments (selected recordings) <br />
-spoken liner-note reflections <br />
+Studio voice memos (2015–2025 sessions) · demo fragments · spoken liner-note reflections <br />
+Restored from 4,100 source files; 340 usable, 31 fully restored, 5 sequenced as interludes <br />
+**Recording** <br />
+Ha Seung-min — JH Studio, Seongsu-dong (writing sessions, archive restoration) <br />
+Kwon Ji-an — Koko Sound Studio, Gangnam-gu (vocals; the PULSE room, booked deliberately) <br />
+Kwon Ji-an — Vibe Studio, Cheongdam-dong (live band rearrangement) <br />
+**Archive restoration and interlude mastering** <br />
+JH Studio post room, Seongsu-dong — handled in-house so no material left the building <br />
+**Live version sources** <br />
+PULSE Tour 64-channel multitrack archive, Tokyo Dome, September 2023 <br />
+**Mixing** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ (sequenced masters cut per disk) <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio, Seongsu-dong <br />
+**Music video** <br />
+"I LOVE YOUR BODY" — Studio Grid, Paju <br />
+**Rights clearance** <br />
+SM Entertainment — clearance for the three solo re-recordings, April 2026; SM retains its master interest in the 2016–2019 originals <br />
+Mark Lee · Ten · Jaehyun · Taeyong · Doyoung · Jungkook — featured-artist consent waived individually <br />
+**A&R and project supervision** <br />
+JH Company <br />
+**Publishing** <br />
+JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

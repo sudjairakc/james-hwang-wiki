@@ -164,19 +164,42 @@ idol-system songwriter→ independent producer-artist→ global R&B lineage-alig
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
+GONUNMA — ร้องนำ, แต่งเพลง, เนื้อร้อง, เรียบเรียง, กำกับการผลิต <br />
 **Production** <br />
-Produced by GONUNMA <br />
-**Live arrangement** (selected tracks) <br />
+โปรดิวซ์โดย GONUNMA <br />
+**Vocal direction** <br />
+GONUNMA <br />
+**Live arrangement** (เวอร์ชันไลฟ์แบบขยาย) <br />
 GONUNMA — live harmonic restructuring <br />
-touring band (PULSE Tour ensemble) — performance arrangement support <br />
+วงทัวร์ PULSE Tour — ช่วยเรียบเรียงสำหรับการแสดง <br />
 **Archival material** <br />
-studio voice memos (2015–2025 sessions) <br />
-demo fragments (selected recordings) <br />
-spoken liner-note reflections <br />
+studio voice memo (เซสชันปี 2015–2025) · เศษเดโม · บันทึกเสียงพูดสำหรับ liner note <br />
+กู้จากไฟล์ต้นทาง 4,100 ไฟล์ ใช้ได้ 340 กู้สมบูรณ์ 31 และเรียงเข้าอัลบั้มเป็น interlude 5 ไฟล์ <br />
+**การบันทึกเสียง** <br />
+Ha Seung-min — JH Studio ซองซูดง (เซสชันเขียนเพลง งานกู้คลังเสียง) <br />
+Kwon Ji-an — Koko Sound Studio กังนัม (เสียงร้อง ห้องเดียวกับ PULSE จองโดยตั้งใจ) <br />
+Kwon Ji-an — Vibe Studio ชองดัมดง (เรียบเรียงวงสดใหม่) <br />
+**การกู้คลังเสียงและมาสเตอร์ interlude** <br />
+ห้อง post ของ JH Studio ซองซูดง — ทำในบ้านทั้งหมดเพื่อไม่ให้ไฟล์ออกนอกตึก <br />
+**ต้นทางเวอร์ชันไลฟ์** <br />
+คลัง multitrack 64 แชนเนลของ PULSE Tour รอบ Tokyo Dome กันยายน 2023 <br />
+**การมิกซ์** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ (ตัดมาสเตอร์แบบเรียงลำดับรายแผ่น) <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio ซองซูดง <br />
+**MV** <br />
+"I LOVE YOUR BODY" — Studio Grid พาจู <br />
+**การเคลียร์สิทธิ์** <br />
+SM Entertainment — เคลียร์สิทธิ์ให้อัดใหม่สามเพลงเมื่อเมษายน 2026 SM ยังถือส่วนได้เสียใน master ต้นฉบับปี 2016–2019 <br />
+Mark Lee · Ten · Jaehyun · Taeyong · Doyoung · Jungkook — สละสิทธิ์ยินยอมในฐานะ featured artist เป็นรายบุคคล <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+JH Company <br />
+**Publishing** <br />
+JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes

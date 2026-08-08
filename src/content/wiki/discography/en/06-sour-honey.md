@@ -187,16 +187,35 @@ Tracklist & Credits
 **Primary artist** <br />
 GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
 **Featured artist** <br />
-Pharrell Williams — vocals (track 1) <br />
-**Producers** <br />
-GONUNMA <br />
+Pharrell Williams — vocals, co-production (track 1) <br />
+**Production** <br />
+Produced by GONUNMA <br />
 **Arrangement** <br />
-GONUNMA <br />
-Pino <br />
-JUNNY <br />
+GONUNMA · Pino · JUNNY <br />
+**Vocal direction** <br />
+GONUNMA · JUNNY (Korean-language phrasing) <br />
+**Background vocals** <br />
+GONUNMA (all tracks) <br />
+**Recording** <br />
+GONUNMA — Woollahra house rig, Sydney (demos and scratch vocals) <br />
+Studios 301 engineering staff — Alexandria, Sydney (principal vocals) <br />
+Ha Seung-min — JH Studio, Seongsu-dong (additional vocals, 12/2024) <br />
+Pharrell Williams's studio staff — Miami (track 1 session) <br />
+**Mixing** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**Mastering** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio, Seongsu-dong (tracks 1–4, built without the artist present and learned from reference video in Sydney) <br />
+**Music video** <br />
+"CAN'T LEAVE ALONE" — Carriageworks, Sydney <br />
+"SOUR" — Sydney Harbour location and Disney Studios Australia stage <br />
+**A&R and project supervision** <br />
+JH Company — no press conference, no broadcaster package, no Korean promotion cycle <br />
+**Publishing** <br />
+JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

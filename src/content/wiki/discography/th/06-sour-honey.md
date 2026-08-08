@@ -185,18 +185,37 @@ Tracklist & Credits
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, composition, lyrics, arrangement, production direction <br />
+GONUNMA — ร้องนำ, แต่งเพลง, เนื้อร้อง, เรียบเรียง, กำกับการผลิต <br />
 **Featured artist** <br />
-Pharrell Williams — vocals (track 1) <br />
-**Producers** <br />
-GONUNMA <br />
+Pharrell Williams — ร้อง, co-production (แทร็ก 1) <br />
+**Production** <br />
+โปรดิวซ์โดย GONUNMA <br />
 **Arrangement** <br />
-GONUNMA <br />
-Pino <br />
-JUNNY <br />
+GONUNMA · Pino · JUNNY <br />
+**Vocal direction** <br />
+GONUNMA · JUNNY (เกลาการวางคำภาษาเกาหลี) <br />
+**Background vocals** <br />
+GONUNMA (ทุกแทร็ก) <br />
+**การบันทึกเสียง** <br />
+GONUNMA — ชุดอุปกรณ์ที่บ้าน Woollahra ซิดนีย์ (เดโมและ scratch vocal) <br />
+ทีมวิศวกรของ Studios 301 — Alexandria ซิดนีย์ (เสียงร้องหลัก) <br />
+Ha Seung-min — JH Studio ซองซูดง (เสียงร้องเพิ่มเติม 12/2024) <br />
+ทีมสตูดิโอของ Pharrell Williams — ไมอามี (เซสชันแทร็ก 1) <br />
+**การมิกซ์** <br />
+Manny Marroquin — Larrabee Studios, North Hollywood <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound, Edgewater NJ <br />
+**Choreography** <br />
+Bang Hyun-woo — 1MILLION Dance Studio ซองซูดง (แทร็ก 1–4 สร้างท่าโดยไม่มีตัวศิลปินอยู่ แล้วเรียนจากวิดีโออ้างอิงที่ซิดนีย์) <br />
+**MV** <br />
+"CAN'T LEAVE ALONE" — Carriageworks ซิดนีย์ <br />
+"SOUR" — โลเคชันอ่าวซิดนีย์ และเวทีที่ Disney Studios Australia <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+JH Company — ไม่มีงานแถลงข่าว ไม่มีชุดข่าวให้สถานี ไม่มีรอบโปรโมตในเกาหลี <br />
+**Publishing** <br />
+JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company <br />
-Warner Music Korea <br />
+J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes

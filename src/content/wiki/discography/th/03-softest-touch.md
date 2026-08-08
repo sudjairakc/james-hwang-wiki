@@ -8,6 +8,51 @@ James มีบทบาทเป็น topliner, lyricist, co-producer แล�
 Executive production ดูแลโดย Lee Soo-man
 
 
+### Production chronology
+
+**การอัด — กุมภาพันธ์ 2016 ถึง ธันวาคม 2019 · โซล**
+
+SOFTEST TOUCH ถูกประกอบขึ้นตลอดเกือบสี่ปี ในช่องว่างของตาราง NCT 127 และความยาวของหน้าต่างนั้นคือเหตุผลว่าทำไมอัลบั้มถึงฟังเหมือนสามยุคซ้อนทับกัน เซสชันแรกสุดคาบเกี่ยวกับช่วงท้ายของการอัด LIKE I DO ส่วนเซสชันท้ายสุดอัดหลังประกาศแคสต์ Shang-Chi ไปแล้ว
+
+| ขั้นตอน | ที่ไหน | หมายเหตุ |
+|---|---|---|
+| เซสชันแต่งเพลง | SM Big Shot Studio · SM SSAM Studio | 02/2016 – 06/2019 กระจายตลอดทั้งหน้าต่าง |
+| อัดเสียงร้อง | SM Yellow Tail Studio · SM LVYIN Studio | 2017 – 12/2019 จองเป็นช่วงสองถึงห้าวันระหว่างงานโปรโมตของวง |
+| งานที่ยกมาจาก SM STATION | SM Blue Ocean Studio | "YOU AIN'T GOTTA" (STATION 2, 2018) และ "CRUSH" (STATION 3, 2019) อัดในฐานะซิงเกิลเดี่ยวแล้วถูกพับเข้าอัลบั้มทีหลังเพื่อเชื่อมเส้นเรื่อง |
+| เซสชันฟีเจอริง | SM Yellow Tail Studio | เสียงร้องของ Jungkook ใน "CRUSH" อัดจบในเซสชันเดียว แต่ต้องใช้การเคลียร์ระหว่างต้นสังกัดที่กินเวลานานกว่าการอัดเสียอีก |
+| มิกซ์ (ฉบับแรก) | SM Blue Ocean Studio | Yoo Young-jin, 2019 |
+
+**ช่วงถูกดอง — 2020 ถึง 2021**
+
+อัลบั้มเสร็จตั้งแต่ธันวาคม 2019 แล้วไม่ได้ออกอีกสองปี เหตุผลเป็นเรื่องลำดับการปล่อยไม่ใช่คุณภาพ — James เริ่มถ่าย Shang-Chi เมื่อกุมภาพันธ์ 2020 กองถ่ายลากยาวถึงตุลาคมภายใต้เงื่อนไขโรคระบาด และพอเขากลับมา ปฏิทินปล่อยงานของค่ายก็ขยับไปที่ NCT 2020 แล้วต่อด้วยรอบ *Sticker* มินิอัลบั้มเดี่ยวจากสมาชิกที่ตารางคาดเดาไม่ได้จึงเสียคิวซ้ำแล้วซ้ำอีก
+
+**การปลุกกลับมา — กันยายน 2021 ถึง มกราคม 2022**
+
+การปล่อยได้ไฟเขียวเมื่อกันยายน 2021 ในช่วงระหว่าง *Sticker* กับรีแพ็กเกจ *Favorite* ของ NCT 127 และช่องว่างสองปีบังคับให้ต้องรื้อใหม่ ไม่ใช่แค่ปล่อยตรง ๆ
+
+- **เสียง** — มิกซ์ปี 2019 ถูกแก้และอัลบั้มถูกมาสเตอร์ใหม่ เพราะมาตรฐานความดังของสตรีมมิงขยับไปจากปี 2019 และมาสเตอร์ชุดเดิมเบากว่างานอื่นในแคตตาล็อกรอบข้างอย่างเห็นได้ชัด
+- **ภาพ** — ตรงนี้คือรอยแยกที่ชัดกว่า **Min Hee-jin** ผู้อนุมัติภาพปกของ LIKE I DO ในฐานะ Creative Director ของ SM ออกจากบริษัทไปตั้งแต่ปี 2019 สินทรัพย์คอนเซปต์ที่เตรียมไว้สำหรับการปล่อยปี 2019 ถูกทำขึ้นภายใต้ระบบงานภาพที่ไม่มีอยู่แล้ว ชุดคอนเซปต์ทั้งชุดจึงถูกรื้อสร้างใหม่ทั้งหมดในเดือนพฤศจิกายนและธันวาคม 2021 โดยทีมกำกับงานภาพภายในของ SM
+- **ตาราง** — วันปล่อยถูกจัดอย่างตั้งใจ *Universe* ของ NCT 2021 ลงวันที่ 14/12/2021, SMTOWN LIVE : SMCU EXPRESS @KWANGYA จัดวันที่ 01/01/2022 และ SOFTEST TOUCH ออกวันที่ 11/01/2022 ลงในสัปดาห์ที่โล่งถัดมา
+
+| ขั้นตอน | ที่ไหน | หมายเหตุ |
+|---|---|---|
+| แก้มิกซ์ | SM Blue Ocean Studio | 11/2021 โดย Yoo Young-jin |
+| มาสเตอร์ใหม่ | Sterling Sound นิวยอร์ก | 12/2021 โดย Chris Gehringer |
+| รื้อคอนเซปต์ | ทีมกำกับงานภาพของ SM | 11/2021 – 12/2021 |
+
+**Choreography — พฤศจิกายน ถึง ธันวาคม 2021**
+
+ท่าเต้นดูแลโดยฝ่าย performance direction ของ SM ภายใต้ **Kasper** โดยท่าของ "SOFTEST TOUCH" ถูกสร้างในเดือนพฤศจิกายน 2021 และการซ้อมกับนักเต้นเดินตลอดเดือนธันวาคมที่ห้องซ้อมของ SM ย่านชองดัม นี่เป็นงานปล่อยชิ้นสุดท้ายของ James Hwang ที่ทำท่าเต้นอยู่ในระบบของต้นสังกัด ตั้งแต่ PULSE เป็นต้นมางานนี้ถูกว่าจ้างจากภายนอกทั้งหมด
+
+**MV และการโปรโมต**
+
+MV ของ "SOFTEST TOUCH" ถ่ายเมื่อ 27/12 – 28/12/2021 และปล่อยพร้อมอัลบั้มวันที่ 11/01/2022 ในรอบโปรโมตเดียวกันนี้ SM ยังผลิต MV ให้ "LIKE I DO (feat. Mark Lee)" ในที่สุด — เพลงจากปี 2016 ที่ไม่เคยมี MV มาก่อน — ซึ่งออกเมื่อ 22/01/2022
+
+**Publishing และสิทธิ์**
+
+ลงทะเบียนด้วยเงื่อนไขเดียวกับ LIKE I DO — writer share เป็นของ James ส่วน publisher share และ master เป็นของ SM Entertainment เช่นเดียวกับอัลบั้มปี 2016 anthology ชุด DECADE ใช้เวอร์ชันเดี่ยวที่อัดใหม่ของ "SOFTEST TOUCH" และ "CRUSH" แทนต้นฉบับ โดยเคลียร์กับ SM เมื่อเมษายน 2026
+
+
 ### Music and lyrics
 
 ในเชิงดนตรี SOFTEST TOUCH ขยาย sonic palette จาก intimate R&B ใน LIKE I DO (2016) ไปสู่ hybrid R&B, synth funk, indie soul และ dance-pop ที่มี orientation แบบ global มากขึ้น
@@ -108,28 +153,45 @@ Tracklist & Credits
 ### Personnel
 
 **Primary artist** <br />
-GONUNMA — vocals, composition, lyrics, co-production, concept direction <br />
+GONUNMA — ร้องนำ, แต่งเพลง, เนื้อร้อง, co-production, กำกับคอนเซปต์ <br />
 **Featured artist** <br />
-Jungkook — vocals (track 7) <br />
+Jungkook — ร้อง (แทร็ก 7) <br />
 **Executive production** <br />
 Lee Soo-man <br />
 **Lead producers** <br />
-Ryan S. Jhun <br />
-Kenzie <br />
-Yoo Young-jin <br />
+Ryan S. Jhun · Kenzie · Yoo Young-jin <br />
 **Additional producers** <br />
-DEEZ <br />
-dress <br />
-IMLAY <br />
-Royal Dive <br />
-MZMC <br />
-Jesse Barrera <br />
-Adrian McKinnon <br />
-Tay Jasper <br />
-Kevin Chung <br />
-A&R / Project supervision <br />
+DEEZ · dress · IMLAY · Royal Dive · MZMC · Jesse Barrera · Adrian McKinnon · Tay Jasper · Kevin Chung <br />
+**Vocal direction** <br />
+Kenzie (แทร็ก 1, 2, 5) <br />
+Yoo Young-jin (แทร็ก 3, 7) <br />
+Andrew Choi (แทร็ก 4, 6) <br />
+**Background vocals** <br />
+GONUNMA (ทุกแทร็ก) · Kenzie (แทร็ก 1) · Jesse Barrera (แทร็ก 2, 4) <br />
+**นักดนตรี** <br />
+Jesse Barrera — กีตาร์โปร่ง (แทร็ก 2, 4, 5) <br />
+Kevin Chung — คีย์บอร์ด (แทร็ก 4, 5) <br />
+Ko Yu-jin — เบส (แทร็ก 1, 3, 7) <br />
+Han Ji-woo — กีตาร์ไฟฟ้า (แทร็ก 3, 6) <br />
+**การบันทึกเสียง** <br />
+Seo Min-cheol — SM Big Shot Studio · SM SSAM Studio <br />
+Baek Seung-hyun — SM Yellow Tail Studio · SM LVYIN Studio <br />
+Oh Da-hae — SM Yellow Tail Studio (เซสชันฟีเจอริง แทร็ก 7) <br />
+**Digital editing** <br />
+Choi Ye-rin · Ryu Se-jin — SM Blue Ocean Studio <br />
+**การมิกซ์** <br />
+Yoo Young-jin — SM Blue Ocean Studio (มิกซ์ฉบับแรกปี 2019 แก้ไข 11/2021) <br />
+**การมาสเตอร์** <br />
+Chris Gehringer — Sterling Sound นิวยอร์ก (มาสเตอร์ใหม่ 12/2021) <br />
+**Performance direction** <br />
+Kasper — ท่าเต้นและกำกับการแสดง <br />
+**งานภาพและครีเอทีฟ** <br />
+ทีมกำกับงานภาพของ SM Entertainment — รื้อชุดคอนเซปต์ใหม่ 11/2021 – 12/2021 <br />
+**A&R และการกำกับดูแลโปรเจกต์** <br />
+Yoon Chae-hee — หัวหน้า A&R <br />
 SM Entertainment Production Center <br />
-
+**Label** <br />
+SM Entertainment <br />
 
 ### Additional Notes
 * เป็นโซโล่เดบิวต์ที่ถูกมองว่า “ปล่อยศักยภาพที่ถูกจำกัดมานาน” ของ James Hwang
