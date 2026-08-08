@@ -1650,261 +1650,43 @@ Tell me to try, then I might, I might just take you tonight, uh
 It's time to begin, so let this feeling within
 Take over touchin' your skin, your heart is mine to defend (Mine to defend)
 
+
 ---
 
 ## DECADE (2026)
 
 > อัลบั้ม anthology — เพลงเก่าส่วนใหญ่ยกมาจากอัลบั้มต้นทาง ดูเนื้อเพลงได้ที่หัวข้ออัลบั้มนั้นด้านบน
-> ส่วนนี้เก็บเฉพาะ **เพลงใหม่ 4 เพลง** ที่เปิด Disk 2 กับ interlude ชุด ARCHIVE
+> ส่วนนี้เก็บเฉพาะ **เพลงใหม่ 4 เพลง** ที่เปิด Disk 2
+>
+> **ARCHIVE interlude 5 ชิ้น** (Midnight Notebook · Softest Touch, First Stage · Loop Before the Pulse · Breathing in Analog · Sweet / Sour, Still Me) เป็น spoken material ไม่มีเนื้อเพลง
+>
+> **เวอร์ชันอัดใหม่และเวอร์ชันไลฟ์** ใช้เนื้อเดียวกับต้นฉบับ — LIKE I DO (Solo) และ EVERLASTING (Solo) ดูที่ LIKE I DO (2016) · CRUSH (Solo), NO RESERVATIONS (Ext. Live) และ RIGHT ABOUT LOVE (Ext. Live) ดูที่ SOFTEST TOUCH (2022)
 
 ---
 
-### Disk 2 · เพลงใหม่
-
 ### 1. I LOVE YOUR BODY
-*[TITLE] · R&B / Dancehall / Reggae*
-*(cover: Destin Conrad, 2026)*
+*(cover: Tems, 2026)*
+*(รอเพิ่มเนื้อเพลง)*
 
-[Verse 1]
-Yeah, you look familiar
-I wonder where I seen ya
-Must be in a vision
-Oh, yeah, done with the talking
-Want you from when you walk in
-You know you a problem, oh
-
-[Pre-Chorus]
-I like to get my way
-And there's something 'bout your waist
-I wanna get closer to your frame
-And I don't got no time to waste
-In my head, we had all day
-Why wait when we're face-to-face?
-Even though you hear this often
-I still think I should say
-
-[Chorus]
-I love your body
-Love your body, love your body
-Love your body, I love your body
-I love your body
-Don't want nobody
-Love your body, love your body
-Love your body, I love your body
-Don't want nobody
-I love your body
-
-[Verse 2]
-Yeah, got my attention (Attention)
-Let's cut the tension
-Love and affection
-Oh, yeah, you know what you're doing
-But it's you I'm choosing
-Their love is whatever, my love is forever
-
-[Pre-Chorus]
-You know I like to get my way
-And there's something 'bout your waist
-I wanna get closer to your fame
-And I don't got no time to waste (No time, no time, oh)
-In my head, we had all day
-Why wait when we're face-to-face? (When we're face-to-face?)
-Even though you hear this often
-I still think I should say (Baby)
-
-[Chorus]
-I love your body
-Love your body, love your body
-Love your body, I love your body (I love your body, your body, oh)
-I love your body (Body)
-Don't want nobody
-Love your body, love your body (Love your body)
-Love your body, I love your body (Love your body, yeah)
-Don't want nobody (Don't want nobody)
-I love your body
 
 ---
 
 ### 2. ANYWHERE WITH YOU
-*Contemporary R&B / Soul*
-*(cover: Isaiah Falls, 2026)*
+*(cover: Leven Kali, 2026)*
+*(รอเพิ่มเนื้อเพลง)*
 
-Just turn your phone off
-Put your feet in the sand
-If I doze off
-Hope this dream never ends
-I waited so long
-Found peace in a friend
-I was closed off
-Tonight I'm taking a chance
-
-I'll go
-I'll go anywhere with you
-Anywhere with you
-
-Aye, baby, aye, baby
-Enough love to go around
-Paradise, paradise
-Wherever we get down
-I said say it, baby, say it, baby
-I like the way it sounds
-You in love, I'm in love
-I guess we lovers now, Good Lord
-
-I'll go anywhere with you
-Anywhere with you
-
-I'll go anywhere
-I'll go anywhere
-
-Wind blowing, tides shifting
-Sun shining, so beautiful
-But when the moon come out and show you who I really am
-Pimps, players, gangstas
-You gon' accept the real me?
-Pimps, players, gangstas
-Or is paradise all you wanna see?
-
-Goldtooth
 
 ---
 
 ### 3. PROUD
-*Modern R&B / Trapsoul*
-*(cover: Jaymin, 2026)*
+*(cover: Brent Faiyaz, 2026)*
+*(รอเพิ่มเนื้อเพลง)*
 
-[Verse 1]
-Don't tell me that you're catchin' feelings, babe
-For another guy, I promise you it's just a phase
-No, I ain't perfect, I've made my mistakes
-Know two wrongs don't make a right, girl, let's not go that way
-
-[Pre-Chorus]
-You trippin' if you mirror my decisions
-Let's not make history repetition
-If I can't make it up to you, I'm finished
-Gifts don't fix it, but they glisten
-
-[Chorus]
-I ain't too proud to beg
-Just put me first, swear 'fore God, you set
-I ain't too proud to beg
-Baby, if you do me dirty, your new fellas next
-Yeah, put 'em in a hearse
-
-[Verse 2]
-I know you tired of my confessions, baby
-It's like I never learn my lеssons, ain't it?
-True what they say, you lay in that bed you makin'
-Thе bed is empty now and I can't take it
-
-[Pre-Chorus]
-But you trippin' if you mirror my decisions (What I say?)
-Let's not make history repetition
-If I can't make it up to you, I'm finished
-Gifts don't fix it, but they glisten
-
-[Chorus]
-I ain't too proud to beg
-Just put me first, swear 'fore God, you set (What I say?)
-I ain't too proud to beg
-Baby, if you do me dirty, your new fellas next
-Yeah, put 'em in a hearse
 
 ---
 
 ### 4. BABY BLUE
-*Soul-inflected Pop / R&B*
-*(cover: JHart, 2026)*
+*(cover: Daniel Caesar, 2026)*
+*(รอเพิ่มเนื้อเพลง)*
 
-
-V1
-Look at you,
-No tears in those baby blue eyes,
-Lit up like a cloudless sky,
-You never looked so happy in your life
-I know somewhere out there we forgot
-That magic, we lost the plot,
-But i'm way closer to it than i'm not,
-Oh I,
-
-PRE
-Took a dive down deep under the scars
-
-Took a trip up halfway to the stars
-there you are
-
-HOOK
-There you are my baby blue
-
-Look around our flowers' in bloom
-Just know everything we got through
-I owe it all to you
-There you are my baby blue
-Look around and take in the view
-Just know everything that I do
-I do it all for you
-POST
-(Ba ba ba ba ba ba ba ba ba ba ba) X2
-V2
-Hand on my heart, I’m gonna ride for you
-Making up for lost love in the past,
-Hold you up never hold you back
-Oh I,
-
-PRE
-Took a dive down deep under the scars
-
-Took a trip up halfway to the stars
-and there you are
-HOOK x2
-There you are my baby blue
-Look around our flowers' in bloom
-Just know everything we got through
-I owe it all to you
-There you are my baby blue
-Look around and take in the view
-Just know everything that I do
-I do it all for you
-
----
-
-### ARCHIVE interludes
-
-### ARCHIVE I: "Midnight Notebook"
-*(LIKE I DO Sessions, 2015–2016 — spoken material, ไม่มีเนื้อเพลง)*
-
----
-
-### ARCHIVE II: "Softest Touch, First Stage"
-*(SOFTEST TOUCH Sessions, 2016–2019 — spoken material, ไม่มีเนื้อเพลง)*
-
----
-
-### ARCHIVE III: "Loop Before the Pulse"
-*(PULSE Sessions, 2022 — spoken material, ไม่มีเนื้อเพลง)*
-
----
-
-### ARCHIVE IV: "Breathing in Analog"
-*(ARE U STILL Sessions, 2023–2024 — spoken material, ไม่มีเนื้อเพลง)*
-
----
-
-### ARCHIVE V: "Sweet / Sour, Still Me"
-*(CAN'T LEAVE ALONE Sessions, 2024–2025 — spoken material, ไม่มีเนื้อเพลง)*
-
----
-
-### เวอร์ชันตีความใหม่และเวอร์ชันไลฟ์
-
-เนื้อเพลงเหมือนต้นฉบับทุกประการ ดูได้ที่หัวข้ออัลบั้มต้นทาง
-
-| เพลงใน DECADE | ต้นทาง |
-|---|---|
-| LIKE I DO (Solo Version) | LIKE I DO (2016) — แทร็ก 2 |
-| CRUSH (Solo Version) | SOFTEST TOUCH (2022) — แทร็ก 7 |
-| EVERLASTING (Solo Version) | LIKE I DO (2016) — แทร็ก 3 |
-| NO RESERVATIONS (Extended Live Version) | SOFTEST TOUCH (2022) — แทร็ก 2 |
-| RIGHT ABOUT LOVE (Extended Live Version) | SOFTEST TOUCH (2022) — แทร็ก 5 |
 
