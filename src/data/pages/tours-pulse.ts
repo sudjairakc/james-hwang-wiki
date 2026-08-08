@@ -314,6 +314,40 @@ const en = {
       ],
     },
   ],
+  production: {
+    heading: 'Production and staging',
+    blocks: [
+      {
+        title: 'Concept origin',
+        body: [
+          'The tour title came before the album did. James has said the word PULSE was on the whiteboard of the Hannam-dong apartment through most of 2022 — a heartbeat as the smallest unit of a live show, and the thing an audience and a performer share involuntarily in a room. Every act on the setlist is named from that vocabulary: IGNITION, PULL, TENDER, DRIFT, and on the 2024 legs FLUTTER, SELFISH DROP, REVIVE, ADRENALINE, closing on AFTERGLOW.',
+          'The staging followed the same logic. Black-and-white only, no era colour, no video wall imagery beyond the VCR transitions — a deliberate refusal of the multi-screen K-pop tour format. The dance crew was blocked architecturally rather than decoratively, used to build shapes around the performer instead of mirroring him.',
+        ],
+      },
+      {
+        title: 'Setlist construction',
+        body: [
+          'The setlist existed before the album was finished. During the February to May 2023 restructuring, James drafted a hypothetical 20-song running order and cut the album to feed it — which is why PULSE carries two title tracks and why the album order and the Leg 1 setlist share their opening.',
+          'Leg 1 ran 23 songs drawn from PULSE, SOFTEST TOUCH and LIKE I DO, plus IF I KNEW as a pre-release. ARE U STILL landed on 08/01/2024, five days before the Leg 2 opener in Kuala Lumpur, and the setlist was rebuilt to 33 songs across a single ten-day rehearsal block. SELFISH was held out of the announced running order entirely and dropped live as an unannounced act — the only song on either leg that was never on a printed setlist.',
+        ],
+      },
+      {
+        title: 'Market and venue selection',
+        body: [
+          'Routing was decided on financing, not on prestige. James was an unproven solo touring artist six weeks out of a public contract dispute, and no Western promoter would underwrite a first leg. East Asia was the only market with a demonstrable base, so Leg 1 was routed entirely through Korea, Japan, China and Taiwan with Dream Maker as promoter, and its receipts financed the guarantees for everything that followed.',
+          'Leg 2 through Leg 4 moved to Live Nation for the Americas and Europe and AEG for selected Asian and Middle Eastern dates. Venue scale was set per market rather than uniformly — stadium in Kuala Lumpur, Jakarta, Hanoi and São Paulo where the base supported it, arena everywhere else. Bangkok was given four nights, the longest single-city run of the tour, and remains the only market where he played four.',
+        ],
+      },
+      {
+        title: 'Rehearsal',
+        body: [
+          'Choreography creation ran 26/06 – 05/07/2023 at 1MILLION Dance Studio in Seongsu-dong, with Bang Hyun-woo leading, then moved to the eight-dancer performance unit at CJ Rehearsal Studio in Sangam-dong from 06/07.',
+          'Band rehearsals ran in parallel at Vibe Studio in Cheongdam-dong through early July. Full production rehearsals — staging, lighting, VCR timing and playback — occupied Gocheok Sky Dome for six days from 21/07/2023, immediately after the album release and directly before the opening night in the same building on 28/07.',
+          'The Leg 2 rebuild was compressed into 02/01 – 11/01/2024 at CJ Rehearsal Studio, running alongside the ARE U STILL promotion cycle in the same complex.',
+        ],
+      },
+    ],
+  },
 };
 
 const th: typeof en = {
@@ -377,6 +411,40 @@ const th: typeof en = {
       ],
     },
   ],
+  production: {
+    heading: 'Production and staging',
+    blocks: [
+      {
+        title: 'ที่มาของคอนเซปต์',
+        body: [
+          'ชื่อทัวร์มาก่อนอัลบั้ม James บอกว่าคำว่า PULSE อยู่บนไวต์บอร์ดของอพาร์ตเมนต์ฮันนัมดงเกือบตลอดปี 2022 — ชีพจรในฐานะหน่วยเล็กที่สุดของการแสดงสด และเป็นสิ่งที่คนดูกับคนแสดงแบ่งกันโดยไม่ได้ตั้งใจเมื่ออยู่ในห้องเดียวกัน ทุก act ใน setlist ตั้งชื่อจากคลังคำชุดนั้น — IGNITION, PULL, TENDER, DRIFT และในขาปี 2024 มี FLUTTER, SELFISH DROP, REVIVE, ADRENALINE ปิดที่ AFTERGLOW',
+          'การวางเวทีเดินตามตรรกะเดียวกัน ขาวดำล้วน ไม่มีสีประจำ era ไม่มีภาพบนจอวิดีโอนอกเหนือจากช่วง VCR — เป็นการปฏิเสธรูปแบบทัวร์ K-pop หลายจออย่างตั้งใจ ทีมนักเต้นถูกบล็อกแบบสถาปัตยกรรม ไม่ใช่แบบประดับ ใช้สร้างรูปทรงรอบตัวนักแสดงแทนที่จะเต้นตามเขา',
+        ],
+      },
+      {
+        title: 'การประกอบ setlist',
+        body: [
+          'setlist มีอยู่ก่อนอัลบั้มจะเสร็จ ระหว่างการรื้อโครงเดือนกุมภาพันธ์ถึงพฤษภาคม 2023 James ร่างลำดับเพลงสมมุติ 20 เพลงขึ้นมาแล้วตัดอัลบั้มให้ป้อนลำดับนั้น ซึ่งเป็นเหตุผลว่าทำไม PULSE ถึงมีไตเติลสองเพลง และทำไมลำดับอัลบั้มกับ setlist ขาแรกถึงเปิดเหมือนกัน',
+          'ขาแรกเล่น 23 เพลงจาก PULSE, SOFTEST TOUCH และ LIKE I DO บวก IF I KNEW ในฐานะเพลงพรีรีลีส ARE U STILL ออกเมื่อ 08/01/2024 ห้าวันก่อนเปิดขาสองที่กัวลาลัมเปอร์ setlist จึงถูกรื้อใหม่เป็น 33 เพลงภายในบล็อกซ้อมสิบวันเดียว ส่วน SELFISH ถูกกันออกจากลำดับที่ประกาศทั้งหมดแล้วดรอปสดแบบไม่บอกล่วงหน้า — เป็นเพลงเดียวในทั้งสองขาที่ไม่เคยอยู่บน setlist ที่พิมพ์ออกมา',
+        ],
+      },
+      {
+        title: 'การเลือกตลาดและสถานที่',
+        body: [
+          'เส้นทางทัวร์ถูกตัดสินด้วยการเงิน ไม่ใช่ศักดิ์ศรี James เป็นศิลปินเดี่ยวที่ยังไม่พิสูจน์ตัวในการทัวร์ และเพิ่งออกจากข้อพิพาทสัญญาที่เป็นข่าวมาหกสัปดาห์ ไม่มีโปรโมเตอร์ฝั่งตะวันตกรายไหนยอมรับประกันขาแรก เอเชียตะวันออกเป็นตลาดเดียวที่มีฐานพิสูจน์ได้ ขาแรกจึงวิ่งผ่านเกาหลี ญี่ปุ่น จีน และไต้หวันล้วน โดยมี Dream Maker เป็นโปรโมเตอร์ และรายรับจากขานี้เป็นตัวจ่าย guarantee ให้ทุกอย่างที่ตามมา',
+          'ขาสองถึงขาสี่ย้ายไป Live Nation สำหรับอเมริกาและยุโรป และ AEG สำหรับบางงานในเอเชียกับตะวันออกกลาง ขนาดสถานที่ถูกตั้งรายตลาด ไม่ได้ตั้งเท่ากันหมด — สนามกีฬาที่กัวลาลัมเปอร์ จาการ์ตา ฮานอย และเซาเปาโล ที่ฐานผู้ฟังรองรับได้ ที่เหลือเป็นอารีนา ส่วนกรุงเทพฯ ได้สี่คืน เป็นการเล่นเมืองเดียวยาวที่สุดของทัวร์ และยังเป็นตลาดเดียวที่เขาเคยเล่นถึงสี่คืน',
+        ],
+      },
+      {
+        title: 'การซ้อม',
+        body: [
+          'การสร้างท่าเต้นเดินช่วง 26/06 – 05/07/2023 ที่ 1MILLION Dance Studio ซองซูดง โดยมี Bang Hyun-woo นำ แล้วย้ายไปซ้อมกับยูนิตนักเต้นแปดคนที่ CJ Rehearsal Studio ซังอัมดง ตั้งแต่ 06/07',
+          'การซ้อมวงดนตรีเดินคู่ขนานที่ Vibe Studio ชองดัมดง ตลอดต้นเดือนกรกฎาคม ส่วนการซ้อมโปรดักชันเต็มรูปแบบ — เวที แสง จังหวะ VCR และระบบเล่นกลับ — ใช้ Gocheok Sky Dome หกวันตั้งแต่ 21/07/2023 ทันทีหลังปล่อยอัลบั้มและก่อนคืนเปิดทัวร์ในอาคารเดียวกันเมื่อ 28/07',
+          'การรื้อ setlist ขาสองถูกอัดลงในช่วง 02/01 – 11/01/2024 ที่ CJ Rehearsal Studio เดินคู่ไปกับรอบโปรโมต ARE U STILL ในคอมเพล็กซ์เดียวกัน',
+        ],
+      },
+    ],
+  },
 };
 
 export const toursPulse = { en, th };

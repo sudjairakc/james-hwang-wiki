@@ -177,6 +177,40 @@ const en = {
       context: 'Arts & Leisure concert review · 2027',
     },
   ],
+  production: {
+    heading: 'Production and staging',
+    blocks: [
+      {
+        title: 'Concept origin',
+        body: [
+          'Where PULSE staged a feeling, DECADE stages a chronology. The premise James brought to the design team in October 2026 was that a ten-year anthology tour should be watchable as autobiography — that a person who had never heard the records should be able to follow the arc of the career from the stage alone.',
+          'That produced the wardrobe system the reviews single out: each VCR chapter carries its own palette, and the show walks from the mauve of the new material through black-and-white for the independence years to the gold of the debut era in the encore. The colour tells the audience where in the decade they are without a word of explanation.',
+        ],
+      },
+      {
+        title: 'Setlist construction',
+        body: [
+          'The setlist was built backwards from the anthology. Its seven VCR chapters are era chapters — NEXT TEN, BREAKAWAY, ANALOG, SWEET, SOUR, ARCHIVE, YEAR ONE — and the SWEET and SOUR split reuses the duality the album\'s own ARCHIVE V interlude names.',
+          'Two structural decisions were argued at length. The first was opening on the four new songs rather than a hit: standard practice would put the newest material mid-show, but the tour follows the anthology\'s logic of declaring the next chapter first. The second was the ARCHIVE chapter — three songs performed stripped, immediately before an encore of debut-era material — which exists so the show returns to the beginning rather than ending on the future.',
+        ],
+      },
+      {
+        title: 'Market and venue selection',
+        body: [
+          'The DECADE Tour was scoped as a limited run from the outset, and the constraint was the film slate rather than demand. James had committed to Captain EO: Resonance principal photography in March 2027 and to clearing all film work before mid-year, so the tour had a hard ceiling of six weeks.',
+          'Eighteen shows across ten cities were selected on a pure demand-per-market basis using DECADE streaming and PULSE Tour ticketing data — Seoul, Singapore, Tokyo, Osaka, Jakarta, Los Angeles, New York, Paris, London, Berlin. Every date is an arena; no stadiums were routed despite the PULSE Tour having played several, because a show designed around wardrobe detail and palette does not read at stadium distance. Promotion was deliberately minimal and ticketing was demand-driven rather than campaign-driven.',
+          'Routing also had to clear NEO CITY : THE REDLINE, which ran through 16/01/2027 in Macau. The Seoul opening was set for 22/01, six days later.',
+        ],
+      },
+      {
+        title: 'Rehearsal',
+        body: [
+          'Choreography creation ran 08/06 – 20/06/2026 at 1MILLION Dance Studio in Seongsu-dong for the new material, with Bang Hyun-woo returning from the PULSE cycle. Because the setlist spans six eras, the older material was re-taught from PULSE Tour and music show archive footage rather than re-choreographed, then adjusted to a single physical vocabulary so the show does not read as a medley of old stagings.',
+          'Full production rehearsals ran 05/01 – 20/01/2027 at KSPO Dome — the longest pre-tour block of his career, driven by the wardrobe changes rather than the music. Seven chapter looks with quick-change requirements between VCRs meant the transitions were rehearsed as their own performance element.',
+        ],
+      },
+    ],
+  },
 };
 
 const th: typeof en = {
@@ -231,6 +265,40 @@ const th: typeof en = {
       context: 'รีวิวคอนเสิร์ตในคอลัมน์ Arts & Leisure · 2027',
     },
   ],
+  production: {
+    heading: 'Production and staging',
+    blocks: [
+      {
+        title: 'ที่มาของคอนเซปต์',
+        body: [
+          'ถ้า PULSE จัดแสดงความรู้สึก DECADE จัดแสดงลำดับเวลา โจทย์ที่ James เอาไปให้ทีมออกแบบเมื่อตุลาคม 2026 คือทัวร์ anthology สิบปีควรดูได้ในฐานะอัตชีวประวัติ — คนที่ไม่เคยฟังอัลบั้มไหนเลยควรตามเส้นทางอาชีพได้จากเวทีอย่างเดียว',
+          'จากโจทย์นั้นจึงเกิดระบบเครื่องแต่งกายที่รีวิวพูดถึง — แต่ละบท VCR มีจานสีของตัวเอง และโชว์เดินจากสีม่วง mauve ของงานใหม่ ผ่านขาวดำของยุคเป็นอิสระ ไปจบที่สีทองของยุคเดบิวต์ในช่วง encore สีบอกคนดูว่าตอนนี้อยู่ตรงไหนของทศวรรษโดยไม่ต้องอธิบายสักคำ',
+        ],
+      },
+      {
+        title: 'การประกอบ setlist',
+        body: [
+          'setlist ถูกสร้างย้อนกลับจากตัวอัลบั้ม anthology บททั้งเจ็ดของ VCR คือบทตาม era — NEXT TEN, BREAKAWAY, ANALOG, SWEET, SOUR, ARCHIVE, YEAR ONE — และการแยก SWEET กับ SOUR ก็หยิบ duality ที่ interlude ARCHIVE V ของอัลบั้มเองตั้งชื่อไว้มาใช้ซ้ำ',
+          'มีสองการตัดสินใจเชิงโครงสร้างที่ถกกันยาว ข้อแรกคือการเปิดด้วยเพลงใหม่สี่เพลงแทนเพลงฮิต — ตำราปกติจะวางงานใหม่สุดไว้กลางโชว์ แต่ทัวร์นี้เดินตามตรรกะของ anthology ที่ประกาศบทถัดไปก่อน ข้อที่สองคือบท ARCHIVE — สามเพลงเล่นแบบ stripped ก่อนเข้า encore ที่เป็นงานยุคเดบิวต์ — ซึ่งมีอยู่เพื่อให้โชว์ย้อนกลับไปจุดเริ่มต้น แทนที่จะจบที่อนาคต',
+        ],
+      },
+      {
+        title: 'การเลือกตลาดและสถานที่',
+        body: [
+          'DECADE Tour ถูกวางเป็น limited run ตั้งแต่ต้น และข้อจำกัดคือคิวหนัง ไม่ใช่ดีมานด์ James รับปากถ่าย Captain EO: Resonance ในเดือนมีนาคม 2027 และรับปากปิดงานหนังทั้งหมดก่อนกลางปี ทัวร์จึงมีเพดานตายตัวที่หกสัปดาห์',
+          'สิบแปดโชว์ในสิบเมืองถูกเลือกจากดีมานด์รายตลาดล้วน ๆ โดยใช้ข้อมูลสตรีมของ DECADE กับข้อมูลการขายตั๋วของ PULSE Tour — โซล สิงคโปร์ โตเกียว โอซากา จาการ์ตา ลอสแอนเจลิส นิวยอร์ก ปารีส ลอนดอน เบอร์ลิน ทุกงานเป็นอารีนา ไม่มีสนามกีฬาเลยแม้ PULSE Tour จะเคยเล่นหลายแห่ง เพราะโชว์ที่ออกแบบรอบรายละเอียดเครื่องแต่งกายและจานสีอ่านไม่ออกในระยะสนามกีฬา การโปรโมตถูกทำให้น้อยอย่างตั้งใจ และการขายตั๋วขับด้วยดีมานด์ ไม่ใช่ขับด้วยแคมเปญ',
+          'เส้นทางยังต้องเลี่ยง NEO CITY : THE REDLINE ที่เดินถึง 16/01/2027 ที่มาเก๊า คืนเปิดที่โซลจึงถูกตั้งไว้วันที่ 22/01 หลังจากนั้นหกวัน',
+        ],
+      },
+      {
+        title: 'การซ้อม',
+        body: [
+          'การสร้างท่าเต้นสำหรับงานใหม่เดินช่วง 08/06 – 20/06/2026 ที่ 1MILLION Dance Studio ซองซูดง โดย Bang Hyun-woo กลับมาจากรอบ PULSE เพราะ setlist พาดผ่านหก era งานเก่าจึงถูกสอนใหม่จากฟุตเทจคลัง PULSE Tour และรายการเพลง แทนที่จะทำท่าใหม่ แล้วปรับให้อยู่ในภาษากายชุดเดียว เพื่อไม่ให้โชว์อ่านออกมาเป็นเมดเลย์ของการจัดเวทีเก่า ๆ',
+          'การซ้อมโปรดักชันเต็มรูปแบบเดินช่วง 05/01 – 20/01/2027 ที่ KSPO Dome — เป็นบล็อกซ้อมก่อนทัวร์ที่ยาวที่สุดในอาชีพเขา โดยตัวขับคือการเปลี่ยนเครื่องแต่งกาย ไม่ใช่ดนตรี ลุคเจ็ดบทที่ต้องเปลี่ยนเร็วระหว่าง VCR ทำให้ช่วงเปลี่ยนผ่านถูกซ้อมในฐานะองค์ประกอบการแสดงของตัวเอง',
+        ],
+      },
+    ],
+  },
 };
 
 export const toursDecade = { en, th };

@@ -121,6 +121,23 @@ const showFormatStats = d.ui.showFormatLabels.map((label, i) => ({ val: showForm
     </div>
   </section>
 
+  <!-- Production and staging -->
+  <section class="mb-10">
+    <h2 class="wiki-section mb-4">{d.production.heading}</h2>
+    <div class="space-y-5">
+      {d.production.blocks.map(b => (
+        <div class="rounded-lg border p-4" style={`border-color:${color}30;background-color:${color}0a`}>
+          <h3 class="text-sm font-bold mb-2" style={`color:${color}`}>{b.title}</h3>
+          <div class="space-y-2">
+            {b.body.map(p => (
+              <p class="text-sm leading-relaxed" style="color:var(--text-muted)">{p}</p>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- Critical Reception -->
   <section class="mb-10">
     <h2 class="wiki-section mb-4">{d.ui.criticalReceptionHeading}</h2>
