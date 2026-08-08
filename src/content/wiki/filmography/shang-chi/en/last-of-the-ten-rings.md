@@ -316,6 +316,72 @@ The result is an unusual trilogy arc: a capped debut at $432M (2021, no China), 
 * The trilogy as a whole was retrospectively cited as one of the most cohesive arcs of MCU Phases 4–6
 
 
+## Development and production
+
+### A finale shot before the middle film opened
+
+*Last of the Ten Rings* is unusual among franchise finales in that it was in the can before the film preceding it had earned a dollar. It was greenlit in 2023 alongside *Legacy*, developed from the same locked script package, and shot as the back half of a single continuous block — which means every creative decision in the ending was made without any knowledge of how audiences would respond to *Legacy*.
+
+Marvel accepted that exposure for economics: one crew, one set build, one cast contract across two films. The finale also carried the heaviest visual effects load in the trilogy, and shooting it early bought a seventeen-month post tail that a conventional schedule could not have afforded.
+
+The studio kept the wrap secret for five months. It was disclosed publicly for the first time on **30/08/2025**, alongside the release date lock — news fans immediately read as proof the endgame had been planned years in advance.
+
+### Comic sources and why
+
+The finale escalates from organisational power to cosmology, and the sources follow.
+
+| Source | What it gave the film | Why it was chosen |
+|---|---|---|
+| *The Immortal Iron Fist* | The hidden city whose ruler becomes a tyrant, the K'un-Lun structure | Provided a mythic architecture for a finale that had to be larger than a family drama |
+| *Agents of Atlas* | Xian, Mr. Lao, and the Makluan dragons serving heaven | Source for the celestial pantheon the finale confronts |
+| *Chaos War* | A mortal challenging an entire pantheon | The finale's central escalation — the scale problem solved by an existing comics precedent rather than invention |
+| *Shang-Chi* (2020) | Shang-Chi as leader of an organisation, not merely a fighter | Continuity from *Legacy*; the finale resolves what that leadership costs |
+
+### Pre-production — October 2023 to June 2024
+
+Shared with *Legacy*. Both scripts were locked before day one, which is what makes a back-to-back block possible at all: the schedule is built by set and location rather than by film, so a stage might shoot a *Legacy* scene in the morning and a finale scene in the afternoon.
+
+Sixteen standing sets served both films, several dressed twice to show the same location at different points in the story's history. The god-realm environments unique to the finale were designed during this window but built later, in the second half of the block, once the *Legacy* sets could be struck.
+
+### Principal photography — December 2024 to March 2025
+
+The finale's own material ran from December 2024, immediately after *Legacy* wrapped on 14/11/2024, through to March 2025.
+
+| Unit | Where | Notes |
+|---|---|---|
+| Main unit | Disney Studios Australia, Sydney | God-realm sets, the Ten Rings compound redressed, the collapse sequences |
+| Second unit | New South Wales regional | Ta Lo exteriors carried over from the *Legacy* build |
+| Motion capture | Sydney volume stage | Dweller-in-Darkness and celestial-pantheon performance capture |
+
+**Bill Pope** returned on ARRI Alexa LF with Panavision anamorphic, matched across all three films. **Andy Cheng** supervised stunts with **Alan Tang** on the second fight unit, carrying over from *Legacy* without a break.
+
+This is the most fight-heavy film of the three, and James shot it while flying between the Sydney stages and Asian tour dates for NCT 127's "Neo City — The Momentum" from January 2025. The production scheduled around his show nights for four straight months. He has described it as the closest he came to breaking, and it is the reason the whole of late 2025 and 2026 was kept clear for music.
+
+### Post-production — April 2025 to August 2026
+
+A seventeen-month post tail, the longest of any film in the trilogy, opened in April 2025 while *Legacy* was still four months from release.
+
+- **Editorial** — **Nat Sanders** and **Harry Yoon**, cutting from April 2025
+- **Visual effects** — **Weta FX** on the celestial pantheon and the dimensional collapse, **Framestore** on the Ten Rings at full power, **ILM** on the god-realm environments, **Rodeo FX** and **Scanline VFX** on destruction and water. The collapse of an entire dimension made this the heaviest VFX load in the trilogy and is the single reason the post schedule ran as long as it did.
+- **Score** — **Joel P West**, completing the trilogy
+- **Additional photography** — **January to February 2026**, deliberately scheduled to sit half a year after *Legacy* had opened so the ending could be adjusted against real audience response. It was also the only window Cretton had free between *Spider-Man: Brand New Day* wrapping on 19/12/2025 and that film's own post.
+- **Final pass** — Cretton delivered *Brand New Day* in June 2026 and had two months left to close out the trilogy's ending before the 18 September release. Several critics pointed at the last three minutes as the part most visibly made in the narrowest window.
+
+### Marketing
+
+- **30/08/2025** — release date locked; Marvel discloses the finale wrapped in March 2025
+- **07/04/2026** — teaser trailer, the first footage from the finale, cut entirely from 2024–2025 material
+- **14/07/2026** — main trailer
+- **14/08 – 16/08/2026** — D23 Expo 2026: final footage reel and full cast panel
+- **10/09/2026** — world premiere, Los Angeles
+- **14/09 – 17/09/2026** — Asian press tour: Tokyo, Hong Kong and Seoul, closing in Seoul the same week the film opened
+- **18/09/2026** — theatrical release
+
+The campaign had to absorb one scheduling decision the studio did not choose. James closed the Asian press tour in Seoul and walked onto the KSPO Dome stage for NEO CITY : THE REDLINE's opening night on 18 September — the exact day the film opened at number one worldwide — trading away the entire US opening-weekend television circuit to do it. The image of a billion-dollar film's lead singing with his group the night his own film opened became one of the most-shared moments of the year, and Marvel's marketing team ultimately built the final week of the campaign around it rather than against it.
+
+*Spider-Man: Brand New Day* had opened on 31/07/2026 and cleared a billion dollars worldwide; the wave it generated raised expectations for the finale rather than draining them.
+
+
 ### Marketing and release
 
 | Date | Event |

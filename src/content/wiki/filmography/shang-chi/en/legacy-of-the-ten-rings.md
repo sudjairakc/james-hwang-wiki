@@ -156,6 +156,68 @@ Filming began right after the PULSE World Tour wrapped (May 2024). Legacy was ne
 **Awards Consideration:** James Hwang received nominations from the Critics Circle and several precursor awards for Best Actor — the first time an MCU performance has sustained ongoing awards-season conversation since the Phase 1 era.
 
 
+## Development and production
+
+### The two-film order
+
+Marvel did not order a sequel. In 2023 it ordered two films and committed to shooting them as one continuous production — the studio's largest pre-release commitment to a single property since *Infinity War* and *Endgame*, and a bet placed before *Legacy* had sold a ticket.
+
+The case was assembled across late 2022 and early 2023 from three inputs: the first film's outlier exit polling and Southeast Asian repeat-attendance data, the confirmed reopening of the Chinese theatrical market to Marvel titles, and James Hwang's own trajectory — by then an Academy Awards performer, an *Everything Everywhere All at Once* cast member, and, from April 2023, an independent artist whose contract dispute had made him a global news story. Feige's argument internally was that the studio was no longer buying a character, it was buying a lead who could open a film on his own name.
+
+Cretton returned to write and direct both. **Dave Callaham** returned on story. The scripts were developed together from October 2023 as a single document before being split, because a back-to-back block requires every page of both films locked before day one — the schedule is built by set and location, not by film.
+
+### Comic sources and why
+
+*Legacy* moves the character from a son escaping his father into a man who has inherited power he did not ask for, and the sources shift accordingly.
+
+| Source | What it gave the film | Why it was chosen |
+|---|---|---|
+| *Shang-Chi* (2020, Gene Luen Yang) | Shang-Chi as reluctant leader of an organisation rather than a lone fighter | The single most useful modern run for a sequel — it solves what a Shang-Chi does after he wins |
+| *Master of Kung Fu*, 1970s run | The fear of repeating the father, the inherited-violence anxiety | Retained as the emotional spine |
+| Makluan dragon mythology | The Great Protector's cry, the corrupting pull of the rings | Escalates the first film's fantasy layer into a cosmological threat |
+| Avengers-era team material | Shang-Chi's uneasy fit inside a superhero team | Justified the Brie Larson, Anthony Mackie and Paul Rudd appearances as story rather than cameo |
+
+### Pre-production — October 2023 to June 2024
+
+Both scripts were developed simultaneously out of Marvel's Burbank offices, with design and build moving to **Disney Studios Australia** in Sydney from February 2024 under the working title *Sleeping Valley*. Sixteen standing sets were constructed for the combined block, several of which appear in both films at different points in their history — the Ten Rings compound is dressed one way in *Legacy* and another in the finale, and both dressings were built at once.
+
+Fight design ran from January 2024 with a rehearsal unit in Sydney. James had been in continuous martial-arts conditioning since 2019 and came into the block able to shoot longer takes than on the first film, which is why *Legacy* has fewer cuts per fight than *Legend* despite having more fight minutes.
+
+### Principal photography — July to November 2024
+
+Principal photography on the combined block began on **11/07/2024**, four weeks after the PULSE World Tour closed in Bologna. *Legacy*'s own material wrapped on **14/11/2024**, at which point the unit rolled directly into the finale without striking a set.
+
+| Unit | Where | Notes |
+|---|---|---|
+| Main unit | Disney Studios Australia, Sydney | All interiors and the Ten Rings compound |
+| Second unit | New South Wales regional | Ta Lo and mountain exteriors |
+| Additional | Macau and Hong Kong | Plate photography for the Asian sequences, shot by a small unit without the principal cast |
+
+Cinematography was again by **Bill Pope** on ARRI Alexa LF with Panavision anamorphic glass, matched to the first film's package specifically so the two could intercut in flashback. Stunt coordination passed to **Andy Cheng** as supervising coordinator, with **Alan Tang** running the second fight unit across the block.
+
+James wrote and recorded most of *CAN'T LEAVE ALONE* during this period, at night, from a rig in his rented Woollahra house — a schedule the wiki's discography section covers in detail.
+
+### Post-production — December 2024 to June 2025
+
+*Legacy*'s edit opened in December 2024 while cameras were still rolling on the finale on the same stages, a staggered rather than shared post pipeline. **Nat Sanders** returned as lead editor with **Harry Yoon** joining.
+
+Visual effects were split across **Weta FX** (dragon and Ta Lo cosmology), **Framestore** (Ten Rings energy and the corruption effect on the lead), **Digital Domain** (Avengers-facility work) and **Rodeo FX** (environments). **Joel P West** returned to score.
+
+Early-2025 test screenings came back exceptionally strong, which — alongside James's Grammy wins in February 2025 — largely served to confirm a bet Marvel had already placed two years earlier rather than to influence it.
+
+### Marketing
+
+- **27/07/2024** — title revealed at San Diego Comic-Con, three weeks into the shoot; James appeared by video link from the Sydney set rather than in person
+- **09/08 – 11/08/2024** — first footage screened at the D23 Expo in Anaheim, with James attending in person between shooting blocks
+- **08/04/2025** — teaser trailer
+- **10/06/2025** — main trailer
+- **21/07/2025** — world premiere, Los Angeles
+- **22/07 – 24/07/2025** — global press tour: Los Angeles, London, Seoul and Beijing junkets plus US late-night. No Thailand stop was scheduled.
+- **25/07/2025** — theatrical release, including a full Chinese theatrical run
+
+Unlike the first film, this campaign was built around the lead. Marvel's China marketing ran James as the primary face alongside Tony Leung and Fala Chen, and the film's $1.02B gross — the first Shang-Chi film to cross a billion — is attributed in roughly equal measure to the China opening and to his post-Grammy global profile.
+
+
 ### Marketing and release
 
 | Date | Event |

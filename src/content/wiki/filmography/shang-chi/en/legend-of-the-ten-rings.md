@@ -100,6 +100,75 @@ Casting was confirmed at Comic-Con in July 2019. Principal photography was inter
 **Cultural Significance:** Widely regarded as the MCU's most substantively Asian-led film to date. The casting of James Hwang, a Thai-Chinese-Korean actor, in an Asian-American role sparked debate over casting for representation in Hollywood franchise films. The depiction of Ta Lo and its creature designs drew praise from critics specializing in Asian cinema.
 
 
+## Development and production
+
+### How it got made
+
+Marvel had been trying to mount a Shang-Chi film since 2001, when the rights returned to the studio, and the project stayed shelved for fifteen years because nobody could solve its central problem: the 1970s comics are built on the Fu Manchu licence, and the character's father as originally written is one of the most straightforwardly racist creations in mainstream American comics. Any adaptation had to either inherit that or replace it.
+
+Kevin Feige greenlit development in December 2018 on the strength of a single structural pitch from **Dave Callaham** — replace Fu Manchu entirely with Wenwu, fold in the Mandarin and the Ten Rings so the character inherits an existing MCU thread rather than a licensing problem, and make the film a family drama rather than a martial arts showcase. **Destin Daniel Cretton** was hired in March 2019 off *Short Term 12* and *Just Mercy*, both small-scale character films with no action credentials at all, which was the point: Feige wanted the domestic scenes cast and directed as drama first.
+
+The market case was made on China. *Avengers: Endgame* had just cleared $629M there, Marvel's Chinese theatrical position was at its peak, and a Chinese-heritage lead with Tony Leung attached was, on paper, the studio's strongest China play yet. That calculation is what unlocked the budget; it is also what made the film's eventual China release denial the single largest financial variable in its performance.
+
+### Casting James Hwang
+
+The search ran from March to July 2019 across Los Angeles, London, Sydney, Seoul and Bangkok. Marvel's brief was unusually narrow: a lead who could perform his own martial arts on camera in long takes, hold dramatic scenes opposite Tony Leung, and speak Mandarin and English convincingly.
+
+James was submitted through a Seoul casting agency in May 2019 as an outside candidate with no acting credits. His self-tape ran two scenes and a two-minute physical reel of the tricking and martial arts work he had trained alongside his SM Rookies performance training since 2013. He tested in Los Angeles on 13/07/2019 opposite three shortlisted Katy candidates, and again on 16/07 for Feige and Cretton directly. The casting was confirmed within days and announced at San Diego Comic-Con on **20/07/2019** — four days after the final test.
+
+### Comic sources and why
+
+| Source | What it gave the film | Why it was chosen |
+|---|---|---|
+| *Master of Kung Fu* (1973–1983) | The estranged assassin son, the father who trained him as a weapon | The core relationship, retained wholesale; only the father's identity was replaced |
+| *Iron Fist* / K'un-Lun mythology | The hidden city premise that became Ta Lo | Gave the film a fantasy third act without inventing a cosmology from nothing |
+| *Agents of Atlas* | The Chinese celestial pantheon, the Makluan dragons | Source for the Great Protector and the Dweller-in-Darkness |
+| *The Mandarin* (Iron Man lineage) | The Ten Rings organisation | Let the film retroactively resolve the *Iron Man 3* Mandarin misdirection, tying it into existing MCU continuity |
+| Deliberately excluded | Fu Manchu | The licence was allowed to lapse rather than renewed |
+
+### Pre-production — August 2019 to January 2020
+
+Design work ran out of Marvel's Burbank art department under production designer **Sue Chan**, with the Ta Lo and Ten Rings compound builds developed for Fox Studios Australia in Sydney from October 2019. Fight design began earlier than is normal on an MCU film — **Brad Allan**, a Jackie Chan Stunt Team alumnus, was attached as supervising stunt coordinator in August 2019 with **Andy Cheng** as fight coordinator, and both had a rehearsal unit running with James in Los Angeles from September, four months before principal photography.
+
+That lead time is why the bus fight and the scaffolding sequence could be shot in long takes with the lead's face visible. James did the majority of his own fight work; doubles were used for wire-heavy falls and for the Death Dealer's masked sequences.
+
+### Principal photography — February to October 2020
+
+| Unit | Where | Notes |
+|---|---|---|
+| Main unit | Fox Studios Australia, Sydney | Bamboo forest, Ta Lo village, and the Ten Rings compound built as standing sets |
+| Location | San Francisco | Second-unit plate work for the opening act, completed before the shutdown |
+| Additional | Sydney and NSW regional | Ta Lo exteriors |
+
+Cinematography was by **Bill Pope**, shooting ARRI Alexa LF with Panavision anamorphic glass — a large-format anamorphic package chosen so the fight geography stays legible in wide framing rather than being cut around.
+
+Production shut down in March 2020 for the COVID-19 pandemic with roughly a third of the schedule complete. James returned to Korea and briefly rejoined NCT 127 promotion for "Kick It." The unit resumed in Sydney in June 2020 under quarantine protocols, ran through to a wrap on **24/10/2020**, and lost Brad Allan's on-set involvement partway through the resumed schedule for scheduling reasons; Andy Cheng carried the remaining fight unit.
+
+### Post-production — November 2020 to July 2021
+
+Editing was handled by **Nat Sanders** and **Elísabet Ronaldsdóttir**, cutting from November 2020. James recorded ADR remotely from Seoul between NCT 127 commitments across the first half of 2021.
+
+Visual effects ran across four principal vendors — **Weta Digital** on the Great Protector and the Dweller-in-Darkness, **Digital Domain** on the Ten Rings energy work, **Luma Pictures** on Ta Lo environments, and **Scanline VFX** on water and the final battle. The score was composed by **Joel P West**, Cretton's regular collaborator on his earlier films, with the soundtrack album assembled separately by 88rising and including "Fire in the Sky," James's collaboration with Anderson .Paak.
+
+### Marketing
+
+- **19/04/2021** — teaser poster and teaser trailer, released together
+- **24/06/2021** — main trailer, cut around the bus fight
+- **16/08/2021** — world premiere, El Capitan Theatre, Hollywood
+- **17/08 – 30/08/2021** — global press tour: Los Angeles, London, Seoul and Bangkok junkets, US late-night and morning shows. A press-tour interview clip on 19/08 went viral and introduced James to Western audiences outside the K-pop context for the first time.
+- **03/09/2021** — theatrical release, 45-day exclusive window
+
+The campaign leaned on the martial arts and on Tony Leung rather than on the lead, a decision made when James was an unknown quantity as an actor to Western audiences. The strategy inverted after the film opened.
+
+### Why it became a trilogy
+
+The first film was not developed as the opening of a trilogy. Marvel's standard position on a new-property launch is a single film with a sequel option, and *Legend of the Ten Rings* was written to stand alone — the mid-credits scene points outward to the wider MCU rather than to a specific sequel.
+
+Three things changed that. The film's $432M gross was strong for a September release with no China play and a COVID-limited window, but the more persuasive number was the exit polling: audience scores were the highest for any Marvel property launch since *Black Panther*, and the ratio of repeat attendance in Southeast Asia was an outlier in Marvel's data. Second, James's own trajectory — the Academy Awards performance in March 2022, the *Everything Everywhere All at Once* supporting role, and the global profile that followed his 2023 independence and 2025 Grammy wins — turned the lead from an unknown into a name that could carry a franchise on its own. Third, China opened. By 2023 Marvel's read was that a sequel with a full Chinese theatrical release would clear a billion dollars, which *Legacy* did.
+
+Marvel greenlit films two and three together in 2023 as a single back-to-back production — a commitment the studio had not made to any property since *Infinity War* and *Endgame*.
+
+
 ### Marketing and release
 
 | Date | Event |
