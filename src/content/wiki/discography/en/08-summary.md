@@ -155,7 +155,10 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 **Disk 2 — Process & Emotion**
 | # | Song | Notes |
 |---|---|---|
-| 1–4 | NEW I–IV | Four new songs — a forward-looking statement for the next era |
+| 1 | I LOVE YOUR BODY (Title) | New song — R&B / dancehall / reggae |
+| 2 | ANYWHERE WITH YOU | New song — contemporary R&B / soul |
+| 3 | PROUD | New song — modern R&B / trapsoul |
+| 4 | BABY BLUE | New song — soul-inflected pop |
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note from the PULSE Sessions 2022 |
 | 6 | TALK TO ME | From PULSE |
 | 7 | YOU AIN'T GOTTA | From SOFTEST TOUCH |

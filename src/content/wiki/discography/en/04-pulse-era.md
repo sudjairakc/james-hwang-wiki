@@ -51,6 +51,23 @@ Critical response:
 * **User & chart reception:** Melon #7, Circle Digital Top 15 in its first week, with a 9.1/10 score on the Melon user review aggregator. HOW DOES IT FEEL? was featured on the Spotify Editorial Playlists "R&B Central" and "K-Pop Rising" simultaneously in its first week of release.
 
 
+### Release and promotion timeline
+
+| Date | Event |
+|---|---|
+| 22/06/2023 | Album and "PULSE 2023" tour announced together |
+| 07/07/2023 | Release date confirmed |
+| 10/07/2023 | Concept film "PULSE : SIGNAL" — first visual identity piece produced in-house at JH Company |
+| 12/07 – 16/07/2023 | Concept photo rollout |
+| 17/07/2023 | Track list revealed — two title tracks confirmed |
+| 19/07/2023 | Music video teaser for "HOW DOES IT FEEL?" |
+| 20/07/2023 | Press showcase in Seoul — his first as an independent artist |
+| 21/07/2023 | Album release + "HOW DOES IT FEEL?" music video |
+| 21/07 – 23/07/2023 | Selective music show promotion |
+| 28/07/2023 | "SAY (feat. keshi)" music video |
+| 04/08 · 11/08/2023 | Dance session videos for "ALL FOR YOU" and "TALK TO ME" |
+
+
 ### Marketing
 
 PULSE used a multi-track promotion strategy rather than the traditional single rollout model.

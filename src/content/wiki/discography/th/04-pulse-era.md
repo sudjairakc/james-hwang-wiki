@@ -51,6 +51,23 @@ PULSE ได้รับการตอบรับจากนักวิจ�
 * **User & chart reception:** Melon #7, Circle Digital Top 15 ในสัปดาห์แรก ได้รับคะแนน 9.1/10 จาก Melon user review aggregator HOW DOES IT FEEL? ถูก feature ใน Spotify Editorial Playlist “R&B Central” และ “K-Pop Rising” พร้อมกันในสัปดาห์แรกของการปล่อย
 
 
+### Release and promotion timeline
+
+| วันที่ | เหตุการณ์ |
+|---|---|
+| 22/06/2023 | ประกาศอัลบั้มพร้อมทัวร์ "PULSE 2023" |
+| 07/07/2023 | ยืนยันวันปล่อย |
+| 10/07/2023 | concept film "PULSE : SIGNAL" — งาน visual identity ชิ้นแรกที่ผลิตในบ้าน JH Company |
+| 12/07 – 16/07/2023 | ทยอยปล่อย concept photo |
+| 17/07/2023 | เปิด track list — ยืนยัน 2 ไตเติลแทร็ก |
+| 19/07/2023 | MV teaser ของ "HOW DOES IT FEEL?" |
+| 20/07/2023 | press showcase ที่โซล — ครั้งแรกในฐานะศิลปินอิสระ |
+| 21/07/2023 | ปล่อยอัลบั้ม + MV "HOW DOES IT FEEL?" |
+| 21/07 – 23/07/2023 | โปรโมต music show แบบเลือกรายการ |
+| 28/07/2023 | MV "SAY (feat. keshi)" |
+| 04/08 · 11/08/2023 | คลิป dance session ของ "ALL FOR YOU" และ "TALK TO ME" |
+
+
 ### Marketing
 
 PULSE ใช้ multi-track promotion strategy แทน traditional single rollout model

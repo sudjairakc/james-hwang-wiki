@@ -47,6 +47,21 @@ Selfish ถูกวางไว้ที่ track 9 อย่างจงใจ
 สองเพลงปิดท้าย Somewhere, Somehow และ Out Here ใช้ abstract lyric structure และ floating harmonic progression เพื่อสร้าง reflective closing arc ของอัลบั้ม
 
 
+### Release and promotion timeline
+
+| วันที่ | เหตุการณ์ |
+|---|---|
+| 29/10/2023 | ประกาศในคืนปิด PULSE 2023 leg 1 ที่ไทเป กำหนด 08/01/2024 |
+| 18/12/2023 | concept trailer |
+| 22/12 – 31/12/2023 | ทยอยปล่อย concept photo |
+| 01/01/2024 | concept release — ปล่อย "Sleepwalking" เป็นแทร็กเปิด |
+| 03/01/2024 | เปิด track list |
+| 05/01/2024 | MV teaser ของ "Tears On A Pretty Face" |
+| 07/01/2024 | งานแถลงข่าวที่โซล |
+| 08/01/2024 | ปล่อยอัลบั้ม + MV "Tears On A Pretty Face" |
+| 04/02/2024 | MV "Breathe" — visual ตัวที่สองของอัลบั้ม |
+
+
 ### Marketing
 
 แม้ ARE U STILL จะเป็น stylistic pivot album ที่สำคัญ แต่ rollout ของอัลบั้มมีลักษณะ under-promoted by design เนื่องจากศิลปินเข้าสู่ concert tour cycle ต่อเนื่องทันทีหลังการเปิดตัว <br />

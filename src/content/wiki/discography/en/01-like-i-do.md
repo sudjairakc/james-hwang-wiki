@@ -14,6 +14,15 @@ The lyrics explore themes of imperfect relationships, emotional closeness, and q
 Collaborations with NCT members Mark, Jaehyun, Ten, Taeyong, and Doyoung function more as tonal collaborations than performance-centered features.
 
 
+### Release and promotion timeline
+
+| Date | Event |
+|---|---|
+| 28/10/2016 | Project announced — a single still image on the NCT 127 channel, no concept film, no teaser schedule |
+| 11/11/2016 | Album release — no music video, no press conference, no music show stage |
+| 22/01/2022 | "LIKE I DO (feat. Mark Lee)" music video released, six years after the track |
+
+
 ### Marketing
 
 LIKE I DO was released as a digital mini album, with no promotion through music shows or broadcast stages and no physical release.

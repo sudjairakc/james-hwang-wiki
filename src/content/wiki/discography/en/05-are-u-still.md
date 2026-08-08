@@ -46,6 +46,21 @@ paired with a concept visual featuring a female-only multinational dance ensembl
 The two closing tracks, "Somewhere, Somehow" and "Out Here," use abstract lyric structures and floating harmonic progressions to build the album's reflective closing arc.
 
 
+### Release and promotion timeline
+
+| Date | Event |
+|---|---|
+| 29/10/2023 | Announced at the PULSE 2023 leg 1 finale in Taipei, dated for 08/01/2024 |
+| 18/12/2023 | Concept trailer |
+| 22/12 – 31/12/2023 | Concept photo rollout |
+| 01/01/2024 | Concept release — "Sleepwalking" put out as an intro track |
+| 03/01/2024 | Track list revealed |
+| 05/01/2024 | Music video teaser for "Tears On A Pretty Face" |
+| 07/01/2024 | Press conference in Seoul |
+| 08/01/2024 | Album release + "Tears On A Pretty Face" music video |
+| 04/02/2024 | "Breathe" music video — the album's second visual |
+
+
 ### Marketing
 
 Although ARE U STILL was a significant stylistic pivot album, its rollout was under-promoted by design, as the artist moved directly into a continuous concert tour cycle immediately after release. <br />

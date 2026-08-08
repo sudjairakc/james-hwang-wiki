@@ -11,7 +11,7 @@ export const slugMeta: Record<string, { file: string; cover: string; title: stri
   'pulse-era':     { file: '04-pulse-era',      cover: 'pulse.png',         title: 'PULSE',            year: '2023', date: 'Jul 21, 2023', color: '#5a7c6a' },
   'are-u-still':   { file: '05-are-u-still',    cover: 'are_you_still.png', title: 'ARE U STILL',      year: '2024', date: 'Jan 8, 2024',  color: '#5a7aaa' },
   'sour-honey':    { file: '06-sour-honey',     cover: 'sour_honey.png',    title: "CAN\'T LEAVE ALONE", year: '2025', date: 'Feb 10, 2025', color: '#c06080' },
-  'decade':        { file: '07-decade',         cover: 'decade.png',        title: 'DECADE',           year: '2026', date: 'Sep 9, 2026',  color: '#6e5a7c' },
+  'decade':        { file: '07-decade',         cover: 'decade.png',        title: 'DECADE',           year: '2026', date: 'Jul 7, 2026',  color: '#6e5a7c' },
 };
 
 export const slugs = Object.keys(slugMeta);

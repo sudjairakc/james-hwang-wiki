@@ -21,6 +21,22 @@ However, this body of work shows growth in production scale and rhythmic confide
 The songs “YOU AIN’T GOTTA” and “CRUSH” were included on the album to connect the narrative from his earlier SM Station activities.
 
 
+### Release and promotion timeline
+
+| Date | Event |
+|---|---|
+| 20/12/2021 | Album announced for 11/01/2022 — his first release with a full promotional cycle |
+| 27/12/2021 | Concept trailer |
+| 30/12/2021 – 07/01/2022 | Concept photo rollout across three versions |
+| 05/01/2022 | Track list revealed |
+| 08/01/2022 | Music video teaser for "SOFTEST TOUCH" |
+| 10/01/2022 | Press showcase in Seoul — his first solo press conference |
+| 11/01/2022 | Album release + "SOFTEST TOUCH" music video |
+| 13/01 – 24/01/2022 | Music show promotion — No. 1 on M Countdown, Music Bank, Show! Music Core, Inkigayo |
+| 22/01/2022 | "LIKE I DO (feat. Mark Lee)" music video |
+| 25/01/2022 | "NO RESERVATIONS" live version — promotion cycle closer |
+
+
 ### Marketing
 
 SOFTEST TOUCH is James Hwang’s official solo debut, released as both a physical and digital release under SM Entertainment. <br />

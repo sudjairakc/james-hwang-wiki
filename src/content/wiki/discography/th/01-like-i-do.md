@@ -14,6 +14,15 @@ James มีบทบาทเป็น topliner และผู้ร่วม�
 การร่วมงานกับสมาชิก NCT ได้แก่ Mark, Jaehyun, Ten, Taeyong และ Doyoung มีลักษณะเป็น tonal collaboration มากกว่าการ featuring แบบ performance-centered
 
 
+### Release and promotion timeline
+
+| วันที่ | เหตุการณ์ |
+|---|---|
+| 28/10/2016 | ประกาศโปรเจกต์ — ภาพนิ่งภาพเดียวบนช่อง NCT 127 ไม่มี concept film ไม่มีตาราง teaser |
+| 11/11/2016 | ปล่อยอัลบั้ม — ไม่มี MV ไม่มีงานแถลงข่าว ไม่มีเวที music show |
+| 22/01/2022 | ปล่อย MV "LIKE I DO (feat. Mark Lee)" หลังเพลงออกมาแล้วหกปี |
+
+
 ### Marketing
 
 LIKE I DO เผยแพร่ในรูปแบบ digital mini album โดยไม่มีการโปรโมตผ่านรายการเพลงหรือ broadcast stage และไม่มีการจัดจำหน่ายแบบ physical release

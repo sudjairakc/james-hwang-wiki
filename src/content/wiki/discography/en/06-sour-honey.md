@@ -41,6 +41,19 @@ Closing track LOVE THIS PAIN AWAY returns to a melancholic Neptunes-style arrang
 Bonus track TAKE YOU TONIGHT is an experimental contemporary R&B track with retro-futuristic influence, and has been noted in the listener community as diverging from the album's thematic direction — though the artist later stated it was more of an exploratory songwriting experiment than a long-term direction for future work.
 
 
+### Release and promotion timeline
+
+| Date | Event |
+|---|---|
+| 13/01/2025 | Announced for 10/02/2025 through JH Company channels only — no Korean media package |
+| 20/01/2025 | Concept film |
+| 27/01 – 03/02/2025 | Concept visual rollout, distributed mainly through US and global platforms |
+| 03/02/2025 | Pre-release single "CAN'T LEAVE ALONE (feat. Pharrell Williams)" + music video |
+| 06/02/2025 | Track list revealed |
+| 10/02/2025 | Album release + "SOUR" music video |
+| 12/02/2025 | New York listening event — no press conference and no Korean music show stages were held |
+
+
 ### Marketing
 
 Although CAN'T LEAVE ALONE followed on the success of ARE U STILL, its promotion was limited,  <br />

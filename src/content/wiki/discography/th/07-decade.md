@@ -1,10 +1,10 @@
-## DECADE - 1st Anthology Album (09/09/2026)
+## DECADE - 1st Anthology Album (07/07/2026)
 
 1st Anthology Album by GONUNMA (James Hwang)
 
 ### Recording and production
 
-DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 9 กันยายน 2026 ภายใต้ J.H Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea เพื่อฉลองครบรอบ 10 ปีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 ในปี 2016 <br />
+DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 7 กรกฎาคม 2026 ภายใต้ J.H Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea — ตรงวันครบรอบ 10 ปีพอดีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 เมื่อ 7 กรกฎาคม 2016 <br />
 อัลบั้มทำหน้าที่เป็นทั้ง retrospective collection และ curated artistic timeline โดยรวบรวมผลงานจากทุกช่วงสำคัญของ discography ตั้งแต่ LIKE I DO (2016) จนถึง CAN'T LEAVE ALONE (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็น transition bridge ไปยัง creative phase ถัดไป <br />
 นอกจากเพลงใหม่ อัลบั้มยังรวม
 * solo reinterpretation versions
@@ -49,6 +49,21 @@ sonic documentary layer ของ anthology
 และสะท้อนพัฒนาการของ James จาก idol-system songwriter ไปสู่ artist-producer ที่มี creative autonomy เต็มรูปแบบ
 
 
+### Release and promotion timeline
+
+| วันที่ | เหตุการณ์ |
+|---|---|
+| 04/05/2026 | ประกาศ anthology กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 29 แทร็ก |
+| 25/05/2026 | เปิด track list ของ Disk 1 |
+| 01/06/2026 | เปิด track list ของ Disk 2 — ยืนยันเพลงใหม่ 4 เพลง |
+| 15/06/2026 | คลิป teaser "ARCHIVE" — มอนทาจ 90 วินาทีจาก studio voice memo ที่ใช้เป็น interlude |
+| 29/06/2026 | MV teaser ของ "I LOVE YOUR BODY" |
+| 06/07/2026 | งานแถลงข่าวที่โซล — งานแถลงข่าวเกาหลีครั้งแรกนับตั้งแต่ปี 2024 |
+| 07/07/2026 | ปล่อยอัลบั้ม + MV "I LOVE YOUR BODY" — ตรงวันครบรอบ 10 ปีเดบิวต์พอดี |
+| 09/07/2026 | แสดงสดในเกาหลี — การออกอากาศครั้งเดียวของ anthology |
+| — | ไม่มีการโปรโมตในไทย ไม่มีสัมภาษณ์และไม่มีการออกอากาศในประเทศ ตามความต้องการของศิลปิน |
+
+
 ### Marketing
 
 DECADE เป็น anthology release แรกของ James ที่กลับมาใช้ physical collector format (2CD) อย่างเต็มรูปแบบนับตั้งแต่ช่วงก่อน PULSE (2023) <br />
@@ -68,7 +83,7 @@ physical edition ถูกออกแบบในฐานะ archival object �
 การตอบรับจากนักวิจารณ์:
 * **Pitchfork** (คะแนน 8.0) เขียนว่า "DECADE ไม่ใช่แค่ greatest hits — มันคือ self-portrait ที่ศิลปินเลือกทุก brushstroke เอง archival spoken material layers ทำให้ anthology นี้ฟังดูเหมือน memoir มากกว่า music collection"
 * **The Guardian** ให้ 4/5 และระบุว่า "James Hwang ใช้โอกาสครบรอบ 10 ปีสร้างสิ่งที่ดีที่สุดในประเภทนี้นับตั้งแต่ Beyoncé's 4Ever — sequencing ที่สะท้อน emotional intelligence จริง ๆ"
-* **Billboard Korea** บรรยายว่า "เพลงใหม่ทั้ง 4 เพลง โดยเฉพาะ NEW ทำหน้าที่เป็น declaration of intent ไปสู่ chapter ถัดไป แทนที่จะเป็นแค่ album filler"
+* **Billboard Korea** บรรยายว่า "เพลงใหม่ทั้ง 4 เพลง โดยเฉพาะ I LOVE YOUR BODY ทำหน้าที่เป็น declaration of intent ไปสู่ chapter ถัดไป แทนที่จะเป็นแค่ album filler"
 * **IZM (Korea)** ให้ 4.5/5 และชี้ว่า "live rearranged versions ของ RIGHT ABOUT LOVE และ NO RESERVATIONS คือ highlights ที่พิสูจน์ว่างานในสตูดิโอของเขาดีกว่าต้นฉบับในหลายมิติ"
 * **Complex Korea** เรียก DECADE ว่า "the definitive argument for GONUNMA's place in the global R&B conversation — not just in Asia"
 
@@ -141,10 +156,10 @@ SOUR
 Breathe
 
 Disk 2 — Process & Emotion
-NEW I (Title)
-NEW II
-NEW III
-NEW IV
+I LOVE YOUR BODY (Title)
+ANYWHERE WITH YOU
+PROUD
+BABY BLUE
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note จาก independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA

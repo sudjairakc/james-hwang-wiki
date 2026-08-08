@@ -41,6 +41,19 @@ I WANT YOU BACK (Interlude) เป็น interlude track แรกใน discogr
 โบนัสแทร็ก TAKE YOU TONIGHT เป็น experimental contemporary R&B track ที่มี retro-futuristic influence และถูกกล่าวถึงใน community listener ว่าแตกต่างจาก thematic direction ของอัลบั้ม แม้ศิลปินจะระบุภายหลังว่าเป็น exploratory songwriting experiment มากกว่าทิศทางระยะยาวของงานในอนาคต
 
 
+### Release and promotion timeline
+
+| วันที่ | เหตุการณ์ |
+|---|---|
+| 13/01/2025 | ประกาศกำหนด 10/02/2025 ผ่านช่องทาง JH Company เท่านั้น — ไม่มีชุดข่าวให้สื่อเกาหลี |
+| 20/01/2025 | concept film |
+| 27/01 – 03/02/2025 | ทยอยปล่อย concept visual กระจายผ่านแพลตฟอร์มสหรัฐและ global เป็นหลัก |
+| 03/02/2025 | ซิงเกิลพรีรีลีส "CAN'T LEAVE ALONE (feat. Pharrell Williams)" + MV |
+| 06/02/2025 | เปิด track list |
+| 10/02/2025 | ปล่อยอัลบั้ม + MV "SOUR" |
+| 12/02/2025 | งาน listening event ที่นิวยอร์ก — ไม่มีงานแถลงข่าวและไม่มีเวที music show เกาหลี |
+
+
 ### Marketing
 
 แม้ CAN'T LEAVE ALONE จะเป็น release ต่อเนื่องหลังความสำเร็จของ ARE U STILL แต่การโปรโมตอัลบั้มมีลักษณะ limited promotion period  <br />

@@ -155,7 +155,10 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 **Disk 2 — Process & Emotion**
 | # | เพลง | หมายเหตุ |
 |---|---|---|
-| 1–4 | NEW I–IV | เพลงใหม่ 4 เพลง — forward-looking statement สำหรับ era ถัดไป |
+| 1 | I LOVE YOUR BODY (Title) | เพลงใหม่ — R&B / dancehall / reggae |
+| 2 | ANYWHERE WITH YOU | เพลงใหม่ — contemporary R&B / soul |
+| 3 | PROUD | เพลงใหม่ — modern R&B / trapsoul |
+| 4 | BABY BLUE | เพลงใหม่ — soul-inflected pop |
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note จาก PULSE Sessions 2022 |
 | 6 | TALK TO ME | จาก PULSE |
 | 7 | YOU AIN'T GOTTA | จาก SOFTEST TOUCH |
