@@ -63,7 +63,8 @@ const en = {
     { year: '2022', label: 'Solo', note: '"SOFTEST TOUCH" — official solo identity launch' },
     { year: '2023', label: 'Independent', note: 'SM departure · JH Company founded · PULSE World Tour' },
     { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
-    { year: '2026', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE anthology' },
+    { year: '2026', label: 'DECADE', note: 'DECADE anthology · Shang-Chi trilogy finale' },
+    { year: '2027', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE Tour' },
   ],
   groups: [
     { group: 'Artist', items: [
@@ -146,7 +147,8 @@ const th: typeof en = {
     { year: '2022', label: 'เดี่ยว', note: '"SOFTEST TOUCH" — เปิดตัวตัวตนเดี่ยวอย่างเป็นทางการ' },
     { year: '2023', label: 'อิสระ', note: 'ออกจาก SM · ก่อตั้ง JH Company · ทัวร์ PULSE World Tour' },
     { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
-    { year: '2026', label: 'RESONANCE', note: 'ซีรีส์ Disney+ Captain EO: RESONANCE · อัลบั้มรวม DECADE' },
+    { year: '2026', label: 'DECADE', note: 'อัลบั้มรวม DECADE · ภาคจบไตรภาค Shang-Chi' },
+    { year: '2027', label: 'RESONANCE', note: 'ซีรีส์ Disney+ Captain EO: RESONANCE · DECADE Tour' },
   ],
   groups: [
     { group: 'ศิลปิน', items: [

@@ -170,7 +170,7 @@ const en = {
       platform: 'Instagram',
       handle: '@gonunma',
       followers: '28.4M',
-      notable: 'DECADE announcement (Sep 2026) — 4.2M likes in 24h · Ashley Liao relationship post totaled 6.1M likes combined',
+      notable: 'DECADE announcement (Jun 2026) — 4.2M likes in 24h · Ashley Liao relationship post totaled 6.1M likes combined',
     },
     {
       platform: 'X (Twitter)',
@@ -399,7 +399,7 @@ const th: typeof en = {
       platform: 'Instagram',
       handle: '@gonunma',
       followers: '28.4M',
-      notable: 'DECADE announcement (Sep 2026) — 4.2M likes ใน 24h · Ashley Liao relationship post รวม 6.1M likes combined',
+      notable: 'DECADE announcement (Jun 2026) — 4.2M likes ใน 24h · Ashley Liao relationship post รวม 6.1M likes combined',
     },
     {
       platform: 'X (Twitter)',

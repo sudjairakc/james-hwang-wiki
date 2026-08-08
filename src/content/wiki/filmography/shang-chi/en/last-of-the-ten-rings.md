@@ -314,3 +314,16 @@ The result is an unusual trilogy arc: a capped debut at $432M (2021, no China), 
 * Destin Daniel Cretton entered the small group of directors with three consecutive billion-dollar releases — Legacy (2025), Brand New Day (2026), and Last of the Ten Rings (2026), the latter two opening seven weeks apart
 * James Hwang's performance featured in multiple outlets' year-end "best of the MCU" conversations
 * The trilogy as a whole was retrospectively cited as one of the most cohesive arcs of MCU Phases 4–6
+
+
+### Marketing and release
+
+| Date | Event |
+|---|---|
+| 30/08/2025 | Release date locked; Marvel disclosed the finale had already wrapped in March 2025 |
+| 07/04/2026 | Teaser trailer — first footage from the finale |
+| 14/07/2026 | Main trailer |
+| 14/08 – 16/08/2026 | D23 Expo 2026 — final footage reel and full cast panel |
+| 10/09/2026 | World premiere, Los Angeles |
+| 14/09 – 17/09/2026 | Asian press tour — Tokyo, Hong Kong, Seoul; closed in Seoul the same week the film opened |
+| 18/09/2026 | Theatrical release. James traded the entire US opening-weekend TV circuit to play NEO CITY : THE REDLINE's Seoul opening night the same day. |

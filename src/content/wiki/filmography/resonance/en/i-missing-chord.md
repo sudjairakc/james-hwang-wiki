@@ -1,8 +1,8 @@
-# RESONANCE: THE MISSING CHORD (2028)
+# RESONANCE: THE MISSING CHORD (2029)
 
 | | |
 |---|---|
-| **Release** | November 2, 2028 (Theatrical · Global · Film I of III) |
+| **Release** | November 2, 2029 (Theatrical · Global · Film I of III) |
 | **Director** | James Hwang (Co-Director) |
 | **Composer** | Ludwig Göransson |
 | **Distributor** | Walt Disney Pictures |
@@ -10,10 +10,10 @@
 
 | Phase | Period |
 |---|---|
-| Development | February – May 2027 |
-| Pre-production | October – December 2027 |
-| Principal photography | January – June 2028 |
-| Post-production | July – October 2028 |
+| Development | February – May 2028 |
+| Pre-production | October – December 2028 |
+| Principal photography | January – June 2029 |
+| Post-production | July – October 2029 |
 
 ---
 
@@ -167,7 +167,7 @@ It's a song that began in a junkyard... and now it rings out to the very edge of
 
 ### Anticipated Reception
 
-**RESONANCE I: The Missing Chord** (November 2028) is in development as of April 2026. The following reflects pre-production buzz and critical framework.
+**RESONANCE I: The Missing Chord** (November 2029) is in development as of April 2027. The following reflects pre-production buzz and critical framework.
 
 **Creative team profile:**
 The combination of James Hwang (creator, co-director, composer, lead actor), Kogonada (co-director), and Ludwig Göransson (score) represents an unusually credentialed above-the-line team for an original IP science fiction film. Kogonada's features — *Columbus* (2017) and *After Yang* (2022) — averaged 95% and 97% Rotten Tomatoes respectively. Göransson's score work includes *Oppenheimer* and the Black Panther franchise. ILM is attached for visual effects.

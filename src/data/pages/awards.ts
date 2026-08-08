@@ -147,7 +147,7 @@ const en = {
       ],
     },
     {
-      year: '2027',
+      year: '2028',
       album: 'Captain EO: RESONANCE',
       albumSub: 'Disney+ Series · Acting',
       wins: [
@@ -162,7 +162,7 @@ const en = {
       ],
     },
     {
-      year: '2028',
+      year: '2030',
       album: 'RESONANCE: THE MISSING CHORD',
       albumSub: 'Film I · RESONANCE Saga · Acting',
       wins: [
@@ -321,7 +321,7 @@ const th: typeof en = {
       ],
     },
     {
-      year: '2027',
+      year: '2028',
       album: 'Captain EO: RESONANCE',
       albumSub: 'ซีรีส์ Disney+ · การแสดง',
       wins: [
@@ -336,7 +336,7 @@ const th: typeof en = {
       ],
     },
     {
-      year: '2028',
+      year: '2030',
       album: 'RESONANCE: THE MISSING CHORD',
       albumSub: 'Film I · RESONANCE Saga · การแสดง',
       wins: [

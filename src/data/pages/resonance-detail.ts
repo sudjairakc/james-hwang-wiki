@@ -9,7 +9,7 @@ export const slugMeta: Record<string, {
   credits: { label: string; val: string }[];
 }> = {
   'series-captain-eo-resonance': {
-    title: 'Captain EO: RESONANCE', year: '2026', date: 'Dec 4, 2026', color: '#3a5a7c',
+    title: 'Captain EO: RESONANCE', year: '2027', date: 'Dec 4, 2027', color: '#3a5a7c',
     credits: [
       { label: 'Created by', val: 'James Hwang' },
       { label: 'Showrunner', val: 'Tony Gilroy' },
@@ -22,7 +22,7 @@ export const slugMeta: Record<string, {
     ],
   },
   'i-missing-chord': {
-    title: 'RESONANCE: The Missing Chord', year: '2028', date: 'Nov 2, 2028', color: '#3a5a7c',
+    title: 'RESONANCE: The Missing Chord', year: '2029', date: 'Nov 2, 2029', color: '#3a5a7c',
     credits: [
       { label: 'Created by', val: 'James Hwang' },
       { label: 'Director', val: 'James Hwang (Co-Director)' },
@@ -31,7 +31,7 @@ export const slugMeta: Record<string, {
     ],
   },
   'ii-silent-orchestra': {
-    title: 'RESONANCE II: The Silent Orchestra', year: '2030', date: 'December 2030 TBA', color: '#3a5a7c',
+    title: 'RESONANCE II: The Silent Orchestra', year: '2031', date: 'December 2031 TBA', color: '#3a5a7c',
     credits: [
       { label: 'Created by', val: 'James Hwang' },
       { label: 'Director', val: 'James Hwang (Co-Director)' },
@@ -40,7 +40,7 @@ export const slugMeta: Record<string, {
     ],
   },
   'iii-resonance': {
-    title: 'RESONANCE III', year: '2031', date: 'December 2031 TBA', color: '#3a5a7c',
+    title: 'RESONANCE III', year: '2032', date: 'December 2032 TBA', color: '#3a5a7c',
     credits: [
       { label: 'Created by', val: 'James Hwang' },
       { label: 'Director', val: 'James Hwang (Co-Director)' },

@@ -5,10 +5,10 @@ export const color = '#3a5a7c';
 
 // Shared — entry identity/data (proper nouns / dates / flags).
 export const entries = [
-  { slug: 'series-captain-eo-resonance', label: 'Series', badgeText: 'S', title: 'Captain EO: RESONANCE', year: '2026', date: 'Dec 4, 2026', status: 'upcoming', episodes: 6, platform: 'Disney+' },
-  { slug: 'i-missing-chord', label: 'Film I', badgeText: 'I', title: 'RESONANCE: The Missing Chord', year: '2028', date: 'Nov 2, 2028', status: 'upcoming', episodes: null, platform: 'Theatrical' },
-  { slug: 'ii-silent-orchestra', label: 'Film II', badgeText: 'II', title: 'RESONANCE II: The Silent Orchestra', year: '2030', date: 'December 2030 TBA', status: 'upcoming', episodes: null, platform: 'Theatrical' },
-  { slug: 'iii-resonance', label: 'Film III', badgeText: 'III', title: 'RESONANCE III', year: '2031', date: 'December 2031 TBA', status: 'upcoming', episodes: null, platform: 'Theatrical' },
+  { slug: 'series-captain-eo-resonance', label: 'Series', badgeText: 'S', title: 'Captain EO: RESONANCE', year: '2027', date: 'Dec 4, 2027', status: 'upcoming', episodes: 6, platform: 'Disney+' },
+  { slug: 'i-missing-chord', label: 'Film I', badgeText: 'I', title: 'RESONANCE: The Missing Chord', year: '2029', date: 'Nov 2, 2029', status: 'upcoming', episodes: null, platform: 'Theatrical' },
+  { slug: 'ii-silent-orchestra', label: 'Film II', badgeText: 'II', title: 'RESONANCE II: The Silent Orchestra', year: '2031', date: 'December 2031 TBA', status: 'upcoming', episodes: null, platform: 'Theatrical' },
+  { slug: 'iii-resonance', label: 'Film III', badgeText: 'III', title: 'RESONANCE III', year: '2032', date: 'December 2032 TBA', status: 'upcoming', episodes: null, platform: 'Theatrical' },
   { slug: 'canon', label: 'Canon', badgeText: '★', title: 'World Canon & Characters', year: '', date: null, status: 'reference', episodes: null, platform: null },
 ];
 
@@ -17,7 +17,7 @@ const en = {
     back: '← Back to Filmography',
     eyebrow: 'Disney Partnership · Original Universe',
     title: 'Captain EO: RESONANCE',
-    subtitle: '3-film saga + Disney+ series · 2026–2031 · Created by James Hwang',
+    subtitle: '3-film saga + Disney+ series · 2027–2032 · Created by James Hwang',
     statFilms: 'Films', statSeries: 'Disney+ Series', statTimeline: 'Timeline', statDistributor: 'Distributor',
     colRelease: 'Release', colPlatform: 'Platform', colFormat: 'Format', colYear: 'Year',
     reference: 'Reference', upcoming: 'Upcoming',
@@ -47,7 +47,7 @@ const en = {
     { item: 'IP Ownership', val: 'The Walt Disney Company · Lucasfilm · MJ Estate · JH Company' },
     { item: 'Rights Structure', val: 'Disney (majority + distribution) · Lucasfilm (original Captain EO legacy) · MJ Estate (music + likeness) · JH Company (creative ownership + new universe)' },
     { item: 'Why the deal closed', val: 'Each party had a reason to say yes. MJ Estate: trusted James — a documented MJ-lineage artist (vocal / dance / production DNA) — to honor rather than exploit the legacy, on favorable royalty + strict likeness-guardrail terms that respectfully reactivate a dormant property. Lucasfilm: with its core franchise fatigued, gained a low-risk new tentpole it did not have to originate. Disney: already backing James after Shang-Chi, kept majority + distribution while he shouldered the creative risk. JH Company funded development and took a minority creative-ownership stake in return.' },
-    { item: 'Theme Park Attraction', val: 'A Captain EO: RESONANCE dark-ride attraction, announced for Disney parks in 2027 and slated to open in 2028 — the first time the franchise crosses from screen into a physical Disney park experience, mirroring the original Captain EO (1986) attraction\'s place in park history.' },
+    { item: 'Theme Park Attraction', val: 'A Captain EO: RESONANCE dark-ride attraction, announced for Disney parks in 2028 and slated to open in 2029 — the first time the franchise crosses from screen into a physical Disney park experience, mirroring the original Captain EO (1986) attraction\'s place in park history.' },
   ],
   related: [
     { label: 'Shang-Chi Trilogy', slug: 'filmography/shang-chi' },
@@ -63,7 +63,7 @@ const th: typeof en = {
     back: '← กลับไปผลงานภาพยนตร์',
     eyebrow: 'พาร์ทเนอร์ Disney · จักรวาลออริจินอล',
     title: 'Captain EO: RESONANCE',
-    subtitle: 'saga 3 ภาค + ซีรีส์ Disney+ · 2026–2031 · สร้างโดย James Hwang',
+    subtitle: 'saga 3 ภาค + ซีรีส์ Disney+ · 2027–2032 · สร้างโดย James Hwang',
     statFilms: 'ภาพยนตร์', statSeries: 'ซีรีส์ Disney+', statTimeline: 'ช่วงเวลา', statDistributor: 'ผู้จัดจำหน่าย',
     colRelease: 'เข้าฉาย', colPlatform: 'แพลตฟอร์ม', colFormat: 'รูปแบบ', colYear: 'ปี',
     reference: 'อ้างอิง', upcoming: 'เร็วๆ นี้',
@@ -93,7 +93,7 @@ const th: typeof en = {
     { item: 'เจ้าของ IP', val: 'The Walt Disney Company · Lucasfilm · MJ Estate · JH Company' },
     { item: 'โครงสร้างสิทธิ์', val: 'Disney (ส่วนใหญ่ + จัดจำหน่าย) · Lucasfilm (มรดก Captain EO เดิม) · MJ Estate (เพลง + likeness) · JH Company (creative ownership + จักรวาลใหม่)' },
     { item: 'ทำไมดีลถึงปิดได้', val: 'ทุกฝ่ายมีเหตุผลตอบตกลง MJ Estate: เชื่อใจ James — ศิลปินสาย MJ-lineage ชัดเจน (DNA เสียง/เต้น/production) — ว่าจะให้เกียรติมรดกไม่ใช่หากิน บนเงื่อนไข royalty ที่ดี + guardrail เรื่อง likeness ที่เข้มงวด revive IP ที่หลับอยู่อย่างเคารพ · Lucasfilm: แฟรนไชส์หลักกำลังล้า ได้ tentpole ใหม่ความเสี่ยงต่ำที่ไม่ต้องริเริ่มเอง · Disney: หนุน James อยู่แล้วหลัง Shang-Chi เก็บ majority + distribution ไว้ ขณะที่ James แบก creative risk · JH Company ลงทุนพัฒนาและได้ creative-ownership stake ส่วนน้อยเป็นการแลกเปลี่ยน' },
-    { item: 'Theme Park Attraction', val: 'dark-ride attraction ของ Captain EO: RESONANCE ประกาศสำหรับ Disney park ในปี 2027 กำหนดเปิดปี 2028 — ครั้งแรกที่แฟรนไชส์นี้ข้ามจากจอไปสู่ physical experience ใน Disney park จริง สะท้อนตำแหน่งของ attraction Captain EO ต้นฉบับ (1986) ในประวัติศาสตร์ park' },
+    { item: 'Theme Park Attraction', val: 'dark-ride attraction ของ Captain EO: RESONANCE ประกาศสำหรับ Disney park ในปี 2028 กำหนดเปิดปี 2029 — ครั้งแรกที่แฟรนไชส์นี้ข้ามจากจอไปสู่ physical experience ใน Disney park จริง สะท้อนตำแหน่งของ attraction Captain EO ต้นฉบับ (1986) ในประวัติศาสตร์ park' },
   ],
   related: [
     { label: 'ไตรภาค Shang-Chi', slug: 'filmography/shang-chi' },

@@ -12,7 +12,7 @@
 | Phase | Duration |
 |---|---|
 | Pre-production | October 2023 – June 2024 |
-| Filming | June 2024 – November 2024 |
+| Filming | July 2024 – November 2024 |
 | Post-production | December 2024 – June 2025 |
 
 **Based on the comics:**
@@ -127,7 +127,7 @@ Cut to the edge of Ta Lo's forest. Shang-Chi walks toward the bamboo curtain emp
 | Phase | Timeframe |
 |---|---|
 | Pre-production | Oct 2023 – Jun 2024 |
-| Filming | Jun 2024 – Nov 2024 |
+| Filming | Jul 2024 – Nov 2024 |
 | Post-production | Dec 2024 – Jun 2025 |
 | Theatrical release | July 25, 2025 |
 
@@ -154,3 +154,17 @@ Filming began right after the PULSE World Tour wrapped (May 2024). Legacy was ne
 **Box Office:** $1.02 billion worldwide — the highest in the Shang-Chi trilogy, the first Shang-Chi film to cross $1B, and among the top-grossing films of MCU Phase 5. The jump from the first film was driven by two factors absent in 2021: a full theatrical release in China — where a Chinese-heritage lead (James Hwang) and cast (Tony Leung, Fala Chen) played strongly — and James's post-Grammy global superstardom. Strong openings in China, the US, South Korea, Thailand, and the UK. CinemaScore **A**; exit-poll audience scores were the highest of the trilogy — the very metric that had already greenlit the finale months earlier.
 
 **Awards Consideration:** James Hwang received nominations from the Critics Circle and several precursor awards for Best Actor — the first time an MCU performance has sustained ongoing awards-season conversation since the Phase 1 era.
+
+
+### Marketing and release
+
+| Date | Event |
+|---|---|
+| 2023 | Greenlit together with the trilogy finale as a back-to-back block |
+| 27/07/2024 | Title revealed at San Diego Comic-Con; James appeared by video link from the Sydney set |
+| 09/08 – 11/08/2024 | First footage screened at D23 Expo, Anaheim |
+| 08/04/2025 | Teaser trailer |
+| 10/06/2025 | Main trailer |
+| 21/07/2025 | World premiere, Los Angeles |
+| 22/07 – 24/07/2025 | Global press tour — Los Angeles, London, Seoul, Beijing, plus US late-night. No Thailand stop. |
+| 25/07/2025 | Theatrical release — $1.02B worldwide |

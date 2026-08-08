@@ -1,5 +1,23 @@
 # PRE DEBUT ERA (1998–2012)
 
+
+## 1998–2012 (อายุ 0–14 ปี)
+
+### 06/1998
+22/06/1998: เกิดที่กรุงเทพฯ ประเทศไทย พ่อเป็นนักธุรกิจไทย-จีน แม่เป็นนักเขียนและกวีชาวเกาหลี ครอบครัวย้ายไปมาระหว่างกรุงเทพฯ กับโซลตามตารางงานตีพิมพ์ของแม่ เขาจึงโตมาแบบสองภาษาตั้งแต่เกิด — พูดไทยที่บ้าน เรียนรู้เกาหลีผ่านญาติฝั่งแม่และช่วงที่ไปเรียนที่โซล
+
+
+### 2006–2008
+ราวอายุ 8 ขวบ: หัดเปียโนด้วยหูตัวเองจากคอลเลกชันแผ่นเสียงของพ่อแม่ — American soul และ R&B, เพลงป๊อปเกาหลี และเพลงป๊อปยุค 80s
+
+2007: เริ่มฝึกร้องอย่างจริงจังที่กรุงเทพฯ ตอนอายุ 9 ขวบ หลังครูดนตรีที่โรงเรียนสังเกตเห็นว่าเขาจับ pitch ได้แม่น พ่อแม่สนับสนุนโดยมีเงื่อนไขว่าผลการเรียนต้องไม่ตก
+
+
+### 2008–2012
+ราวอายุ 10 ขวบ: เริ่มร่างทำนองเพลงของตัวเอง เป็นวัตถุดิบยุคแรกสุดที่ถูกอ้างถึงใน archival layer ของ DECADE ในภายหลัง
+
+2012: จบชั้นประถมที่กรุงเทพฯ และเริ่มเตรียมตัวสำหรับออดิชัน SM Entertainment ที่จัดขึ้นในไทยในปีถัดมา
+
 # SM ROOKIES ERA (2013–2015)
 
 
@@ -59,6 +77,8 @@
 
 
 ### 11/2016
+28/10/2016: SM ประกาศโปรเจกต์ "GONUNMA: LIKE I DO" แบบเงียบ ๆ ด้วยภาพนิ่งภาพเดียวบนช่อง NCT 127 — ไม่มี concept film ไม่มีตาราง teaser ไม่มีงานแถลงข่าว และไม่มีการทำ MV ให้เพลงไหนเลยในตอนนั้น MV ของ "LIKE I DO (feat. Mark Lee)" เพิ่งถ่ายและปล่อยหลายปีให้หลังเมื่อ 22/01/2022 ในรอบโปรโมตงานเดี่ยวของเขา
+
 11/11/2016: ปล่อยมินิอัลบั้มโปรเจกต์ "GONUNMA: LIKE I DO" แบบไม่โปรโมท ไม่มี music show และเน้น collaboration กับสมาชิกในวง เช่น Lee Tae-yong เพื่อรักษา balance ของทีม โดยแฟนเริ่มแบ่งเป็นสองฝั่งคือ "สนับสนุนศักยภาพเดี่ยว" กับ "กังวลเรื่อง spotlight ในวง"
 
 
@@ -89,6 +109,10 @@
 ## 2018 (อายุ 19–20 ปี)
 
 ### 03/2018
+09/04/2018: SM ประกาศ "YOU AIN'T GOTTA" เป็นซิงเกิล SM STATION Season 2 — มีแค่ teaser ภาพเดียว ไม่มี concept film ไม่มี MV
+
+13/04/2018: ปล่อย "YOU AIN'T GOTTA" ซิงเกิลแรก [STATION 2] ไม่มีงานแถลงข่าวและไม่มีเวที music show วางเพลงนี้เป็น songwriting showcase มากกว่าการปล่อยเพื่อโปรโมต
+
 13/03/2018: ปล่อย "Touch" (NCT 2018) ซึ่งเป็นคอนเซปต์เบาลงและเปิดตลาด broader audience
 
 
@@ -136,6 +160,16 @@
 
 
 ### 07/2019
+22/07/2019: SM ประกาศ "CRUSH" เป็นซิงเกิล SM STATION Season 3 สองวันหลังประกาศแคสต์ที่ Comic-Con
+
+25/07/2019: ปล่อย performance-video teaser แทนการทำ MV เต็ม
+
+27/07/2019: ปล่อย "CRUSH" ซิงเกิลที่ 2 [STATION 3] — งาน SM STATION ชิ้นสุดท้ายก่อนตาราง Shang-Chi จะเข้ามาแทนที่
+
+24/08/2019: ขึ้นงาน D23 Expo ที่ Anaheim ในฐานะนักแสดง Shang-Chi — การขึ้นเวที Disney ครั้งแรกและ press line ฝั่งตะวันตกครั้งแรกนอกวงจร K-pop
+
+08/2019 – 01/2020: พรีโปรดักชัน Shang-Chi and the Legend of the Ten Rings โดยฝึกคิวบู๊และเรียนภาษาคู่ขนานไปกับตาราง NCT 127
+
 13/07/2019 – 16/07/2019: ผ่านการคัดเลือกบท Shang-Chi จากความสามารถด้าน martial arts + ภาษา
 
 20/07/2019: ถูกประกาศ casting อย่างเป็นทางการในงาน Comic-Con ถือเป็น turning point ใหญ่ของ career
@@ -171,6 +205,8 @@
 
 
 ### 10–11/2020
+11/2020 – 07/2021: โพสต์โปรดักชัน Shang-Chi and the Legend of the Ten Rings — ตัดต่อ VFX และทำดนตรีประกอบ โดย James อัด ADR ทางไกลจากโซลระหว่างตาราง NCT 127
+
 24/10/2020: ปิดกล้องภาพยนตร์
 
 12/10/2020 และ 23/11/2020: ปล่อย "Resonance Pt.1–2" โดย James มีส่วนร่วมจำกัด สะท้อน shift ไปสาย acting
@@ -186,16 +222,24 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 ## 2021 (อายุ 22–23 ปี)
 
 ### 04/2021
+19/04/2021: teaser trailer ตามออกมาวันเดียวกับโปสเตอร์
+
+24/06/2021: ปล่อย main trailer โดยใช้คิวบู๊ของ James เป็นจุดขายหลักของตัวอย่าง
+
 19/04/2021: ปล่อย teaser poster แรกของภาพยนตร์
 
 
 ### 08/2021
+17/08/2021 – 30/08/2021: press tour ระดับโลก — junket ที่ Los Angeles, London, Seoul และ Bangkok พร้อมออกรายการ late-night และรายการเช้าในสหรัฐ
+
 16/08/2021: world premiere ของ Shang-Chi ที่ Hollywood
 
 19/08/2021: คลิปสัมภาษณ์จาก press tour กลายเป็นไวรัลออนไลน์ ทำให้ผู้ชมฝั่งตะวันตกรู้จัก James นอกบริบท K-pop เป็นครั้งแรก — ทีม global PR ของ SM เห็นโอกาสจากกระแสนี้ จึงเริ่มดึงคำขอสัมภาษณ์สื่อต่างประเทศบางส่วนให้ผ่านค่ายแทน
 
 
 ### 09/2021
+03/09/2021: Shang-Chi and the Legend of the Ten Rings เข้าฉายทั่วโลก ทำรายได้ 432 ล้านดอลลาร์
+
 01/09/2021: ปล่อย soundtrack รวมถึง "Fire in the Sky" ร่วมกับ Anderson .Paak ซึ่งช่วย reinforce ภาพ global artist
 
 09/2021: ปกนิตยสาร Entertainment Weekly ในสกู๊ป Shang-Chi cast มี James ร่วมอยู่ด้วย โดยระบุชื่อกำกับตลอดทั้งสกู๊ปว่า "James Hwang จาก NCT 127" — เครดิตปกนิตยสารภาษาอังกฤษครั้งแรกของเขา
@@ -208,6 +252,12 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 12/2021
+20/12/2021: ประกาศมินิอัลบั้มเดบิวต์เดี่ยว "SOFTEST TOUCH" กำหนด 11/01/2022 — ผลงานชิ้นแรกที่มีรอบโปรโมตเต็มรูปแบบรองรับ
+
+27/12/2021: ปล่อย concept trailer
+
+30/12/2021 – 07/01/2022: ทยอยปล่อย concept photo 3 เวอร์ชัน
+
 12/2021: เข้าร่วมโปรเจกต์ NCT 2021 และมี participation 5 tracks เช่นเดียวกับ core rotation members
 
 17/12/2021: เริ่มทัวร์ "Neo City: The Link" แต่ James เข้าร่วมแบบ selective
@@ -217,6 +267,16 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 ## 2022 (อายุ 23–24 ปี)
 
 ### 01/2022
+05/01/2022: เปิด track list
+
+08/01/2022: ปล่อย MV teaser ของ "SOFTEST TOUCH"
+
+10/01/2022: press showcase ที่โซล — งานแถลงข่าวเดี่ยวครั้งแรกของเขา
+
+22/01/2022: ปล่อย MV "LIKE I DO (feat. Mark Lee)" หลังเพลงออกมาแล้วหกปี
+
+25/01/2022: ปล่อยเวอร์ชันไลฟ์ "NO RESERVATIONS" ปิดรอบโปรโมต
+
 11/01/2022: เดบิวต์เดี่ยวด้วย "SOFTEST TOUCH" ซึ่งถูกมองว่าเป็นการ "ปล่อยศักยภาพที่ถูกจำกัดมานาน"
 
 14/01/2022 – 24/01/2022: โปรโมททั้งงานใหม่และ "LIKE I DO" เพลงไตเติ้ลจากมินิอัลบั้ม 2016 ทำให้ identity ในฐานะศิลปินเดี่ยวชัดขึ้น
@@ -304,6 +364,18 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 07/2023
+10/07/2023: ปล่อย concept film "PULSE : SIGNAL" — งาน visual identity ชิ้นแรกที่ผลิตในบ้านของ JH Company ทั้งหมด
+
+12/07/2023 – 16/07/2023: ทยอยปล่อย concept photo
+
+17/07/2023: เปิด track list ยืนยันว่ามี 2 ไตเติลแทร็ก
+
+19/07/2023: ปล่อย MV teaser ของ "HOW DOES IT FEEL?"
+
+20/07/2023: press showcase ที่โซล — ครั้งแรกในฐานะศิลปินอิสระ มีสื่อที่เคยตามข่าวข้อพิพาทกับ SM เข้าร่วม
+
+28/07/2023: ปล่อย MV ตัวที่สอง "SAY (feat. keshi)"
+
 07/07/2023: ยืนยันวันปล่อยอัลบั้ม
 
 21/07/2023: ปล่อยอัลบั้มเต็ม "PULSE" พร้อม 2 เพลงไตเติล
@@ -314,6 +386,8 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 08–09/2023
+04/08/2023 และ 11/08/2023: ปล่อยคลิป dance session ของ "ALL FOR YOU" และ "TALK TO ME"
+
 ดำเนินทัวร์ต่อเนื่องในเกาหลี ญี่ปุ่น จีน และไต้หวัน พร้อมเสียงตอบรับเชิงบวกในฐานะ solo performer
 
 ปล่อย performance clip และ live session เสริมภาพลักษณ์ artist-producer
@@ -322,6 +396,8 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 10/2023
+10/2023 – 06/2024: พรีโปรดักชันของ Shang-Chi ภาค 2 และ 3 เดินเป็นกระบวนการเดียวร่วมกัน เพราะ Marvel greenlight สองเรื่องพร้อมกันและวางแผนถ่าย back-to-back — บททั้งสองภาคต้อง lock ครบทุกหน้าก่อนวันถ่ายวันแรก
+
 06/10/2023: ปล่อยซิงเกิล "If I Knew" ในช่วงเดียวกับคัมแบคของ NCT 127 โดยไม่มี interaction ระหว่างสองฝั่ง สะท้อนสถานะ "แยกแต่ไม่ปะทะ"
 
 ซิงเกิลสามารถคว้าอันดับ 1 ในรายการเพลง และตอกย้ำความสำเร็จในฐานะศิลปินเดี่ยว
@@ -346,6 +422,10 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 12/2023
+18/12/2023: ปล่อย concept trailer ของ "ARE U STILL"
+
+22/12/2023 – 31/12/2023: ทยอยปล่อย concept photo
+
 02/12/2023: เข้าร่วมงาน Melon Music Awards
 
 แสดง "HOW DOES IT FEEL?", "SAY" และ "LIKE I DO"
@@ -375,6 +455,14 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 ## 2024 (อายุ 25–26 ปี)
 
 ### 01/2024
+01/01/2024: concept release — ปล่อย "Sleepwalking" เป็นแทร็กเปิดก่อนอัลบั้ม
+
+03/01/2024: เปิด track list
+
+05/01/2024: ปล่อย MV teaser ของ "Tears On A Pretty Face"
+
+07/01/2024: งานแถลงข่าวที่โซล
+
 02/01/2024: เข้าร่วมงาน Seoul Music Awards
 
 รับรางวัล Best R&B / Ballad Award
@@ -399,6 +487,8 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 
 ### 02/2024
+04/02/2024: ปล่อย MV "Breathe" เป็น visual ตัวที่สองของอัลบั้ม
+
 16/02/2024: James ปรากฏตัวในงานแฟนคอนของ Ten ในฐานะผู้เข้าชม (public appearance ครั้งแรกหลังออกจาก SM Entertainment) สื่อเริ่มจับตาว่าเป็น "สัญญาณ soft reconnect ระหว่างศิลปิน"
 
 17–18/02/2024: เข้าร่วมงาน Hanteo Music Awards
@@ -428,6 +518,10 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 
 ### 08/2024
+27/07/2024: Marvel เปิดชื่อเรื่อง "Shang-Chi and the Legacy of the Ten Rings" ที่ San Diego Comic-Con หลังเข้าบล็อกถ่าย back-to-back ไปสามสัปดาห์ James ปรากฏตัวผ่านวิดีโอลิงก์จากกองถ่ายซิดนีย์
+
+09/08/2024 – 11/08/2024: ฉายฟุตเทจแรกที่ D23 Expo ที่ Anaheim โดย James มาร่วมงานด้วยตัวเองในช่วงพักระหว่างบล็อกถ่าย
+
 03–04/08/2024: เข้าร่วมงานแฟนมีต 8 ปีของ NCT 127 ในฐานะ "ผู้ชม" เป็น public signal ครั้งแรกว่า tension ระหว่างเขากับ SM ลดลงแล้ว
 
 26/08/2024: Jaehyun ปล่อยอัลบั้ม "J"
@@ -446,6 +540,8 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 
 ### 10/2024
+10/2024: Destin Daniel Cretton เซ็นกำกับ Spider-Man: Brand New Day ระหว่างที่ยังถ่ายบล็อก Shang-Chi อยู่ที่ซิดนีย์ พร้อมถอนตัวจากซีรีส์ Wonder Man ของ Disney+ เพื่อเคลียร์ตาราง
+
 เข้าสู่ year-end editorial coverage ของสื่ออเมริกันหลายสำนัก (เช่น Pitchfork, Complex และ Rolling Stone)
 
 ARE U STILL ถูกจัดอยู่ในรายชื่อ Best R&B Albums of the Year หลายรายการ
@@ -490,7 +586,7 @@ reinforce positioning ในฐานะ neo-soul / progressive R&B crossover re
 
 
 ### 12/2024
-10/2024: Destin Daniel Cretton เซ็นกำกับ Spider-Man: Brand New Day ระหว่างที่ยังถ่ายบล็อก Shang-Chi อยู่ที่ซิดนีย์ พร้อมถอนตัวจากซีรีส์ Wonder Man ของ Disney+ เพื่อเคลียร์ตาราง
+12/2024 – 06/2025: โพสต์โปรดักชันของ Shang-Chi ภาค 2 (Legacy) เดินคู่ขนานไปกับภาคจบที่ยังถ่ายอยู่บนเวทีเดียวกัน
 
 ต้นเดือน 12/2024: ภายใต้ข้อตกลงที่แทบไม่มี precedent มาก่อนในวงการ K-pop — ข้อตกลงที่ให้ James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมวันไหนหรือผลงานไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ — SM Entertainment ประกาศว่า James Hwang จะกลับมาร่วมกิจกรรมกับ NCT 127 ในฐานะ external artist โดยเริ่มจากโปรเจกต์คัมแบคปลายปี artist ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบไม่เคยกลับมาร่วมกิจกรรมกลุ่มมาก่อน SM เลือกเจรจาแทนที่จะเสียเขาไปถาวร ในตอนที่เขากลายเป็นชื่อระดับโลกที่วงเองสร้างไม่ได้แล้ว
 
@@ -527,6 +623,12 @@ Top Global (Excl. U.S.) Artist
 ## 2025 (อายุ 26–27 ปี)
 
 ### 01/2025
+13/01/2025: ประกาศอัลบั้มที่ 3 "CAN'T LEAVE ALONE" กำหนด 10/02/2025 ผ่านช่องทาง JH Company เท่านั้น — ไม่มีชุด embargo ให้สื่อเกาหลี ไม่มีการบรีฟสถานีโทรทัศน์
+
+20/01/2025: ปล่อย concept film
+
+27/01/2025 – 03/02/2025: ทยอยปล่อย concept visual กระจายผ่านแพลตฟอร์มสหรัฐและ global เป็นหลัก
+
 11–12/01/2025: James เข้าร่วม SMTOWN LIVE 2025 กับ NCT 127 และเข้าร่วมเฉพาะรอบ Seoul เพื่อบาลานซ์ตาราง
 
 18/01/2025 – 22/05/2025: ทัวร์ "Neo City — The Momentum" ดำเนินเต็มรูปแบบ ถือเป็นการคัมแบคบนเวทีทัวร์ครั้งแรกหลังกลับวง
@@ -535,6 +637,12 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 02/2025
+03/02/2025: ปล่อยซิงเกิลพรีรีลีส "CAN'T LEAVE ALONE (feat. Pharrell Williams)" พร้อม MV
+
+06/02/2025: เปิด track list
+
+10/02/2025: ปล่อย MV "SOUR" พร้อมอัลบั้ม ไม่มีงานแถลงข่าวและไม่มีเวที music show เกาหลี โปรโมตผ่านวิทยุสหรัฐ live session บนแพลตฟอร์มสตรีมมิง และงาน listening event ที่นิวยอร์กเมื่อ 12/02/2025 แทน
+
 01/02/2025: เข้าร่วมงาน NAACP Image Awards
 
 ได้รับการเสนอชื่อเข้าชิง Outstanding New Artist
@@ -565,10 +673,16 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 04/2025
+21/05/2025 – 22/05/2025: James ไม่ได้ขึ้นเวทีคืนปิดทัวร์ "Neo City — The Momentum" ที่ Tokyo Dome ซึ่งเป็นสองโชว์สุดท้ายของทัวร์ เพราะ Avengers: Doomsday เริ่มบล็อกถ่ายไปแล้วตั้งแต่ 28/04 ภายใต้ข้อตกลงปกปิดที่ไม่เปิดหน้าต่างให้ปล่อยตัว ตารางหนังจึงมาก่อน พาร์ตของเขาถูกกระจายให้สมาชิกคนอื่นทั้งสองคืน เหตุการณ์นี้วางแบบแผนที่สื่อใช้อธิบายการขาดงาน THE REDLINE ในภายหลัง — งานหนังระดับโลกมาก่อนวันทัวร์ของวง และวงรับหน้าที่แทนได้
+
+08/04/2025: ปล่อย teaser trailer ของ Shang-Chi and the Legacy of the Ten Rings
+
 28/04/2025 – 08/2025: เริ่มถ่าย Avengers: Doomsday (block shooting เฉพาะบางซีน/บางยูนิต ไม่ใช่บทหลัก) โดยเก็บเป็นความลับสูงสุด เพราะ end-credit ของ Legacy เพิ่งปิดด้วยภาพชาง-ชีลาออกจากทีม Avengers การประกาศชื่อเขาในลิสต์นักแสดง Doomsday เมื่อ มี.ค. 2025 จึงถูกใช้เป็นเครื่องมือปั่นกระแสว่าตกลงเขาจะกลับมาหรือไม่ ซึ่งคำตอบถูกเก็บไว้เฉลยในภาคจบของไตรภาค
 
 
 ### 06/2025
+10/06/2025: ปล่อย main trailer ของ Legacy
+
 ประกาศพักกิจกรรมกับ NCT 127 ถึง 07/2026 (ครบรอบ 10 ปี) เพื่อโฟกัสงานเดี่ยว/ภาพยนตร์
 
 เข้าร่วมงาน BET Awards
@@ -579,18 +693,20 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 07/2025
+22/07/2025 – 24/07/2025: press tour ระดับโลกของ Legacy — junket ที่ Los Angeles, London, Seoul และ Beijing พร้อมออกรายการ late-night ในสหรัฐ ไม่มีการจัดที่ประเทศไทย
+
 21/07/2025: งานพรีเมียร์ที่ลอสแอนเจลิส และ 25/07/2025: Shang-Chi and the Legacy of the Ten Rings เข้าฉาย ปิด Phase Five; กระแส peak ระดับ global
 
 07–08/2025: เกิดสถานการณ์ความขัดแย้งในไทย James แสดงจุดยืนเชิงสันติ ทำให้กระแสในไทยแบ่งขั้ว เขาลดการใช้ภาษาไทยใน public appearance และงดกิจกรรมในไทย
 
 
 ### 08/2025
+08–12/2025: Destin Daniel Cretton ถ่าย Spider-Man: Brand New Day (กลาสโกว์ 3 ส.ค. – ปิดกล้อง 19 ธ.ค.) ส่วน post ของ Last of the Ten Rings เดินอยู่ใต้ VFX supervisor ระหว่างนี้
+
 30/08/2025: Marvel ยืนยันวันฉาย Shang-Chi and the Last of the Ten Rings (18 ก.ย. 2026) พร้อมเปิดเผยต่อสาธารณะเป็นครั้งแรกว่าภาคจบถ่ายทำเสร็จตั้งแต่ มี.ค. 2025 แล้ว โดยถ่าย back-to-back กับ Legacy — ข่าวที่ทำให้แฟนตีความทันทีว่าสตูดิโอวางเกมไตรภาคไว้ล่วงหน้าหลายปี
 
 
 ### 10/2025
-08–12/2025: Destin Daniel Cretton ถ่าย Spider-Man: Brand New Day (กลาสโกว์ 3 ส.ค. – ปิดกล้อง 19 ธ.ค.) ส่วน post ของ Last of the Ten Rings เดินอยู่ใต้ VFX supervisor ระหว่างนี้
-
 10/2025: ได้รับการเสนอชื่อเข้าชิง American Music Awards
 
 Favorite Male R&B Artist
@@ -610,11 +726,6 @@ Favorite Male R&B Artist
 ได้รับการเสนอชื่อเข้าชิง Best R&B/Soul Album (CAN'T LEAVE ALONE)
 
 สะท้อน continuity ใน progressive / alternative R&B lane หลัง Grammy cycle
-
-11–12/2025: Disney, Lucasfilm, และ MJ Estate เริ่มหารือโปรเจกต์รีบูต Captain EO เป็นซีรีส์ Disney+ โดย James ร่วมพัฒนา (ยังอยู่ในขั้น development/packaging, ยังไม่ถ่ายทำ)
-
-03/11/2025 – Q1/2026: Last of the Ten Rings เข้าสู่ pre-production/limited principal photography (unit test shoots + action previs) ที่ Trilith Studios
-
 
 ### 12/2025
 12/2025: ได้รับการเสนอชื่อเข้าชิง Billboard Music Awards
@@ -644,24 +755,38 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 03/2026
-03/2026 – 08/2026: เข้าสู่ช่วงท้ายของ post-production Last of the Ten Rings (final VFX, color, mix) ปิดหาง post ที่ยาวสิบเจ็ดเดือนนับจาก เม.ย. 2025 โดย Cretton เข้ามาปิด final pass ในสองเดือนสุดท้ายหลังส่ง Brand New Day เสร็จ
+03/2026: Last of the Ten Rings อยู่ในช่วง post-production เต็มตัว (editing, VFX, scoring — เดินสายมาตั้งแต่ เม.ย. 2025) James ไม่มีตารางถ่ายทำ เข้า ADR session เป็นครั้งคราว และใช้เวลาที่เหลือในหน้าต่างนี้ปั้นอัลบั้ม DECADE
 
-31/07/2026: Spider-Man: Brand New Day เข้าฉาย ทะลุพันล้านดอลลาร์ กระแสที่ตามมาดันความคาดหวังของ Last of the Ten Rings ขึ้นแทนที่จะดูดไป
+03/2026 – 08/2026: เข้าสู่ช่วงท้ายของ post-production Last of the Ten Rings (final VFX, color, mix) ปิดหาง post ที่ยาวสิบเจ็ดเดือนนับจาก เม.ย. 2025 โดย Cretton เข้ามาปิด final pass ในสองเดือนสุดท้ายหลังส่ง Brand New Day เสร็จ
 
 03/2026: มีรายงาน sightings แบบ informal ในวงการ production circle ว่าทั้งสองยังคงพบกันนอกตารางถ่ายทำในช่วง post-shoot window แต่ถูกจัดอยู่ในระดับ industry rumor เท่านั้น
 
 
 ### 04/2026
-04/2026 – 09/2026: ถ่ายทำ "Captain EO: Resonance" โปรเจกต์ซีรีส์ของ Disney ที่ต่อยอดจาก Captain EO ของ Michael Jackson โดย James มีบทบาททั้งนักแสดงและ creative contributor
+07/04/2026: ปล่อย teaser trailer ของ Shang-Chi and the Last of the Ten Rings — ฟุตเทจแรกจากภาคจบ ตัดจากของที่ถ่ายไว้ในบล็อกปี 2024–2025 ทั้งหมด
 
 04–06/2026: แม้เข้าสู่ตารางถ่ายทำซีรีส์ Disney เต็มรูปแบบ แต่ยังมีรายงานว่าทั้งสองพบกันเป็นระยะใน Los Angeles ระหว่างช่วง overlapping studio work และ shared industry events
 
 
 ### 05/2026
+04/05/2026: ประกาศอัลบั้ม anthology "DECADE" กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 29 แทร็กใน 2 แผ่น
+
+25/05/2026: เปิด track list ของ Disk 1
+
 05/2026: ก่อนถึงงานครบรอบ JH Company และ SM สรุปเงื่อนไขการเข้าร่วมงานครบรอบ 10 ปีแบบเต็มตัวของ James — เป็นการต่อยอดกรอบ external artist เดิมที่ใช้กับการกลับวงเมื่อธันวาคม 2024: James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมวันไหนหรือผลงานไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่
 
 
 ### 06/2026
+01/06/2026: เปิด track list ของ Disk 2 ยืนยันเพลงใหม่ 4 เพลง
+
+15/06/2026: ปล่อยคลิป teaser "ARCHIVE" — มอนทาจ 90 วินาทีจาก studio voice memo ที่ใช้เป็น interlude ของ anthology
+
+29/06/2026: ปล่อย MV teaser ของ "I LOVE YOUR BODY"
+
+06/07/2026: งานแถลงข่าว DECADE ที่โซล — งานแถลงข่าวเกาหลีครั้งแรกของเขานับตั้งแต่ปี 2024
+
+07/07/2026: James ปล่อยอัลบั้ม anthology "DECADE" — ตรงวันครบรอบ 10 ปีพอดีนับจากเดบิวต์กับ NCT 127 เมื่อ 7 กรกฎาคม 2016 วันที่นี้ถูกเลือกอย่างตั้งใจ ไม่ใช่การหลบ: การปล่อยตกอยู่กลางโปรเจกต์ครบรอบ 10 ปีของวงพอดี ทำให้ anthology เดี่ยวกับหมุดหมายของวงถูกฉลองวันเดียวกัน อัลบั้มรวบรวมผลงานสำคัญตลอด career และเพิ่มเพลงใหม่ 4 เพลง ทำหน้าที่เป็นทั้ง career milestone และ narrative reset
+
 06/2026 – 07/2026: โปรเจกต์ครบรอบ 10 ปีของ NCT 127
 
 James กลับมา active เต็มตัวอีกครั้งหลัง hiatus
@@ -674,6 +799,16 @@ James กลับมา active เต็มตัวอีกครั้งห
 
 
 ### 07–09/2026
+07/07/2026: ปล่อย MV "I LOVE YOUR BODY" พร้อมอัลบั้ม
+
+09/07/2026: แสดงสดเพลง "I LOVE YOUR BODY" ในเกาหลี — การออกอากาศครั้งเดียวของ anthology นี้ ไม่มีการโปรโมตในไทยตามความต้องการของศิลปิน
+
+14/07/2026: ปล่อย main trailer ของ Last of the Ten Rings
+
+14/08/2026 – 16/08/2026: D23 Expo 2026 — ฉาย footage reel ชุดสุดท้ายและจัด cast panel เต็มรูปแบบของ Last of the Ten Rings
+
+31/07/2026: Spider-Man: Brand New Day เข้าฉาย ทะลุพันล้านดอลลาร์ กระแสที่ตามมาดันความคาดหวังของ Last of the Ten Rings ขึ้นแทนที่จะดูดไป
+
 07/2026 – 09/2026: Last of the Ten Rings เข้าสู่ final post-production & global marketing rollout
 
 final VFX polish, sound mix, IMAX/Dolby mastering
@@ -684,13 +819,11 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 
 ### 09/2026
-09/2026: Shang-Chi and the Last of the Ten Rings เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
+10/09/2026: รอบปฐมทัศน์โลกของ Shang-Chi and the Last of the Ten Rings ที่ Los Angeles
 
-09/2026: James ปล่อยอัลบั้ม "Decade – 1st Anthology Album"
+14/09/2026 – 17/09/2026: press tour เอเชีย — Tokyo, Hong Kong และ Seoul ปิดที่โซลในสัปดาห์เดียวกับที่หนังเข้าฉาย
 
-รวมผลงานสำคัญตลอดอาชีพ
-
-มีเพลงใหม่ 4 เพลง ทำหน้าที่เป็น career milestone และ narrative reset
+18/09/2026: Shang-Chi and the Last of the Ten Rings เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
 
 09/2026: ระหว่าง global premiere window ของ Last of the Ten Rings ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
 
@@ -702,22 +835,11 @@ James ร่วม 8 จาก 10 เมือง โดยรอบ Seoul ค�
 
 
 ### 09–12/2026
-"Captain EO: Resonance" เข้าสู่ post-production (VFX, sound design, music finishing) เพื่อเตรียมปล่อยช่วงปลายปี
+11–12/2026: Disney, Lucasfilm, และ MJ Estate เริ่มหารือโปรเจกต์รีบูต Captain EO เป็นซีรีส์ Disney+ โดย James ร่วมพัฒนา (ยังอยู่ในขั้น development/packaging, ยังไม่ถ่ายทำ)
 
 10/2026: หลังการยืนยันความสัมพันธ์ ทั้งสองยังคงรักษารูปแบบ public appearance แบบ selective visibility โดยปรากฏตัวร่วมกันเฉพาะใน industry events และ private screening circuits เท่านั้น ซึ่งสะท้อน positioning ของทั้งคู่ในฐานะ global film-industry couple มากกว่า idol-style public relationship
 
-10/2026 – 03/2027: หลังออกฉาย CAPTAIN EO: RESONANCE Disney / Lucasfilm / JH Company เข้าสู่ phase ประเมินผลเชิงกลยุทธ์
-
-วิเคราะห์ streaming retention, fandom expansion, international reception
-
-ประเมินศักยภาพ Starwave crew ในฐานะ cinematic ensemble lead
-
-เริ่มพัฒนา narrative spine สำหรับ film trilogy branch (Resonance cinematic arc)
-
-
 ### 12/2026
-12/2026 (Christmas Release): "CAPTAIN EO: RESONANCE" ฉายบน Disney+ ในฐานะ holiday flagship series
-
 12/2026: ความสัมพันธ์ของ James และ Ashley Liao ถูกกล่าวถึงในสื่อบันเทิงระดับนานาชาติในฐานะหนึ่งใน high-profile Asian representation couples ของปี โดยเฉพาะในบริบทของการขยายบทบาทของศิลปินเอเชียใน Hollywood franchise cinema
 
 
@@ -735,81 +857,35 @@ James ร่วม 8 จาก 10 เมือง โดยรอบ Seoul ค�
 
 
 ### 02–05/2027
+04/02/2027: Disney ประกาศ "CAPTAIN EO: RESONANCE" อย่างเป็นทางการในฐานะซีรีส์ Disney+ 6 ตอน โดย James รับเครดิตทั้ง creator, executive producer และนักแสดงนำ
+
 03/2027: เมื่อที่พำนักหลักย้ายมาอยู่สหรัฐแล้ว James ยื่นขอ U.S. permanent residency — คำร้อง EB-1 "extraordinary ability" ที่อ้าง Grammy, สถานะนำใน MCU และสถิติ Guinness เพราะสหรัฐอนุญาต dual nationality จึงไม่ต้องสละสัญชาติไทย ไม่มีภาระทหาร และปูทางระยะยาวสู่การถือสองสัญชาติ ไทย–สหรัฐ (ขอสัญชาติได้ราวต้นทศวรรษ 2030) เมื่ออ่านคู่กับการห่างเหินจากไทย สื่อไทยตีความว่าเป็นอีกก้าวที่ถอยห่าง — แม้เขายังถือ passport ไทยอยู่
 
-THE MISSING CHORD เข้าสู่ development phase
 
-lock Elias identity-reveal arc เป็นแกนของภาคแรก
-
-expand Melodia civilization visual language (harmonic architecture layer)
-
-finalize Malos ideology framing (Silence as trauma-response technology)
-
-upgrade Nova cinematic animation pipeline
-
-วางระบบ resonance visual grammar สำหรับใช้ทั้ง trilogy
-
-positioning: ภาคเปิด cinematic branch ที่ audience ใหม่ดูเข้าใจได้โดยไม่ต้องดูซีรีส์
-
-07/05/2027: เข้าร่วมงาน MTV Movie & TV Awards
-
-ได้รับรางวัล Best Hero (WIN)
-
-เป็น award แรกของ Captain EO: Resonance
-
-สะท้อน audience impact ในตลาด global streaming audience โดยเฉพาะ Gen-Z และ fandom sci-fi
-
-เป็น early signal ของ franchise-level popularity ก่อนเข้าสู่ Emmy campaign season
+### 03–06/2027
+03/2027 – 06/2027: ถ่ายทำ "Captain EO: Resonance" โปรเจกต์ซีรีส์ของ Disney ที่ต่อยอดจาก Captain EO ของ Michael Jackson โดย James มีบทบาททั้งนักแสดงและ creative contributor พรีโปรดักชันเดินช่วง ม.ค.–มี.ค. 2027 ต่อจาก writers' room (พ.ย. 2026 – ก.พ. 2027)
 
 
 ### 06/2027
 06/2027: ปิดกองถ่าย (wrap) ของโปรเจกต์ภาพยนตร์ทั้งหมดตามเงื่อนไข "ต้องจบก่อนกลางปี"
 
-24/06/2027: เข้าร่วมงาน Saturn Awards
-
-ได้รับรางวัล Best Actor in a Streaming Television Series (WIN)
-
-reinforce positioning ของ Captain EO: Resonance ในฐานะ flagship sci-fi streaming franchise ของ Disney+
-
-genre press เริ่ม framing performance ของ James ว่าเป็นหนึ่งใน strongest streaming sci-fi lead performances ของปี
-
 ช่วงเดียวกัน: สมาชิก NCT 127 ทยอยปลดประจำการครบ (discharge wave)
 
 
 ### 07–12/2027
-07/2027 เป็นต้นไป: โฟกัสงานวงเต็มรูปแบบกับ NCT 127
+21/09/2027: ปล่อย first-look teaser ในงาน Disney+ global showcase
+
+12/10/2027: ปล่อย teaser trailer พร้อมเปิด marketing rollout
+
+09/11/2027: ปล่อย main trailer ตามด้วย press junket ระดับโลกที่ Los Angeles และ London
+
+04/2027 – 11/2027: "Captain EO: Resonance" เดิน post-production (VFX, sound design, music finishing) — สายงานที่เปิดคู่ขนานกับการถ่ายทำ — โดย global marketing rollout เริ่ม ต.ค. 2027
+
+07/2027 เป็นต้นไป: กลับมาถืองานวง NCT 127 เป็นตารางหลัก — โดย marketing rollout ของ Captain EO: Resonance (ต.ค.–ธ.ค. 2027) และรอบปฐมทัศน์ 04/12 มาก่อนเสมอเมื่อชนกัน ตามหลักเดียวกับที่ใช้ตอนขาดงาน Tokyo Dome ปี 2025
 
 เตรียมคัมแบค/คอนเทนต์/อีเวนต์หลังสมาชิกกลับครบ
 
 อาจมี pre-release / special project เพื่อรีเฟรชภาพลักษณ์วงหลังช่วงเว้นว่าง
-
-10/2027 – 12/2027: THE MISSING CHORD เข้าสู่ full pre-production
-
-สร้าง Melodia cathedral set scale-upgrade สำหรับ theatrical experience
-
-ออกแบบ Acolytes of Silence fleet system
-
-Hardware Key / Twin Resonance Fork artifact lock design
-
-stunt previs sequence infiltration วิหาร Melodia
-
-เริ่ม simulation pipeline สำหรับ resonance-wave physics
-
-12/07/2027: ได้รับการเสนอชื่อเข้าชิง Primetime Emmy Awards
-
-Outstanding Lead Actor in a Drama Series (NOMINATION)
-
-เป็น Emmy nomination แรกของ James ในฐานะ television lead actor
-
-ถือเป็น milestone สำคัญของ acting credibility ใน Hollywood television prestige ecosystem
-
-18/09/2027: เข้าร่วมพิธี Primetime Emmy Awards
-
-ไม่ได้รับรางวัล (LOSS)
-
-nomination ยังคงถูกจัดอยู่ในระดับ major industry-level validation สำหรับ streaming franchise lead performance
-
-หลังพิธี Emmy สื่อ entertainment trade เริ่ม positioning James ในฐานะ crossover Asian global leading performer (music + film + streaming television)
 
 
 ### 10–12/2027
@@ -825,10 +901,99 @@ James ประกาศพักกิจกรรมเดี่ยวด้�
 
 
 
+### 12/2027
+02/12/2027: รอบปฐมทัศน์โลกที่ Los Angeles
+
+04/12/2027: "CAPTAIN EO: RESONANCE" ฉายบน Disney+ เริ่มที่ EP1–2 แล้วปล่อยรายสัปดาห์จนถึง EP6 ในฐานะ flagship series ประจำ Q4 ของแพลตฟอร์ม
+
+10/2027 – 03/2028: หลังออกฉาย CAPTAIN EO: RESONANCE Disney / Lucasfilm / JH Company เข้าสู่ phase ประเมินผลเชิงกลยุทธ์
+
+วิเคราะห์ streaming retention, fandom expansion, international reception
+
+ประเมินศักยภาพ Starwave crew ในฐานะ cinematic ensemble lead
+
+เริ่มพัฒนา narrative spine สำหรับ film trilogy branch (Resonance cinematic arc)
+
+
+
 ## 2028 (อายุ 29–30 ปี)
 
-### 01/2028
-07/01/2028: เข้าร่วมงาน Golden Globe Awards
+### 02–05/2028
+02/2028 – 05/2028: THE MISSING CHORD เข้าสู่ development phase
+
+lock Elias identity-reveal arc เป็นแกนของภาคแรก
+
+expand Melodia civilization visual language (harmonic architecture layer)
+
+finalize Malos ideology framing (Silence as trauma-response technology)
+
+upgrade Nova cinematic animation pipeline
+
+วางระบบ resonance visual grammar สำหรับใช้ทั้ง trilogy
+
+positioning: ภาคเปิด cinematic branch ที่ audience ใหม่ดูเข้าใจได้โดยไม่ต้องดูซีรีส์
+
+
+### 05/2028
+07/05/2028: เข้าร่วมงาน MTV Movie & TV Awards
+
+ได้รับรางวัล Best Hero (WIN)
+
+เป็น award แรกของ Captain EO: Resonance
+
+สะท้อน audience impact ในตลาด global streaming audience โดยเฉพาะ Gen-Z และ fandom sci-fi
+
+เป็น early signal ของ franchise-level popularity ก่อนเข้าสู่ Emmy campaign season
+
+
+### 06/2028
+24/06/2028: เข้าร่วมงาน Saturn Awards
+
+ได้รับรางวัล Best Actor in a Streaming Television Series (WIN)
+
+reinforce positioning ของ Captain EO: Resonance ในฐานะ flagship sci-fi streaming franchise ของ Disney+
+
+genre press เริ่ม framing performance ของ James ว่าเป็นหนึ่งใน strongest streaming sci-fi lead performances ของปี
+
+
+### 07–09/2028
+20/07/2028: ยืนยันว่า RESONANCE เป็นไตรภาคฉายโรงในงาน San Diego Comic-Con พร้อมกำหนดวันฉาย THE MISSING CHORD ที่ 02/11/2029
+
+12/07/2028: ได้รับการเสนอชื่อเข้าชิง Primetime Emmy Awards
+
+Outstanding Lead Actor in a Drama Series (NOMINATION)
+
+เป็น Emmy nomination แรกของ James ในฐานะ television lead actor
+
+ถือเป็น milestone สำคัญของ acting credibility ใน Hollywood television prestige ecosystem
+
+18/09/2028: เข้าร่วมพิธี Primetime Emmy Awards
+
+ไม่ได้รับรางวัล (LOSS)
+
+nomination ยังคงถูกจัดอยู่ในระดับ major industry-level validation สำหรับ streaming franchise lead performance
+
+หลังพิธี Emmy สื่อ entertainment trade เริ่ม positioning James ในฐานะ crossover Asian global leading performer (music + film + streaming television)
+
+
+### 10–12/2028
+10/2028 – 12/2028: THE MISSING CHORD เข้าสู่ full pre-production
+
+สร้าง Melodia cathedral set scale-upgrade สำหรับ theatrical experience
+
+ออกแบบ Acolytes of Silence fleet system
+
+Hardware Key / Twin Resonance Fork artifact lock design
+
+stunt previs sequence infiltration วิหาร Melodia
+
+เริ่ม simulation pipeline สำหรับ resonance-wave physics
+
+
+## 2029 (อายุ 30–31 ปี)
+
+### 01/2029
+07/01/2029: เข้าร่วมงาน Golden Globe Awards
 
 ได้รับรางวัล Best Actor in a Television Series – Drama (WIN)
 
@@ -836,13 +1001,13 @@ James ประกาศพักกิจกรรมเดี่ยวด้�
 
 media framing: James becomes one of the defining Asian streaming-era franchise television leads in Hollywood
 
-14/01/2028: เข้าร่วมงาน Critics' Choice Television Awards
+14/01/2029: เข้าร่วมงาน Critics' Choice Television Awards
 
 ได้รับการเสนอชื่อเข้าชิง Best Actor in a Drama Series (NOMINATION)
 
 reinforce critics-side legitimacy ต่อ performance
 
-01/2028 – 06/2028: THE MISSING CHORD principal photography
+01/2029 – 06/2029: THE MISSING CHORD principal photography
 
 shoot Dead Zone opening sequence
 
@@ -855,8 +1020,8 @@ shoot Dead Zone opening sequence
 ถ่าย Nova virus activation storyline
 
 
-### 02/2028
-25/02/2028: เข้าร่วมงาน Screen Actors Guild Awards
+### 02/2029
+25/02/2029: เข้าร่วมงาน Screen Actors Guild Awards
 
 ได้รับการเสนอชื่อเข้าชิง Male Actor in a Drama Series (NOMINATION)
 
@@ -879,8 +1044,8 @@ lock Orpheus betrayal structure
 positioning: shift scale จาก character myth → cosmic myth
 
 
-### 03/2028
-03/03/2028: เข้าร่วมงาน Astra TV Awards
+### 03/2029
+03/03/2029: เข้าร่วมงาน Astra TV Awards
 
 ได้รับรางวัล Best Actor in a Streaming Drama Series (WIN)
 
@@ -889,8 +1054,10 @@ reinforce streaming-prestige positioning หลัง Golden Globe win
 ทำให้ Captain EO: Resonance ถูกจัดอยู่ในระดับ flagship franchise television performance ของยุค streaming expansion phase
 
 
-### 07/2028
-07/2028 – 10/2028: THE MISSING CHORD เข้าสู่ final post-production & global marketing rollout
+### 07/2029
+19/07/2029 – 22/07/2029: ฉายฟุตเทจแรกของ THE MISSING CHORD ที่ San Diego Comic-Con
+
+07/2029 – 10/2029: THE MISSING CHORD เข้าสู่ final post-production & global marketing rollout
 
 final VFX polish (Silence distortion / resonance pulse systems)
 
@@ -903,8 +1070,10 @@ launch global press tour campaign
 เริ่ม soundtrack positioning ในฐานะ harmonic identity theme ของ franchise
 
 
-### 10/2028
-10/2028 – 06/2029: THE SILENT ORCHESTRA เข้าสู่ pre-production
+### 10/2029
+18/10/2029: รอบปฐมทัศน์โลกของ THE MISSING CHORD ที่ Los Angeles ตามด้วย press tour ระดับโลกยาวถึงปลายเดือนตุลาคม
+
+10/2029 – 06/2030: THE SILENT ORCHESTRA เข้าสู่ pre-production
 
 build Sound Vault crystal terrain system
 
@@ -917,8 +1086,8 @@ finalize Void Station architecture
 เริ่ม construction pipeline ของยาน RESONANCE (ใช้ต่อเนื่องถึงภาค 3)
 
 
-### 11/2028
-11/2028: THE MISSING CHORD เข้าฉาย (global release)
+### 11/2029
+02/11/2029: THE MISSING CHORD เข้าฉาย (global release)
 
 positioning: mythic space-fantasy franchise opener
 
@@ -930,10 +1099,10 @@ confirm Nova เป็น emotional center ของ Resonance cinematic branch
 
 
 
-## 2029 (อายุ 30–31 ปี)
+## 2030 (อายุ 31–32 ปี)
 
-### 04/2029
-04/2029 – 12/2029: THE RESONANCE เข้าสู่ development + early pre-production
+### 04/2030
+04/2030 – 12/2030: THE RESONANCE เข้าสู่ development + early pre-production
 
 finalize First Note mythology seed
 
@@ -948,8 +1117,8 @@ develop High Cantor final confrontation structure
 positioning: harmonic resolution finale ของ cinematic saga
 
 
-### 07/2029
-07/2029 – 12/2029: THE SILENT ORCHESTRA principal photography
+### 07/2030
+07/2030 – 12/2030: THE SILENT ORCHESTRA principal photography
 
 ถ่าย Starwave destruction sequence (major franchise turning point)
 
@@ -965,10 +1134,14 @@ tone positioning: darkest chapter ของ trilogy
 
 
 
-## 2030 (อายุ 31–32 ปี)
+## 2031 (อายุ 32–33 ปี)
 
-### 01/2030
-01/2030 – 10/2030: THE SILENT ORCHESTRA final post-production & global marketing rollout
+### 01/2031
+05/09/2031: ปล่อย main trailer ของ THE SILENT ORCHESTRA
+
+01/12/2031: รอบปฐมทัศน์โลกที่ Los Angeles ตามด้วย press tour แบบกระชับสองสัปดาห์
+
+01/2031 – 10/2031: THE SILENT ORCHESTRA final post-production & global marketing rollout
 
 Void Pulse simulation pipeline completed
 
@@ -978,7 +1151,7 @@ dimension capture sequences composited
 
 launch teaser campaign positioning film เป็น Empire-scale middle chapter
 
-01/2030 – 04/2030: THE RESONANCE principal photography
+01/2031 – 04/2031: THE RESONANCE principal photography
 
 shoot resistance-era galaxy sequences
 
@@ -991,8 +1164,8 @@ shoot Void Core battlefield climax
 ถ่าย Beatbox override finale sequence
 
 
-### 05–10/2030
-05/2030 – 10/2031: THE RESONANCE extended post-production pipeline
+### 05–10/2031
+05/2031 – 10/2032: THE RESONANCE extended post-production pipeline
 
 cosmic frequency visualization system completed
 
@@ -1005,8 +1178,8 @@ final resonance wave sequence composited
 launch trilogy-finale global marketing campaign
 
 
-### 12/2030
-12/2030: THE SILENT ORCHESTRA เข้าฉาย (global release)
+### 12/2031
+12/2031: THE SILENT ORCHESTRA เข้าฉาย (global release)
 
 Starwave destroyed
 
@@ -1022,10 +1195,12 @@ Elias loses hearing capability
 
 
 
-## 2031 (อายุ 32–33 ปี)
+## 2032 (อายุ 33–34 ปี)
 
-### 12/2031
-12/2031: THE RESONANCE เข้าฉาย (global release)
+### 12/2032
+01/12/2032: รอบปฐมทัศน์โลกของ THE RESONANCE ที่ Los Angeles เปิด press tour ระดับโลกสามสัปดาห์ที่ปิดฉากซากะ
+
+12/2032: THE RESONANCE เข้าฉาย (global release)
 
 High Cantor defeated
 
@@ -1041,4 +1216,4 @@ Elias begins post-trilogy exploratory journey with Mina
 
 positioning: saga-resolution event film ของ Resonance cinematic branch
 
-12/2031: หลังการเข้าฉายของ THE RESONANCE James ให้สัมภาษณ์ยืนยันว่า narrative arc ของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว
+12/2032: หลังการเข้าฉายของ THE RESONANCE James ให้สัมภาษณ์ยืนยันว่า narrative arc ของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว

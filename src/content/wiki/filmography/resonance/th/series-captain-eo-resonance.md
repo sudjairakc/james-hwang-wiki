@@ -1,10 +1,10 @@
-# CAPTAIN EO: RESONANCE (2026)
+# CAPTAIN EO: RESONANCE (2027)
 
 | | |
 |---|---|
 | **Format** | Disney+ Limited Series |
 | **Season** | 1 · 6 Episodes |
-| **Release** | December 4, 2026 (EP1–2) · weekly rollout EP3–EP6 |
+| **Release** | December 4, 2027 (EP1–2) · weekly rollout EP3–EP6 |
 | **Created by** | James Hwang |
 | **Showrunner** | Tony Gilroy |
 | **Directors** | Dan Trachtenberg (EP1–2) · Kogonada (EP3–4) · Jennifer Phang (EP5–6) |
@@ -19,23 +19,23 @@
 
 | Phase | Period |
 |---|---|
-| Development | Oct 2025 – Dec 2025 |
-| Writers’ room | Nov 2025 – Feb 2026 |
-| Pre-production | Jan 2026 – Mar 2026 |
-| Principal photography | Mar 2026 – Jun 2026 |
-| Post-production | Apr 2026 – Nov 2026 |
-| Marketing rollout | Oct 2026 – Dec 2026 |
+| Development | Oct 2026 – Dec 2026 |
+| Writers’ room | Nov 2026 – Feb 2027 |
+| Pre-production | Jan 2027 – Mar 2027 |
+| Principal photography | Mar 2027 – Jun 2027 |
+| Post-production | Apr 2027 – Nov 2027 |
+| Marketing rollout | Oct 2027 – Dec 2027 |
 
 **Awards:**
 
 | Award | Category | Result |
 |---|---|---|
-| MTV Movie & TV Awards 2027 | Best Hero | WIN |
-| Saturn Awards 2027 | Best Actor in a Streaming Television Series | WIN |
-| Primetime Emmy Awards 2027 | Outstanding Lead Actor in a Drama Series | NOM |
-| Golden Globe Awards 2028 | Best Actor in a Television Series – Drama | WIN |
-| SAG Awards 2028 | Male Actor in a Drama Series | NOM |
-| Astra TV Awards 2028 | Best Actor in a Streaming Drama Series | WIN |
+| MTV Movie & TV Awards 2028 | Best Hero | WIN |
+| Saturn Awards 2028 | Best Actor in a Streaming Television Series | WIN |
+| Primetime Emmy Awards 2028 | Outstanding Lead Actor in a Drama Series | NOM |
+| Golden Globe Awards 2029 | Best Actor in a Television Series – Drama | WIN |
+| SAG Awards 2029 | Male Actor in a Drama Series | NOM |
+| Astra TV Awards 2029 | Best Actor in a Streaming Drama Series | WIN |
 
 ---
 
@@ -309,10 +309,10 @@ Koro: "จักรวาลน่ะไม่ได้พังหรอก... 
 
 ### Pre-Release Reception
 
-**Captain EO: RESONANCE** (Disney+, December 4, 2026) is currently in post-production as of April 2026. The following reflects pre-release context.
+**Captain EO: RESONANCE** (Disney+, December 4, 2027) is currently in post-production as of April 2027. The following reflects pre-release context.
 
 **Critical and industry positioning:**
-The series is positioned as Disney+'s flagship prestige live-action release for Q4 2026. James Hwang's involvement as creator, executive producer, and lead actor has generated significant trade coverage, particularly given that it represents his first long-form original IP outside the MCU.
+The series is positioned as Disney+'s flagship prestige live-action release for Q4 2027. James Hwang's involvement as creator, executive producer, and lead actor has generated significant trade coverage, particularly given that it represents his first long-form original IP outside the MCU.
 
 **Creative team buzz:**
 * The involvement of Kogonada as director on episodes 3–4 has elevated the critical conversation around the series well beyond standard streaming releases.
@@ -323,6 +323,6 @@ The series is positioned as Disney+'s flagship prestige live-action release for 
 The series has been flagged by trade press as a strong Emmy contender in the following categories: Outstanding Limited or Anthology Series, Outstanding Lead Actor (Limited Series), Outstanding Original Music and Lyrics, and Outstanding Main Title Design. Precursor conversations have mentioned James Hwang's name in both creative and performance categories given his lead role.
 
 **Fan anticipation:**
-Gemzen community response to the announcement has been significant — the December 2026 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2026, ahead of both the DECADE tour and Shang-Chi and the Last of the Ten Rings.
+Gemzen community response to the announcement has been significant — the December 2027 premiere date was cited as the most-discussed upcoming James Hwang project in GGU (Global Gemzen Union) polls as of early 2027, ahead of both the DECADE tour and Shang-Chi and the Last of the Ten Rings.
 
 **Context note:** This is a pre-release entry. Viewership data and critical scores will be updated upon premiere.

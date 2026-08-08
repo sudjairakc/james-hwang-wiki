@@ -1,8 +1,8 @@
-# RESONANCE III: THE RESONANCE (2031)
+# RESONANCE III: THE RESONANCE (2032)
 
 | | |
 |---|---|
-| **Release** | December 2031 (Theatrical · Global · Saga Finale) |
+| **Release** | December 2032 (Theatrical · Global · Saga Finale) |
 | **Director** | James Hwang (Co-Director) |
 | **Composer** | Ludwig Göransson |
 | **Distributor** | Walt Disney Pictures |
@@ -10,8 +10,8 @@
 
 | Phase | Period |
 |---|---|
-| Principal photography | January – April 2030 |
-| Post-production | May 2030 – October 2031 (extended pipeline) |
+| Principal photography | January – April 2031 |
+| Post-production | May 2031 – October 2032 (extended pipeline) |
 
 ---
 

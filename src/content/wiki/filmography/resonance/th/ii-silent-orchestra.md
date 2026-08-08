@@ -1,8 +1,8 @@
-# RESONANCE II: THE SILENT ORCHESTRA (2030)
+# RESONANCE II: THE SILENT ORCHESTRA (2031)
 
 | | |
 |---|---|
-| **Release** | December 2030 (Theatrical · Global) |
+| **Release** | December 2031 (Theatrical · Global) |
 | **Director** | James Hwang (Co-Director) |
 | **Composer** | Ludwig Göransson |
 | **Distributor** | Walt Disney Pictures |
@@ -10,8 +10,8 @@
 
 | Phase | Period |
 |---|---|
-| Principal photography | July – December 2029 |
-| Post-production | January – October 2030 |
+| Principal photography | July – December 2030 |
+| Post-production | January – October 2031 |
 
 ---
 

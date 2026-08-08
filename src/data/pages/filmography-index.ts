@@ -20,10 +20,10 @@ export const franchises = [
     universe: 'Disney · Original Franchise',
     color: '#3a5a7c',
     entries: [
-      { title: 'Captain EO: RESONANCE', date: 'December 4, 2026', dateEn: 'December 4, 2026', status: 'Upcoming' },
-      { title: 'RESONANCE: The Missing Chord', date: 'November 2, 2028', dateEn: 'November 2, 2028', status: 'Upcoming' },
-      { title: 'RESONANCE II: The Silent Orchestra', date: 'December 2030 TBA', dateEn: 'December 2030 TBA', status: 'Upcoming' },
-      { title: 'RESONANCE III', date: 'December 2031 TBA', dateEn: 'December 2031 TBA', status: 'Upcoming' },
+      { title: 'Captain EO: RESONANCE', date: 'December 4, 2027', dateEn: 'December 4, 2027', status: 'Upcoming' },
+      { title: 'RESONANCE: The Missing Chord', date: 'November 2, 2029', dateEn: 'November 2, 2029', status: 'Upcoming' },
+      { title: 'RESONANCE II: The Silent Orchestra', date: 'December 2031 TBA', dateEn: 'December 2031 TBA', status: 'Upcoming' },
+      { title: 'RESONANCE III', date: 'December 2032 TBA', dateEn: 'December 2032 TBA', status: 'Upcoming' },
     ],
   },
 ];

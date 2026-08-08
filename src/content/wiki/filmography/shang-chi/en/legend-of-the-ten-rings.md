@@ -98,3 +98,17 @@ Casting was confirmed at Comic-Con in July 2019. Principal photography was inter
 **Box Office:** $432 million worldwide, opening domestically with $94.3 million in its first week — the second-highest September opening in MCU history at the time. It performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market. The 2021 release landed in the COVID window and predated the franchise's full China theatrical rollout, which held its worldwide total below potential — a ceiling the 2025 sequel would clear once China opened.
 
 **Cultural Significance:** Widely regarded as the MCU's most substantively Asian-led film to date. The casting of James Hwang, a Thai-Chinese-Korean actor, in an Asian-American role sparked debate over casting for representation in Hollywood franchise films. The depiction of Ta Lo and its creature designs drew praise from critics specializing in Asian cinema.
+
+
+### Marketing and release
+
+| Date | Event |
+|---|---|
+| 13/07/2019 – 16/07/2019 | Casting confirmed |
+| 20/07/2019 | Cast announced at San Diego Comic-Con |
+| 24/08/2019 | D23 Expo cast appearance — James's first Disney stage |
+| 19/04/2021 | First teaser poster and teaser trailer |
+| 24/06/2021 | Main trailer |
+| 16/08/2021 | World premiere, Hollywood |
+| 17/08 – 30/08/2021 | Global press tour — Los Angeles, London, Seoul, Bangkok, plus US late-night and morning shows |
+| 03/09/2021 | Theatrical release — $432M worldwide |
