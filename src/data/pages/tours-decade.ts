@@ -16,31 +16,31 @@ export const eraColors: Record<string, string> = {
   'PULSE': '#5a7c6a',
   'ARE U STILL': '#5a7aaa',
   "CAN\'T LEAVE ALONE": '#c06080',
-  'DECADE': '#888888',
+  'DECADE': '#6e5a7c',
 };
 
 // Shared — tour leg / show dates (cities, countries, venues, nights).
 export const legs = [
   {
     name: 'Leg 1 — Asia',
-    period: 'January 15 – January 29, 2027',
+    period: 'January 22 – February 5, 2027',
     shows: [
-      { date: 'Jan 15–17', city: 'Seoul', country: 'South Korea', venue: 'KSPO Dome', nights: 3 },
-      { date: 'Jan 20–21', city: 'Singapore', country: 'Singapore', venue: 'Singapore Indoor Stadium', nights: 2 },
-      { date: 'Jan 24–25', city: 'Tokyo', country: 'Japan', venue: 'Tokyo Dome', nights: 2 },
-      { date: 'Jan 27', city: 'Osaka', country: 'Japan', venue: 'Kyocera Dome', nights: 1 },
-      { date: 'Jan 28–29', city: 'Jakarta', country: 'Indonesia', venue: 'Indonesia Arena', nights: 2 },
+      { date: 'Jan 22–24', city: 'Seoul', country: 'South Korea', venue: 'KSPO Dome', nights: 3 },
+      { date: 'Jan 27–28', city: 'Singapore', country: 'Singapore', venue: 'Singapore Indoor Stadium', nights: 2 },
+      { date: 'Jan 31 – Feb 1', city: 'Tokyo', country: 'Japan', venue: 'Tokyo Dome', nights: 2 },
+      { date: 'Feb 3', city: 'Osaka', country: 'Japan', venue: 'Kyocera Dome', nights: 1 },
+      { date: 'Feb 4–5', city: 'Jakarta', country: 'Indonesia', venue: 'Indonesia Arena', nights: 2 },
     ],
   },
   {
     name: 'Leg 2 — Americas & Europe',
-    period: 'February 3 – February 18, 2027',
+    period: 'February 10 – February 25, 2027',
     shows: [
-      { date: 'Feb 3–4', city: 'Los Angeles', country: 'USA', venue: 'Crypto.com Arena', nights: 2 },
-      { date: 'Feb 7–8', city: 'New York', country: 'USA', venue: 'Madison Square Garden', nights: 2 },
-      { date: 'Feb 12', city: 'Paris', country: 'France', venue: 'Accor Arena', nights: 1 },
-      { date: 'Feb 14', city: 'London', country: 'England', venue: 'The O2 Arena', nights: 1 },
-      { date: 'Feb 17–18', city: 'Berlin', country: 'Germany', venue: 'Mercedes-Benz Arena', nights: 2 },
+      { date: 'Feb 10–11', city: 'Los Angeles', country: 'USA', venue: 'Crypto.com Arena', nights: 2 },
+      { date: 'Feb 14–15', city: 'New York', country: 'USA', venue: 'Madison Square Garden', nights: 2 },
+      { date: 'Feb 19', city: 'Paris', country: 'France', venue: 'Accor Arena', nights: 1 },
+      { date: 'Feb 21', city: 'London', country: 'England', venue: 'The O2 Arena', nights: 1 },
+      { date: 'Feb 24–25', city: 'Berlin', country: 'Germany', venue: 'Mercedes-Benz Arena', nights: 2 },
     ],
   },
 ];
@@ -48,67 +48,67 @@ export const legs = [
 // Shared — full setlist (song titles, eras, VCR blocks).
 export const setlist = [
   {
-    vcr: 1, title: 'OPEN', subtitle: 'DECADE CORE',
+    vcr: 1, title: 'NEXT TEN', subtitle: '2026 · Mauve — the next decade, first',
     songs: [
-      { n: 1, title: 'SAY', era: 'PULSE' },
-      { n: 2, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
-      { n: 3, title: 'HOW DOES IT FEEL?', era: 'PULSE' },
-      { n: 4, title: 'SAVE ME', era: 'PULSE' },
-      { n: 5, title: "CAN\'T LEAVE ALONE", era: "CAN\'T LEAVE ALONE" },
+      { n: 1, title: 'I LOVE YOUR BODY', era: 'DECADE' },
+      { n: 2, title: 'ANYWHERE WITH YOU', era: 'DECADE' },
+      { n: 3, title: 'PROUD', era: 'DECADE' },
+      { n: 4, title: 'BABY BLUE', era: 'DECADE' },
     ],
   },
   {
-    vcr: 2, title: 'SOLO IDENTITY', subtitle: 'Career retrospective',
+    vcr: 2, title: 'BREAKAWAY', subtitle: '2022–2023 · Black & white — independence',
     songs: [
-      { n: 6, title: 'LIKE I DO (Solo Version)', era: 'LIKE I DO' },
-      { n: 7, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
-      { n: 8, title: 'CRUSH (Solo Version)', era: 'SOFTEST TOUCH' },
-      { n: 9, title: 'HONEY', era: "CAN\'T LEAVE ALONE" },
+      { n: 5, title: 'HOW DOES IT FEEL?', era: 'PULSE' },
+      { n: 6, title: 'ALL FOR YOU', era: 'PULSE' },
+      { n: 7, title: 'SAVE ME', era: 'PULSE' },
+      { n: 8, title: 'TALK TO ME', era: 'PULSE' },
+      { n: 9, title: 'SAY', era: 'PULSE' },
     ],
   },
   {
-    vcr: 3, title: 'PERFORMANCE FLOW', subtitle: 'Energy section',
+    vcr: 3, title: 'ANALOG', subtitle: '2024 · Groove and soul lineage',
     songs: [
-      { n: 10, title: 'ALL FOR YOU', era: 'PULSE' },
-      { n: 11, title: 'BREATHE', era: 'ARE U STILL' },
+      { n: 10, title: 'TEARS ON A PRETTY FACE', era: 'ARE U STILL' },
+      { n: 11, title: 'IF I KNEW', era: 'ARE U STILL' },
+      { n: 12, title: 'BREATHE', era: 'ARE U STILL' },
+      { n: 13, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
     ],
   },
   {
-    vcr: 4, title: 'NEW ERA', subtitle: 'DECADE exclusive tracks',
+    vcr: 4, title: 'SWEET', subtitle: '2025 · Desire',
     songs: [
-      { n: 12, title: 'NEW [Title Track]', era: 'DECADE' },
-      { n: 13, title: 'NEW', era: 'DECADE' },
-      { n: 14, title: 'NEW', era: 'DECADE' },
-      { n: 15, title: 'NEW', era: 'DECADE' },
-      { n: 16, title: 'SOMETHING REAL', era: "CAN\'T LEAVE ALONE" },
+      { n: 14, title: 'HONEY', era: "CAN\'T LEAVE ALONE" },
+      { n: 15, title: 'SOMETHING REAL', era: "CAN\'T LEAVE ALONE" },
+      { n: 16, title: 'TAKE YOU TONIGHT', era: "CAN\'T LEAVE ALONE" },
+      { n: 17, title: 'COME BACK TO ME', era: "CAN\'T LEAVE ALONE" },
+      { n: 18, title: "CAN\'T LEAVE ALONE", era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
-    vcr: 5, title: 'MID / R&B FLOW', subtitle: 'Groove section',
+    vcr: 5, title: 'SOUR', subtitle: '2025 · The cost',
     songs: [
-      { n: 17, title: 'TALK TO ME', era: 'PULSE' },
-      { n: 18, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
-      { n: 19, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH' },
-      { n: 20, title: "HE'S NOT ME", era: "CAN\'T LEAVE ALONE" },
+      { n: 19, title: "HE\'S NOT ME", era: "CAN\'T LEAVE ALONE" },
+      { n: 20, title: 'MYSTERY LADY', era: "CAN\'T LEAVE ALONE" },
+      { n: 21, title: 'LOVE THIS PAIN AWAY', era: "CAN\'T LEAVE ALONE" },
+      { n: 22, title: 'SOUR', era: "CAN\'T LEAVE ALONE" },
     ],
   },
   {
-    vcr: 6, title: 'LATE NIGHT CORE', subtitle: 'Intimacy section',
+    vcr: 6, title: 'ARCHIVE', subtitle: 'Stripped — voices from the tape',
     songs: [
-      { n: 21, title: 'SOMEWHERE, SOMEHOW', era: 'ARE U STILL' },
-      { n: 22, title: 'IF I KNEW', era: 'ARE U STILL' },
-      { n: 23, title: 'CALL ME', era: 'LIKE I DO' },
-      { n: 24, title: 'COME BACK TO ME', era: "CAN\'T LEAVE ALONE" },
-      { n: 25, title: 'LOVE THIS PAIN AWAY', era: "CAN\'T LEAVE ALONE" },
-      { n: 26, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
+      { n: 23, title: "YOU AIN'T GOTTA", era: 'SOFTEST TOUCH' },
+      { n: 24, title: 'CALL ME', era: 'LIKE I DO' },
+      { n: 25, title: 'EVERLASTING (Solo Version)', era: 'LIKE I DO' },
     ],
   },
   {
-    vcr: 7, title: 'SOUR RESOLUTION', subtitle: 'Encore',
+    vcr: 7, title: 'YEAR ONE', subtitle: 'Encore · 2016–2019 · Gold — where it began',
     songs: [
-      { n: 27, title: 'SOUR', era: "CAN\'T LEAVE ALONE" },
-      { n: 28, title: 'MYSTERY LADY', era: "CAN\'T LEAVE ALONE" },
-      { n: 29, title: 'TAKE YOU TONIGHT', era: "CAN\'T LEAVE ALONE" },
+      { n: 26, title: 'LIKE I DO (Solo Version)', era: 'LIKE I DO' },
+      { n: 27, title: 'CRUSH (Solo Version)', era: 'SOFTEST TOUCH' },
+      { n: 28, title: 'SOFTEST TOUCH', era: 'SOFTEST TOUCH' },
+      { n: 29, title: 'NO RESERVATIONS', era: 'SOFTEST TOUCH' },
     ],
   },
 ];
@@ -131,7 +131,7 @@ const en = {
     title: 'DECADE Tour',
     quote:
       "LIKE I DO, I gave it all, / A SOFTEST TOUCH, before the fall. / Feel my PULSE, it's running wild, / A DECADE lives in songs we made.",
-    dateInfo: 'January 15 – February 18, 2027 · 18 shows · $74M gross',
+    dateInfo: 'January 22 – February 25, 2027 · 18 shows · $74M gross',
     backLink: '← Back to Tours',
     kpiLabels: ['Total Shows', 'Ticket Gross', 'Sponsor Revenue', 'Profit Pool'],
     showFormatHeading: 'Show Format',
@@ -152,14 +152,14 @@ const en = {
       outlet: 'Pitchfork',
       score: null as string | null,
       quote:
-        '"The DECADE Tour answers a question no one knew they were asking: what does a career look like when you\'re generous enough to show all of it? Each era section is staged with its own palette and vocabulary, yet the show reads as a single unbroken arc. The gold-to-mauve journey isn\'t nostalgia — it\'s argument."',
+        '"The DECADE Tour answers a question no one knew they were asking: what does a career look like when you\'re generous enough to show all of it? Each era section is staged with its own palette and vocabulary, yet the show reads as a single unbroken arc. The mauve-to-gold journey isn\'t nostalgia — it\'s argument."',
       context: 'Live review, Seoul opening night · January 2027',
     },
     {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from deep mauve to black-and-white to gold across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'Concert review, Los Angeles · February 2027',
     },
     {
@@ -185,7 +185,7 @@ const th: typeof en = {
     title: 'DECADE Tour',
     quote:
       'LIKE I DO ฉันทุ่มเทหมดใจ / SOFTEST TOUCH ก่อนที่มันจะร่วงหล่น / รู้สึกถึง PULSE ที่พุ่งทะยานไม่หยุด / DECADE มีชีวิตอยู่ในเพลงที่เราสร้างร่วมกัน',
-    dateInfo: 'January 15 – February 18, 2027 · 18 โชว์ · รายได้ $74M',
+    dateInfo: 'January 22 – February 25, 2027 · 18 โชว์ · รายได้ $74M',
     backLink: '← กลับไปหน้าทัวร์คอนเสิร์ต',
     kpiLabels: ['โชว์ทั้งหมด', 'รายได้ตั๋ว', 'รายได้สปอนเซอร์', 'กำไรสุทธิ'],
     showFormatHeading: 'รูปแบบโชว์',
@@ -206,14 +206,14 @@ const th: typeof en = {
       outlet: 'Pitchfork',
       score: null as string | null,
       quote:
-        '"The DECADE Tour answers a question no one knew they were asking: what does a career look like when you\'re generous enough to show all of it? Each era section is staged with its own palette and vocabulary, yet the show reads as a single unbroken arc. The gold-to-mauve journey isn\'t nostalgia — it\'s argument."',
+        '"The DECADE Tour answers a question no one knew they were asking: what does a career look like when you\'re generous enough to show all of it? Each era section is staged with its own palette and vocabulary, yet the show reads as a single unbroken arc. The mauve-to-gold journey isn\'t nostalgia — it\'s argument."',
       context: 'รีวิวการแสดงสด คืนเปิดทัวร์ที่ Seoul · January 2027',
     },
     {
       outlet: 'Rolling Stone',
       score: null as string | null,
       quote:
-        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from gold to black-and-white to deep mauve across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
+        '"If PULSE was a manifesto, DECADE is a monument. The multi-era wardrobe design alone earns a feature — watching James Hwang move from deep mauve to black-and-white to gold across 29 songs is the most ambitious visual storytelling a solo tour has attempted this decade."',
       context: 'รีวิวคอนเสิร์ต ที่ Los Angeles · February 2027',
     },
     {

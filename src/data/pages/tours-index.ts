@@ -35,7 +35,7 @@ export const tourMeta: Record<
     color: '#5a7c6a',
   },
   decade: {
-    period: 'January 15 – February 18, 2027',
+    period: 'January 22 – February 25, 2027',
     legs: 2,
     shows: 18,
     cities: 10,
