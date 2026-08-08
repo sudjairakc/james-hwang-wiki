@@ -92,15 +92,15 @@ export const albumMeta: Record<
   decade: {
     cover: 'decade.png',
     year: '2026',
-    date: 'Sep 9, 2026',
+    date: 'Jul 7, 2026',
     tracks: 25,
     streams: 2500,
     streamLabel: '2.5B+',
-    peak: 'Billboard 200 #1 · Hot 100 #1 (NEW) · Melon #9',
+    peak: 'Billboard 200 #1 · Hot 100 #1 (I LOVE YOUR BODY) · Melon #9',
     color: '#6e5a7c',
     label: 'JH Company / Warner Music Korea',
     genres: ['Multi-era', 'R&B', 'Soul'],
-    titleTrack: 'NEW',
+    titleTrack: 'I LOVE YOUR BODY',
   },
 };
 

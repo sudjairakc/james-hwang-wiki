@@ -81,8 +81,8 @@ export const metrics: Record<string, AlbumMetrics> = {
   'decade': {
     albumStreams: '2.5B+',
     spotifyPeak: '32M monthly listeners (peak 2026)',
-    chartPeak: 'Billboard 200 #1 · Hot 100 #1 (NEW) · RIAA Platinum · Melon #9',
-    titleTrack: { title: 'NEW (Lead Single)', spotify: '480M+', youtube: '410M+' },
+    chartPeak: 'Billboard 200 #1 · Hot 100 #1 (I LOVE YOUR BODY) · RIAA Platinum · Melon #9',
+    titleTrack: { title: 'I LOVE YOUR BODY', spotify: '480M+', youtube: '410M+' },
     keyTracks: [
       { title: 'RIGHT ABOUT LOVE (Extended)', streams: '52M+' },
       { title: 'NO RESERVATIONS (Extended)', streams: '47M+' },

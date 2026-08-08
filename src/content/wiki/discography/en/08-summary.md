@@ -134,6 +134,15 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 
 ### Tracklist
 
+**New songs — full detail**
+| # | Song | Genre | Speed | Mood & Tone | Hook Theme |
+|---|---|---|---|---|---|
+| 1 | I LOVE YOUR BODY | R&B / Dancehall / Reggae | Mid-fast, buoyant | Bold, flirtatious, physically certain | "I love your body" — desire stated without apology or negotiation |
+| 2 | ANYWHERE WITH YOU | Contemporary R&B / Soul | Unhurried, drifting | Warm, disarmed, willing | "I'll go anywhere with you" — devotion offered, then a question about whether the real self is acceptable |
+| 3 | PROUD | Modern R&B / Trapsoul | Mid-tempo, heavy | Contrite, exposed, defensive | "I ain't too proud to beg" — accountability after the damage is already done |
+| 4 | BABY BLUE | Soul-inflected Pop / R&B | Slow, open | Tender, healed, quietly grateful | "There you are, my baby blue" — a letter to his own inner child |
+
+
 **Disk 1 — Identity & Impact**
 | # | Song | Notes |
 |---|---|---|
@@ -155,10 +164,10 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 **Disk 2 — Process & Emotion**
 | # | Song | Notes |
 |---|---|---|
-| 1 | I LOVE YOUR BODY (Title) | New song — R&B / dancehall / reggae |
-| 2 | ANYWHERE WITH YOU | New song — contemporary R&B / soul |
-| 3 | PROUD | New song — modern R&B / trapsoul |
-| 4 | BABY BLUE | New song — soul-inflected pop |
+| 1 | I LOVE YOUR BODY (Title) | New song |
+| 2 | ANYWHERE WITH YOU | New song |
+| 3 | PROUD | New song |
+| 4 | BABY BLUE | New song |
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note from the PULSE Sessions 2022 |
 | 6 | TALK TO ME | From PULSE |
 | 7 | YOU AIN'T GOTTA | From SOFTEST TOUCH |

@@ -103,7 +103,7 @@ sonic documentary layer ของ anthology
 
 | วันที่ | เหตุการณ์ |
 |---|---|
-| 04/05/2026 | ประกาศ anthology กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 29 แทร็ก |
+| 04/05/2026 | ประกาศ anthology กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 30 แทร็ก (25 เพลง และ interlude จากคลังเสียง 5 ชิ้น) |
 | 25/05/2026 | เปิด track list ของ Disk 1 |
 | 01/06/2026 | เปิด track list ของ Disk 2 — ยืนยันเพลงใหม่ 4 เพลง |
 | 15/06/2026 | คลิป teaser "ARCHIVE" — มอนทาจ 90 วินาทีจาก studio voice memo ที่ใช้เป็น interlude |
@@ -229,10 +229,10 @@ SOUR
 Breathe
 
 Disk 2 — Process & Emotion
-I LOVE YOUR BODY (Title)
-ANYWHERE WITH YOU
-PROUD
-BABY BLUE
+I LOVE YOUR BODY [TITLE] — R&B / Dancehall / Reggae | เพอร์คัชชันลอย + เบสไลน์กลิ้ง — ความต้องการที่ไม่ขอโทษใคร | Composed by GONUNMA, Pino | Lyrics by GONUNMA | Arranged by GONUNMA, Pino | MV: 07/07/2026 | Tems (07/07/2026, 480,112,006 streams)
+ANYWHERE WITH YOU — Contemporary R&B / Soul | กรูฟไม่เร่ง — การมอบใจให้โดยไม่มีเงื่อนไข | Composed by GONUNMA, Leven Kali | Lyrics by GONUNMA | Arranged by GONUNMA | Leven Kali (07/07/2026, 61,204,881 streams)
+PROUD — Modern R&B / Trapsoul | เบสไลน์แน่น + เมโลดี้ลอย — การยอมรับผิดและวางอีโก้ลง | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | Brent Faiyaz (07/07/2026, 88,470,233 streams)
+BABY BLUE — Soul-inflected Pop / R&B | เรียบเรียงใกล้ชิด ไม่เร่งจังหวะคลับ — จดหมายถึงตัวเองตอนเด็ก | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Daniel Caesar (07/07/2026, 54,913,772 streams)
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note จาก independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA

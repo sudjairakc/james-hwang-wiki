@@ -103,7 +103,7 @@ and reflects James's development from an idol-system songwriter to a fully creat
 
 | Date | Event |
 |---|---|
-| 04/05/2026 | Anthology announced for 07/07/2026 — 2CD physical collector format, 29 tracks |
+| 04/05/2026 | Anthology announced for 07/07/2026 — 2CD physical collector format, 30 tracks (25 songs and 5 archival interludes) |
 | 25/05/2026 | Disk 1 track list revealed |
 | 01/06/2026 | Disk 2 track list revealed — 4 new songs confirmed |
 | 15/06/2026 | "ARCHIVE" teaser clip — 90-second montage of the studio voice memos used as interludes |
@@ -229,10 +229,10 @@ SOUR
 Breathe
 
 Disk 2 — Process & Emotion
-I LOVE YOUR BODY (Title)
-ANYWHERE WITH YOU
-PROUD
-BABY BLUE
+I LOVE YOUR BODY [TITLE] — R&B / Dancehall / Reggae | buoyant percussion + rolling bassline — unapologetic desire | Composed by GONUNMA, Pino | Lyrics by GONUNMA | Arranged by GONUNMA, Pino | MV: 07/07/2026 | Tems (07/07/2026, 480,112,006 streams)
+ANYWHERE WITH YOU — Contemporary R&B / Soul | unhurried groove — devotion offered without conditions | Composed by GONUNMA, Leven Kali | Lyrics by GONUNMA | Arranged by GONUNMA | Leven Kali (07/07/2026, 61,204,881 streams)
+PROUD — Modern R&B / Trapsoul | rich bassline + atmospheric melody — accountability and setting ego aside | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | Brent Faiyaz (07/07/2026, 88,470,233 streams)
+BABY BLUE — Soul-inflected Pop / R&B | intimate arrangement, no club tempo — a letter to his own inner child | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Daniel Caesar (07/07/2026, 54,913,772 streams)
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note from the independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA

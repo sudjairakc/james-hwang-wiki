@@ -134,6 +134,15 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 
 ### Tracklist
 
+**เพลงใหม่ — รายละเอียดเต็ม**
+| # | เพลง | แนวเพลง | ความเร็ว | อารมณ์และโทน | ธีมฮุค |
+|---|---|---|---|---|---|
+| 1 | I LOVE YOUR BODY | R&B / Dancehall / Reggae | กลางค่อนเร็ว ลอย | กล้า เจ้าชู้ มั่นใจในเนื้อตัว | "I love your body" — บอกความต้องการโดยไม่ขอโทษและไม่ต่อรอง |
+| 2 | ANYWHERE WITH YOU | Contemporary R&B / Soul | ไม่เร่ง ล่องลอย | อุ่น เปิดใจ ยอมทุ่ม | "I'll go anywhere with you" — มอบใจให้ แล้วถามกลับว่ารับตัวจริงได้มั้ย |
+| 3 | PROUD | Modern R&B / Trapsoul | กลาง หนัก | สำนึกผิด เปลือย ตั้งการ์ด | "I ain't too proud to beg" — ยอมรับผิดตอนที่ความเสียหายเกิดไปแล้ว |
+| 4 | BABY BLUE | Soul-inflected Pop / R&B | ช้า โปร่ง | อ่อนโยน เยียวยาแล้ว ขอบคุณเงียบ ๆ | "There you are, my baby blue" — จดหมายถึงตัวเองตอนเด็ก |
+
+
 **Disk 1 — Identity & Impact**
 | # | เพลง | หมายเหตุ |
 |---|---|---|
@@ -155,10 +164,10 @@ SELFISH วางที่ 9 เพื่อให้ SOMEWHERE SOMEHOW แล�
 **Disk 2 — Process & Emotion**
 | # | เพลง | หมายเหตุ |
 |---|---|---|
-| 1 | I LOVE YOUR BODY (Title) | เพลงใหม่ — R&B / dancehall / reggae |
-| 2 | ANYWHERE WITH YOU | เพลงใหม่ — contemporary R&B / soul |
-| 3 | PROUD | เพลงใหม่ — modern R&B / trapsoul |
-| 4 | BABY BLUE | เพลงใหม่ — soul-inflected pop |
+| 1 | I LOVE YOUR BODY (Title) | เพลงใหม่ |
+| 2 | ANYWHERE WITH YOU | เพลงใหม่ |
+| 3 | PROUD | เพลงใหม่ |
+| 4 | BABY BLUE | เพลงใหม่ |
 | 5 | ARCHIVE III: "Loop Before the Pulse" | loop harmony sketch + production note จาก PULSE Sessions 2022 |
 | 6 | TALK TO ME | จาก PULSE |
 | 7 | YOU AIN'T GOTTA | จาก SOFTEST TOUCH |
