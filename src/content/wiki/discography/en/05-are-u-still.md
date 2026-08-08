@@ -20,6 +20,59 @@ In contrast to the precision-based production of PULSE (2023), James stepped bac
 to build a more organic sonic texture connected more closely to the neo-soul and funk lineage.
 
 
+### Production chronology
+
+**Writing — June to October 2023 · Seoul and on tour**
+
+ARE U STILL began before PULSE was even in stores. The first sketches date to the PULSE promotion cycle in late June 2023 — the announcement went out on 22/06 and James was writing again within the week, in the gaps between concept shoots and the press showcase. He has described the album as the first one he did not plan: PULSE had been assembled over four years in isolation, and this material came out of the opposite condition, written fast while a record he had lived with since 2019 was finally in front of people.
+
+The writing then followed him onto the road. From late July the demos were built in hotel rooms across the Asian leg on a travel rig — a Universal Audio Volt interface, a Nord Stage, and a single condenser — shaped every night by hearing what the touring band did to the PULSE material live. Several demos carry the room tone of the hotels they were cut in, kept deliberately rather than cleaned out.
+
+The bridge single "IF I KNEW" was finished first and released on 06/10/2023, three months ahead of the album, to establish the tonal shift before the full record landed.
+
+**Recording — October to early December 2023 · Seoul and Los Angeles**
+
+Where PULSE was cut to a grid in rented rooms, this album was tracked to a room — and for the first time, partly to his own. **JH Studio** in Seongsu-dong opened in October 2023, built with receipts from the first leg of the PULSE tour, and ARE U STILL is the first album recorded there.
+
+| Stage | Where | Notes |
+|---|---|---|
+| Demo consolidation and writing sessions | JH Studio, Seongsu-dong, Seoul | 10/2023, the room's first booking; the collaborative circle flew to Seoul rather than the other way round |
+| Band tracking | EastWest Studios, Studio 2, Los Angeles | Eleven days, full rhythm section tracked live to a room mic pair alongside close mics |
+| Vocals | JH Studio, Seongsu-dong | Cut against the live band takes rather than to a click, which is why the phrasing sits behind the beat across the record |
+| Additional keys and synth | Leven Kali's private room, Inglewood | Analog synth layering — Juno-106, Rhodes Mk I, Wurlitzer 200A |
+| Mixing | Larrabee Studios, North Hollywood | Mixed by Manny Marroquin over nine days |
+| Mastering | Sterling Sound, Edgewater NJ | Cut by Chris Gehringer |
+
+The collaborative circle — **Kyle Dion**, **Leven Kali**, **Sam Wills**, and **Mack Keane** — was assembled through a single introduction from Kyle Dion in August 2023, and all four worked in the room rather than sending files. This is the first and so far only James Hwang album where outside writers hold a topline credit: on PULSE every melody was his, and here the writing sessions were genuinely shared.
+
+**Publishing and rights — October to December 2023**
+
+- **10/2023** — the Warner Chappell Korea administration deal is extended to the second album on identical terms: collection and accounting only, no approval right over content or release
+- **11/2023** — split sheets signed in the room at the end of each session rather than negotiated afterwards, a policy James introduced after watching the SM catalog dispute turn on undocumented contributions
+- **12/2023** — US session-musician agreements filed under AFM Sound Recording Labor Agreement scale, the company's first American union payroll
+
+**Title track selection — 20/12/2023 to 27/12/2023**
+
+The JH Company A&R lead favoured "Breathe" — the most immediate, most obviously radio-shaped track on the album, and the easiest campaign to run. James overruled it. The album's thesis was the gap between how something looks and how it feels, and leading with the groove record would have sold the surface. "Breathe" was held back and released as the second single a month later, which is why it has its own music video despite not being a title track.
+
+Because there is no label A&R above the company, the decision took one meeting and no escalation — a process James has contrasted directly with the six-week title-track committee cycles of his SM years.
+
+**Choreography and staging — 15/12/2023 to 05/01/2024**
+
+Because ARE U STILL is a groove album rather than a performance album, the choreography brief inverted the PULSE approach: instead of eight dancers in formation, James asked for a two-dancer setup that could hold an entire stage with movement built around weight-shift rather than sync.
+
+- Commissioned from **Kim Ye-rim** and the **YGX** creative team, Gangnam-gu
+- **15/12 – 26/12/2023** — creation block at YGX
+- **27/12/2023 – 05/01/2024** — rehearsal at CJ Rehearsal Studio, Sangam-dong, running alongside PULSE 2024 tour rehearsals in the same building
+
+**Music video production**
+
+| Video | Shoot | Location | Notes |
+|---|---|---|---|
+| "Tears On A Pretty Face" | 18/12 – 19/12/2023 | Sunset Studio, Seoul | Single continuous set, shot largely in one-take passes to preserve the live feel of the record |
+| "Breathe" | 21/01/2024 | Warehouse location, Incheon | Shot during a five-day tour gap between the Bangkok and Jakarta dates |
+
+
 ### Music and lyrics
 
 Musically, ARE U STILL shifts direction from the hybrid R&B of the previous album toward

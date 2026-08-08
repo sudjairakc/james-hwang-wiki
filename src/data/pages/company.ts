@@ -73,6 +73,7 @@ const en = {
   ],
   divisions: [
     { name: 'Music', icon: '♪', desc: 'Catalog rollout · Producers network · Sonic identity' },
+    { name: 'JH Studio', icon: '▣', desc: 'In-house recording and post facility, Seongsu-dong · opened Oct 2023, funded by PULSE Tour leg 1' },
     { name: 'Touring', icon: '◎', desc: 'Primary revenue engine · Dream Maker / Live Nation / AEG' },
     { name: 'Publishing & Songwriting', icon: '◇', desc: 'Self-catalog publishing + tracks written for other artists' },
     { name: 'Brand Partnerships', icon: '◆', desc: '≈ $16M–22M annual endorsement throughput' },
@@ -264,6 +265,7 @@ const th: typeof en = {
   ],
   divisions: [
     { name: 'ดนตรี', icon: '♪', desc: 'การปล่อยผลงาน · เครือข่ายโปรดิวเซอร์ · เอกลักษณ์เสียง' },
+    { name: 'JH Studio', icon: '▣', desc: 'ห้องอัดและห้อง post ของบริษัทเอง ย่านซองซูดง · เปิด ต.ค. 2023 สร้างด้วยรายรับ PULSE Tour ขาแรก' },
     { name: 'ทัวร์คอนเสิร์ต', icon: '◎', desc: 'เครื่องยนต์รายได้หลัก · Dream Maker / Live Nation / AEG' },
     { name: 'งานเผยแพร่ & แต่งเพลง', icon: '◇', desc: 'ลิขสิทธิ์เพลงของตัวเอง + เพลงที่แต่งให้ศิลปินอื่น' },
     { name: 'พาร์ทเนอร์แบรนด์', icon: '◆', desc: '≈ $16M–22M รายได้พรีเซ็นเตอร์ต่อปี' },

@@ -4,11 +4,70 @@
 
 ### Recording and production
 
-PULSE is GONUNMA's (James Hwang) first full-length studio album, and his first release since founding J.H Company and entering a partnership with Warner Music Korea. It was recorded between January–December 2022 and reworked in early 2023 to restructure the material for a global-level performance rollout.
+PULSE is GONUNMA's (James Hwang) first full-length studio album, and his first release since founding J.H Company and entering a partnership with Warner Music Korea. The material was written across 2019–2022, alongside and after the SOFTEST TOUCH sessions, recorded through 2022, and reworked in early 2023 to restructure it for a global-level performance rollout.
 The album's production process was clearly an artist-driven production workflow — James built every demo himself (melody, topline, and rough arrangement) before bringing in outside collaborators for texture enhancement, then re-arranged the tracks himself to lock in the final sonic direction.
 The album's production credits therefore reflect the model of
 artist-controlled production with external texture collaborators
 and mark the first release on which he personally controlled the arrangement of every track on the album.
+
+
+### Production chronology
+
+**Writing — 2019 to 2022 · Seoul**
+
+PULSE is not a post-independence album in the way the release date suggests. Most of the material comes from the same long writing window that produced SOFTEST TOUCH — the songs James kept writing alone between 2019 and 2022 while that mini album sat finished on SM's shelf waiting for a release slot.
+
+The distinction is visible in the credits. Every track on SOFTEST TOUCH carries a supervising producer: Kenzie, Ryan S. Jhun, or Yoo Young-jin. Every track on PULSE is composed, written, and arranged by GONUNMA alone. These are the songs that never went through the label's supervision system, because he never submitted them — the ones that came back from a session with a note that they did not fit the release sequencing, and the ones he simply never showed anyone.
+
+By 2022 he had moved out of the group dormitory into a rented apartment in Hannam-dong and was working on a two-room setup: a bedroom vocal booth treated with moving blankets, and an Apollo x8p feeding a laptop rig. Nothing from those sessions was registered with SM's publishing arm. That decision, taken for practical reasons at the time, became the legal foundation of everything that followed — the April 2023 settlement confirmed all original songwriting produced during the contract period as his own intellectual property, and PULSE is the first album built on that catalog.
+
+**Restructuring — February to May 2023**
+
+By the time the dispute went to mediation, James had 24 finished demos spanning four years of writing. Between February and May he cut them to 10 and rebuilt the survivors around a performance rollout rather than a listening experience — the running order was drafted against a hypothetical 20-song setlist before it was drafted as an album, which is why "HOW DOES IT FEEL?" and "SAY" were both promoted to title tracks instead of one leading.
+
+**Recording and engineering — May to June 2023 · Seoul**
+
+| Stage | Where | Notes |
+|---|---|---|
+| Vocal tracking | Koko Sound Studio, Gangnam-gu | Booked as an independent client, not through an agency account. Nineteen days across five weeks. |
+| Additional tracking | Vibe Studio, Cheongdam-dong | Live bass and guitar overdubs, plus the horn stack on "ALL FOR YOU" |
+| Mixing | Larrabee Studios, North Hollywood | Two-week block; James flew out and sat in on every session rather than sending notes |
+| Mastering | Sterling Sound, Edgewater NJ | Two masters cut — a streaming master and a louder master for the tour playback rig |
+
+The album is credited as produced and arranged entirely by GONUNMA. External collaborators — DEEZ, sunkis, Albert Posis, IMLAY, Yessam — were brought in per track for texture rather than for structure, each working from a locked arrangement and a written brief. Every contributor signed a work-for-hire agreement, so the master and the publishing both sit with JH Company rather than being split across a producer pool.
+
+**Publishing and rights — April to June 2023**
+
+- **30/04/2023** — JH Company incorporated in Seoul; the catalog written between 2019 and 2022 is assigned to it
+- **05/2023** — administration deal signed with Warner Chappell Korea covering global collection. JH Company retains 100% of writer and publisher share, and the agreement is administration only — Warner collects and accounts, and holds no approval right over what is written, recorded, or released. His lawyers argued for that structure specifically because the dispute had made ownership the whole point.
+- **06/2023** — neighbouring rights and master ownership registered under JH Company; Warner Music Korea holds distribution only, with no A&R function and no release-decision role
+
+The arrangement is the reason the wiki describes James as an independent artist rather than a Warner one. No outside party has held creative or commercial approval over a James Hwang release since April 2023.
+
+**Title track selection — 12/06/2023 to 22/06/2023**
+
+The decision sat entirely inside JH Company, and it was the first significant commercial call James made with no agency above him. Across three listening sessions over ten days with his A&R lead and the touring music director, the argument for leading with "SAY" alone was straightforward: the keshi feature gave the cleanest US radio story and the simplest single-track campaign.
+
+James rejected it on the grounds that leading with a feature would frame the album as a collaboration rather than as a debut of authorship, and that "HOW DOES IT FEEL?" had to open the show. Two title tracks released a week apart was his own compromise, and it doubled the promotion cost of a company that was six weeks old.
+
+**Choreography — 26/06/2023 to 15/07/2023**
+
+Choreography was commissioned from **Bang Hyun-woo** and the **1MILLION Dance Studio** creative team in Seongsu-dong, chosen over the SM-adjacent choreographers James had worked with for eight years. The brief asked for movement that read from the back of an arena rather than from a music show camera position — the first time he had specified staging distance in a choreography brief.
+
+- **26/06 – 05/07** — creation block at 1MILLION, Seongsu-dong
+- **06/07 – 15/07** — cast rehearsal with the eight-dancer performance unit at CJ Rehearsal Studio, Sangam-dong
+- **16/07 – 20/07** — camera-blocking rehearsals moved into the MV set
+
+**Music video production**
+
+| Video | Shoot | Location | Director |
+|---|---|---|---|
+| "HOW DOES IT FEEL?" | 01/07 – 03/07/2023 | Studio Grid, Paju | Kim Ja-kyoung (VM Project Architecture) |
+| "SAY (feat. keshi)" | 08/07/2023 | Milk Studio, Los Angeles | second unit; keshi's material shot separately and cut in |
+| "ALL FOR YOU" dance session | 28/07/2023 | Studio Grid, Paju | in-house JH Company crew |
+| "TALK TO ME" dance session | 04/08/2023 | Studio Grid, Paju | in-house JH Company crew |
+
+The Paju shoots ran as a single three-day block on one standing set, redressed between setups — a cost decision made when the company was six weeks old and had no line of credit. The receipts from the tour that followed funded JH Company's own facility, **JH Studio** in Seongsu-dong, which opened in October 2023 and has handled every album since.
 
 
 ### Music and lyrics
@@ -122,7 +181,7 @@ Within the industry, PULSE is often cited as one of the artist-produced Korean s
 **Composed by**: GONUNMA, keshi, Jesse Barrera, Albert Posis, sunkis, Yessam <br />
 **Lyrics by**: GONUNMA, keshi <br />
 **Arranged by**: GONUNMA (All Tracks) <br />
-**Recorded**: Jan–Dec 2022 | Reworked: Jan–Feb 2023 <br />
+**Written**: 2019–2022 | **Recorded**: Jan–Dec 2022 | Reworked: Jan–Feb 2023 <br />
 **Label**: J.H Company / Warner Music Korea <br />
 **Genre (Overall)**: Contemporary R&B / Synth Funk / Dance-Pop / Indie Pop / Bedroom Pop <br />
 

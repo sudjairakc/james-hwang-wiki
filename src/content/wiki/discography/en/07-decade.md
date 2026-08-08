@@ -15,6 +15,56 @@ which reflects the artist's development in vocal delivery and production philoso
 The entire album is produced by GONUNMA
 
 
+### Production chronology
+
+**Archival restoration — March to May 2026 · Seoul**
+
+DECADE began not as a writing project but as an archaeology one. From March 2026, while Last of the Ten Rings sat in post and James had no shooting schedule, JH Company put two engineers on a full audit of everything he had recorded since 2015 — 4,100 files across eleven years, spread over a decommissioned SM-era hard drive, three laptops, two phone backups, and a box of unlabelled SD cards recovered from the Hannam-dong apartment.
+
+Roughly 340 files were usable. Of those, 31 were restored properly — de-noised, pitch-corrected against reference, and levelled — and 5 made the final album as the ARCHIVE interludes. The trainee-era voice memo used in ARCHIVE I was recovered from a 2015 phone backup with a corrupted header and rebuilt by hand.
+
+**New material — April to May 2026 · Seoul**
+
+The four new songs were written in six weeks, faster than any previous cycle, and deliberately so: James has said the anthology needed the new material to sound like the next chapter rather than a bonus disc, and that meant writing them after hearing the whole retrospective rather than before.
+
+| Stage | Where | Notes |
+|---|---|---|
+| Writing | JH Studio, Seongsu-dong | 04/2026 – 05/2026; the company's own room, in continuous use since it opened in October 2023 |
+| Vocals | Koko Sound Studio, Gangnam-gu | 05/2026, the same rented room used for PULSE in 2023, booked deliberately rather than using JH Studio |
+| Live band rearrangement | Vibe Studio, Cheongdam-dong | 05/2026, the touring band from PULSE reassembled for the extended live versions |
+| Mixing | Larrabee Studios, North Hollywood | 06/2026, Manny Marroquin |
+| Archive restoration and interlude mastering | JH Studio post room, Seongsu-dong | 03/2026 – 06/2026, handled in-house so nothing left the building |
+| Mastering | Sterling Sound, Edgewater NJ | 06/2026, Chris Gehringer; sequenced masters cut per disk rather than per track |
+
+**The reinterpretations and live versions**
+
+- **Solo versions** — "LIKE I DO," "CRUSH," and "EVERLASTING" were re-recorded rather than remixed, with the featured members' parts absorbed into James's own vocal. All three re-recordings were cleared with SM Entertainment in April 2026 under the external-artist framework, which is the first time the two companies had co-signed a rights document since 2023.
+- **Extended live versions** — "RIGHT ABOUT LOVE" and "NO RESERVATIONS" were built from the PULSE Tour multitrack archive rather than re-performed. The recordings come from the Tokyo Dome nights of September 2023; JH Company had recorded every show of the tour on a 64-channel rig for exactly this purpose, a decision made in 2023 with no specific plan for the material.
+
+**Publishing and rights — April to June 2026**
+
+- **04/2026** — SM Entertainment clearance for the three solo re-recordings; SM retains its original master interest in the 2016–2019 recordings, JH Company owns the new ones outright
+- **05/2026** — Mark Lee, Ten, Jaehyun, Taeyong, Doyoung and Jungkook each waived featured-artist consent for the reinterpretations individually rather than through their agencies
+- **06/2026** — archival spoken material cleared as original recordings owned by James; the SM-era memos required a separate release because they were recorded on company premises
+
+**Title track selection — 20/05/2026 to 28/05/2026**
+
+For the first time there was no argument. "I LOVE YOUR BODY" was the unanimous choice of James and the JH Company A&R lead within one session — it was the loudest, most physically confident record on the album, and an anthology marking ten years needed to open on assertion rather than reflection. The debate that did happen was about sequencing: whether the title track should open Disk 2 or close it. It opens.
+
+**Physical production — May to July 2026**
+
+The 2CD collector edition was manufactured in a single pressing of 300,000 units through a Seoul plant, with a 68-page booklet carrying transcripts of the archival material. Manufacturing was locked on 22/05/2026 — before the track list was public — because the booklet's print run needed eight weeks and the anniversary date was immovable.
+
+**Choreography and music video production**
+
+| Item | Dates | Where | Notes |
+|---|---|---|---|
+| Choreography creation | 08/06 – 20/06/2026 | 1MILLION Dance Studio, Seongsu-dong | Bang Hyun-woo returned from the PULSE cycle; brief asked for a dancehall-rooted vocabulary rather than the sharper K-pop line |
+| Rehearsal | 21/06 – 05/07/2026 | CJ Rehearsal Studio, Sangam-dong | Overlapped with NCT 127 10th anniversary rehearsals in the same complex |
+| "I LOVE YOUR BODY" music video | 12/06 – 13/06/2026 | Studio Grid, Paju | Same Paju stage used for the PULSE videos three years earlier |
+| Broadcast stage | 09/07/2026 | Seoul | The anthology's only televised performance |
+
+
 ### Music and lyrics
 
 Musically, DECADE spans the main styles James has explored throughout his career trajectory, including

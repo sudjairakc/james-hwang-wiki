@@ -17,6 +17,64 @@ The album's structure was designed as a dual narrative
 and is regarded as a "balance album" between artistic continuity and listener accessibility
 
 
+### Production chronology
+
+**Writing — July to November 2024 · Sydney**
+
+CAN'T LEAVE ALONE was written almost entirely inside a film schedule. James was in Sydney from 11/07/2024 shooting the back-to-back Shang-Chi block, working six-day weeks on a stunt-heavy production, and the album exists because he refused to give up the year. JH Company built him a portable rig that lived in his rented house in Woollahra — an Apollo Twin, a Sony C-800G held on a Sydney rental account, and acoustic panels shipped from Seoul — and he wrote at night, four to five nights a week, from July through November.
+
+The constraint shaped the record. Where ARE U STILL was built around a room full of musicians, this one was built alone again, in short sessions, on headphones — which is why it returns to the tighter, more contained Contemporary R&B core described above as a correction after the neo-soul detour.
+
+**Recording — August 2024 to January 2025**
+
+| Stage | Where | Notes |
+|---|---|---|
+| Demos and scratch vocals | Woollahra house rig, Sydney | 07/2024 – 11/2024, cut between shooting days |
+| Principal vocals | Studios 301, Alexandria, Sydney | 09/2024 – 11/2024, weekends only, booked in half-days around the call sheet |
+| Additional production | Pino's room, Seoul | 12/2024, during the two-week window between the Shang-Chi 2 wrap and the finale block |
+| JUNNY sessions | Seoul | 12/2024, topline and Korean-language phrasing passes |
+| Pharrell Williams session | Miami | 05/12 – 06/12/2024, two days; the "CAN'T LEAVE ALONE" groove was rebuilt on the second day and the original arrangement discarded |
+| Mixing | Larrabee Studios, North Hollywood | 01/2025, Manny Marroquin |
+| Mastering | Sterling Sound, Edgewater NJ | 01/2025, Chris Gehringer |
+
+**Publishing and rights — December 2024 to January 2025**
+
+- **12/2024** — the Pharrell feature is structured as a featured-artist agreement with a producer point rather than a co-writing split, keeping the publishing whole under JH Company; the only concession is a co-production credit
+- **01/2025** — Warner Chappell administration renewed for a third cycle, unchanged: collection and accounting only, with no approval right over content or release
+- **01/2025** — sync rights pre-cleared for a Shang-Chi 2 marketing tie-in that never happened; Marvel and JH Company kept the two properties separate at James's request
+
+**Title track selection — 06/01/2025 to 13/01/2025**
+
+The album carried two candidates that were also its two halves. "CAN'T LEAVE ALONE" — the Pharrell record — was the obvious commercial lead, and became the album's name and its pre-release single. "SOUR" was chosen as the title track over it. The reasoning documented in the JH Company release brief is that the dual concept only works if the bitter half carries the flag; leading with the sweet half would have flattened the record into a straightforward R&B release.
+
+The decision was made in-house with no external party consulted. Warner's role on this release, as on every release since 2023, was distribution and collection.
+
+**Marketing decisions — January 2025**
+
+This is the album where James stopped promoting in Korea. No press conference, no music show cycle, no broadcaster package. The reasoning was both commercial and personal: the streaming base had shifted to US and global platforms across PULSE and ARE U STILL, and he had no interest in re-entering a broadcast promotion system he had spent two years leaving. Promotion ran through US radio, streaming-platform live sessions, and a single listening event in New York on 12/02/2025.
+
+Because the company owns its own masters and answers to no label A&R, skipping an entire domestic promotion cycle cost him nothing contractually — a decision that would have been impossible under his previous structure.
+
+**Choreography — November 2024 to January 2025**
+
+Every song on the album's front half — tracks 1 through 4, "CAN'T LEAVE ALONE," "SOUR," "MYSTERY LADY" and "HONEY," everything preceding the "I WANT YOU BACK" interlude — was choreographed in full. The interlude marks the point where the album turns inward, and nothing after it was given movement.
+
+The brief was written around a problem: James was in Sydney on a six-day shooting week and could not attend a creation block in Seoul. The solution was to reverse the usual order.
+
+- **11/2024** — **Bang Hyun-woo** and the **1MILLION Dance Studio** team built all four routines in Seongsu-dong without the artist present, working from demo audio and reference footage
+- **12/2024** — the choreography was delivered as reference video to Sydney; James learned all four from video across three weeks in the gaps between shooting days
+- **01/2025** — a four-day correction block at JH Studio, Seongsu-dong, with Bang Hyun-woo flown in, was the only time he rehearsed them in a room with the choreographer
+
+The routines were built to be performable solo. With no music show cycle scheduled, there was no dance unit cast at all — the first time a James Hwang title track had been choreographed for one body.
+
+**Music video production**
+
+| Video | Shoot | Location | Notes |
+|---|---|---|---|
+| "CAN'T LEAVE ALONE (feat. Pharrell Williams)" | 14/12 – 15/12/2024 | Carriageworks, Sydney | Pharrell does not appear; a single-performer piece built on a looped camera move |
+| "SOUR" | 04/01/2025 | Sydney Harbour location plus a stage insert at Disney Studios Australia | The stage day was scheduled into the Shang-Chi 3 unit's own downtime with Marvel's permission |
+
+
 ### Music and lyrics
 
 Musically, CAN'T LEAVE ALONE blends
