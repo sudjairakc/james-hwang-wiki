@@ -6,7 +6,7 @@ export const totalBO = '$2.46B';
 
 // Shared — film data (proper nouns / numbers / flags).
 export const films = [
-  { slug: 'legend-of-the-ten-rings', num: 1, title: 'Shang-Chi and the Legend of the Ten Rings', year: '2021', date: '3 ก.ย. 2021', dateEn: 'Sep 3, 2021', phase: 'Phase 4', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$432M', rtScore: '91%' },
+  { slug: 'legend-of-the-ten-rings', num: 1, title: 'Shang-Chi and the Legend of the Ten Rings', year: '2021', date: '3 ก.ย. 2021', dateEn: 'Sep 3, 2021', phase: 'Phase 4', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$728M', rtScore: '91%' },
   { slug: 'legacy-of-the-ten-rings', num: 2, title: 'Shang-Chi and the Legacy of the Ten Rings', year: '2025', date: '25 ก.ค. 2025', dateEn: 'Jul 25, 2025', phase: 'Phase 5', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$1.02B', rtScore: '88%' },
   { slug: 'last-of-the-ten-rings', num: 3, title: 'Shang-Chi and the Last of the Ten Rings', year: '2026', date: '18 ก.ย. 2026', dateEn: 'Sep 18, 2026', phase: 'Phase 6', director: 'Destin Daniel Cretton', status: 'released', boxOffice: '$1.01B', rtScore: '85%' },
 ];

@@ -95,7 +95,7 @@ Casting was confirmed at Comic-Con in July 2019. Principal photography was inter
 * **The A.V. Club** noted that «the fight scenes aren't just showcases for speed — they're character scenes in the guise of action, and Hwang makes that distinction clear every time.»
 * **Empire** (4/5): «A superhero film unafraid to be a family drama. James Hwang carries the emotional throughline of both modes with ease.»
 
-**Box Office:** $432 million worldwide, opening domestically with $94.3 million in its first week — the second-highest September opening in MCU history at the time. It performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market. The 2021 release landed in the COVID window and predated the franchise's full China theatrical rollout, which held its worldwide total below potential — a ceiling the 2025 sequel would clear once China opened.
+**Box Office:** $728 million worldwide, opening domestically with $118.4 million over its first weekend — the biggest September opening in box office history at the time. It performed strongly across Southeast Asia, with Thailand delivering the highest per-capita return of any market. China did release the film, but the September 2021 window landed inside a domestic COVID resurgence that had cinemas running at reduced capacity across the country's major markets, capping what a Chinese-heritage lead should have delivered there — a ceiling the 2025 sequel cleared once China's exhibition market had fully reopened.
 
 **Cultural Significance:** Widely regarded as the MCU's most substantively Asian-led film to date. The casting of James Hwang, a Thai-Chinese-Korean actor, in an Asian-American role sparked debate over casting for representation in Hollywood franchise films. The depiction of Ta Lo and its creature designs drew praise from critics specializing in Asian cinema.
 
@@ -108,7 +108,7 @@ Marvel had been trying to mount a Shang-Chi film since 2001, when the rights ret
 
 Kevin Feige greenlit development in December 2018 on the strength of a single structural pitch from **Dave Callaham** — replace Fu Manchu entirely with Wenwu, fold in the Mandarin and the Ten Rings so the character inherits an existing MCU thread rather than a licensing problem, and make the film a family drama rather than a martial arts showcase. **Destin Daniel Cretton** was hired in March 2019 off *Short Term 12* and *Just Mercy*, both small-scale character films with no action credentials at all, which was the point: Feige wanted the domestic scenes cast and directed as drama first.
 
-The market case was made on China. *Avengers: Endgame* had just cleared $629M there, Marvel's Chinese theatrical position was at its peak, and a Chinese-heritage lead with Tony Leung attached was, on paper, the studio's strongest China play yet. That calculation is what unlocked the budget; it is also what made the film's eventual China release denial the single largest financial variable in its performance.
+The market case was made on China. *Avengers: Endgame* had just cleared $629M there, Marvel's Chinese theatrical position was at its peak, and a Chinese-heritage lead with Tony Leung attached was, on paper, the studio's strongest China play yet. That calculation is what unlocked the budget; it is also what made COVID's disruption of the China run the single largest financial variable in its performance.
 
 ### Casting James Hwang
 
@@ -164,7 +164,7 @@ The campaign leaned on the martial arts and on Tony Leung rather than on the lea
 
 The first film was not developed as the opening of a trilogy. Marvel's standard position on a new-property launch is a single film with a sequel option, and *Legend of the Ten Rings* was written to stand alone — the mid-credits scene points outward to the wider MCU rather than to a specific sequel.
 
-Three things changed that. The film's $432M gross was strong for a September release with no China play and a COVID-limited window, but the more persuasive number was the exit polling: audience scores were the highest for any Marvel property launch since *Black Panther*, and the ratio of repeat attendance in Southeast Asia was an outlier in Marvel's data. Second, James's own trajectory — the Academy Awards performance in March 2022, the *Everything Everywhere All at Once* supporting role, and the global profile that followed his 2023 independence and 2025 Grammy wins — turned the lead from an unknown into a name that could carry a franchise on its own. Third, China opened. By 2023 Marvel's read was that a sequel with a full Chinese theatrical release would clear a billion dollars, which *Legacy* did.
+Three things changed that. The film's $728M gross was strong for a September release with its China run capped by a COVID resurgence there, but the more persuasive number was the exit polling: audience scores were the highest for any Marvel property launch since *Black Panther*, and the ratio of repeat attendance in Southeast Asia was an outlier in Marvel's data. Second, James's own trajectory — the Academy Awards performance in March 2022, the *Everything Everywhere All at Once* supporting role, and the global profile that followed his 2023 independence and 2025 Grammy wins — turned the lead from an unknown into a name that could carry a franchise on its own. Third, China opened. By 2023 Marvel's read was that a sequel with a full Chinese theatrical release would clear a billion dollars, which *Legacy* did.
 
 Marvel greenlit films two and three together in 2023 as a single back-to-back production — a commitment the studio had not made to any property since *Infinity War* and *Endgame*.
 
@@ -180,4 +180,4 @@ Marvel greenlit films two and three together in 2023 as a single back-to-back pr
 | 24/06/2021 | Main trailer |
 | 16/08/2021 | World premiere, Hollywood |
 | 17/08 – 30/08/2021 | Global press tour — Los Angeles, London, Seoul, Bangkok, plus US late-night and morning shows |
-| 03/09/2021 | Theatrical release — $432M worldwide |
+| 03/09/2021 | Theatrical release — $728M worldwide |

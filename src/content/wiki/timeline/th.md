@@ -238,7 +238,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 09/2021
-03/09/2021: Shang-Chi and the Legend of the Ten Rings เข้าฉายทั่วโลก ทำรายได้ 432 ล้านดอลลาร์
+03/09/2021: Shang-Chi and the Legend of the Ten Rings เข้าฉายทั่วโลก ทำรายได้ 728 ล้านดอลลาร์
 
 01/09/2021: ปล่อย soundtrack รวมถึง "Fire in the Sky" ร่วมกับ Anderson .Paak ซึ่งช่วย reinforce ภาพ global artist
 

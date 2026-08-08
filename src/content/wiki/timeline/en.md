@@ -238,7 +238,7 @@ Late 2020: Internal evaluation within the production team began to view James as
 
 
 ### 09/2021
-03/09/2021: Shang-Chi and the Legend of the Ten Rings opened in theatres worldwide, grossing $432 million.
+03/09/2021: Shang-Chi and the Legend of the Ten Rings opened in theatres worldwide, grossing $728 million.
 
 01/09/2021: Released the soundtrack, including "Fire in the Sky" with Anderson .Paak, which helped reinforce his image as a global artist.
 

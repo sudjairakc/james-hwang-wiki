@@ -15,7 +15,7 @@ export const slugMeta: Record<string, {
     screenwriters: 'Dave Callaham · Destin Daniel Cretton · Andrew Lanham',
     producers: 'Kevin Feige · Jonathan Schwartz',
     starring: 'James Hwang, Ashley Liao, Tony Leung, Fala Chen, Florian Munteanu, Michelle Yeoh, Ben Kingsley, Benedict Wong, Brie Larson, Mark Ruffalo',
-    boxOffice: '$432M', rtScore: '91%', showCredits: true,
+    boxOffice: '$728M', rtScore: '91%', showCredits: true,
   },
   'legacy-of-the-ten-rings': {
     phase: 'MCU Phase 5', year: '2025', color: '#7c5a3a',

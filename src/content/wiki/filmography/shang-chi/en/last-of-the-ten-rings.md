@@ -306,7 +306,7 @@ Critics received it as a large, brave, sorrowful finale — an aggregate around 
 
 What turned the number is that Brand New Day didn't absorb the demand — it created it. With Legacy having done $1.02B in 2025 and the same director's Spider-Man film clearing a billion of its own in July 2026, audiences began treating the trilogy's finale as a film to catch in theaters rather than wait out on streaming. The seven weeks between the two releases built momentum instead of draining it.
 
-The result is an unusual trilogy arc: a capped debut at $432M (2021, no China), a $1.02B peak (2025, China opens), and **$1.01B in a saturated market (2026)** — the finale landing within a rounding error of the franchise's high point in the worst year the genre had had. It also made **Destin Daniel Cretton** one of the very few directors ever to post three consecutive billion-dollar films: Legacy, Brand New Day, and Last of the Ten Rings.
+The result is an unusual trilogy arc: a capped debut at $728M (2021, China released but COVID-capped), a $1.02B peak (2025, China fully open), and **$1.01B in a saturated market (2026)** — the finale landing within a rounding error of the franchise's high point in the worst year the genre had had. It also made **Destin Daniel Cretton** one of the very few directors ever to post three consecutive billion-dollar films: Legacy, Brand New Day, and Last of the Ten Rings.
 
 **Accolades:**
 * Precursor and critics-circle nominations in visual effects, score, and production design
