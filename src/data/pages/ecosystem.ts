@@ -98,7 +98,7 @@ const en = {
       campaigns: [
         { name: 'Shadow Series', year: '2023', desc: 'Shot by Collier Schorr in Seoul and Paris. Black-and-white editorial series — James in post-show staging environments. No copy, no product placement. Image-only.' },
         { name: 'SL Homme FW24', year: '2024', desc: 'Featured in Saint Laurent Fall/Winter 2024 global print and digital campaign alongside European and Japanese talent. First K-pop adjacent artist to anchor a SL global seasonal campaign.' },
-        { name: 'Custom Stage & Red Carpet', year: '2025', desc: 'As a house ambassador, James is dressed by Saint Laurent for key moments — the Grammy performance, tour staging, and press-tour appearances — through custom looks and archive-piece loans by the atelier. No retail capsule; the maison dresses him directly rather than co-branding product.' },
+        { name: 'Custom Stage & Red Carpet', year: '2025', desc: 'As a house ambassador, James is dressed by Saint Laurent for key moments — the Grammy performance, tour staging, and press-tour appearances — through custom looks and archive-piece loans by the atelier. The one retail exception is the limited SL × GONUNMA 3-piece capsule (2024) — otherwise the relationship stays non-commercial, the maison dressing him directly rather than co-branding product on an ongoing basis.' },
       ],
       brandFit: "Anthony Vaccarello approached James directly after seeing the PULSE Tour visual identity — the show's black-and-white stage palette aligned precisely with SL's current design language. No prior relationship required.",
     },
@@ -239,7 +239,7 @@ const th: typeof en = {
       campaigns: [
         { name: 'Shadow Series', year: '2023', desc: 'ถ่ายโดย Collier Schorr ที่โซลและปารีส ซีรีส์ editorial ขาว-ดำ — James ในบรรยากาศ post-show staging ไม่มี copy ไม่มี product placement เน้นภาพล้วน' },
         { name: 'SL Homme FW24', year: '2024', desc: 'ปรากฏในแคมเปญ Saint Laurent Fall/Winter 2024 ทั้งสิ่งพิมพ์และดิจิทัลระดับโลก ร่วมกับ talent ยุโรปและญี่ปุ่น เป็นศิลปินสาย K-pop คนแรกที่เป็นแกนแคมเปญ seasonal ระดับโลกของ SL' },
-        { name: 'Custom Stage & Red Carpet', year: '2025', desc: 'ในฐานะ house ambassador Saint Laurent จัดชุดให้ James ในโมเมนต์สำคัญ — เวที Grammy, การจัดสเตจทัวร์ และงาน press tour — ผ่าน custom look และการยืม archive piece จาก atelier ไม่มี retail capsule maison แต่งตัวให้โดยตรง ไม่ได้ co-brand product' },
+        { name: 'Custom Stage & Red Carpet', year: '2025', desc: 'ในฐานะ house ambassador Saint Laurent จัดชุดให้ James ในโมเมนต์สำคัญ — เวที Grammy, การจัดสเตจทัวร์ และงาน press tour — ผ่าน custom look และการยืม archive piece จาก atelier ข้อยกเว้นด้าน retail มีแค่ capsule SL × GONUNMA 3 ชิ้น (2024) แบบจำนวนจำกัด ส่วนที่เหลือความสัมพันธ์ยังไม่ใช่เชิงพาณิชย์ maison แต่งตัวให้โดยตรงมากกว่า co-brand product ต่อเนื่อง' },
       ],
       brandFit: 'Anthony Vaccarello ติดต่อ James โดยตรงหลังเห็น visual identity ของ PULSE Tour — โทนเวทีขาว-ดำของโชว์ตรงกับ design language ปัจจุบันของ SL เป๊ะ ไม่ต้องมีความสัมพันธ์มาก่อน',
     },

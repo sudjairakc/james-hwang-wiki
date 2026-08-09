@@ -45,7 +45,7 @@ export const mvMeta: Array<{
   { title: 'HONEY', type: 'MV', date: '2025.02.10', era: "CAN\'T LEAVE ALONE", eraColor: '#c06080', director: 'Lumpens', palette: 'Warm daylight · Honey gold · Natural ivory', views: '108M+' },
 
   // DECADE era
-  { title: 'I LOVE YOUR BODY', type: 'MV', date: '2026.07.07', era: 'DECADE', eraColor: '#6e5a7c', director: 'Kogonada', palette: 'Muted purple · Ash grey · Warm black', views: '78M+' },
+  { title: 'I LOVE YOUR BODY', type: 'MV', date: '2026.07.07', era: 'DECADE', eraColor: '#6e5a7c', director: 'Kogonada', palette: 'Muted purple · Ash grey · Warm black', views: '410M+' },
 ];
 
 // Era grouping order + colors — shared.

@@ -59,7 +59,7 @@ const en = {
       albumAesthetic:
         'Black, white, and deep forest green — a visual identity James defined entirely on his own after leaving SM. No color saturation, no maximalism; sharp light and shadow, heavily geometric. The GQ Korea cover (Aug 2023) served as the visual manifesto of this era.',
       stageWardrobe:
-        'The PULSE Tour is the most significant milestone — an entirely black-and-white stage palette, no other colors. The clothing was designed to clearly emphasize movement, with no unnecessary embellishment. Anthony Vaccarello of Saint Laurent saw the PULSE Tour\'s stage visual identity and reached out to James directly, leading to the SL ambassadorship (custom stage wardrobe & campaigns, not a retail capsule).',
+        'The PULSE Tour is the most significant milestone — an entirely black-and-white stage palette, no other colors. The clothing was designed to clearly emphasize movement, with no unnecessary embellishment. Anthony Vaccarello of Saint Laurent saw the PULSE Tour\'s stage visual identity and reached out to James directly, leading to the SL ambassadorship — custom stage wardrobe and campaigns as the core of it, plus a single limited 3-piece capsule in 2024, the one retail exception in an otherwise non-commercial relationship.',
       keyPieces: ['All-black stage outfits (PULSE 2023)', 'GONUNMA × Nike Capsule Vol.1 (2023)', 'Saint Laurent stage wardrobe (PULSE 2024)'],
       designers: ['Saint Laurent — Anthony Vaccarello', 'Nike Sportswear (co-design)'],
       context:
@@ -194,7 +194,7 @@ const th: typeof en = {
       albumAesthetic:
         'Black, white, และ deep forest green — visual identity ที่ James กำหนดเองทั้งหมดหลังออก SM ไม่มี color saturation, ไม่มี maximalism แสงเงาชัดเจน geometric มาก GQ Korea cover (Aug 2023) เป็น visual manifesto ของ era นี้',
       stageWardrobe:
-        'PULSE Tour เป็นหมุดหมายสำคัญที่สุด — stage palette ขาว-ดำทั้งหมด ไม่มีสีอื่น เสื้อผ้าออกแบบให้ขับการเคลื่อนไหวออกมาชัดเจน ไม่มี embellishment ที่ไม่จำเป็น Anthony Vaccarello แห่ง Saint Laurent เห็น stage visual identity ของ PULSE Tour แล้วติดต่อ James โดยตรง นำไปสู่การเป็น SL ambassador (custom stage wardrobe & campaign ไม่ใช่ retail capsule)',
+        'PULSE Tour เป็นหมุดหมายสำคัญที่สุด — stage palette ขาว-ดำทั้งหมด ไม่มีสีอื่น เสื้อผ้าออกแบบให้ขับการเคลื่อนไหวออกมาชัดเจน ไม่มี embellishment ที่ไม่จำเป็น Anthony Vaccarello แห่ง Saint Laurent เห็น stage visual identity ของ PULSE Tour แล้วติดต่อ James โดยตรง นำไปสู่การเป็น SL ambassador — custom stage wardrobe และ campaign เป็นแกนหลัก บวก capsule จำนวนจำกัด 3 ชิ้นในปี 2024 ซึ่งเป็นข้อยกเว้นด้าน retail เพียงครั้งเดียวในความสัมพันธ์ที่ไม่ใช่เชิงพาณิชย์',
       keyPieces: ['All-black stage outfits (PULSE 2023)', 'GONUNMA × Nike Capsule Vol.1 (2023)', 'Saint Laurent stage wardrobe (PULSE 2024)'],
       designers: ['Saint Laurent — Anthony Vaccarello', 'Nike Sportswear (co-design)'],
       context:

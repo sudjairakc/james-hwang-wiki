@@ -10,7 +10,7 @@ const en = {
   ui: {
     label: 'Recognition',
     title: 'Awards',
-    subtitle: 'Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2025',
+    subtitle: 'Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2030',
     statAwardWins: 'Award Wins',
     nominations: 'Nominations',
     musicShowWins: 'Music Show Wins',
@@ -141,7 +141,7 @@ const en = {
       charts: [
         'DECADE anthology — catalog streaming surge across all eras',
         'Shang-Chi 3 OST contribution charted in multiple markets',
-        'Guinness World Record — first artist to simultaneously top the Billboard 200, Hot 100, and global box office chart in the same week ("NEW" / DECADE / Last of the Ten Rings, Sept 2026)',
+        'Guinness World Record — first artist to simultaneously lead the global box office chart and return both a single ("I LOVE YOUR BODY") and an album (DECADE) to the top of the Billboard Hot 100 and Billboard 200 in the same week, driven by the Last of the Ten Rings release wave (Sept 2026)',
         'Appointed UNESCO Goodwill Ambassador',
         'Nominated for the Nobel Peace Prize, cited for the Gaza ceasefire and Thai-Cambodia peace statements',
       ],
@@ -184,7 +184,7 @@ const th: typeof en = {
   ui: {
     label: 'Recognition',
     title: 'รางวัล',
-    subtitle: 'Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2025',
+    subtitle: 'Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2030',
     statAwardWins: 'รางวัลที่ชนะ',
     nominations: 'การเข้าชิง',
     musicShowWins: 'ชนะ Music Show',
@@ -315,7 +315,7 @@ const th: typeof en = {
       charts: [
         'DECADE anthology — ยอดสตรีมแคตตาล็อกพุ่งทุก era',
         'เพลงที่ร่วมทำใน OST Shang-Chi 3 ขึ้นชาร์ตหลายตลาด',
-        'Guinness World Record — ศิลปินคนแรกที่ครองอันดับ 1 พร้อมกันทั้ง Billboard 200, Hot 100 และ box office chart ระดับโลกในสัปดาห์เดียวกัน ("NEW" / DECADE / Last of the Ten Rings, ก.ย. 2026)',
+        'Guinness World Record — ศิลปินคนแรกที่นำ box office chart ระดับโลกพร้อมกับดันทั้งซิงเกิล ("I LOVE YOUR BODY") และอัลบั้ม (DECADE) กลับขึ้นอันดับ 1 บน Billboard Hot 100 และ Billboard 200 ในสัปดาห์เดียวกัน จากกระแส Last of the Ten Rings (ก.ย. 2026)',
         'ได้รับแต่งตั้งเป็น UNESCO Goodwill Ambassador',
         'ได้รับการเสนอชื่อเข้าชิง Nobel Peace Prize จากแถลงการณ์หยุดยิง Gaza และสันติภาพไทย-กัมพูชา',
       ],
