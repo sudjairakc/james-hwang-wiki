@@ -713,6 +713,8 @@ Favorite Male R&B Artist.
 
 His first nomination on a major US fan-voted award platform following his Grammy success.
 
+10/2025 – 11/2025: Returned to Sydney for a short ADR and pickup-shot session on Last of the Ten Rings — a matter of days, distinct from the larger additional-photography block already scheduled for early 2026. It was during this brief window that entertainment trade circles first noted James spending off-camera time with Ashley Liao, months before the story became widely reported.
+
 
 ### 11/2025
 Attended the Melon Music Awards.
@@ -745,7 +747,7 @@ Reflected his global activity that year (Grammy + Marvel lead role + BET nominat
 ### 01/2026
 Early 2026: Due to the impact of the 2025 events in Thailand, James reduced his use of Thai in public appearances and had no scheduled work in Thailand, though he continued global-level activities. His public image remained in a "controversial but globally dominant" state.
 
-01–02/2026: Additional photography on Last of the Ten Rings — pushed to sit half a year after Legacy's release so the ending could be adjusted against real audience response, and the only window Cretton had free between Brand New Day wrapping (19/12/2025) and that film's post. It was during this window that some entertainment trade outlets began noticing an off-camera closeness between James and Ashley Liao, though no official reports of a relationship had yet surfaced.
+01–02/2026: Additional photography on Last of the Ten Rings — pushed to sit half a year after Legacy's release so the ending could be adjusted against real audience response, and the only window Cretton had free between Brand New Day wrapping (19/12/2025) and that film's post. It was during this window that the off-camera closeness between James and Ashley Liao — first noted by entertainment trade circles the previous October — became harder for outlets to ignore, though no official reports of a relationship had yet surfaced.
 
 03/2026: With Last of the Ten Rings deep in post-production (editing, VFX, scoring — running since April 2025), James had no shooting schedule, attending occasional ADR sessions and spending the rest of the window building the DECADE album.
 
@@ -836,6 +838,10 @@ His two absences were **Bangkok** — his first-ever missed NCT 127 show in his 
 
 ### 09–12/2026
 11–12/2026: Disney, Lucasfilm, and the MJ Estate began discussions on a Captain EO reboot project as a Disney+ series, with James co-developing it (still in the development/packaging stage, not yet filming).
+
+09/2026: In the same week Last of the Ten Rings opened worldwide, DECADE and its lead single "I LOVE YOUR BODY" both returned to No. 1 on the Billboard 200 and Hot 100 — a resurgence Guinness World Records recognized as the first instance of an artist simultaneously leading the global box office chart and topping both major Billboard charts with catalog material in the same week.
+
+10/2026: UNESCO appointed James a Goodwill Ambassador, citing his public statements on the Gaza ceasefire and the Thai–Cambodia conflict. Around the same time, he was confirmed among that year's Nobel Peace Prize nominees for the same body of statements — recognition that arrived the same year his Thai–Cambodia stance cost him his home market.
 
 10/2026: After confirming their relationship, the two maintained a pattern of selective-visibility public appearances, appearing together only at industry events and private screening circuits, reflecting their positioning as a global film-industry couple rather than an idol-style public relationship.
 

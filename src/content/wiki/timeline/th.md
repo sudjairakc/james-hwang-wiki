@@ -713,6 +713,8 @@ Favorite Male R&B Artist
 
 เป็น nomination แรกใน major US fan-voted award platform หลัง Grammy success
 
+10/2025 – 11/2025: กลับไปซิดนีย์เพื่อทำ ADR และถ่ายเพิ่มเล็ก ๆ (pickup shot) ของ Last of the Ten Rings — ใช้เวลาแค่ไม่กี่วัน ต่างจากบล็อกถ่ายเพิ่มเติมชุดใหญ่ที่วางไว้ต้นปี 2026 ระหว่างหน้าต่างสั้น ๆ นี้ วงการ entertainment trade เริ่มสังเกตว่า James ใช้เวลานอกกล้องกับ Ashley Liao เป็นครั้งแรก หลายเดือนก่อนที่เรื่องจะถูกรายงานอย่างกว้างขวาง
+
 
 ### 11/2025
 เข้าร่วมงาน Melon Music Awards
@@ -745,7 +747,7 @@ Top Global (Excl. U.S.) Artist
 ### 01/2026
 ต้นปี 2026: จากผลกระทบเหตุการณ์ในไทยช่วงปี 2025 James ลดการใช้ภาษาไทยใน public appearance และยังไม่มีตารางงานในประเทศไทย แต่ยังคงทำกิจกรรมระดับ global อย่างต่อเนื่อง ภาพลักษณ์อยู่ในสถานะ "controversial but globally dominant"
 
-01–02/2026: ถ่ายเพิ่มเติม (additional photography) ของ Last of the Ten Rings — เลื่อนมาไว้หลัง Legacy เข้าฉายไปแล้วครึ่งปีเพื่อปรับตอนจบตามปฏิกิริยาผู้ชมจริง และเป็นหน้าต่างเดียวที่ Cretton ว่าง ระหว่าง Brand New Day ปิดกล้อง (19/12/2025) กับ post ของเรื่องนั้น เป็นช่วงที่สื่อ entertainment trade บางแห่งเริ่มสังเกตความสนิทสนมระหว่าง James กับ Ashley Liao ในระดับ off-camera แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
+01–02/2026: ถ่ายเพิ่มเติม (additional photography) ของ Last of the Ten Rings — เลื่อนมาไว้หลัง Legacy เข้าฉายไปแล้วครึ่งปีเพื่อปรับตอนจบตามปฏิกิริยาผู้ชมจริง และเป็นหน้าต่างเดียวที่ Cretton ว่าง ระหว่าง Brand New Day ปิดกล้อง (19/12/2025) กับ post ของเรื่องนั้น เป็นช่วงที่ความสนิทสนมระดับ off-camera ระหว่าง James กับ Ashley Liao — ที่วงการ entertainment trade เริ่มสังเกตครั้งแรกตั้งแต่เดือนตุลาคมก่อนหน้า — ยิ่งเด่นชัดจนสื่อเลี่ยงไม่พูดถึงไม่ได้ แม้ยังไม่มีรายงานเชิง relationship อย่างเป็นทางการ
 
 
 ### 02/2026
@@ -836,6 +838,10 @@ James ร่วม 8 จาก 10 เมือง โดยรอบ Seoul ค�
 
 ### 09–12/2026
 11–12/2026: Disney, Lucasfilm, และ MJ Estate เริ่มหารือโปรเจกต์รีบูต Captain EO เป็นซีรีส์ Disney+ โดย James ร่วมพัฒนา (ยังอยู่ในขั้น development/packaging, ยังไม่ถ่ายทำ)
+
+09/2026: สัปดาห์เดียวกับที่ Last of the Ten Rings เข้าฉายทั่วโลก DECADE และซิงเกิลนำ "I LOVE YOUR BODY" กลับขึ้นอันดับ 1 บน Billboard 200 และ Hot 100 พร้อมกัน — กระแสกลับมาที่ Guinness World Records บันทึกว่าเป็นครั้งแรกที่ศิลปินคนเดียวนำ box office chart ระดับโลกพร้อมกับดันผลงานเก่ากลับขึ้นอันดับ 1 ทั้งสอง Billboard chart หลักในสัปดาห์เดียวกัน
+
+10/2026: UNESCO แต่งตั้ง James เป็น Goodwill Ambassador โดยอ้างอิงแถลงการณ์เรื่องหยุดยิง Gaza และความขัดแย้งไทย–กัมพูชา ช่วงเวลาใกล้เคียงกัน เขาได้รับการยืนยันว่าอยู่ในรายชื่อผู้ถูกเสนอชิง Nobel Peace Prize ของปีนั้นจากแถลงการณ์ชุดเดียวกัน — การยอมรับที่มาถึงในปีเดียวกับที่จุดยืนไทย–กัมพูชาทำให้เขาเสียตลาดบ้านเกิดไป
 
 10/2026: หลังการยืนยันความสัมพันธ์ ทั้งสองยังคงรักษารูปแบบ public appearance แบบ selective visibility โดยปรากฏตัวร่วมกันเฉพาะใน industry events และ private screening circuits เท่านั้น ซึ่งสะท้อน positioning ของทั้งคู่ในฐานะ global film-industry couple มากกว่า idol-style public relationship
 

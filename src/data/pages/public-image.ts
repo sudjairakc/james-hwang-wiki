@@ -27,7 +27,7 @@ const en = {
     subtitle: 'Thai-Chinese father · Korean mother · Born June 22, 1998 · Thai citizenship',
     bioHeading: 'Personal Background',
     familyNote:
-      'His father and mother met while studying in the United States, before separating while he was still in elementary school. Both parents remained involved in raising him. This internationally rooted upbringing has led critics to view his mother\'s academic influence and his father\'s business background as shaping Hwang\'s artist-meets-executive approach.',
+      'His father and mother met while studying in the United States. They separated in 2008–2009, while he was still in elementary school; custody shifted by phase rather than staying fixed — Bangkok with his father through the rest of his schooling, then Seoul with his mother once SM training began in late 2013. Both parents remained involved in raising him throughout. Between his father\'s Thai-Chinese household, his mother\'s Korean side of the family, and English-medium schooling, he grew up across four languages from birth — Thai, Chinese, English, and Korean. This internationally rooted upbringing has led critics to view his mother\'s academic influence and his father\'s business background as shaping Hwang\'s artist-meets-executive approach.',
     groupDynamicsHeading: 'Group Dynamics — NCT 127',
     politicalHeading: 'Thailand Political Engagement',
     politicalFootnote: 'Unlike most K-pop artists, who tend to avoid expressing political opinions about their home country.',
@@ -244,6 +244,11 @@ const en = {
       event: 'Estrangement from Thailand',
       text: 'After his anti-war stance on the Thai–Cambodia conflict drew heavy nationalist backlash, James stopped appearing or promoting in his home country entirely. He has refused to apologize — restating the peace position at every opportunity rather than walking it back — and in 2026 skipped the Bangkok dates of NCT 127\'s REDLINE tour, his first-ever absence from a show in Thailand. It is the clearest personal cost of his politics: a self-chosen estrangement from home he will not trade away for market access.',
     },
+    {
+      period: '2026',
+      event: 'UNESCO Goodwill Ambassador · Nobel Peace Prize Nomination',
+      text: 'Appointed a UNESCO Goodwill Ambassador and, separately, confirmed among that year\'s Nobel Peace Prize nominees — both citing the same body of public statements: the Gaza ceasefire calls from 2023 onward and the Thai–Cambodia peace position that had just cost him his home market. Commentary around both honors returned to the same irony: international recognition arriving in the same year his own stance made him unwelcome in his own country.',
+    },
   ] as PoliticalItem[],
   sasaengNote:
     'Sasaeng fan groups who tracked him closely have reported that nearly all the relationship rumors are true — that Hwang dated several industry figures on a short-term basis throughout 2021–2025 before starting a serious relationship with Ashley Liao. However, because the source is sasaeng activity, which carries no public credibility, these reports are widely dismissed — even though many fans believe the information is highly accurate.',
@@ -256,7 +261,7 @@ const th: typeof en = {
     subtitle: 'พ่อไทย-จีน · แม่เกาหลี · เกิด June 22, 1998 · สัญชาติไทย',
     bioHeading: 'ภูมิหลังส่วนตัว',
     familyNote:
-      'บิดาและมารดาพบกันระหว่างศึกษาอยู่ในสหรัฐอเมริกา ก่อนจะแยกทางกันในช่วงที่เขายังเรียนระดับประถมศึกษา ทั้งสองฝ่ายยังคงมีบทบาทร่วมในการเลี้ยงดูบุตร พื้นฐานครอบครัวที่เป็นสากลส่งผลให้นักวิจารณ์มองว่าอิทธิพลสายวิชาการของมารดาและสายธุรกิจของบิดามีผลต่อแนวทาง artist-meets-executive ของ Hwang',
+      'บิดาและมารดาพบกันระหว่างศึกษาอยู่ในสหรัฐอเมริกา ทั้งสองแยกทางกันในปี 2008–2009 ตอนที่เขายังเรียนระดับประถมศึกษา การดูแลเปลี่ยนไปตามช่วงชีวิตไม่ได้ตายตัว — อยู่กรุงเทพฯ กับบิดาตลอดช่วงที่เหลือของการเรียน แล้วย้ายไปโซลกับมารดาตอนเริ่มฝึกกับ SM อย่างจริงจังช่วงปลายปี 2013 ทั้งสองฝ่ายยังคงมีบทบาทร่วมในการเลี้ยงดูบุตรตลอดมา ระหว่างครอบครัวฝั่งบิดาที่เป็นไทย-จีน ญาติฝั่งมารดาที่เป็นเกาหลี และการเรียนสายอินเตอร์ เขาเติบโตมาพร้อมสี่ภาษาตั้งแต่เกิด — ไทย จีน อังกฤษ และเกาหลี พื้นฐานครอบครัวที่เป็นสากลส่งผลให้นักวิจารณ์มองว่าอิทธิพลสายวิชาการของมารดาและสายธุรกิจของบิดามีผลต่อแนวทาง artist-meets-executive ของ Hwang',
     groupDynamicsHeading: 'พลวัตในวง — NCT 127',
     politicalHeading: 'การมีส่วนร่วมทางการเมืองในประเทศไทย',
     politicalFootnote: 'แตกต่างจากแนวปฏิบัติของศิลปิน K-pop ส่วนใหญ่ที่มักหลีกเลี่ยงการแสดงความคิดเห็นทางการเมืองในประเทศบ้านเกิด',
@@ -472,6 +477,11 @@ const th: typeof en = {
       period: '2025–ปัจจุบัน',
       event: 'การเหินห่างจากประเทศไทย',
       text: 'หลังจุดยืนไม่เอาสงครามต่อความขัดแย้งไทย–กัมพูชาโดน backlash ชาตินิยมหนัก James หยุดปรากฏตัวและโปรโมตในบ้านเกิดทั้งหมด เขาปฏิเสธที่จะขอโทษ — พูดย้ำจุดยืน peace ทุกครั้งแทนที่จะกลับคำ — และในปี 2026 ไม่ร่วมโชว์ที่กรุงเทพในทัวร์ REDLINE ของ NCT 127 เป็นครั้งแรกที่ขาดการแสดงในไทย เป็น cost ส่วนตัวที่ชัดที่สุดของการเมืองเขา: การเหินห่างจากบ้านที่เลือกเอง ไม่ยอมแลกกับการเข้าถึงตลาด',
+    },
+    {
+      period: '2026',
+      event: 'UNESCO Goodwill Ambassador · การเสนอชื่อ Nobel Peace Prize',
+      text: 'ได้รับแต่งตั้งเป็น UNESCO Goodwill Ambassador และแยกกันไป ได้รับการยืนยันว่าอยู่ในรายชื่อผู้ถูกเสนอชิง Nobel Peace Prize ของปีนั้น — ทั้งสองอ้างอิงชุดแถลงการณ์เดียวกัน: การเรียกร้องหยุดยิง Gaza ตั้งแต่ปี 2023 และจุดยืนสันติภาพไทย–กัมพูชาที่เพิ่งทำให้เขาเสียตลาดบ้านเกิดไป บทวิจารณ์รอบทั้งสองรางวัลวนกลับไปที่ irony เดียวกัน: การยอมรับระดับโลกมาถึงในปีเดียวกับที่จุดยืนของเขาทำให้ตัวเองไม่เป็นที่ต้อนรับในประเทศตัวเอง',
     },
   ] as PoliticalItem[],
   sasaengNote:

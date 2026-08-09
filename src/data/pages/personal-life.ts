@@ -69,7 +69,7 @@ const en = {
     familyP1Html:
       'His father, <strong>Hwang Chia-ming</strong>, is a Thai-Chinese businessman based in Bangkok. His mother, <strong>Park Soo-yeon</strong>, is a Korean writer and poet who splits her schedule between Seoul and Bangkok. The two met while studying in the United States.',
     familyP2:
-      'The two separated when James was in upper primary school (around 2008–2009) — at ages 10–11. After the divorce, James lived primarily with his father in Bangkok, but traveled to stay with his mother in Seoul during school breaks, growing up across two cultures and two languages at once.',
+      'The two separated when James was in upper primary school (around 2008–2009) — at ages 10–11. Custody wasn\'t a single fixed arrangement: after the divorce he lived primarily with his father in Bangkok through the rest of his schooling, then shifted to living primarily with his mother in Seoul once SM training began in earnest in late 2013. Between his father\'s Thai-Chinese household, his mother\'s Korean side of the family, and an English-medium school in Bangkok, he grew up across four home languages from birth — Thai, Chinese, English, and Korean.',
     familyP3:
       'James rarely discusses his parents\' divorce publicly, but often references "a life split between two cities" as the source of his language ability and adaptability.',
     educationHeading: 'Education',
@@ -104,19 +104,19 @@ const en = {
       period: '2004–2011',
       institution: 'Primary School (Bangkok)',
       location: 'Bangkok, Thailand',
-      note: 'Attended primary school in Bangkok from grade 1 to grade 6. The main languages at home were Thai and Chinese. He traveled to Seoul during summers and long holidays, following his mother\'s schedule as a writer.',
+      note: 'Attended primary school in Bangkok from grade 1 to grade 6, living with his father after his parents separated in 2008–2009. Between his father\'s Thai-Chinese household, his mother\'s Korean side of the family, and English-medium schooling, he spoke four languages from birth — Thai, Chinese, English, and Korean. He traveled to Seoul during summers and long holidays, following his mother\'s schedule as a writer.',
     },
     {
       period: '2011–2013',
       institution: 'Secondary School — Lower (Bangkok)',
       location: 'Bangkok, Thailand',
-      note: 'Completed lower secondary school (Mattayom 3) in Thailand in March 2013 — the same period he passed the SM Entertainment audition (February 2013). He finished lower secondary school in full before relocating to Seoul, with no equivalency exam.',
+      note: 'Completed lower secondary school (Mattayom 3) in Thailand in February 2013, just days before the SM Entertainment audition later that same month. He finished lower secondary school in full before relocating to Seoul, with no equivalency exam.',
     },
     {
       period: '2013',
       institution: 'Transition Period',
       location: 'Bangkok → Seoul',
-      note: 'In late 2013, he officially moved to Seoul as an SM Rookies trainee, staying with relatives on his mother\'s side. During this period he studied Korean intensively and prepared before starting at SOPA.',
+      note: 'In late 2013, he officially moved to Seoul as an SM Rookies trainee, and shifted to living primarily with his mother for the first time since his parents\' separation. During this period he studied Korean intensively and prepared before starting at SOPA.',
     },
     {
       period: '2014–2017',
@@ -173,6 +173,11 @@ const en = {
       group: 'NCT 127 — Inner Circle',
       note: 'Within NCT 127, he is closest with Mark Lee, Jung Woo (Jungwoo), and Lee Donghyuck (Haechan) — three members close in age. The bond with Jungwoo runs deepest, as they were born the same year (1998) and carry similar roles within the group.',
       names: ['Mark Lee (1999)', 'Jung Woo / Jungwoo (1998)', 'Lee Donghyuck / Haechan (2000)'],
+    },
+    {
+      group: 'NCT 127 — Lee Taeyong',
+      note: 'A different kind of bond from the inner circle above — professional and genuinely warm rather than close-friend intimate. The two go back furthest of anyone in the lineup, paired together in a 2014 pre-debut chemistry showcase, and Taeyong is the member who spoke up publicly during the 2023 contract dispute. That history shows up as mutual respect and reliable support at big moments rather than the day-to-day closeness he has with Mark, Jungwoo, and Haechan.',
+      names: ['Lee Taeyong (1995)'],
     },
     {
       group: 'Thailand — Old Friends',
@@ -293,7 +298,7 @@ const th: typeof en = {
     familyP1Html:
       'บิดา <strong>Hwang Chia-ming</strong> เป็นนักธุรกิจไทย-จีนที่มีฐานธุรกิจในกรุงเทพฯ มารดา <strong>Park Soo-yeon</strong> เป็นนักเขียนและกวีชาวเกาหลีที่มีตารางงานระหว่างโซลและกรุงเทพฯ ทั้งสองพบกันในช่วงศึกษาต่อที่สหรัฐอเมริกา',
     familyP2:
-      'ทั้งสองแยกทางกันในช่วงที่ James อยู่ชั้นประถมปลาย (ประมาณปี 2008–2009) — ในช่วงอายุ 10–11 ขวบ หลังการหย่าร้าง James อาศัยอยู่กับบิดาในกรุงเทพฯ เป็นหลัก แต่เดินทางไปพักกับมารดาที่โซลในช่วงปิดเทอม ทำให้เขาเติบโตในสองวัฒนธรรมและสองภาษาพร้อมกัน',
+      'ทั้งสองแยกทางกันในช่วงที่ James อยู่ชั้นประถมปลาย (ประมาณปี 2008–2009) — ในช่วงอายุ 10–11 ขวบ การดูแลไม่ได้ตายตัวแบบเดียว — หลังหย่า เขาอยู่กับบิดาที่กรุงเทพฯ เป็นหลักตลอดช่วงที่เหลือของการเรียน แล้วย้ายไปอยู่กับมารดาที่โซลเป็นหลักตอนเริ่มฝึกกับ SM อย่างจริงจังช่วงปลายปี 2013 ระหว่างครอบครัวฝั่งบิดาที่เป็นไทย-จีน ญาติฝั่งมารดาที่เป็นเกาหลี และโรงเรียนสายอินเตอร์ที่กรุงเทพฯ เขาเติบโตมาพร้อมสี่ภาษาตั้งแต่เกิด — ไทย จีน อังกฤษ และเกาหลี',
     familyP3:
       'James ไม่ค่อยพูดถึงการหย่าร้างของบิดามารดาในที่สาธารณะ แต่อ้างถึง "ชีวิตระหว่างสองเมือง" บ่อยครั้งในฐานะที่มาของความสามารถด้านภาษาและการปรับตัว',
     educationHeading: 'การศึกษา',
@@ -328,19 +333,19 @@ const th: typeof en = {
       period: '2004–2011',
       institution: 'โรงเรียนประถมศึกษา (กรุงเทพฯ)',
       location: 'กรุงเทพฯ ประเทศไทย',
-      note: 'เรียนที่กรุงเทพฯ ช่วง ป.1–ป.6 ภาษาหลักที่บ้านคือไทยและจีน เดินทางไปโซลช่วงซัมเมอร์และวันหยุดยาวตามตารางงานของมารดา ซึ่งเป็นนักเขียน',
+      note: 'เรียนที่กรุงเทพฯ ช่วง ป.1–ป.6 อยู่กับบิดาเป็นหลักหลังพ่อแม่แยกทางกันในปี 2008–2009 ระหว่างครอบครัวฝั่งบิดาที่เป็นไทย-จีน ญาติฝั่งมารดาที่เป็นเกาหลี และโรงเรียนสายอินเตอร์ เขาพูดได้สี่ภาษาตั้งแต่เกิด — ไทย จีน อังกฤษ และเกาหลี เดินทางไปโซลช่วงซัมเมอร์และวันหยุดยาวตามตารางงานของมารดา ซึ่งเป็นนักเขียน',
     },
     {
       period: '2011–2013',
       institution: 'มัธยมศึกษาตอนต้น (กรุงเทพฯ)',
       location: 'กรุงเทพฯ ประเทศไทย',
-      note: 'จบ ม.3 ในไทย มีนาคม 2013 — เดือนเดียวกับที่ผ่านการ audition ของ SM Entertainment (กุมภาพันธ์ 2013) เขาจบมัธยมต้นครบก่อนย้ายโซล ไม่มีการสอบเทียบ',
+      note: 'จบ ม.3 ในไทย กุมภาพันธ์ 2013 ห่างจากวัน audition ของ SM Entertainment ไม่กี่วันในเดือนเดียวกัน เขาจบมัธยมต้นครบก่อนย้ายโซล ไม่มีการสอบเทียบ',
     },
     {
       period: '2013',
       institution: 'ช่วงเปลี่ยนผ่าน',
       location: 'กรุงเทพฯ → โซล',
-      note: 'ช่วงปลายปี 2013 ย้ายเข้ากรุงโซลอย่างเป็นทางการในฐานะ SM Rookies trainee ฝากตัวอยู่กับญาติฝ่ายมารดา ช่วงนี้เรียนภาษาเกาหลีแบบเข้มข้นและเตรียมตัวก่อนเริ่มเรียน SOPA',
+      note: 'ช่วงปลายปี 2013 ย้ายเข้ากรุงโซลอย่างเป็นทางการในฐานะ SM Rookies trainee และย้ายไปอยู่กับมารดาเป็นหลักเป็นครั้งแรกนับตั้งแต่พ่อแม่แยกทางกัน ช่วงนี้เรียนภาษาเกาหลีแบบเข้มข้นและเตรียมตัวก่อนเริ่มเรียน SOPA',
     },
     {
       period: '2014–2017',
@@ -397,6 +402,11 @@ const th: typeof en = {
       group: 'NCT 127 — วงในสุด',
       note: 'ในวง NCT 127 สนิทที่สุดกับ Mark Lee, Jung Woo (Jungwoo), และ Lee Donghyuck (Haechan) — สามคนที่มีอายุใกล้เคียงกัน ความสัมพันธ์กับ Jungwoo ลึกที่สุดเพราะเกิดปีเดียวกัน (1998) และแบกรับบทบาทคล้ายกันในวง',
       names: ['Mark Lee (1999)', 'Jung Woo / Jungwoo (1998)', 'Lee Donghyuck / Haechan (2000)'],
+    },
+    {
+      group: 'NCT 127 — Lee Taeyong',
+      note: 'ความสัมพันธ์คนละแบบกับวงในสุดข้างบน — เป็นมืออาชีพและอบอุ่นจริงใจ แต่ไม่ใช่ระดับเพื่อนสนิท ทั้งสองรู้จักกันมายาวนานที่สุดในไลน์อัพ เคยจับคู่ใน showcase ทดสอบ chemistry ก่อนเดบิวต์เมื่อปี 2014 และ Taeyong คือสมาชิกที่ออกมาพูดต่อสาธารณะช่วงข้อพิพาทสัญญาปี 2023 ประวัติศาสตร์ร่วมกันนั้นออกมาในรูปของความเคารพซึ่งกันและกันและการซัพพอร์ตที่วางใจได้ในโมเมนต์สำคัญ มากกว่าความสนิทแบบวันต่อวันที่มีกับ Mark, Jungwoo และ Haechan',
+      names: ['Lee Taeyong (1995)'],
     },
     {
       group: 'ไทย — เพื่อนเก่า',
