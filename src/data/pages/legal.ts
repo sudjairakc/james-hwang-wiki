@@ -89,7 +89,7 @@ const en = {
       status: 'alert',
     },
     {
-      period: 'March 14, 2023',
+      period: 'Late March 2023',
       label: 'Mediation round 1 — failed',
       text: 'The first round of mediation failed.',
       status: 'alert',
@@ -276,7 +276,7 @@ const th: typeof en = {
       status: 'alert',
     },
     {
-      period: '14 มีนาคม 2023',
+      period: 'ปลายเดือนมีนาคม 2023',
       label: 'Mediation round 1 — failed',
       text: 'ไกล่เกลี่ยรอบแรกไม่สำเร็จ',
       status: 'alert',

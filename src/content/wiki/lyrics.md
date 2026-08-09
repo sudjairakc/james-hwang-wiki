@@ -979,6 +979,51 @@ This moment right here with you, I'll hold you so tight
 
 ---
 
+### 10. CHICKEN THIGNS (CHEEKY Alt.)
+*(cover: Albert Posis, 2024)*
+
+CHICKEN THIGNS
+Verse 1
+You say you're tired of waiting 
+Sick of roses at your door 
+'Cause it's all the same thing 
+But honestly I'm thinking with you that less is more 
+
+Pre Chorus 1
+What could I do to make you look at me? Yeah How could I get a little closer than yesterday? 
+I think I'm running out of nickels and dimes 
+I'm over with being so nice, yeah
+
+Chorus **
+Would you see me 
+If I bring chicken thighs? 
+A little crispy 
+With a bit of spice 
+I've tried and I've tried to figure out what you like And I wonder 
+That maybe you like chicken thighs (Maybe you like chicken thighs)
+
+Verse 2
+Never thought I could be Someone who brings you more Ignoring all your feelings just like 
+Every other guy you've been with before 
+
+Pre Chorus 2
+You're in a hurry so I'll make you wait, yeah yeah 
+You want flavor in your world so I'll you give you taste 
+I know it's only just a matter of time 
+I'm over being so nice
+(So tell me now) 
+
+Would you see me If I bring chicken thighs? A little crispy With a bit of spice I've tried and I've tried to figure out what you like And I wonder That maybe you like chicken thighs
+
+**
+**
+(Chicken thighs)
+
+Outro
+Maybe you like chicken thighs (So you tellin' me you like chicken thighs? Man, come on man) Maybe you like chicken thighs
+
+---
+
 ## ARE U STILL (2024)
 
 ### 1. SLEEPWALKING

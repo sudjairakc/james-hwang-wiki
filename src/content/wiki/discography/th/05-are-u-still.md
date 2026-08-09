@@ -245,8 +245,15 @@ JH Company <br />
 **Publishing** <br />
 JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 
-**Label**
 **Label** <br />
 J.H Company <br />
-Warner Music Korea
+Warner Music Korea <br />
+
+
+### Additional Notes
+
+* อัลบั้มแรกที่ James ถอยจากระดับการควบคุมแบบ solo-producer ที่ทำใน PULSE แล้วดึงระบบนิเวศ soul แบบร่วมงานเข้ามาแทน — Kyle Dion, Leven Kali, Sam Wills และ Mack Keane ต่างถือเครดิต topline ทั้งหมด เป็นครั้งเดียวที่เกิดเรื่องนี้ในงานของ James Hwang
+* BREATHE (แทร็ก 6) คือจุดตัดกลางเชิงโครงสร้างของอัลบั้ม — จาก groove/เจ็บปวด/introspective ในครึ่งแรก ไปสู่การไตร่ตรองและปล่อยวางในครึ่งหลัง โดยมี SELFISH (แทร็ก 9) เป็นจุดต่ำสุดทางอารมณ์ก่อนฟื้นตัวปิดท้าย
+* ถูกมองในเชิงวิจารณ์และเชิงพาณิชย์ว่าเป็น apex ทั้งด้านความคิดสร้างสรรค์และรางวัลของ catalog — อัลบั้มที่คว้า Grammy
+* ฟีเจอริง Janet Jackson ใน JUST A DREAM คือการร่วมงานครั้งแรกของศิลปินกับตำนาน R&B อเมริกัน ตอกย้ำการปรับทิศทางสู่ neo-soul/funk ของอัลบั้ม
 

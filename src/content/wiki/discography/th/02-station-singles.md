@@ -1,10 +1,8 @@
 YOU AIN’T GOTTA - 1st Single [STATION 2] (13/04/2018)
-1. YOU AIN'T GOTTA
-Albert Posis: 10/02/2023
+1. YOU AIN'T GOTTA — Soul / Funk / R&B | ยอมรับคุณค่าของอีกฝ่ายอย่างอ่อนโยน | Albert Posis (10/02/2023, 1,272,906 streams)
 
 CRUSH - 2nd Single [STATION 3] (27/07/2019)
-1. CRUSH
-sunkis: 19/07/2024 (3,485,878 times)
+1. CRUSH — Alternative R&B / 90s-inspired Pop | อาการครัชในช่วงแรก | sunkis (19/07/2024, 3,485,878 streams)
 
 ### Release and promotion timeline
 

@@ -244,8 +244,15 @@ JH Company <br />
 **Publishing** <br />
 JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 
-**Label**
 **Label** <br />
 J.H Company <br />
-Warner Music Korea
+Warner Music Korea <br />
+
+
+### Additional Notes
+
+* The first album where James stepped back from his solo-producer level of control on PULSE and brought in a collaborative soul ecosystem instead — Kyle Dion, Leven Kali, Sam Wills, and Mack Keane all hold topline credit, the only time that has happened on a James Hwang record.
+* BREATHE (track 6) is the album's structural midpoint — the pivot from groove/hurt/introspection in the first half to reflection and letting go in the second, with SELFISH (track 9) as the emotional low before the closing recovery.
+* Regarded critically and commercially as the artist's creative and awards apex — the Grammy-winning album of the catalog.
+* The Janet Jackson feature on JUST A DREAM was the artist's first collaboration with an American R&B legend, cementing the album's neo-soul/funk repositioning.
 
