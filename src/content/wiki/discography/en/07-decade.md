@@ -229,10 +229,10 @@ SOUR
 Breathe
 
 Disk 2 — Process & Emotion
-I LOVE YOUR BODY [TITLE] — R&B / Dancehall / Reggae | buoyant percussion + rolling bassline — unapologetic desire | Composed by GONUNMA, Pino | Lyrics by GONUNMA | Arranged by GONUNMA, Pino | MV: 07/07/2026 | Tems (07/07/2026, 480,112,006 streams)
-ANYWHERE WITH YOU — Contemporary R&B / Soul | unhurried groove — devotion offered without conditions | Composed by GONUNMA, Leven Kali | Lyrics by GONUNMA | Arranged by GONUNMA | Leven Kali (07/07/2026, 61,204,881 streams)
-PROUD — Modern R&B / Trapsoul | rich bassline + atmospheric melody — accountability and setting ego aside | Composed by GONUNMA, JUNNY | Lyrics by GONUNMA, JUNNY | Arranged by GONUNMA, JUNNY | Brent Faiyaz (07/07/2026, 88,470,233 streams)
-BABY BLUE — Soul-inflected Pop / R&B | intimate arrangement, no club tempo — a letter to his own inner child | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Daniel Caesar (07/07/2026, 54,913,772 streams)
+I LOVE YOUR BODY [TITLE] — R&B / Dancehall / Reggae | buoyant percussion + rolling bassline — unapologetic desire | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | MV: 07/07/2026 | Destin Conrad (07/07/2026, 480,112,006 streams)
+ANYWHERE WITH YOU — Contemporary R&B / Soul | unhurried groove — devotion offered without conditions | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Isaiah Falls (07/07/2026, 61,204,881 streams)
+PROUD — Modern R&B / Trapsoul | rich bassline + atmospheric melody — accountability and setting ego aside | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | Jaymin (07/07/2026, 88,470,233 streams)
+BABY BLUE — Soul-inflected Pop / R&B | intimate arrangement, no club tempo — a letter to his own inner child | Composed by GONUNMA | Lyrics by GONUNMA | Arranged by GONUNMA | JHart (07/07/2026, 54,913,772 streams)
 ARCHIVE III: “Loop Before the Pulse” (PULSE Sessions, 2022)(loop-based harmony sketch + production note from the independent writing phase)
 TALK TO ME
 YOU AIN’T GOTTA
