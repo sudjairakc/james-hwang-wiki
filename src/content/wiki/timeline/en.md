@@ -328,7 +328,7 @@ Late in the month: James filed an injunction to suspend the contractual obligati
 
 
 ### 03/2023
-Mid-month: News of the dispute leaked through Dispatch-affiliated media, causing public sentiment to begin supporting James as an artist seeking creative freedom.
+Mid-month: SM Entertainment countersued, citing reputational damage, and news of the dispute leaked through Dispatch-affiliated media, which published excerpts of the internal meeting recordings — causing public sentiment to begin supporting James as an artist seeking creative freedom.
 
 12/03/2023: James attended the 95th Academy Awards as a cast member of Everything Everywhere All at Once, which won several major awards including Best Picture, appearing alongside the cast during the celebrations and after-parties, strengthening his global artist image.
 
@@ -340,13 +340,13 @@ Late in the month: The first round of mediation took place, but no agreement was
 ### 04/2023
 Mid-to-late month: The final round of mediation succeeded.
 
-Officially terminated his contract with SM Entertainment.
+27/04/2023: Officially terminated his contract with SM Entertainment.
 
 Both sides withdrew their lawsuits.
 
 An informal agreement on non-blacklisting was reached, but no collaboration had yet taken place.
 
-30/04/2023: James founded J.H Company.
+30/04/2023: James founded JH Company.
 
 Signed a partnership with Warner Music Korea.
 
@@ -771,7 +771,7 @@ Received a nomination for Best R&B Album (CAN'T LEAVE ALONE).
 
 
 ### 05/2026
-04/05/2026: Announced the anthology album "DECADE" for 07/07/2026 — a 2CD physical collector format carrying 29 tracks across two disks.
+04/05/2026: Announced the anthology album "DECADE" for 07/07/2026 — a 2CD physical collector format carrying 30 tracks across two disks (25 songs and 5 archival interludes).
 
 25/05/2026: Disk 1 track list revealed.
 
@@ -902,7 +902,7 @@ Focused on 3 pillars:
 
 Film projects (post-production/advance promotion).
 
-Managing J.H Company.
+Managing JH Company.
 
 NCT 127 group activities.
 

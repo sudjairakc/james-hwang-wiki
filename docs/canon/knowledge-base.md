@@ -42,7 +42,7 @@ marked ⚠ and detailed in [conflicts.md](conflicts.md).
 | 2019 | Jul 20 Shang-Chi casting confirmed (Comic-Con) |
 | 2021 | Sep 3 *Shang-Chi: Legend of the Ten Rings* ($432M) |
 | 2022 | Jan 11 *SOFTEST TOUCH* (solo debut framing) |
-| 2023 | Jan 30 "Ay-Yo" (last SM release) · **Apr 27 SM settlement** · **Apr 30 founded J.H Company** · Jul 21 *PULSE* · Jul 28 PULSE Tour Leg 1 |
+| 2023 | Jan 30 "Ay-Yo" (last SM release) · **Apr 27 SM settlement** · **Apr 30 founded JH Company** · Jul 21 *PULSE* · Jul 28 PULSE Tour Leg 1 |
 | 2024 | Jan 8 *ARE U STILL* |
 | 2025 | **Feb 2 Grammy wins** · Feb 10 *CAN'T LEAVE ALONE* (SOUR\|HONEY era) · Jul 25 *Shang-Chi: Legacy of the Ten Rings* ($610M) · Jun NCT 127 hiatus |
 | 2026 | Sep 9 *DECADE* (anthology) · Sep 18 *Shang-Chi: Deadly Hands* · Jun–Jul NCT 127 10th-anniv return · Dec 4 *Captain EO: RESONANCE* (Disney+) |
@@ -119,7 +119,7 @@ James's role weight: MCU actor → co-writer; RESONANCE **creator + showrunner +
 
 **Touring:** PULSE (2023–24, 64 shows) $261M combined gross / $105M profit pool / James $40–48M. DECADE (2027, 18 shows) $88M / $40M / $15–19M. Ticket-only combined $309M. JH retained capital ~$128M ⚠ (math doesn't reconcile). James net worth post-DECADE $95–120M.
 
-**Legal (SM dispute):** 2022 → filed Feb 2023 (discriminatory-remarks evidence) → SM countersuit + Dispatch leak → failed mediation Mar 14 → **settled Apr 27, 2023**: both suits withdrawn, no damages, SM apology + policy pledge, James left NCT 127, **GONUNMA trademark 100% retained**. SM-era masters (2016–23) stay with SM.
+**Legal (SM dispute):** 2022 → filed Feb 2023 (discriminatory-remarks evidence) → SM countersuit + Dispatch leak (mid-Mar) → failed mediation late Mar → final mediation succeeded mid-late Apr → **settled Apr 27, 2023**: both suits withdrawn, no damages, SM apology + policy pledge, James left NCT 127, **GONUNMA trademark 100% retained**. SM-era masters (2016–23) stay with SM.
 
 ---
 

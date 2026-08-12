@@ -206,7 +206,7 @@ const en = {
     },
   ],
   influence: [
-    { artist: '4th-gen K-R&B soloists', desc: 'Cite James as proof-of-concept that an idol can pivot into a self-produced auteur without leaving the group' },
+    { artist: '4th-gen K-R&B soloists', desc: 'Cite James as proof-of-concept that an idol can pivot into a self-produced auteur without losing the group' },
     { artist: 'SEA-origin idols', desc: 'The "James Hwang pathway" is used as a term for the trajectory of foreign-born idols who build solo credibility through craft rather than visuals' },
     { artist: 'Independent producer-artists', desc: 'The JH Company single-artist model is cited as a case study of a creator-owned label that never expands into a full roster' },
     { artist: 'Vocal-technique creators', desc: 'Falsetto-led restraint gets reverse-engineered in vocal coaching content — "the GONUNMA approach" has become industry shorthand' },
@@ -391,7 +391,7 @@ const th: typeof en = {
     },
   ],
   influence: [
-    { artist: '4th-gen K-R&B soloists', desc: 'อ้าง James เป็น proof-of-concept ว่า idol สามารถ pivot เป็น self-produced auteur ได้โดยไม่ต้องออกจากกลุ่ม' },
+    { artist: '4th-gen K-R&B soloists', desc: 'อ้าง James เป็น proof-of-concept ว่า idol สามารถ pivot เป็น self-produced auteur ได้โดยไม่เสียกลุ่มไป' },
     { artist: 'SEA-origin idols', desc: '"James Hwang pathway" ถูกใช้เป็นคำเรียก trajectory ของ foreign-born idol ที่ build solo credibility ผ่าน craft ไม่ใช่ visual' },
     { artist: 'Independent producer-artists', desc: 'JH Company single-artist model ถูกยกเป็น case study ของ creator-owned label ที่ไม่ขยายเป็น roster' },
     { artist: 'Vocal-technique creators', desc: 'Falsetto-led restraint ถูก reverse-engineer ใน vocal coaching content — "the GONUNMA approach" กลายเป็นคำในวงการ' },

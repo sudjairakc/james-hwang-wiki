@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-DECADE is GONUNMA's (James Hwang) first anthology album, released on July 7, 2026 under J.H Company with international distribution by Warner Music Korea — to the day, ten years after his debut as a member of NCT 127 on 7 July 2016 <br />
+DECADE is GONUNMA's (James Hwang) first anthology album, released on July 7, 2026 under JH Company with international distribution by Warner Music Korea — to the day, ten years after his debut as a member of NCT 127 on 7 July 2016 <br />
 The album serves as both a retrospective collection and a curated artistic timeline, gathering work from every major chapter of his discography from LIKE I DO (2016) through CAN'T LEAVE ALONE (2025), alongside 4 new songs that function as a transition bridge into the next creative phase <br />
 Beyond the new songs, the album also includes
 * solo reinterpretation versions
@@ -43,7 +43,7 @@ The four new songs were written in six weeks, faster than any previous cycle, an
 
 **Publishing and rights — April to June 2026**
 
-- **04/2026** — SM Entertainment clearance for the three solo re-recordings; SM retains its original master interest in the 2016–2019 recordings, JH Company owns the new ones outright
+- **04/2026** — SM Entertainment clearance for the three solo re-recordings; the three originals stay inside the SM-era catalog (2016–2023) and SM keeps its master interest in them, while JH Company owns the new recordings outright
 - **05/2026** — Mark Lee, Ten, Jaehyun, Taeyong, Doyoung and Jungkook each waived featured-artist consent for the reinterpretations individually rather than through their agencies
 - **06/2026** — archival spoken material cleared as original recordings owned by James; the SM-era memos required a separate release because they were recorded on company premises
 
@@ -192,14 +192,14 @@ Bang Hyun-woo — 1MILLION Dance Studio, Seongsu-dong <br />
 **Music video** <br />
 "I LOVE YOUR BODY" — Studio Grid, Paju <br />
 **Rights clearance** <br />
-SM Entertainment — clearance for the three solo re-recordings, April 2026; SM retains its master interest in the 2016–2019 originals <br />
+SM Entertainment — clearance for the three solo re-recordings, April 2026; the three originals remain in the SM-era catalog (2016–2023) with SM keeping its master interest in them <br />
 Mark Lee · Ten · Jaehyun · Taeyong · Doyoung · Jungkook — featured-artist consent waived individually <br />
 **A&R and project supervision** <br />
 JH Company <br />
 **Publishing** <br />
 JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · distributed by Warner Music Korea <br />
+JH Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

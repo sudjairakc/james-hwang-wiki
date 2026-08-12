@@ -328,7 +328,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 03/2023
-กลางเดือน: ข่าวข้อพิพาทหลุดผ่านสื่อสาย Dispatch ทำให้กระแสสาธารณะเริ่มสนับสนุน James ในฐานะศิลปินที่ต้องการ creative freedom
+กลางเดือน: SM Entertainment ฟ้องกลับโดยอ้างความเสียหายต่อชื่อเสียง และข่าวข้อพิพาทหลุดผ่านสื่อสาย Dispatch ที่เผยแพร่บางส่วนของบันทึกเสียงการประชุมภายใน ทำให้กระแสสาธารณะเริ่มสนับสนุน James ในฐานะศิลปินที่ต้องการ creative freedom
 
 12/03/2023: James เข้าร่วมงาน Oscars ครั้งที่ 95 ในฐานะนักแสดงจาก Everything Everywhere All at Once ซึ่งคว้ารางวัลใหญ่หลายสาขารวม Best Picture โดยเขาปรากฏตัวร่วมกับทีมนักแสดงในช่วง celebration และ after-parties ทำให้ภาพลักษณ์ global artist แข็งแรงขึ้น
 
@@ -340,13 +340,13 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 ### 04/2023
 กลาง–ปลายเดือน: การไกล่เกลี่ยรอบสุดท้ายสำเร็จ
 
-ยุติสัญญากับ SM Entertainment อย่างเป็นทางการ
+27/04/2023: ยุติสัญญากับ SM Entertainment อย่างเป็นทางการ
 
 ถอนฟ้องทั้งสองฝ่าย
 
 มีข้อตกลงไม่เป็นทางการเรื่อง non-blacklisting แต่ยังไม่มีการร่วมงานกัน
 
-30/04/2023: James ก่อตั้ง J.H Company
+30/04/2023: James ก่อตั้ง JH Company
 
 เซ็น partnership กับ Warner Music Korea
 
@@ -771,7 +771,7 @@ Top Global (Excl. U.S.) Artist
 
 
 ### 05/2026
-04/05/2026: ประกาศอัลบั้ม anthology "DECADE" กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 29 แทร็กใน 2 แผ่น
+04/05/2026: ประกาศอัลบั้ม anthology "DECADE" กำหนด 07/07/2026 — physical collector format แบบ 2CD รวม 30 แทร็กใน 2 แผ่น (25 เพลง และ interlude จากคลังเสียง 5 ชิ้น)
 
 25/05/2026: เปิด track list ของ Disk 1
 
@@ -901,7 +901,7 @@ James ประกาศพักกิจกรรมเดี่ยวด้�
 
 โปรเจกต์ภาพยนตร์ (post-production/โปรโมชันล่วงหน้า)
 
-การบริหาร J.H Company
+การบริหาร JH Company
 
 กิจกรรมวง NCT 127
 

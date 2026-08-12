@@ -46,7 +46,7 @@ const en = {
   ],
   roleBadges: ['Singer-Songwriter', 'Actor', 'CEO · JH Company', '2× Grammy Winner', 'MCU Actor', 'Independent Artist'],
   bioHtml:
-    'James Hwang debuted under SM Entertainment as a member of <strong style="color:var(--text)">NCT 127</strong> (2016), before departing via contract settlement in 2023 to found <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a>. Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> spanning contemporary R&B, neo-soul, and funk — earning <a href="%L%awards" style="color:var(--gold);font-weight:600">2 Grammy Awards</a> in 2025. Simultaneously, he established himself in Hollywood through the <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> trilogy (MCU) and the original <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> franchise (Disney), for which he serves as creator, co-director, composer, and lead actor.',
+    'James Hwang debuted under SM Entertainment as a member of <strong style="color:var(--text)">NCT 127</strong> (2016), before departing via contract settlement in 2023 to found <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a>. He rejoined NCT 127 as an external artist in December 2024 under a negotiated arrangement that left that independence intact. Recognized as a pioneer of <em>post-agency authorship</em> within K-pop, he has built a <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> spanning contemporary R&B, neo-soul, and funk — earning <a href="%L%awards" style="color:var(--gold);font-weight:600">2 Grammy Awards</a> in 2025. Simultaneously, he established himself in Hollywood through the <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> trilogy (MCU) and the original <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> franchise (Disney), for which he serves as creator, co-director, composer, and lead actor.',
   stats: [
     { label: 'Career Span', value: '2013–', sub: 'SM Rookies → Independent' },
     { label: 'Total Streams', value: '8.7B+', sub: 'All platforms combined' },
@@ -62,6 +62,7 @@ const en = {
     { year: '2021', label: 'Hollywood', note: 'Shang-Chi and the Legend of the Ten Rings · $728M box office' },
     { year: '2022', label: 'Solo', note: '"SOFTEST TOUCH" — official solo identity launch' },
     { year: '2023', label: 'Independent', note: 'SM departure · JH Company founded · PULSE World Tour' },
+    { year: '2024', label: 'NCT 127 Return', note: 'Rejoined as external artist — no new exclusive contract' },
     { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
     { year: '2026', label: 'DECADE', note: 'DECADE anthology · Shang-Chi trilogy finale' },
     { year: '2027', label: 'RESONANCE', note: 'Disney+ Captain EO: RESONANCE series · DECADE Tour' },
@@ -85,7 +86,7 @@ const en = {
     { group: 'Business', items: [
       { title: 'JH Company', desc: 'Founded Apr 2023 · distribution via Warner Music Korea' },
       { title: 'Endorsements', desc: 'Saint Laurent · Cartier · Sony · Nike · Gentle Monster' },
-      { title: 'Legal', desc: 'SM dispute 2022–2023 · settlement · IP ownership' },
+      { title: 'Legal', desc: 'SM dispute 2022–2023 · settlement · songwriting ownership · 2024 return deal' },
     ]},
     { group: 'Image', items: [
       { title: 'Public Image', desc: 'Reputation · Weverse · pictorials · variety · persona' },
@@ -130,7 +131,7 @@ const th: typeof en = {
   ],
   roleBadges: ['นักร้อง-นักแต่งเพลง', 'นักแสดง', 'CEO · JH Company', 'เจ้าของ Grammy 2 รางวัล', 'นักแสดง MCU', 'ศิลปินอิสระ'],
   bioHtml:
-    'James Hwang เดบิวต์กับ SM Entertainment ในฐานะสมาชิก <strong style="color:var(--text)">NCT 127</strong> (2016) ก่อนแยกทางผ่านการ settle สัญญาในปี 2023 เพื่อก่อตั้ง <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a> ได้รับการยกย่องเป็นผู้บุกเบิก <em>post-agency authorship</em> ใน K-pop เขาสร้าง <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> ที่ครอบคลุม contemporary R&B, neo-soul และ funk — คว้า <a href="%L%awards" style="color:var(--gold);font-weight:600">Grammy 2 รางวัล</a> ในปี 2025 พร้อมกันนั้นก็ปักหลักในฮอลลีวูดผ่านไตรภาค <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> (MCU) และแฟรนไชส์ออริจินอล <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> (Disney) ที่เขารับหน้าที่ผู้สร้าง ผู้กำกับร่วม ผู้ประพันธ์ดนตรี และนักแสดงนำ',
+    'James Hwang เดบิวต์กับ SM Entertainment ในฐานะสมาชิก <strong style="color:var(--text)">NCT 127</strong> (2016) ก่อนแยกทางผ่านการ settle สัญญาในปี 2023 เพื่อก่อตั้ง <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a> และกลับมาร่วมกิจกรรม NCT 127 ในฐานะ external artist เมื่อธันวาคม 2024 ภายใต้ข้อตกลงที่ยังคงความเป็นอิสระของเขาไว้เต็มที่ ได้รับการยกย่องเป็นผู้บุกเบิก <em>post-agency authorship</em> ใน K-pop เขาสร้าง <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> ที่ครอบคลุม contemporary R&B, neo-soul และ funk — คว้า <a href="%L%awards" style="color:var(--gold);font-weight:600">Grammy 2 รางวัล</a> ในปี 2025 พร้อมกันนั้นก็ปักหลักในฮอลลีวูดผ่านไตรภาค <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> (MCU) และแฟรนไชส์ออริจินอล <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> (Disney) ที่เขารับหน้าที่ผู้สร้าง ผู้กำกับร่วม ผู้ประพันธ์ดนตรี และนักแสดงนำ',
   stats: [
     { label: 'ช่วงอาชีพ', value: '2013–', sub: 'SM Rookies → อิสระ' },
     { label: 'ยอดสตรีมรวม', value: '8.7B+', sub: 'รวมทุกแพลตฟอร์ม' },
@@ -146,6 +147,7 @@ const th: typeof en = {
     { year: '2021', label: 'ฮอลลีวูด', note: 'Shang-Chi and the Legend of the Ten Rings · บ็อกซ์ออฟฟิศ $728M' },
     { year: '2022', label: 'เดี่ยว', note: '"SOFTEST TOUCH" — เปิดตัวตัวตนเดี่ยวอย่างเป็นทางการ' },
     { year: '2023', label: 'อิสระ', note: 'ออกจาก SM · ก่อตั้ง JH Company · ทัวร์ PULSE World Tour' },
+    { year: '2024', label: 'กลับวง NCT 127', note: 'กลับมาในฐานะ external artist — ไม่มีสัญญาผูกขาดใหม่' },
     { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
     { year: '2026', label: 'DECADE', note: 'อัลบั้มรวม DECADE · ภาคจบไตรภาค Shang-Chi' },
     { year: '2027', label: 'RESONANCE', note: 'ซีรีส์ Disney+ Captain EO: RESONANCE · DECADE Tour' },
@@ -169,7 +171,7 @@ const th: typeof en = {
     { group: 'ธุรกิจ', items: [
       { title: 'JH Company', desc: 'ก่อตั้ง เม.ย. 2023 · จัดจำหน่ายผ่าน Warner Music Korea' },
       { title: 'พรีเซ็นเตอร์ & ดีล', desc: 'Saint Laurent · Cartier · Sony · Nike · Gentle Monster' },
-      { title: 'กฎหมาย', desc: 'ข้อพิพาท SM 2022–2023 · การ settle · สิทธิ์ IP' },
+      { title: 'กฎหมาย', desc: 'ข้อพิพาท SM 2022–2023 · การ settle · สิทธิ์งานแต่งเพลง · ดีลกลับวงปี 2024' },
     ]},
     { group: 'ภาพลักษณ์', items: [
       { title: 'ภาพลักษณ์สาธารณะ', desc: 'ชื่อเสียง · Weverse · พิคทอเรียล · วาไรตี้ · เพอร์โซนา' },

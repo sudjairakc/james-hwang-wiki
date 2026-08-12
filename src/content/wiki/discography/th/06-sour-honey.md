@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-CAN'T LEAVE ALONE เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ J.H Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024) — dual concept ของอัลบั้มที่แฟนและสื่อตั้งฉายาว่า "SOUR | HONEY" ตามสองซีกของมัน กลายเป็นชื่อเรียก era นี้  <br />
+CAN'T LEAVE ALONE เป็นสตูดิโออัลบั้มชุดที่สามของ GONUNMA (James Hwang) ภายใต้ JH Company และความร่วมมือด้านการจัดจำหน่ายระดับนานาชาติกับ Warner Music Korea เปิดตัวเมื่อ 10 กุมภาพันธ์ 2025 และถูกมองว่าเป็นผลงานที่ กลับสู่แกน Contemporary R&B อย่างชัดเจน หลังจากการทดลองแนว neo-soul / funk / disco ใน ARE U STILL (2024) — dual concept ของอัลบั้มที่แฟนและสื่อตั้งฉายาว่า "SOUR | HONEY" ตามสองซีกของมัน กลายเป็นชื่อเรียก era นี้  <br />
 อัลบั้มพัฒนาในรูปแบบ collaborative R&B ecosystem โดยร่วมงานกับ
 * Pino
 * JUNNY
@@ -164,7 +164,7 @@ reconnecting release ระหว่าง legacy pivot (ARE U STILL) และ 
 **Composed by**: GONUNMA, Pino, JUNNY <br />
 **Lyrics by**: GONUNMA, Pino, JUNNY <br />
 **Arranged by**: GONUNMA, Pino, JUNNY <br />
-**Label**: J.H Company / Warner Music Korea <br />
+**Label**: JH Company / Warner Music Korea <br />
 **Genre (Overall)**: Contemporary R&B / Pop-R&B / K-R&B / Alternative R&B <br />
 
 <div class="raw-tracklist">
@@ -215,7 +215,7 @@ JH Company — ไม่มีงานแถลงข่าว ไม่มี�
 **Publishing** <br />
 JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
+JH Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes

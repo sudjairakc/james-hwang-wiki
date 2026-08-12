@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-PULSE is GONUNMA's (James Hwang) first full-length studio album, and his first release since founding J.H Company and entering a partnership with Warner Music Korea. The material was written across 2019–2022, alongside and after the SOFTEST TOUCH sessions, recorded through 2022, and reworked in early 2023 to restructure it for a global-level performance rollout.
+PULSE is GONUNMA's (James Hwang) first full-length studio album, and his first release since founding JH Company and entering a partnership with Warner Music Korea. The material was written across 2019–2022, alongside and after the SOFTEST TOUCH sessions, recorded through 2022, and reworked in early 2023 to restructure it for a global-level performance rollout.
 The album's production process was clearly an artist-driven production workflow — James built every demo himself (melody, topline, and rough arrangement) before bringing in outside collaborators for texture enhancement, then re-arranged the tracks himself to lock in the final sonic direction.
 The album's production credits therefore reflect the model of
 artist-controlled production with external texture collaborators
@@ -170,7 +170,7 @@ PULSE is regarded as the album that most completely shifted James Hwang's status
 SM-system soloist → global producer-artist
 in his entire discography.
 This album
-was the first release under J.H Company
+was the first release under JH Company
 was a fully self-arranged album
 used the Warner international rollout system
 and set the template for performance-based album promotion in his subsequent work.
@@ -182,7 +182,7 @@ Within the industry, PULSE is often cited as one of the artist-produced Korean s
 **Lyrics by**: GONUNMA, keshi <br />
 **Arranged by**: GONUNMA (All Tracks) <br />
 **Written**: 2019–2022 | **Recorded**: Jan–Dec 2022 | Reworked: Jan–Feb 2023 <br />
-**Label**: J.H Company / Warner Music Korea <br />
+**Label**: JH Company / Warner Music Korea <br />
 **Genre (Overall)**: Contemporary R&B / Synth Funk / Dance-Pop / Indie Pop / Bedroom Pop <br />
 
 
@@ -238,7 +238,7 @@ JH Company — the company's first release; no external A&R and no label approva
 **Publishing** <br />
 JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · distributed by Warner Music Korea <br />
+JH Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

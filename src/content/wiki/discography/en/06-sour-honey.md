@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-CAN'T LEAVE ALONE is the third studio album by GONUNMA (James Hwang) under J.H Company, released through an international distribution partnership with Warner Music Korea. Released on February 10, 2025, it is seen as a clear return to a Contemporary R&B core following the neo-soul / funk / disco experimentation of ARE U STILL (2024) — the album's dual concept, nicknamed "SOUR | HONEY" after its two halves, became the name fans and media use for this era.  <br />
+CAN'T LEAVE ALONE is the third studio album by GONUNMA (James Hwang) under JH Company, released through an international distribution partnership with Warner Music Korea. Released on February 10, 2025, it is seen as a clear return to a Contemporary R&B core following the neo-soul / funk / disco experimentation of ARE U STILL (2024) — the album's dual concept, nicknamed "SOUR | HONEY" after its two halves, became the name fans and media use for this era.  <br />
 The album was developed as a collaborative R&B ecosystem, working with
 * Pino
 * JUNNY
@@ -164,7 +164,7 @@ The bonus track “TAKE YOU TONIGHT” has also been noted in the listener commu
 **Composed by**: GONUNMA, Pino, JUNNY <br />
 **Lyrics by**: GONUNMA, Pino, JUNNY <br />
 **Arranged by**: GONUNMA, Pino, JUNNY <br />
-**Label**: J.H Company / Warner Music Korea <br />
+**Label**: JH Company / Warner Music Korea <br />
 **Genre (Overall)**: Contemporary R&B / Pop-R&B / K-R&B / Alternative R&B <br />
 
 <div class="raw-tracklist">
@@ -215,7 +215,7 @@ JH Company — no press conference, no broadcaster package, no Korean promotion 
 **Publishing** <br />
 JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · distributed by Warner Music Korea <br />
+JH Company · distributed by Warner Music Korea <br />
 
 
 ### Additional Notes

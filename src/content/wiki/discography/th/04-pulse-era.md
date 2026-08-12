@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-PULSE เป็นสตูดิโออัลบั้มเต็มชุดแรกของ GONUNMA (James Hwang) และเป็นผลงานแรกหลังการก่อตั้ง J.H Company และการทำ partnership กับ Warner Music Korea เพลงถูกเขียนตลอดช่วงปี 2019–2022 คู่ขนานและต่อเนื่องจากเซสชัน SOFTEST TOUCH บันทึกเสียงตลอดปี 2022 แล้วนำกลับมา rework ในช่วงต้นปี 2023 เพื่อปรับโครงสร้างให้เหมาะกับ performance rollout ระดับ global
+PULSE เป็นสตูดิโออัลบั้มเต็มชุดแรกของ GONUNMA (James Hwang) และเป็นผลงานแรกหลังการก่อตั้ง JH Company และการทำ partnership กับ Warner Music Korea เพลงถูกเขียนตลอดช่วงปี 2019–2022 คู่ขนานและต่อเนื่องจากเซสชัน SOFTEST TOUCH บันทึกเสียงตลอดปี 2022 แล้วนำกลับมา rework ในช่วงต้นปี 2023 เพื่อปรับโครงสร้างให้เหมาะกับ performance rollout ระดับ global
 กระบวนการผลิตอัลบั้มมีลักษณะเป็น artist-driven production workflow อย่างชัดเจน โดย James สร้าง demo ทุกเพลงด้วยตนเอง (melody, topline และ rough arrangement) ก่อนส่งต่อ collaborator ภายนอกช่วย texture enhancement และนำกลับมา re-arrange เพื่อกำหนด final sonic direction ด้วยตนเอง
 เครดิต production ของอัลบั้มจึงสะท้อนรูปแบบ
 artist-controlled production with external texture collaborators
@@ -170,7 +170,7 @@ PULSE ถูกมองว่าเป็นอัลบั้มที่เ�
 SM-system soloist → global producer-artist
 อย่างสมบูรณ์ที่สุดใน discography ของเขา
 อัลบั้มนี้
-เป็น release แรกภายใต้ J.H Company
+เป็น release แรกภายใต้ JH Company
 เป็น full self-arranged album
 ใช้ Warner international rollout system
 และสร้าง template สำหรับ performance-based album promotion ในงานหลังจากนี้
@@ -182,7 +182,7 @@ SM-system soloist → global producer-artist
 **Lyrics by**: GONUNMA, keshi <br />
 **Arranged by**: GONUNMA (All Tracks) <br />
 **Written**: 2019–2022 | **Recorded**: Jan–Dec 2022 | Reworked: Jan–Feb 2023 <br />
-**Label**: J.H Company / Warner Music Korea <br />
+**Label**: JH Company / Warner Music Korea <br />
 **Genre (Overall)**: Contemporary R&B / Synth Funk / Dance-Pop / Indie Pop / Bedroom Pop <br />
 
 
@@ -238,7 +238,7 @@ JH Company — งานปล่อยชิ้นแรกของบริ�
 **Publishing** <br />
 JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
+JH Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes

@@ -32,7 +32,7 @@ const en = {
       id: '1.1',
       title: 'Idol-Auteur Hybrid Model',
       tag: 'post-agency authorship idol',
-      text: 'James is placed in a category K-pop scholars have begun calling the "post-agency authorship idol" — a foreign-born SM idol who transitions into a global auteur without ever leaving the group. (Cho, M.J., "The Post-Agency Authorship Idol: GONUNMA and the Limits of Company Control," Journal of Popular Music Studies 36.2, 2024.)',
+      text: 'James is placed in a category K-pop scholars have begun calling the "post-agency authorship idol" — a foreign-born SM idol who transitions into a global auteur without severing his tie to the group. (Cho, M.J., "The Post-Agency Authorship Idol: GONUNMA and the Limits of Company Control," Journal of Popular Music Studies 36.2, 2024.)',
       table: {
         cols: ['Dimension', 'Traditional Idol', 'Auteur Pop Artist', 'James Model'],
         rows: [
@@ -210,7 +210,7 @@ const th: typeof en = {
       id: '1.1',
       title: 'โมเดลผสม Idol-Auteur',
       tag: 'post-agency authorship idol',
-      text: 'James ถูกจัดอยู่ในหมวดที่นักวิชาการ K-pop เริ่มเรียกว่า "post-agency authorship idol" — foreign-born SM idol ที่เปลี่ยนผ่านไปสู่ global auteur โดยไม่ต้องออกจากกลุ่ม (Cho, M.J., "The Post-Agency Authorship Idol: GONUNMA and the Limits of Company Control," Journal of Popular Music Studies 36.2, 2024)',
+      text: 'James ถูกจัดอยู่ในหมวดที่นักวิชาการ K-pop เริ่มเรียกว่า "post-agency authorship idol" — foreign-born SM idol ที่เปลี่ยนผ่านไปสู่ global auteur โดยไม่ตัดขาดความสัมพันธ์กับกลุ่ม (Cho, M.J., "The Post-Agency Authorship Idol: GONUNMA and the Limits of Company Control," Journal of Popular Music Studies 36.2, 2024)',
       table: {
         cols: ['มิติ', 'ไอดอลแบบดั้งเดิม', 'ศิลปินป็อปสาย Auteur', 'โมเดลของ James'],
         rows: [

@@ -47,7 +47,7 @@ Intended as an unexpected closer / bonus-like track — it was previously releas
 ---
 
 ## 3. PULSE (2023)
-**1st Studio Album** · J.H Company / Warner Music Korea  
+**1st Studio Album** · JH Company / Warner Music Korea  
 **Genre:** Contemporary R&B / Synth Funk / Dance-Pop / Indie Pop / Bedroom Pop  
 **Produced & Arranged by:** GONUNMA (entire album)
 
@@ -71,7 +71,7 @@ The most coherent album in the discography — the music and content stay aligne
 ---
 
 ## 4. ARE U STILL (2024)
-**2nd Studio Album** · J.H Company / Warner Music Korea  
+**2nd Studio Album** · JH Company / Warner Music Korea  
 **Genre:** Neo-Soul / Funk / Disco-Soul / Contemporary R&B  
 **Produced by:** GONUNMA · **Arranged by:** GONUNMA, Sam Wills, Mack Keane
 
@@ -101,7 +101,7 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 ---
 
 ## 5. CAN'T LEAVE ALONE (2025)
-**3rd Studio Album** · J.H Company / Warner Music Korea  
+**3rd Studio Album** · JH Company / Warner Music Korea  
 **Genre:** Contemporary R&B / Pop-R&B / K-R&B / Alternative R&B  
 **Produced & Arranged by:** GONUNMA, Pino, JUNNY
 
@@ -128,7 +128,7 @@ SELFISH is placed at track 9 so SOMEWHERE SOMEHOW and OUT HERE work as "still mo
 ---
 
 ## 6. DECADE (2026)
-**1st Anthology Album** · J.H Company / Warner Music Korea  
+**1st Anthology Album** · JH Company / Warner Music Korea  
 **Genre:** Contemporary R&B / Pop-R&B / Soul / Funk / Indie Pop (spanning every era)  
 **Produced by:** GONUNMA · **Format:** 2CD Physical + Digital
 
@@ -195,7 +195,7 @@ The live versions of RIGHT ABOUT LOVE and NO RESERVATIONS are highlighted as sta
 |---|---|---|---|---|
 | 2016 | LIKE I DO | Digital Mini Album | SM Entertainment | Soft launch of the GONUNMA persona |
 | 2022 | SOFTEST TOUCH | 1st Mini Album | SM Entertainment | Official solo debut |
-| 2023 | PULSE | 1st Studio Album | J.H Company / Warner | First self-produced full album — turning point |
-| 2024 | ARE U STILL | 2nd Studio Album | J.H Company / Warner | Career peak — Grammy win / neo-soul pivot |
-| 2025 | CAN'T LEAVE ALONE | 3rd Studio Album | J.H Company / Warner | Return to Contemporary R&B core — dual narrative concept |
-| 2026 | DECADE | 1st Anthology Album | J.H Company / Warner | 10-year career retrospective — canonization of discography |
+| 2023 | PULSE | 1st Studio Album | JH Company / Warner | First self-produced full album — turning point |
+| 2024 | ARE U STILL | 2nd Studio Album | JH Company / Warner | Career peak — Grammy win / neo-soul pivot |
+| 2025 | CAN'T LEAVE ALONE | 3rd Studio Album | JH Company / Warner | Return to Contemporary R&B core — dual narrative concept |
+| 2026 | DECADE | 1st Anthology Album | JH Company / Warner | 10-year career retrospective — canonization of discography |

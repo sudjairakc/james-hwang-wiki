@@ -334,7 +334,7 @@ const en = {
       {
         title: 'Market and venue selection',
         body: [
-          'Routing was decided on financing, not on prestige. James was an unproven solo touring artist six weeks out of a public contract dispute, and no Western promoter would underwrite a first leg. East Asia was the only market with a demonstrable base, so Leg 1 was routed entirely through Korea, Japan, China and Taiwan with Dream Maker as promoter, and its receipts financed the guarantees for everything that followed.',
+          'Routing was decided on financing, not on prestige. James was an unproven solo touring artist three months out of a public contract dispute, and no Western promoter would underwrite a first leg. East Asia was the only market with a demonstrable base, so Leg 1 was routed entirely through Korea, Japan, China and Taiwan with Dream Maker as promoter, and its receipts financed the guarantees for everything that followed.',
           'Leg 2 through Leg 4 moved to Live Nation for the Americas and Europe and AEG for selected Asian and Middle Eastern dates. Venue scale was set per market rather than uniformly — stadium in Kuala Lumpur, Jakarta, Hanoi and São Paulo where the base supported it, arena everywhere else. Bangkok was given four nights, the longest single-city run of the tour, and remains the only market where he played four.',
         ],
       },
@@ -431,7 +431,7 @@ const th: typeof en = {
       {
         title: 'การเลือกตลาดและสถานที่',
         body: [
-          'เส้นทางทัวร์ถูกตัดสินด้วยการเงิน ไม่ใช่ศักดิ์ศรี James เป็นศิลปินเดี่ยวที่ยังไม่พิสูจน์ตัวในการทัวร์ และเพิ่งออกจากข้อพิพาทสัญญาที่เป็นข่าวมาหกสัปดาห์ ไม่มีโปรโมเตอร์ฝั่งตะวันตกรายไหนยอมรับประกันขาแรก เอเชียตะวันออกเป็นตลาดเดียวที่มีฐานพิสูจน์ได้ ขาแรกจึงวิ่งผ่านเกาหลี ญี่ปุ่น จีน และไต้หวันล้วน โดยมี Dream Maker เป็นโปรโมเตอร์ และรายรับจากขานี้เป็นตัวจ่าย guarantee ให้ทุกอย่างที่ตามมา',
+          'เส้นทางทัวร์ถูกตัดสินด้วยการเงิน ไม่ใช่ศักดิ์ศรี James เป็นศิลปินเดี่ยวที่ยังไม่พิสูจน์ตัวในการทัวร์ และเพิ่งออกจากข้อพิพาทสัญญาที่เป็นข่าวมาสามเดือน ไม่มีโปรโมเตอร์ฝั่งตะวันตกรายไหนยอมรับประกันขาแรก เอเชียตะวันออกเป็นตลาดเดียวที่มีฐานพิสูจน์ได้ ขาแรกจึงวิ่งผ่านเกาหลี ญี่ปุ่น จีน และไต้หวันล้วน โดยมี Dream Maker เป็นโปรโมเตอร์ และรายรับจากขานี้เป็นตัวจ่าย guarantee ให้ทุกอย่างที่ตามมา',
           'ขาสองถึงขาสี่ย้ายไป Live Nation สำหรับอเมริกาและยุโรป และ AEG สำหรับบางงานในเอเชียกับตะวันออกกลาง ขนาดสถานที่ถูกตั้งรายตลาด ไม่ได้ตั้งเท่ากันหมด — สนามกีฬาที่กัวลาลัมเปอร์ จาการ์ตา ฮานอย และเซาเปาโล ที่ฐานผู้ฟังรองรับได้ ที่เหลือเป็นอารีนา ส่วนกรุงเทพฯ ได้สี่คืน เป็นการเล่นเมืองเดียวยาวที่สุดของทัวร์ และยังเป็นตลาดเดียวที่เขาเคยเล่นถึงสี่คืน',
         ],
       },

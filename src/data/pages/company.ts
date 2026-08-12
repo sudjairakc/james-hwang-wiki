@@ -97,18 +97,18 @@ const en = {
         'Captain EO: RESONANCE draws its rights from the original Captain EO (1986), which is held by multiple parties — Disney is the majority rights holder and distributor, Lucasfilm as producer of the original, the MJ Estate holds the music and likeness rights to Michael Jackson, and JH Company holds creative ownership as creator of the new universe. JH Company\'s stake is smaller than Disney\'s, but it retains creative control and co-direction rights — making this the highest-value franchise asset in the portfolio. The deal closed because every party benefited: the MJ Estate trusted a documented MJ-lineage artist to reactivate a dormant property on favorable royalty + strict likeness-guardrail terms; a franchise-fatigued Lucasfilm gained a low-risk new tentpole it did not have to originate; and Disney — already backing James after Shang-Chi — kept majority + distribution while he carried the creative risk and funded development. A Captain EO: RESONANCE dark-ride attraction, announced for Disney parks in 2027 and slated to open in 2028, extends the IP from screen into physical park real estate — a monetization layer no comparable global pop act has access to.',
     },
     {
-      asset: 'Music Catalog (2022–present)',
+      asset: 'Music Catalog (2023–present)',
       type: 'Recorded Music IP',
       ownership: '100% (JH Company) · Distributed via Warner Music Korea',
       detail:
-        'SOFTEST TOUCH, PULSE, ARE U STILL, CAN\'T LEAVE ALONE, DECADE — all master recordings have belonged to JH Company from the start, unlike the SM-era recordings (LIKE I DO), which remain under the SM catalog.',
+        'PULSE, ARE U STILL, CAN\'T LEAVE ALONE, DECADE — every master recorded after the 2023 settlement has belonged to JH Company from the start, unlike the SM-era recordings, which remain under the SM catalog.',
     },
     {
       asset: 'SM-Era Catalog (2016–2023)',
       type: 'Recorded Music IP',
       ownership: 'SM Entertainment (master) · James Hwang (publishing share)',
       detail:
-        'GONUNMA: LIKE I DO and NCT 127 recordings — the masters remain with SM, but James\'s publishing royalty share was reviewed and adjusted under the 2023 settlement agreement.',
+        'GONUNMA: LIKE I DO, SOFTEST TOUCH, the two SM STATION singles, and the NCT 127 recordings — the masters remain with SM, but James\'s publishing royalty share was reviewed and adjusted under the 2023 settlement agreement. This is why DECADE carries re-recorded solo versions of the older songs rather than the originals.',
     },
     {
       asset: 'Publishing Catalog',
@@ -177,7 +177,7 @@ const en = {
       label: '2024 Return Agreement',
       color: '#9b7fc8',
       text:
-        'When James returned to NCT 127 as an external artist in December 2024, the deal that made it possible was itself the story. K-pop precedent is unambiguous — idols who fully depart an agency after a legal dispute don\'t come back to group activity; the industry pattern going back to the earliest big-agency exits is a clean, permanent break. SM negotiated instead, because losing him permanently — after he\'d become a Grammy-winning global name the group could no longer generate on its own — was worse for the company than sharing control. The terms JH Company secured were unprecedented for a returning idol: James kept full ownership of JH Company and his post-2023 catalog, chose which dates and releases to participate in, and answered to no renewed exclusive contract. It was under that same framework that he later resumed full activity for the group\'s 10th anniversary in 2026 — and it was framed internally, and later in press coverage, as the moment the "Hwang Clause" era of leverage went from legal precedent to commercial practice.',
+        'When James returned to NCT 127 as an external artist in December 2024, the deal that made it possible was itself the story. K-pop precedent is unambiguous — idols who fully depart an agency after a legal dispute don\'t come back to group activity; the industry pattern going back to the earliest big-agency exits is a clean, permanent break. SM negotiated instead, because losing him permanently — after he\'d become a Grammy-nominated global name the group could no longer generate on its own — was worse for the company than sharing control. The terms JH Company secured were unprecedented for a returning idol: James kept full ownership of JH Company and his post-2023 catalog, chose which dates and releases to participate in, and answered to no renewed exclusive contract. It was under that same framework that he later resumed full activity for the group\'s 10th anniversary in 2026 — and it was framed internally, and later in press coverage, as the moment the "Hwang Clause" era of leverage went from legal precedent to commercial practice.',
     },
   ],
   valPhases: [
@@ -290,18 +290,18 @@ const th: typeof en = {
         'Captain EO: RESONANCE ต้องอิงสิทธิ์จาก original Captain EO (1986) ซึ่งมีหลายฝ่ายถือ — Disney เป็น majority rights holder และ distributor, Lucasfilm ในฐานะ producer ของต้นฉบับ, MJ Estate ถือสิทธิ์เพลงและ likeness ของ Michael Jackson, JH Company ถือ creative ownership ในฐานะผู้สร้าง new universe JH Company มีสัดส่วนน้อยกว่า Disney แต่ retain สิทธิ์ creative control และ co-direction ถือเป็น franchise asset ที่มีมูลค่าสูงที่สุดในพอร์ตโฟลิโอ ดีลปิดได้เพราะทุกฝ่ายได้ประโยชน์: MJ Estate เชื่อใจศิลปินสาย MJ-lineage ให้ revive IP ที่หลับอยู่บนเงื่อนไข royalty ที่ดี + guardrail เรื่อง likeness ที่เข้มงวด · Lucasfilm ที่แฟรนไชส์หลักกำลังล้าได้ tentpole ใหม่ความเสี่ยงต่ำที่ไม่ต้องริเริ่มเอง · Disney ที่หนุน James อยู่แล้วหลัง Shang-Chi เก็บ majority + distribution ไว้ ขณะที่ James แบก creative risk และลงทุนพัฒนา dark-ride attraction ของ Captain EO: RESONANCE ที่ประกาศสำหรับ Disney park ปี 2027 และกำหนดเปิดปี 2028 ขยาย IP จากจอไปสู่ physical park จริง — ชั้นรายได้ที่ pop act ระดับโลกคนอื่นไม่มีทางเข้าถึง',
     },
     {
-      asset: 'คลังเพลง (2022–ปัจจุบัน)',
+      asset: 'คลังเพลง (2023–ปัจจุบัน)',
       type: 'ทรัพย์สินทางปัญญาเพลงบันทึกเสียง (Recorded Music IP)',
       ownership: '100% (JH Company) · จัดจำหน่ายผ่าน Warner Music Korea',
       detail:
-        "SOFTEST TOUCH, PULSE, ARE U STILL, CAN\'T LEAVE ALONE, DECADE — master recordings ทั้งหมดเป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings (LIKE I DO) ที่ยังอยู่ภายใต้ SM catalog",
+        "PULSE, ARE U STILL, CAN\'T LEAVE ALONE, DECADE — master ทุกชิ้นที่บันทึกหลัง settlement ปี 2023 เป็นของ JH Company ตั้งแต่ต้น ต่างจาก SM-era recordings ที่ยังอยู่ภายใต้ SM catalog",
     },
     {
       asset: 'คลังเพลงยุค SM (2016–2023)',
       type: 'ทรัพย์สินทางปัญญาเพลงบันทึกเสียง (Recorded Music IP)',
       ownership: 'SM Entertainment (มาสเตอร์) · James Hwang (ส่วนแบ่งด้าน publishing)',
       detail:
-        'GONUNMA: LIKE I DO และ NCT 127 recordings — master อยู่กับ SM แต่ publishing royalty share ของ James ได้รับการตรวจสอบและปรับในข้อตกลง settlement 2023',
+        'GONUNMA: LIKE I DO, SOFTEST TOUCH, ซิงเกิล SM STATION สองเพลง และ NCT 127 recordings — master อยู่กับ SM แต่ publishing royalty share ของ James ได้รับการตรวจสอบและปรับในข้อตกลง settlement 2023 นี่คือเหตุผลที่ DECADE ใช้ solo version ที่อัดใหม่ของเพลงยุคก่อน ไม่ใช่ต้นฉบับ',
     },
     {
       asset: 'คลังลิขสิทธิ์การเผยแพร่',
@@ -370,7 +370,7 @@ const th: typeof en = {
       label: 'ข้อตกลงการกลับวงปี 2024',
       color: '#9b7fc8',
       text:
-        'ตอนที่ James กลับมาร่วมกิจกรรม NCT 127 ในฐานะ external artist เมื่อเดือนธันวาคม 2024 ตัวดีลที่ทำให้เกิดขึ้นได้คือประเด็นที่ถูกพูดถึงเอง precedent ของวงการ K-pop ชัดเจนมาตลอด — idol ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบ ไม่เคยกลับมาร่วมกิจกรรมกลุ่มอีก แพทเทิร์นของวงการย้อนไปถึงกรณีออกจากค่ายใหญ่ครั้งแรกๆ คือการตัดขาดถาวรแบบเด็ดขาด SM เลือกเจรจาแทน เพราะการเสียเขาไปแบบถาวร หลังเขากลายเป็นชื่อระดับโลกที่คว้า Grammy ที่วงเองไม่สามารถสร้างได้แล้ว สร้างความเสียหายให้บริษัทมากกว่าการแบ่งอำนาจควบคุมบางส่วน เงื่อนไขที่ JH Company ได้มาไม่เคยมีมาก่อนสำหรับ idol ที่กลับวง — James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมกิจกรรมหรือปล่อยเพลงไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ และภายใต้กรอบเดียวกันนี้เองที่เขากลับมา active เต็มตัวอีกครั้งในงานครบรอบ 10 ปีปี 2026 ทั้งภายในบริษัทและสื่อในเวลาต่อมามองเรื่องนี้เป็นจุดที่ "Hwang Clause" เปลี่ยนจาก legal precedent เป็น commercial practice จริงๆ',
+        'ตอนที่ James กลับมาร่วมกิจกรรม NCT 127 ในฐานะ external artist เมื่อเดือนธันวาคม 2024 ตัวดีลที่ทำให้เกิดขึ้นได้คือประเด็นที่ถูกพูดถึงเอง precedent ของวงการ K-pop ชัดเจนมาตลอด — idol ที่ออกจากค่ายหลังข้อพิพาททางกฎหมายเต็มรูปแบบ ไม่เคยกลับมาร่วมกิจกรรมกลุ่มอีก แพทเทิร์นของวงการย้อนไปถึงกรณีออกจากค่ายใหญ่ครั้งแรกๆ คือการตัดขาดถาวรแบบเด็ดขาด SM เลือกเจรจาแทน เพราะการเสียเขาไปแบบถาวร หลังเขากลายเป็นชื่อระดับโลกที่เข้าชิง Grammy ที่วงเองไม่สามารถสร้างได้แล้ว สร้างความเสียหายให้บริษัทมากกว่าการแบ่งอำนาจควบคุมบางส่วน เงื่อนไขที่ JH Company ได้มาไม่เคยมีมาก่อนสำหรับ idol ที่กลับวง — James คุมความเป็นเจ้าของ JH Company และ catalog หลังปี 2023 ไว้เต็มร้อย เลือกเองได้ว่าจะร่วมกิจกรรมหรือปล่อยเพลงไหน และไม่ต้องเซ็นสัญญาผูกขาดใหม่ และภายใต้กรอบเดียวกันนี้เองที่เขากลับมา active เต็มตัวอีกครั้งในงานครบรอบ 10 ปีปี 2026 ทั้งภายในบริษัทและสื่อในเวลาต่อมามองเรื่องนี้เป็นจุดที่ "Hwang Clause" เปลี่ยนจาก legal precedent เป็น commercial practice จริงๆ',
     },
   ],
   valPhases: [

@@ -155,7 +155,7 @@ const th: typeof en = {
     stationHeading: 'ผลงานร่วม SM Station',
     stationSub: 'ก่อนเดบิวต์เดี่ยว · 2018–2019',
     stationCallout:
-      'ทั้งสองเพลง SM Station ถูกนำกลับมาตีความใหม่เป็นเวอร์ชันเดี่ยวในอัลบั้ม DECADE (2026) — สื่อถึงความตั้งใจของ James ที่จะทวงคืนและ recontextualize ผลงานช่วงก่อนอิสระของตัวเอง',
+      'ทั้งสองเพลง SM Station ถูกนำไปรวมใน SOFTEST TOUCH (2022) ในฐานะส่วนหนึ่งของ catalog เดี่ยวอย่างเป็นทางการ — สื่อถึงความตั้งใจของ James ที่จะทวงคืนและ recontextualize ผลงานช่วงก่อนอิสระของตัวเอง',
     philosophyHeading: 'ปรัชญาการคอลแลบ',
     philosophySelectionTitle: 'การเลือก Artist',
     philosophySelectionBody:

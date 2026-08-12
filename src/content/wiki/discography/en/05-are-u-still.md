@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-ARE U STILL is the second studio album by GONUNMA (James Hwang), released under J.H Company with international distribution through Warner Music Korea. It launched on January 8, 2024, and stands as the clearest musical phase shift in his career trajectory since going solo.
+ARE U STILL is the second studio album by GONUNMA (James Hwang), released under JH Company with international distribution through Warner Music Korea. It launched on January 8, 2024, and stands as the clearest musical phase shift in his career trajectory since going solo.
 The album was developed as a live-influenced groove composition, emphasizing
 * bass-driven structure
 * analog synth layering
@@ -186,7 +186,7 @@ the defining pivot album between independence and legacy alignment in James Hwan
 **Composed by**: GONUNMA, Kyle Dion, Leven Kali, Sam Wills, Mack Keane <br />
 **Lyrics by**: GONUNMA, Kyle Dion, Leven Kali, Sam Wills, Mack Keane <br />
 **Arranged by**: GONUNMA, Sam Wills, Mack Keane <br />
-**Label**: J.H Company / Warner Music Korea <br />
+**Label**: JH Company / Warner Music Korea <br />
 **Genre (Overall)**: Neo-Soul / Funk / Disco-Soul / Contemporary R&B <br />
 
 
@@ -245,7 +245,7 @@ JH Company <br />
 JH Company (100% writer and publisher share) · administered by Warner Chappell Korea <br />
 
 **Label** <br />
-J.H Company <br />
+JH Company <br />
 Warner Music Korea <br />
 
 

@@ -119,6 +119,46 @@ Legend: 🔴 factual contradiction (needs a decision) · 🟡 naming/stylization
 
 ---
 
+## ✅ E. SM-dispute / 2024-return sweep — RESOLVED (2026-08-12)
+
+Sweep scope: every claim about the SM conflict, the 2023 departure, and the NCT 127
+return. All 16 items below were ruled on and applied across `en`/`th`.
+
+Baseline correction the sweep established: **the return is December 2024, not 2025.**
+2025 is the year he toured with the group and then went on hiatus (announced Jun 2025,
+running to Jul 2026). Nothing in the repo ever dated the return to 2025 — the
+misreading came from E14.
+
+| # | Conflict | Ruling applied |
+|---|---|---|
+| E1 | `legal.ts` intro said legal action started "late 2022"; everything else said Feb 2023 | Dispute *began* late 2022, injunction *filed* Feb 2023 — intro rewritten to separate the two |
+| E2 | "full IP ownership" vs master carve-outs in discography/company | Settlement confirmed **songwriting/compositions** as his; SM keeps SM-era masters. Fixed `legal.ts` intro, `home.ts` legal card, `biography.ts` |
+| E3 | SM master window 2016–2023 vs 2016–2019 | Canonical window = **2016–2023** (contract span). `07-decade.md` now scopes its statement to "the three originals … inside the SM-era catalog (2016–2023)" |
+| E4 | `cultural-impact.ts` scholar quote "without ever leaving the group" vs official departure | Reworded to "without severing his tie to the group" |
+| E5 | `collaborations.ts` EN said SM Station singles folded into SOFTEST TOUCH (2022), TH said DECADE (2026) | **EN correct** (matches `02-station-singles.md`); TH fixed. DECADE carries re-recorded solo versions — a separate fact |
+| E6 | Mediation-1 failure: late Mar vs `knowledge-base.md` "Mar 14" | **Late March**; knowledge-base corrected |
+| E7 | SM countersuit missing from timeline + biography; final mediation missing from `legal.ts` | Countersuit added to both; final-mediation entry added to `legal.ts` timeline (both langs) |
+| E8 | GONUNMA: SM claimed-then-withdrew (`legal.ts`) vs "SM had no legal claim" (`biography.ts`) | `biography.ts` rewritten to say SM claimed it and **withdrew the claim in the settlement** |
+| E9 | "absence of a blacklist" (timeline) vs "music shows blocked it" (rivalries) | Both true at different levels — `rivalries.ts` now says no formal blacklist, but selective broadcast |
+| E10 | `home.ts` never mentioned the return; `legal.ts` had no Dec 2024 entry | Return added to `home.ts` bio + a 2024 milestone; `legal.ts` gained a Dec 2024 timeline entry and its NCT-status field now reads "Departed 2023 · returned Dec 2024" |
+| E11 | `company.ts` motive said "Grammy-winning" but Grammy was Feb 2025, after the Dec 2024 deal | Changed to **Grammy-nominated** (noms landed late 2024) |
+| E12 | `tours-pulse.ts` "six weeks out of a public contract dispute" (Apr 27 → Jul 28 is ~13 wks) | Changed to **three months** |
+| E13 | DECADE track count 29 (timeline) vs 30 (`07-decade.md`) | **30** (25 songs + 5 ARCHIVE interludes — verified against the track list); timeline corrected. Note `tours-decade.ts` "29 songs" is the *tour setlist*, unrelated — left alone |
+| E14 | `biography.ts` era 07 titled "…and the Return" but bounded 2025–2026, with the Dec 2024 return buried after the 2025 paragraphs | Era re-bounded **2024–2026** and the return paragraph moved to the front of the section |
+| E15 | `ecosystem.ts` said "SM Contract Constraints" / "Restricted while active in NCT 127" although the return deal has no exclusive contract | Relabelled as group-deal **category conflicts** during NCT 127 activity cycles; "legacy" dropped since the relationship is active |
+| E16 | `J.H Company` vs `JH Company` | Unified on **JH Company** repo-wide (~20 occurrences, mostly discography label credits) |
+
+Secondary fix folded into E2/E3: `company.ts` listed "Music Catalog (2022–present)" as
+100% JH-owned including SOFTEST TOUCH, but `03-softest-touch.md` puts that album's
+masters with SM. Renamed to **2023–present**, SOFTEST TOUCH moved into the SM-era
+catalog entry.
+
+Still open from the earlier sweep and *not* touched here: **C5** (Aug 2024 "first
+appearance as external artist" in `personal-life.ts` vs "attendee only" in the timeline)
+and **C7** (SM listed under "Strategic Partners").
+
+---
+
 ## How to answer
 
 Reply with the item IDs + your choice, e.g. *"A1=a, A5=Xu Xuan, A7=live-action, B2=with ?, B10=NEW I–IV"*. For 🟢 items just say "fix all D" and I'll apply them. I'll also surface the highest-impact ones as an interactive multiple-choice prompt.

@@ -4,7 +4,7 @@
 
 ### Recording and production
 
-DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 7 กรกฎาคม 2026 ภายใต้ J.H Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea — ตรงวันครบรอบ 10 ปีพอดีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 เมื่อ 7 กรกฎาคม 2016 <br />
+DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 7 กรกฎาคม 2026 ภายใต้ JH Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea — ตรงวันครบรอบ 10 ปีพอดีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 เมื่อ 7 กรกฎาคม 2016 <br />
 อัลบั้มทำหน้าที่เป็นทั้ง retrospective collection และ curated artistic timeline โดยรวบรวมผลงานจากทุกช่วงสำคัญของ discography ตั้งแต่ LIKE I DO (2016) จนถึง CAN'T LEAVE ALONE (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็น transition bridge ไปยัง creative phase ถัดไป <br />
 นอกจากเพลงใหม่ อัลบั้มยังรวม
 * solo reinterpretation versions
@@ -43,7 +43,7 @@ DECADE ไม่ได้เริ่มจากการเป็นโปร�
 
 **Publishing และสิทธิ์ — เมษายน ถึง มิถุนายน 2026**
 
-- **04/2026** — SM Entertainment เคลียร์สิทธิ์ให้อัดใหม่สามเพลง SM ยังถือส่วนได้เสียใน master ต้นฉบับปี 2016–2019 ส่วน JH Company เป็นเจ้าของงานอัดใหม่เต็มร้อย
+- **04/2026** — SM Entertainment เคลียร์สิทธิ์ให้อัดใหม่สามเพลง ต้นฉบับทั้งสามยังอยู่ใน SM-era catalog (2016–2023) และ SM ยังถือส่วนได้เสียใน master ของมัน ส่วน JH Company เป็นเจ้าของงานอัดใหม่เต็มร้อย
 - **05/2026** — Mark Lee, Ten, Jaehyun, Taeyong, Doyoung และ Jungkook สละสิทธิ์ยินยอมในฐานะ featured artist เป็นรายบุคคล ไม่ได้ผ่านต้นสังกัด
 - **06/2026** — archival spoken material เคลียร์ในฐานะงานบันทึกต้นฉบับที่ James เป็นเจ้าของ ส่วน memo ยุค SM ต้องขอปล่อยแยกเพราะอัดในสถานที่ของบริษัท
 
@@ -192,14 +192,14 @@ Bang Hyun-woo — 1MILLION Dance Studio ซองซูดง <br />
 **MV** <br />
 "I LOVE YOUR BODY" — Studio Grid พาจู <br />
 **การเคลียร์สิทธิ์** <br />
-SM Entertainment — เคลียร์สิทธิ์ให้อัดใหม่สามเพลงเมื่อเมษายน 2026 SM ยังถือส่วนได้เสียใน master ต้นฉบับปี 2016–2019 <br />
+SM Entertainment — เคลียร์สิทธิ์ให้อัดใหม่สามเพลงเมื่อเมษายน 2026 ต้นฉบับทั้งสามยังอยู่ใน SM-era catalog (2016–2023) โดย SM ยังถือส่วนได้เสียใน master <br />
 Mark Lee · Ten · Jaehyun · Taeyong · Doyoung · Jungkook — สละสิทธิ์ยินยอมในฐานะ featured artist เป็นรายบุคคล <br />
 **A&R และการกำกับดูแลโปรเจกต์** <br />
 JH Company <br />
 **Publishing** <br />
 JH Company (writer และ publisher share 100%) · บริหารโดย Warner Chappell Korea <br />
 **Label** <br />
-J.H Company · จัดจำหน่ายโดย Warner Music Korea <br />
+JH Company · จัดจำหน่ายโดย Warner Music Korea <br />
 
 
 ### Additional Notes
