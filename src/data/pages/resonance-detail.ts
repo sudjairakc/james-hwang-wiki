@@ -86,7 +86,7 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    section: 'Filmography',
+    section: 'ผลงานภาพยนตร์',
     back: '← กลับไปแฟรนไชส์ RESONANCE',
     franchisePrefix: 'Captain EO: RESONANCE',
     reference: 'อ้างอิง',
@@ -97,7 +97,7 @@ const th: typeof en = {
     'i-missing-chord': { subtitle: 'ภาพยนตร์ภาค I ของ RESONANCE Saga', label: 'ภาค I', tagline: 'จุดเริ่มต้นของการเดินทางข้ามจักรวาล', format: 'ภาพยนตร์ · ฉายในโรง' },
     'ii-silent-orchestra': { subtitle: 'ภาพยนตร์ภาค II ของ RESONANCE Saga', label: 'ภาค II', tagline: 'เมื่อเสียงดนตรีดับ จักรวาลก็ดับตาม', format: 'ภาพยนตร์ · ฉายในโรง' },
     'iii-resonance': { subtitle: 'ภาพยนตร์ภาค III ของ RESONANCE Saga · บทสุดท้าย', label: 'ภาค III', tagline: 'บทเพลงสุดท้าย', format: 'ภาพยนตร์ · ฉายในโรง' },
-    'canon': { subtitle: 'เอกสารอ้างอิงจักรวาล RESONANCE', label: 'Canon', tagline: 'ทีม Starwave · จักรวาล Melodia · ประวัติตัวละคร', format: 'เอกสารอ้างอิง' },
+    'canon': { subtitle: 'เอกสารอ้างอิงจักรวาล RESONANCE', label: 'เอกสารอ้างอิง', tagline: 'ทีม Starwave · จักรวาล Melodia · ประวัติตัวละคร', format: 'เอกสารอ้างอิง' },
   } as Record<string, { subtitle: string; label: string; tagline: string; format: string }>,
   related: [
     { label: 'แฟรนไชส์ RESONANCE', slug: 'filmography/resonance' },

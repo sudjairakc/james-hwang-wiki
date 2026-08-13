@@ -60,7 +60,7 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Film & Screen',
+    label: 'ภาพยนตร์และซีรีส์',
     title: 'ผลงานภาพยนตร์',
     subtitle: 'แฟรนไชส์ MCU + Disney · 6 เรื่อง · 1 ซีรีส์ · 2 จักรวาล',
     statusReleased: 'เข้าฉายแล้ว',
@@ -68,15 +68,15 @@ const th: typeof en = {
   },
   notes: [
     [
-      'MCU Phase 4 · James Hwang รับบท Shang-Chi',
-      'MCU Phase 5 · ร่วมเขียนบท',
-      'MCU Phase 6 · บทสรุปแฟรนไชส์',
+      'MCU เฟส 4 · James Hwang รับบท Shang-Chi',
+      'MCU เฟส 5 · ร่วมเขียนบท',
+      'MCU เฟส 6 · บทสรุปแฟรนไชส์',
     ],
     [
-      'Disney+ Original Series · EP1: Dead Frequency',
-      'Film I · จุดเริ่มต้นของ saga',
-      'Film II · เมื่อเสียงดนตรีดับ จักรวาลก็ดับตาม',
-      'Film III · บทเพลงสุดท้าย',
+      'ซีรีส์ออริจินอล Disney+ · EP1: Dead Frequency',
+      'ภาค I · จุดเริ่มต้นของ saga',
+      'ภาค II · เมื่อเสียงดนตรีดับ จักรวาลก็ดับตาม',
+      'ภาค III · บทเพลงสุดท้าย',
     ],
   ],
   related: [

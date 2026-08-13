@@ -241,8 +241,8 @@ const th: typeof en = {
     label: 'ชีวประวัติ',
     title: 'บทสัมภาษณ์ & คำคม',
     subtitle: 'ช่วงเวลาสื่อที่น่าจดจำ · คำคมประจำแต่ละธีม · 2022–ปัจจุบัน',
-    signatureQuotesHeading: 'Signature Quotes',
-    keyInterviewsHeading: 'Key Interviews',
+    signatureQuotesHeading: 'คำคมประจำตัว',
+    keyInterviewsHeading: 'บทสัมภาษณ์สำคัญ',
   },
   related: [
     { label: 'ชีวประวัติ', slug: 'biography' },
@@ -367,7 +367,7 @@ const th: typeof en = {
       platform: 'tvN',
       type: 'TV',
       color: '#9b7fc8',
-      context: 'งานวาไรตี้เกาหลีรายการใหญ่ครั้งแรกในฐานะศิลปินเดี่ยว พูดถึงการเดบิวต์ SOFTEST TOUCH, ที่มาของชื่อ GONUNMA จากรายการ King of Mask Singer, ชีวิตวัยเด็กที่กรุงเทพฯ และงานบ้านในฐานะกิจวัตรผ่อนคลาย',
+      context: 'รายการวาไรตี้เกาหลีรายการใหญ่รายการแรกในฐานะศิลปินเดี่ยว คุยเรื่องการเดบิวต์ด้วย SOFTEST TOUCH ที่มาของชื่อ GONUNMA จาก King of Mask Singer ชีวิตวัยเด็กที่กรุงเทพฯ และการทำงานบ้านเป็นวิธีผ่อนคลาย',
       notable: [
         { topic: 'เรื่องวัยเด็กที่กรุงเทพฯ', quote: "Bangkok was where I learned to be patient. Seoul was where I learned to be fast. I still use both." },
         { topic: 'เรื่องการทำความสะอาดเป็นกิจวัตร', quote: "After every tour I clean my own apartment. From floor to ceiling. People think that's strange. I think coming home to a clean place you made clean is one of the better feelings in the world." },
@@ -380,7 +380,7 @@ const th: typeof en = {
       platform: 'NBC',
       type: 'TV',
       color: '#9b7fc8',
-      context: 'เดบิวต์ US late-night ครั้งแรก จับจังหวะกับการแสดงในงาน 94th Academy Awards ร่วมกับ Anderson .Paak เป็นครั้งแรกที่ James พูดคุยยาวๆ กับผู้ชมทั่วไปในสหรัฐฯ เรื่อง dual career ของเขา',
+      context: 'ออกรายการดึกในอเมริกาครั้งแรก จับจังหวะกับการขึ้นแสดงในงาน Academy Awards ครั้งที่ 94 คู่กับ Anderson .Paak เป็นครั้งแรกที่เขาได้คุยยาวๆ กับคนดูอเมริกันทั่วไปเรื่องการทำสองอาชีพพร้อมกัน',
       notable: [
         { topic: 'เรื่องการแสดงในงาน Oscars', quote: "Anderson called me two days before and said 'trust me, acoustic.' I didn't argue. I should never argue with Anderson .Paak about anything." },
         { topic: 'เรื่องการอยู่ทั้งใน K-pop และ Hollywood', quote: "I've spent a lot of my life being two things at once. I've stopped trying to separate them." },
@@ -392,7 +392,7 @@ const th: typeof en = {
       platform: 'Print',
       type: 'Magazine',
       color: '#5a7c6a',
-      context: 'บทสัมภาษณ์ long-form รายการใหญ่ครั้งแรกหลังออกจาก SM cover story ของฉบับเดือนสิงหาคม เป็นบทสัมภาษณ์ที่สื่อเกาหลีอ้างอิงมากที่สุดของปี 2023 — พูดถึงข้อพิพาท ความเป็นอิสระ และเป้าหมายของ JH Company',
+      context: 'บทสัมภาษณ์ยาวชิ้นใหญ่ชิ้นแรกหลังออกจาก SM ขึ้นเป็นเรื่องปกฉบับเดือนสิงหาคม และเป็นบทสัมภาษณ์ที่สื่อเกาหลีอ้างถึงมากที่สุดของปี 2023 พูดถึงข้อพิพาท ความเป็นอิสระ และเป้าหมายของ JH Company',
       notable: [
         { topic: 'เรื่องเหตุผลที่ยื่นฟ้อง', quote: "I didn't file because I was unhappy. I filed because I could see exactly how the next five years would go if I didn't. I wasn't going to let someone else write that part of my life." },
         { topic: 'เรื่องบันทึกเสียง', quote: "I kept those recordings for two years before I did anything with them. I wasn't saving them as a weapon. I was saving them so I could remember, accurately, what happened." },
@@ -405,7 +405,7 @@ const th: typeof en = {
       platform: 'Print',
       type: 'Magazine',
       color: '#5a7c6a',
-      context: 'บทความโปรไฟล์นิตยสารสหรัฐฯ รายการใหญ่ครั้งแรก ตีพิมพ์เดือนพฤศจิกายน 2023 ครอบคลุมเส้นทางสู่ Grammy, การวางตำแหน่ง R&B crossover และแนวคิดเบื้องหลัง PULSE',
+      context: 'บทความเจาะตัวบุคคลในนิตยสารอเมริกันชิ้นใหญ่ชิ้นแรก ตีพิมพ์เดือนพฤศจิกายน 2023 ครอบคลุมเส้นทางสู่ Grammy การวางตัวเพื่อข้ามไปตลาด R&B และแนวคิดเบื้องหลัง PULSE',
       notable: [
         { topic: 'เรื่องความทะเยอทะยานด้าน Grammy', quote: "I don't need the Grammy to know the album is good. I want it because I want the conversation it starts. A Grammy makes people listen to things they wouldn't otherwise touch." },
         { topic: 'เรื่องการทำอัลบั้ม PULSE', quote: "I had three years of work that SM slowed down. PULSE is all of that at once. It's not a debut album — it's a backlog." },
@@ -417,7 +417,7 @@ const th: typeof en = {
       platform: 'Online',
       type: 'Press',
       color: '#5a7aaa',
-      context: 'บทความแคมเปญ Grammy ตีพิมพ์ก่อนงานประกาศรางวัล เป็นหนึ่งในบทสนทนาที่ลึกที่สุดเกี่ยวกับ ARE U STILL และกระบวนการโปรดักชันของเขา',
+      context: 'บทความช่วงแคมเปญ Grammy ตีพิมพ์ก่อนงานประกาศรางวัล เป็นบทสนทนาที่ลงลึกที่สุดชิ้นหนึ่งเรื่อง ARE U STILL และวิธีทำงานโปรดักชันของเขา',
       notable: [
         { topic: 'เรื่องอิทธิพล neo-soul', quote: "I grew up on Stevie Wonder records that my mom had in Seoul. I didn't know they were 'neo-soul.' I just knew they made me feel like the floor was rising." },
         { topic: 'เรื่องเพลง Tears On A Pretty Face', quote: "That song was finished in forty minutes. I don't know what to tell you. Some of them arrive like that. You just have to be in the room when they do." },
@@ -429,7 +429,7 @@ const th: typeof en = {
       platform: 'JTBC',
       type: 'TV',
       color: '#c06080',
-      context: 'ออกรายการรับเชิญก่อนภาพยนตร์ Shang-Chi 2 ฉาย เป็นรายการวาไรตี้แนวไอดอลครั้งแรกหลังออกจาก SM โดดเด่นด้วยการพูดคุยตรงไปตรงมาเรื่องช่วงปีที่อยู่ NCT 127 — นักแสดงร่วมรายการเห็นได้ชัดว่าประหลาดใจกับความตรงไปตรงมาของเขา',
+      context: 'ไปออกเป็นแขกรับเชิญก่อน Shang-Chi 2 เข้าฉาย เป็นรายการวาไรตี้สายไอดอลรายการแรกหลังออกจาก SM ที่จำได้คือเขาพูดถึงช่วงปีที่อยู่ NCT 127 อย่างตรงไปตรงมา จนพิธีกรในรายการอึ้งไปเห็นๆ',
       notable: [
         { topic: 'เรื่องพลวัตภายในวง NCT 127', quote: "We were seven people in the same building for years. Some of that goes well. Some of it you work through later, alone, in a different city. I think we're all still working through some of it." },
         { topic: 'เรื่องการกลับมาที่วง', quote: "It's not comfortable. I don't think it's supposed to be. But I think uncomfortable things done honestly are worth more than comfortable things done for appearance." },
@@ -441,7 +441,7 @@ const th: typeof en = {
       platform: 'Print',
       type: 'Magazine',
       color: '#c06080',
-      context: 'บทความสื่อ Shang-Chi 2 ตีพิมพ์เดือนมิถุนายน 2025 เป็นงานถ่ายภาพที่ขับเคลื่อนด้วยบทสัมภาษณ์ที่ LA พูดถึงเครดิตร่วมเขียนบทและแนวทางความคิดสร้างสรรค์ต่อการทำหนังแฟรนไชส์',
+      context: 'บทความช่วงโปรโมต Shang-Chi 2 ตีพิมพ์เดือนมิถุนายน 2025 เป็นงานถ่ายภาพที่มีบทสัมภาษณ์เป็นแกน ถ่ายที่ LA พูดถึงเครดิตร่วมเขียนบทและวิธีคิดงานสร้างสรรค์กับหนังแฟรนไชส์',
       notable: [
         { topic: 'เรื่องการร่วมเขียนบท Shang-Chi 2', quote: "When they let me into the writers room I was the least experienced person there by twenty years. I just kept asking: 'what does this character need, not what does the plot need?' Eventually they started asking the same question." },
         { topic: 'เรื่อง Ashley Liao ในฐานะนักแสดงร่วม', quote: "I can't tell you about the film without telling you about her performance. I won't try." },
@@ -453,7 +453,7 @@ const th: typeof en = {
       platform: 'Print',
       type: 'Magazine',
       color: '#6e5a7c',
-      context: 'Cover story ครบรอบ DECADE เดือนตุลาคม 2026 งานถ่ายภาพย้อนอดีตโดยใช้ชิ้นงานจากคลังของ JH Company เป็นบทสัมภาษณ์ที่ครุ่นคิดที่สุดในอาชีพของเขา — พูดถึงทั้งทศวรรษ ไม่ใช่แค่ผลงานล่าสุด',
+      context: 'เรื่องปกฉลองครบรอบ DECADE เดือนตุลาคม 2026 ถ่ายภาพย้อนอดีตโดยหยิบเสื้อผ้าจากคลังของ JH Company มาใช้ เป็นบทสัมภาษณ์ที่ครุ่นคิดที่สุดในอาชีพเขา เพราะพูดถึงทั้งทศวรรษ ไม่ใช่แค่ผลงานชิ้นล่าสุด',
       notable: [
         { topic: 'เรื่องภาพรวมทั้งทศวรรษ', quote: "I was seventeen when I arrived in Seoul with a suitcase and enough Korean to buy food and ask where the bathroom was. I'm twenty-eight now. I'm not sure I understand yet what happened in between. That's what DECADE is — me trying to understand it." },
         { topic: 'เรื่องประเทศไทย', quote: "I miss Bangkok in a way I don't know how to describe without it sounding like grief. Maybe it is grief. I'm not sure I know how to go back yet." },

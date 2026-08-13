@@ -239,7 +239,7 @@ const th: typeof en = {
       id: '1.4',
       title: 'เส้นทาง Masculinity ใน R&B',
       tag: 'responsive masculinity archetype',
-      text: 'ตลอด LIKE I DO → CAN\'T LEAVE ALONE เกิด "masculine softness normalization arc" — archetype ที่นักวิชาการเรียกว่า responsive masculinity (contrast กับ reactive masculinity) (Baek, J.W., "Responsive Masculinity in Contemporary K-R&B," Feminist Media Studies 24.3, 2025)',
+      text: 'ตลอด LIKE I DO → CAN\'T LEAVE ALONE เกิด "masculine softness normalization arc" — archetype ที่นักวิชาการเรียกว่า responsive masculinity (ตรงข้ามกับ reactive masculinity) (Baek, J.W., "Responsive Masculinity in Contemporary K-R&B," Feminist Media Studies 24.3, 2025)',
       table: {
         cols: ['อัลบั้ม', 'กรอบความเป็นชาย'],
         rows: [
