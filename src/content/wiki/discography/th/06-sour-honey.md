@@ -131,7 +131,7 @@ CAN'T LEAVE ALONE ได้รับการตอบรับในเชิ�
 การตอบรับจากนักวิจารณ์:
 * **Pitchfork** (คะแนน 7.5) เขียนว่า “CAN'T LEAVE ALONE ฟังดูเหมือน artist ที่รู้ว่าตัวเองอยู่ที่ไหน แต่ยังไม่แน่ใจว่าอยากไปที่ไหนต่อ — CAN'T LEAVE ALONE คือ peak ของอัลบั้ม และมันสูงมาก แต่ส่วนอื่นรู้สึกว่า play it safe”
 * **Rolling Stone** ให้ 3.5/5 และระบุว่า “Pharrell Williams collaboration ทำงานได้ดีมาก แต่ rest of album ยังอยู่ในร่มเงาของมัน”
-* **Billboard Korea** มองในเชิงบวกกว่า โดยยกย่อง dual concept (SOUR vs HONEY) ว่าเป็น “narrative device ที่ทำให้อัลบั้มมีโครงสร้างเหมือน short film”
+* **Billboard Korea** มองในเชิงบวกกว่า โดยยกย่อง dual concept (SOUR vs HONEY) ว่าเป็น “กลไกเล่าเรื่องที่ทำให้อัลบั้มมีโครงสร้างเหมือน short film”
 * **IZM (Korea)** ให้ 4.0/5 และชี้ว่า “MYSTERY LADY แสดงให้เห็นว่า James ยังคง sharp ในฐานะ composer แม้ทิศทางจะ accessible มากขึ้น”
 * **Consequence of Sound** เรียก CAN'T LEAVE ALONE ว่า “one of the best produced tracks of 2025 — Pharrell รู้ดีว่าเขาต้องถอยเพื่อให้ GONUNMA นำ”
 * **User & chart reception:** Melon #8, Circle Digital Top 20 CAN'T LEAVE ALONE feat. Pharrell Williams ขึ้น Spotify Global Chart Top 50 ในสัปดาห์แรก ซึ่งเป็นครั้งแรกของ James ใน global chart ระดับนี้ ยอดสตรีมอัลบั้มรวม 1.9B+
@@ -139,7 +139,7 @@ CAN'T LEAVE ALONE ได้รับการตอบรับในเชิ�
 
 ### Accolades
 
-CAN'T LEAVE ALONE ได้รับ recognition ต่อเนื่องจาก momentum หลัง Grammy-winning era ของ ARE U STILL และประสบความสำเร็จเชิง streaming ในหลายตลาดเอเชีย <br />
+CAN'T LEAVE ALONE ได้รับการยอมรับต่อเนื่องจากแรงส่งหลังยุคที่คว้า Grammy ของ ARE U STILL และประสบความสำเร็จเชิง streaming ในหลายตลาดเอเชีย <br />
 **2025**
 * Golden Disc Awards — Digital Bonsang (ชนะ)
 * Circle Chart Music Awards — Global Digital Artist (ชนะ)
@@ -221,7 +221,7 @@ JH Company · จัดจำหน่ายโดย Warner Music Korea <br />
 ### Additional Notes
 
 * อัลบั้มนี้เป็นการ return to R&B core หลังจาก experimental soul/disco ใน era ก่อน
-* ใช้โครงสร้าง dual concept (SOUR vs HONEY) เพื่อเล่า narrative ของความสัมพันธ์แบบสองด้าน — SOUR side (track 1–5): obsession → เล่นตัว → พ่ายแพ้ → จับต้องไม่ได้ → ได้เธอมาแบบลับๆ / I WANT YOU BACK (Interlude) เป็นจุด flip narrative / HONEY side (track 7–10): confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง
+* ใช้โครงสร้าง dual concept (SOUR vs HONEY) เพื่อเล่า เรื่องเล่าของความสัมพันธ์แบบสองด้าน — SOUR side (track 1–5): obsession → เล่นตัว → พ่ายแพ้ → จับต้องไม่ได้ → ได้เธอมาแบบลับๆ / I WANT YOU BACK (Interlude) เป็นจุด flip narrative / HONEY side (track 7–10): confident → ขอกลับมา → ต้องการของจริง → ยอมรับว่ากำลังพัง
 * ฉายา dual concept "SOUR | HONEY" — ไม่ใช่ชื่ออัลบั้มเอง — กลายเป็นชื่อเรียก era นี้ (era color, goods, editorial)
 * มีการร่วมงานกับ Pharrell Williams ซึ่งเพิ่ม credibility ในระดับ global production
 * ซาวด์โดยรวมถูกออกแบบให้ accessible มากขึ้น เพื่อ reconnect กับแฟนกลุ่มเดิม ขณะยังรักษา artistic maturity

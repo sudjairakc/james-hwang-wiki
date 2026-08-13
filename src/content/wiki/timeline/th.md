@@ -50,7 +50,7 @@
 ## 2015 (อายุ 16–17 ปี)
 
 ### 03/2015
-06/03/2015: แสดง "Bassbot" และเริ่มถูกจัด positioning เป็น performer ที่มี physicality สูง (เชื่อมกับทักษะ martial arts ที่ฝึกมาควบคู่)
+06/03/2015: แสดง "Bassbot" และเริ่มถูกจัด วางตำแหน่งเป็น performer ที่มี physicality สูง (เชื่อมกับทักษะ martial arts ที่ฝึกมาควบคู่)
 
 
 ### 07/2015
@@ -67,7 +67,7 @@
 
 
 ### 07/2016
-07/07/2016: เดบิวต์กับ NCT 127 ด้วย "Fire Truck" โดย James ถูกวางเป็น main vocalist ร่วมกับ Moon Tae-il ใน early-stage vocal structure ของทีม พร้อม positioning เป็น performance core ร่วมกับ Taeyong และ Mark Lee
+07/07/2016: เดบิวต์กับ NCT 127 ด้วย "Fire Truck" โดย James ถูกวางเป็น main vocalist ร่วมกับ Moon Tae-il ใน early-stage vocal structure ของทีม พร้อม วางตำแหน่งเป็น performance core ร่วมกับ Taeyong และ Mark Lee
 
 24/07/2016 – 10/08/2016: เข้าร่วม King of Mask Singer ภายใต้หน้ากาก "Cat's Eyes (고눈마)" และสามารถชนะรายการได้ ส่งผลให้ชื่อของเขาถูกพูดถึงในวงกว้าง โดยเฉพาะในฝั่ง general public ของเกาหลี
 
@@ -131,7 +131,7 @@
 ### 10–11/2018
 12/10/2018: ปล่อย "Regular-Irregular" และเริ่มโปรโมทในสหรัฐฯ โดย James กลายเป็น key speaker ใน interview
 
-หลัง Jungwoo เข้าสู่ NCT 127 อย่างเต็มรูปแบบ เกิด role overlap ใน mid-range vocal bridge และ soft-center positioning ทำให้ distribution ของ James เริ่มถูก redistribute อย่างชัดเจนเป็นครั้งแรก
+หลัง Jungwoo เข้าสู่ NCT 127 อย่างเต็มรูปแบบ เกิด role overlap ใน mid-range vocal bridge และตำแหน่ง soft-center ที่ทับกัน ทำให้สัดส่วนไลน์ร้องของ James เริ่มถูก redistribute อย่างชัดเจนเป็นครั้งแรก
 
 23/11/2018: รีแพ็กเกจ "Simon Says" ซึ่ง tone ดาร์กขึ้น และ internal discussion เรื่อง "จะดัน James แค่ไหน" ยังคงค้างอยู่
 
@@ -176,7 +176,7 @@
 
 
 ### 10–12/2019
-ปลายปี 2019: positioning ของ James ภายในทีมเริ่มถูกมองว่าเป็น "upper-mid structural member" มากกว่าศูนย์กลาง narrative ของวง
+ปลายปี 2019: การวางตำแหน่งของ James ภายในทีมเริ่มถูกมองว่าเป็น "upper-mid structural member" มากกว่าศูนย์กลาง เรื่องเล่าของวง
 
 
 # SHANG-CHI ERA (2020–2022)
@@ -332,7 +332,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 12/03/2023: James เข้าร่วมงาน Oscars ครั้งที่ 95 ในฐานะนักแสดงจาก Everything Everywhere All at Once ซึ่งคว้ารางวัลใหญ่หลายสาขารวม Best Picture โดยเขาปรากฏตัวร่วมกับทีมนักแสดงในช่วง celebration และ after-parties ทำให้ภาพลักษณ์ global artist แข็งแรงขึ้น
 
-ตลอดเดือน: เดินสายโปรโมทในสหรัฐ เช่นรายการ late-night และ interview platform ต่าง ๆ เพื่อสร้าง positioning ในฐานะ "artist-producer ระดับสากล"
+ตลอดเดือน: เดินสายโปรโมทในสหรัฐ เช่นรายการ late-night และ interview platform ต่าง ๆ เพื่อสร้าง วางตำแหน่งในฐานะ "artist-producer ระดับสากล"
 
 ปลายเดือน: การไกล่เกลี่ยรอบแรกเกิดขึ้น แต่ยังไม่สามารถหาข้อตกลงได้
 
@@ -364,7 +364,7 @@ NCT 2020 เจมส์มี participation 5 tracks เทียบเท่�
 
 
 ### 07/2023
-10/07/2023: ปล่อย concept film "PULSE : SIGNAL" — งาน visual identity ชิ้นแรกที่ผลิตในบ้านของ JH Company ทั้งหมด
+10/07/2023: ปล่อย concept film "PULSE : SIGNAL" — งานออกแบบภาพชิ้นแรกที่ผลิตกันเองใน JH Company ทั้งหมด
 
 12/07/2023 – 16/07/2023: ทยอยปล่อย concept photo
 
@@ -444,7 +444,7 @@ performance นี้ได้เรตติ้งสูงสุดของ�
 
 รับรางวัล Best Musician (Male Solo)
 
-reinforce positioning ในฐานะ performer–producer dual-role artist
+reinforce วางตำแหน่งในฐานะ performer–producer dual-role artist
 
 12/2023: กลายเป็นผู้ร่วมก่อตั้งองค์กร advocacy สิทธิ idol ที่รวมศิลปินที่ได้รับผลกระทบและนักกฎหมายด้าน entertainment — เปลี่ยนจาก precedent ทางกฎหมายส่วนตัว เป็นแรงผลักดันการปฏิรูปแบบมีองค์กรรองรับ
 
@@ -475,7 +475,7 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 สะท้อน cumulative digital performance ของ PULSE ต่อเนื่องถึงต้นปี 2024
 
-08/01/2024: James ปล่อยอัลบั้มเต็มชุดที่ 2 "ARE U STILL" พร้อมไตเติล "Tears on a Pretty Face" ซึ่งต่อยอด narrative จาก "PULSE" ไปสู่โทนที่เป็น emotional / introspective มากขึ้น
+08/01/2024: James ปล่อยอัลบั้มเต็มชุดที่ 2 "ARE U STILL" พร้อมไตเติล "Tears on a Pretty Face" ซึ่งต่อยอดเรื่องเล่าจาก "PULSE" ไปสู่โทนที่เป็น emotional / introspective มากขึ้น
 
 10/01/2024: เข้าร่วมงาน Circle Chart Music Awards
 
@@ -546,7 +546,7 @@ reinforce positioning ในฐานะ performer–producer dual-role artist
 
 ARE U STILL ถูกจัดอยู่ในรายชื่อ Best R&B Albums of the Year หลายรายการ
 
-reinforce positioning ในฐานะ neo-soul / progressive R&B crossover release ที่ได้รับ recognition ใน critics ecosystem ของสหรัฐฯ
+reinforce วางตำแหน่งในฐานะ neo-soul / progressive R&B crossover release ที่ได้รับ recognition ใน critics ecosystem ของสหรัฐฯ
 
 21/10/2024: Aespa ปล่อย EP "Whiplash"
 
@@ -665,7 +665,7 @@ Top Global (Excl. U.S.) Artist
 
 รับรางวัล Best R&B Album (ARE U STILL)
 
-เป็น critics-driven recognition ต่างจาก idol award circuit และ reinforce positioning ในฐานะ R&B album ระดับ international production ecosystem
+เป็น critics-driven recognition ต่างจาก idol award circuit และ reinforce วางตำแหน่งในฐานะ R&B album ระดับ international production ecosystem
 
 
 ### 03/2025
@@ -825,7 +825,7 @@ final VFX polish, sound mix, IMAX/Dolby mastering
 
 14/09/2026 – 17/09/2026: press tour เอเชีย — Tokyo, Hong Kong และ Seoul ปิดที่โซลในสัปดาห์เดียวกับที่หนังเข้าฉาย
 
-18/09/2026: Shang-Chi and the Last of the Ten Rings เข้าฉาย (global release) positioning: หนัง Marvel โทน experimental / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
+18/09/2026: Shang-Chi and the Last of the Ten Rings เข้าฉาย (ฉายทั่วโลก) วางตำแหน่งเป็นหนัง Marvel โทนทดลอง / auteur-driven ที่แตกต่างจากภาคก่อนอย่างชัดเจน
 
 09/2026: ระหว่าง global premiere window ของ Last of the Ten Rings ต้นสังกัดของ James และ Ashley Liao ออกแถลงการณ์ร่วมยืนยันว่าทั้งสอง "กำลังคบหาดูใจกัน" หลังจากมีรายงาน sightings ต่อเนื่องในช่วงหลายเดือนก่อนหน้า โดยสื่อทั้งเอเชียและสหรัฐตีความความสัมพันธ์ดังกล่าวว่าเป็นผลจากการทำงานร่วมกันในแฟรนไชส์ Shang-Chi ต่อเนื่องหลายปี
 
@@ -843,7 +843,7 @@ James ร่วม 8 จาก 10 เมือง โดยรอบ Seoul ค�
 
 10/2026: UNESCO แต่งตั้ง James เป็น Goodwill Ambassador โดยอ้างอิงแถลงการณ์เรื่องหยุดยิง Gaza และความขัดแย้งไทย–กัมพูชา ช่วงเวลาใกล้เคียงกัน เขาได้รับการยืนยันว่าอยู่ในรายชื่อผู้ถูกเสนอชิง Nobel Peace Prize ของปีนั้นจากแถลงการณ์ชุดเดียวกัน — การยอมรับที่มาถึงในปีเดียวกับที่จุดยืนไทย–กัมพูชาทำให้เขาเสียตลาดบ้านเกิดไป
 
-10/2026: หลังการยืนยันความสัมพันธ์ ทั้งสองยังคงรักษารูปแบบ public appearance แบบ selective visibility โดยปรากฏตัวร่วมกันเฉพาะใน industry events และ private screening circuits เท่านั้น ซึ่งสะท้อน positioning ของทั้งคู่ในฐานะ global film-industry couple มากกว่า idol-style public relationship
+10/2026: หลังการยืนยันความสัมพันธ์ ทั้งสองยังคงรักษารูปแบบ public appearance แบบ selective visibility โดยปรากฏตัวร่วมกันเฉพาะใน industry events และ private screening circuits เท่านั้น ซึ่งสะท้อน การวางตำแหน่งของทั้งคู่ในฐานะ global film-industry couple มากกว่า idol-style public relationship
 
 ### 12/2026
 12/2026: ความสัมพันธ์ของ James และ Ashley Liao ถูกกล่าวถึงในสื่อบันเทิงระดับนานาชาติในฐานะหนึ่งใน high-profile Asian representation couples ของปี โดยเฉพาะในบริบทของการขยายบทบาทของศิลปินเอเชียใน Hollywood franchise cinema
@@ -957,7 +957,7 @@ positioning: ภาคเปิด cinematic branch ที่ audience ใหม
 
 ได้รับรางวัล Best Actor in a Streaming Television Series (WIN)
 
-reinforce positioning ของ Captain EO: Resonance ในฐานะ flagship sci-fi streaming franchise ของ Disney+
+reinforce การวางตำแหน่งของ Captain EO: Resonance ในฐานะ flagship sci-fi streaming franchise ของ Disney+
 
 genre press เริ่ม framing performance ของ James ว่าเป็นหนึ่งใน strongest streaming sci-fi lead performances ของปี
 
@@ -979,7 +979,7 @@ Outstanding Lead Actor in a Drama Series (NOMINATION)
 
 nomination ยังคงถูกจัดอยู่ในระดับ major industry-level validation สำหรับ streaming franchise lead performance
 
-หลังพิธี Emmy สื่อ entertainment trade เริ่ม positioning James ในฐานะ crossover Asian global leading performer (music + film + streaming television)
+หลังพิธี Emmy สื่อวงการบันเทิงเริ่มวางตำแหน่งให้ James เป็น crossover Asian global leading performer (music + film + streaming television)
 
 
 ### 10–12/2028
@@ -1073,7 +1073,7 @@ Dolby + IMAX mastering
 
 launch global press tour campaign
 
-เริ่ม soundtrack positioning ในฐานะ harmonic identity theme ของ franchise
+เริ่ม soundtrack วางตำแหน่งในฐานะ harmonic identity theme ของ franchise
 
 
 ### 10/2029
@@ -1222,4 +1222,4 @@ Elias begins post-trilogy exploratory journey with Mina
 
 positioning: saga-resolution event film ของ Resonance cinematic branch
 
-12/2032: หลังการเข้าฉายของ THE RESONANCE James ให้สัมภาษณ์ยืนยันว่า narrative arc ของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว
+12/2032: หลังการเข้าฉายของ THE RESONANCE James ให้สัมภาษณ์ยืนยันว่าเส้นเรื่องของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว

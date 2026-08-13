@@ -62,7 +62,7 @@ MV ของ "SOFTEST TOUCH" ถ่ายเมื่อ 27/12 – 28/12/2021 �
 * late-night reflection
 * identity negotiation ของศิลปินเดี่ยว
 
-อย่างไรก็ตาม งานชุดนี้แสดงพัฒนาการด้าน production scale และ rhythmic confidence มากขึ้น โดยเฉพาะในเพลงไตเติล “SOFTEST TOUCH” ซึ่งผสม groove แบบ synth funk เข้ากับ R&B phrasing สมัยใหม่ <br />
+อย่างไรก็ตาม งานชุดนี้แสดงพัฒนาการทั้งขนาดงานโปรดักชันและความมั่นใจในการเล่นกับจังหวะ มากขึ้น โดยเฉพาะในเพลงไตเติล “SOFTEST TOUCH” ซึ่งผสม groove แบบ synth funk เข้ากับ R&B phrasing สมัยใหม่ <br />
 เพลง “YOU AIN’T GOTTA” และ “CRUSH” ถูกนำมารวมในอัลบั้มเพื่อเชื่อม narrative จากกิจกรรม SM Station ก่อนหน้า
 
 
@@ -105,12 +105,12 @@ SOFTEST TOUCH ได้รับการตอบรับในเชิงบ
 * **Consequence of Sound** ยกย่อง CRUSH feat. Jungkook ว่าเป็น “K-pop crossover ที่ organic ที่สุดในปี 2022 — ไม่มีกลิ่นอาย marketing แม้แต่น้อย”
 * **The Korea Herald** ระบุว่าอัลบั้มนี้ทำให้ “นิยามของ K-pop idol ต้องถูกนิยามใหม่อีกครั้ง”
 
-* **Commercial reception:** CRUSH feat. Jungkook กลายเป็น breakout track ที่มียอดสตรีม 260M+ บน Spotify สูงสุดใน catalog ณ เวลานั้น ส่งผลให้ทั้ง EP เข้าสู่ Circle Album Top 5 และสร้าง fanbase ในตลาดอเมริกาเหนือและเอเชียตะวันออกเฉียงใต้อย่างมีนัยสำคัญ
+* **การตอบรับเชิงพาณิชย์:** CRUSH feat. Jungkook กลายเป็น เพลงที่พาอัลบั้มไปไกลที่สุด ที่มียอดสตรีม 260M+ บน Spotify สูงสุดใน catalog ณ เวลานั้น ส่งผลให้ทั้ง EP เข้าสู่ Circle Album Top 5 และสร้าง fanbase ในตลาดอเมริกาเหนือและเอเชียตะวันออกเฉียงใต้อย่างมีนัยสำคัญ
 
 
 ### Accolades
 
-แม้อัลบั้มไม่ได้ถูกวาง positioning เป็น awards-driven release แต่เพลงไตเติล “SOFTEST TOUCH” ได้รับการตอบรับดีใน streaming platform และ international playlist circulation หลังการเปิดตัว
+แม้อัลบั้มไม่ได้ถูกวาง วางตำแหน่งเป็น awards-driven release แต่เพลงไตเติล “SOFTEST TOUCH” ได้รับการตอบรับดีใน streaming platform และ international playlist circulation หลังการเปิดตัว
 เพลง “LIKE I DO” (จากโปรเจกต์ก่อนหน้า) และ “CRUSH” ได้รับ renewed attention ควบคู่กับการเปิดตัวอัลบั้ม ส่งผลให้ catalog ก่อนหน้าเกิด streaming uplift อย่างต่อเนื่อง
 อัลบั้มยังถูกจัดอยู่ใน curated playlist สาย
 * global R&B
@@ -123,7 +123,7 @@ SOFTEST TOUCH ได้รับการตอบรับในเชิงบ
 SOFTEST TOUCH ถือเป็นโซโล่เดบิวต์ที่ยืนยันสถานะของ James Hwang ในฐานะ songwriter-led solo artist ภายในระบบ SM Entertainment
 อัลบั้มนี้
 เชื่อม narrative จาก SM Station period (2018–2019)
-ขยาย sonic identity จาก LIKE I DO
+ขยาย ตัวตนทางเสียง จาก LIKE I DO
 และสร้าง framework สำหรับงานเดี่ยวในระยะต่อมา
 ในเชิงอุตสาหกรรม อัลบั้มถูกมองว่าเป็นหนึ่งใน rare cases ของศิลปิน SM ที่มี creative control ในระดับสูงตั้งแต่ solo debut stage
 

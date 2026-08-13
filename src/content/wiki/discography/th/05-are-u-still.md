@@ -18,7 +18,7 @@ ARE U STILL เป็นสตูดิโออัลบั้มชุดท�
 * Sam Wills
 * Mack Keane
 
-เพื่อสร้าง sonic texture ที่ organic และเชื่อมโยงกับสาย neo-soul และ funk lineage มากขึ้น
+เพื่อสร้าง sonic ผิวเสียงที่ organic และเชื่อมโยงกับสาย neo-soul และ funk lineage มากขึ้น
 
 
 ### Production chronology
@@ -90,7 +90,7 @@ ARE U STILL เริ่มก่อน PULSE จะวางแผงด้ว�
 * The Way You Make Me Feel-style staging energy
 * Prince-influenced irony tone
 
-พร้อม concept visual ที่ใช้ female-only multinational dance ensemble เพื่อสะท้อน thematic framing ด้าน emotional autonomy และ feminist undertone <br />
+พร้อม concept visual ที่ใช้ female-only multinational dance ensemble เพื่อสะท้อนกรอบธีมเรื่องการเป็นเจ้าของอารมณ์ตัวเอง และ feminist undertone <br />
 If I Knew เคยเผยแพร่ล่วงหน้าในช่วง PULSE Tour (2023) และทำหน้าที่เป็น bridge track เชื่อม sonic language ระหว่างสอง era <br />
 Just A Dream (feat. Janet Jackson) เป็น duet neo-soul ที่ได้รับการกล่าวถึงในฐานะ legacy-lineage collaboration ระหว่างศิลปินร่วมยุค contemporary R&B กับ Janet Jackson และทำหน้าที่เป็น pivot track เข้าสู่ mid-album soul section <br />
 Purpose และ Selfish แสดงอิทธิพล R&B-soul แบบ 1990s และทำหน้าที่เป็น tonal stabilizers ของ album structure <br />
@@ -135,7 +135,7 @@ ARE U STILL เป็น career-peak moment ในเชิง critical แล�
 _“his most musically ambitious work to date”_
 และ <br />
 _“a deliberate pivot toward legacy-driven sound rather than trend-driven production”_ <br />
-หลายบทวิจารณ์ชี้ว่า songwriting maturity ของอัลบั้มพัฒนาเร็วกว่า audience expectation ของแฟนบางส่วน ส่งผลให้ reception ภายในแฟนเบสมีความเห็นแตกออกเป็นสองกลุ่ม
+หลายบทวิจารณ์ชี้ว่า ความสุกของงานเขียนเพลง ของอัลบั้มพัฒนาเร็วกว่า ความคาดหวังของคนฟัง ของแฟนบางส่วน ส่งผลให้ reception ภายในแฟนเบสมีความเห็นแตกออกเป็นสองกลุ่ม
 อย่างไรก็ตาม ในฝั่ง international critics อัลบั้มได้รับการยกย่องว่าเป็น <br />
 **one of the strongest Asian-led neo-soul projects of the decade**
 

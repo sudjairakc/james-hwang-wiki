@@ -4,11 +4,9 @@
 
 ### Recording and production
 
-PULSE เป็นสตูดิโออัลบั้มเต็มชุดแรกของ GONUNMA (James Hwang) และเป็นผลงานแรกหลังการก่อตั้ง JH Company และการทำ partnership กับ Warner Music Korea เพลงถูกเขียนตลอดช่วงปี 2019–2022 คู่ขนานและต่อเนื่องจากเซสชัน SOFTEST TOUCH บันทึกเสียงตลอดปี 2022 แล้วนำกลับมา rework ในช่วงต้นปี 2023 เพื่อปรับโครงสร้างให้เหมาะกับ performance rollout ระดับ global
-กระบวนการผลิตอัลบั้มมีลักษณะเป็น artist-driven production workflow อย่างชัดเจน โดย James สร้าง demo ทุกเพลงด้วยตนเอง (melody, topline และ rough arrangement) ก่อนส่งต่อ collaborator ภายนอกช่วย texture enhancement และนำกลับมา re-arrange เพื่อกำหนด final sonic direction ด้วยตนเอง
-เครดิต production ของอัลบั้มจึงสะท้อนรูปแบบ
-artist-controlled production with external texture collaborators
-และถือเป็น release แรกที่เขาควบคุม arrangement ทั้งอัลบั้มด้วยตนเองครบทุกเพลง
+PULSE เป็นสตูดิโออัลบั้มเต็มชุดแรกของ GONUNMA (James Hwang) และเป็นผลงานแรกหลังการก่อตั้ง JH Company และการทำ partnership กับ Warner Music Korea เพลงถูกเขียนตลอดช่วงปี 2019–2022 คู่ขนานและต่อเนื่องจากเซสชัน SOFTEST TOUCH อัดเสียงตลอดปี 2022 แล้วเอากลับมารื้อใหม่ต้นปี 2023 เพื่อปรับโครงให้รับกับการเดินสายแสดงระดับโลก
+กระบวนการผลิตอัลบั้มนี้ให้ตัวศิลปินเป็นคนนำอย่างชัดเจน James ทำเดโมทุกเพลงเอง (melody, topline และ rough arrangement) ก่อนส่งต่อให้คนร่วมงานจากภายนอกช่วยเติมผิวเสียง แล้วเอากลับมาเรียบเรียงใหม่ เพื่อกำหนด final sonic direction ด้วยตนเอง
+เครดิตโปรดักชันของอัลบั้มจึงสะท้อนรูปแบบที่ศิลปินคุมงานเอง โดยมีคนนอกมาช่วยเติมพื้นผิวเสียงเท่านั้น และเป็นผลงานชุดแรกที่เขาคุมการเรียบเรียงเองครบทุกเพลง
 
 
 ### Production chronology
@@ -72,7 +70,7 @@ James ปฏิเสธด้วยเหตุผลว่าการนำ�
 
 ### Music and lyrics
 
-ในเชิงดนตรี PULSE ผสมผสาน Contemporary R&B, Synth Funk, Dance-Pop, Indie Pop และ Bedroom Pop โดยขยาย sonic scale จาก SOFTEST TOUCH ไปสู่โครงสร้างที่ performance-oriented และ global-friendly มากขึ้น
+ในเชิงดนตรี PULSE ผสมผสาน Contemporary R&B, Synth Funk, Dance-Pop, Indie Pop และ Bedroom Pop โดยขยายขนาดของเสียงจาก SOFTEST TOUCH ไปสู่โครงที่คิดเพื่อการแสดงสดและตลาดโลกมากขึ้น
 ลักษณะเด่นของอัลบั้ม ได้แก่
 * loop-based composition structure
 * minimal drum programming
@@ -80,15 +78,15 @@ James ปฏิเสธด้วยเหตุผลว่าการนำ�
 * falsetto-driven topline phrasing
 * groove-first arrangement design
 
-อัลบั้มยังคง thematic continuity จากงานก่อนหน้า ได้แก่
+อัลบั้มยังสานธีมเดิมจากงานก่อนหน้า ได้แก่
 * emotional ambiguity
-* intimacy หลังความสัมพันธ์
-* identity transition หลังออกจากระบบค่าย
-แต่เพิ่ม tonal contrast ภายใน tracklist มากขึ้นเพื่อสร้าง performance catalog structure แทน narrative-linear album แบบเดิม <br />
+* ความใกล้ชิดที่เหลืออยู่หลังความสัมพันธ์จบ
+* การเปลี่ยนตัวตนหลังหลุดออกจากระบบค่าย
+แต่เพิ่มความตัดกันของโทนภายในรายชื่อเพลงมากขึ้น เพื่อให้เป็นคลังเพลงสำหรับการแสดง ไม่ใช่อัลบั้มที่เล่าเรื่องไปเป็นเส้นตรงแบบเดิม <br />
 
-ตัวอย่าง tonal reception ของแต่ละเพลง:
+การตอบรับด้านโทนของแต่ละเพลง:
 * HOW DOES IT FEEL? เพลงไตเติลที่มีอิทธิพลจาก groove-driven pop-funk แบบ Justin Timberlake อย่างชัดเจน โดดเด่นด้วย falsetto hook และ stage-oriented rhythm structure ได้รับคำชมว่าเป็นหนึ่งใน performance single ที่ “ล้ำยุค” ที่สุดของปี 2023 และได้รับความนิยมสูงในหมู่แฟนเพลง
-* SAY (feat. keshi) ได้รับการกล่าวถึงว่าเป็นหนึ่งใน unexpected collaboration ที่สำคัญของอัลบั้ม ด้วย dual-vocal texture ระหว่าง Korean pop phrasing และ alternative R&B ของ keshi ทำหน้าที่เป็น global positioning track หลักของ release
+* SAY (feat. keshi) ได้รับการกล่าวถึงว่าเป็นหนึ่งใน unexpected collaboration ที่สำคัญของอัลบั้ม ด้วยผิวเสียงคู่ระหว่างการวางคำแบบป็อปเกาหลีกับ alternative R&B ของ keshi และทำหน้าที่เป็นเพลงหลักที่ใช้วางตำแหน่งในตลาดโลก
 * ALL FOR YOU ได้รับความสนใจจากผู้ฟังสาย R&B ด้วยโครงสร้าง chord progression แบบ 90s-style R&B และ groove mid-tempo ที่อ้างอิงยุคคลาสสิกของ genre อย่างชัดเจน
 * TALK TO ME เป็นหนึ่งในเพลง tonal contrast สำคัญของอัลบั้ม ด้วย dark alternative R&B atmosphere ที่ถูกเปรียบเทียบกับงานของ Taemin ในเชิง mood design แม้ได้รับคำชมด้าน aesthetic แต่แฟนบางส่วนมองว่าแตกต่างจากโทนหลักของอัลบั้มอย่างชัดเจน
 * SAVE ME และ AWKWARD MAYBE มีโครงสร้าง melodic pop แบบ American radio-friendly และถูกมองว่าเป็น accessibility anchors ของอัลบั้ม ช่วยสร้าง balance ระหว่าง experimental R&B และ global pop listening base
@@ -100,7 +98,7 @@ James ปฏิเสธด้วยเหตุผลว่าการนำ�
 
 ### Critical Reception
 
-PULSE ได้รับการตอบรับจากนักวิจารณ์ในระดับดีถึงดีมาก โดยถูกมองเป็นจุดพิสูจน์ว่า James Hwang สามารถดำรงอยู่ในฐานะ full-scale solo artist ที่ควบคุมทั้ง creative direction และ commercial strategy ได้อย่างอิสระ อัลบั้มนี้ได้รับคะแนนเฉลี่ย **82/100** จาก aggregator นักวิจารณ์เกาหลี
+PULSE ได้รับการตอบรับจากนักวิจารณ์ในระดับดีถึงดีมาก โดยถูกมองเป็นจุดพิสูจน์ว่า James Hwang ยืนได้เต็มตัวในฐานะศิลปินเดี่ยวขนาดใหญ่ ที่ควบคุมทั้ง creative direction และ commercial strategy ได้อย่างอิสระ อัลบั้มนี้ได้รับคะแนนเฉลี่ย **82/100** จาก aggregator นักวิจารณ์เกาหลี
 
 การตอบรับจากนักวิจารณ์:
 * **Melon Critics** บรรยาย HOW DOES IT FEEL? ว่าเป็น “performance single ที่ทรงพลังที่สุดในวงการ K-R&B ปี 2023 — ทุกเฟรมของ stage เป็นของเขาอย่างสมบูรณ์”
@@ -140,7 +138,7 @@ PULSE ใช้ multi-track promotion strategy แทน traditional single roll
 * SAY
 * ALL FOR YOU
 * TALK TO ME
-อัลบั้มได้รับ international rollout ผ่านเครือข่ายของ Warner M แทน narrative-driven studio album แบบ traditional K-pop structure
+อัลบั้มได้รับ international rollout ผ่านเครือข่ายของ Warner M แทนสตูดิโออัลบั้มที่เดินด้วยเรื่องเล่าแบบ K-pop structure
 
 
 ### Accolades

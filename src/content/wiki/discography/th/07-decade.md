@@ -5,13 +5,13 @@
 ### Recording and production
 
 DECADE เป็นอัลบั้ม anthology ชุดแรกของ GONUNMA (James Hwang) เปิดตัวเมื่อ 7 กรกฎาคม 2026 ภายใต้ JH Company และการจัดจำหน่ายระดับนานาชาติโดย Warner Music Korea — ตรงวันครบรอบ 10 ปีพอดีนับจากการเดบิวต์ของเขาในฐานะสมาชิกของ NCT 127 เมื่อ 7 กรกฎาคม 2016 <br />
-อัลบั้มทำหน้าที่เป็นทั้ง retrospective collection และ curated artistic timeline โดยรวบรวมผลงานจากทุกช่วงสำคัญของ discography ตั้งแต่ LIKE I DO (2016) จนถึง CAN'T LEAVE ALONE (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็น transition bridge ไปยัง creative phase ถัดไป <br />
+อัลบั้มทำหน้าที่เป็นทั้งการรวมผลงานย้อนหลังและเส้นเวลาที่คัดมาเล่าเรื่อง โดยรวบรวมงานจากทุกช่วงสำคัญของผลงานเพลง ตั้งแต่ LIKE I DO (2016) จนถึง CAN'T LEAVE ALONE (2025) พร้อมเพลงใหม่ 4 เพลงที่ทำหน้าที่เป็นสะพานข้ามไปยังช่วงงานสร้างสรรค์ถัดไป <br />
 นอกจากเพลงใหม่ อัลบั้มยังรวม
 * solo reinterpretation versions
 * live rearranged versions จาก PULSE Tour
 * archival spoken material จาก recording sessions ตลอดช่วงปี 2015–2025
 
-ซึ่งสะท้อนพัฒนาการด้าน vocal delivery และ production philosophy ของศิลปินตลอดระยะเวลา 10 ปี
+ซึ่งสะท้อนพัฒนาการทั้งวิธีร้องและแนวคิดด้านโปรดักชันของเขาตลอดสิบปี
 ทั้งอัลบั้มผลิตโดย GONUNMA
 
 
@@ -75,28 +75,27 @@ DECADE ไม่ได้เริ่มจากการเป็นโปร�
 * Indie Pop
 
 โดยโครงสร้าง anthology ถูกแบ่งเป็นสองส่วน
-* **Disk 1 - Identity & Impact**: รวบรวมเพลงที่ทำหน้าที่เป็น turning points ในแต่ละ era และ performance-defining singles
-* **Disk 2 - Process & Emotion**: รวบรวม deep cuts, songwriting-driven material และ reinterpretations ที่สะท้อน emotional authorship ของศิลปิน
+* **Disk 1 - Identity & Impact**: รวมเพลงที่เป็นจุดเปลี่ยนของแต่ละยุค และซิงเกิลที่นิยามการแสดงของเขา
+* **Disk 2 - Process & Emotion**: รวมเพลงลึกที่ไม่ใช่ซิงเกิล งานที่ขับด้วยการเขียนเพลง และเวอร์ชันตีความใหม่ที่สะท้อนว่าเจ้าของอารมณ์ในเพลงคือตัวเขาเอง
 
-เพลงใหม่ 4 เพลงในอัลบั้มยังคง sonic direction ในแกน Contemporary R&B และ melodic minimalism แบบ mature-era ของ GONUNMA และได้รับการกล่าวถึงว่าเป็น continuation ที่มีคุณภาพต่อเนื่องจากช่วง CAN'T LEAVE ALONE  <br />
+เพลงใหม่ 4 เพลงยังคงทิศทางเสียงในแกน Contemporary R&B และความเรียบง่ายของทำนองแบบยุคที่เขานิ่งแล้ว และถูกพูดถึงว่าเป็นงานที่คุณภาพต่อเนื่องจากช่วง CAN'T LEAVE ALONE  <br />
 นอกจากนี้ anthology ยังรวม live rearranged versions ของ
 * “RIGHT ABOUT LOVE (Extended Live Version)”
 * “NO RESERVATIONS (Extended Live Version)”
 
-ซึ่งพัฒนาขึ้นระหว่าง PULSE Tour (2023) และได้รับการตอบรับสูงจากผู้ฟังในฐานะเวอร์ชันที่ขยาย dynamic range และ harmonic layering ของต้นฉบับ
+ซึ่งพัฒนาขึ้นระหว่าง PULSE Tour (2023) และได้รับการตอบรับสูงจากผู้ฟังในฐานะเวอร์ชันที่ขยายช่วงความดังเบาและการซ้อนชั้นเสียงประสานของต้นฉบับ
 
 
 ### Archival spoken material
 
-หนึ่งในองค์ประกอบสำคัญของ DECADE คือการรวม liner-note essay recordings และ studio fragments จากช่วงการสร้างอัลบั้มก่อนหน้า <br />
+หนึ่งในองค์ประกอบสำคัญของ DECADE คือการรวมเสียงอ่านบันทึกท้ายปกและเศษเสียงจากห้องอัดในช่วงที่ทำอัลบั้มก่อนหน้า <br />
 material เหล่านี้ประกอบด้วย
 * demo narration segments
 * melodic sketch recordings
 * spoken reflections ระหว่าง recording sessions
 * transitional voice memos ที่เชื่อมแต่ละ era ของ discography
-* archival material ถูกจัดลำดับให้ทำหน้าที่เป็น
-sonic documentary layer ของ anthology
-และสะท้อนพัฒนาการของ James จาก idol-system songwriter ไปสู่ artist-producer ที่มี creative autonomy เต็มรูปแบบ
+* วัสดุจากคลังถูกจัดลำดับให้ทำหน้าที่เป็นชั้นสารคดีเสียงของอัลบั้มรวมชุดนี้
+และสะท้อนการเดินทางของ James จากคนแต่งเพลงในระบบไอดอล ไปเป็นศิลปินที่โปรดิวซ์เองและมีอิสระในการตัดสินใจเต็มที่
 
 
 ### Release and promotion timeline
@@ -117,7 +116,7 @@ sonic documentary layer ของ anthology
 ### Marketing
 
 DECADE เป็น anthology release แรกของ James ที่กลับมาใช้ physical collector format (2CD) อย่างเต็มรูปแบบนับตั้งแต่ช่วงก่อน PULSE (2023) <br />
-physical edition ถูกออกแบบในฐานะ archival object สำหรับแฟนเพลงระยะยาว มากกว่าการเป็น streaming-first release <br />
+แผ่นจริงถูกออกแบบให้เป็นของเก็บสำหรับแฟนระยะยาว ไม่ใช่งานที่คิดเพื่อสตรีมมิงมาก่อน <br />
 การโปรโมตอัลบั้มประกอบด้วย
 * global digital rollout ผ่าน Warner network
 * live stage performances ในเกาหลีใต้สำหรับหนึ่งในเพลงใหม่ของ anthology
@@ -156,7 +155,7 @@ one of the most cohesive career anthologies by an Asian R&B solo artist of the d
 
 DECADE ถูกมองว่าเป็น anthology ที่ทำหน้าที่
 canonization release ของ discography ระยะ 10 ปีแรกของ GONUNMA  <br />
-โดยอัลบั้มไม่ได้ถูกออกแบบเป็น greatest hits collection แบบดั้งเดิม แต่เป็น curated narrative timeline ที่สะท้อน evolution ของศิลปินจาก
+โดยอัลบั้มไม่ได้ถูกออกแบบเป็น greatest hits collection แบบดั้งเดิม แต่เป็นเส้นเวลาที่คัดมาเล่าเรื่อง สะท้อนพัฒนาการของศิลปินจาก
 idol-system songwriter→ independent producer-artist→ global R&B lineage-aligned soloist  <br />
 การรวม live rearranged material และ archival studio recordings ทำให้อัลบั้มได้รับการกล่าวถึงในฐานะหนึ่งใน anthology releases ที่มีระดับ artistic authorship สูงที่สุดของศิลปิน K-R&B รุ่นเดียวกัน
 

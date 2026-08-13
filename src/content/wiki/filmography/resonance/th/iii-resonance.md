@@ -57,4 +57,4 @@ Elias & Mina: Elias ยังคงมีไฟแห่งการสำรว
 
 ---
 
-หลังการเข้าฉาย James Hwang ให้สัมภาษณ์ยืนยันว่า narrative arc ของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว
+หลังการเข้าฉาย James Hwang ให้สัมภาษณ์ยืนยันว่าเส้นเรื่องของ Elias และ Starwave crew ถูกออกแบบให้เป็น complete saga ตั้งแต่ต้น และถือว่าปิดสมบูรณ์ใน trilogy นี้ พร้อมระบุว่า Resonance universe จะยังคงถูกพัฒนาในรูปแบบ project อื่นต่อไปในอนาคต โดยเขายังคงมีบทบาทในฐานะ creative architect ของจักรวาลดังกล่าว
