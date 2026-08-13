@@ -153,9 +153,14 @@ Secondary fix folded into E2/E3: `company.ts` listed "Music Catalog (2022–pres
 masters with SM. Renamed to **2023–present**, SOFTEST TOUCH moved into the SM-era
 catalog entry.
 
-Still open from the earlier sweep and *not* touched here: **C5** (Aug 2024 "first
-appearance as external artist" in `personal-life.ts` vs "attendee only" in the timeline)
-and **C7** (SM listed under "Strategic Partners").
+**C5 and C7 resolved in a follow-up pass (2026-08-13):**
+- **C5** — `personal-life.ts` now separates the two moments: August 2024 he attended
+  the 8th anniversary fan meeting *as an attendee, not a performer*; the actual return
+  as an external artist is December 2024. Matches `timeline` wording.
+- **C7** — `company.ts` heading changed from "Strategic Partners" to
+  "Partners & Counterparties", and SM's entry now states outright that it is not a
+  partner in the ordinary sense — the relationship runs through the adversarial 2023
+  settlement and the residual friction after it.
 
 ---
 

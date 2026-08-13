@@ -131,7 +131,7 @@ const th: typeof en = {
   ],
   roleBadges: ['นักร้อง-นักแต่งเพลง', 'นักแสดง', 'CEO · JH Company', 'เจ้าของ Grammy 2 รางวัล', 'นักแสดง MCU', 'ศิลปินอิสระ'],
   bioHtml:
-    'James Hwang เดบิวต์กับ SM Entertainment ในฐานะสมาชิก <strong style="color:var(--text)">NCT 127</strong> (2016) ก่อนแยกทางผ่านการ settle สัญญาในปี 2023 เพื่อก่อตั้ง <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a> และกลับมาร่วมกิจกรรม NCT 127 ในฐานะ external artist เมื่อธันวาคม 2024 ภายใต้ข้อตกลงที่ยังคงความเป็นอิสระของเขาไว้เต็มที่ ได้รับการยกย่องเป็นผู้บุกเบิก <em>post-agency authorship</em> ใน K-pop เขาสร้าง <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">discography</a> ที่ครอบคลุม contemporary R&B, neo-soul และ funk — คว้า <a href="%L%awards" style="color:var(--gold);font-weight:600">Grammy 2 รางวัล</a> ในปี 2025 พร้อมกันนั้นก็ปักหลักในฮอลลีวูดผ่านไตรภาค <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> (MCU) และแฟรนไชส์ออริจินอล <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> (Disney) ที่เขารับหน้าที่ผู้สร้าง ผู้กำกับร่วม ผู้ประพันธ์ดนตรี และนักแสดงนำ',
+    'James Hwang เดบิวต์ในวง <strong style="color:var(--text)">NCT 127</strong> ใต้สังกัด SM Entertainment เมื่อปี 2016 ก่อนจะแยกทางกันด้วยการ settle สัญญาในปี 2023 แล้วตั้ง <a href="%L%company" style="color:var(--gold);font-weight:600">JH Company</a> ของตัวเอง ธันวาคม 2024 เขากลับไปร่วมกิจกรรมกับ NCT 127 อีกครั้งในฐานะ external artist ด้วยข้อตกลงที่ไม่แตะความเป็นอิสระที่เขาได้มา คนในวงการมองว่าเขาเป็นคนเปิดทาง <em>post-agency authorship</em> ให้ K-pop <a href="%L%discography" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">งานเพลง</a> ของเขาวางอยู่บน contemporary R&B, neo-soul และ funk และพาเขาไปคว้า <a href="%L%awards" style="color:var(--gold);font-weight:600">Grammy 2 รางวัล</a> ในปี 2025 อีกขาหนึ่งเขาปักหลักที่ฮอลลีวูด ทั้งไตรภาค <a href="%L%filmography/shang-chi" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">Shang-Chi</a> ของ MCU และแฟรนไชส์ <a href="%L%filmography/resonance" style="color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--border)">RESONANCE</a> ของ Disney ที่เขาลงมือเองทั้งในฐานะผู้สร้าง ผู้กำกับร่วม คนทำดนตรี และนักแสดงนำ',
   stats: [
     { label: 'ช่วงอาชีพ', value: '2013–', sub: 'SM Rookies → อิสระ' },
     { label: 'ยอดสตรีมรวม', value: '8.7B+', sub: 'รวมทุกแพลตฟอร์ม' },
@@ -145,7 +145,7 @@ const th: typeof en = {
     { year: '2016', label: 'NCT 127', note: '"Fire Truck" · มินิอัลบั้ม "LIKE I DO" ในนาม GONUNMA' },
     { year: '2019', label: 'MCU', note: 'ประกาศแคสต์ Shang-Chi ที่งาน Comic-Con' },
     { year: '2021', label: 'ฮอลลีวูด', note: 'Shang-Chi and the Legend of the Ten Rings · บ็อกซ์ออฟฟิศ $728M' },
-    { year: '2022', label: 'เดี่ยว', note: '"SOFTEST TOUCH" — เปิดตัวตัวตนเดี่ยวอย่างเป็นทางการ' },
+    { year: '2022', label: 'เดี่ยว', note: '"SOFTEST TOUCH" — เปิดตัวในฐานะศิลปินเดี่ยวอย่างเป็นทางการ' },
     { year: '2023', label: 'อิสระ', note: 'ออกจาก SM · ก่อตั้ง JH Company · ทัวร์ PULSE World Tour' },
     { year: '2024', label: 'กลับวง NCT 127', note: 'กลับมาในฐานะ external artist — ไม่มีสัญญาผูกขาดใหม่' },
     { year: '2025', label: 'Grammy', note: 'Best Progressive R&B + Best R&B Performance' },
@@ -156,7 +156,7 @@ const th: typeof en = {
     { group: 'ศิลปิน', items: [
       { title: 'ชีวประวัติ', desc: 'กรุงเทพ → SM Rookies → NCT 127 → อิสระ' },
       { title: 'ชีวิตส่วนตัว', desc: 'ครอบครัว · การศึกษา · ความสัมพันธ์ · ค่านิยม' },
-      { title: 'ไทม์ไลน์', desc: '1998–ปัจจุบัน · ทุกเหตุการณ์สำคัญเรียงลำดับ' },
+      { title: 'ไทม์ไลน์', desc: '1998–ปัจจุบัน · เหตุการณ์สำคัญทั้งหมด เรียงตามเวลา' },
     ]},
     { group: 'ดนตรี', items: [
       { title: 'ผลงานเพลง', desc: '6 โปรเจ็กต์ · สตรีม 8.7B+ · 2016–2026' },
