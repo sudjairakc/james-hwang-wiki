@@ -285,9 +285,9 @@ const th: typeof en = {
     primaryBadge: 'หลัก (2026–)',
     baseBadge: 'ฐาน (–2026)',
     workspaceBadge: 'พื้นที่ทำงาน',
-    laCity: 'Los Angeles, USA',
-    seoulCity: 'Seoul, South Korea',
-    hqTitle: 'JH Company HQ + Studio',
+    laCity: 'ลอสแอนเจลิส สหรัฐอเมริกา',
+    seoulCity: 'โซล เกาหลีใต้',
+    hqTitle: 'สำนักงานใหญ่และสตูดิโอ JH Company',
     laParagraphHtml:
       'ย้ายมาอยู่อเมริกาเป็นหลักปลายปี 2026 ตรงกับช่วงที่ประกาศความสัมพันธ์กับ Ashley Liao และช่วงปิดไตรภาค MCU มี <strong style="color:var(--text)">บ้าน 1 หลัง · รถส่วนตัว 1 คัน</strong> ส่วนรถของบริษัท (รถตู้ รถทีมงาน) แยกออกไปคนละส่วน',
     seoulParagraphHtml:

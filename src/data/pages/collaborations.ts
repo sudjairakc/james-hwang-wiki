@@ -138,15 +138,15 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Music · คอลแลบ',
-    title: 'Collaborations & Featured Tracks',
+    label: 'ดนตรี · คอลแลบ',
+    title: 'คอลแลบและเพลงที่มีศิลปินรับเชิญ',
     intro:
-      'บันทึกครบถ้วนของผลงานคอลแลบของ James Hwang — featured track ในอัลบั้มเดี่ยว, ซิงเกิล SM Station ก่อนเดบิวต์เดี่ยว และการรับเชิญร้อง แต่ละคอลแลบสะท้อนการตัดสินใจเชิงศิลปะและกลยุทธ์อย่างตั้งใจ ไม่ใช่การจับคู่เชิงพาณิชย์',
-    chartHeading: 'ยอดสตรีม Featured Track',
+      'บันทึกครบถ้วนของงานคอลแลบของ James Hwang ทั้งเพลงที่มีศิลปินรับเชิญในอัลบั้มเดี่ยว ซิงเกิล SM Station ก่อนเดบิวต์เดี่ยว และงานที่เขาไปร้องรับเชิญให้คนอื่น แต่ละคอลแลบสะท้อนการตัดสินใจเชิงศิลปะและกลยุทธ์อย่างตั้งใจ ไม่ใช่การจับคู่เชิงพาณิชย์',
+    chartHeading: 'ยอดสตรีมเพลงคอลแลบ',
     chartSub: 'ยอดสตรีม Spotify + YouTube ต่อคอลแลบ (ล้าน)',
     legendSpotify: 'Spotify',
     legendYoutube: 'YouTube',
-    featuredHeading: 'Featured Tracks',
+    featuredHeading: 'เพลงที่มีศิลปินรับเชิญ',
     featuredSub: 'ในฐานะศิลปินหลัก',
     labelFeaturedArtist: 'ศิลปินรับเชิญ',
     labelRole: 'บทบาท',
@@ -155,17 +155,17 @@ const th: typeof en = {
     stationHeading: 'ผลงานร่วม SM Station',
     stationSub: 'ก่อนเดบิวต์เดี่ยว · 2018–2019',
     stationCallout:
-      'ทั้งสองเพลง SM Station ถูกนำไปรวมใน SOFTEST TOUCH (2022) ในฐานะส่วนหนึ่งของ catalog เดี่ยวอย่างเป็นทางการ — สื่อถึงความตั้งใจของ James ที่จะทวงคืนและ recontextualize ผลงานช่วงก่อนอิสระของตัวเอง',
+      'ทั้งสองเพลง SM Station ถูกนำไปรวมใน SOFTEST TOUCH (2022) ในฐานะส่วนหนึ่งของผลงานเดี่ยวอย่างเป็นทางการ สื่อถึงความตั้งใจของ James ที่จะทวงคืนและตีความผลงานช่วงก่อนเป็นอิสระของตัวเองใหม่',
     philosophyHeading: 'ปรัชญาการคอลแลบ',
     philosophySelectionTitle: 'การเลือก Artist',
     philosophySelectionBody:
-      'ทุกคอลแลบเป็นศิลปินที่ James พูดถึงต่อสาธารณะว่าเป็น influence หรือ peer ไม่มีการจับคู่เชิงพาณิชย์ล้วนๆ — ทุก feature มี artistic rationale ที่ตามรอยได้',
+      'ทุกคอลแลบเป็นศิลปินที่ James พูดต่อสาธารณะว่าเป็นแรงบันดาลใจหรือคนระดับเดียวกัน ไม่มีการจับคู่เพื่อการค้าล้วนๆ ทุกเพลงมีเหตุผลทางศิลปะที่ตามรอยได้',
     philosophyTermsTitle: 'เงื่อนไขด้าน Creative',
     philosophyTermsBody:
-      'ตั้งแต่ PULSE เป็นต้นมา James เป็นคนตัดสินใจสุดท้ายเรื่อง arrangement และทิศทาง production ศิลปินที่มา feature ถูกเชิญเข้ามาใน frame ที่เขากำหนดไว้ — ไม่ใช่ co-equal production',
+      'ตั้งแต่ PULSE เป็นต้นมา James เป็นคนตัดสินใจสุดท้ายเรื่องการเรียบเรียงและทิศทางโปรดักชัน ศิลปินรับเชิญถูกเชิญเข้ามาในกรอบที่เขาวางไว้แล้ว ไม่ใช่การร่วมโปรดิวซ์แบบเท่าเทียมกัน',
     philosophyPacingTitle: 'จังหวะการปล่อยผลงาน',
     philosophyPacingBody:
-      'หนึ่ง major feature ต่อหนึ่งอัลบั้ม ไล่ระดับสเกลขึ้นเรื่อยๆ: Jungkook (K-pop peer) → keshi (alt-R&B) → Janet Jackson (legacy R&B) → Pharrell Williams (legacy production) แต่ละสเต็ปคือการวาง positioning อย่างตั้งใจ',
+      'หนึ่งอัลบั้มมีศิลปินรับเชิญคนสำคัญหนึ่งคน และไล่ระดับขึ้นเรื่อยๆ จาก Jungkook ที่เป็นเพื่อนร่วมวงการ K-pop ไป keshi สาย alt-R&B ไป Janet Jackson ที่เป็นตำนาน R&B แล้วไป Pharrell Williams ที่เป็นตำนานด้านโปรดักชัน แต่ละก้าวคือการวางตำแหน่งตัวเองอย่างตั้งใจ',
   },
   stats: [
     { val: '6', label: 'ศิลปินที่ร่วมงาน' },
@@ -185,7 +185,7 @@ const th: typeof en = {
       spotify: '260M+',
       youtube: undefined,
       eraColor: '#9b7fc8',
-      note: 'เพลง breakout crossover — ซิงเกิลที่ใหญ่ที่สุดจากยุค SOFTEST TOUCH ไดนามิกเสียงร้องคู่ระหว่าง K-R&B กับ phrasing แบบ pop ของ BTS กลายเป็นจุดอ้างอิงของการคอลแลบข้ามแฟนด้อม',
+      note: 'เพลงที่พาเขาข้ามไปตลาดใหม่ และเป็นซิงเกิลที่ใหญ่ที่สุดของยุค SOFTEST TOUCH การร้องคู่ระหว่าง K-R&B กับการวางคำแบบป็อปของ BTS กลายเป็นจุดอ้างอิงของงานคอลแลบข้ามแฟนด้อม',
     },
     {
       title: 'SAY (feat. keshi)',
@@ -198,7 +198,7 @@ const th: typeof en = {
       spotify: '210M+',
       youtube: '120M+',
       eraColor: '#5a7c6a',
-      note: 'ได้รับการเสนอชื่อเป็น "Best K-pop Crossover Collaboration of 2023" โดย Billboard Korea keshi ร่วมแต่งเพลงนี้ด้วย ทำให้เป็น creative partnership เต็มรูปแบบ มากกว่าการรับเชิญร้องธรรมดา',
+      note: 'ได้รับการเสนอชื่อเป็น "Best K-pop Crossover Collaboration of 2023" โดย Billboard Korea keshi ร่วมแต่งเพลงนี้ด้วย ทำให้เป็นการร่วมงานสร้างสรรค์เต็มรูปแบบ ไม่ใช่แค่มาร้องรับเชิญ',
     },
     {
       title: 'JUST A DREAM (feat. Janet Jackson)',
@@ -224,7 +224,7 @@ const th: typeof en = {
       spotify: '260M+',
       youtube: '175M+',
       eraColor: '#c06080',
-      note: 'เพลงแรกที่ขึ้น Spotify Global Top 50 Pharrell รับบทบาททั้งศิลปินรับเชิญและ co-producer — ครั้งแรกที่ James แชร์เครดิตโปรดักชันกับชื่อภายนอก Consequence of Sound เขียนว่า "Pharrell knew to step back and let GONUNMA lead."',
+      note: 'เพลงแรกที่ขึ้น Spotify Global Top 50 Pharrell รับทั้งบทศิลปินรับเชิญและผู้ร่วมโปรดิวซ์ เป็นครั้งแรกที่ James แบ่งเครดิตโปรดักชันให้คนนอก Consequence of Sound เขียนว่า "Pharrell knew to step back and let GONUNMA lead."',
     },
   ],
   stationSingles: [
@@ -235,7 +235,7 @@ const th: typeof en = {
       year: '2018',
       platform: 'SM STATION 2',
       eraColor: '#c9a84c',
-      note: 'ปล่อยเป็นซิงเกิล SM Station แรกของ James ก่อนเดบิวต์เดี่ยว ภายหลังถูกรวมเข้า SOFTEST TOUCH (2022) เป็นส่วนหนึ่งของแกน acoustic-soul ของอัลบั้ม',
+      note: 'ปล่อยเป็นซิงเกิล SM Station แรกของ James ก่อนเดบิวต์เดี่ยว ภายหลังถูกรวมเข้า SOFTEST TOUCH (2022) เป็นส่วนหนึ่งของแกนโซลกีตาร์โปร่งของอัลบั้ม',
     },
     {
       title: 'CRUSH',
@@ -244,7 +244,7 @@ const th: typeof en = {
       year: '2019',
       platform: 'SM STATION 3',
       eraColor: '#c9a84c',
-      note: 'ปล่อยเป็นซิงเกิล SM Station ที่สองของ James (เดี่ยว) ก่อนเดบิวต์เดี่ยว ภายหลัง re-release บน SOFTEST TOUCH (2022) โดยเพิ่มฟีเจอริง Jungkook (BTS) — เวอร์ชัน cross-agency นี้กลายเป็นช่วง crossover ที่ใหญ่ที่สุดของอัลบั้ม — และทำเวอร์ชันเดี่ยวในอัลบั้ม DECADE (2026)',
+      note: 'ปล่อยเป็นซิงเกิล SM Station ที่สองของ James (เดี่ยว) ก่อนเดบิวต์เดี่ยว ภายหลังถูกปล่อยใหม่ใน SOFTEST TOUCH (2022) โดยเพิ่ม Jungkook จาก BTS มาร้องรับเชิญ เวอร์ชันข้ามค่ายนี้กลายเป็นจุดที่อัลบั้มไปได้ไกลที่สุด — และทำเวอร์ชันเดี่ยวในอัลบั้ม DECADE (2026)',
     },
   ],
 };

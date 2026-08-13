@@ -199,7 +199,7 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Business',
+    label: 'ธุรกิจ',
     title: 'JH Company',
     subtitle: 'ก่อตั้ง 2023 · สำนักงานใหญ่กรุงโซล · สตูดิโอสร้างสรรค์ของศิลปินคนเดียวและบ้านที่ถือ IP',
     introHtml:
@@ -229,12 +229,12 @@ const th: typeof en = {
       'JH Company เป็นสตูดิโอศิลปินคนเดียวโดยเจตนา ไม่เคยเซ็นและไม่รับศิลปินคนอื่นเข้าสังกัด ข้อเสนอให้ขยายสังกัดทุกครั้ง รวมถึงจากเพื่อนร่วมวงเก่า ถูกผู้ก่อตั้งปฏิเสธหมด',
     brandHeading: 'อัตลักษณ์แบรนด์',
     brandNameLabel: 'ชื่อ',
-    brandTaglineLabel: 'Tagline',
-    brandPlatformLabel: 'Creative Platform',
+    brandTaglineLabel: 'สโลแกน',
+    brandPlatformLabel: 'แนวคิดหลักด้านงานสร้างสรรค์',
     brandPositioningLabel: 'การวางตำแหน่ง',
     brandPillarsLabel: 'เสาหลักแบรนด์',
     brandPersonalityLabel: 'บุคลิก',
-    brandArchetypeLabel: 'Archetype',
+    brandArchetypeLabel: 'ต้นแบบบุคลิก',
     brandBoardLabel: 'บอร์ดอัตลักษณ์องค์กร',
   },
   brand: {

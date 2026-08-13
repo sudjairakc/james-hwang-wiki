@@ -177,7 +177,7 @@ const en = {
 const th: typeof en = {
   ui: {
     label: 'ธุรกิจ',
-    title: 'Endorsements & Touring',
+    title: 'ดีลพรีเซนเตอร์และการทัวร์',
     subtitle: 'ดีลพรีเซ็นเตอร์ $16M–22M/ปี · รายได้ทัวร์รวม $309M+',
     introHtml:
       'บริหารทั้งหมดผ่าน <a href="%L%company" style="color:var(--gold)">JH Company</a> ตั้งแต่ปี 2023 พอร์ตแบรนด์ของ James Hwang ครอบคลุมแฟชั่นหรู เครื่องเสียง และชุดกีฬา ทั้งหมดสร้างรอบ <a href="%L%public-image" style="color:var(--gold)">ภาพลักษณ์สาธารณะ</a> ของเขาในฐานะศิลปิน R&B สายมืดที่คุมงานตัวเอง ตัวเลขรายได้ทัวร์รวม <a href="%L%tours/pulse" style="color:var(--gold)">PULSE World Tour</a> และ <a href="%L%tours/decade" style="color:var(--gold)">DECADE Tour</a>',

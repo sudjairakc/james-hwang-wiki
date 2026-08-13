@@ -146,7 +146,7 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    section: 'Discography',
+    section: 'ผลงานเพลง',
     back: '← กลับไปหน้าผลงานเพลง',
     commercialMetrics: 'ตัวเลขเชิงพาณิชย์',
     albumStreamsLabel: 'ยอดสตรีมอัลบั้ม (ตลอดชีพ)',
@@ -155,14 +155,14 @@ const th: typeof en = {
     titleTrackLabel: 'เพลงไตเติล',
     crossoverLabel: 'ซิงเกิล Crossover',
     keyTracksLabel: 'เพลงเด่น',
-    tracklist: 'Tracklist',
-    refStreams: 'ref · streams',
-    albumArc: 'Album Arc',
+    tracklist: 'รายชื่อเพลง',
+    refStreams: 'ต้นแบบ · ยอดสตรีม',
+    albumArc: 'เส้นเรื่องของอัลบั้ม',
     titleBadge: 'ไตเติล',
     bonusBadge: 'โบนัส',
     hookPrefix: 'ธีมฮุค',
     lyricsToggle: 'เนื้อเพลง',
-    referenceVocal: 'Reference vocal',
+    referenceVocal: 'เสียงร้องต้นแบบ',
     trackListing: 'รายชื่อเพลง',
     newBadge: 'ใหม่',
     albumNotes: 'บันทึกอัลบั้ม',
@@ -170,15 +170,15 @@ const th: typeof en = {
   },
   subtitle: {
     'like-i-do': 'GONUNMA · Mini Album',
-    'softest-touch': 'Mini Album ชุดที่ 1',
+    'softest-touch': 'มินิอัลบั้มชุดที่ 1',
     'pulse-era': 'สตูดิโออัลบั้มชุดที่ 1',
     'are-u-still': 'สตูดิโออัลบั้มชุดที่ 2',
     'sour-honey': 'สตูดิโออัลบั้มชุดที่ 3 · ยุค CAN\'T LEAVE ALONE',
-    'decade': 'อัลบั้มรวมเพลง (Anthology)',
+    'decade': 'อัลบั้มรวมเพลง',
   } as Record<string, string>,
   note: {
     'like-i-do': 'กระแสฟื้นตัวจาก TikTok ช่วง 2023–2024',
-    'decade': 'catalog ฟื้นตัว +22–41% YoY ทุกยุค',
+    'decade': 'ยอดผลงานเก่ากลับมาโต 22–41% เทียบปีก่อน ทุกยุค',
   } as Record<string, string>,
   related: [
     { label: 'ผลงานเพลง', slug: 'discography' },

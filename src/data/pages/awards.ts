@@ -182,9 +182,9 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Recognition',
+    label: 'เกียรติยศ',
     title: 'รางวัล',
-    subtitle: 'Grammy, Melon, Asia Artist Awards, Seoul Music Awards · 2022–2030',
+    subtitle: 'รางวัลจาก Grammy, Melon, Asia Artist Awards และ Seoul Music Awards · 2022–2030',
     statAwardWins: 'รางวัลที่ชนะ',
     nominations: 'การเข้าชิง',
     musicShowWins: 'ชนะ Music Show',

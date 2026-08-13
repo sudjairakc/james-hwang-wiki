@@ -128,7 +128,7 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Live',
+    label: 'การแสดงสด',
     title: 'ทัวร์คอนเสิร์ต',
     subtitle: 'รายได้รวม $309M · 82 โชว์ · 56 เมือง · 2 ทัวร์โลก',
     tourStatShows: 'โชว์',

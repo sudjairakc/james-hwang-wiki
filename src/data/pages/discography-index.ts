@@ -226,11 +226,11 @@ const en = {
 
 const th: typeof en = {
   ui: {
-    label: 'Music',
+    label: 'ดนตรี',
     title: 'ผลงานเพลง',
     subtitle: '6 โปรเจกต์ · 2016–2026 · สตรีมสะสม 8.7B+',
     genreMapHeading: 'แผนที่แนวเพลง',
-    genreMapDesc: 'ตำแหน่ง genre ของแต่ละอัลบั้มในพื้นที่ดนตรี · เทียบกับทิศทางตลาด K-pop และ worldwide ในปีนั้นๆ',
+    genreMapDesc: 'ตำแหน่งแนวเพลงของแต่ละอัลบั้มบนแผนที่ดนตรี · เทียบกับทิศทางตลาด K-pop และตลาดโลกในปีนั้นๆ',
     legendLabel: 'คำอธิบายสัญลักษณ์',
     kpopMarketLabel: 'ตลาด K-pop',
     worldwideMarketLabel: 'ตลาดโลก',
@@ -277,7 +277,7 @@ const th: typeof en = {
       subtitle: 'สตูดิโออัลบั้มที่ 2',
       type: 'สตูดิโออัลบั้มที่ 2',
       era: 'ยุคแกรมมี่',
-      highlight: 'คว้า Grammy: Best Progressive R&B + Best R&B Performance · ปรับทิศทางสู่ neo-soul',
+      highlight: 'คว้า Grammy สาขา Best Progressive R&B และ Best R&B Performance · หันทิศทางไปหา neo-soul',
     },
     {
       slug: 'sour-honey',
@@ -298,7 +298,7 @@ const th: typeof en = {
   ],
   singles: [
     { title: "YOU AIN'T GOTTA", sub: 'SM STATION 2', year: '2018', streams: 'Spotify 55M+', note: 'ตอกย้ำจุดยืนแนว R&B' },
-    { title: 'CRUSH', sub: 'SM STATION 3 (เดี่ยว)', year: '2019', streams: 'Spotify 260M+', note: 'เพิ่มฟีเจอริง Jungkook (BTS) บน re-release SOFTEST TOUCH ปี 2022 — ก้าวข้ามสู่สากลครั้งใหญ่ครั้งแรก' },
+    { title: 'CRUSH', sub: 'SM STATION 3 (เดี่ยว)', year: '2019', streams: 'Spotify 260M+', note: 'เพิ่ม Jungkook จาก BTS มาร้องรับเชิญในเวอร์ชันที่ปล่อยใหม่บน SOFTEST TOUCH ปี 2022 เป็นการก้าวสู่ตลาดสากลครั้งใหญ่ครั้งแรก' },
     { title: 'IF I KNEW', sub: 'ซิงเกิลจากยุค PULSE', year: '2023', streams: 'Spotify 47M+', note: 'เพลงเชื่อมก่อนอัลบั้มที่ 2' },
   ],
 };
