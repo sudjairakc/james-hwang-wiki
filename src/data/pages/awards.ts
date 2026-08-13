@@ -224,7 +224,7 @@ const th: typeof en = {
       ],
       charts: [
         'เพลย์ลิสต์ R&B ที่คัดสรรระดับโลก (เอเชีย + อเมริกาเหนือ)',
-        'ยอดสตรีมแคตตาล็อกเก่ากลับมาพุ่ง หลัง official solo debut release',
+        'ยอดสตรีมผลงานเก่ากลับมาพุ่งหลังปล่อยงานเดี่ยวชุดแรกอย่างเป็นทางการ',
       ],
     },
     {
@@ -243,7 +243,7 @@ const th: typeof en = {
         { title: 'HOW DOES IT FEEL?', show: 'Inkigayo', count: 1 },
       ],
       charts: [
-        'เพลย์ลิสต์ editorial ระดับโลกของ Spotify ("SAY")',
+        'เพลย์ลิสต์ที่ทีม Spotify คัดเองระดับโลก ("SAY")',
         'iTunes Album Top 10 — 15+ ประเทศ',
         'Spotify Viral Charts — เอเชียตะวันออกเฉียงใต้ / อเมริกาเหนือ',
       ],
@@ -274,8 +274,8 @@ const th: typeof en = {
         { title: 'Tears On A Pretty Face', show: 'Show Champion', count: 1 },
       ],
       charts: [
-        'Circle Chart — ระดับ indicator ของ Artist of the Year (Digital)',
-        'Apple Music Global R&B — ติด Top 10 rotation',
+        'Circle Chart — อยู่ในระดับที่ชี้ว่าลุ้น Artist of the Year สายดิจิทัล',
+        'Apple Music Global R&B — ติดรอบเปิดใน 10 อันดับแรก',
         'จุดเปลี่ยนสำคัญในไซเคิล Grammy Awards 2025',
       ],
     },
@@ -298,10 +298,10 @@ const th: typeof en = {
         { title: 'SOUR', show: 'Inkigayo', count: 1 },
       ],
       charts: [
-        'เพลย์ลิสต์ editorial R&B ระดับโลกของ Spotify ("CAN\'T LEAVE ALONE")',
+        'เพลย์ลิสต์ R&B ที่ทีม Spotify คัดเองระดับโลก ("CAN\'T LEAVE ALONE")',
         'iTunes Album Top 10 — หลายตลาดในเอเชียตะวันออกเฉียงใต้',
-        'กระจายในเพลย์ลิสต์ของ producer-community ฝั่งอเมริกาเหนือ',
-        'ช่วง stability ของ R&B ระดับโลกหลังยุค Grammy',
+        'แพร่ในเพลย์ลิสต์ของกลุ่มคนทำเพลงฝั่งอเมริกาเหนือ',
+        'ช่วงที่ยอดนิ่งในตลาด R&B โลกหลังยุค Grammy',
       ],
     },
     {
@@ -313,9 +313,9 @@ const th: typeof en = {
       ],
       musicWins: [] as { title: string; show: string; count: number }[],
       charts: [
-        'DECADE anthology — ยอดสตรีมแคตตาล็อกพุ่งทุก era',
+        'อัลบั้มรวม DECADE — ยอดสตรีมพุ่งขึ้นทุกยุค',
         'เพลงที่ร่วมทำใน OST Shang-Chi 3 ขึ้นชาร์ตหลายตลาด',
-        'Guinness World Record — ศิลปินคนแรกที่นำ box office chart ระดับโลกพร้อมกับดันทั้งซิงเกิล ("I LOVE YOUR BODY") และอัลบั้ม (DECADE) กลับขึ้นอันดับ 1 บน Billboard Hot 100 และ Billboard 200 ในสัปดาห์เดียวกัน จากกระแส Last of the Ten Rings (ก.ย. 2026)',
+        'สถิติโลกกินเนสส์ — ศิลปินคนแรกที่ครองอันดับหนึ่งรายได้หนังทั่วโลก พร้อมกับดันทั้งซิงเกิล ("I LOVE YOUR BODY") และอัลบั้ม (DECADE) กลับขึ้นอันดับ 1 ทั้ง Billboard Hot 100 และ Billboard 200 ในสัปดาห์เดียวกัน จากกระแส Last of the Ten Rings เดือนกันยายน 2026',
         'ได้รับแต่งตั้งเป็น UNESCO Goodwill Ambassador',
         'ได้รับการเสนอชื่อเข้าชิง Nobel Peace Prize จากแถลงการณ์หยุดยิง Gaza และสันติภาพไทย-กัมพูชา',
       ],
@@ -331,8 +331,8 @@ const th: typeof en = {
       ],
       musicWins: [] as { title: string; show: string; count: number }[],
       charts: [
-        'เปิดตัวทั่วโลกบน Disney+ — ติดอันดับ top streaming title สัปดาห์แรก',
-        'OST ของ Captain EO: RESONANCE ติด editorial playlist rotation',
+        'เปิดตัวทั่วโลกบน Disney+ — ขึ้นเป็นเรื่องที่คนดูมากที่สุดในสัปดาห์แรก',
+        'เพลงประกอบ Captain EO: RESONANCE ติดรอบเปิดในเพลย์ลิสต์ที่บรรณาธิการคัด',
       ],
     },
     {
